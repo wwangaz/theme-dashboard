@@ -577,12 +577,14 @@
         {
           "headline": "U.S. stock futures fall, oil surges as Trump calls Iran's latest offer to end war 'totally unacceptable'",
           "source": "MarketWatch",
-          "url": "https://www.marketwatch.com/story/u-s-stock-futures-fall-oil-surges-as-trump-calls-irans-latest-offer-to-end-war-totally-unacceptable-187e3d87?mod=mw_rss_topstories"
+          "url": "https://www.marketwatch.com/story/u-s-stock-futures-fall-oil-surges-as-trump-calls-irans-latest-offer-to-end-war-totally-unacceptable-187e3d87?mod=mw_rss_topstories",
+          "headline_zh": "美国股指期货下跌，油价飙升，特朗普称伊朗最新结束战争提议'完全不可接受'"
         },
         {
           "headline": "Athabasca Oil: Higher Oil Prices Mean A Rating Upgrade",
           "source": "Seeking Alpha",
-          "url": "https://seekingalpha.com/article/4902311-athabasca-oil-higher-oil-prices-mean-a-rating-upgrade?source=feed_all_articles"
+          "url": "https://seekingalpha.com/article/4902311-athabasca-oil-higher-oil-prices-mean-a-rating-upgrade?source=feed_all_articles",
+          "headline_zh": "Athabasca Oil：油价上升意味着评级上调"
         }
       ],
       "bear_evidence": [],
@@ -601,24 +603,44 @@
       "timeline": [
         {
           "date": "2026-05-08",
-          "event": "Ovintiv Inc. files 8-K with SEC covering shareholder vote submissions, signaling active corporate governance activity in the E&P sector"
+          "event": "Ovintiv Inc. files 8-K with SEC covering shareholder vote submissions, signaling active corporate governance activity in the E&P sector",
+          "event_zh": "Ovintiv Inc.向美国证交会提交8-K，涵盖股东投票提交，表明勘探开发板块积极的企业治理活动"
         },
         {
           "date": "2026-05-11",
-          "event": "Trump publicly declares Iran's latest war-ending proposal 'totally unacceptable,' triggering oil price surge and U.S. stock futures decline"
+          "event": "Trump publicly declares Iran's latest war-ending proposal 'totally unacceptable,' triggering oil price surge and U.S. stock futures decline",
+          "event_zh": "特朗普公开宣布伊朗最新战争终止提议'完全不可接受'，引发油价飙升和美国股市期货下跌"
         },
         {
           "date": "2026-05-11",
-          "event": "Oil prices surge in Sunday trading as U.S.-Iran diplomatic breakdown removes near-term de-escalation expectations"
+          "event": "Oil prices surge in Sunday trading as U.S.-Iran diplomatic breakdown removes near-term de-escalation expectations",
+          "event_zh": "周日交易中油价飙升，美伊外交关系崩溃消除了近期降级预期"
         },
         {
           "date": "2026-05-11",
-          "event": "U.S. equity index futures fall in tandem with oil spike, reflecting broader risk-off sentiment tied to Middle East escalation"
+          "event": "U.S. equity index futures fall in tandem with oil spike, reflecting broader risk-off sentiment tied to Middle East escalation",
+          "event_zh": "美国股指期货与油价飙升同步下跌，反映了与中东升级相关的更广泛风险厌恶情绪"
         },
         {
           "date": "2026-05-11",
-          "event": "Seeking Alpha publishes analyst upgrade on Athabasca Oil, citing higher oil prices as the direct catalyst for improved credit and equity rating"
+          "event": "Seeking Alpha publishes analyst upgrade on Athabasca Oil, citing higher oil prices as the direct catalyst for improved credit and equity rating",
+          "event_zh": "Seeking Alpha发布Athabasca Oil分析师上调，以更高油价作为信用和股权评级改善的直接催化剂"
         }
+      ],
+      "name_zh": "地缘政治风险与油价飙升",
+      "one_line_summary_zh": "特朗普宣称伊朗局势'完全不可接受'引发油价飙升和期货下跌——Athabasca等上游能源生产商获得评级上调，商品周期出现拐点",
+      "conviction_basis_zh": "美伊地缘政治紧张局势正在通过实时新闻积极推高油价，分析师评论证实能源股票的上行压力；但是，相关SEC文件（Ovintiv 8-K）是例行公事治理文件，与主题没有直接相关性，且缺乏收益电话会议级别的确认或基本供应中断数据限制了确信度为中等水平。",
+      "stage_reasoning_zh": "信号显示主动地缘政治紧张局势（特朗普-伊朗核谈判破裂）推高油价并引发主流金融媒体关注（MarketWatch、Seeking Alpha），表明该主题正超越专业圈子进入更广泛的认知范围。但是，信号数量有限且缺乏价格行动数据限制了精确定位确切阶段的信心。",
+      "bull_case_zh": "美伊外交关系恶化直接推高油价，特朗普拒绝伊朗最新的战争终止提议消除了近期降级预期并收紧了感知的供应风险溢价。加拿大油砂生产商如Athabasca Oil正获得分析师评级上调，因为上升的原油价格直接流入自由现金流扩张和资产负债表改善。中东地区旷日持久的地缘政治僵局维持了对Brent和WTI的结构性上行压力，有利于对油价敞口具有杠杆作用的上游勘探开发公司。",
+      "bear_case_zh": "外交突破或欧佩克+意外增产可能迅速消除嵌入当前油价中的地缘政治风险溢价，急剧扭转近期涨幅。股票指数期货下跌所示的美国股市走弱表明更广泛的风险厌恶情绪可能会抑制能源板块估值，即使油价保持高位。全球经济放缓或衰退担忧导致的需求破坏可能抵消供应端地缘政治尾风。",
+      "current_drivers_zh": "主要驱动力是美伊核/冲突谈判恶化，特朗普于2026年5月11日公开将伊朗最新提议称为'完全不可接受'，引发油价立即飙升和股市期货抛售。石油砂生产商的分析师上调反映了市场对勘探开发股票的重新定价，以反映持续的高油价环境。",
+      "short_term_outlook_zh": "未来1-4周，随着美伊紧张局势没有任何缓解迹象，油价可能保持高位且波动剧烈，任何进一步的敌对言辞或军事升级都将成为额外的上行催化剂。能源股票，特别是具有杠杆敞口的上游生产商，在此风险环境中应该跑赢更广泛的市场。",
+      "mid_term_outlook_zh": "在1-6个月的期限内，中东持续的地缘政治不确定性和缺乏外交出口支持Brent在80-100美元以上的区间，使油砂和Permian敞口的勘探开发公司能够继续产生自由现金流和获得进一步评级上调。但是，欧佩克备用产能和来自中国和欧洲的需求信号仍然是需要监测的关键变量。",
+      "long_term_outlook_zh": "从结构上讲，常规石油生产投资长期不足加上中东反复发生的不稳定性在1-3年期限内支持更高更持久的油价制度，有利于具有强大资产负债表的低成本生产商。但是，经合组织市场加速的能源转型政策和电动汽车采用创造了限制多年上行潜力的长期需求天花板。",
+      "key_risks_zh": [
+        "美伊突然外交解决或停火宣布导致油价地缘政治风险溢价崩溃",
+        "欧佩克+加速超出当前日程表的增产以利用高油价，供应泛滥",
+        "贸易战引发的放缓或衰退导致的全球需求恶化减少油耗速度快于供应收紧"
       ]
     },
     {
@@ -741,34 +763,40 @@
         {
           "headline": "Fiserv: Negativity Has Finally Gone Too Far",
           "source": "Seeking Alpha",
-          "url": "https://seekingalpha.com/article/4902318-fiserv-negativity-has-finally-gone-too-far?source=feed_all_articles"
+          "url": "https://seekingalpha.com/article/4902318-fiserv-negativity-has-finally-gone-too-far?source=feed_all_articles",
+          "headline_zh": "Fiserv：负面情绪终于过度了"
         },
         {
           "headline": "Provident Financial Services Remains Compelling As Its Quality Shines Through",
           "source": "Seeking Alpha",
-          "url": "https://seekingalpha.com/article/4902312-provident-financial-services-remains-compelling-as-its-quality-shines-through?source=feed_all_articles"
+          "url": "https://seekingalpha.com/article/4902312-provident-financial-services-remains-compelling-as-its-quality-shines-through?source=feed_all_articles",
+          "headline_zh": "Provident Financial Services 作为其质量闪耀而保持引人注目"
         },
         {
           "headline": "8-K - CAPITAL ONE FINANCIAL CORP (0000927628) (Filer)",
           "source": "SEC EDGAR 8-K",
-          "url": "https://www.sec.gov/Archives/edgar/data/927628/000092762826000050/0000927628-26-000050-index.htm"
+          "url": "https://www.sec.gov/Archives/edgar/data/927628/000092762826000050/0000927628-26-000050-index.htm",
+          "headline_zh": "8-K - CAPITAL ONE FINANCIAL CORP (0000927628)（申报人）"
         }
       ],
       "bear_evidence": [
         {
           "headline": "Golub Capital: Weaker Financials But Continue To Hold",
           "source": "Seeking Alpha",
-          "url": "https://seekingalpha.com/article/4902306-golub-capital-weaker-financials-but-continue-to-hold?source=feed_all_articles"
+          "url": "https://seekingalpha.com/article/4902306-golub-capital-weaker-financials-but-continue-to-hold?source=feed_all_articles",
+          "headline_zh": "Golub Capital：较弱财务但继续持有"
         },
         {
           "headline": "8-K - Golub Capital Direct Lending Unlevered Corp (0001901606) (Filer)",
           "source": "SEC EDGAR 8-K",
-          "url": "https://www.sec.gov/Archives/edgar/data/1901606/000190160626000015/0001901606-26-000015-index.htm"
+          "url": "https://www.sec.gov/Archives/edgar/data/1901606/000190160626000015/0001901606-26-000015-index.htm",
+          "headline_zh": "8-K - Golub Capital Direct Lending Unlevered Corp (0001901606)（申报人）"
         },
         {
           "headline": "8-K - AppTech Payments Corp. (0001070050) (Filer)",
           "source": "SEC EDGAR 8-K",
-          "url": "https://www.sec.gov/Archives/edgar/data/1070050/000168316826003617/0001683168-26-003617-index.htm"
+          "url": "https://www.sec.gov/Archives/edgar/data/1070050/000168316826003617/0001683168-26-003617-index.htm",
+          "headline_zh": "8-K - AppTech Payments Corp. (0001070050)（申报人）"
         }
       ],
       "bull_case": "Contrarian sentiment indicators are flashing oversold conditions across multiple financial sub-sectors, with analyst coverage on names like Fiserv and Provident Financial explicitly calling out excessive negativity as a potential mean-reversion catalyst. Quality regional banks and fintech payment processors are being painted with the same bearish brush as weaker credits, creating selective entry points for disciplined investors. Stabilizing credit conditions and resilient fee income at firms like Capital One and Robinhood could drive a rapid sentiment re-rating once negative positioning unwinds.",
@@ -786,28 +814,49 @@
       "timeline": [
         {
           "date": "2026-05-08",
-          "event": "Capital One Financial files 8-K disclosing shareholder vote results (Item 5.07), indicating annual meeting governance activity"
+          "event": "Capital One Financial files 8-K disclosing shareholder vote results (Item 5.07), indicating annual meeting governance activity",
+          "event_zh": "Capital One Financial 提交 8-K 披露股东投票结果（第 5.07 项），表明年度会议治理活动"
         },
         {
           "date": "2026-05-08",
-          "event": "Robinhood Markets files 8-K reporting officer departure or appointment (Item 5.02), flagging leadership transition"
+          "event": "Robinhood Markets files 8-K reporting officer departure or appointment (Item 5.02), flagging leadership transition",
+          "event_zh": "Robinhood Markets 提交 8-K 报告高管离职或任命（第 5.02 项），标记领导层过渡"
         },
         {
           "date": "2026-05-08",
-          "event": "AppTech Payments Corp. files 8-K disclosing director/officer change (Item 5.02), adding execution uncertainty at micro-cap fintech"
+          "event": "AppTech Payments Corp. files 8-K disclosing director/officer change (Item 5.02), adding execution uncertainty at micro-cap fintech",
+          "event_zh": "AppTech Payments Corp. 提交 8-K 披露董事/高管变更（第 5.02 项），在微型股金融科技增加执行不确定性"
         },
         {
           "date": "2026-05-08",
-          "event": "Golub Capital Direct Lending Unlevered Corp files 8-K with earnings results (Item 2.02), reporting weaker financial conditions"
+          "event": "Golub Capital Direct Lending Unlevered Corp files 8-K with earnings results (Item 2.02), reporting weaker financial conditions",
+          "event_zh": "Golub Capital Direct Lending Unlevered Corp 提交 8-K 及盈利结果（第 2.02 项），报告较弱的财务状况"
         },
         {
           "date": "2026-05-11",
-          "event": "Seeking Alpha publishes contrarian piece on Fiserv titled 'Negativity Has Finally Gone Too Far,' signaling analyst sentiment inflection"
+          "event": "Seeking Alpha publishes contrarian piece on Fiserv titled 'Negativity Has Finally Gone Too Far,' signaling analyst sentiment inflection",
+          "event_zh": "Seeking Alpha 发布关于 Fiserv 的反向观点文章，标题为'负面情绪终于过度了'，暗示分析师情绪拐点"
         },
         {
           "date": "2026-05-11",
-          "event": "Seeking Alpha reaffirms Provident Financial Services as 'Compelling' on quality fundamentals, reinforcing selective bullish thesis in regional banking"
+          "event": "Seeking Alpha reaffirms Provident Financial Services as 'Compelling' on quality fundamentals, reinforcing selective bullish thesis in regional banking",
+          "event_zh": "Seeking Alpha 以质量基本面为理由重申 Provident Financial Services 为'引人注目'，在区域银行中强化精选看涨论点"
         }
+      ],
+      "name_zh": "金融服务超卖情绪反转",
+      "one_line_summary_zh": "Fiserv 和 Provident Financial 表明负面情绪已经过度修正，区域银行和支付处理商正在改善的基本面背景下成为价值机会",
+      "conviction_basis_zh": "信号集主要由观点驱动的媒体（Seeking Alpha）组成，对精选公司持适度看涨立场，但更高质量的 SEC 备案文件主要涉及程序性事项（治理投票、高管变更），未能从根本上证实广泛的行业反转；唯一与盈利相关的备案（Golub Capital）明确指出财务状况较弱，削弱了超卖反转论点，整体信度保持较低水平。",
+      "stage_reasoning_zh": "信号仅限于少数专业/利基金融媒体文章（Seeking Alpha）和常规 SEC 备案，反向'超卖'框架暗示该叙事才刚开始在专业分析师中形成。没有价格走势数据、没有主流媒体报道、也没有明显的机构动能迹象表明该主题已超越初期发现阶段。",
+      "bull_case_zh": "反向情绪指标在多个金融子行业闪现超卖状况，对 Fiserv 和 Provident Financial 等公司的分析师覆盖明确指出过度悲观作为潜在均值回归催化剂。优质区域银行和金融科技支付处理商与较弱信用资质的公司被打上同样的看跌标签，为纪律严明的投资者创造了精选切入点。Capital One 和 Robinhood 等公司信用条件稳定和费用收入韧性可在负向头寸平仓后驱动快速情绪重新评级。",
+      "bear_case_zh": "Golub Capital 报告的较弱财务数据表明 BDC 和直接贷款领域的信用质量恶化可能不仅仅是情绪驱动，暗示基本面逆风仍然存在。上升的信用成本、波动利率环境下压缩的净利息边际，以及消费支出放缓可能导致金融股的表现不佳超越简单情绪重置。通过 8-K 备案在 AppTech Payments 和 Robinhood 两家公司标记的领导层变更在敏感时期引入执行不确定性。",
+      "current_drivers_zh": "主要驱动力是广泛的负面情绪与特异性公司基本面之间的分歧，多位 Seeking Alpha 分析师明确指出对 Fiserv 和 Provident Financial 等公司的悲观情绪已超调。并行的 SEC 备案显示公司治理活动——Capital One 的股东投票和 Robinhood 与 AppTech 的高管变更——暗示机构级重新定位正在进行。",
+      "short_term_outlook_zh": "在未来 1-4 周内，反向催化剂已存在但需要确认数据点——如正面盈利惊喜或行业范围信用稳定——来触发有意义的均值回归买入。Fiserv 和 Provident Financial 的情绪反转交易似乎信度最高，考虑到 2026 年 5 月 11 日的明确分析师认可。",
+      "mid_term_outlook_zh": "在 1-6 个月的时间范围内，如果宏观条件稳定，高质量金融股的精选重新评级是合理的，但 Golub Capital 等较弱 BDC 和直接贷款公司面临持续的盈利压力，可能阻碍行业范围的复苏动能。投资者应在支付处理商和费用驱动模式与信用敏感资产负债表贷方之间进行严格区分。",
+      "long_term_outlook_zh": "从结构上看，金融服务行业受益于数字支付渗透增长（Fiserv、AppTech）、零售经纪采用扩张（Robinhood）和纪律严明的区域银行整合——如果近期信用周期逆风正常化，所有这些都支持多年重新评级。当前超卖状况，如被确认为情绪驱动而非基本面驱动，可能标志着优质金融股 12-36 个月复苏周期的早期阶段。",
+      "key_risks_zh": [
+        "BDC 和直接贷款投资组合中的信用质量恶化（由 Golub Capital 的较弱财务数据证实）可能蔓延至更广泛的金融行业情绪",
+        "Robinhood 和 AppTech Payments 高管离职备案后的领导层不稳定可能暗示更深层的运营或战略中断",
+        "宏观利率波动可能延长区域银行的净利息边际压缩，破坏 Provident Financial 等公司的质量论点"
       ]
     },
     {
