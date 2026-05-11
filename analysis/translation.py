@@ -10,7 +10,7 @@ Output only valid JSON with the same structure as input, all text values transla
 
 # Fields to translate per theme snapshot
 NARRATIVE_FIELDS = [
-    "one_line_summary", "conviction_basis", "stage_reasoning",
+    "name", "one_line_summary", "conviction_basis", "stage_reasoning",
     "bull_case", "bear_case", "current_drivers",
     "short_term_outlook", "mid_term_outlook", "long_term_outlook",
 ]

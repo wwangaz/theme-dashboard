@@ -169,7 +169,7 @@
       return `<a href="theme.html?id=${encodeURIComponent(theme.id)}"
           class="block bg-gray-900 border border-gray-800 rounded-xl p-4 hover:border-gray-600 hover:bg-gray-800 transition-all">
         <div class="flex items-start justify-between gap-2 mb-3">
-          <h3 class="font-semibold text-white leading-tight">${theme.name}</h3>
+          <h3 class="font-semibold text-white leading-tight">${lang === "zh" ? (theme.name_zh || theme.name) : theme.name}</h3>
           <div class="flex items-center gap-1.5 shrink-0">
             <span class="${dirColor} font-semibold">${arrow} ${dirLabel}</span>
             ${deltaChip(theme.conviction_delta)}
