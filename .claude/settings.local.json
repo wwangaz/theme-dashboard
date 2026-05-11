@@ -4,7 +4,16 @@
       "Bash(gh --version)",
       "Bash(git init *)",
       "Bash(git add *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(gh repo *)",
+      "Bash(ssh-add -l)",
+      "Read(//Users/wayne/.ssh/**)",
+      "Bash(ssh-add *)",
+      "Bash(git *)",
+      "Bash(gh secret *)",
+      "Bash(gh api *)",
+      "Bash(gh workflow *)",
+      "Bash(gh run *)"
     ]
   }
 }

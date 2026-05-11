@@ -1,5 +1,7 @@
+import hashlib
 from datetime import date, datetime, timezone
 import feedparser
+from sqlmodel import select
 from db.models import RawSignal
 from db.session import get_session
 
@@ -20,9 +22,14 @@ def _parse_date(entry) -> date:
     return date.today()
 
 
+def _dedup_key(url: str | None, headline: str) -> str:
+    raw = (url or headline).strip().lower()
+    return hashlib.md5(raw.encode()).hexdigest()
+
+
 def fetch_rss(lookback_days: int = 1) -> list[RawSignal]:
-    cutoff = date.today()
     signals: list[RawSignal] = []
+    seen: set[str] = set()
 
     for source_name, url in RSS_FEEDS:
         try:
@@ -31,15 +38,21 @@ def fetch_rss(lookback_days: int = 1) -> list[RawSignal]:
                 entry_date = _parse_date(entry)
                 if (date.today() - entry_date).days > lookback_days:
                     continue
+                headline = entry.get("title", "")[:500]
+                entry_url = entry.get("link")
+                key = _dedup_key(entry_url, headline)
+                if key in seen:
+                    continue
+                seen.add(key)
                 content = getattr(entry, "summary", "") or getattr(entry, "description", "")
                 signals.append(RawSignal(
                     source_type="news",
                     source_name=source_name,
                     ticker=None,
-                    headline=entry.get("title", "")[:500],
+                    headline=headline,
                     content=content[:2000],
                     signal_date=entry_date,
-                    url=entry.get("link"),
+                    url=entry_url,
                 ))
         except Exception as e:
             print(f"[rss] {source_name} failed: {e}")
@@ -47,10 +60,24 @@ def fetch_rss(lookback_days: int = 1) -> list[RawSignal]:
     return signals
 
 
-def ingest_rss():
-    signals = fetch_rss()
+def ingest_rss(today: date | None = None) -> int:
+    today = today or date.today()
     with get_session() as session:
-        for s in signals:
+        existing_urls = {
+            r.url for r in session.exec(
+                select(RawSignal).where(
+                    RawSignal.signal_date == today,
+                    RawSignal.source_type == "news",
+                )
+            )
+        }
+
+    signals = fetch_rss()
+    new_signals = [s for s in signals if s.url not in existing_urls]
+
+    with get_session() as session:
+        for s in new_signals:
             session.add(s)
         session.commit()
-    print(f"[rss] ingested {len(signals)} signals")
+    print(f"[rss] ingested {len(new_signals)} new signals ({len(signals) - len(new_signals)} deduped)")
+    return len(new_signals)
