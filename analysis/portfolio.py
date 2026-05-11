@@ -5,9 +5,8 @@ import yfinance as yf
 
 PORTFOLIO_PATH = Path(__file__).parent.parent / "docs" / "data" / "portfolio.json"
 SPY = "SPY"
-CONVICTION_ENTRY = 7
-CONVICTION_EXIT  = 5
-MAX_DAYS_HELD    = 30
+CONVICTION_ENTRY   = 7    # minimum to be eligible
+MAX_POSITIONS      = 8    # always hold top-N by conviction; bump weakest out if full
 MAX_TICKERS_PER_THEME = 5
 
 
@@ -49,12 +48,7 @@ def _position_return(position: dict, current_prices: dict) -> float | None:
     tickers = [t for t in position["tickers"] if t in entry and t in current_prices and entry[t]]
     if not tickers:
         return None
-    rets = []
-    for t in tickers:
-        r = (current_prices[t] - entry[t]) / entry[t]
-        if position["direction"] == "Bearish":
-            r = -r  # short: profit when price falls
-        rets.append(r)
+    rets = [(current_prices[t] - entry[t]) / entry[t] for t in tickers]
     return sum(rets) / len(rets)
 
 
@@ -68,64 +62,78 @@ def _spy_daily_return() -> float | None:
     return None
 
 
+def _close_position(p: dict, today: date, exit_reason: str, current_prices: dict):
+    exit_prices = {t: current_prices[t] for t in p["tickers"] if t in current_prices}
+    p.update(status="closed", exit_date=str(today),
+             exit_prices=exit_prices, exit_reason=exit_reason)
+    ret = _position_return(p, exit_prices)
+    p["realized_return"] = round(ret, 6) if ret is not None else None
+    sign = "+" if (p["realized_return"] or 0) >= 0 else ""
+    print(f"  CLOSE {p['theme_name']}  reason={exit_reason}  "
+          f"return={sign}{(p['realized_return'] or 0):.2%}")
+
+
 def update_portfolio(snapshots: list[dict], today: date):
     print("=== Phase 5: Portfolio ===")
     data = _load()
     positions: list[dict] = data["positions"]
     daily_returns: list[dict] = data["daily_returns"]
 
-    snap_by_id = {s["id"]: s for s in snapshots}
+    # Only Bullish themes with sufficient conviction are candidates
+    candidates = sorted(
+        [s for s in snapshots
+         if s["direction"] == "Bullish" and s["conviction_score"] >= CONVICTION_ENTRY],
+        key=lambda s: s["conviction_score"],
+        reverse=True,
+    )
+    candidate_ids = {s["id"] for s in candidates}
 
-    # ── 1. Collect all tickers needed for prices ──────────────────────────────
+    # ── 1. Fetch prices for all relevant tickers ──────────────────────────────
     all_tickers: set[str] = {SPY}
     for p in positions:
         if p["status"] == "open":
             all_tickers.update(p["tickers"])
-    # Also pre-fetch tickers for potential new positions
-    for s in snapshots:
-        if s["conviction_score"] >= CONVICTION_ENTRY and s["direction"] in ("Bullish", "Bearish"):
-            all_tickers.update(s.get("representative_tickers", [])[:MAX_TICKERS_PER_THEME])
+    for s in candidates:
+        all_tickers.update(s.get("representative_tickers", [])[:MAX_TICKERS_PER_THEME])
 
     current_prices = _fetch_closes(list(all_tickers))
 
-    # ── 2. Close positions that no longer qualify ─────────────────────────────
+    # ── 2. Close positions that are no longer in the candidate set ────────────
+    # A position exits when its theme drops out of the top-N eligible Bullish themes
     for p in positions:
         if p["status"] != "open":
             continue
-        snap = snap_by_id.get(p["theme_id"])
-        days_held = (today - date.fromisoformat(p["entry_date"])).days
+        if p["theme_id"] not in candidate_ids:
+            # Theme gone, conviction dropped, or direction changed
+            snap = next((s for s in snapshots if s["id"] == p["theme_id"]), None)
+            if snap is None:
+                reason = "theme_gone"
+            elif snap["conviction_score"] < CONVICTION_ENTRY:
+                reason = "conviction_drop"
+            else:
+                reason = "direction_changed"
+            _close_position(p, today, reason, current_prices)
 
-        exit_reason = None
-        if snap is None:
-            exit_reason = "theme_gone"
-        elif snap["conviction_score"] < CONVICTION_EXIT:
-            exit_reason = "conviction_drop"
-        elif snap["direction"] != p["direction"]:
-            exit_reason = "direction_reversal"
-        elif days_held >= MAX_DAYS_HELD:
-            exit_reason = "max_holding"
+    # ── 3. Rebalance: keep top MAX_POSITIONS, bump weakest if needed ──────────
+    open_positions = [p for p in positions if p["status"] == "open"]
+    open_ids = {p["theme_id"] for p in open_positions}
 
-        if exit_reason:
-            exit_prices = {t: current_prices[t] for t in p["tickers"] if t in current_prices}
-            p.update(status="closed", exit_date=str(today),
-                     exit_prices=exit_prices, exit_reason=exit_reason)
-            ret = _position_return(p, exit_prices)
-            p["realized_return"] = round(ret, 6) if ret is not None else None
-            sign = "+" if (p["realized_return"] or 0) >= 0 else ""
-            print(f"  CLOSE {p['theme_name']} ({p['direction']})  "
-                  f"reason={exit_reason}  "
-                  f"return={sign}{(p['realized_return'] or 0):.2%}")
-
-    # ── 3. Open new positions ─────────────────────────────────────────────────
-    open_ids = {p["theme_id"] for p in positions if p["status"] == "open"}
-
-    for snap in snapshots:
-        if snap["conviction_score"] < CONVICTION_ENTRY:
-            continue
-        if snap["direction"] not in ("Bullish", "Bearish"):
-            continue
+    for snap in candidates:
         if snap["id"] in open_ids:
-            continue
+            continue  # already held
+
+        open_positions = [p for p in positions if p["status"] == "open"]
+
+        if len(open_positions) < MAX_POSITIONS:
+            # Slot available — open directly
+            pass
+        else:
+            # Check if this candidate is stronger than the weakest held position
+            weakest = min(open_positions, key=lambda p: p["conviction_at_entry"])
+            if snap["conviction_score"] <= weakest["conviction_at_entry"]:
+                continue  # not strong enough to displace anyone
+            _close_position(weakest, today, "displaced_by_stronger", current_prices)
+            open_ids.discard(weakest["theme_id"])
 
         raw_tickers = snap.get("representative_tickers", [])[:MAX_TICKERS_PER_THEME]
         entry_prices = {t: current_prices[t] for t in raw_tickers if t in current_prices}
@@ -133,30 +141,30 @@ def update_portfolio(snapshots: list[dict], today: date):
             print(f"  SKIP  {snap['name']} — no price data for {raw_tickers}")
             continue
 
-        positions.append({
-            "theme_id":           snap["id"],
-            "theme_name":         snap["name"],
-            "direction":          snap["direction"],
-            "entry_date":         str(today),
-            "tickers":            list(entry_prices),
-            "entry_prices":       entry_prices,
+        new_pos = {
+            "theme_id":            snap["id"],
+            "theme_name":          snap["name"],
+            "direction":           "Bullish",
+            "entry_date":          str(today),
+            "tickers":             list(entry_prices),
+            "entry_prices":        entry_prices,
             "conviction_at_entry": snap["conviction_score"],
-            "status":             "open",
-            "exit_date":          None,
-            "exit_prices":        None,
-            "exit_reason":        None,
-            "realized_return":    None,
-        })
+            "status":              "open",
+            "exit_date":           None,
+            "exit_prices":         None,
+            "exit_reason":         None,
+            "realized_return":     None,
+        }
+        positions.append(new_pos)
         open_ids.add(snap["id"])
-        print(f"  OPEN  {snap['name']} ({snap['direction']})  "
-              f"conv={snap['conviction_score']}  tickers={list(entry_prices)}")
+        print(f"  OPEN  {snap['name']}  conv={snap['conviction_score']}  "
+              f"tickers={list(entry_prices)}")
 
     # ── 4. Daily return record ────────────────────────────────────────────────
     today_str = str(today)
-    already_recorded = any(r["date"] == today_str for r in daily_returns)
-
     open_positions = [p for p in positions if p["status"] == "open"]
-    if open_positions and not already_recorded:
+
+    if open_positions and not any(r["date"] == today_str for r in daily_returns):
         pos_returns = [r for p in open_positions
                        if (r := _position_return(p, current_prices)) is not None]
         spy_ret = _spy_daily_return()
