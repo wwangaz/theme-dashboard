@@ -16,17 +16,40 @@
       <h1 class="text-xl font-semibold tracking-tight">决策日志</h1>
     </div>
     <div class="flex items-center gap-3">
+      <span id="sync-status" class="text-xs text-gray-600"></span>
+      <button onclick="showTokenSetup()" id="token-btn" class="text-xs px-3 py-1 rounded-full border border-gray-700 text-gray-500 hover:text-white transition-colors">
+        ⚙ GitHub 同步
+      </button>
       <button onclick="showForm()" class="text-xs px-3 py-1.5 rounded-full bg-green-700 hover:bg-green-600 text-white transition-colors font-medium">
         + 新建记录
-      </button>
-      <button onclick="exportJSON()" class="text-xs px-3 py-1 rounded-full border border-gray-600 text-gray-400 hover:text-white transition-colors">
-        导出
       </button>
     </div>
   </header>
 
-  <!-- Entry form (hidden by default) -->
-  <div id="form-overlay" class="hidden fixed inset-0 bg-black/60 z-40 flex items-start justify-center pt-16 px-4 pb-8 overflow-y-auto">
+  <!-- Token setup dialog -->
+  <div id="token-overlay" class="hidden fixed inset-0 bg-black/60 z-50 flex items-center justify-center px-4">
+    <div class="bg-gray-900 border border-gray-700 rounded-2xl w-full max-w-md p-6 space-y-4 shadow-2xl">
+      <h2 class="font-semibold">GitHub 同步设置</h2>
+      <p class="text-sm text-gray-400 leading-relaxed">
+        日志保存到 GitHub 仓库，需要一个有 <code class="bg-gray-800 px-1 rounded text-xs">Contents: Read & Write</code> 权限的 Personal Access Token。
+      </p>
+      <ol class="text-xs text-gray-500 space-y-1 list-decimal list-inside">
+        <li>前往 GitHub → Settings → Developer settings → Fine-grained tokens</li>
+        <li>选择仓库 <strong class="text-gray-300">wwangaz/theme-dashboard</strong></li>
+        <li>Permissions → Repository permissions → Contents → Read and write</li>
+        <li>生成后粘贴到下方</li>
+      </ol>
+      <input id="token-input" type="password" placeholder="github_pat_xxxx..."
+        class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm text-gray-100 placeholder-gray-600 focus:outline-none focus:border-gray-500 font-mono" />
+      <div class="flex justify-end gap-3">
+        <button onclick="hideTokenSetup()" class="text-sm px-4 py-2 rounded-lg border border-gray-700 text-gray-400 hover:text-white transition-colors">取消</button>
+        <button onclick="saveToken()" class="text-sm px-5 py-2 rounded-lg bg-green-700 hover:bg-green-600 text-white font-medium transition-colors">保存</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Entry form -->
+  <div id="form-overlay" class="hidden fixed inset-0 bg-black/60 z-40 flex items-start justify-center pt-12 px-4 pb-8 overflow-y-auto">
     <div class="bg-gray-900 border border-gray-700 rounded-2xl w-full max-w-2xl p-6 space-y-4 shadow-2xl">
       <div class="flex items-center justify-between">
         <h2 id="form-title" class="font-semibold text-base">新建记录</h2>
@@ -36,11 +59,11 @@
       <div class="grid grid-cols-2 gap-3">
         <div>
           <label class="text-xs text-gray-400 mb-1 block">日期</label>
-          <input id="f-date" type="date" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm text-gray-100 focus:outline-none focus:border-gray-500" />
+          <input id="f-date" type="date" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-gray-500" />
         </div>
         <div>
           <label class="text-xs text-gray-400 mb-1 block">类型</label>
-          <select id="f-type" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm text-gray-100 focus:outline-none focus:border-gray-500">
+          <select id="f-type" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-gray-500">
             <option value="framework">框架 / 认知</option>
             <option value="theme">主题研究</option>
             <option value="stock">个股决策</option>
@@ -51,32 +74,32 @@
 
       <div>
         <label class="text-xs text-gray-400 mb-1 block">标题</label>
-        <input id="f-title" type="text" placeholder="一句话概括这次决策" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm text-gray-100 placeholder-gray-600 focus:outline-none focus:border-gray-500" />
+        <input id="f-title" type="text" placeholder="一句话概括这次决策"
+          class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm placeholder-gray-600 focus:outline-none focus:border-gray-500" />
       </div>
-
       <div>
         <label class="text-xs text-gray-400 mb-1 block">内容 / Thesis</label>
-        <textarea id="f-content" rows="5" placeholder="为什么做这个决定？核心逻辑是什么？" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm text-gray-100 placeholder-gray-600 focus:outline-none focus:border-gray-500 resize-y"></textarea>
+        <textarea id="f-content" rows="5" placeholder="为什么做这个决定？核心逻辑是什么？"
+          class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm placeholder-gray-600 focus:outline-none focus:border-gray-500 resize-y"></textarea>
       </div>
-
       <div>
         <label class="text-xs text-gray-400 mb-1 block">关键假设 <span class="text-gray-600">（这个判断成立，需要哪些事是真的）</span></label>
-        <textarea id="f-assumptions" rows="3" placeholder="假设 1：...&#10;假设 2：..." class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm text-gray-100 placeholder-gray-600 focus:outline-none focus:border-gray-500 resize-y"></textarea>
+        <textarea id="f-assumptions" rows="3" placeholder="假设 1：&#10;假设 2：&#10;假设 3：…"
+          class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm placeholder-gray-600 focus:outline-none focus:border-gray-500 resize-y"></textarea>
       </div>
-
       <div>
         <label class="text-xs text-gray-400 mb-1 block">会让我改变判断的情况 <span class="text-gray-600">（什么信号说明我错了）</span></label>
-        <textarea id="f-exit" rows="2" placeholder="如果发生 X，说明假设 N 被证伪，我会重新评估..." class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm text-gray-100 placeholder-gray-600 focus:outline-none focus:border-gray-500 resize-y"></textarea>
+        <textarea id="f-exit" rows="2" placeholder="如果发生 X，说明假设 N 被证伪，我会重新评估…"
+          class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm placeholder-gray-600 focus:outline-none focus:border-gray-500 resize-y"></textarea>
       </div>
-
       <div>
         <label class="text-xs text-gray-400 mb-1 block">关联标的 / 主题 <span class="text-gray-600">（可选）</span></label>
-        <input id="f-tags" type="text" placeholder="例：IONQ, 量子计算主题" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm text-gray-100 placeholder-gray-600 focus:outline-none focus:border-gray-500" />
+        <input id="f-tags" type="text" placeholder="例：IONQ, 量子计算主题"
+          class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm placeholder-gray-600 focus:outline-none focus:border-gray-500" />
       </div>
-
       <div class="flex justify-end gap-3 pt-2">
         <button onclick="hideForm()" class="text-sm px-4 py-2 rounded-lg border border-gray-700 text-gray-400 hover:text-white transition-colors">取消</button>
-        <button onclick="saveEntry()" class="text-sm px-5 py-2 rounded-lg bg-green-700 hover:bg-green-600 text-white font-medium transition-colors">保存</button>
+        <button onclick="saveEntry()" id="save-btn" class="text-sm px-5 py-2 rounded-lg bg-green-700 hover:bg-green-600 text-white font-medium transition-colors">保存到 GitHub</button>
       </div>
     </div>
   </div>
@@ -86,28 +109,33 @@
     <!-- Filter bar -->
     <div class="flex items-center gap-3 flex-wrap">
       <span class="text-xs text-gray-500">筛选：</span>
-      <button onclick="filterType('')"     id="filter-all"       class="filter-btn active text-xs px-3 py-1 rounded-full border">全部</button>
-      <button onclick="filterType('framework')" id="filter-framework" class="filter-btn text-xs px-3 py-1 rounded-full border">框架</button>
-      <button onclick="filterType('theme')"     id="filter-theme"     class="filter-btn text-xs px-3 py-1 rounded-full border">主题研究</button>
-      <button onclick="filterType('stock')"     id="filter-stock"     class="filter-btn text-xs px-3 py-1 rounded-full border">个股决策</button>
-      <button onclick="filterType('review')"    id="filter-review"    class="filter-btn text-xs px-3 py-1 rounded-full border">阶段回顾</button>
+      <button onclick="filterType('')"          id="filter-all"       class="filter-btn active">全部</button>
+      <button onclick="filterType('framework')" id="filter-framework" class="filter-btn">框架</button>
+      <button onclick="filterType('theme')"     id="filter-theme"     class="filter-btn">主题研究</button>
+      <button onclick="filterType('stock')"     id="filter-stock"     class="filter-btn">个股决策</button>
+      <button onclick="filterType('review')"    id="filter-review"    class="filter-btn">阶段回顾</button>
       <span id="entry-count" class="text-xs text-gray-600 ml-auto"></span>
     </div>
 
-    <!-- Entries list -->
+    <div id="loading" class="text-center py-16 text-gray-600 text-sm">加载中…</div>
     <div id="entries-list" class="space-y-4"></div>
-
-    <p id="empty-state" class="hidden text-center py-16 text-gray-600">暂无记录，点击「新建记录」开始。</p>
+    <p id="empty-state" class="hidden text-center py-16 text-gray-600">暂无记录</p>
 
   </main>
 
   <style>
-    .filter-btn { border-color: #374151; color: #6b7280; transition: all 0.15s; }
+    .filter-btn { font-size: 0.75rem; padding: 0.25rem 0.75rem; border-radius: 9999px; border: 1px solid #374151; color: #6b7280; transition: all 0.15s; }
     .filter-btn:hover { border-color: #6b7280; color: #d1d5db; }
     .filter-btn.active { border-color: #34d399; color: #34d399; background: rgba(52,211,153,0.08); }
   </style>
 
   <script>
+    // ── Config ────────────────────────────────────────────────────────────────
+    const OWNER = "wwangaz";
+    const REPO  = "theme-dashboard";
+    const FILE  = "docs/data/journal.json";
+    const API   = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${FILE}`;
+
     const TYPE_META = {
       framework: { label: "框架 / 认知", color: "bg-purple-900 text-purple-300" },
       theme:     { label: "主题研究",    color: "bg-blue-900 text-blue-300" },
@@ -115,72 +143,112 @@
       review:    { label: "阶段回顾",    color: "bg-yellow-900 text-yellow-300" },
     };
 
-    const STORAGE_KEY = "investment_journal_v1";
+    // ── Token ─────────────────────────────────────────────────────────────────
+    const getToken = () => localStorage.getItem("gh_pat_journal") || "";
 
-    // ── Entry #0: framework establishment ────────────────────────────────────
-    const ENTRY_ZERO = {
-      id: 0,
-      date: "2026-05-10",
-      type: "framework",
-      title: "个人投资框架 v1.0",
-      content: `通过一段时间的思考，建立以下个人投资框架：
-
-主体仓位（70-80%）
-→ 低费率指数基金，长期持有，不操作
-→ 稳定获取市场增长红利，跑赢大多数主动管理产品
-
-学习仓位（20-30%）
-→ Mini 仓位，在自己有认知优势的领域集中押注
-→ 目标不是跑赢机构，而是建立判断力和反馈机制
-
-Dashboard 的定位：漏斗的第一层
-→ 发现值得研究的 Early Discovery 主题
-→ 后续研究要刻意绕开二手金融分析，找原始信息
-→ 只在自己真正懂的领域出手，其他方向只看不动
-
-个人投资者真实的结构性优势：
-1. 时间套利：无赎回压力，可以持有穿越机构被迫卖出的低谷
-2. 行为纪律：不追涨杀跌，避免大多数人犯的错误
-3. 领域认知：在自己的行业里，判断比泛化分析师更准`,
-      assumptions: `1. 在我有积累的领域，我的一手判断比通用分析师准确
-2. 持有 1-3 年的耐心是可以做到的，不会被短期波动影响
-3. Mini 仓位带来的真实心理压力，能让我识别自己的行为模式
-4. 6-12 个月的实践 + 日志回顾，能发现自己在哪类判断上准/不准`,
-      exit: `1. 如果日志回顾发现，在"熟悉领域"的判断也接近随机（成立率 < 55%），重新评估主动投资的比例
-2. 如果发现自己持续违反预设的离场条件（情绪覆盖规则），减少学习仓位
-3. 如果指数基金表现长期远超学习仓位，考虑将学习仓位并入指数`,
-      tags: "投资框架, 决策日志, 工具体系",
-      created_at: new Date().toISOString(),
-    };
-
-    // ── Storage ───────────────────────────────────────────────────────────────
-    function loadEntries() {
-      try {
-        const raw = localStorage.getItem(STORAGE_KEY);
-        if (raw) return JSON.parse(raw);
-      } catch (e) {}
-      // First time: seed with entry #0
-      const initial = { entries: [ENTRY_ZERO], next_id: 1 };
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(initial));
-      return initial;
+    function showTokenSetup() {
+      document.getElementById("token-input").value = getToken();
+      document.getElementById("token-overlay").classList.remove("hidden");
+    }
+    function hideTokenSetup() {
+      document.getElementById("token-overlay").classList.add("hidden");
+    }
+    function saveToken() {
+      const t = document.getElementById("token-input").value.trim();
+      if (t) localStorage.setItem("gh_pat_journal", t);
+      else   localStorage.removeItem("gh_pat_journal");
+      hideTokenSetup();
+      updateTokenStatus();
+      loadAndRender();
+    }
+    function updateTokenStatus() {
+      const btn = document.getElementById("token-btn");
+      const status = document.getElementById("sync-status");
+      if (getToken()) {
+        btn.classList.replace("text-gray-500", "text-green-400");
+        btn.classList.replace("border-gray-700", "border-green-800");
+        status.textContent = "已连接 GitHub";
+        status.className = "text-xs text-green-600";
+      } else {
+        btn.classList.replace("text-green-400", "text-gray-500");
+        status.textContent = "未设置 Token，无法保存";
+        status.className = "text-xs text-yellow-700";
+      }
     }
 
-    function saveEntries(data) {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    // ── GitHub API ────────────────────────────────────────────────────────────
+    let _fileSha = null;
+
+    async function ghFetch(method, body = null) {
+      const token = getToken();
+      if (!token) throw new Error("no token");
+      const opts = {
+        method,
+        headers: {
+          Authorization: `Bearer ${token}`,
+          Accept: "application/vnd.github+json",
+          "X-GitHub-Api-Version": "2022-11-28",
+        },
+      };
+      if (body) {
+        opts.headers["Content-Type"] = "application/json";
+        opts.body = JSON.stringify(body);
+      }
+      const r = await fetch(API, opts);
+      if (!r.ok) throw new Error(`GitHub API ${r.status}`);
+      return r.json();
     }
 
-    // ── Render ────────────────────────────────────────────────────────────────
+    async function loadFromGitHub() {
+      const resp = await ghFetch("GET");
+      _fileSha = resp.sha;
+      // content is base64-encoded, may have line breaks
+      const json = decodeURIComponent(
+        atob(resp.content.replace(/\n/g, ""))
+          .split("").map(c => "%" + c.charCodeAt(0).toString(16).padStart(2, "0")).join("")
+      );
+      return JSON.parse(json);
+    }
+
+    async function saveToGitHub(data, message) {
+      const content = btoa(unescape(encodeURIComponent(JSON.stringify(data, null, 2))));
+      const body = { message, content };
+      if (_fileSha) body.sha = _fileSha;
+      const resp = await ghFetch("PUT", body);
+      _fileSha = resp.content.sha;
+    }
+
+    // ── State ─────────────────────────────────────────────────────────────────
+    let _data = null;
     let _activeFilter = "";
     let _editingId = null;
 
+    async function loadAndRender() {
+      document.getElementById("loading").classList.remove("hidden");
+      document.getElementById("entries-list").innerHTML = "";
+      try {
+        _data = await loadFromGitHub();
+      } catch (e) {
+        // fallback: load from public URL (no auth needed for reading)
+        try {
+          const r = await fetch(`data/journal.json?_=${Date.now()}`);
+          if (r.ok) _data = await r.json();
+        } catch (_) {}
+      }
+      document.getElementById("loading").classList.add("hidden");
+      if (_data) render();
+    }
+
+    // ── Render ────────────────────────────────────────────────────────────────
     function render() {
-      const data = loadEntries();
-      let entries = [...data.entries].sort((a, b) => b.id - a.id);
+      if (!_data) return;
+      let entries = [..._data.entries].sort((a, b) => b.id - a.id);
       if (_activeFilter) entries = entries.filter(e => e.type === _activeFilter);
 
-      const list = document.getElementById("entries-list");
+      document.getElementById("entry-count").textContent = `共 ${_data.entries.length} 条`;
+
+      const list  = document.getElementById("entries-list");
       const empty = document.getElementById("empty-state");
-      document.getElementById("entry-count").textContent = `共 ${data.entries.length} 条`;
 
       if (!entries.length) {
         list.innerHTML = "";
@@ -192,10 +260,10 @@ Dashboard 的定位：漏斗的第一层
       list.innerHTML = entries.map(e => {
         const meta = TYPE_META[e.type] || { label: e.type, color: "bg-gray-800 text-gray-400" };
         const sections = [
-          { label: "内容 / Thesis", value: e.content },
-          { label: "关键假设", value: e.assumptions },
-          { label: "改变判断的条件", value: e.exit },
-        ].filter(s => s.value && s.value.trim());
+          { label: "内容 / Thesis",     value: e.content },
+          { label: "关键假设",          value: e.assumptions },
+          { label: "改变判断的条件",    value: e.exit },
+        ].filter(s => s.value?.trim());
 
         return `
         <article class="bg-gray-900 border border-gray-800 rounded-xl p-5 space-y-3 group">
@@ -204,22 +272,19 @@ Dashboard 的定位：漏斗的第一层
               <span class="text-gray-600 text-xs font-mono">#${e.id}</span>
               <span class="text-xs px-2 py-0.5 rounded-full ${meta.color}">${meta.label}</span>
               <span class="text-gray-500 text-xs">${e.date}</span>
-              ${e.tags ? `<span class="text-gray-600 text-xs">${e.tags}</span>` : ""}
+              ${e.tags ? `<span class="text-gray-600 text-xs border border-gray-800 px-2 py-0.5 rounded-full">${e.tags}</span>` : ""}
             </div>
-            <div class="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+            <div class="flex gap-3 opacity-0 group-hover:opacity-100 transition-opacity shrink-0">
               <button onclick="editEntry(${e.id})" class="text-xs text-gray-500 hover:text-gray-200">编辑</button>
               <button onclick="deleteEntry(${e.id})" class="text-xs text-gray-600 hover:text-red-400">删除</button>
             </div>
           </div>
-
-          <h3 class="font-semibold text-base">${e.title}</h3>
-
+          <h3 class="font-semibold">${e.title}</h3>
           ${sections.map(s => `
             <div>
               <p class="text-xs text-gray-500 mb-1">${s.label}</p>
               <p class="text-sm text-gray-300 leading-relaxed whitespace-pre-line">${s.value}</p>
-            </div>
-          `).join("")}
+            </div>`).join("")}
         </article>`;
       }).join("");
     }
@@ -227,7 +292,7 @@ Dashboard 的定位：漏斗的第一层
     // ── Filter ────────────────────────────────────────────────────────────────
     function filterType(type) {
       _activeFilter = type;
-      document.querySelectorAll(".filter-btn").forEach(btn => btn.classList.remove("active"));
+      document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
       document.getElementById(`filter-${type || "all"}`).classList.add("active");
       render();
     }
@@ -236,28 +301,31 @@ Dashboard 的定位：漏斗的第一层
     function showForm(entry = null) {
       _editingId = entry ? entry.id : null;
       document.getElementById("form-title").textContent = entry ? "编辑记录" : "新建记录";
-      document.getElementById("f-date").value     = entry ? entry.date        : new Date().toISOString().slice(0, 10);
-      document.getElementById("f-type").value     = entry ? entry.type        : "framework";
-      document.getElementById("f-title").value    = entry ? entry.title       : "";
-      document.getElementById("f-content").value  = entry ? entry.content     : "";
-      document.getElementById("f-assumptions").value = entry ? entry.assumptions : "";
-      document.getElementById("f-exit").value     = entry ? entry.exit        : "";
-      document.getElementById("f-tags").value     = entry ? entry.tags        : "";
+      document.getElementById("f-date").value        = entry?.date        ?? new Date().toISOString().slice(0, 10);
+      document.getElementById("f-type").value        = entry?.type        ?? "framework";
+      document.getElementById("f-title").value       = entry?.title       ?? "";
+      document.getElementById("f-content").value     = entry?.content     ?? "";
+      document.getElementById("f-assumptions").value = entry?.assumptions ?? "";
+      document.getElementById("f-exit").value        = entry?.exit        ?? "";
+      document.getElementById("f-tags").value        = entry?.tags        ?? "";
       document.getElementById("form-overlay").classList.remove("hidden");
     }
-
     function hideForm() {
       document.getElementById("form-overlay").classList.add("hidden");
       _editingId = null;
     }
 
-    function saveEntry() {
+    async function saveEntry() {
       const title = document.getElementById("f-title").value.trim();
       if (!title) { alert("请填写标题"); return; }
+      if (!getToken()) { showTokenSetup(); return; }
 
-      const data = loadEntries();
+      const btn = document.getElementById("save-btn");
+      btn.textContent = "保存中…";
+      btn.disabled = true;
+
       const entry = {
-        id:          _editingId !== null ? _editingId : data.next_id,
+        id:          _editingId !== null ? _editingId : (_data.next_id ?? _data.entries.length),
         date:        document.getElementById("f-date").value,
         type:        document.getElementById("f-type").value,
         title,
@@ -266,53 +334,60 @@ Dashboard 的定位：漏斗的第一层
         exit:        document.getElementById("f-exit").value.trim(),
         tags:        document.getElementById("f-tags").value.trim(),
         created_at:  _editingId !== null
-                       ? (data.entries.find(e => e.id === _editingId)?.created_at || new Date().toISOString())
+                       ? (_data.entries.find(e => e.id === _editingId)?.created_at ?? new Date().toISOString())
                        : new Date().toISOString(),
       };
 
       if (_editingId !== null) {
-        const idx = data.entries.findIndex(e => e.id === _editingId);
-        if (idx >= 0) data.entries[idx] = entry;
+        const idx = _data.entries.findIndex(e => e.id === _editingId);
+        if (idx >= 0) _data.entries[idx] = entry;
       } else {
-        data.entries.push(entry);
-        data.next_id = (data.next_id || 1) + 1;
+        _data.entries.push(entry);
+        _data.next_id = entry.id + 1;
       }
 
-      saveEntries(data);
-      hideForm();
-      render();
+      try {
+        const verb = _editingId !== null ? "update" : "add";
+        await saveToGitHub(_data, `journal: ${verb} entry #${entry.id} — ${entry.title}`);
+        hideForm();
+        render();
+      } catch (e) {
+        alert(`保存失败：${e.message}\n请检查 Token 权限`);
+      } finally {
+        btn.textContent = "保存到 GitHub";
+        btn.disabled = false;
+      }
     }
 
     function editEntry(id) {
-      const data = loadEntries();
-      const entry = data.entries.find(e => e.id === id);
+      const entry = _data?.entries.find(e => e.id === id);
       if (entry) showForm(entry);
     }
 
-    function deleteEntry(id) {
-      if (!confirm("确认删除这条记录？")) return;
-      const data = loadEntries();
-      data.entries = data.entries.filter(e => e.id !== id);
-      saveEntries(data);
-      render();
+    async function deleteEntry(id) {
+      if (!confirm("确认删除？")) return;
+      if (!getToken()) { showTokenSetup(); return; }
+      _data.entries = _data.entries.filter(e => e.id !== id);
+      try {
+        await saveToGitHub(_data, `journal: delete entry #${id}`);
+        render();
+      } catch (e) {
+        alert(`删除失败：${e.message}`);
+        _data = await loadFromGitHub(); // rollback
+        render();
+      }
     }
 
-    // ── Export ────────────────────────────────────────────────────────────────
-    function exportJSON() {
-      const data = loadEntries();
-      const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
-      const a = document.createElement("a");
-      a.href = URL.createObjectURL(blob);
-      a.download = `investment_journal_${new Date().toISOString().slice(0,10)}.json`;
-      a.click();
-    }
-
-    // Close overlay on background click
-    document.getElementById("form-overlay").addEventListener("click", e => {
-      if (e.target === document.getElementById("form-overlay")) hideForm();
+    // Close overlays on background click
+    ["form-overlay", "token-overlay"].forEach(id => {
+      document.getElementById(id).addEventListener("click", e => {
+        if (e.target.id === id) { hideForm(); hideTokenSetup(); }
+      });
     });
 
-    render();
+    // ── Init ──────────────────────────────────────────────────────────────────
+    updateTokenStatus();
+    loadAndRender();
   </script>
 </body>
 </html>
