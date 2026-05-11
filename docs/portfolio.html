@@ -27,12 +27,25 @@
 
   <main class="max-w-5xl mx-auto px-4 py-8 space-y-8">
 
+    <!-- Tab toggle -->
+    <div class="flex gap-2 border-b border-gray-800 pb-0">
+      <button id="tab-live" onclick="switchTab('live')"
+        class="tab-btn px-4 py-2 text-sm font-medium border-b-2 border-green-400 text-green-400 -mb-px">
+        <span data-i18n="tab_live">实盘追踪</span>
+      </button>
+      <button id="tab-backtest" onclick="switchTab('backtest')"
+        class="tab-btn px-4 py-2 text-sm font-medium border-b-2 border-transparent text-gray-400 hover:text-gray-200 -mb-px transition-colors">
+        <span data-i18n="tab_backtest">历史回测</span>
+      </button>
+    </div>
+
     <!-- Summary cards -->
     <div id="summary-cards" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3"></div>
 
-    <!-- Cumulative return chart -->
+    <!-- Cumulative NAV chart -->
     <div class="bg-gray-900 border border-gray-800 rounded-xl p-5">
-      <h2 class="text-sm font-semibold text-gray-300 mb-4" data-i18n="chart_title">累计收益率 vs SPY</h2>
+      <h2 class="text-sm font-semibold text-gray-300 mb-1" data-i18n="chart_title">净值曲线 vs SPY</h2>
+      <p id="chart-period" class="text-xs text-gray-600 mb-4"></p>
       <div class="relative h-56">
         <canvas id="return-chart"></canvas>
       </div>
@@ -94,13 +107,14 @@
       zh: {
         title: "纸上交易组合",
         updated: (d) => `更新于 ${d}`,
-        chart_title: "累计收益率 vs SPY",
-        open_title: "持仓中", closed_title: "已平仓",
+        tab_live: "实盘追踪", tab_backtest: "历史回测",
+        chart_title: "净值曲线 vs SPY",
+        open_title: "持仓中", closed_title: "已平仓 / 历史交易",
         col_theme: "主题", col_dir: "方向", col_tickers: "标的",
         col_conv: "确信度", col_entry: "开仓日", col_days: "持有天数",
         col_exit: "平仓日", col_reason: "平仓原因", col_return: "盈亏",
         no_open: "暂无持仓", no_closed: "暂无已平仓记录",
-        disclaimer: "仅供研究参考，非投资建议。卖空收益率为模拟计算，不含借券成本。",
+        disclaimer: "仅供研究参考，非投资建议。纸上交易，不含交易成本。",
         bullish: "看多", bearish: "看空", neutral: "中性",
         exit_reason: {
           theme_gone: "主题消失", conviction_drop: "确信度下降",
@@ -111,18 +125,20 @@
           open: "持仓数", closed: "已平仓", win_rate: "胜率", tracking: "追踪天数",
         },
         no_data: "尚无数据，等待 pipeline 运行",
-        chart_portfolio: "组合", chart_spy: "SPY",
+        no_backtest: "回测数据不存在，请运行：python backtest.py",
+        chart_portfolio: "组合净值", chart_spy: "SPY 净值",
       },
       en: {
         title: "Paper Portfolio",
         updated: (d) => `Updated ${d}`,
-        chart_title: "Cumulative Return vs SPY",
-        open_title: "Open Positions", closed_title: "Closed Positions",
+        tab_live: "Live Tracking", tab_backtest: "Backtest",
+        chart_title: "NAV vs SPY",
+        open_title: "Open Positions", closed_title: "Closed / Trade History",
         col_theme: "Theme", col_dir: "Direction", col_tickers: "Tickers",
         col_conv: "Conv.", col_entry: "Entry", col_days: "Days",
         col_exit: "Exit", col_reason: "Exit Reason", col_return: "P&L",
         no_open: "No open positions", no_closed: "No closed positions yet",
-        disclaimer: "For research only, not investment advice. Short P&L is simulated; no borrow cost included.",
+        disclaimer: "For research only, not investment advice. Paper trading; no transaction costs included.",
         bullish: "Bullish", bearish: "Bearish", neutral: "Neutral",
         exit_reason: {
           theme_gone: "Theme gone", conviction_drop: "Conviction drop",
@@ -133,7 +149,8 @@
           open: "Open", closed: "Closed", win_rate: "Win Rate", tracking: "Tracking Days",
         },
         no_data: "No data yet — waiting for pipeline run",
-        chart_portfolio: "Portfolio", chart_spy: "SPY",
+        no_backtest: "No backtest data. Run: python backtest.py",
+        chart_portfolio: "Portfolio NAV", chart_spy: "SPY NAV",
       },
     };
 
@@ -172,31 +189,32 @@
     // ── Chart ─────────────────────────────────────────────────────────────────
     let _chart = null;
 
-    function renderChart(dailyReturns) {
+    // Accepts daily_nav [{date, portfolio_nav, spy_nav}] (backtest)
+    // or daily_returns [{date, portfolio_return, spy_return}] (live, converted to NAV)
+    function renderChart(rows, initialNav = 100) {
       const ctx = document.getElementById("return-chart").getContext("2d");
       if (_chart) { _chart.destroy(); _chart = null; }
+      if (!rows.length) return;
 
-      if (!dailyReturns.length) return;
+      const labels = [], portData = [], spyData = [];
 
-      // Build cumulative return series
-      const labels = [];
-      const portData = [];
-      const spyData  = [];
-      let portCum = 1, spyCum = 1;
-
-      // Baseline point (day 0)
-      const firstDate = new Date(dailyReturns[0].date);
-      firstDate.setDate(firstDate.getDate() - 1);
-      labels.push(firstDate.toLocaleDateString("en-CA").slice(5)); // MM-DD
-      portData.push(0);
-      spyData.push(0);
-
-      for (const r of dailyReturns) {
-        portCum *= (1 + r.portfolio_return);
-        spyCum  *= (1 + r.spy_return);
-        labels.push(new Date(r.date).toLocaleDateString("en-CA").slice(5));
-        portData.push(+((portCum - 1) * 100).toFixed(3));
-        spyData.push( +((spyCum  - 1) * 100).toFixed(3));
+      if ("portfolio_nav" in rows[0]) {
+        // Backtest format: absolute NAV values
+        for (const r of rows) {
+          labels.push(new Date(r.date).toLocaleDateString("en-CA").slice(5));
+          portData.push(+r.portfolio_nav.toFixed(3));
+          spyData.push(+r.spy_nav.toFixed(3));
+        }
+      } else {
+        // Live format: compound daily returns into NAV
+        let pNav = initialNav, sNav = initialNav;
+        for (const r of rows) {
+          pNav *= 1 + r.portfolio_return;
+          sNav *= 1 + r.spy_return;
+          labels.push(new Date(r.date).toLocaleDateString("en-CA").slice(5));
+          portData.push(+pNav.toFixed(3));
+          spyData.push(+sNav.toFixed(3));
+        }
       }
 
       _chart = new Chart(ctx, {
@@ -208,7 +226,7 @@
               label: t().chart_portfolio,
               data: portData,
               borderColor: "#34d399",
-              backgroundColor: "rgba(52,211,153,0.08)",
+              backgroundColor: "rgba(52,211,153,0.06)",
               borderWidth: 2,
               pointRadius: 0,
               tension: 0.3,
@@ -239,22 +257,13 @@
               titleColor: "#d1d5db",
               bodyColor: "#d1d5db",
               callbacks: {
-                label: (ctx) => ` ${ctx.dataset.label}: ${ctx.parsed.y >= 0 ? "+" : ""}${ctx.parsed.y.toFixed(2)}%`,
+                label: (ctx) => ` ${ctx.dataset.label}: ${ctx.parsed.y.toFixed(2)}`,
               },
             },
           },
           scales: {
-            x: {
-              ticks: { color: "#6b7280", font: { size: 10 }, maxTicksLimit: 8 },
-              grid: { color: "#1f2937" },
-            },
-            y: {
-              ticks: {
-                color: "#6b7280", font: { size: 10 },
-                callback: (v) => `${v >= 0 ? "+" : ""}${v.toFixed(1)}%`,
-              },
-              grid: { color: "#1f2937" },
-            },
+            x: { ticks: { color: "#6b7280", font: { size: 10 }, maxTicksLimit: 10 }, grid: { color: "#1f2937" } },
+            y: { ticks: { color: "#6b7280", font: { size: 10 }, callback: (v) => v.toFixed(1) }, grid: { color: "#1f2937" } },
           },
         },
       });
@@ -307,8 +316,10 @@
     }
 
     function renderClosedTable(positions) {
-      const closed = positions.filter(p => p.status === "closed")
-                              .sort((a, b) => b.exit_date.localeCompare(a.exit_date));
+      // Accept both live positions (have .status) and backtest trades (no .status)
+      const closed = positions
+        .filter(p => !p.status || p.status === "closed")
+        .sort((a, b) => (b.exit_date || "").localeCompare(a.exit_date || ""));
       const tbody = document.getElementById("closed-tbody");
       const empty = document.getElementById("closed-empty");
       if (!closed.length) {
@@ -335,30 +346,64 @@
       }).join("");
     }
 
+    // ── Tab switching ─────────────────────────────────────────────────────────
+    let _activeTab = "live";
+
+    function switchTab(tab) {
+      _activeTab = tab;
+      ["live", "backtest"].forEach(id => {
+        const btn = document.getElementById(`tab-${id}`);
+        const active = id === tab;
+        btn.className = `tab-btn px-4 py-2 text-sm font-medium border-b-2 -mb-px transition-colors ${
+          active ? "border-green-400 text-green-400" : "border-transparent text-gray-400 hover:text-gray-200"
+        }`;
+      });
+      window._renderAll?.();
+    }
+
     // ── Init ──────────────────────────────────────────────────────────────────
     window._renderAll = function() {
-      if (!window._portfolioData) return;
       applyLang();
-      const d = window._portfolioData;
-      if (d.updated_at) {
-        document.getElementById("last-updated").textContent = t().updated(d.updated_at);
+      const d = _activeTab === "backtest" ? window._backtestData : window._portfolioData;
+      if (!d) {
+        document.getElementById("summary-cards").innerHTML =
+          `<p class="col-span-6 text-center text-gray-500 py-8">${
+            _activeTab === "backtest" ? t().no_backtest : t().no_data
+          }</p>`;
+        return;
       }
+
+      const updated = d.updated_at || d.generated_at || "";
+      if (updated) document.getElementById("last-updated").textContent = t().updated(updated);
+
       renderSummary(d.summary || {});
-      renderChart(d.daily_returns || []);
-      renderOpenTable(d.positions || []);
-      renderClosedTable(d.positions || []);
+
+      if (_activeTab === "backtest") {
+        const p = d.period || {};
+        document.getElementById("chart-period").textContent =
+          p.start && p.end ? `${p.start} → ${p.end}  (${d.summary?.tracking_days ?? 0} days)` : "";
+        renderChart(d.daily_nav || [], d.initial_nav || 100);
+        // Hide open-positions section; show trade history
+        document.getElementById("open-tbody").closest("section").style.display = "none";
+        renderClosedTable(d.trades || []);
+      } else {
+        document.getElementById("chart-period").textContent = "";
+        renderChart(d.daily_returns || []);
+        document.getElementById("open-tbody").closest("section").style.display = "";
+        renderOpenTable(d.positions || []);
+        renderClosedTable(d.positions || []);
+      }
     };
 
-    fetch("data/portfolio.json?_=" + Date.now())
-      .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-      .then(data => {
-        window._portfolioData = data;
-        window._renderAll();
-      })
-      .catch(() => {
-        document.getElementById("summary-cards").innerHTML =
-          `<p class="col-span-6 text-center text-gray-500 py-8">${t().no_data}</p>`;
-      });
+    // Load both files in parallel
+    Promise.allSettled([
+      fetch("data/portfolio.json?_=" + Date.now()).then(r => r.ok ? r.json() : null),
+      fetch("data/backtest.json?_="  + Date.now()).then(r => r.ok ? r.json() : null),
+    ]).then(([liveRes, btRes]) => {
+      if (liveRes.value) window._portfolioData = liveRes.value;
+      if (btRes.value)   window._backtestData  = btRes.value;
+      window._renderAll();
+    });
   </script>
 </body>
 </html>
