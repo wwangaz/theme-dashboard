@@ -380,9 +380,7 @@ def _refresh_macro_in_json():
         if macro:
             data["macro_context"] = macro
             OUTPUT_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2))
-            print(f"  Macro context: 2Y={macro['yields'].get('2Y',0):.2%} "
-                  f"5Y={macro['yields'].get('5Y',0):.2%} "
-                  f"10Y={macro['yields'].get('10Y',0):.2%}  risk={macro['risk_label']}")
+            print(f"  Macro context: 2Y={macro['yields'].get('2Y',0):.2%} 10Y={macro['yields'].get('10Y',0):.2%}  risk={macro['risk_label']}")
     except Exception as e:
         print(f"  Macro refresh failed: {e}")
 

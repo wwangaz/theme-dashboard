@@ -16,7 +16,6 @@ DEFAULT_WATCHLIST = [
 
 TREASURY_TICKERS = {
     "^IRX": "2Y",
-    "^FVX": "5Y",
     "^TNX": "10Y",
 }
 

@@ -24,8 +24,7 @@
   <div id="macro-bar" class="hidden border-b border-gray-800 bg-gray-900 px-6 py-2.5 flex flex-wrap items-center gap-6 text-sm">
     <span class="text-gray-500 text-xs uppercase tracking-wide" data-i18n="macro_label">宏观利率</span>
     <span id="yield-2y" class="font-mono text-gray-300"></span>
-    <span id="yield-5y" class="font-mono text-gray-300"></span>
-    <span id="yield-10y" class="font-mono text-gray-300"></span>
+<span id="yield-10y" class="font-mono text-gray-300"></span>
     <span id="spread-2-10" class="font-mono text-gray-400 text-xs cursor-help" data-tip-yield></span>
     <span id="risk-label" class="text-xs px-2 py-0.5 rounded-full cursor-help" data-tip-yield></span>
   </div>
@@ -247,9 +246,7 @@
       const c = macro.changes || {};
       document.getElementById("yield-2y").innerHTML =
         `<span class="text-gray-500 text-xs mr-1">2Y</span>${fmt(y["2Y"])} <span class="${chgColor(c["2Y"])} text-xs">${chg(c["2Y"])}</span>`;
-      document.getElementById("yield-5y").innerHTML =
-        `<span class="text-gray-500 text-xs mr-1">5Y</span>${fmt(y["5Y"])} <span class="${chgColor(c["5Y"])} text-xs">${chg(c["5Y"])}</span>`;
-      document.getElementById("yield-10y").innerHTML =
+document.getElementById("yield-10y").innerHTML =
         `<span class="text-gray-500 text-xs mr-1">10Y</span>${fmt(y["10Y"])} <span class="${chgColor(c["10Y"])} text-xs">${chg(c["10Y"])}</span>`;
       document.getElementById("spread-2-10").textContent = t().spread(macro.spread_2_10 || 0);
 
