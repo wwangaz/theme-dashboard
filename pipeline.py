@@ -340,7 +340,8 @@ def main():
     if not args.force:
         state = _json_state(today)
         if state == "done":
-            print("=== Already complete for today (latest.json up to date) — skipping ===")
+            print("=== Already complete for today — refreshing macro context only ===")
+            _refresh_macro_in_json()
             return
         if state == "needs_translation":
             print("=== Analysis already done, translation missing — resuming from latest.json ===")
@@ -366,6 +367,24 @@ def main():
 def _commit_json_if_changed():
     """No-op in pipeline — the Actions workflow handles git commit. Placeholder for local use."""
     pass
+
+
+def _refresh_macro_in_json():
+    """Fetch treasury yields and patch macro_context in latest.json — no DB or API needed."""
+    from ingestion.price import fetch_treasury_yields
+    if not OUTPUT_PATH.exists():
+        return
+    try:
+        data = json.loads(OUTPUT_PATH.read_text())
+        macro = fetch_treasury_yields()
+        if macro:
+            data["macro_context"] = macro
+            OUTPUT_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2))
+            print(f"  Macro context: 2Y={macro['yields'].get('2Y',0):.2%} "
+                  f"5Y={macro['yields'].get('5Y',0):.2%} "
+                  f"10Y={macro['yields'].get('10Y',0):.2%}  risk={macro['risk_label']}")
+    except Exception as e:
+        print(f"  Macro refresh failed: {e}")
 
 
 def _load_macro_context() -> dict:
