@@ -301,14 +301,20 @@ def _json_state(today: date) -> str:
 
 
 def _translate_from_json():
-    """Translate latest.json in-place — no DB needed."""
+    """Translate latest.json in-place and refresh macro context — no DB needed."""
     print("=== Translation-only mode (loaded from latest.json) ===")
     data = json.loads(OUTPUT_PATH.read_text())
     snapshots = data.get("themes", [])
     snapshots = translate_themes(snapshots)
     data["themes"] = snapshots
+    # Always refresh treasury yields — cheap yfinance call, no DB needed
+    from ingestion.price import fetch_treasury_yields
+    macro = fetch_treasury_yields()
+    if macro:
+        data["macro_context"] = macro
+        print(f"  Macro context refreshed: 2Y={macro['yields'].get('2Y',0):.2%} 10Y={macro['yields'].get('10Y',0):.2%} risk={macro['risk_label']}")
     OUTPUT_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2))
-    print(f"  Translated {len(snapshots)} themes → {OUTPUT_PATH}")
+    print(f"  Written {len(snapshots)} themes → {OUTPUT_PATH}")
 
 
 # ── Entrypoint ────────────────────────────────────────────────────────────────
