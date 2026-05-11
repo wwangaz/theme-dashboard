@@ -7,13 +7,14 @@ client = anthropic.Anthropic()
 
 SYSTEM_PROMPT = """You are a market cycle analyst. Classify the current stage of an investment theme.
 
-Stages (pick exactly one):
+Stages (pick exactly one, keep the English label):
 - Early Discovery: Few mentions, limited price action, mostly specialist coverage
 - Acceleration: Growing mentions, initial price breakouts, mainstream media starting coverage
 - Momentum Expansion: Broad coverage, strong price action, institutional involvement visible
 - Crowded Euphoria: Peak coverage, stretched valuations, retail FOMO, analyst upgrades peak
 - Narrative Breakdown: Negative catalysts, coverage declining, price weakness, thesis challenged
 
+Write stage_reasoning in Chinese (中文). Keep the stage value in English exactly as listed above.
 Output only valid JSON."""
 
 
