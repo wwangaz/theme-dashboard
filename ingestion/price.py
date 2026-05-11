@@ -70,21 +70,16 @@ def fetch_treasury_yields() -> dict:
     yields: dict[str, float] = {}
     changes: dict[str, float] = {}
 
-    try:
-        tickers = list(TREASURY_TICKERS.keys())
-        data = yf.download(tickers, period="5d", auto_adjust=True, progress=False)
-        close = data["Close"]
-
-        for ticker, label in TREASURY_TICKERS.items():
-            if ticker not in close.columns:
+    for ticker, label in TREASURY_TICKERS.items():
+        try:
+            data = yf.download(ticker, period="5d", auto_adjust=True, progress=False)
+            close = data["Close"].dropna()
+            if len(close) < 2:
                 continue
-            series = close[ticker].dropna()
-            if len(series) < 2:
-                continue
-            yields[label] = round(float(series.iloc[-1]) / 100, 4)
-            changes[label] = round((float(series.iloc[-1]) - float(series.iloc[-2])) / 100, 4)
-    except Exception as e:
-        print(f"[price] treasury yield fetch failed: {e}")
+            yields[label] = round(float(close.iloc[-1]) / 100, 4)
+            changes[label] = round((float(close.iloc[-1]) - float(close.iloc[-2])) / 100, 4)
+        except Exception as e:
+            print(f"[price] {ticker} ({label}) fetch failed: {e}")
 
     if not yields:
         return {}
@@ -128,7 +123,6 @@ def ingest_prices(extra_tickers: list[str] | None = None):
     if macro:
         MACRO_PATH.parent.mkdir(exist_ok=True)
         MACRO_PATH.write_text(json.dumps(macro, ensure_ascii=False, indent=2))
-        print(f"[price] treasury yields: 2Y={macro['yields'].get('2Y', 'n/a'):.2%} "
-              f"5Y={macro['yields'].get('5Y', 'n/a'):.2%} "
-              f"10Y={macro['yields'].get('10Y', 'n/a'):.2%}  "
-              f"risk={macro['risk_label']}")
+        y = macro["yields"]
+        fmt = lambda k: f"{y[k]:.2%}" if k in y else "n/a"
+        print(f"[price] treasury yields: 2Y={fmt('2Y')} 5Y={fmt('5Y')} 10Y={fmt('10Y')}  risk={macro['risk_label']}")
