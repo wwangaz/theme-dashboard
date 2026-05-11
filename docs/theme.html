@@ -27,7 +27,7 @@
         back: "← 返回仪表板", loading: "加载中…",
         not_found: "未找到该主题。",
         bullish: "看多", bearish: "看空", neutral: "中性",
-        confidence: "置信度", first_seen: "首次出现",
+        stage_confidence: "阶段置信度", conviction_label: "确信度", first_seen: "首次出现",
         signals: "条信号", days_active: "天活跃",
         bull_case: "多头逻辑", bear_case: "空头逻辑",
         drivers: "当前驱动因素", risks: "主要风险",
@@ -43,7 +43,7 @@
         back: "← Dashboard", loading: "Loading…",
         not_found: "Theme not found.",
         bullish: "Bullish", bearish: "Bearish", neutral: "Neutral",
-        confidence: "Confidence", first_seen: "First seen",
+        stage_confidence: "Stage confidence", conviction_label: "Conviction", first_seen: "First seen",
         signals: "signals", days_active: "days active",
         bull_case: "Bull Case", bear_case: "Bear Case",
         drivers: "Current Drivers", risks: "Key Risks",
@@ -159,11 +159,14 @@
             </div>
             <div class="flex flex-wrap items-center gap-3 mb-4">
               <span class="text-xs px-2.5 py-1 rounded-full ${stageClass}">${stageName}</span>
-              <span class="text-xs text-gray-400">${t().confidence} ${theme.stage_confidence}/10</span>
+              <span class="text-xs text-gray-400">${t().stage_confidence} ${theme.stage_confidence}/10</span>
               ${theme.first_seen ? `<span class="text-xs text-gray-500">${t().first_seen} ${theme.first_seen}</span>` : ""}
               <span class="text-xs text-gray-500">${theme.signal_count} ${t().signals}</span>
             </div>
-            <div class="max-w-sm">${scoreBar(theme.conviction_score)}</div>
+            <div class="max-w-sm">
+              <p class="text-xs text-gray-500 mb-1">${t().conviction_label}</p>
+              ${scoreBar(theme.conviction_score)}
+            </div>
             ${tf(theme,"conviction_basis") ? `<p class="mt-2 text-sm text-gray-400">${tf(theme,"conviction_basis")}</p>` : ""}
             ${tf(theme,"stage_reasoning") ? `<p class="mt-1 text-xs text-gray-500 italic">${tf(theme,"stage_reasoning")}</p>` : ""}
           </div>
