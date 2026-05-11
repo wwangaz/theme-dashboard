@@ -268,6 +268,46 @@ def generate_output(snapshots: list[dict], macro_context: dict | None = None):
     print(f"  Written to {OUTPUT_PATH}")
 
 
+# ── JSON checkpoint ───────────────────────────────────────────────────────────
+
+def _json_state(today: date) -> str:
+    """
+    Returns the pipeline state based on latest.json:
+      'done'             — generated today, _zh fields present
+      'needs_translation'— generated today, _zh fields missing
+      'needs_full_run'   — not today or empty
+    """
+    if not OUTPUT_PATH.exists():
+        return "needs_full_run"
+    try:
+        data = json.loads(OUTPUT_PATH.read_text())
+        generated_at = data.get("generated_at")
+        if not generated_at:
+            return "needs_full_run"
+        gen_date = date.fromisoformat(generated_at[:10])
+        if gen_date != today:
+            return "needs_full_run"
+        themes = data.get("themes", [])
+        if not themes:
+            return "needs_full_run"
+        # Check if any theme has _zh fields
+        has_zh = any(t.get("name_zh") or t.get("bull_case_zh") for t in themes)
+        return "done" if has_zh else "needs_translation"
+    except Exception:
+        return "needs_full_run"
+
+
+def _translate_from_json():
+    """Translate latest.json in-place — no DB needed."""
+    print("=== Translation-only mode (loaded from latest.json) ===")
+    data = json.loads(OUTPUT_PATH.read_text())
+    snapshots = data.get("themes", [])
+    snapshots = translate_themes(snapshots)
+    data["themes"] = snapshots
+    OUTPUT_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2))
+    print(f"  Translated {len(snapshots)} themes → {OUTPUT_PATH}")
+
+
 # ── Entrypoint ────────────────────────────────────────────────────────────────
 
 def main():
@@ -288,6 +328,17 @@ def main():
         generate_output(snapshots, macro_context)
         return
 
+    if not args.force:
+        state = _json_state(today)
+        if state == "done":
+            print("=== Already complete for today (latest.json up to date) — skipping ===")
+            return
+        if state == "needs_translation":
+            print("=== Analysis already done, translation missing — resuming from latest.json ===")
+            _translate_from_json()
+            _commit_json_if_changed()
+            return
+
     run_ingestion(today, force=args.force)
     signals = load_today_signals(today)
     print(f"  Loaded {len(signals)} signals for today")
@@ -301,6 +352,11 @@ def main():
     macro_context = _load_macro_context()
     generate_output(snapshots, macro_context)
     print("=== Done ===")
+
+
+def _commit_json_if_changed():
+    """No-op in pipeline — the Actions workflow handles git commit. Placeholder for local use."""
+    pass
 
 
 def _load_macro_context() -> dict:
