@@ -8,7 +8,6 @@ SYSTEM_PROMPT = """You are a financial translator. Translate English investment 
 Preserve proper nouns (company names, ticker symbols, technical terms) in English where appropriate.
 Output only valid JSON with the same structure as input, all text values translated."""
 
-# Fields to translate per theme snapshot
 NARRATIVE_FIELDS = [
     "name", "one_line_summary", "conviction_basis", "stage_reasoning",
     "bull_case", "bear_case", "current_drivers",
@@ -16,71 +15,62 @@ NARRATIVE_FIELDS = [
 ]
 
 
-def translate_themes(snapshots: list[dict]) -> list[dict]:
-    if not snapshots:
-        return snapshots
+def _translate_one(snap: dict) -> dict:
+    """Translate a single theme snapshot. Returns translation dict or {} on failure."""
+    entry = {"id": snap["id"]}
+    for f in NARRATIVE_FIELDS:
+        if snap.get(f):
+            entry[f] = snap[f]
+    if snap.get("key_risks"):
+        entry["key_risks"] = snap["key_risks"]
+    entry["bull_evidence_headlines"] = [e.get("headline", "") for e in snap.get("bull_evidence", [])]
+    entry["bear_evidence_headlines"] = [e.get("headline", "") for e in snap.get("bear_evidence", [])]
+    entry["timeline_events"] = [t.get("event", "") for t in snap.get("timeline", [])]
 
-    # Build compact payload — only narrative fields + theme id
-    payload = []
-    for s in snapshots:
-        entry = {"id": s["id"]}
-        for f in NARRATIVE_FIELDS:
-            if s.get(f):
-                entry[f] = s[f]
-        # key_risks is a list of strings
-        if s.get("key_risks"):
-            entry["key_risks"] = s["key_risks"]
-        # evidence headlines
-        entry["bull_evidence_headlines"] = [e.get("headline", "") for e in s.get("bull_evidence", [])]
-        entry["bear_evidence_headlines"] = [e.get("headline", "") for e in s.get("bear_evidence", [])]
-        # timeline events
-        entry["timeline_events"] = [t.get("event", "") for t in s.get("timeline", [])]
-        payload.append(entry)
-
-    try:
-        response = client.messages.create(
-            model="claude-haiku-4-5-20251001",
-            max_tokens=8192,
-            system=[{"type": "text", "text": SYSTEM_PROMPT, "cache_control": {"type": "ephemeral"}}],
-            messages=[{"role": "user", "content": f"""Translate each theme's narrative fields to Chinese.
-Return a JSON array with same structure (same keys), all text values in Chinese.
-Keep company names, ticker symbols, and numeric data in their original form.
+    response = client.messages.create(
+        model="claude-haiku-4-5-20251001",
+        max_tokens=4096,
+        system=[{"type": "text", "text": SYSTEM_PROMPT, "cache_control": {"type": "ephemeral"}}],
+        messages=[{"role": "user", "content": f"""Translate all text values to Chinese. Return JSON with same keys.
+Keep company names, tickers, and numbers unchanged.
 
 Input:
-{json.dumps(payload, ensure_ascii=False)}"""}],
-        )
+{json.dumps(entry, ensure_ascii=False)}"""}],
+    )
+    text = re.sub(r"^```[a-z]*\n?", "", response.content[0].text.strip()).rstrip("`").strip()
+    return json.loads(text)
 
-        text = re.sub(r"^```[a-z]*\n?", "", response.content[0].text.strip()).rstrip("`").strip()
-        translations: list[dict] = json.loads(text)
-        trans_by_id = {t["id"]: t for t in translations}
 
-        for snap in snapshots:
-            tr = trans_by_id.get(snap["id"], {})
+def _apply_translation(snap: dict, tr: dict):
+    for f in NARRATIVE_FIELDS:
+        if tr.get(f):
+            snap[f"{f}_zh"] = tr[f]
+    if tr.get("key_risks"):
+        snap["key_risks_zh"] = tr["key_risks"]
 
-            # Scalar fields
-            for f in NARRATIVE_FIELDS:
-                if tr.get(f):
-                    snap[f"{f}_zh"] = tr[f]
+    bull_zh = tr.get("bull_evidence_headlines", [])
+    for i, ev in enumerate(snap.get("bull_evidence", [])):
+        ev["headline_zh"] = bull_zh[i] if i < len(bull_zh) else ev.get("headline", "")
 
-            # key_risks list
-            if tr.get("key_risks"):
-                snap["key_risks_zh"] = tr["key_risks"]
+    bear_zh = tr.get("bear_evidence_headlines", [])
+    for i, ev in enumerate(snap.get("bear_evidence", [])):
+        ev["headline_zh"] = bear_zh[i] if i < len(bear_zh) else ev.get("headline", "")
 
-            # evidence headlines — patch back into evidence list
-            bull_zh = tr.get("bull_evidence_headlines", [])
-            for i, ev in enumerate(snap.get("bull_evidence", [])):
-                ev["headline_zh"] = bull_zh[i] if i < len(bull_zh) else ev.get("headline", "")
+    tl_zh = tr.get("timeline_events", [])
+    for i, tl in enumerate(snap.get("timeline", [])):
+        tl["event_zh"] = tl_zh[i] if i < len(tl_zh) else tl.get("event", "")
 
-            bear_zh = tr.get("bear_evidence_headlines", [])
-            for i, ev in enumerate(snap.get("bear_evidence", [])):
-                ev["headline_zh"] = bear_zh[i] if i < len(bear_zh) else ev.get("headline", "")
 
-            # timeline events
-            tl_zh = tr.get("timeline_events", [])
-            for i, tl in enumerate(snap.get("timeline", [])):
-                tl["event_zh"] = tl_zh[i] if i < len(tl_zh) else tl.get("event", "")
-
-    except Exception as e:
-        print(f"[translation] failed: {e} — skipping, English-only output")
-
+def translate_themes(snapshots: list[dict]) -> list[dict]:
+    for snap in snapshots:
+        # Skip if already translated
+        if snap.get("name_zh"):
+            print(f"  [translation] {snap['id']} already translated, skipping")
+            continue
+        try:
+            tr = _translate_one(snap)
+            _apply_translation(snap, tr)
+            print(f"  [translation] {snap.get('name', snap['id'])} ✓")
+        except Exception as e:
+            print(f"  [translation] {snap['id']} failed: {e} — keeping English")
     return snapshots
