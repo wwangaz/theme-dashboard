@@ -60,6 +60,81 @@
     let lang = localStorage.getItem("lang") || "zh";
     const t = () => I18N[lang];
 
+    // ── Tooltip definitions (static constants) ────────────────────────────────
+    const TOOLTIPS = {
+      conviction_score: {
+        zh: "多空信号的综合强度。综合信号来源权重（财报 > 监管文件 > 新闻 > 价格）与时效性加权计算。\n10 = 压倒性多头  1 = 压倒性空头  5 = 信号持平或稀缺",
+        en: "Overall strength of bull/bear signals, weighted by source quality (transcripts > filings > news > price) and recency.\n10 = overwhelming bullish  1 = overwhelming bearish  5 = mixed or sparse",
+      },
+      stage_confidence: {
+        zh: "AI 对当前阶段判断的把握程度。低于 5 表示信号模糊，可能处于阶段转换期，请对阶段标签打折扣。",
+        en: "How certain the AI is about the stage classification. Below 5 means ambiguous signals, possibly a stage transition — treat the label with skepticism.",
+      },
+      stage: {
+        "Early Discovery": {
+          zh: "早期发现：主题刚开始浮现，报道稀少，以专业媒体为主，价格行动有限。",
+          en: "Early Discovery: Theme just emerging; sparse coverage mostly from specialist sources; limited price action.",
+        },
+        "Acceleration": {
+          zh: "加速阶段：讨论量快速增长，出现初步价格突破，主流媒体开始关注。",
+          en: "Acceleration: Growing mentions and initial price breakouts; mainstream media beginning coverage.",
+        },
+        "Momentum Expansion": {
+          zh: "动量扩展：广泛覆盖，价格走势强劲，机构参与明显，动量扩散至相关标的。",
+          en: "Momentum Expansion: Broad coverage, strong price action, visible institutional involvement, momentum spreading.",
+        },
+        "Crowded Euphoria": {
+          zh: "拥挤狂热：媒体覆盖见顶，估值偏高，散户 FOMO 明显，分析师上调评级达峰。",
+          en: "Crowded Euphoria: Peak media coverage, stretched valuations, retail FOMO, analyst upgrades at their peak.",
+        },
+        "Narrative Breakdown": {
+          zh: "叙事崩塌：负面催化剂出现，覆盖量下降，价格走弱，核心叙事受到挑战。",
+          en: "Narrative Breakdown: Negative catalysts emerging, coverage declining, price weakness, core thesis challenged.",
+        },
+      },
+    };
+
+    // ── Tooltip UI ────────────────────────────────────────────────────────────
+    const _tip = document.createElement("div");
+    _tip.style.cssText = "position:fixed;z-index:9999;max-width:280px;padding:8px 12px;background:#1f2937;border:1px solid #374151;border-radius:8px;font-size:12px;line-height:1.6;color:#d1d5db;white-space:pre-line;pointer-events:none;display:none;box-shadow:0 4px 12px rgba(0,0,0,.5)";
+    document.body.appendChild(_tip);
+
+    function showTip(el, text) {
+      if (!text) return;
+      _tip.textContent = text;
+      _tip.style.display = "block";
+      const r = el.getBoundingClientRect();
+      const tw = _tip.offsetWidth, th = _tip.offsetHeight;
+      let top = r.top - th - 8;
+      let left = r.left + r.width / 2 - tw / 2;
+      if (top < 8) top = r.bottom + 8;
+      left = Math.max(8, Math.min(left, window.innerWidth - tw - 8));
+      _tip.style.top = top + "px";
+      _tip.style.left = left + "px";
+    }
+    function hideTip() { _tip.style.display = "none"; }
+
+    function tipAttr(text) {
+      // Returns onmouseenter/leave attrs string for inline use — we use data attr instead
+      return text || "";
+    }
+
+    // Wire tooltip to elements with data-tip-key / data-tip-stage attributes
+    document.addEventListener("mouseover", e => {
+      const el = e.target.closest("[data-tip-key],[data-tip-stage]");
+      if (!el) return hideTip();
+      if (el.dataset.tipKey) {
+        const def = TOOLTIPS[el.dataset.tipKey];
+        if (def) showTip(el, def[lang] || def.en);
+      } else if (el.dataset.tipStage) {
+        const def = TOOLTIPS.stage[el.dataset.tipStage];
+        if (def) showTip(el, def[lang] || def.en);
+      }
+    });
+    document.addEventListener("mouseout", e => {
+      if (!e.target.closest("[data-tip-key],[data-tip-stage]")) hideTip();
+    });
+
     function applyLang() {
       document.querySelectorAll("[data-i18n]").forEach(el => {
         const key = el.dataset.i18n;
@@ -158,13 +233,13 @@
               <span class="${dirColor} text-xl font-bold">${arrow} ${dirLabel}${deltaChip(theme.conviction_delta)}</span>
             </div>
             <div class="flex flex-wrap items-center gap-3 mb-4">
-              <span class="text-xs px-2.5 py-1 rounded-full ${stageClass}">${stageName}</span>
-              <span class="text-xs text-gray-400">${t().stage_confidence} ${theme.stage_confidence}/10</span>
+              <span class="text-xs px-2.5 py-1 rounded-full cursor-help ${stageClass}" data-tip-stage="${theme.stage}">${stageName}</span>
+              <span class="text-xs text-gray-400 cursor-help underline decoration-dotted underline-offset-2" data-tip-key="stage_confidence">${t().stage_confidence} ${theme.stage_confidence}/10</span>
               ${theme.first_seen ? `<span class="text-xs text-gray-500">${t().first_seen} ${theme.first_seen}</span>` : ""}
               <span class="text-xs text-gray-500">${theme.signal_count} ${t().signals}</span>
             </div>
             <div class="max-w-sm">
-              <p class="text-xs text-gray-500 mb-1">${t().conviction_label}</p>
+              <p class="text-xs text-gray-500 mb-1 cursor-help underline decoration-dotted underline-offset-2 inline-block" data-tip-key="conviction_score">${t().conviction_label}</p>
               ${scoreBar(theme.conviction_score)}
             </div>
             ${tf(theme,"conviction_basis") ? `<p class="mt-2 text-sm text-gray-400">${tf(theme,"conviction_basis")}</p>` : ""}
