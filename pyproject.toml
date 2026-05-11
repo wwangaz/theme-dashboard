@@ -1,0 +1,14 @@
+[project]
+name = "theme-dashboard"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=0.40.0",
+    "feedparser>=6.0.11",
+    "httpx>=0.27.0",
+    "beautifulsoup4>=4.12.0",
+    "yfinance>=0.2.40",
+    "sec-edgar-downloader>=5.0.0",
+    "sqlmodel>=0.0.22",
+    "python-dotenv>=1.0.0",
+]

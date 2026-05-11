@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Theme Detail — Theme Discovery Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen font-sans">
+
+  <header class="border-b border-gray-800 px-6 py-4">
+    <a href="index.html" class="text-sm text-gray-400 hover:text-white transition-colors">← Dashboard</a>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-8" id="content">
+    <p class="text-gray-400">Loading...</p>
+  </main>
+
+  <script>
+    const STAGE_COLORS = {
+      'Early Discovery':     'bg-blue-900 text-blue-300',
+      'Acceleration':        'bg-emerald-900 text-emerald-300',
+      'Momentum Expansion':  'bg-yellow-900 text-yellow-300',
+      'Crowded Euphoria':    'bg-orange-900 text-orange-300',
+      'Narrative Breakdown': 'bg-red-900 text-red-300',
+    };
+
+    function scoreBar(score) {
+      const pct = Math.round(score * 10);
+      const color = score >= 7 ? 'bg-green-500' : score >= 4 ? 'bg-yellow-500' : 'bg-red-500';
+      return `<div class="flex items-center gap-3">
+        <div class="flex-1 bg-gray-700 rounded-full h-2">
+          <div class="${color} h-2 rounded-full transition-all" style="width:${pct}%"></div>
+        </div>
+        <span class="text-sm font-mono font-semibold">${score}/10</span>
+      </div>`;
+    }
+
+    function evidenceItem(item) {
+      const inner = item.url
+        ? `<a href="${item.url}" target="_blank" rel="noopener" class="hover:text-white underline underline-offset-2">${item.headline}</a>`
+        : item.headline;
+      return `<li class="text-sm text-gray-300 leading-relaxed">
+        ${inner}
+        ${item.source ? `<span class="ml-1 text-xs text-gray-500">${item.source}</span>` : ''}
+      </li>`;
+    }
+
+    function timelineItem(item) {
+      return `<div class="flex gap-4">
+        <span class="text-xs text-gray-500 font-mono whitespace-nowrap pt-0.5">${item.date}</span>
+        <div class="flex flex-col gap-1">
+          <div class="w-2 h-2 rounded-full bg-gray-600 mt-1.5 shrink-0" style="margin-left:-1.25rem; margin-right:0.75rem"></div>
+          <p class="text-sm text-gray-300">${item.event}</p>
+        </div>
+      </div>`;
+    }
+
+    async function init() {
+      const params = new URLSearchParams(location.search);
+      const id = params.get('id');
+      if (!id) { document.getElementById('content').innerHTML = '<p class="text-red-400">No theme ID specified.</p>'; return; }
+
+      const resp = await fetch('data/latest.json');
+      const data = await resp.json();
+      const theme = (data.themes || []).find(t => t.id === id);
+
+      if (!theme) { document.getElementById('content').innerHTML = '<p class="text-red-400">Theme not found.</p>'; return; }
+
+      document.title = `${theme.name} — Theme Discovery Dashboard`;
+
+      const dirColor = theme.direction === 'Bullish' ? 'text-green-400' : theme.direction === 'Bearish' ? 'text-red-400' : 'text-gray-400';
+      const arrow = theme.direction === 'Bullish' ? '↑' : theme.direction === 'Bearish' ? '↓' : '→';
+      const stageClass = STAGE_COLORS[theme.stage] || 'bg-gray-800 text-gray-300';
+      const tickers = (theme.representative_tickers || [])
+        .map(t => `<span class="px-2 py-1 bg-gray-800 border border-gray-700 rounded text-sm font-mono">${t}</span>`)
+        .join('');
+
+      const bullEvidence = (theme.bull_evidence || []).map(evidenceItem).join('');
+      const bearEvidence = (theme.bear_evidence || []).map(evidenceItem).join('');
+      const timeline = (theme.timeline || []).map(timelineItem).join('');
+      const risks = (theme.key_risks || []).map(r => `<li class="text-sm text-gray-300">${r}</li>`).join('');
+      const firstSeen = theme.first_seen ? `<span class="text-xs text-gray-500">First seen ${theme.first_seen}</span>` : '';
+
+      document.getElementById('content').innerHTML = `
+        <div class="space-y-8">
+
+          <!-- Header -->
+          <div>
+            <div class="flex flex-wrap items-start justify-between gap-4 mb-2">
+              <h1 class="text-2xl font-bold text-white">${theme.name}</h1>
+              <span class="${dirColor} text-xl font-bold">${arrow} ${theme.direction}</span>
+            </div>
+            <div class="flex flex-wrap items-center gap-3 mb-4">
+              <span class="text-xs px-2.5 py-1 rounded-full ${stageClass}">${theme.stage}</span>
+              <span class="text-xs text-gray-400">Confidence ${theme.stage_confidence}/10</span>
+              ${firstSeen}
+              <span class="text-xs text-gray-500">${theme.signal_count} signals</span>
+            </div>
+            <div class="max-w-sm">${scoreBar(theme.conviction_score)}</div>
+            ${theme.conviction_basis ? `<p class="mt-2 text-sm text-gray-400">${theme.conviction_basis}</p>` : ''}
+          </div>
+
+          <!-- Bull / Bear -->
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-gray-900 border border-gray-800 rounded-xl p-5">
+              <h2 class="text-sm font-semibold text-green-400 mb-3 uppercase tracking-wide">Bull Case</h2>
+              <p class="text-sm text-gray-300 leading-relaxed mb-4">${theme.bull_case || '—'}</p>
+              ${bullEvidence ? `<ul class="space-y-2 border-t border-gray-800 pt-3">${bullEvidence}</ul>` : ''}
+            </div>
+            <div class="bg-gray-900 border border-gray-800 rounded-xl p-5">
+              <h2 class="text-sm font-semibold text-red-400 mb-3 uppercase tracking-wide">Bear Case</h2>
+              <p class="text-sm text-gray-300 leading-relaxed mb-4">${theme.bear_case || '—'}</p>
+              ${bearEvidence ? `<ul class="space-y-2 border-t border-gray-800 pt-3">${bearEvidence}</ul>` : ''}
+            </div>
+          </div>
+
+          <!-- Current Drivers + Risks -->
+          <div class="grid md:grid-cols-2 gap-6">
+            ${theme.current_drivers ? `
+            <div class="bg-gray-900 border border-gray-800 rounded-xl p-5">
+              <h2 class="text-sm font-semibold text-gray-300 mb-2 uppercase tracking-wide">Current Drivers</h2>
+              <p class="text-sm text-gray-300 leading-relaxed">${theme.current_drivers}</p>
+            </div>` : ''}
+            ${risks ? `
+            <div class="bg-gray-900 border border-gray-800 rounded-xl p-5">
+              <h2 class="text-sm font-semibold text-gray-300 mb-3 uppercase tracking-wide">Key Risks</h2>
+              <ul class="space-y-1.5 list-disc list-inside">${risks}</ul>
+            </div>` : ''}
+          </div>
+
+          <!-- Outlook -->
+          <div class="bg-gray-900 border border-gray-800 rounded-xl p-5">
+            <h2 class="text-sm font-semibold text-gray-300 mb-4 uppercase tracking-wide">Outlook</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+              <div>
+                <p class="text-xs text-gray-500 mb-1">Short-term (1–4 weeks)</p>
+                <p class="text-sm text-gray-300 leading-relaxed">${theme.short_term_outlook || '—'}</p>
+              </div>
+              <div>
+                <p class="text-xs text-gray-500 mb-1">Mid-term (1–6 months)</p>
+                <p class="text-sm text-gray-300 leading-relaxed">${theme.mid_term_outlook || '—'}</p>
+              </div>
+              <div>
+                <p class="text-xs text-gray-500 mb-1">Long-term (1–3 years)</p>
+                <p class="text-sm text-gray-300 leading-relaxed">${theme.long_term_outlook || '—'}</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline -->
+          ${timeline ? `
+          <div class="bg-gray-900 border border-gray-800 rounded-xl p-5">
+            <h2 class="text-sm font-semibold text-gray-300 mb-4 uppercase tracking-wide">Timeline</h2>
+            <div class="space-y-4 border-l-2 border-gray-700 pl-5">${timeline}</div>
+          </div>` : ''}
+
+          <!-- Tickers -->
+          ${tickers ? `
+          <div>
+            <p class="text-xs text-gray-500 mb-2 uppercase tracking-wide">Representative Tickers</p>
+            <div class="flex flex-wrap gap-2">${tickers}</div>
+          </div>` : ''}
+
+        </div>
+      `;
+    }
+
+    init().catch(console.error);
+  </script>
+</body>
+</html>

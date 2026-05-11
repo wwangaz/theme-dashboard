@@ -1,0 +1,43 @@
+name: Daily Theme Analysis
+
+on:
+  schedule:
+    # 12:00 UTC = 20:00 Beijing — 1.5h before US market open
+    - cron: '0 12 * * 1-5'
+  workflow_dispatch:  # allow manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install uv
+        run: curl -LsSf https://astral.sh/uv/install.sh | sh && echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+
+      - name: Install dependencies
+        run: uv pip install --system -e .
+
+      - name: Run pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python pipeline.py
+
+      - name: Commit updated dashboard
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data/latest.json
+          git diff --staged --quiet || git commit -m "chore: dashboard $(date -u +%Y-%m-%d)"
+          git push

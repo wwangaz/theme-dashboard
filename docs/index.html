@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Theme Discovery Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bullish: '#16a34a',
+            bearish: '#dc2626',
+            neutral: '#6b7280',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen font-sans">
+
+  <header class="border-b border-gray-800 px-6 py-4 flex items-center justify-between">
+    <h1 class="text-xl font-semibold tracking-tight">Theme Discovery Dashboard</h1>
+    <span id="last-updated" class="text-sm text-gray-400"></span>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 py-8 space-y-10">
+    <section id="section-high">
+      <div class="flex items-center gap-2 mb-4">
+        <span class="text-lg">🔥</span>
+        <h2 class="text-lg font-semibold text-white">High Conviction</h2>
+        <span class="text-sm text-gray-400">score 7–10</span>
+      </div>
+      <div id="grid-high" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
+    </section>
+
+    <section id="section-emerging">
+      <div class="flex items-center gap-2 mb-4">
+        <span class="text-lg">🌱</span>
+        <h2 class="text-lg font-semibold text-white">Emerging</h2>
+        <span class="text-sm text-gray-400">score 4–6</span>
+      </div>
+      <div id="grid-emerging" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
+    </section>
+
+    <section id="section-watch">
+      <div class="flex items-center gap-2 mb-4">
+        <span class="text-lg">⚠️</span>
+        <h2 class="text-lg font-semibold text-white">Watch / Fading</h2>
+        <span class="text-sm text-gray-400">score 1–3</span>
+      </div>
+      <div id="grid-watch" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
+    </section>
+
+    <div id="empty-state" class="hidden text-center py-20 text-gray-500">
+      <p class="text-4xl mb-4">📭</p>
+      <p>No themes yet. The pipeline will run tonight.</p>
+    </div>
+  </main>
+
+  <script>
+    const STAGE_COLORS = {
+      'Early Discovery':     'bg-blue-900 text-blue-300',
+      'Acceleration':        'bg-emerald-900 text-emerald-300',
+      'Momentum Expansion':  'bg-yellow-900 text-yellow-300',
+      'Crowded Euphoria':    'bg-orange-900 text-orange-300',
+      'Narrative Breakdown': 'bg-red-900 text-red-300',
+    };
+
+    const DIRECTION_COLORS = {
+      'Bullish': 'text-green-400',
+      'Bearish': 'text-red-400',
+      'Neutral': 'text-gray-400',
+    };
+
+    const DIRECTION_ARROWS = {
+      'Bullish': '↑',
+      'Bearish': '↓',
+      'Neutral': '→',
+    };
+
+    function scoreBar(score) {
+      const pct = Math.round(score * 10);
+      const color = score >= 7 ? 'bg-green-500' : score >= 4 ? 'bg-yellow-500' : 'bg-red-500';
+      return `<div class="flex items-center gap-2">
+        <div class="flex-1 bg-gray-700 rounded-full h-1.5">
+          <div class="${color} h-1.5 rounded-full" style="width:${pct}%"></div>
+        </div>
+        <span class="text-xs font-mono text-gray-300">${score}/10</span>
+      </div>`;
+    }
+
+    function themeCard(theme) {
+      const stageClass = STAGE_COLORS[theme.stage] || 'bg-gray-800 text-gray-300';
+      const dirColor = DIRECTION_COLORS[theme.direction] || 'text-gray-400';
+      const arrow = DIRECTION_ARROWS[theme.direction] || '';
+      const tickers = (theme.representative_tickers || []).slice(0, 4)
+        .map(t => `<span class="px-1.5 py-0.5 bg-gray-800 rounded text-xs font-mono text-gray-300">${t}</span>`)
+        .join('');
+
+      return `<a href="theme.html?id=${encodeURIComponent(theme.id)}"
+          class="block bg-gray-900 border border-gray-800 rounded-xl p-4 hover:border-gray-600 hover:bg-gray-800 transition-all cursor-pointer">
+        <div class="flex items-start justify-between gap-2 mb-3">
+          <h3 class="font-semibold text-white leading-tight">${theme.name}</h3>
+          <span class="${dirColor} font-semibold whitespace-nowrap">${arrow} ${theme.direction}</span>
+        </div>
+        ${scoreBar(theme.conviction_score)}
+        <div class="mt-3 flex flex-wrap gap-1.5 items-center">
+          <span class="text-xs px-2 py-0.5 rounded-full ${stageClass}">${theme.stage}</span>
+          ${tickers}
+        </div>
+        ${theme.one_line_summary ? `<p class="mt-3 text-xs text-gray-400 leading-relaxed line-clamp-2">${theme.one_line_summary}</p>` : ''}
+      </a>`;
+    }
+
+    async function init() {
+      const resp = await fetch('data/latest.json');
+      const data = await resp.json();
+
+      if (data.generated_at) {
+        const dt = new Date(data.generated_at);
+        document.getElementById('last-updated').textContent =
+          'Updated ' + dt.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) +
+          ' ' + dt.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+      }
+
+      const themes = data.themes || [];
+      if (!themes.length) {
+        document.getElementById('empty-state').classList.remove('hidden');
+        return;
+      }
+
+      const high = themes.filter(t => t.conviction_score >= 7);
+      const emerging = themes.filter(t => t.conviction_score >= 4 && t.conviction_score < 7);
+      const watch = themes.filter(t => t.conviction_score < 4);
+
+      document.getElementById('grid-high').innerHTML = high.map(themeCard).join('') || '<p class="text-gray-500 text-sm col-span-3">None today.</p>';
+      document.getElementById('grid-emerging').innerHTML = emerging.map(themeCard).join('') || '<p class="text-gray-500 text-sm col-span-3">None today.</p>';
+      document.getElementById('grid-watch').innerHTML = watch.map(themeCard).join('') || '<p class="text-gray-500 text-sm col-span-3">None today.</p>';
+
+      if (!high.length) document.getElementById('section-high').classList.add('hidden');
+      if (!emerging.length) document.getElementById('section-emerging').classList.add('hidden');
+      if (!watch.length) document.getElementById('section-watch').classList.add('hidden');
+    }
+
+    init().catch(console.error);
+  </script>
+</body>
+</html>
