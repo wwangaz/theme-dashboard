@@ -26,8 +26,8 @@
     <span id="yield-2y" class="font-mono text-gray-300"></span>
     <span id="yield-5y" class="font-mono text-gray-300"></span>
     <span id="yield-10y" class="font-mono text-gray-300"></span>
-    <span id="spread-2-10" class="font-mono text-gray-400 text-xs"></span>
-    <span id="risk-label" class="text-xs px-2 py-0.5 rounded-full"></span>
+    <span id="spread-2-10" class="font-mono text-gray-400 text-xs cursor-help" data-tip-yield></span>
+    <span id="risk-label" class="text-xs px-2 py-0.5 rounded-full cursor-help" data-tip-yield></span>
   </div>
 
   <main class="max-w-5xl mx-auto px-4 py-8 space-y-10">
@@ -116,13 +116,18 @@
       "Narrative Breakdown":{ zh: "叙事崩塌：负面催化剂出现，覆盖量下降，价格走弱，核心叙事受到挑战。", en: "Narrative Breakdown: Negative catalysts, declining coverage, price weakness, thesis challenged." },
     };
 
+    const YIELD_CURVE_TIP = {
+      zh: "<b>收益率曲线</b>：反映市场对未来经济与利率的预期。<br><br>📈 <b>正常（10Y &gt; 2Y）</b>：长期利率高于短期，市场预期经济健康增长，投资者要求持有长期债券的额外回报。<br><br>📉 <b>倒挂（2Y &gt; 10Y）</b>：短期利率反超长期，意味着市场预期经济放缓乃至衰退，央行将被迫降息。历史上美国每次衰退前 12–18 个月均出现倒挂，是公认的预警信号（但非必然触发衰退）。<br><br>息差越大预期越乐观；息差为负时需保持警惕。",
+      en: "<b>Yield Curve</b>: reflects market expectations for growth and interest rates.<br><br>📈 <b>Normal (10Y &gt; 2Y)</b>: long-term rates exceed short-term; markets expect healthy growth and demand a premium for long-term risk.<br><br>📉 <b>Inverted (2Y &gt; 10Y)</b>: short-term rates surpass long-term; markets price in slowdown or recession, expecting the Fed to cut rates. Historically precedes U.S. recessions by 12–18 months — reliable but not infallible.<br><br>Wider spread = bullish outlook; negative spread = watch for recession signals.",
+    };
+
     const _tip = document.createElement("div");
-    _tip.style.cssText = "position:fixed;z-index:9999;max-width:280px;padding:8px 12px;background:#1f2937;border:1px solid #374151;border-radius:8px;font-size:12px;line-height:1.6;color:#d1d5db;pointer-events:none;display:none;box-shadow:0 4px 12px rgba(0,0,0,.5)";
+    _tip.style.cssText = "position:fixed;z-index:9999;max-width:300px;padding:10px 14px;background:#1f2937;border:1px solid #374151;border-radius:8px;font-size:12px;line-height:1.7;color:#d1d5db;pointer-events:none;display:none;box-shadow:0 4px 12px rgba(0,0,0,.5)";
     document.body.appendChild(_tip);
 
-    function showTip(el, text) {
-      if (!text) return;
-      _tip.textContent = text;
+    function showTip(el, html) {
+      if (!html) return;
+      _tip.innerHTML = html;
       _tip.style.display = "block";
       const r = el.getBoundingClientRect();
       const tw = _tip.offsetWidth, th = _tip.offsetHeight;
@@ -136,13 +141,17 @@
     function hideTip() { _tip.style.display = "none"; }
 
     document.addEventListener("mouseover", e => {
-      const el = e.target.closest("[data-tip-stage]");
-      if (!el) return hideTip();
-      const def = STAGE_TIPS[el.dataset.tipStage];
-      if (def) showTip(el, def[lang] || def.en);
+      const stageEl = e.target.closest("[data-tip-stage]");
+      if (stageEl) {
+        const def = STAGE_TIPS[stageEl.dataset.tipStage];
+        if (def) return showTip(stageEl, def[lang] || def.en);
+      }
+      const yieldEl = e.target.closest("[data-tip-yield]");
+      if (yieldEl) return showTip(yieldEl, YIELD_CURVE_TIP[lang]);
+      hideTip();
     });
     document.addEventListener("mouseout", e => {
-      if (!e.target.closest("[data-tip-stage]")) hideTip();
+      if (!e.target.closest("[data-tip-stage]") && !e.target.closest("[data-tip-yield]")) hideTip();
     });
 
     function applyLang() {
