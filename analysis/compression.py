@@ -7,7 +7,6 @@ client = anthropic.Anthropic()
 
 SYSTEM_PROMPT = """You are a senior equity research analyst. Write structured, evidence-based investment research summaries.
 Be specific — cite actual company names, data points, or events from the signals. Avoid generic statements.
-Write ALL narrative text fields in Chinese (中文). Keep JSON field names and enum values in English.
 Output only valid JSON."""
 
 

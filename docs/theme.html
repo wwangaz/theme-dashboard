@@ -84,6 +84,13 @@
       "Narrative Breakdown": "bg-red-900 text-red-300",
     };
 
+    // ── i18n field helper ─────────────────────────────────────────────────────
+    // Returns theme[field + '_zh'] when lang=zh and it exists, else theme[field]
+    function tf(theme, field) {
+      if (lang === "zh") return theme[field + "_zh"] || theme[field] || "";
+      return theme[field] || "";
+    }
+
     // ── Components ────────────────────────────────────────────────────────────
     function scoreBar(score) {
       const pct = score * 10;
@@ -103,10 +110,11 @@
       return "";
     }
 
-    function evidenceItem(item) {
+    function evidenceItem(item, language) {
+      const headline = (language === "zh" && item.headline_zh) ? item.headline_zh : item.headline;
       const inner = item.url
-        ? `<a href="${item.url}" target="_blank" rel="noopener" class="hover:text-white underline underline-offset-2">${item.headline}</a>`
-        : item.headline;
+        ? `<a href="${item.url}" target="_blank" rel="noopener" class="hover:text-white underline underline-offset-2">${headline}</a>`
+        : headline;
       return `<li class="text-sm text-gray-300 leading-relaxed">
         ${inner}
         ${item.source ? `<span class="ml-1 text-xs text-gray-500">${item.source}</span>` : ""}
@@ -129,13 +137,14 @@
         .map(tk => `<span class="px-2 py-1 bg-gray-800 border border-gray-700 rounded text-sm font-mono">${tk}</span>`)
         .join("");
 
-      const bullEv = (theme.bull_evidence || []).map(evidenceItem).join("");
-      const bearEv = (theme.bear_evidence || []).map(evidenceItem).join("");
-      const risks  = (theme.key_risks || []).map(r => `<li class="text-sm text-gray-300">${r}</li>`).join("");
+      const bullEv = (theme.bull_evidence || []).map(ev => evidenceItem(ev, lang)).join("");
+      const bearEv = (theme.bear_evidence || []).map(ev => evidenceItem(ev, lang)).join("");
+      const risks  = (lang === "zh" ? (theme.key_risks_zh || theme.key_risks) : theme.key_risks || [])
+        .map(r => `<li class="text-sm text-gray-300">${r}</li>`).join("");
       const timeline = (theme.timeline || []).map(item =>
         `<div class="flex gap-4">
           <span class="text-xs text-gray-500 font-mono whitespace-nowrap pt-0.5 w-24 shrink-0">${item.date}</span>
-          <p class="text-sm text-gray-300">${item.event}</p>
+          <p class="text-sm text-gray-300">${lang === "zh" ? (item.event_zh || item.event) : item.event}</p>
         </div>`
       ).join("");
 
@@ -155,30 +164,30 @@
               <span class="text-xs text-gray-500">${theme.signal_count} ${t().signals}</span>
             </div>
             <div class="max-w-sm">${scoreBar(theme.conviction_score)}</div>
-            ${theme.conviction_basis ? `<p class="mt-2 text-sm text-gray-400">${theme.conviction_basis}</p>` : ""}
-            ${theme.stage_reasoning ? `<p class="mt-1 text-xs text-gray-500 italic">${theme.stage_reasoning}</p>` : ""}
+            ${tf(theme,"conviction_basis") ? `<p class="mt-2 text-sm text-gray-400">${tf(theme,"conviction_basis")}</p>` : ""}
+            ${tf(theme,"stage_reasoning") ? `<p class="mt-1 text-xs text-gray-500 italic">${tf(theme,"stage_reasoning")}</p>` : ""}
           </div>
 
           <!-- Bull / Bear -->
           <div class="grid md:grid-cols-2 gap-6">
             <div class="bg-gray-900 border border-gray-800 rounded-xl p-5">
               <h2 class="text-sm font-semibold text-green-400 mb-3 uppercase tracking-wide">${t().bull_case}</h2>
-              <p class="text-sm text-gray-300 leading-relaxed mb-4">${theme.bull_case || "—"}</p>
+              <p class="text-sm text-gray-300 leading-relaxed mb-4">${tf(theme,"bull_case") || "—"}</p>
               ${bullEv ? `<ul class="space-y-2 border-t border-gray-800 pt-3">${bullEv}</ul>` : ""}
             </div>
             <div class="bg-gray-900 border border-gray-800 rounded-xl p-5">
               <h2 class="text-sm font-semibold text-red-400 mb-3 uppercase tracking-wide">${t().bear_case}</h2>
-              <p class="text-sm text-gray-300 leading-relaxed mb-4">${theme.bear_case || "—"}</p>
+              <p class="text-sm text-gray-300 leading-relaxed mb-4">${tf(theme,"bear_case") || "—"}</p>
               ${bearEv ? `<ul class="space-y-2 border-t border-gray-800 pt-3">${bearEv}</ul>` : ""}
             </div>
           </div>
 
           <!-- Drivers + Risks -->
           <div class="grid md:grid-cols-2 gap-6">
-            ${theme.current_drivers ? `
+            ${tf(theme,"current_drivers") ? `
             <div class="bg-gray-900 border border-gray-800 rounded-xl p-5">
               <h2 class="text-sm font-semibold text-gray-300 mb-2 uppercase tracking-wide">${t().drivers}</h2>
-              <p class="text-sm text-gray-300 leading-relaxed">${theme.current_drivers}</p>
+              <p class="text-sm text-gray-300 leading-relaxed">${tf(theme,"current_drivers")}</p>
             </div>` : ""}
             ${risks ? `
             <div class="bg-gray-900 border border-gray-800 rounded-xl p-5">
@@ -193,15 +202,15 @@
             <div class="grid md:grid-cols-3 gap-6">
               <div>
                 <p class="text-xs text-gray-500 mb-1">${t().short_term}</p>
-                <p class="text-sm text-gray-300 leading-relaxed">${theme.short_term_outlook || "—"}</p>
+                <p class="text-sm text-gray-300 leading-relaxed">${tf(theme,"short_term_outlook") || "—"}</p>
               </div>
               <div>
                 <p class="text-xs text-gray-500 mb-1">${t().mid_term}</p>
-                <p class="text-sm text-gray-300 leading-relaxed">${theme.mid_term_outlook || "—"}</p>
+                <p class="text-sm text-gray-300 leading-relaxed">${tf(theme,"mid_term_outlook") || "—"}</p>
               </div>
               <div>
                 <p class="text-xs text-gray-500 mb-1">${t().long_term}</p>
-                <p class="text-sm text-gray-300 leading-relaxed">${theme.long_term_outlook || "—"}</p>
+                <p class="text-sm text-gray-300 leading-relaxed">${tf(theme,"long_term_outlook") || "—"}</p>
               </div>
             </div>
           </div>

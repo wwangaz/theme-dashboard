@@ -14,7 +14,6 @@ Stages (pick exactly one, keep the English label):
 - Crowded Euphoria: Peak coverage, stretched valuations, retail FOMO, analyst upgrades peak
 - Narrative Breakdown: Negative catalysts, coverage declining, price weakness, thesis challenged
 
-Write stage_reasoning in Chinese (中文). Keep the stage value in English exactly as listed above.
 Output only valid JSON."""
 
 

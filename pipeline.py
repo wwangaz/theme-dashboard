@@ -10,6 +10,7 @@ load_dotenv()
 from sqlmodel import select
 from db.session import init_db, get_session
 from db.models import RawSignal, Theme, ThemeDailySnapshot
+from analysis.translation import translate_themes
 from ingestion.rss import ingest_rss
 from ingestion.edgar import ingest_edgar
 from ingestion.price import ingest_prices
@@ -251,6 +252,9 @@ def _load_snapshots_from_db(today: date) -> list[dict]:
 
 def generate_output(snapshots: list[dict], macro_context: dict | None = None):
     print("=== Phase 4: Generate Output ===")
+    print("  Translating to Chinese...")
+    snapshots = translate_themes(snapshots)
+
     beijing = timezone(timedelta(hours=8))
     now = datetime.now(beijing).isoformat()
     snapshots.sort(key=lambda x: x["conviction_score"], reverse=True)
