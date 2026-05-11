@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>纸上交易组合</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen font-sans">
+
+  <!-- Header -->
+  <header class="border-b border-gray-800 px-6 py-4 flex items-center justify-between gap-4">
+    <div class="flex items-center gap-3">
+      <a href="index.html" class="text-gray-400 hover:text-white text-sm transition-colors">← 主题仪表板</a>
+      <span class="text-gray-700">|</span>
+      <h1 class="text-xl font-semibold tracking-tight" data-i18n="title">纸上交易组合</h1>
+    </div>
+    <div class="flex items-center gap-3">
+      <span id="last-updated" class="text-xs text-gray-500"></span>
+      <button id="lang-toggle"
+        class="text-xs px-3 py-1 rounded-full border border-gray-600 text-gray-300 hover:border-gray-400 hover:text-white transition-colors">
+        EN
+      </button>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 py-8 space-y-8">
+
+    <!-- Summary cards -->
+    <div id="summary-cards" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3"></div>
+
+    <!-- Cumulative return chart -->
+    <div class="bg-gray-900 border border-gray-800 rounded-xl p-5">
+      <h2 class="text-sm font-semibold text-gray-300 mb-4" data-i18n="chart_title">累计收益率 vs SPY</h2>
+      <div class="relative h-56">
+        <canvas id="return-chart"></canvas>
+      </div>
+    </div>
+
+    <!-- Open positions -->
+    <section>
+      <h2 class="text-base font-semibold mb-3" data-i18n="open_title">持仓中</h2>
+      <div class="overflow-x-auto rounded-xl border border-gray-800">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="text-xs text-gray-500 border-b border-gray-800 bg-gray-900">
+              <th class="px-4 py-3 text-left" data-i18n="col_theme">主题</th>
+              <th class="px-4 py-3 text-left" data-i18n="col_dir">方向</th>
+              <th class="px-4 py-3 text-left" data-i18n="col_tickers">标的</th>
+              <th class="px-4 py-3 text-right" data-i18n="col_conv">确信度</th>
+              <th class="px-4 py-3 text-right" data-i18n="col_entry">开仓日</th>
+              <th class="px-4 py-3 text-right" data-i18n="col_days">持有天数</th>
+              <th class="px-4 py-3 text-right" data-i18n="col_return">浮动盈亏</th>
+            </tr>
+          </thead>
+          <tbody id="open-tbody" class="divide-y divide-gray-800"></tbody>
+        </table>
+        <p id="open-empty" class="hidden text-center py-8 text-gray-600 text-sm" data-i18n="no_open">暂无持仓</p>
+      </div>
+    </section>
+
+    <!-- Closed positions -->
+    <section>
+      <h2 class="text-base font-semibold mb-3" data-i18n="closed_title">已平仓</h2>
+      <div class="overflow-x-auto rounded-xl border border-gray-800">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="text-xs text-gray-500 border-b border-gray-800 bg-gray-900">
+              <th class="px-4 py-3 text-left" data-i18n="col_theme">主题</th>
+              <th class="px-4 py-3 text-left" data-i18n="col_dir">方向</th>
+              <th class="px-4 py-3 text-left" data-i18n="col_tickers">标的</th>
+              <th class="px-4 py-3 text-right" data-i18n="col_entry">开仓日</th>
+              <th class="px-4 py-3 text-right" data-i18n="col_exit">平仓日</th>
+              <th class="px-4 py-3 text-right" data-i18n="col_reason">原因</th>
+              <th class="px-4 py-3 text-right" data-i18n="col_return">已实现盈亏</th>
+            </tr>
+          </thead>
+          <tbody id="closed-tbody" class="divide-y divide-gray-800"></tbody>
+        </table>
+        <p id="closed-empty" class="hidden text-center py-8 text-gray-600 text-sm" data-i18n="no_closed">暂无已平仓记录</p>
+      </div>
+    </section>
+
+    <!-- Disclaimer -->
+    <p class="text-xs text-gray-600 text-center pb-4" data-i18n="disclaimer">
+      仅供研究参考，非投资建议。卖空收益率为模拟计算，不含借券成本。
+    </p>
+  </main>
+
+  <script>
+    // ── i18n ──────────────────────────────────────────────────────────────────
+    const I18N = {
+      zh: {
+        title: "纸上交易组合",
+        updated: (d) => `更新于 ${d}`,
+        chart_title: "累计收益率 vs SPY",
+        open_title: "持仓中", closed_title: "已平仓",
+        col_theme: "主题", col_dir: "方向", col_tickers: "标的",
+        col_conv: "确信度", col_entry: "开仓日", col_days: "持有天数",
+        col_exit: "平仓日", col_reason: "平仓原因", col_return: "盈亏",
+        no_open: "暂无持仓", no_closed: "暂无已平仓记录",
+        disclaimer: "仅供研究参考，非投资建议。卖空收益率为模拟计算，不含借券成本。",
+        bullish: "看多", bearish: "看空", neutral: "中性",
+        exit_reason: {
+          theme_gone: "主题消失", conviction_drop: "确信度下降",
+          direction_reversal: "方向反转", max_holding: "达到持仓上限",
+        },
+        card: {
+          portfolio: "组合收益", spy: "SPY 收益", alpha: "超额收益",
+          open: "持仓数", closed: "已平仓", win_rate: "胜率", tracking: "追踪天数",
+        },
+        no_data: "尚无数据，等待 pipeline 运行",
+        chart_portfolio: "组合", chart_spy: "SPY",
+      },
+      en: {
+        title: "Paper Portfolio",
+        updated: (d) => `Updated ${d}`,
+        chart_title: "Cumulative Return vs SPY",
+        open_title: "Open Positions", closed_title: "Closed Positions",
+        col_theme: "Theme", col_dir: "Direction", col_tickers: "Tickers",
+        col_conv: "Conv.", col_entry: "Entry", col_days: "Days",
+        col_exit: "Exit", col_reason: "Exit Reason", col_return: "P&L",
+        no_open: "No open positions", no_closed: "No closed positions yet",
+        disclaimer: "For research only, not investment advice. Short P&L is simulated; no borrow cost included.",
+        bullish: "Bullish", bearish: "Bearish", neutral: "Neutral",
+        exit_reason: {
+          theme_gone: "Theme gone", conviction_drop: "Conviction drop",
+          direction_reversal: "Direction reversal", max_holding: "Max holding period",
+        },
+        card: {
+          portfolio: "Portfolio", spy: "SPY", alpha: "Alpha",
+          open: "Open", closed: "Closed", win_rate: "Win Rate", tracking: "Tracking Days",
+        },
+        no_data: "No data yet — waiting for pipeline run",
+        chart_portfolio: "Portfolio", chart_spy: "SPY",
+      },
+    };
+
+    let lang = localStorage.getItem("lang") || "zh";
+    const t = () => I18N[lang];
+
+    function applyLang() {
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.dataset.i18n;
+        if (t()[key]) el.textContent = t()[key];
+      });
+      document.getElementById("lang-toggle").textContent = lang === "zh" ? "EN" : "中";
+    }
+
+    document.getElementById("lang-toggle").addEventListener("click", () => {
+      lang = lang === "zh" ? "en" : "zh";
+      localStorage.setItem("lang", lang);
+      window._renderAll?.();
+    });
+
+    // ── Helpers ───────────────────────────────────────────────────────────────
+    const pct = (v, decimals = 2) => v == null ? "—" : `${v >= 0 ? "+" : ""}${(v * 100).toFixed(decimals)}%`;
+    const pctColor = (v) => v == null ? "text-gray-400" : v > 0 ? "text-green-400" : v < 0 ? "text-red-400" : "text-gray-400";
+    const dirChip = (dir) => {
+      const label = t()[dir.toLowerCase()] || dir;
+      const cls = dir === "Bullish" ? "bg-green-900 text-green-300"
+                : dir === "Bearish" ? "bg-red-900 text-red-300"
+                : "bg-gray-800 text-gray-400";
+      return `<span class="text-xs px-2 py-0.5 rounded-full ${cls}">${label}</span>`;
+    };
+    const daysSince = (dateStr) => {
+      const d = new Date(dateStr);
+      return Math.floor((Date.now() - d.getTime()) / 86400000);
+    };
+
+    // ── Chart ─────────────────────────────────────────────────────────────────
+    let _chart = null;
+
+    function renderChart(dailyReturns) {
+      const ctx = document.getElementById("return-chart").getContext("2d");
+      if (_chart) { _chart.destroy(); _chart = null; }
+
+      if (!dailyReturns.length) return;
+
+      // Build cumulative return series
+      const labels = [];
+      const portData = [];
+      const spyData  = [];
+      let portCum = 1, spyCum = 1;
+
+      // Baseline point (day 0)
+      const firstDate = new Date(dailyReturns[0].date);
+      firstDate.setDate(firstDate.getDate() - 1);
+      labels.push(firstDate.toLocaleDateString("en-CA").slice(5)); // MM-DD
+      portData.push(0);
+      spyData.push(0);
+
+      for (const r of dailyReturns) {
+        portCum *= (1 + r.portfolio_return);
+        spyCum  *= (1 + r.spy_return);
+        labels.push(new Date(r.date).toLocaleDateString("en-CA").slice(5));
+        portData.push(+((portCum - 1) * 100).toFixed(3));
+        spyData.push( +((spyCum  - 1) * 100).toFixed(3));
+      }
+
+      _chart = new Chart(ctx, {
+        type: "line",
+        data: {
+          labels,
+          datasets: [
+            {
+              label: t().chart_portfolio,
+              data: portData,
+              borderColor: "#34d399",
+              backgroundColor: "rgba(52,211,153,0.08)",
+              borderWidth: 2,
+              pointRadius: 0,
+              tension: 0.3,
+              fill: true,
+            },
+            {
+              label: t().chart_spy,
+              data: spyData,
+              borderColor: "#94a3b8",
+              backgroundColor: "transparent",
+              borderWidth: 1.5,
+              borderDash: [4, 3],
+              pointRadius: 0,
+              tension: 0.3,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: { mode: "index", intersect: false },
+          plugins: {
+            legend: { labels: { color: "#9ca3af", boxWidth: 12, font: { size: 11 } } },
+            tooltip: {
+              backgroundColor: "#1f2937",
+              borderColor: "#374151",
+              borderWidth: 1,
+              titleColor: "#d1d5db",
+              bodyColor: "#d1d5db",
+              callbacks: {
+                label: (ctx) => ` ${ctx.dataset.label}: ${ctx.parsed.y >= 0 ? "+" : ""}${ctx.parsed.y.toFixed(2)}%`,
+              },
+            },
+          },
+          scales: {
+            x: {
+              ticks: { color: "#6b7280", font: { size: 10 }, maxTicksLimit: 8 },
+              grid: { color: "#1f2937" },
+            },
+            y: {
+              ticks: {
+                color: "#6b7280", font: { size: 10 },
+                callback: (v) => `${v >= 0 ? "+" : ""}${v.toFixed(1)}%`,
+              },
+              grid: { color: "#1f2937" },
+            },
+          },
+        },
+      });
+    }
+
+    // ── Summary cards ─────────────────────────────────────────────────────────
+    function renderSummary(s) {
+      const cards = [
+        { key: "portfolio", value: pct(s.portfolio_cumulative), color: pctColor(s.portfolio_cumulative) },
+        { key: "spy",       value: pct(s.spy_cumulative),       color: pctColor(s.spy_cumulative) },
+        { key: "alpha",     value: pct(s.alpha),                color: pctColor(s.alpha) },
+        { key: "open",      value: s.open_count ?? "—",         color: "text-gray-100" },
+        { key: "closed",    value: s.closed_count ?? "—",       color: "text-gray-100" },
+        { key: "win_rate",  value: s.win_rate != null ? `${(s.win_rate * 100).toFixed(0)}%` : "—", color: "text-gray-100" },
+      ];
+      document.getElementById("summary-cards").innerHTML = cards.map(c => `
+        <div class="bg-gray-900 border border-gray-800 rounded-xl px-4 py-3 text-center">
+          <p class="text-xs text-gray-500 mb-1">${t().card[c.key]}</p>
+          <p class="text-lg font-mono font-semibold ${c.color}">${c.value}</p>
+        </div>`).join("");
+    }
+
+    // ── Tables ────────────────────────────────────────────────────────────────
+    function renderOpenTable(positions) {
+      const open = positions.filter(p => p.status === "open");
+      const tbody = document.getElementById("open-tbody");
+      const empty = document.getElementById("open-empty");
+      if (!open.length) {
+        tbody.innerHTML = "";
+        empty.classList.remove("hidden");
+        return;
+      }
+      empty.classList.add("hidden");
+      tbody.innerHTML = open.map(p => {
+        const days = daysSince(p.entry_date);
+        // Estimate unrealized P&L from entry prices only (no real-time price here)
+        const name = lang === "zh" ? (p.theme_name_zh || p.theme_name) : p.theme_name;
+        return `<tr class="hover:bg-gray-900 transition-colors">
+          <td class="px-4 py-3">
+            <a href="theme.html?id=${p.theme_id}" class="text-blue-400 hover:text-blue-300 text-sm">${name}</a>
+          </td>
+          <td class="px-4 py-3">${dirChip(p.direction)}</td>
+          <td class="px-4 py-3 text-gray-400 text-xs">${p.tickers.join(", ")}</td>
+          <td class="px-4 py-3 text-right text-gray-300">${p.conviction_at_entry}</td>
+          <td class="px-4 py-3 text-right text-gray-400 text-xs">${p.entry_date}</td>
+          <td class="px-4 py-3 text-right text-gray-400">${days}d</td>
+          <td class="px-4 py-3 text-right font-mono text-gray-500 text-xs">—</td>
+        </tr>`;
+      }).join("");
+    }
+
+    function renderClosedTable(positions) {
+      const closed = positions.filter(p => p.status === "closed")
+                              .sort((a, b) => b.exit_date.localeCompare(a.exit_date));
+      const tbody = document.getElementById("closed-tbody");
+      const empty = document.getElementById("closed-empty");
+      if (!closed.length) {
+        tbody.innerHTML = "";
+        empty.classList.remove("hidden");
+        return;
+      }
+      empty.classList.add("hidden");
+      tbody.innerHTML = closed.map(p => {
+        const name = lang === "zh" ? (p.theme_name_zh || p.theme_name) : p.theme_name;
+        const reason = t().exit_reason[p.exit_reason] || p.exit_reason || "—";
+        const ret = p.realized_return;
+        return `<tr class="hover:bg-gray-900 transition-colors">
+          <td class="px-4 py-3">
+            <a href="theme.html?id=${p.theme_id}" class="text-blue-400 hover:text-blue-300 text-sm">${name}</a>
+          </td>
+          <td class="px-4 py-3">${dirChip(p.direction)}</td>
+          <td class="px-4 py-3 text-gray-400 text-xs">${p.tickers.join(", ")}</td>
+          <td class="px-4 py-3 text-right text-gray-400 text-xs">${p.entry_date}</td>
+          <td class="px-4 py-3 text-right text-gray-400 text-xs">${p.exit_date || "—"}</td>
+          <td class="px-4 py-3 text-right text-gray-500 text-xs">${reason}</td>
+          <td class="px-4 py-3 text-right font-mono font-medium ${pctColor(ret)}">${pct(ret)}</td>
+        </tr>`;
+      }).join("");
+    }
+
+    // ── Init ──────────────────────────────────────────────────────────────────
+    window._renderAll = function() {
+      if (!window._portfolioData) return;
+      applyLang();
+      const d = window._portfolioData;
+      if (d.updated_at) {
+        document.getElementById("last-updated").textContent = t().updated(d.updated_at);
+      }
+      renderSummary(d.summary || {});
+      renderChart(d.daily_returns || []);
+      renderOpenTable(d.positions || []);
+      renderClosedTable(d.positions || []);
+    };
+
+    fetch("data/portfolio.json?_=" + Date.now())
+      .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(data => {
+        window._portfolioData = data;
+        window._renderAll();
+      })
+      .catch(() => {
+        document.getElementById("summary-cards").innerHTML =
+          `<p class="col-span-6 text-center text-gray-500 py-8">${t().no_data}</p>`;
+      });
+  </script>
+</body>
+</html>

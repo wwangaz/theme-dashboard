@@ -20,6 +20,7 @@ from theme_engine.clusterer import cluster_themes, save_themes, match_existing_t
 from analysis.stage import classify_stage
 from analysis.conviction import score_conviction
 from analysis.compression import compress_research
+from analysis.portfolio import update_portfolio
 
 OUTPUT_PATH = Path(__file__).parent / "docs" / "data" / "latest.json"
 
@@ -361,6 +362,7 @@ def main():
     snapshots = run_analysis(clusters, signals, today, force=args.force)
     macro_context = _load_macro_context()
     generate_output(snapshots, macro_context)
+    update_portfolio(snapshots, today)
     print("=== Done ===")
 
 

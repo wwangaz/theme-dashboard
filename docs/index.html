@@ -12,6 +12,7 @@
   <header class="border-b border-gray-800 px-6 py-4 flex items-center justify-between gap-4">
     <h1 class="text-xl font-semibold tracking-tight" data-i18n="title">主题发现仪表板</h1>
     <div class="flex items-center gap-4">
+      <a href="portfolio.html" class="text-xs text-gray-400 hover:text-white border border-gray-700 hover:border-gray-500 px-3 py-1 rounded-full transition-colors" data-i18n="portfolio_link">纸仓</a>
       <span id="last-updated" class="text-sm text-gray-400"></span>
       <button id="lang-toggle"
         class="text-xs px-3 py-1 rounded-full border border-gray-600 text-gray-300 hover:border-gray-400 hover:text-white transition-colors">
@@ -71,6 +72,7 @@
         title: "主题发现仪表板",
         updated: (dt) => `更新于 ${dt.toLocaleDateString("zh-CN", {month:"short",day:"numeric"})} ${dt.toLocaleTimeString("zh-CN",{hour:"2-digit",minute:"2-digit"})}`,
         macro_label: "宏观利率",
+        portfolio_link: "纸仓",
         high_conviction: "高确信度", score_7_10: "评分 7–10",
         emerging: "新兴主题", score_4_6: "评分 4–6",
         watch: "观察 / 衰退", score_1_3: "评分 1–3",
@@ -88,6 +90,7 @@
         title: "Theme Discovery Dashboard",
         updated: (dt) => `Updated ${dt.toLocaleDateString("en-US",{month:"short",day:"numeric"})} ${dt.toLocaleTimeString("en-US",{hour:"2-digit",minute:"2-digit"})}`,
         macro_label: "Macro Rates",
+        portfolio_link: "Paper Portfolio",
         high_conviction: "High Conviction", score_7_10: "score 7–10",
         emerging: "Emerging", score_4_6: "score 4–6",
         watch: "Watch / Fading", score_1_3: "score 1–3",
