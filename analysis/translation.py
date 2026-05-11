@@ -63,14 +63,18 @@ def _apply_translation(snap: dict, tr: dict):
 
 def translate_themes(snapshots: list[dict]) -> list[dict]:
     for snap in snapshots:
-        # Skip if already translated
-        if snap.get("name_zh"):
+        if snap.get("name_zh") and snap.get("bull_case_zh"):
             print(f"  [translation] {snap['id']} already translated, skipping")
             continue
-        try:
-            tr = _translate_one(snap)
-            _apply_translation(snap, tr)
-            print(f"  [translation] {snap.get('name', snap['id'])} ✓")
-        except Exception as e:
-            print(f"  [translation] {snap['id']} failed: {e} — keeping English")
+        last_err = None
+        for attempt in range(2):
+            try:
+                tr = _translate_one(snap)
+                _apply_translation(snap, tr)
+                print(f"  [translation] {snap.get('name', snap['id'])} ✓")
+                break
+            except Exception as e:
+                last_err = e
+        else:
+            print(f"  [translation] {snap['id']} failed after 2 attempts: {last_err} — keeping English")
     return snapshots

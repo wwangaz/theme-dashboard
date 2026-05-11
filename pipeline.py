@@ -290,9 +290,12 @@ def _json_state(today: date) -> str:
         themes = data.get("themes", [])
         if not themes:
             return "needs_full_run"
-        # Check if any theme has _zh fields
-        has_zh = any(t.get("name_zh") or t.get("bull_case_zh") for t in themes)
-        return "done" if has_zh else "needs_translation"
+        # All themes must have _zh fields — partial translation counts as needs_translation
+        all_translated = all(t.get("name_zh") and t.get("bull_case_zh") for t in themes)
+        any_translated = any(t.get("name_zh") or t.get("bull_case_zh") for t in themes)
+        if all_translated:
+            return "done"
+        return "needs_translation" if any_translated or themes else "needs_full_run"
     except Exception:
         return "needs_full_run"
 
