@@ -194,6 +194,7 @@ def run_analysis(clusters: list[dict], all_signals: list[RawSignal], today: date
         with get_session() as session:
             session.add(snapshot)
             session.commit()
+            session.refresh(snapshot)
 
         snapshots.append(_snapshot_to_dict(snapshot, cluster, conviction_delta, today))
 
