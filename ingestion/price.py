@@ -72,7 +72,7 @@ def fetch_treasury_yields() -> dict:
     for ticker, label in TREASURY_TICKERS.items():
         try:
             data = yf.download(ticker, period="5d", auto_adjust=True, progress=False)
-            close = data["Close"].dropna()
+            close = data["Close"].squeeze().dropna()
             if len(close) < 2:
                 continue
             yields[label] = round(float(close.iloc[-1]) / 100, 4)
