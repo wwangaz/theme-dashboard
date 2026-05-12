@@ -1,0 +1,14 @@
+{
+  "positions": [],
+  "daily_returns": [],
+  "summary": {
+    "portfolio_cumulative": 0.0,
+    "spy_cumulative": 0.0,
+    "alpha": 0.0,
+    "open_count": 0,
+    "closed_count": 0,
+    "win_rate": null,
+    "tracking_days": 0
+  },
+  "updated_at": "2026-05-12"
+}
