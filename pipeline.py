@@ -8,14 +8,25 @@ from zoneinfo import ZoneInfo
 ET = ZoneInfo("America/New_York")
 
 
+def _et_trading_date(dt: datetime) -> date:
+    """Return the trading date for a given ET datetime.
+    Midnight–06:00 ET is still considered the previous calendar day,
+    so a manual run at 2am ET doesn't count as a new trading day.
+    """
+    et = dt.astimezone(ET)
+    if et.hour < 6:
+        return (et - timedelta(days=1)).date()
+    return et.date()
+
+
 def _et_today() -> date:
-    """Return the current date in US Eastern time — the reference timezone for US trading days."""
-    return datetime.now(ET).date()
+    """Return today's trading date in US Eastern time."""
+    return _et_trading_date(datetime.now(ET))
 
 
 def _parse_et_date(ts_str: str) -> date:
-    """Parse an ISO timestamp (any tz) and return its date in US Eastern time."""
-    return datetime.fromisoformat(ts_str).astimezone(ET).date()
+    """Parse an ISO timestamp (any tz) and return its trading date in US Eastern time."""
+    return _et_trading_date(datetime.fromisoformat(ts_str))
 from dotenv import load_dotenv
 
 load_dotenv()
