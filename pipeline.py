@@ -3,6 +3,19 @@ import json
 import os
 from datetime import date, datetime, timezone, timedelta
 from pathlib import Path
+from zoneinfo import ZoneInfo
+
+ET = ZoneInfo("America/New_York")
+
+
+def _et_today() -> date:
+    """Return the current date in US Eastern time — the reference timezone for US trading days."""
+    return datetime.now(ET).date()
+
+
+def _parse_et_date(ts_str: str) -> date:
+    """Parse an ISO timestamp (any tz) and return its date in US Eastern time."""
+    return datetime.fromisoformat(ts_str).astimezone(ET).date()
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -286,7 +299,7 @@ def _json_state(today: date) -> str:
         generated_at = data.get("generated_at")
         if not generated_at:
             return "needs_full_run"
-        gen_date = date.fromisoformat(generated_at[:10])
+        gen_date = _parse_et_date(generated_at)
         if gen_date != today:
             return "needs_full_run"
         themes = data.get("themes", [])
@@ -330,7 +343,7 @@ def main():
     args = parser.parse_args()
 
     init_db()
-    today = date.today()
+    today = _et_today()
 
     if args.render_only:
         print("=== Render-only mode ===")
