@@ -12,8 +12,12 @@ client = anthropic.Anthropic()
 THEMES_INDEX_PATH = Path(__file__).parent.parent / "docs" / "data" / "themes_index.json"
 
 CLUSTER_SYSTEM = """You are a senior market analyst. Cluster market signals into coherent investment themes.
-Identify 5-10 distinct themes. Be specific — avoid generic labels like "Tech" or "Market".
-Output only valid JSON."""
+
+Rules:
+1. Identify 5-10 themes. Be specific — avoid generic labels like "Tech" or "Market".
+2. Each ticker should appear in at most one theme. If a stock drives multiple narratives, assign it to the most thematically dominant one.
+3. Consolidate signals that share the same underlying macro driver into a single theme, even if they manifest through different angles (e.g., AI hardware capex + AI chip policy = one AI theme, not two). Themes are distinct only when their representative tickers AND investment implications differ meaningfully.
+4. Output only valid JSON."""
 
 MATCH_SYSTEM = """You are a market analyst. Match today's new themes against existing historical themes.
 If a new theme is semantically equivalent to an existing theme (>80% overlap), return the existing theme's ID.
@@ -54,6 +58,8 @@ def cluster_themes(signals: list[RawSignal], keyword_map: dict[int, list[str]]) 
         max_tokens=4096,
         system=[{"type": "text", "text": CLUSTER_SYSTEM, "cache_control": {"type": "ephemeral"}}],
         messages=[{"role": "user", "content": f"""Cluster these market signals into 5-10 investment themes.
+
+Important: themes must be distinct in their investable tickers. If two candidate themes would share more than 2 tickers, merge them into one broader theme.
 
 Return JSON array:
 [{{
