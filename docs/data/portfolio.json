@@ -1,14 +1,48 @@
 {
-  "positions": [],
-  "daily_returns": [],
+  "positions": [
+    {
+      "theme_id": "midstream-oil-gas-consolidation",
+      "theme_name": "Midstream Oil & Gas Consolidation & Asset Deals",
+      "direction": "Bullish",
+      "entry_date": "2026-05-13",
+      "tickers": [
+        "WES",
+        "PAA",
+        "PAGP",
+        "SLB",
+        "SMID"
+      ],
+      "entry_prices": {
+        "WES": 44.53,
+        "PAA": 21.94,
+        "PAGP": 23.46,
+        "SLB": 55.64,
+        "SMID": 30.76
+      },
+      "conviction_at_entry": 7,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null
+    }
+  ],
+  "daily_returns": [
+    {
+      "date": "2026-05-13",
+      "portfolio_return": 0.0,
+      "spy_return": -0.001515,
+      "open_count": 1
+    }
+  ],
   "summary": {
     "portfolio_cumulative": 0.0,
-    "spy_cumulative": 0.0,
-    "alpha": 0.0,
-    "open_count": 0,
+    "spy_cumulative": -0.001515,
+    "alpha": 0.001515,
+    "open_count": 1,
     "closed_count": 0,
     "win_rate": null,
-    "tracking_days": 0
+    "tracking_days": 1
   },
-  "updated_at": "2026-05-12"
+  "updated_at": "2026-05-13"
 }
