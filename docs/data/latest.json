@@ -2,16 +2,16 @@
   "generated_at": "2026-05-13T01:22:55.212509+08:00",
   "macro_context": {
     "yields": {
-      "2Y": 0.0361,
+      "2Y": 0.036,
       "10Y": 0.0446
     },
     "changes": {
-      "2Y": 0.0001,
+      "2Y": 0.0,
       "10Y": 0.0005
     },
-    "spread_2_10": 0.0085,
+    "spread_2_10": 0.0086,
     "risk_label": "rates_stable",
-    "date": "2026-05-12"
+    "date": "2026-05-13"
   },
   "themes": [
     {
@@ -501,29 +501,34 @@
         {
           "headline": "Amentum Q2 2026: Revenue $3.5 billion, 3% normalized growth driven by ramp-up",
           "source": "Earnings Transcript (Motley Fool)",
-          "url": "https://www.fool.com/earnings/call-transcripts/2026/05/12/amentum-amtm-q2-2026-earnings-transcript/"
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/05/12/amentum-amtm-q2-2026-earnings-transcript/",
+          "headline_zh": "Amentum 2026年第二季度：收入35亿美元，常态化增长3%，由加速驱动"
         },
         {
           "headline": "Amentum Holdings, Inc. (AMTM) Q2 2026 Earnings Call Transcript",
           "source": "Seeking Alpha",
-          "url": "https://seekingalpha.com/article/4903077-amentum-holdings-inc-amtm-q2-2026-earnings-call-transcript?source=feed_all_articles"
+          "url": "https://seekingalpha.com/article/4903077-amentum-holdings-inc-amtm-q2-2026-earnings-call-transcript?source=feed_all_articles",
+          "headline_zh": "Amentum Holdings, Inc. (AMTM) 2026年第二季度财报电话会议记录"
         },
         {
           "headline": "Embraer Q1: Not The Blowout Quarter I Expected, But Still A Buy",
           "source": "Seeking Alpha",
-          "url": "https://seekingalpha.com/article/4903140-embraer-q1-not-the-blowout-quarter-i-expected-but-still-a-buy?source=feed_all_articles"
+          "url": "https://seekingalpha.com/article/4903140-embraer-q1-not-the-blowout-quarter-i-expected-but-still-a-buy?source=feed_all_articles",
+          "headline_zh": "Embraer第一季度：不是我预期的爆炸性季度，但仍然是买入"
         }
       ],
       "bear_evidence": [
         {
           "headline": "Amentum Q2 2026 growth of only 3% normalized — modest, not accelerating",
           "source": "Earnings Transcript (Motley Fool)",
-          "url": "https://www.fool.com/earnings/call-transcripts/2026/05/12/amentum-amtm-q2-2026-earnings-transcript/"
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/05/12/amentum-amtm-q2-2026-earnings-transcript/",
+          "headline_zh": "Amentum 2026年第二季度常态化增长仅3%——温和，未加速"
         },
         {
           "headline": "Embraer Q1: Not The Blowout Quarter I Expected — defense/aerospace earnings missing high expectations",
           "source": "Seeking Alpha",
-          "url": "https://seekingalpha.com/article/4903140-embraer-q1-not-the-blowout-quarter-i-expected-but-still-a-buy?source=feed_all_articles"
+          "url": "https://seekingalpha.com/article/4903140-embraer-q1-not-the-blowout-quarter-i-expected-but-still-a-buy?source=feed_all_articles",
+          "headline_zh": "Embraer第一季度：不是我预期的爆炸性季度——国防/航空航天收益未达高预期"
         }
       ],
       "bull_case": "Amentum (AMTM) reported Q2 2026 revenue of $3.5 billion with 3% normalized growth driven by contract ramp-ups, signaling durable demand for government technical services despite a complex budget environment. The combination of large-scale program execution under CEO John Heller and steady pipeline conversion supports a multi-year compounding growth thesis in defense services. Broader aerospace defense exposure, including Embraer's continued buy-rated trajectory, reinforces sector-wide spending momentum.",
@@ -541,16 +546,34 @@
       "timeline": [
         {
           "date": "2026-05-12",
-          "event": "Amentum (AMTM) Q2 2026 earnings call: CEO John Heller and CFO Travis Johnson report $3.5B revenue, 3% normalized growth driven by contract ramp-ups"
+          "event": "Amentum (AMTM) Q2 2026 earnings call: CEO John Heller and CFO Travis Johnson report $3.5B revenue, 3% normalized growth driven by contract ramp-ups",
+          "event_zh": "Amentum (AMTM) 2026年第二季度财报电话会议：CEO John Heller和首席财务官Travis Johnson报告35亿美元收入，常态化增长3%，由合同加速驱动"
         },
         {
           "date": "2026-05-12",
-          "event": "AMTM Q2 2026 transcript published by Motley Fool and Seeking Alpha, highlighting COO Stephen Arnette's operational commentary on program execution"
+          "event": "AMTM Q2 2026 transcript published by Motley Fool and Seeking Alpha, highlighting COO Stephen Arnette's operational commentary on program execution",
+          "event_zh": "AMTM 2026年第二季度记录由Motley Fool和Seeking Alpha发布，突出了首席运营官Stephen Arnette关于项目执行的运营评论"
         },
         {
           "date": "2026-05-12",
-          "event": "Embraer Q1 2026 analysis published on Seeking Alpha — missed elevated expectations but maintained Buy rating, reflecting mixed aerospace/defense execution signals"
+          "event": "Embraer Q1 2026 analysis published on Seeking Alpha — missed elevated expectations but maintained Buy rating, reflecting mixed aerospace/defense execution signals",
+          "event_zh": "Embraer 2026年第一季度分析发布于Seeking Alpha——未达高预期但维持买入评级，反映了航空航天/国防执行的混合信号"
         }
+      ],
+      "name_zh": "国防与政府服务支出浪潮",
+      "one_line_summary_zh": "国防承包商和政府服务公司报告合同奖励加速和EBITDA利润率扩张，因联邦支出保持强劲",
+      "conviction_basis_zh": "Amentum 2026年第二季度财报电话会议确认了国防/政府服务领域的稳定收入增长和合同加速，支持谨慎看多的观点；但是增长仅为3%的常态化增长，信号广度有限，限制了信心水平为中等程度。",
+      "stage_reasoning_zh": "信号集稀少——仅4个信号，没有价格信号，覆盖范围仅限于单一公司（Amentum/AMTM）的财报电话会议加上与Embraer相关的边际文章。围绕\"国防与政府服务支出浪潮\"主题没有形成广泛的媒体叙述，没有机构动量信号，没有可见的价格突破。内容属于专业/分析师级别的财报覆盖，而非主流投资主题覆盖。这表明该主题要么处于发现的极早阶段，要么尚未在市场中形成凝聚的叙述认同。鉴于数据稀少，信心水平为中低。",
+      "bull_case_zh": "Amentum (AMTM) 报告2026年第二季度收入为35亿美元，常态化增长3%，由合同加速驱动，表明尽管预算环境复杂，政府技术服务需求依然稳定。在CEO John Heller领导下的大规模项目执行与稳定的管道转化相结合，支持国防服务领域的多年复合增长论题。包括Embraer持续买入评级在内的更广泛航空航天国防敞口，进一步强化了行业范围内的支出动力。",
+      "bear_case_zh": "Amentum的3%常态化增长虽然为正，但未能达到鉴于国防预算修辞升温而预期的加速扩张，引发了对合同奖励速度和近期收入扩张上限的疑虑。华盛顿持续拨款决议风险和潜在的裁减情景可能延迟新项目启动并压低成本加成合同的利润率。Embraer第一季度相对于高企预期的未达预期表明，当投资者情绪被定价为超额表现时存在执行风险。",
+      "current_drivers_zh": "Amentum的积极合同加速正在将账面积压转化为已确认收入，而持续的政府服务外包趋势支持了技术和任务支持工作的稳定产量。投资者对国防信息技术和服务作为更宽泛国防支出浪潮中更安全、资本密集度较低的子集的关注，正在将增量资金导入AMTM等名称。",
+      "short_term_outlook_zh": "在未来1-4周内，AMTM的盈后价格表现将确定基调；3%常态化增长成绩稳健但非突爆性，表明上升空间有限，除非管理层提高全年指引，否则缺乏进行急剧重估的催化剂。行业情绪保持建设性。",
+      "mid_term_outlook_zh": "在1-6个月期间，持续的合同加速执行和任何增量国防补充拨款可能为政府服务龙头公司推高估值修订。密切关注新的任务订单奖励和积压更新作为这一细分领域估值倍数扩张的主要催化剂。",
+      "long_term_outlook_zh": "从结构上看，将复杂技术、情报和后勤服务外包给Amentum等专业承包商代表了一项多年期世俗趋势，因为美国政府寻求在保持任务能力的同时减少人员编制。三年期视野支持中单位数的收入年复合增长率，因为项目组合向更高价值的咨询和技术集成工作转变，利润率存在扩张潜力。",
+      "key_risks_zh": [
+        "美国联邦预算僵局或延期持续拨款决议限制新合同奖励和项目启动日期",
+        "随着工资和供应链压力，固定价格政府合同的成本膨胀导致利润率压缩",
+        "大型项目加速执行风险导致收入确认延迟或成本超支，令共识估值失望"
       ]
     },
     {
