@@ -68,9 +68,22 @@ def _close_position(p: dict, today: date, exit_reason: str, current_prices: dict
              exit_prices=exit_prices, exit_reason=exit_reason)
     ret = _position_return(p, exit_prices)
     p["realized_return"] = round(ret, 6) if ret is not None else None
+
+    spy_entry = p.get("spy_price_at_entry")
+    spy_exit = current_prices.get(SPY)
+    if spy_entry and spy_exit:
+        spy_ret = (spy_exit - spy_entry) / spy_entry
+        p["spy_return_during_holding"] = round(spy_ret, 6)
+        p["excess_return"] = round((p["realized_return"] or 0) - spy_ret, 6)
+    else:
+        p["spy_return_during_holding"] = None
+        p["excess_return"] = None
+
     sign = "+" if (p["realized_return"] or 0) >= 0 else ""
+    exc  = p["excess_return"]
+    exc_str = f"  excess={'+' if (exc or 0) >= 0 else ''}{(exc or 0):.2%}" if exc is not None else ""
     print(f"  CLOSE {p['theme_name']}  reason={exit_reason}  "
-          f"return={sign}{(p['realized_return'] or 0):.2%}")
+          f"return={sign}{(p['realized_return'] or 0):.2%}{exc_str}")
 
 
 def update_portfolio(snapshots: list[dict], today: date):
@@ -160,18 +173,21 @@ def update_portfolio(snapshots: list[dict], today: date):
             continue
 
         new_pos = {
-            "theme_id":            snap["id"],
-            "theme_name":          snap["name"],
-            "direction":           "Bullish",
-            "entry_date":          str(today),
-            "tickers":             list(entry_prices),
-            "entry_prices":        entry_prices,
-            "conviction_at_entry": snap["conviction_score"],
-            "status":              "open",
-            "exit_date":           None,
-            "exit_prices":         None,
-            "exit_reason":         None,
-            "realized_return":     None,
+            "theme_id":              snap["id"],
+            "theme_name":            snap["name"],
+            "direction":             "Bullish",
+            "entry_date":            str(today),
+            "tickers":               list(entry_prices),
+            "entry_prices":          entry_prices,
+            "conviction_at_entry":   snap["conviction_score"],
+            "spy_price_at_entry":    current_prices.get(SPY),
+            "status":                "open",
+            "exit_date":             None,
+            "exit_prices":           None,
+            "exit_reason":           None,
+            "realized_return":       None,
+            "spy_return_during_holding": None,
+            "excess_return":         None,
         }
         positions.append(new_pos)
         open_ids.add(snap["id"])
@@ -201,10 +217,11 @@ def update_portfolio(snapshots: list[dict], today: date):
             theme_history[theme_id] = []
         if not any(h["date"] == today_str for h in theme_history[theme_id]):
             theme_history[theme_id].append({
-                "date": today_str,
+                "date":       today_str,
                 "conviction": snap["conviction_score"],
-                "direction": snap["direction"],
-                "stage": snap["stage"],
+                "direction":  snap["direction"],
+                "stage":      snap["stage"],
+                "tickers":    snap.get("representative_tickers", []),
             })
 
     # ── 5. Cumulative summary ─────────────────────────────────────────────────
@@ -214,7 +231,7 @@ def update_portfolio(snapshots: list[dict], today: date):
         spy_cum  *= 1 + r["spy_return"]
 
     closed = [p for p in positions if p["status"] == "closed" and p["realized_return"] is not None]
-    wins   = [p for p in closed if p["realized_return"] > 0]
+    wins   = [p for p in closed if (p.get("excess_return") or p["realized_return"]) > 0]
 
     data.update(
         positions=positions,
