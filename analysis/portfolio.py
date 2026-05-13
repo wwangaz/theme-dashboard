@@ -27,7 +27,7 @@ def _save(data: dict):
 def _fetch_close(ticker: str) -> float | None:
     try:
         hist = yf.download(ticker, period="5d", auto_adjust=True, progress=False)
-        s = hist["Close"].dropna()
+        s = hist["Close"].squeeze().dropna()
         return round(float(s.iloc[-1]), 4) if len(s) > 0 else None
     except Exception as e:
         print(f"  [portfolio] {ticker} fetch failed: {e}")
@@ -54,7 +54,7 @@ def _position_return(position: dict, current_prices: dict) -> float | None:
 
 def _spy_daily_return() -> float | None:
     try:
-        hist = yf.download(SPY, period="5d", auto_adjust=True, progress=False)["Close"].dropna()
+        hist = yf.download(SPY, period="5d", auto_adjust=True, progress=False)["Close"].squeeze().dropna()
         if len(hist) >= 2:
             return float(hist.iloc[-1]) / float(hist.iloc[-2]) - 1
     except Exception:
