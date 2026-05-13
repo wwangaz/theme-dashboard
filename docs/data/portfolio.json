@@ -20,11 +20,115 @@
         "SMID": 30.76
       },
       "conviction_at_entry": 7,
+      "status": "closed",
+      "exit_date": "2026-05-13",
+      "exit_prices": {
+        "WES": 44.9,
+        "PAA": 21.655,
+        "PAGP": 23.32,
+        "SLB": 55.01,
+        "SMID": 31.37
+      },
+      "exit_reason": "theme_gone",
+      "realized_return": -0.000428,
+      "daily_snapshots": [
+        {
+          "date": "2026-05-13",
+          "prices": {
+            "WES": 44.9,
+            "PAA": 21.655,
+            "PAGP": 23.32,
+            "SLB": 55.01,
+            "SMID": 31.37
+          },
+          "floating_return": -0.000428
+        }
+      ],
+      "spy_return_during_holding": null,
+      "excess_return": null
+    },
+    {
+      "theme_id": "ai-infrastructure-datacenter-boom",
+      "theme_name": "AI Infrastructure & Data Center Capital Expenditure Surge",
+      "direction": "Bullish",
+      "entry_date": "2026-05-13",
+      "tickers": [
+        "NVDA",
+        "AVGO",
+        "EQIX",
+        "TSM",
+        "ASML"
+      ],
+      "entry_prices": {
+        "NVDA": 227.315,
+        "AVGO": 415.78,
+        "EQIX": 1083.84,
+        "TSM": 399.14,
+        "ASML": 1560.53
+      },
+      "conviction_at_entry": 8,
+      "spy_price_at_entry": 740.72,
       "status": "open",
       "exit_date": null,
       "exit_prices": null,
       "exit_reason": null,
-      "realized_return": null
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null
+    },
+    {
+      "theme_id": "semiconductor-geopolitics-china-trade",
+      "theme_name": "Semiconductor Geopolitics & US-China Chip Diplomacy",
+      "direction": "Bullish",
+      "entry_date": "2026-05-13",
+      "tickers": [
+        "NVDA",
+        "QCOM",
+        "INTC",
+        "AMD",
+        "ARM"
+      ],
+      "entry_prices": {
+        "NVDA": 227.315,
+        "QCOM": 214.1,
+        "INTC": 121.24,
+        "AMD": 447.0,
+        "ARM": 217.27
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 740.72,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null
+    },
+    {
+      "theme_id": "precious-metals-mining-dividends",
+      "theme_name": "Precious Metals Mining — Silver Surge & Gold Dividend Play",
+      "direction": "Bullish",
+      "entry_date": "2026-05-13",
+      "tickers": [
+        "GOLD",
+        "CDE",
+        "FEAM"
+      ],
+      "entry_prices": {
+        "GOLD": 41.855,
+        "CDE": 20.085,
+        "FEAM": 1.865
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 740.72,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null
     }
   ],
   "daily_returns": [
@@ -39,10 +143,153 @@
     "portfolio_cumulative": 0.0,
     "spy_cumulative": -0.001515,
     "alpha": 0.001515,
-    "open_count": 1,
-    "closed_count": 0,
-    "win_rate": null,
+    "open_count": 3,
+    "closed_count": 1,
+    "win_rate": 0.0,
     "tracking_days": 1
   },
-  "updated_at": "2026-05-13"
+  "updated_at": "2026-05-13",
+  "theme_history": {
+    "ai-infrastructure-datacenter-boom": [
+      {
+        "date": "2026-05-13",
+        "conviction": 8,
+        "direction": "Bullish",
+        "stage": "Crowded Euphoria",
+        "tickers": [
+          "NVDA",
+          "AVGO",
+          "EQIX",
+          "TSM",
+          "ASML"
+        ]
+      }
+    ],
+    "semiconductor-geopolitics-china-trade": [
+      {
+        "date": "2026-05-13",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "NVDA",
+          "QCOM",
+          "INTC",
+          "AMD",
+          "ARM"
+        ]
+      }
+    ],
+    "inflation-rates-macro-pressure": [
+      {
+        "date": "2026-05-13",
+        "conviction": 7,
+        "direction": "Bearish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "TLT",
+          "DXY",
+          "MCO",
+          "UMBF",
+          "WAL"
+        ]
+      }
+    ],
+    "precious-metals-mining-dividends": [
+      {
+        "date": "2026-05-13",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "GOLD",
+          "CDE",
+          "FEAM"
+        ]
+      }
+    ],
+    "ai-enterprise-software-automation": [
+      {
+        "date": "2026-05-13",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "AMZN",
+          "MSFT",
+          "GOOGL",
+          "META",
+          "AAPL"
+        ]
+      }
+    ],
+    "space-economy-commercial-launch": [
+      {
+        "date": "2026-05-13",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "RKLB",
+          "LUNR",
+          "ASTS"
+        ]
+      }
+    ],
+    "power-grid-energy-ai-demand": [
+      {
+        "date": "2026-05-13",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "CEG",
+          "VST",
+          "NRG",
+          "NEE",
+          "ETR"
+        ]
+      }
+    ],
+    "quantum-computing-speculative-selloff": [
+      {
+        "date": "2026-05-13",
+        "conviction": 4,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "IONQ",
+          "RGTI",
+          "QUBT"
+        ]
+      }
+    ],
+    "regional-banking-rate-environment": [
+      {
+        "date": "2026-05-13",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "UMBF",
+          "WAL",
+          "FFBH",
+          "AUBN"
+        ]
+      }
+    ],
+    "crypto-digital-assets-geopolitical-watch": [
+      {
+        "date": "2026-05-13",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "BTC",
+          "ETH",
+          "DOGE"
+        ]
+      }
+    ]
+  }
 }
