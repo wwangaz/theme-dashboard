@@ -1,12 +1,15 @@
 import json
 import re
 from datetime import date, timedelta
+from pathlib import Path
 import anthropic
 from sqlmodel import select
 from db.models import RawSignal, Theme, SignalThemeMap
 from db.session import get_session
 
 client = anthropic.Anthropic()
+
+THEMES_INDEX_PATH = Path(__file__).parent.parent / "docs" / "data" / "themes_index.json"
 
 CLUSTER_SYSTEM = """You are a senior market analyst. Cluster market signals into coherent investment themes.
 Identify 5-10 distinct themes. Be specific — avoid generic labels like "Tech" or "Market".
@@ -15,6 +18,20 @@ Output only valid JSON."""
 MATCH_SYSTEM = """You are a market analyst. Match today's new themes against existing historical themes.
 If a new theme is semantically equivalent to an existing theme (>80% overlap), return the existing theme's ID.
 Otherwise return null to create a new theme. Output only valid JSON."""
+
+
+def _load_themes_index() -> dict:
+    if THEMES_INDEX_PATH.exists():
+        try:
+            return json.loads(THEMES_INDEX_PATH.read_text())
+        except Exception:
+            pass
+    return {}
+
+
+def _save_themes_index(index: dict):
+    THEMES_INDEX_PATH.parent.mkdir(parents=True, exist_ok=True)
+    THEMES_INDEX_PATH.write_text(json.dumps(index, ensure_ascii=False, indent=2))
 
 
 def cluster_themes(signals: list[RawSignal], keyword_map: dict[int, list[str]]) -> list[dict]:
@@ -56,16 +73,27 @@ Signals:
 
 
 def match_existing_themes(clusters: list[dict], today: date) -> list[dict]:
-    cutoff = today - timedelta(days=7)
-    with get_session() as s:
-        recent_themes = list(s.exec(
-            select(Theme).where(Theme.last_active >= cutoff, Theme.is_active == True)
-        ))
+    # Load from persisted index (survives across CI runs) and supplement with DB
+    index = _load_themes_index()
+    cutoff = today - timedelta(days=30)
 
-    if not recent_themes:
+    # Build candidate list: index entries active within 30 days
+    existing = [
+        {"id": tid, "name": meta["name"]}
+        for tid, meta in index.items()
+        if meta.get("last_active", "") >= str(cutoff)
+    ]
+
+    # Also pull from DB in case of local runs with DB populated
+    if not existing:
+        with get_session() as s:
+            recent_themes = list(s.exec(
+                select(Theme).where(Theme.last_active >= cutoff, Theme.is_active == True)
+            ))
+        existing = [{"id": t.id, "name": t.name} for t in recent_themes]
+
+    if not existing:
         return clusters
-
-    existing = [{"id": t.id, "name": t.name} for t in recent_themes]
 
     response = client.messages.create(
         model="claude-haiku-4-5-20251001",
@@ -88,11 +116,9 @@ Return JSON array — one entry per new theme:
         matches = {m["new_id"]: m["matched_existing_id"] for m in json.loads(text)}
         for cluster in clusters:
             existing_id = matches.get(cluster["theme_id"])
-            if existing_id:
-                existing_theme = next((t for t in recent_themes if t.id == existing_id), None)
-                if existing_theme:
-                    cluster["theme_id"] = existing_id
-                    cluster["theme_name"] = existing_theme.name
+            if existing_id and existing_id in index:
+                cluster["theme_id"] = existing_id
+                cluster["theme_name"] = index[existing_id]["name"]
     except Exception as e:
         print(f"  [clusterer] theme matching failed: {e}")
 
@@ -100,9 +126,26 @@ Return JSON array — one entry per new theme:
 
 
 def save_themes(clusters: list[dict], today: date):
+    today_str = str(today)
+    index = _load_themes_index()
+
     with get_session() as session:
         for cluster in clusters:
             theme_id = cluster["theme_id"]
+
+            # Update persisted index
+            if theme_id in index:
+                index[theme_id]["last_active"] = today_str
+                index[theme_id]["representative_tickers"] = cluster.get("representative_tickers", [])
+            else:
+                index[theme_id] = {
+                    "name": cluster["theme_name"],
+                    "first_seen": today_str,
+                    "last_active": today_str,
+                    "representative_tickers": cluster.get("representative_tickers", []),
+                }
+
+            # Update DB (for local runs)
             existing = session.get(Theme, theme_id)
             if existing:
                 existing.last_active = today
@@ -121,3 +164,5 @@ def save_themes(clusters: list[dict], today: date):
                     session.add(SignalThemeMap(signal_id=signal_id, theme_id=theme_id))
 
         session.commit()
+
+    _save_themes_index(index)
