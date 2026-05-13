@@ -16,7 +16,7 @@ def _load() -> dict:
             return json.loads(PORTFOLIO_PATH.read_text())
         except Exception:
             pass
-    return {"positions": [], "daily_returns": [], "summary": {}, "updated_at": None}
+    return {"positions": [], "daily_returns": [], "theme_history": {}, "summary": {}, "updated_at": None}
 
 
 def _save(data: dict):
@@ -78,6 +78,7 @@ def update_portfolio(snapshots: list[dict], today: date):
     data = _load()
     positions: list[dict] = data["positions"]
     daily_returns: list[dict] = data["daily_returns"]
+    theme_history: dict = data.setdefault("theme_history", {})
 
     # Only Bullish themes with sufficient conviction are candidates
     candidates = sorted(
@@ -97,6 +98,23 @@ def update_portfolio(snapshots: list[dict], today: date):
         all_tickers.update(s.get("representative_tickers", [])[:MAX_TICKERS_PER_THEME])
 
     current_prices = _fetch_closes(list(all_tickers))
+
+    # ── 1b. Daily snapshot for each open position ─────────────────────────────
+    today_str = str(today)
+    for p in positions:
+        if p["status"] != "open":
+            continue
+        pos_tickers = [t for t in p["tickers"] if t in current_prices]
+        if not pos_tickers:
+            continue
+        if "daily_snapshots" not in p:
+            p["daily_snapshots"] = []
+        if not any(s["date"] == today_str for s in p["daily_snapshots"]):
+            p["daily_snapshots"].append({
+                "date": today_str,
+                "prices": {t: current_prices[t] for t in pos_tickers},
+                "floating_return": round(_position_return(p, current_prices) or 0.0, 6),
+            })
 
     # ── 2. Close positions that are no longer in the candidate set ────────────
     # A position exits when its theme drops out of the top-N eligible Bullish themes
@@ -176,6 +194,19 @@ def update_portfolio(snapshots: list[dict], today: date):
                 "open_count":       len(open_positions),
             })
 
+    # ── 4b. Theme lifecycle history ───────────────────────────────────────────
+    for snap in snapshots:
+        theme_id = snap["id"]
+        if theme_id not in theme_history:
+            theme_history[theme_id] = []
+        if not any(h["date"] == today_str for h in theme_history[theme_id]):
+            theme_history[theme_id].append({
+                "date": today_str,
+                "conviction": snap["conviction_score"],
+                "direction": snap["direction"],
+                "stage": snap["stage"],
+            })
+
     # ── 5. Cumulative summary ─────────────────────────────────────────────────
     port_cum = spy_cum = 1.0
     for r in daily_returns:
@@ -188,6 +219,7 @@ def update_portfolio(snapshots: list[dict], today: date):
     data.update(
         positions=positions,
         daily_returns=daily_returns,
+        theme_history=theme_history,
         updated_at=today_str,
         summary={
             "portfolio_cumulative": round(port_cum - 1, 6),
