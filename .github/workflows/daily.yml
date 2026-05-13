@@ -32,7 +32,7 @@ jobs:
       - name: Run pipeline
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python pipeline.py
+        run: python pipeline.py --force
 
       - name: Commit updated dashboard
         run: |
