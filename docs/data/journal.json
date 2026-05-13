@@ -1,5 +1,5 @@
 {
-  "next_id": 2,
+  "next_id": 3,
   "entries": [
     {
       "id": 0,
@@ -22,6 +22,19 @@
       "exit": "",
       "tags": "",
       "created_at": "2026-05-11T05:47:04.325Z"
+    },
+    {
+      "id": 2,
+      "date": "2026-05-13",
+      "type": "theme",
+      "theme_id": "energy-infrastructure-transition",
+      "theme_name": "Energy Infrastructure & Power Grid Build-Out",
+      "llm_direction": "Bullish",
+      "llm_conviction": 6,
+      "stance": "认可",
+      "my_conviction": 7,
+      "why": "感觉能源波动长期还要持续，美伊局势没有缓解，可能在未来2个月甚至更长时间持续是一个热点。而且带来的通胀黏性极强，现在还没有充分释放。去Daly的路上，cheron的油价又涨了一点点，最近99的生菜才开始上涨。",
+      "created_at": "2026-05-13T05:23:00.161Z"
     }
   ]
 }
