@@ -10,12 +10,14 @@
 
   <!-- Header -->
   <header class="border-b border-gray-800 px-6 py-4 flex items-center justify-between gap-4">
-    <div class="flex items-center gap-3">
+    <div class="flex items-center gap-3 flex-wrap">
       <a href="index.html" class="text-gray-400 hover:text-white text-sm transition-colors">← 主题仪表板</a>
       <span class="text-gray-700">|</span>
       <h1 class="text-xl font-semibold tracking-tight">决策日志</h1>
       <span class="text-gray-700">|</span>
       <a href="https://github.com/wwangaz/theme-dashboard/blob/main/PRODUCT.md" target="_blank" class="text-xs text-indigo-400 hover:text-indigo-300 transition-colors">产品设计文档 ↗</a>
+      <span class="text-gray-700">|</span>
+      <a href="https://github.com/wwangaz/theme-dashboard/blob/main/docs/design/validation.md" target="_blank" class="text-xs text-indigo-400 hover:text-indigo-300 transition-colors">验证规范 ↗</a>
     </div>
     <div class="flex items-center gap-3">
       <span id="sync-status" class="text-xs text-gray-600"></span>
@@ -23,7 +25,7 @@
         ⚙ GitHub 同步
       </button>
       <button onclick="showForm()" class="text-xs px-3 py-1.5 rounded-full bg-green-700 hover:bg-green-600 text-white transition-colors font-medium">
-        + 新建记录
+        + 记录判断
       </button>
     </div>
   </header>
@@ -52,54 +54,94 @@
 
   <!-- Entry form -->
   <div id="form-overlay" class="hidden fixed inset-0 bg-black/60 z-40 flex items-start justify-center pt-12 px-4 pb-8 overflow-y-auto">
-    <div class="bg-gray-900 border border-gray-700 rounded-2xl w-full max-w-2xl p-6 space-y-4 shadow-2xl">
+    <div class="bg-gray-900 border border-gray-700 rounded-2xl w-full max-w-xl p-6 space-y-5 shadow-2xl">
       <div class="flex items-center justify-between">
-        <h2 id="form-title" class="font-semibold text-base">新建记录</h2>
+        <h2 id="form-title" class="font-semibold text-base">记录主题判断</h2>
         <button onclick="hideForm()" class="text-gray-500 hover:text-white text-xl leading-none">×</button>
       </div>
 
-      <div class="grid grid-cols-2 gap-3">
-        <div>
+      <!-- Date + type -->
+      <div class="flex gap-3">
+        <div class="flex-1">
           <label class="text-xs text-gray-400 mb-1 block">日期</label>
           <input id="f-date" type="date" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-gray-500" />
         </div>
-        <div>
+        <div class="flex-1">
           <label class="text-xs text-gray-400 mb-1 block">类型</label>
-          <select id="f-type" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-gray-500">
-            <option value="framework">框架 / 认知</option>
-            <option value="theme">主题研究</option>
-            <option value="stock">个股决策</option>
-            <option value="review">阶段回顾</option>
+          <select id="f-type" onchange="onTypeChange()" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-gray-500">
+            <option value="theme">主题判断</option>
+            <option value="note">备注 / 框架</option>
           </select>
         </div>
       </div>
 
-      <div>
+      <!-- Theme section (type=theme) -->
+      <div id="theme-section" class="space-y-3">
+        <div>
+          <label class="text-xs text-gray-400 mb-1 block">关联主题 <span class="text-gray-600">（从今日主题选择，或手动输入）</span></label>
+          <select id="f-theme-select" onchange="onThemeSelect()"
+            class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-gray-500">
+            <option value="">— 选择今日主题 —</option>
+            <option value="__custom__">手动输入</option>
+          </select>
+        </div>
+        <div id="theme-custom-row" class="hidden">
+          <input id="f-theme-custom" type="text" placeholder="主题名称 / ticker"
+            class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm placeholder-gray-600 focus:outline-none focus:border-gray-500" />
+        </div>
+        <!-- LLM info (auto-filled, read-only) -->
+        <div id="llm-info" class="hidden text-xs text-gray-500 bg-gray-800/50 rounded-lg px-3 py-2 flex gap-4">
+          <span>LLM方向：<span id="llm-direction-label" class="font-mono"></span></span>
+          <span>LLM conviction：<span id="llm-conviction-label" class="font-mono"></span></span>
+        </div>
+
+        <!-- Stance buttons -->
+        <div>
+          <label class="text-xs text-gray-400 mb-2 block">我的判断</label>
+          <div class="flex gap-2">
+            <button type="button" data-stance="认可" onclick="setStance('认可')"
+              class="stance-btn flex-1 py-2 rounded-lg border text-sm font-medium transition-colors border-gray-700 text-gray-500 hover:border-green-700 hover:text-green-400">
+              认可
+            </button>
+            <button type="button" data-stance="中立" onclick="setStance('中立')"
+              class="stance-btn flex-1 py-2 rounded-lg border text-sm font-medium transition-colors border-gray-700 text-gray-500 hover:border-gray-500 hover:text-gray-300">
+              中立
+            </button>
+            <button type="button" data-stance="质疑" onclick="setStance('质疑')"
+              class="stance-btn flex-1 py-2 rounded-lg border text-sm font-medium transition-colors border-gray-700 text-gray-500 hover:border-red-800 hover:text-red-400">
+              质疑
+            </button>
+          </div>
+        </div>
+
+        <!-- My conviction (optional) -->
+        <div>
+          <label class="text-xs text-gray-400 mb-1 block">
+            我的 conviction <span class="text-gray-600">（可选，1–10；留空表示与 LLM 一致）</span>
+          </label>
+          <input id="f-my-conviction" type="number" min="1" max="10" placeholder="1 – 10"
+            class="w-32 bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm placeholder-gray-600 focus:outline-none focus:border-gray-500" />
+        </div>
+      </div>
+
+      <!-- Note title (type=note only) -->
+      <div id="note-section" class="hidden">
         <label class="text-xs text-gray-400 mb-1 block">标题</label>
-        <input id="f-title" type="text" placeholder="一句话概括这次决策"
+        <input id="f-title" type="text" placeholder="一句话概括"
           class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm placeholder-gray-600 focus:outline-none focus:border-gray-500" />
       </div>
+
+      <!-- Why / content (shared) -->
       <div>
-        <label class="text-xs text-gray-400 mb-1 block">内容 / Thesis</label>
-        <textarea id="f-content" rows="5" placeholder="为什么做这个决定？核心逻辑是什么？"
+        <label class="text-xs text-gray-400 mb-1 block">
+          <span id="why-label">理由</span>
+          <span class="text-gray-600">（1–3 句话）</span>
+        </label>
+        <textarea id="f-why" rows="3" placeholder="为什么认可 / 质疑这个主题？核心依据是什么？"
           class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm placeholder-gray-600 focus:outline-none focus:border-gray-500 resize-y"></textarea>
       </div>
-      <div>
-        <label class="text-xs text-gray-400 mb-1 block">关键假设 <span class="text-gray-600">（这个判断成立，需要哪些事是真的）</span></label>
-        <textarea id="f-assumptions" rows="3" placeholder="假设 1：&#10;假设 2：&#10;假设 3：…"
-          class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm placeholder-gray-600 focus:outline-none focus:border-gray-500 resize-y"></textarea>
-      </div>
-      <div>
-        <label class="text-xs text-gray-400 mb-1 block">会让我改变判断的情况 <span class="text-gray-600">（什么信号说明我错了）</span></label>
-        <textarea id="f-exit" rows="2" placeholder="如果发生 X，说明假设 N 被证伪，我会重新评估…"
-          class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm placeholder-gray-600 focus:outline-none focus:border-gray-500 resize-y"></textarea>
-      </div>
-      <div>
-        <label class="text-xs text-gray-400 mb-1 block">关联标的 / 主题 <span class="text-gray-600">（可选）</span></label>
-        <input id="f-tags" type="text" placeholder="例：IONQ, 量子计算主题"
-          class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm placeholder-gray-600 focus:outline-none focus:border-gray-500" />
-      </div>
-      <div class="flex justify-end gap-3 pt-2">
+
+      <div class="flex justify-end gap-3 pt-1">
         <button onclick="hideForm()" class="text-sm px-4 py-2 rounded-lg border border-gray-700 text-gray-400 hover:text-white transition-colors">取消</button>
         <button onclick="saveEntry()" id="save-btn" class="text-sm px-5 py-2 rounded-lg bg-green-700 hover:bg-green-600 text-white font-medium transition-colors">保存到 GitHub</button>
       </div>
@@ -111,16 +153,14 @@
     <!-- Filter bar -->
     <div class="flex items-center gap-3 flex-wrap">
       <span class="text-xs text-gray-500">筛选：</span>
-      <button onclick="filterType('')"          id="filter-all"       class="filter-btn active">全部</button>
-      <button onclick="filterType('framework')" id="filter-framework" class="filter-btn">框架</button>
-      <button onclick="filterType('theme')"     id="filter-theme"     class="filter-btn">主题研究</button>
-      <button onclick="filterType('stock')"     id="filter-stock"     class="filter-btn">个股决策</button>
-      <button onclick="filterType('review')"    id="filter-review"    class="filter-btn">阶段回顾</button>
+      <button onclick="filterType('')"       id="filter-all"   class="filter-btn active">全部</button>
+      <button onclick="filterType('theme')"  id="filter-theme" class="filter-btn">主题判断</button>
+      <button onclick="filterType('note')"   id="filter-note"  class="filter-btn">备注</button>
       <span id="entry-count" class="text-xs text-gray-600 ml-auto"></span>
     </div>
 
     <div id="loading" class="text-center py-16 text-gray-600 text-sm">加载中…</div>
-    <div id="entries-list" class="space-y-4"></div>
+    <div id="entries-list" class="space-y-3"></div>
     <p id="empty-state" class="hidden text-center py-16 text-gray-600">暂无记录</p>
 
   </main>
@@ -129,6 +169,9 @@
     .filter-btn { font-size: 0.75rem; padding: 0.25rem 0.75rem; border-radius: 9999px; border: 1px solid #374151; color: #6b7280; transition: all 0.15s; }
     .filter-btn:hover { border-color: #6b7280; color: #d1d5db; }
     .filter-btn.active { border-color: #34d399; color: #34d399; background: rgba(52,211,153,0.08); }
+    .stance-btn.active-认可 { border-color: #15803d; color: #4ade80; background: rgba(74,222,128,0.08); }
+    .stance-btn.active-中立 { border-color: #6b7280; color: #d1d5db; background: rgba(209,213,219,0.06); }
+    .stance-btn.active-质疑 { border-color: #991b1b; color: #f87171; background: rgba(248,113,113,0.08); }
   </style>
 
   <script>
@@ -138,11 +181,15 @@
     const FILE  = "docs/data/journal.json";
     const API   = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${FILE}`;
 
-    const TYPE_META = {
-      framework: { label: "框架 / 认知", color: "bg-purple-900 text-purple-300" },
-      theme:     { label: "主题研究",    color: "bg-blue-900 text-blue-300" },
-      stock:     { label: "个股决策",    color: "bg-emerald-900 text-emerald-300" },
-      review:    { label: "阶段回顾",    color: "bg-yellow-900 text-yellow-300" },
+    const STANCE_STYLE = {
+      "认可": "border-green-900 text-green-400 bg-green-900/20",
+      "中立": "border-gray-700 text-gray-400 bg-gray-800/40",
+      "质疑": "border-red-900 text-red-400 bg-red-900/20",
+    };
+    const DIR_STYLE = {
+      "Bullish": "text-green-400",
+      "Bearish": "text-red-400",
+      "Neutral": "text-gray-400",
     };
 
     // ── Token ─────────────────────────────────────────────────────────────────
@@ -152,9 +199,7 @@
       document.getElementById("token-input").value = getToken();
       document.getElementById("token-overlay").classList.remove("hidden");
     }
-    function hideTokenSetup() {
-      document.getElementById("token-overlay").classList.add("hidden");
-    }
+    function hideTokenSetup() { document.getElementById("token-overlay").classList.add("hidden"); }
     function saveToken() {
       const t = document.getElementById("token-input").value.trim();
       if (t) localStorage.setItem("gh_pat_journal", t);
@@ -192,10 +237,7 @@
           "X-GitHub-Api-Version": "2022-11-28",
         },
       };
-      if (body) {
-        opts.headers["Content-Type"] = "application/json";
-        opts.body = JSON.stringify(body);
-      }
+      if (body) { opts.headers["Content-Type"] = "application/json"; opts.body = JSON.stringify(body); }
       const r = await fetch(API, opts);
       if (!r.ok) throw new Error(`GitHub API ${r.status}`);
       return r.json();
@@ -204,7 +246,6 @@
     async function loadFromGitHub() {
       const resp = await ghFetch("GET");
       _fileSha = resp.sha;
-      // content is base64-encoded, may have line breaks
       const json = decodeURIComponent(
         atob(resp.content.replace(/\n/g, ""))
           .split("").map(c => "%" + c.charCodeAt(0).toString(16).padStart(2, "0")).join("")
@@ -220,6 +261,93 @@
       _fileSha = resp.content.sha;
     }
 
+    // ── Theme data ────────────────────────────────────────────────────────────
+    let _todayThemes = [];  // [{id, name, direction, conviction_score}]
+
+    async function loadTodayThemes() {
+      try {
+        const r = await fetch(`data/latest.json?_=${Date.now()}`);
+        if (!r.ok) return;
+        const d = await r.json();
+        _todayThemes = (d.themes || []).map(t => ({
+          id:         t.id,
+          name:       t.name,
+          direction:  t.direction,
+          conviction: t.conviction_score,
+        }));
+        populateThemeDropdown();
+      } catch (_) {}
+    }
+
+    function populateThemeDropdown() {
+      const sel = document.getElementById("f-theme-select");
+      // Remove any previously added options (keep first two: blank + custom)
+      while (sel.options.length > 2) sel.remove(2);
+      _todayThemes.forEach(t => {
+        const opt = document.createElement("option");
+        opt.value = t.id;
+        opt.dataset.name      = t.name;
+        opt.dataset.direction = t.direction;
+        opt.dataset.conviction = t.conviction;
+        opt.textContent = `${t.name}  (${t.direction}, ${t.conviction})`;
+        sel.insertBefore(opt, sel.options[1]); // before "手动输入"
+      });
+    }
+
+    // ── Form state ────────────────────────────────────────────────────────────
+    let _selectedStance   = "";
+    let _selectedThemeId  = "";
+    let _selectedThemeName = "";
+    let _llmDirection     = "";
+    let _llmConviction    = null;
+
+    function onTypeChange() {
+      const type = document.getElementById("f-type").value;
+      document.getElementById("theme-section").classList.toggle("hidden", type !== "theme");
+      document.getElementById("note-section").classList.toggle("hidden",  type !== "note");
+      document.getElementById("why-label").textContent = type === "theme" ? "理由" : "内容";
+      document.getElementById("f-why").placeholder = type === "theme"
+        ? "为什么认可 / 质疑这个主题？核心依据是什么？"
+        : "记录内容…";
+    }
+
+    function onThemeSelect() {
+      const sel = document.getElementById("f-theme-select");
+      const opt = sel.options[sel.selectedIndex];
+      const isCustom = opt.value === "__custom__";
+      const isEmpty  = opt.value === "";
+
+      document.getElementById("theme-custom-row").classList.toggle("hidden", !isCustom);
+      document.getElementById("llm-info").classList.toggle("hidden", isCustom || isEmpty);
+
+      if (!isCustom && !isEmpty) {
+        _selectedThemeId   = opt.value;
+        _selectedThemeName = opt.dataset.name;
+        _llmDirection      = opt.dataset.direction;
+        _llmConviction     = parseInt(opt.dataset.conviction);
+        document.getElementById("llm-direction-label").textContent = _llmDirection;
+        const dirEl = document.getElementById("llm-direction-label");
+        dirEl.className = "font-mono " + (DIR_STYLE[_llmDirection] || "text-gray-300");
+        document.getElementById("llm-conviction-label").textContent = _llmConviction;
+      } else {
+        _selectedThemeId = _selectedThemeName = _llmDirection = "";
+        _llmConviction = null;
+      }
+    }
+
+    function setStance(s) {
+      _selectedStance = s;
+      document.querySelectorAll(".stance-btn").forEach(btn => {
+        btn.className = btn.className
+          .replace(/active-\S+/g, "")
+          .replace(/border-green-\d+|text-green-\d+|bg-green[^\s]+/g, "")
+          .replace(/border-red-\d+|text-red-\d+|bg-red[^\s]+/g, "")
+          .replace(/border-gray-5\d+|text-gray-[23]\d+|bg-gray-8[^\s]+/g, "")
+          .trim();
+        if (btn.dataset.stance === s) btn.classList.add("active-" + s);
+      });
+    }
+
     // ── State ─────────────────────────────────────────────────────────────────
     let _data = null;
     let _activeFilter = "";
@@ -230,12 +358,11 @@
       document.getElementById("entries-list").innerHTML = "";
       try {
         _data = await loadFromGitHub();
-      } catch (e) {
-        // fallback: load from public URL (no auth needed for reading)
+      } catch (_) {
         try {
           const r = await fetch(`data/journal.json?_=${Date.now()}`);
           if (r.ok) _data = await r.json();
-        } catch (_) {}
+        } catch (__) {}
       }
       document.getElementById("loading").classList.add("hidden");
       if (_data) render();
@@ -248,47 +375,86 @@
       if (_activeFilter) entries = entries.filter(e => e.type === _activeFilter);
 
       document.getElementById("entry-count").textContent = `共 ${_data.entries.length} 条`;
-
       const list  = document.getElementById("entries-list");
       const empty = document.getElementById("empty-state");
 
-      if (!entries.length) {
-        list.innerHTML = "";
-        empty.classList.remove("hidden");
-        return;
-      }
+      if (!entries.length) { list.innerHTML = ""; empty.classList.remove("hidden"); return; }
       empty.classList.add("hidden");
 
       list.innerHTML = entries.map(e => {
-        const meta = TYPE_META[e.type] || { label: e.type, color: "bg-gray-800 text-gray-400" };
-        const sections = [
-          { label: "内容 / Thesis",     value: e.content },
-          { label: "关键假设",          value: e.assumptions },
-          { label: "改变判断的条件",    value: e.exit },
-        ].filter(s => s.value?.trim());
+        if (e.type === "theme" && e.stance) return renderThemeEntry(e);
+        return renderLegacyEntry(e);
+      }).join("");
+    }
 
-        return `
-        <article class="bg-gray-900 border border-gray-800 rounded-xl p-5 space-y-3 group">
-          <div class="flex items-start justify-between gap-3">
-            <div class="flex items-center gap-2 flex-wrap">
-              <span class="text-gray-600 text-xs font-mono">#${e.id}</span>
-              <span class="text-xs px-2 py-0.5 rounded-full ${meta.color}">${meta.label}</span>
-              <span class="text-gray-500 text-xs">${e.date}</span>
-              ${e.tags ? `<span class="text-gray-600 text-xs border border-gray-800 px-2 py-0.5 rounded-full">${e.tags}</span>` : ""}
-            </div>
-            <div class="flex gap-3 opacity-0 group-hover:opacity-100 transition-opacity shrink-0">
+    function renderThemeEntry(e) {
+      const stanceCls = STANCE_STYLE[e.stance] || "border-gray-700 text-gray-400";
+      const dirCls    = DIR_STYLE[e.llm_direction] || "text-gray-400";
+      const convDiff  = e.my_conviction && e.llm_conviction
+        ? e.my_conviction - e.llm_conviction : null;
+      const diffStr   = convDiff === null ? ""
+        : convDiff > 0  ? `<span class="text-green-500">+${convDiff}</span>`
+        : convDiff < 0  ? `<span class="text-red-400">${convDiff}</span>`
+        : `<span class="text-gray-500">±0</span>`;
+
+      return `
+      <article class="bg-gray-900 border border-gray-800 rounded-xl p-4 space-y-2 group">
+        <div class="flex items-start justify-between gap-2">
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="text-xs px-2 py-0.5 rounded-full border ${stanceCls} font-medium">${e.stance}</span>
+            <span class="font-medium text-sm">${e.theme_name || e.theme_id || "—"}</span>
+          </div>
+          <div class="flex items-center gap-3 shrink-0">
+            <span class="text-gray-600 text-xs">${e.date}</span>
+            <div class="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
               <button onclick="editEntry(${e.id})" class="text-xs text-gray-500 hover:text-gray-200">编辑</button>
               <button onclick="deleteEntry(${e.id})" class="text-xs text-gray-600 hover:text-red-400">删除</button>
             </div>
           </div>
-          <h3 class="font-semibold">${e.title}</h3>
-          ${sections.map(s => `
-            <div>
-              <p class="text-xs text-gray-500 mb-1">${s.label}</p>
-              <p class="text-sm text-gray-300 leading-relaxed whitespace-pre-line">${s.value}</p>
-            </div>`).join("")}
-        </article>`;
-      }).join("");
+        </div>
+        <div class="flex items-center gap-3 text-xs text-gray-500">
+          ${e.llm_direction ? `<span>LLM: <span class="${dirCls}">${e.llm_direction}</span> ${e.llm_conviction ?? "—"}</span>` : ""}
+          ${e.my_conviction ? `<span>我的: <span class="text-gray-300">${e.my_conviction}</span> ${diffStr}</span>` : ""}
+        </div>
+        ${e.why ? `<p class="text-sm text-gray-300 leading-relaxed">${e.why}</p>` : ""}
+      </article>`;
+    }
+
+    function renderLegacyEntry(e) {
+      const TYPE_META = {
+        framework: { label: "框架 / 认知", color: "bg-purple-900 text-purple-300" },
+        theme:     { label: "主题研究",    color: "bg-blue-900 text-blue-300" },
+        stock:     { label: "个股决策",    color: "bg-emerald-900 text-emerald-300" },
+        review:    { label: "阶段回顾",    color: "bg-yellow-900 text-yellow-300" },
+        note:      { label: "备注",        color: "bg-gray-800 text-gray-400" },
+      };
+      const meta = TYPE_META[e.type] || { label: e.type, color: "bg-gray-800 text-gray-400" };
+      const sections = [
+        { label: "内容",       value: e.content || e.why },
+        { label: "关键假设",   value: e.assumptions },
+        { label: "改变判断的条件", value: e.exit },
+      ].filter(s => s.value?.trim());
+
+      return `
+      <article class="bg-gray-900 border border-gray-800 rounded-xl p-4 space-y-2 group">
+        <div class="flex items-start justify-between gap-2">
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="text-xs px-2 py-0.5 rounded-full ${meta.color}">${meta.label}</span>
+            <span class="text-gray-500 text-xs">${e.date}</span>
+            ${e.tags ? `<span class="text-gray-600 text-xs border border-gray-800 px-2 py-0.5 rounded-full">${e.tags}</span>` : ""}
+          </div>
+          <div class="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity shrink-0">
+            <button onclick="editEntry(${e.id})" class="text-xs text-gray-500 hover:text-gray-200">编辑</button>
+            <button onclick="deleteEntry(${e.id})" class="text-xs text-gray-600 hover:text-red-400">删除</button>
+          </div>
+        </div>
+        <h3 class="font-medium text-sm">${e.title || ""}</h3>
+        ${sections.map(s => `
+          <div>
+            <p class="text-xs text-gray-500 mb-0.5">${s.label}</p>
+            <p class="text-sm text-gray-300 leading-relaxed whitespace-pre-line">${s.value}</p>
+          </div>`).join("")}
+      </article>`;
     }
 
     // ── Filter ────────────────────────────────────────────────────────────────
@@ -299,46 +465,105 @@
       render();
     }
 
-    // ── Form ──────────────────────────────────────────────────────────────────
+    // ── Form open/close ───────────────────────────────────────────────────────
     function showForm(entry = null) {
-      _editingId = entry ? entry.id : null;
-      document.getElementById("form-title").textContent = entry ? "编辑记录" : "新建记录";
-      document.getElementById("f-date").value        = entry?.date        ?? new Date().toISOString().slice(0, 10);
-      document.getElementById("f-type").value        = entry?.type        ?? "framework";
-      document.getElementById("f-title").value       = entry?.title       ?? "";
-      document.getElementById("f-content").value     = entry?.content     ?? "";
-      document.getElementById("f-assumptions").value = entry?.assumptions ?? "";
-      document.getElementById("f-exit").value        = entry?.exit        ?? "";
-      document.getElementById("f-tags").value        = entry?.tags        ?? "";
+      _editingId      = entry ? entry.id : null;
+      _selectedStance = entry?.stance ?? "";
+      _selectedThemeId   = entry?.theme_id   ?? "";
+      _selectedThemeName = entry?.theme_name  ?? "";
+      _llmDirection      = entry?.llm_direction  ?? "";
+      _llmConviction     = entry?.llm_conviction  ?? null;
+
+      document.getElementById("form-title").textContent = entry ? "编辑记录" : "记录主题判断";
+      document.getElementById("f-date").value  = entry?.date  ?? new Date().toISOString().slice(0, 10);
+      document.getElementById("f-type").value  = entry?.type  ?? "theme";
+      document.getElementById("f-why").value   = entry?.why   ?? entry?.content ?? "";
+      document.getElementById("f-title").value = entry?.title ?? "";
+      document.getElementById("f-my-conviction").value = entry?.my_conviction ?? "";
+
+      // Stance buttons
+      document.querySelectorAll(".stance-btn").forEach(btn => {
+        btn.className = btn.className.replace(/active-\S+/g, "").trim();
+        if (_selectedStance && btn.dataset.stance === _selectedStance)
+          btn.classList.add("active-" + _selectedStance);
+      });
+
+      // Theme select
+      const sel = document.getElementById("f-theme-select");
+      if (entry?.theme_id) {
+        const opt = [...sel.options].find(o => o.value === entry.theme_id);
+        sel.value = opt ? entry.theme_id : "__custom__";
+      } else {
+        sel.value = "";
+      }
+      document.getElementById("theme-custom-row").classList.toggle("hidden", sel.value !== "__custom__");
+      document.getElementById("f-theme-custom").value = entry?.theme_name ?? "";
+      document.getElementById("llm-info").classList.toggle("hidden", !_llmDirection || sel.value === "__custom__");
+      if (_llmDirection) {
+        document.getElementById("llm-direction-label").textContent = _llmDirection;
+        document.getElementById("llm-direction-label").className = "font-mono " + (DIR_STYLE[_llmDirection] || "text-gray-300");
+        document.getElementById("llm-conviction-label").textContent = _llmConviction ?? "—";
+      }
+
+      onTypeChange();
       document.getElementById("form-overlay").classList.remove("hidden");
     }
+
     function hideForm() {
       document.getElementById("form-overlay").classList.add("hidden");
       _editingId = null;
     }
 
+    // ── Save ──────────────────────────────────────────────────────────────────
     async function saveEntry() {
-      const title = document.getElementById("f-title").value.trim();
-      if (!title) { alert("请填写标题"); return; }
+      const type = document.getElementById("f-type").value;
       if (!getToken()) { showTokenSetup(); return; }
 
-      const btn = document.getElementById("save-btn");
-      btn.textContent = "保存中…";
-      btn.disabled = true;
+      const why   = document.getElementById("f-why").value.trim();
+      const title = document.getElementById("f-title").value.trim();
+      if (type === "note" && !title) { alert("请填写标题"); return; }
+
+      // Resolve theme fields
+      let themeId = "", themeName = "", llmDir = "", llmConv = null;
+      if (type === "theme") {
+        const sel = document.getElementById("f-theme-select");
+        if (sel.value && sel.value !== "__custom__") {
+          themeId   = _selectedThemeId;
+          themeName = _selectedThemeName;
+          llmDir    = _llmDirection;
+          llmConv   = _llmConviction;
+        } else if (sel.value === "__custom__") {
+          themeName = document.getElementById("f-theme-custom").value.trim();
+          themeId   = themeName.toLowerCase().replace(/\s+/g, "-");
+        }
+      }
+
+      const myConv = parseInt(document.getElementById("f-my-conviction").value) || null;
 
       const entry = {
         id:          _editingId !== null ? _editingId : (_data.next_id ?? _data.entries.length),
         date:        document.getElementById("f-date").value,
-        type:        document.getElementById("f-type").value,
-        title,
-        content:     document.getElementById("f-content").value.trim(),
-        assumptions: document.getElementById("f-assumptions").value.trim(),
-        exit:        document.getElementById("f-exit").value.trim(),
-        tags:        document.getElementById("f-tags").value.trim(),
-        created_at:  _editingId !== null
-                       ? (_data.entries.find(e => e.id === _editingId)?.created_at ?? new Date().toISOString())
-                       : new Date().toISOString(),
+        type,
+        // theme fields
+        theme_id:        themeId   || undefined,
+        theme_name:      themeName || undefined,
+        llm_direction:   llmDir    || undefined,
+        llm_conviction:  llmConv   ?? undefined,
+        stance:          _selectedStance || undefined,
+        my_conviction:   myConv    ?? undefined,
+        why:             why       || undefined,
+        // note fields
+        title:           title     || undefined,
+        created_at: _editingId !== null
+          ? (_data.entries.find(e => e.id === _editingId)?.created_at ?? new Date().toISOString())
+          : new Date().toISOString(),
       };
+      // strip undefined
+      Object.keys(entry).forEach(k => entry[k] === undefined && delete entry[k]);
+
+      const btn = document.getElementById("save-btn");
+      btn.textContent = "保存中…";
+      btn.disabled = true;
 
       if (_editingId !== null) {
         const idx = _data.entries.findIndex(e => e.id === _editingId);
@@ -350,7 +575,8 @@
 
       try {
         const verb = _editingId !== null ? "update" : "add";
-        await saveToGitHub(_data, `journal: ${verb} entry #${entry.id} — ${entry.title}`);
+        const label = themeName || title || `entry #${entry.id}`;
+        await saveToGitHub(_data, `journal: ${verb} — ${label}`);
         hideForm();
         render();
       } catch (e) {
@@ -375,12 +601,11 @@
         render();
       } catch (e) {
         alert(`删除失败：${e.message}`);
-        _data = await loadFromGitHub(); // rollback
+        _data = await loadFromGitHub();
         render();
       }
     }
 
-    // Close overlays on background click
     ["form-overlay", "token-overlay"].forEach(id => {
       document.getElementById(id).addEventListener("click", e => {
         if (e.target.id === id) { hideForm(); hideTokenSetup(); }
@@ -389,6 +614,7 @@
 
     // ── Init ──────────────────────────────────────────────────────────────────
     updateTokenStatus();
+    loadTodayThemes();
     loadAndRender();
   </script>
 </body>
