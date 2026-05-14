@@ -14,13 +14,13 @@
   "semiconductor-geopolitics-china-trade": {
     "name": "Semiconductor Geopolitics & US-China Chip Diplomacy",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-13",
+    "last_active": "2026-05-14",
     "representative_tickers": [
       "NVDA",
-      "QCOM",
-      "INTC",
       "AMD",
-      "ARM"
+      "AVGO",
+      "TSM",
+      "ASML"
     ]
   },
   "inflation-rates-macro-pressure": {
@@ -38,35 +38,37 @@
   "ai-enterprise-software-automation": {
     "name": "Enterprise AI Adoption & Workflow Automation",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-13",
+    "last_active": "2026-05-14",
     "representative_tickers": [
-      "AMZN",
-      "MSFT",
       "GOOGL",
-      "META",
-      "AAPL"
+      "MSFT",
+      "AMZN",
+      "CSCO",
+      "MDB"
     ]
   },
   "power-grid-energy-ai-demand": {
     "name": "Power Grid Stress & Energy Stocks Under AI Demand Pressure",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-13",
+    "last_active": "2026-05-14",
     "representative_tickers": [
+      "VRT",
       "CEG",
-      "VST",
-      "NRG",
       "NEE",
-      "ETR"
+      "VST",
+      "NRG"
     ]
   },
   "space-economy-commercial-launch": {
     "name": "Commercial Space Economy & Satellite Communications Momentum",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-13",
+    "last_active": "2026-05-14",
     "representative_tickers": [
+      "ASTS",
       "RKLB",
       "LUNR",
-      "ASTS"
+      "IONQ",
+      "QUBT"
     ]
   },
   "precious-metals-mining-dividends": {
@@ -82,12 +84,8 @@
   "crypto-digital-assets-geopolitical-watch": {
     "name": "Crypto & Digital Assets Holding Steady Amid US-China Summit",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-13",
-    "representative_tickers": [
-      "BTC",
-      "ETH",
-      "DOGE"
-    ]
+    "last_active": "2026-05-14",
+    "representative_tickers": []
   },
   "quantum-computing-speculative-selloff": {
     "name": "Quantum Computing Speculative Pullback",
@@ -108,6 +106,61 @@
       "WAL",
       "FFBH",
       "AUBN"
+    ]
+  },
+  "nuclear-clean-energy": {
+    "name": "Nuclear & Advanced Clean Energy Renaissance",
+    "first_seen": "2026-05-14",
+    "last_active": "2026-05-14",
+    "representative_tickers": [
+      "OKLO",
+      "SEDG",
+      "IPWR",
+      "CZAVF",
+      "IMSR"
+    ]
+  },
+  "ev-automotive-supply-chain": {
+    "name": "EV & Automotive Supply Chain Recovery",
+    "first_seen": "2026-05-14",
+    "last_active": "2026-05-14",
+    "representative_tickers": [
+      "TSLA",
+      "MVIS"
+    ]
+  },
+  "financial-services-capital-markets": {
+    "name": "Financial Services Rally & Capital Markets Momentum",
+    "first_seen": "2026-05-14",
+    "last_active": "2026-05-14",
+    "representative_tickers": [
+      "MS",
+      "JPM",
+      "KEY",
+      "BKHYY",
+      "KLRN"
+    ]
+  },
+  "emerging-markets-latam": {
+    "name": "Latin America & Emerging Market Re-Rating",
+    "first_seen": "2026-05-14",
+    "last_active": "2026-05-14",
+    "representative_tickers": [
+      "MELI",
+      "EWZS",
+      "CPA"
+    ]
+  },
+  "healthcare-biotech-mixed": {
+    "name": "Healthcare & Biotech Divergence",
+    "first_seen": "2026-05-14",
+    "last_active": "2026-05-14",
+    "representative_tickers": [
+      "ABBV",
+      "PFE",
+      "ZTS",
+      "ISRG",
+      "DXCM"
     ]
   }
 }

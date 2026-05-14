@@ -68,13 +68,32 @@
       },
       "conviction_at_entry": 8,
       "spy_price_at_entry": 740.72,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null
+      "status": "closed",
+      "exit_date": "2026-05-14",
+      "exit_prices": {
+        "NVDA": 235.5611,
+        "AVGO": 433.62,
+        "EQIX": 1079.585,
+        "TSM": 418.51,
+        "ASML": 1596.67
+      },
+      "exit_reason": "theme_gone",
+      "realized_return": 0.029389,
+      "spy_return_during_holding": 0.010044,
+      "excess_return": 0.019345,
+      "daily_snapshots": [
+        {
+          "date": "2026-05-14",
+          "prices": {
+            "NVDA": 235.5611,
+            "AVGO": 433.62,
+            "EQIX": 1079.585,
+            "TSM": 418.51,
+            "ASML": 1596.67
+          },
+          "floating_return": 0.029389
+        }
+      ]
     },
     {
       "theme_id": "semiconductor-geopolitics-china-trade",
@@ -97,13 +116,32 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 740.72,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null
+      "status": "closed",
+      "exit_date": "2026-05-14",
+      "exit_prices": {
+        "NVDA": 235.5611,
+        "QCOM": 202.46,
+        "INTC": 117.0,
+        "AMD": 449.405,
+        "ARM": 223.605
+      },
+      "exit_reason": "conviction_drop",
+      "realized_return": -0.003705,
+      "spy_return_during_holding": 0.010044,
+      "excess_return": -0.013749,
+      "daily_snapshots": [
+        {
+          "date": "2026-05-14",
+          "prices": {
+            "NVDA": 235.5611,
+            "QCOM": 202.46,
+            "INTC": 117.0,
+            "AMD": 449.405,
+            "ARM": 223.605
+          },
+          "floating_return": -0.003705
+        }
+      ]
     },
     {
       "theme_id": "precious-metals-mining-dividends",
@@ -122,6 +160,79 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 740.72,
+      "status": "closed",
+      "exit_date": "2026-05-14",
+      "exit_prices": {
+        "GOLD": 40.9,
+        "CDE": 19.755,
+        "FEAM": 1.9357
+      },
+      "exit_reason": "theme_gone",
+      "realized_return": -0.000446,
+      "spy_return_during_holding": 0.010044,
+      "excess_return": -0.01049,
+      "daily_snapshots": [
+        {
+          "date": "2026-05-14",
+          "prices": {
+            "GOLD": 40.9,
+            "CDE": 19.755,
+            "FEAM": 1.9357
+          },
+          "floating_return": -0.000446
+        }
+      ]
+    },
+    {
+      "theme_id": "ai-enterprise-software-automation",
+      "theme_name": "Enterprise AI Adoption & Workflow Automation",
+      "direction": "Bullish",
+      "entry_date": "2026-05-14",
+      "tickers": [
+        "GOOGL",
+        "MSFT",
+        "AMZN",
+        "CSCO",
+        "MDB"
+      ],
+      "entry_prices": {
+        "GOOGL": 400.71,
+        "MSFT": 408.115,
+        "AMZN": 268.1,
+        "CSCO": 115.69,
+        "MDB": 303.01
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 748.1601,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null
+    },
+    {
+      "theme_id": "space-economy-commercial-launch",
+      "theme_name": "Commercial Space Economy & Satellite Communications Momentum",
+      "direction": "Bullish",
+      "entry_date": "2026-05-14",
+      "tickers": [
+        "ASTS",
+        "RKLB",
+        "LUNR",
+        "IONQ",
+        "QUBT"
+      ],
+      "entry_prices": {
+        "ASTS": 83.09,
+        "RKLB": 131.1419,
+        "LUNR": 36.665,
+        "IONQ": 57.52,
+        "QUBT": 12.255
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 748.1601,
       "status": "open",
       "exit_date": null,
       "exit_prices": null,
@@ -137,18 +248,24 @@
       "portfolio_return": 0.0,
       "spy_return": -0.001515,
       "open_count": 1
+    },
+    {
+      "date": "2026-05-14",
+      "portfolio_return": 0.0,
+      "spy_return": 0.007881,
+      "open_count": 2
     }
   ],
   "summary": {
     "portfolio_cumulative": 0.0,
-    "spy_cumulative": -0.001515,
-    "alpha": 0.001515,
-    "open_count": 3,
-    "closed_count": 1,
-    "win_rate": 0.0,
-    "tracking_days": 1
+    "spy_cumulative": 0.006354,
+    "alpha": -0.006354,
+    "open_count": 2,
+    "closed_count": 4,
+    "win_rate": 0.25,
+    "tracking_days": 2
   },
-  "updated_at": "2026-05-13",
+  "updated_at": "2026-05-14",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -177,6 +294,19 @@
           "INTC",
           "AMD",
           "ARM"
+        ]
+      },
+      {
+        "date": "2026-05-14",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "NVDA",
+          "AMD",
+          "AVGO",
+          "TSM",
+          "ASML"
         ]
       }
     ],
@@ -221,6 +351,19 @@
           "META",
           "AAPL"
         ]
+      },
+      {
+        "date": "2026-05-14",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "GOOGL",
+          "MSFT",
+          "AMZN",
+          "CSCO",
+          "MDB"
+        ]
       }
     ],
     "space-economy-commercial-launch": [
@@ -233,6 +376,19 @@
           "RKLB",
           "LUNR",
           "ASTS"
+        ]
+      },
+      {
+        "date": "2026-05-14",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "ASTS",
+          "RKLB",
+          "LUNR",
+          "IONQ",
+          "QUBT"
         ]
       }
     ],
@@ -248,6 +404,19 @@
           "NRG",
           "NEE",
           "ETR"
+        ]
+      },
+      {
+        "date": "2026-05-14",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "VRT",
+          "CEG",
+          "NEE",
+          "VST",
+          "NRG"
         ]
       }
     ],
@@ -288,6 +457,83 @@
           "BTC",
           "ETH",
           "DOGE"
+        ]
+      },
+      {
+        "date": "2026-05-14",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": []
+      }
+    ],
+    "nuclear-clean-energy": [
+      {
+        "date": "2026-05-14",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Acceleration",
+        "tickers": [
+          "OKLO",
+          "SEDG",
+          "IPWR",
+          "CZAVF",
+          "IMSR"
+        ]
+      }
+    ],
+    "financial-services-capital-markets": [
+      {
+        "date": "2026-05-14",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "MS",
+          "JPM",
+          "KEY",
+          "BKHYY",
+          "KLRN"
+        ]
+      }
+    ],
+    "emerging-markets-latam": [
+      {
+        "date": "2026-05-14",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "MELI",
+          "EWZS",
+          "CPA"
+        ]
+      }
+    ],
+    "ev-automotive-supply-chain": [
+      {
+        "date": "2026-05-14",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "TSLA",
+          "MVIS"
+        ]
+      }
+    ],
+    "healthcare-biotech-mixed": [
+      {
+        "date": "2026-05-14",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "ABBV",
+          "PFE",
+          "ZTS",
+          "ISRG",
+          "DXCM"
         ]
       }
     ]
