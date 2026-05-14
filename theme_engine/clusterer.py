@@ -101,20 +101,23 @@ def match_existing_themes(clusters: list[dict], today: date) -> list[dict]:
     if not existing:
         return clusters
 
+    new_themes_payload = json.dumps(
+        [{"theme_id": str(c["theme_id"]), "theme_name": c["theme_name"]} for c in clusters],
+        ensure_ascii=False,
+    )
+    existing_payload = json.dumps(existing, ensure_ascii=False)
+
     response = client.messages.create(
         model="claude-haiku-4-5-20251001",
         max_tokens=1024,
         system=[{"type": "text", "text": MATCH_SYSTEM, "cache_control": {"type": "ephemeral"}}],
-        messages=[{"role": "user", "content": f"""Match each new theme to an existing theme if semantically equivalent (>80% overlap).
-
-Existing themes:
-{json.dumps(existing, ensure_ascii=False)}
-
-New themes:
-{json.dumps([{{"theme_id": c["theme_id"], "theme_name": c["theme_name"]}} for c in clusters], ensure_ascii=False)}
-
-Return JSON array — one entry per new theme:
-[{{"new_id": "...", "matched_existing_id": "existing-id-or-null"}}]"""}],
+        messages=[{"role": "user", "content": (
+            "Match each new theme to an existing theme if semantically equivalent (>80% overlap).\n\n"
+            f"Existing themes:\n{existing_payload}\n\n"
+            f"New themes:\n{new_themes_payload}\n\n"
+            'Return JSON array — one entry per new theme:\n'
+            '[{"new_id": "...", "matched_existing_id": "existing-id-or-null"}]'
+        )}],
     )
 
     try:
