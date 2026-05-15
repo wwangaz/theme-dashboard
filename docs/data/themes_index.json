@@ -2,25 +2,24 @@
   "ai-infrastructure-datacenter-boom": {
     "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-13",
+    "last_active": "2026-05-15",
     "representative_tickers": [
       "NVDA",
-      "AVGO",
-      "EQIX",
-      "TSM",
-      "ASML"
+      "AAOI",
+      "POET",
+      "MSFT"
     ]
   },
   "semiconductor-geopolitics-china-trade": {
     "name": "Semiconductor Geopolitics & US-China Chip Diplomacy",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-14",
+    "last_active": "2026-05-15",
     "representative_tickers": [
       "NVDA",
       "AMD",
-      "AVGO",
-      "TSM",
-      "ASML"
+      "ASML",
+      "ARM",
+      "INTC"
     ]
   },
   "inflation-rates-macro-pressure": {
@@ -50,25 +49,23 @@
   "power-grid-energy-ai-demand": {
     "name": "Power Grid Stress & Energy Stocks Under AI Demand Pressure",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-14",
+    "last_active": "2026-05-15",
     "representative_tickers": [
-      "VRT",
-      "CEG",
       "NEE",
+      "CEG",
       "VST",
-      "NRG"
+      "NRG",
+      "ETR"
     ]
   },
   "space-economy-commercial-launch": {
     "name": "Commercial Space Economy & Satellite Communications Momentum",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-14",
+    "last_active": "2026-05-15",
     "representative_tickers": [
-      "ASTS",
       "RKLB",
-      "LUNR",
-      "IONQ",
-      "QUBT"
+      "ASTS",
+      "LUNR"
     ]
   },
   "precious-metals-mining-dividends": {
@@ -90,7 +87,7 @@
   "quantum-computing-speculative-selloff": {
     "name": "Quantum Computing Speculative Pullback",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-13",
+    "last_active": "2026-05-15",
     "representative_tickers": [
       "IONQ",
       "RGTI",
@@ -123,44 +120,79 @@
   "ev-automotive-supply-chain": {
     "name": "EV & Automotive Supply Chain Recovery",
     "first_seen": "2026-05-14",
-    "last_active": "2026-05-14",
+    "last_active": "2026-05-15",
     "representative_tickers": [
       "TSLA",
-      "MVIS"
+      "ELVA",
+      "PCT"
     ]
   },
   "financial-services-capital-markets": {
     "name": "Financial Services Rally & Capital Markets Momentum",
     "first_seen": "2026-05-14",
-    "last_active": "2026-05-14",
+    "last_active": "2026-05-15",
     "representative_tickers": [
-      "MS",
-      "JPM",
-      "KEY",
-      "BKHYY",
-      "KLRN"
+      "OWL",
+      "DLO",
+      "FLYW"
     ]
   },
   "emerging-markets-latam": {
     "name": "Latin America & Emerging Market Re-Rating",
     "first_seen": "2026-05-14",
-    "last_active": "2026-05-14",
+    "last_active": "2026-05-15",
     "representative_tickers": [
-      "MELI",
-      "EWZS",
-      "CPA"
+      "RCRUY",
+      "DLO"
     ]
   },
   "healthcare-biotech-mixed": {
     "name": "Healthcare & Biotech Divergence",
     "first_seen": "2026-05-14",
-    "last_active": "2026-05-14",
+    "last_active": "2026-05-15",
     "representative_tickers": [
-      "ABBV",
-      "PFE",
-      "ZTS",
       "ISRG",
-      "DXCM"
+      "DXCM",
+      "ICCC"
+    ]
+  },
+  "energy-oil-gas-cycle": {
+    "name": "Oil & Gas Cycle Recovery & Leverage Plays",
+    "first_seen": "2026-05-15",
+    "last_active": "2026-05-15",
+    "representative_tickers": [
+      "COP",
+      "KOS",
+      "SDRL"
+    ]
+  },
+  "energy-infrastructure-income": {
+    "name": "Energy Infrastructure & MLP High-Yield Income",
+    "first_seen": "2026-05-15",
+    "last_active": "2026-05-15",
+    "representative_tickers": [
+      "MLPI"
+    ]
+  },
+  "industrials-infrastructure-materials": {
+    "name": "Industrials, Infrastructure & Materials Cycle",
+    "first_seen": "2026-05-15",
+    "last_active": "2026-05-15",
+    "representative_tickers": [
+      "ACM",
+      "NUE",
+      "MMM",
+      "RCKY",
+      "DE"
+    ]
+  },
+  "media-entertainment-consumer-recovery": {
+    "name": "Media Consolidation, Consumer Discretionary & Retail Recovery",
+    "first_seen": "2026-05-15",
+    "last_active": "2026-05-15",
+    "representative_tickers": [
+      "PARA",
+      "DG"
     ]
   }
 }

@@ -204,13 +204,32 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 748.1601,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null
+      "status": "closed",
+      "exit_date": "2026-05-15",
+      "exit_prices": {
+        "GOOGL": 398.6502,
+        "MSFT": 417.67,
+        "AMZN": 263.6,
+        "CSCO": 116.9,
+        "MDB": 307.77
+      },
+      "exit_reason": "theme_gone",
+      "realized_return": 0.005531,
+      "spy_return_during_holding": -0.01068,
+      "excess_return": 0.016211,
+      "daily_snapshots": [
+        {
+          "date": "2026-05-15",
+          "prices": {
+            "GOOGL": 398.6502,
+            "MSFT": 417.67,
+            "AMZN": 263.6,
+            "CSCO": 116.9,
+            "MDB": 307.77
+          },
+          "floating_return": 0.005531
+        }
+      ]
     },
     {
       "theme_id": "space-economy-commercial-launch",
@@ -233,13 +252,32 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 748.1601,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null
+      "status": "closed",
+      "exit_date": "2026-05-15",
+      "exit_prices": {
+        "ASTS": 80.08,
+        "RKLB": 125.48,
+        "LUNR": 35.525,
+        "IONQ": 51.9796,
+        "QUBT": 10.7498
+      },
+      "exit_reason": "conviction_drop",
+      "realized_return": -0.065927,
+      "spy_return_during_holding": -0.01068,
+      "excess_return": -0.055247,
+      "daily_snapshots": [
+        {
+          "date": "2026-05-15",
+          "prices": {
+            "ASTS": 80.08,
+            "RKLB": 125.48,
+            "LUNR": 35.525,
+            "IONQ": 51.9796,
+            "QUBT": 10.7498
+          },
+          "floating_return": -0.065927
+        }
+      ]
     }
   ],
   "daily_returns": [
@@ -260,12 +298,12 @@
     "portfolio_cumulative": 0.0,
     "spy_cumulative": 0.006354,
     "alpha": -0.006354,
-    "open_count": 2,
-    "closed_count": 4,
-    "win_rate": 0.25,
+    "open_count": 0,
+    "closed_count": 6,
+    "win_rate": 0.333,
     "tracking_days": 2
   },
-  "updated_at": "2026-05-14",
+  "updated_at": "2026-05-15",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -279,6 +317,18 @@
           "EQIX",
           "TSM",
           "ASML"
+        ]
+      },
+      {
+        "date": "2026-05-15",
+        "conviction": 4,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "NVDA",
+          "AAOI",
+          "POET",
+          "MSFT"
         ]
       }
     ],
@@ -307,6 +357,19 @@
           "AVGO",
           "TSM",
           "ASML"
+        ]
+      },
+      {
+        "date": "2026-05-15",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "NVDA",
+          "AMD",
+          "ASML",
+          "ARM",
+          "INTC"
         ]
       }
     ],
@@ -390,6 +453,17 @@
           "IONQ",
           "QUBT"
         ]
+      },
+      {
+        "date": "2026-05-15",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "RKLB",
+          "ASTS",
+          "LUNR"
+        ]
       }
     ],
     "power-grid-energy-ai-demand": [
@@ -418,12 +492,36 @@
           "VST",
           "NRG"
         ]
+      },
+      {
+        "date": "2026-05-15",
+        "conviction": 4,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "NEE",
+          "CEG",
+          "VST",
+          "NRG",
+          "ETR"
+        ]
       }
     ],
     "quantum-computing-speculative-selloff": [
       {
         "date": "2026-05-13",
         "conviction": 4,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "IONQ",
+          "RGTI",
+          "QUBT"
+        ]
+      },
+      {
+        "date": "2026-05-15",
+        "conviction": 3,
         "direction": "Bearish",
         "stage": "Narrative Breakdown",
         "tickers": [
@@ -495,6 +593,17 @@
           "BKHYY",
           "KLRN"
         ]
+      },
+      {
+        "date": "2026-05-15",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "OWL",
+          "DLO",
+          "FLYW"
+        ]
       }
     ],
     "emerging-markets-latam": [
@@ -508,6 +617,16 @@
           "EWZS",
           "CPA"
         ]
+      },
+      {
+        "date": "2026-05-15",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "RCRUY",
+          "DLO"
+        ]
       }
     ],
     "ev-automotive-supply-chain": [
@@ -519,6 +638,17 @@
         "tickers": [
           "TSLA",
           "MVIS"
+        ]
+      },
+      {
+        "date": "2026-05-15",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "TSLA",
+          "ELVA",
+          "PCT"
         ]
       }
     ],
@@ -534,6 +664,68 @@
           "ZTS",
           "ISRG",
           "DXCM"
+        ]
+      },
+      {
+        "date": "2026-05-15",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "ISRG",
+          "DXCM",
+          "ICCC"
+        ]
+      }
+    ],
+    "energy-oil-gas-cycle": [
+      {
+        "date": "2026-05-15",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "COP",
+          "KOS",
+          "SDRL"
+        ]
+      }
+    ],
+    "industrials-infrastructure-materials": [
+      {
+        "date": "2026-05-15",
+        "conviction": 5,
+        "direction": "Neutral",
+        "stage": "Acceleration",
+        "tickers": [
+          "ACM",
+          "NUE",
+          "MMM",
+          "RCKY",
+          "DE"
+        ]
+      }
+    ],
+    "energy-infrastructure-income": [
+      {
+        "date": "2026-05-15",
+        "conviction": 4,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "MLPI"
+        ]
+      }
+    ],
+    "media-entertainment-consumer-recovery": [
+      {
+        "date": "2026-05-15",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "PARA",
+          "DG"
         ]
       }
     ]
