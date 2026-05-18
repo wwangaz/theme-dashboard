@@ -303,7 +303,7 @@
     "win_rate": 0.333,
     "tracking_days": 2
   },
-  "updated_at": "2026-05-15",
+  "updated_at": "2026-05-18",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -329,6 +329,19 @@
           "AAOI",
           "POET",
           "MSFT"
+        ]
+      },
+      {
+        "date": "2026-05-18",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "NVDA",
+          "AVGO",
+          "QCOM",
+          "TSM",
+          "ASML"
         ]
       }
     ],
@@ -385,6 +398,17 @@
           "MCO",
           "UMBF",
           "WAL"
+        ]
+      },
+      {
+        "date": "2026-05-18",
+        "conviction": 6,
+        "direction": "Bearish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "TLT",
+          "IEF",
+          "SPY"
         ]
       }
     ],
@@ -464,6 +488,17 @@
           "ASTS",
           "LUNR"
         ]
+      },
+      {
+        "date": "2026-05-18",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Crowded Euphoria",
+        "tickers": [
+          "RKLB",
+          "LUNR",
+          "ASTS"
+        ]
       }
     ],
     "power-grid-energy-ai-demand": [
@@ -505,6 +540,19 @@
           "NRG",
           "ETR"
         ]
+      },
+      {
+        "date": "2026-05-18",
+        "conviction": 6,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "NEE",
+          "CEG",
+          "VST",
+          "NRG",
+          "FCEL"
+        ]
       }
     ],
     "quantum-computing-speculative-selloff": [
@@ -522,6 +570,17 @@
       {
         "date": "2026-05-15",
         "conviction": 3,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "IONQ",
+          "RGTI",
+          "QUBT"
+        ]
+      },
+      {
+        "date": "2026-05-18",
+        "conviction": 4,
         "direction": "Bearish",
         "stage": "Narrative Breakdown",
         "tickers": [
@@ -563,6 +622,18 @@
         "direction": "Neutral",
         "stage": "Early Discovery",
         "tickers": []
+      },
+      {
+        "date": "2026-05-18",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "MSTR",
+          "HIVE",
+          "COIN",
+          "BTCUSD"
+        ]
       }
     ],
     "nuclear-clean-energy": [
@@ -676,6 +747,19 @@
           "DXCM",
           "ICCC"
         ]
+      },
+      {
+        "date": "2026-05-18",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "ISRG",
+          "DXCM",
+          "AUTL",
+          "NBIX",
+          "MRVA"
+        ]
       }
     ],
     "energy-oil-gas-cycle": [
@@ -726,6 +810,46 @@
         "tickers": [
           "PARA",
           "DG"
+        ]
+      },
+      {
+        "date": "2026-05-18",
+        "conviction": 6,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "NKE",
+          "M",
+          "SKP",
+          "SKT",
+          "DIN"
+        ]
+      }
+    ],
+    "big-tech-ai-platforms": [
+      {
+        "date": "2026-05-18",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "MSFT",
+          "GOOGL",
+          "META",
+          "AMZN",
+          "AAPL"
+        ]
+      }
+    ],
+    "cybersecurity-resilience": [
+      {
+        "date": "2026-05-18",
+        "conviction": 3,
+        "direction": "Bullish",
+        "stage": "Acceleration",
+        "tickers": [
+          "PANW",
+          "CRWD"
         ]
       }
     ]
