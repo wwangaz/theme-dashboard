@@ -278,6 +278,35 @@
           "floating_return": -0.065927
         }
       ]
+    },
+    {
+      "theme_id": "inflation-rates-macro-pressure",
+      "theme_name": "Hotter-Than-Expected Inflation & Rising Rate Pressure",
+      "direction": "Bullish",
+      "entry_date": "2026-05-19",
+      "tickers": [
+        "TLT",
+        "EDV",
+        "CME",
+        "UUP",
+        "GLD"
+      ],
+      "entry_prices": {
+        "TLT": 82.965,
+        "EDV": 60.7101,
+        "CME": 306.64,
+        "UUP": 27.795,
+        "GLD": 412.815
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 732.92,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null
     }
   ],
   "daily_returns": [
@@ -292,18 +321,24 @@
       "portfolio_return": 0.0,
       "spy_return": 0.007881,
       "open_count": 2
+    },
+    {
+      "date": "2026-05-19",
+      "portfolio_return": 0.0,
+      "spy_return": -0.007798,
+      "open_count": 1
     }
   ],
   "summary": {
     "portfolio_cumulative": 0.0,
-    "spy_cumulative": 0.006354,
-    "alpha": -0.006354,
-    "open_count": 0,
+    "spy_cumulative": -0.001493,
+    "alpha": 0.001493,
+    "open_count": 1,
     "closed_count": 6,
     "win_rate": 0.333,
-    "tracking_days": 2
+    "tracking_days": 3
   },
-  "updated_at": "2026-05-18",
+  "updated_at": "2026-05-19",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -342,6 +377,19 @@
           "QCOM",
           "TSM",
           "ASML"
+        ]
+      },
+      {
+        "date": "2026-05-19",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "NVDA",
+          "AMD",
+          "AVGO",
+          "AMZN",
+          "GOOGL"
         ]
       }
     ],
@@ -410,6 +458,19 @@
           "IEF",
           "SPY"
         ]
+      },
+      {
+        "date": "2026-05-19",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "TLT",
+          "EDV",
+          "CME",
+          "UUP",
+          "GLD"
+        ]
       }
     ],
     "precious-metals-mining-dividends": [
@@ -422,6 +483,19 @@
           "GOLD",
           "CDE",
           "FEAM"
+        ]
+      },
+      {
+        "date": "2026-05-19",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "GLD",
+          "SLV",
+          "NEM",
+          "WPM",
+          "RGLD"
         ]
       }
     ],
@@ -498,6 +572,19 @@
           "RKLB",
           "LUNR",
           "ASTS"
+        ]
+      },
+      {
+        "date": "2026-05-19",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "RKLB",
+          "LUNR",
+          "ASTS",
+          "YSS",
+          "SPCE"
         ]
       }
     ],
@@ -581,6 +668,17 @@
       {
         "date": "2026-05-18",
         "conviction": 4,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "IONQ",
+          "RGTI",
+          "QUBT"
+        ]
+      },
+      {
+        "date": "2026-05-19",
+        "conviction": 3,
         "direction": "Bearish",
         "stage": "Narrative Breakdown",
         "tickers": [
@@ -760,6 +858,19 @@
           "NBIX",
           "MRVA"
         ]
+      },
+      {
+        "date": "2026-05-19",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "ISRG",
+          "DXCM",
+          "LLY",
+          "IONS",
+          "BIO"
+        ]
       }
     ],
     "energy-oil-gas-cycle": [
@@ -839,6 +950,19 @@
           "AMZN",
           "AAPL"
         ]
+      },
+      {
+        "date": "2026-05-19",
+        "conviction": 2,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "MSFT",
+          "AAPL",
+          "META",
+          "NFLX",
+          "TSLA"
+        ]
       }
     ],
     "cybersecurity-resilience": [
@@ -850,6 +974,51 @@
         "tickers": [
           "PANW",
           "CRWD"
+        ]
+      }
+    ],
+    "consumer-retail-stress": [
+      {
+        "date": "2026-05-19",
+        "conviction": 7,
+        "direction": "Bearish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "HD",
+          "WMT",
+          "TGT",
+          "XRT",
+          "ORLY"
+        ]
+      }
+    ],
+    "semiconductor-broad-selloff": [
+      {
+        "date": "2026-05-19",
+        "conviction": 6,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "TSM",
+          "ASML",
+          "INTC",
+          "QCOM",
+          "ARM"
+        ]
+      }
+    ],
+    "fintech-payments-platforms": [
+      {
+        "date": "2026-05-19",
+        "conviction": 5,
+        "direction": "Neutral",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "PYPL",
+          "HOOD",
+          "CME",
+          "UPST",
+          "XP"
         ]
       }
     ]

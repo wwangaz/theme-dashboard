@@ -2,13 +2,13 @@
   "ai-infrastructure-datacenter-boom": {
     "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-18",
+    "last_active": "2026-05-19",
     "representative_tickers": [
       "NVDA",
+      "AMD",
       "AVGO",
-      "QCOM",
-      "TSM",
-      "ASML"
+      "AMZN",
+      "GOOGL"
     ]
   },
   "semiconductor-geopolitics-china-trade": {
@@ -26,11 +26,13 @@
   "inflation-rates-macro-pressure": {
     "name": "Hotter-Than-Expected Inflation & Rising Rate Pressure",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-18",
+    "last_active": "2026-05-19",
     "representative_tickers": [
       "TLT",
-      "IEF",
-      "SPY"
+      "EDV",
+      "CME",
+      "UUP",
+      "GLD"
     ]
   },
   "ai-enterprise-software-automation": {
@@ -60,21 +62,25 @@
   "space-economy-commercial-launch": {
     "name": "Commercial Space Economy & Satellite Communications Momentum",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-18",
+    "last_active": "2026-05-19",
     "representative_tickers": [
       "RKLB",
       "LUNR",
-      "ASTS"
+      "ASTS",
+      "YSS",
+      "SPCE"
     ]
   },
   "precious-metals-mining-dividends": {
     "name": "Precious Metals Mining — Silver Surge & Gold Dividend Play",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-13",
+    "last_active": "2026-05-19",
     "representative_tickers": [
-      "GOLD",
-      "CDE",
-      "FEAM"
+      "GLD",
+      "SLV",
+      "NEM",
+      "WPM",
+      "RGLD"
     ]
   },
   "crypto-digital-assets-geopolitical-watch": {
@@ -91,7 +97,7 @@
   "quantum-computing-speculative-selloff": {
     "name": "Quantum Computing Speculative Pullback",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-18",
+    "last_active": "2026-05-19",
     "representative_tickers": [
       "IONQ",
       "RGTI",
@@ -153,13 +159,13 @@
   "healthcare-biotech-mixed": {
     "name": "Healthcare & Biotech Divergence",
     "first_seen": "2026-05-14",
-    "last_active": "2026-05-18",
+    "last_active": "2026-05-19",
     "representative_tickers": [
       "ISRG",
       "DXCM",
-      "AUTL",
-      "NBIX",
-      "MRVA"
+      "LLY",
+      "IONS",
+      "BIO"
     ]
   },
   "energy-oil-gas-cycle": {
@@ -207,13 +213,13 @@
   "big-tech-ai-platforms": {
     "name": "Big Tech AI Platform Divergence",
     "first_seen": "2026-05-18",
-    "last_active": "2026-05-18",
+    "last_active": "2026-05-19",
     "representative_tickers": [
       "MSFT",
-      "GOOGL",
+      "AAPL",
       "META",
-      "AMZN",
-      "AAPL"
+      "NFLX",
+      "TSLA"
     ]
   },
   "cybersecurity-resilience": {
@@ -223,6 +229,42 @@
     "representative_tickers": [
       "PANW",
       "CRWD"
+    ]
+  },
+  "semiconductor-broad-selloff": {
+    "name": "Semiconductor Sector Correction",
+    "first_seen": "2026-05-19",
+    "last_active": "2026-05-19",
+    "representative_tickers": [
+      "TSM",
+      "ASML",
+      "INTC",
+      "QCOM",
+      "ARM"
+    ]
+  },
+  "consumer-retail-stress": {
+    "name": "Consumer & Retail Under Pressure",
+    "first_seen": "2026-05-19",
+    "last_active": "2026-05-19",
+    "representative_tickers": [
+      "HD",
+      "WMT",
+      "TGT",
+      "XRT",
+      "ORLY"
+    ]
+  },
+  "fintech-payments-platforms": {
+    "name": "Fintech, Payments & Alternative Finance",
+    "first_seen": "2026-05-19",
+    "last_active": "2026-05-19",
+    "representative_tickers": [
+      "PYPL",
+      "HOOD",
+      "CME",
+      "UPST",
+      "XP"
     ]
   }
 }
