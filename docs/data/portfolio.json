@@ -300,6 +300,110 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 732.92,
+      "status": "closed",
+      "exit_date": "2026-05-20",
+      "exit_prices": {
+        "TLT": 83.62,
+        "EDV": 61.41,
+        "CME": 293.8,
+        "UUP": 27.7215,
+        "GLD": 415.88
+      },
+      "exit_reason": "theme_gone",
+      "realized_return": -0.003534,
+      "spy_return_during_holding": 0.007968,
+      "excess_return": -0.011502,
+      "daily_snapshots": [
+        {
+          "date": "2026-05-20",
+          "prices": {
+            "TLT": 83.62,
+            "EDV": 61.41,
+            "CME": 293.8,
+            "UUP": 27.7215,
+            "GLD": 415.88
+          },
+          "floating_return": -0.003534
+        }
+      ]
+    },
+    {
+      "theme_id": "ai-infrastructure-datacenter-boom",
+      "theme_name": "AI Infrastructure & Data Center Capital Expenditure Surge",
+      "direction": "Bullish",
+      "entry_date": "2026-05-20",
+      "tickers": [
+        "NVDA",
+        "AMD",
+        "ARM",
+        "ASML",
+        "TSM"
+      ],
+      "entry_prices": {
+        "NVDA": 224.48,
+        "AMD": 443.5,
+        "ARM": 256.2545,
+        "ASML": 1537.98,
+        "TSM": 401.71
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 738.76,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null
+    },
+    {
+      "theme_id": "ai-enterprise-software-automation",
+      "theme_name": "Enterprise AI Adoption & Workflow Automation",
+      "direction": "Bullish",
+      "entry_date": "2026-05-20",
+      "tickers": [
+        "META",
+        "MSFT",
+        "GOOGL",
+        "PLTR",
+        "CRWD"
+      ],
+      "entry_prices": {
+        "META": 604.645,
+        "MSFT": 415.615,
+        "GOOGL": 385.15,
+        "PLTR": 136.24,
+        "CRWD": 638.95
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 738.76,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null
+    },
+    {
+      "theme_id": "fixed-income-yield-alternatives",
+      "theme_name": "Fixed Income, Yield Alternatives & Retirement Income",
+      "direction": "Bullish",
+      "entry_date": "2026-05-20",
+      "tickers": [
+        "BND",
+        "MUB",
+        "SPGI",
+        "HQH"
+      ],
+      "entry_prices": {
+        "BND": 72.715,
+        "MUB": 105.835,
+        "SPGI": 412.835,
+        "HQH": 19.89
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 738.76,
       "status": "open",
       "exit_date": null,
       "exit_prices": null,
@@ -327,18 +431,24 @@
       "portfolio_return": 0.0,
       "spy_return": -0.007798,
       "open_count": 1
+    },
+    {
+      "date": "2026-05-20",
+      "portfolio_return": 0.0,
+      "spy_return": 0.006883,
+      "open_count": 3
     }
   ],
   "summary": {
     "portfolio_cumulative": 0.0,
-    "spy_cumulative": -0.001493,
-    "alpha": 0.001493,
-    "open_count": 1,
-    "closed_count": 6,
-    "win_rate": 0.333,
-    "tracking_days": 3
+    "spy_cumulative": 0.005379,
+    "alpha": -0.005379,
+    "open_count": 3,
+    "closed_count": 7,
+    "win_rate": 0.286,
+    "tracking_days": 4
   },
-  "updated_at": "2026-05-19",
+  "updated_at": "2026-05-20",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -390,6 +500,19 @@
           "AVGO",
           "AMZN",
           "GOOGL"
+        ]
+      },
+      {
+        "date": "2026-05-20",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "NVDA",
+          "AMD",
+          "ARM",
+          "ASML",
+          "TSM"
         ]
       }
     ],
@@ -525,6 +648,19 @@
           "CSCO",
           "MDB"
         ]
+      },
+      {
+        "date": "2026-05-20",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "META",
+          "MSFT",
+          "GOOGL",
+          "PLTR",
+          "CRWD"
+        ]
       }
     ],
     "space-economy-commercial-launch": [
@@ -640,6 +776,19 @@
           "NRG",
           "FCEL"
         ]
+      },
+      {
+        "date": "2026-05-20",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Acceleration",
+        "tickers": [
+          "CEG",
+          "VST",
+          "NRG",
+          "NEE",
+          "ETN"
+        ]
       }
     ],
     "quantum-computing-speculative-selloff": [
@@ -700,6 +849,19 @@
           "FFBH",
           "AUBN"
         ]
+      },
+      {
+        "date": "2026-05-20",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "BWFG",
+          "OSBC",
+          "IBOC",
+          "PGR",
+          "CB"
+        ]
       }
     ],
     "crypto-digital-assets-geopolitical-watch": [
@@ -731,6 +893,19 @@
           "HIVE",
           "COIN",
           "BTCUSD"
+        ]
+      },
+      {
+        "date": "2026-05-20",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "BTC",
+          "ETH",
+          "MSTR",
+          "COIN",
+          "USDT"
         ]
       }
     ],
@@ -819,6 +994,19 @@
           "ELVA",
           "PCT"
         ]
+      },
+      {
+        "date": "2026-05-20",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "TSLA",
+          "ENVX",
+          "GTX",
+          "XPEL",
+          "STLA"
+        ]
       }
     ],
     "healthcare-biotech-mixed": [
@@ -870,6 +1058,19 @@
           "LLY",
           "IONS",
           "BIO"
+        ]
+      },
+      {
+        "date": "2026-05-20",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "HIMS",
+          "ISRG",
+          "DXCM",
+          "PFE",
+          "MCK"
         ]
       }
     ],
@@ -990,6 +1191,19 @@
           "XRT",
           "ORLY"
         ]
+      },
+      {
+        "date": "2026-05-20",
+        "conviction": 6,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "WMT",
+          "TJX",
+          "TGT",
+          "COST",
+          "LOW"
+        ]
       }
     ],
     "semiconductor-broad-selloff": [
@@ -1019,6 +1233,36 @@
           "CME",
           "UPST",
           "XP"
+        ]
+      }
+    ],
+    "fixed-income-yield-alternatives": [
+      {
+        "date": "2026-05-20",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "BND",
+          "MUB",
+          "SPGI",
+          "OXL",
+          "HQH"
+        ]
+      }
+    ],
+    "space-quantum-defense-tech": [
+      {
+        "date": "2026-05-20",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "IONQ",
+          "RGTI",
+          "RKLB",
+          "ASTS",
+          "LUNR"
         ]
       }
     ]
