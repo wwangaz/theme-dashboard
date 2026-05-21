@@ -38,37 +38,33 @@
   "ai-enterprise-software-automation": {
     "name": "Enterprise AI Adoption & Workflow Automation",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-20",
+    "last_active": "2026-05-21",
     "representative_tickers": [
-      "META",
-      "MSFT",
-      "GOOGL",
-      "PLTR",
-      "CRWD"
+      "WDAY",
+      "INTU",
+      "MSFT"
     ]
   },
   "power-grid-energy-ai-demand": {
     "name": "Power Grid Stress & Energy Stocks Under AI Demand Pressure",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-20",
+    "last_active": "2026-05-21",
     "representative_tickers": [
       "CEG",
       "VST",
       "NRG",
       "NEE",
-      "ETN"
+      "ETR"
     ]
   },
   "space-economy-commercial-launch": {
     "name": "Commercial Space Economy & Satellite Communications Momentum",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-19",
+    "last_active": "2026-05-21",
     "representative_tickers": [
       "RKLB",
       "LUNR",
-      "ASTS",
-      "YSS",
-      "SPCE"
+      "ASTS"
     ]
   },
   "precious-metals-mining-dividends": {
@@ -86,19 +82,18 @@
   "crypto-digital-assets-geopolitical-watch": {
     "name": "Crypto & Digital Assets Holding Steady Amid US-China Summit",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-20",
+    "last_active": "2026-05-21",
     "representative_tickers": [
-      "BTC",
-      "ETH",
       "MSTR",
       "COIN",
-      "USDT"
+      "BTC",
+      "ETH"
     ]
   },
   "quantum-computing-speculative-selloff": {
     "name": "Quantum Computing Speculative Pullback",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-19",
+    "last_active": "2026-05-21",
     "representative_tickers": [
       "IONQ",
       "RGTI",
@@ -163,23 +158,24 @@
   "healthcare-biotech-mixed": {
     "name": "Healthcare & Biotech Divergence",
     "first_seen": "2026-05-14",
-    "last_active": "2026-05-20",
+    "last_active": "2026-05-21",
     "representative_tickers": [
-      "HIMS",
       "ISRG",
       "DXCM",
-      "PFE",
-      "MCK"
+      "DHR",
+      "GILD",
+      "HAE"
     ]
   },
   "energy-oil-gas-cycle": {
     "name": "Oil & Gas Cycle Recovery & Leverage Plays",
     "first_seen": "2026-05-15",
-    "last_active": "2026-05-15",
+    "last_active": "2026-05-21",
     "representative_tickers": [
-      "COP",
-      "KOS",
-      "SDRL"
+      "EQT",
+      "DVN",
+      "GLD",
+      "USO"
     ]
   },
   "energy-infrastructure-income": {
@@ -217,13 +213,13 @@
   "big-tech-ai-platforms": {
     "name": "Big Tech AI Platform Divergence",
     "first_seen": "2026-05-18",
-    "last_active": "2026-05-19",
+    "last_active": "2026-05-21",
     "representative_tickers": [
-      "MSFT",
-      "AAPL",
-      "META",
-      "NFLX",
-      "TSLA"
+      "NVDA",
+      "AMD",
+      "AVGO",
+      "TSM",
+      "ASML"
     ]
   },
   "cybersecurity-resilience": {
@@ -250,13 +246,13 @@
   "consumer-retail-stress": {
     "name": "Consumer & Retail Under Pressure",
     "first_seen": "2026-05-19",
-    "last_active": "2026-05-20",
+    "last_active": "2026-05-21",
     "representative_tickers": [
       "WMT",
-      "TJX",
-      "TGT",
-      "COST",
-      "LOW"
+      "CHWY",
+      "ELF",
+      "TSLA",
+      "VSCO"
     ]
   },
   "fintech-payments-platforms": {
@@ -286,13 +282,11 @@
   "fixed-income-yield-alternatives": {
     "name": "Fixed Income, Yield Alternatives & Retirement Income",
     "first_seen": "2026-05-20",
-    "last_active": "2026-05-20",
+    "last_active": "2026-05-21",
     "representative_tickers": [
-      "BND",
-      "MUB",
-      "SPGI",
-      "OXL",
-      "HQH"
+      "TLT",
+      "GUG",
+      "IEF"
     ]
   }
 }

@@ -348,13 +348,32 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 738.76,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null
+      "status": "closed",
+      "exit_date": "2026-05-21",
+      "exit_prices": {
+        "NVDA": 218.975,
+        "AMD": 434.35,
+        "ARM": 279.3801,
+        "ASML": 1558.21,
+        "TSM": 402.72
+      },
+      "exit_reason": "theme_gone",
+      "realized_return": 0.012152,
+      "spy_return_during_holding": -0.001151,
+      "excess_return": 0.013303,
+      "daily_snapshots": [
+        {
+          "date": "2026-05-21",
+          "prices": {
+            "NVDA": 218.975,
+            "AMD": 434.35,
+            "ARM": 279.3801,
+            "ASML": 1558.21,
+            "TSM": 402.72
+          },
+          "floating_return": 0.012152
+        }
+      ]
     },
     {
       "theme_id": "ai-enterprise-software-automation",
@@ -377,13 +396,32 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 738.76,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null
+      "status": "closed",
+      "exit_date": "2026-05-21",
+      "exit_prices": {
+        "META": 600.185,
+        "MSFT": 417.94,
+        "GOOGL": 388.34,
+        "PLTR": 137.615,
+        "CRWD": 648.11
+      },
+      "exit_reason": "conviction_drop",
+      "realized_return": 0.006186,
+      "spy_return_during_holding": -0.001151,
+      "excess_return": 0.007337,
+      "daily_snapshots": [
+        {
+          "date": "2026-05-21",
+          "prices": {
+            "META": 600.185,
+            "MSFT": 417.94,
+            "GOOGL": 388.34,
+            "PLTR": 137.615,
+            "CRWD": 648.11
+          },
+          "floating_return": 0.006186
+        }
+      ]
     },
     {
       "theme_id": "fixed-income-yield-alternatives",
@@ -404,6 +442,50 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 738.76,
+      "status": "closed",
+      "exit_date": "2026-05-21",
+      "exit_prices": {
+        "BND": 72.6444,
+        "MUB": 105.885,
+        "SPGI": 414.955,
+        "HQH": 19.315
+      },
+      "exit_reason": "conviction_drop",
+      "realized_return": -0.006068,
+      "spy_return_during_holding": -0.001151,
+      "excess_return": -0.004917,
+      "daily_snapshots": [
+        {
+          "date": "2026-05-21",
+          "prices": {
+            "BND": 72.6444,
+            "MUB": 105.885,
+            "SPGI": 414.955,
+            "HQH": 19.315
+          },
+          "floating_return": -0.006068
+        }
+      ]
+    },
+    {
+      "theme_id": "energy-oil-gas-cycle",
+      "theme_name": "Oil & Gas Cycle Recovery & Leverage Plays",
+      "direction": "Bullish",
+      "entry_date": "2026-05-21",
+      "tickers": [
+        "EQT",
+        "DVN",
+        "GLD",
+        "USO"
+      ],
+      "entry_prices": {
+        "EQT": 58.12,
+        "DVN": 47.705,
+        "GLD": 413.02,
+        "USO": 149.18
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 737.91,
       "status": "open",
       "exit_date": null,
       "exit_prices": null,
@@ -437,18 +519,24 @@
       "portfolio_return": 0.0,
       "spy_return": 0.006883,
       "open_count": 3
+    },
+    {
+      "date": "2026-05-21",
+      "portfolio_return": 0.0,
+      "spy_return": -0.004506,
+      "open_count": 1
     }
   ],
   "summary": {
     "portfolio_cumulative": 0.0,
-    "spy_cumulative": 0.005379,
-    "alpha": -0.005379,
-    "open_count": 3,
-    "closed_count": 7,
-    "win_rate": 0.286,
-    "tracking_days": 4
+    "spy_cumulative": 0.000849,
+    "alpha": -0.000849,
+    "open_count": 1,
+    "closed_count": 10,
+    "win_rate": 0.4,
+    "tracking_days": 5
   },
-  "updated_at": "2026-05-20",
+  "updated_at": "2026-05-21",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -661,6 +749,17 @@
           "PLTR",
           "CRWD"
         ]
+      },
+      {
+        "date": "2026-05-21",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "WDAY",
+          "INTU",
+          "MSFT"
+        ]
       }
     ],
     "space-economy-commercial-launch": [
@@ -721,6 +820,17 @@
           "ASTS",
           "YSS",
           "SPCE"
+        ]
+      },
+      {
+        "date": "2026-05-21",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Crowded Euphoria",
+        "tickers": [
+          "RKLB",
+          "LUNR",
+          "ASTS"
         ]
       }
     ],
@@ -789,6 +899,19 @@
           "NEE",
           "ETN"
         ]
+      },
+      {
+        "date": "2026-05-21",
+        "conviction": 3,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "CEG",
+          "VST",
+          "NRG",
+          "NEE",
+          "ETR"
+        ]
       }
     ],
     "quantum-computing-speculative-selloff": [
@@ -830,6 +953,17 @@
         "conviction": 3,
         "direction": "Bearish",
         "stage": "Narrative Breakdown",
+        "tickers": [
+          "IONQ",
+          "RGTI",
+          "QUBT"
+        ]
+      },
+      {
+        "date": "2026-05-21",
+        "conviction": 2,
+        "direction": "Bearish",
+        "stage": "Acceleration",
         "tickers": [
           "IONQ",
           "RGTI",
@@ -906,6 +1040,18 @@
           "MSTR",
           "COIN",
           "USDT"
+        ]
+      },
+      {
+        "date": "2026-05-21",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "MSTR",
+          "COIN",
+          "BTC",
+          "ETH"
         ]
       }
     ],
@@ -1072,6 +1218,19 @@
           "PFE",
           "MCK"
         ]
+      },
+      {
+        "date": "2026-05-21",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "ISRG",
+          "DXCM",
+          "DHR",
+          "GILD",
+          "HAE"
+        ]
       }
     ],
     "energy-oil-gas-cycle": [
@@ -1084,6 +1243,18 @@
           "COP",
           "KOS",
           "SDRL"
+        ]
+      },
+      {
+        "date": "2026-05-21",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Acceleration",
+        "tickers": [
+          "EQT",
+          "DVN",
+          "GLD",
+          "USO"
         ]
       }
     ],
@@ -1164,6 +1335,19 @@
           "NFLX",
           "TSLA"
         ]
+      },
+      {
+        "date": "2026-05-21",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "NVDA",
+          "AMD",
+          "AVGO",
+          "TSM",
+          "ASML"
+        ]
       }
     ],
     "cybersecurity-resilience": [
@@ -1203,6 +1387,19 @@
           "TGT",
           "COST",
           "LOW"
+        ]
+      },
+      {
+        "date": "2026-05-21",
+        "conviction": 6,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "WMT",
+          "CHWY",
+          "ELF",
+          "TSLA",
+          "VSCO"
         ]
       }
     ],
@@ -1248,6 +1445,17 @@
           "SPGI",
           "OXL",
           "HQH"
+        ]
+      },
+      {
+        "date": "2026-05-21",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "TLT",
+          "GUG",
+          "IEF"
         ]
       }
     ],
