@@ -129,7 +129,23 @@ def update_portfolio(snapshots: list[dict], today: date):
                 "floating_return": round(_position_return(p, current_prices) or 0.0, 6),
             })
 
-    # ── 2. Close positions that are no longer in the candidate set ────────────
+    # ── 2. Daily return record — captured BEFORE close/rebalance ─────────────
+    # Must be here so positions held during the day (even if closed today)
+    # contribute their actual return, not new positions at 0.
+    positions_held_today = [p for p in positions if p["status"] == "open"]
+    if positions_held_today and not any(r["date"] == today_str for r in daily_returns):
+        pos_returns = [r for p in positions_held_today
+                       if (r := _position_return(p, current_prices)) is not None]
+        spy_ret = _spy_daily_return()
+        if pos_returns:
+            daily_returns.append({
+                "date":             today_str,
+                "portfolio_return": round(sum(pos_returns) / len(pos_returns), 6),
+                "spy_return":       round(spy_ret, 6) if spy_ret is not None else 0.0,
+                "open_count":       len(positions_held_today),
+            })
+
+    # ── 3. Close positions that are no longer in the candidate set ────────────
     # A position exits when its theme drops out of the top-N eligible Bullish themes
     for p in positions:
         if p["status"] != "open":
@@ -193,22 +209,6 @@ def update_portfolio(snapshots: list[dict], today: date):
         open_ids.add(snap["id"])
         print(f"  OPEN  {snap['name']}  conv={snap['conviction_score']}  "
               f"tickers={list(entry_prices)}")
-
-    # ── 4. Daily return record ────────────────────────────────────────────────
-    today_str = str(today)
-    open_positions = [p for p in positions if p["status"] == "open"]
-
-    if open_positions and not any(r["date"] == today_str for r in daily_returns):
-        pos_returns = [r for p in open_positions
-                       if (r := _position_return(p, current_prices)) is not None]
-        spy_ret = _spy_daily_return()
-        if pos_returns:
-            daily_returns.append({
-                "date":             today_str,
-                "portfolio_return": round(sum(pos_returns) / len(pos_returns), 6),
-                "spy_return":       round(spy_ret, 6) if spy_ret is not None else 0.0,
-                "open_count":       len(open_positions),
-            })
 
     # ── 4b. Theme lifecycle history ───────────────────────────────────────────
     for snap in snapshots:
