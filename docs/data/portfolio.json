@@ -492,6 +492,47 @@
       "exit_reason": null,
       "realized_return": null,
       "spy_return_during_holding": null,
+      "excess_return": null,
+      "daily_snapshots": [
+        {
+          "date": "2026-05-22",
+          "prices": {
+            "EQT": 57.72,
+            "DVN": 47.525,
+            "GLD": 413.1785,
+            "USO": 142.93
+          },
+          "floating_return": -0.013042
+        }
+      ]
+    },
+    {
+      "theme_id": "ai-infrastructure-datacenter-boom",
+      "theme_name": "AI Infrastructure & Data Center Capital Expenditure Surge",
+      "direction": "Bullish",
+      "entry_date": "2026-05-22",
+      "tickers": [
+        "NVDA",
+        "AMD",
+        "QCOM",
+        "ASML",
+        "TSM"
+      ],
+      "entry_prices": {
+        "NVDA": 216.77,
+        "AMD": 468.975,
+        "QCOM": 239.415,
+        "ASML": 1630.48,
+        "TSM": 406.94
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 746.21,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
       "excess_return": null
     }
   ],
@@ -525,18 +566,24 @@
       "portfolio_return": 0.0,
       "spy_return": -0.004506,
       "open_count": 1
+    },
+    {
+      "date": "2026-05-22",
+      "portfolio_return": -0.013042,
+      "spy_return": 0.004699,
+      "open_count": 1
     }
   ],
   "summary": {
-    "portfolio_cumulative": 0.0,
-    "spy_cumulative": 0.000849,
-    "alpha": -0.000849,
+    "portfolio_cumulative": -0.013042,
+    "spy_cumulative": 0.005552,
+    "alpha": -0.018594,
     "open_count": 1,
     "closed_count": 10,
     "win_rate": 0.4,
-    "tracking_days": 5
+    "tracking_days": 6
   },
-  "updated_at": "2026-05-21",
+  "updated_at": "2026-05-22",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -599,6 +646,19 @@
           "NVDA",
           "AMD",
           "ARM",
+          "ASML",
+          "TSM"
+        ]
+      },
+      {
+        "date": "2026-05-22",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Crowded Euphoria",
+        "tickers": [
+          "NVDA",
+          "AMD",
+          "QCOM",
           "ASML",
           "TSM"
         ]
@@ -682,6 +742,19 @@
           "UUP",
           "GLD"
         ]
+      },
+      {
+        "date": "2026-05-22",
+        "conviction": 6,
+        "direction": "Bearish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "TLT",
+          "IEF",
+          "GLD",
+          "SPY",
+          "SHY"
+        ]
       }
     ],
     "precious-metals-mining-dividends": [
@@ -759,6 +832,19 @@
           "WDAY",
           "INTU",
           "MSFT"
+        ]
+      },
+      {
+        "date": "2026-05-22",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "MSFT",
+          "GOOGL",
+          "META",
+          "INTU",
+          "AMZN"
         ]
       }
     ],
@@ -912,6 +998,19 @@
           "NEE",
           "ETR"
         ]
+      },
+      {
+        "date": "2026-05-22",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "VST",
+          "CEG",
+          "NEE",
+          "NRG",
+          "ETR"
+        ]
       }
     ],
     "quantum-computing-speculative-selloff": [
@@ -1053,6 +1152,19 @@
           "BTC",
           "ETH"
         ]
+      },
+      {
+        "date": "2026-05-22",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "GBTC",
+          "ETHE",
+          "MSTR",
+          "COIN",
+          "DJT"
+        ]
       }
     ],
     "nuclear-clean-energy": [
@@ -1152,6 +1264,19 @@
           "GTX",
           "XPEL",
           "STLA"
+        ]
+      },
+      {
+        "date": "2026-05-22",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "TSLA",
+          "NIO",
+          "KARS",
+          "LI",
+          "XPEV"
         ]
       }
     ],
@@ -1256,6 +1381,19 @@
           "GLD",
           "USO"
         ]
+      },
+      {
+        "date": "2026-05-22",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "DVN",
+          "VET",
+          "GLNG",
+          "HFC",
+          "XOM"
+        ]
       }
     ],
     "industrials-infrastructure-materials": [
@@ -1306,6 +1444,19 @@
           "SKP",
           "SKT",
           "DIN"
+        ]
+      },
+      {
+        "date": "2026-05-22",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "TJX",
+          "ROST",
+          "BJ",
+          "WMT",
+          "TGT"
         ]
       }
     ],
@@ -1471,6 +1622,19 @@
           "RKLB",
           "ASTS",
           "LUNR"
+        ]
+      },
+      {
+        "date": "2026-05-22",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "BAH",
+          "CAE",
+          "PH",
+          "LMT",
+          "PPTA"
         ]
       }
     ]
