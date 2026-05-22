@@ -5,7 +5,9 @@ import yfinance as yf
 
 PORTFOLIO_PATH = Path(__file__).parent.parent / "docs" / "data" / "portfolio.json"
 SPY = "SPY"
-CONVICTION_ENTRY   = 7    # minimum to be eligible
+CONVICTION_ENTRY   = 7    # minimum conviction to open a position
+CONVICTION_EXIT    = 5    # hard exit threshold (avoids churn at the 7 boundary)
+MIN_HOLDING_DAYS   = 5    # calendar days before any voluntary close (grace period)
 MAX_POSITIONS      = 8    # always hold top-N by conviction; bump weakest out if full
 MAX_TICKERS_PER_THEME = 5
 
@@ -146,20 +148,27 @@ def update_portfolio(snapshots: list[dict], today: date):
             })
 
     # ── 3. Close positions that are no longer in the candidate set ────────────
-    # A position exits when its theme drops out of the top-N eligible Bullish themes
     for p in positions:
         if p["status"] != "open":
             continue
-        if p["theme_id"] not in candidate_ids:
-            # Theme gone, conviction dropped, or direction changed
-            snap = next((s for s in snapshots if s["id"] == p["theme_id"]), None)
-            if snap is None:
-                reason = "theme_gone"
-            elif snap["conviction_score"] < CONVICTION_ENTRY:
-                reason = "conviction_drop"
-            else:
-                reason = "direction_changed"
-            _close_position(p, today, reason, current_prices)
+        if p["theme_id"] in candidate_ids:
+            continue  # still a top Bullish candidate — hold
+
+        snap = next((s for s in snapshots if s["id"] == p["theme_id"]), None)
+        days_held = (today - date.fromisoformat(p["entry_date"])).days
+
+        if snap is not None and snap["direction"] == "Bearish":
+            # Direction flipped to Bearish — exit immediately, no grace period
+            _close_position(p, today, "direction_changed", current_prices)
+        elif snap is None:
+            # Theme not generated today; wait out the grace period
+            if days_held >= MIN_HOLDING_DAYS:
+                _close_position(p, today, "theme_gone", current_prices)
+        elif snap["conviction_score"] < CONVICTION_EXIT:
+            # Conviction collapsed below hard exit threshold
+            if days_held >= MIN_HOLDING_DAYS:
+                _close_position(p, today, "conviction_drop", current_prices)
+        # else: conviction between CONVICTION_EXIT and CONVICTION_ENTRY — hold
 
     # ── 3. Rebalance: keep top MAX_POSITIONS, bump weakest if needed ──────────
     open_positions = [p for p in positions if p["status"] == "open"]
