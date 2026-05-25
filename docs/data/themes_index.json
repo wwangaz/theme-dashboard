@@ -2,13 +2,13 @@
   "ai-infrastructure-datacenter-boom": {
     "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-22",
+    "last_active": "2026-05-25",
     "representative_tickers": [
-      "NVDA",
-      "AMD",
+      "ARM",
       "QCOM",
+      "NVDA",
       "ASML",
-      "TSM"
+      "AMD"
     ]
   },
   "semiconductor-geopolitics-china-trade": {
@@ -62,11 +62,11 @@
   "space-economy-commercial-launch": {
     "name": "Commercial Space Economy & Satellite Communications Momentum",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-21",
+    "last_active": "2026-05-25",
     "representative_tickers": [
       "RKLB",
-      "LUNR",
-      "ASTS"
+      "ASTS",
+      "LUNR"
     ]
   },
   "precious-metals-mining-dividends": {
@@ -84,22 +84,20 @@
   "crypto-digital-assets-geopolitical-watch": {
     "name": "Crypto & Digital Assets Holding Steady Amid US-China Summit",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-22",
+    "last_active": "2026-05-25",
     "representative_tickers": [
-      "GBTC",
-      "ETHE",
       "MSTR",
-      "COIN",
-      "DJT"
+      "HOOD",
+      "BITM"
     ]
   },
   "quantum-computing-speculative-selloff": {
     "name": "Quantum Computing Speculative Pullback",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-21",
+    "last_active": "2026-05-25",
     "representative_tickers": [
-      "IONQ",
       "RGTI",
+      "IONQ",
       "QUBT"
     ]
   },
@@ -118,13 +116,12 @@
   "nuclear-clean-energy": {
     "name": "Nuclear & Advanced Clean Energy Renaissance",
     "first_seen": "2026-05-14",
-    "last_active": "2026-05-14",
+    "last_active": "2026-05-25",
     "representative_tickers": [
-      "OKLO",
-      "SEDG",
-      "IPWR",
-      "CZAVF",
-      "IMSR"
+      "CEG",
+      "VST",
+      "NEE",
+      "NRG"
     ]
   },
   "ev-automotive-supply-chain": {
@@ -173,13 +170,11 @@
   "energy-oil-gas-cycle": {
     "name": "Oil & Gas Cycle Recovery & Leverage Plays",
     "first_seen": "2026-05-15",
-    "last_active": "2026-05-22",
+    "last_active": "2026-05-25",
     "representative_tickers": [
-      "DVN",
-      "VET",
-      "GLNG",
-      "HFC",
-      "XOM"
+      "USO",
+      "DXY",
+      "XLE"
     ]
   },
   "energy-infrastructure-income": {
@@ -217,13 +212,12 @@
   "big-tech-ai-platforms": {
     "name": "Big Tech AI Platform Divergence",
     "first_seen": "2026-05-18",
-    "last_active": "2026-05-21",
+    "last_active": "2026-05-25",
     "representative_tickers": [
-      "NVDA",
-      "AMD",
-      "AVGO",
-      "TSM",
-      "ASML"
+      "MSFT",
+      "GOOGL",
+      "META",
+      "AMZN"
     ]
   },
   "cybersecurity-resilience": {
@@ -250,13 +244,12 @@
   "consumer-retail-stress": {
     "name": "Consumer & Retail Under Pressure",
     "first_seen": "2026-05-19",
-    "last_active": "2026-05-21",
+    "last_active": "2026-05-25",
     "representative_tickers": [
-      "WMT",
-      "CHWY",
-      "ELF",
-      "TSLA",
-      "VSCO"
+      "MKC",
+      "BJ",
+      "CVCO",
+      "FLO"
     ]
   },
   "fintech-payments-platforms": {
@@ -286,11 +279,21 @@
   "fixed-income-yield-alternatives": {
     "name": "Fixed Income, Yield Alternatives & Retirement Income",
     "first_seen": "2026-05-20",
-    "last_active": "2026-05-21",
+    "last_active": "2026-05-25",
     "representative_tickers": [
-      "TLT",
-      "GUG",
-      "IEF"
+      "XLU",
+      "BND",
+      "MUB"
+    ]
+  },
+  "logistics-freight-spinoffs": {
+    "name": "Logistics & Freight Restructuring Plays",
+    "first_seen": "2026-05-25",
+    "last_active": "2026-05-25",
+    "representative_tickers": [
+      "FDX",
+      "RXO",
+      "GSL"
     ]
   }
 }
