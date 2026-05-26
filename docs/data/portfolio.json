@@ -560,6 +560,17 @@
             "TSM": 404.52
           },
           "floating_return": -0.003894
+        },
+        {
+          "date": "2026-05-26",
+          "prices": {
+            "NVDA": 214.54,
+            "AMD": 490.2135,
+            "QCOM": 254.685,
+            "ASML": 1628.52,
+            "TSM": 412.48
+          },
+          "floating_return": 0.022238
         }
       ]
     },
@@ -582,6 +593,76 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 745.64,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null,
+      "daily_snapshots": [
+        {
+          "date": "2026-05-26",
+          "prices": {
+            "CEG": 307.19,
+            "VST": 165.365,
+            "NEE": 87.935,
+            "NRG": 140.265
+          },
+          "floating_return": 0.028717
+        }
+      ]
+    },
+    {
+      "theme_id": "space-economy-commercial-launch",
+      "theme_name": "Commercial Space Economy & Satellite Communications Momentum",
+      "direction": "Bullish",
+      "entry_date": "2026-05-26",
+      "tickers": [
+        "RKLB",
+        "ASTS",
+        "LUNR",
+        "SPCE",
+        "GNSS"
+      ],
+      "entry_prices": {
+        "RKLB": 144.7295,
+        "ASTS": 126.52,
+        "LUNR": 44.4314,
+        "SPCE": 3.59,
+        "GNSS": 2.02
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 750.8235,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null
+    },
+    {
+      "theme_id": "affordable-housing-homebuilding",
+      "theme_name": "Affordable Housing & Manufactured Homebuilding",
+      "direction": "Bullish",
+      "entry_date": "2026-05-26",
+      "tickers": [
+        "SKY",
+        "HD",
+        "NVR",
+        "PHM",
+        "CVCO"
+      ],
+      "entry_prices": {
+        "SKY": 71.94,
+        "HD": 309.55,
+        "NVR": 6084.9902,
+        "PHM": 116.44,
+        "CVCO": 526.8
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 750.8235,
       "status": "open",
       "exit_date": null,
       "exit_prices": null,
@@ -633,18 +714,24 @@
       "portfolio_return": -0.010327,
       "spy_return": 0.003932,
       "open_count": 2
+    },
+    {
+      "date": "2026-05-26",
+      "portfolio_return": 0.025478,
+      "spy_return": 0.006952,
+      "open_count": 2
     }
   ],
   "summary": {
-    "portfolio_cumulative": -0.023234,
-    "spy_cumulative": 0.009506,
-    "alpha": -0.03274,
-    "open_count": 1,
+    "portfolio_cumulative": 0.001652,
+    "spy_cumulative": 0.016524,
+    "alpha": -0.014872,
+    "open_count": 3,
     "closed_count": 11,
     "win_rate": 0.364,
-    "tracking_days": 7
+    "tracking_days": 8
   },
-  "updated_at": "2026-05-25",
+  "updated_at": "2026-05-26",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -735,6 +822,19 @@
           "NVDA",
           "ASML",
           "AMD"
+        ]
+      },
+      {
+        "date": "2026-05-26",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "CEG",
+          "VST",
+          "NRG",
+          "ETR",
+          "MOD"
         ]
       }
     ],
@@ -1003,6 +1103,19 @@
           "ASTS",
           "LUNR"
         ]
+      },
+      {
+        "date": "2026-05-26",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "RKLB",
+          "ASTS",
+          "LUNR",
+          "SPCE",
+          "GNSS"
+        ]
       }
     ],
     "power-grid-energy-ai-demand": [
@@ -1164,6 +1277,19 @@
           "IONQ",
           "QUBT"
         ]
+      },
+      {
+        "date": "2026-05-26",
+        "conviction": 6,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "IONQ",
+          "RGTI",
+          "QUBT",
+          "ARQQ",
+          "QNTM"
+        ]
       }
     ],
     "regional-banking-rate-environment": [
@@ -1271,6 +1397,19 @@
           "MSTR",
           "HOOD",
           "BITM"
+        ]
+      },
+      {
+        "date": "2026-05-26",
+        "conviction": 5,
+        "direction": "Neutral",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "BTC",
+          "ETH",
+          "SOL",
+          "BNB",
+          "HOOD"
         ]
       }
     ],
@@ -1396,6 +1535,19 @@
           "KARS",
           "LI",
           "XPEV"
+        ]
+      },
+      {
+        "date": "2026-05-26",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "PONY",
+          "TSLA",
+          "LYFT",
+          "ITRN",
+          "MBLY"
         ]
       }
     ],
@@ -1641,6 +1793,19 @@
           "META",
           "AMZN"
         ]
+      },
+      {
+        "date": "2026-05-26",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "GOOGL",
+          "META",
+          "AMZN",
+          "MSFT",
+          "AAPL"
+        ]
       }
     ],
     "cybersecurity-resilience": [
@@ -1721,6 +1886,19 @@
           "QCOM",
           "ARM"
         ]
+      },
+      {
+        "date": "2026-05-26",
+        "conviction": 2,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "MU",
+          "NVDA",
+          "AMD",
+          "AVGO",
+          "TSM"
+        ]
       }
     ],
     "fintech-payments-platforms": [
@@ -1773,6 +1951,19 @@
           "BND",
           "MUB"
         ]
+      },
+      {
+        "date": "2026-05-26",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "O",
+          "WPC",
+          "KO",
+          "NEE",
+          "GIS"
+        ]
       }
     ],
     "space-quantum-defense-tech": [
@@ -1813,6 +2004,36 @@
           "FDX",
           "RXO",
           "GSL"
+        ]
+      }
+    ],
+    "affordable-housing-homebuilding": [
+      {
+        "date": "2026-05-26",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "SKY",
+          "HD",
+          "NVR",
+          "PHM",
+          "CVCO"
+        ]
+      }
+    ],
+    "geopolitical-risk-commodity-repricing": [
+      {
+        "date": "2026-05-26",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Acceleration",
+        "tickers": [
+          "FCX",
+          "CLF",
+          "PBF",
+          "XOM",
+          "BP"
         ]
       }
     ]

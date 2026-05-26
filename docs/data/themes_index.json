@@ -2,13 +2,13 @@
   "ai-infrastructure-datacenter-boom": {
     "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-25",
+    "last_active": "2026-05-26",
     "representative_tickers": [
-      "ARM",
-      "QCOM",
-      "NVDA",
-      "ASML",
-      "AMD"
+      "CEG",
+      "VST",
+      "NRG",
+      "ETR",
+      "MOD"
     ]
   },
   "semiconductor-geopolitics-china-trade": {
@@ -62,11 +62,13 @@
   "space-economy-commercial-launch": {
     "name": "Commercial Space Economy & Satellite Communications Momentum",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-25",
+    "last_active": "2026-05-26",
     "representative_tickers": [
       "RKLB",
       "ASTS",
-      "LUNR"
+      "LUNR",
+      "SPCE",
+      "GNSS"
     ]
   },
   "precious-metals-mining-dividends": {
@@ -84,21 +86,25 @@
   "crypto-digital-assets-geopolitical-watch": {
     "name": "Crypto & Digital Assets Holding Steady Amid US-China Summit",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-25",
+    "last_active": "2026-05-26",
     "representative_tickers": [
-      "MSTR",
-      "HOOD",
-      "BITM"
+      "BTC",
+      "ETH",
+      "SOL",
+      "BNB",
+      "HOOD"
     ]
   },
   "quantum-computing-speculative-selloff": {
     "name": "Quantum Computing Speculative Pullback",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-25",
+    "last_active": "2026-05-26",
     "representative_tickers": [
-      "RGTI",
       "IONQ",
-      "QUBT"
+      "RGTI",
+      "QUBT",
+      "ARQQ",
+      "QNTM"
     ]
   },
   "regional-banking-rate-environment": {
@@ -127,13 +133,13 @@
   "ev-automotive-supply-chain": {
     "name": "EV & Automotive Supply Chain Recovery",
     "first_seen": "2026-05-14",
-    "last_active": "2026-05-22",
+    "last_active": "2026-05-26",
     "representative_tickers": [
+      "PONY",
       "TSLA",
-      "NIO",
-      "KARS",
-      "LI",
-      "XPEV"
+      "LYFT",
+      "ITRN",
+      "MBLY"
     ]
   },
   "financial-services-capital-markets": {
@@ -212,12 +218,13 @@
   "big-tech-ai-platforms": {
     "name": "Big Tech AI Platform Divergence",
     "first_seen": "2026-05-18",
-    "last_active": "2026-05-25",
+    "last_active": "2026-05-26",
     "representative_tickers": [
-      "MSFT",
       "GOOGL",
       "META",
-      "AMZN"
+      "AMZN",
+      "MSFT",
+      "AAPL"
     ]
   },
   "cybersecurity-resilience": {
@@ -232,13 +239,13 @@
   "semiconductor-broad-selloff": {
     "name": "Semiconductor Sector Correction",
     "first_seen": "2026-05-19",
-    "last_active": "2026-05-19",
+    "last_active": "2026-05-26",
     "representative_tickers": [
-      "TSM",
-      "ASML",
-      "INTC",
-      "QCOM",
-      "ARM"
+      "MU",
+      "NVDA",
+      "AMD",
+      "AVGO",
+      "TSM"
     ]
   },
   "consumer-retail-stress": {
@@ -279,11 +286,13 @@
   "fixed-income-yield-alternatives": {
     "name": "Fixed Income, Yield Alternatives & Retirement Income",
     "first_seen": "2026-05-20",
-    "last_active": "2026-05-25",
+    "last_active": "2026-05-26",
     "representative_tickers": [
-      "XLU",
-      "BND",
-      "MUB"
+      "O",
+      "WPC",
+      "KO",
+      "NEE",
+      "GIS"
     ]
   },
   "logistics-freight-spinoffs": {
@@ -294,6 +303,30 @@
       "FDX",
       "RXO",
       "GSL"
+    ]
+  },
+  "geopolitical-risk-commodity-repricing": {
+    "name": "Iran Peace Talks & Commodity/Equity Repricing",
+    "first_seen": "2026-05-26",
+    "last_active": "2026-05-26",
+    "representative_tickers": [
+      "FCX",
+      "CLF",
+      "PBF",
+      "XOM",
+      "BP"
+    ]
+  },
+  "affordable-housing-homebuilding": {
+    "name": "Affordable Housing & Manufactured Homebuilding",
+    "first_seen": "2026-05-26",
+    "last_active": "2026-05-26",
+    "representative_tickers": [
+      "SKY",
+      "HD",
+      "NVR",
+      "PHM",
+      "CVCO"
     ]
   }
 }
