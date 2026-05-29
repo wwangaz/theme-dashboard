@@ -2,13 +2,13 @@
   "ai-infrastructure-datacenter-boom": {
     "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-28",
+    "last_active": "2026-05-29",
     "representative_tickers": [
-      "AMD",
-      "ARM",
       "NVDA",
-      "ASML",
-      "AVGO"
+      "AVGO",
+      "AMD",
+      "MSFT",
+      "TSM"
     ]
   },
   "semiconductor-geopolitics-china-trade": {
@@ -50,13 +50,13 @@
   "power-grid-energy-ai-demand": {
     "name": "Power Grid Stress & Energy Stocks Under AI Demand Pressure",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-28",
+    "last_active": "2026-05-29",
     "representative_tickers": [
+      "FSLR",
       "NEE",
       "CEG",
       "VST",
-      "NRG",
-      "ETR"
+      "NRG"
     ]
   },
   "space-economy-commercial-launch": {
@@ -98,13 +98,11 @@
   "quantum-computing-speculative-selloff": {
     "name": "Quantum Computing Speculative Pullback",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-26",
+    "last_active": "2026-05-29",
     "representative_tickers": [
       "IONQ",
       "RGTI",
-      "QUBT",
-      "ARQQ",
-      "QNTM"
+      "QUBT"
     ]
   },
   "regional-banking-rate-environment": {
@@ -166,23 +164,21 @@
   "healthcare-biotech-mixed": {
     "name": "Healthcare & Biotech Divergence",
     "first_seen": "2026-05-14",
-    "last_active": "2026-05-27",
+    "last_active": "2026-05-29",
     "representative_tickers": [
-      "ISRG",
-      "EW",
-      "SYK",
-      "DXCM",
-      "DTIL"
+      "RPID",
+      "MBRX",
+      "APTO"
     ]
   },
   "energy-oil-gas-cycle": {
     "name": "Oil & Gas Cycle Recovery & Leverage Plays",
     "first_seen": "2026-05-15",
-    "last_active": "2026-05-25",
+    "last_active": "2026-05-29",
     "representative_tickers": [
-      "USO",
-      "DXY",
-      "XLE"
+      "CVE",
+      "WMB",
+      "CVX"
     ]
   },
   "energy-infrastructure-income": {
@@ -232,8 +228,9 @@
   "cybersecurity-resilience": {
     "name": "Cybersecurity Platform Consolidation & Recovery",
     "first_seen": "2026-05-18",
-    "last_active": "2026-05-18",
+    "last_active": "2026-05-29",
     "representative_tickers": [
+      "S",
       "PANW",
       "CRWD"
     ]
@@ -253,13 +250,13 @@
   "consumer-retail-stress": {
     "name": "Consumer & Retail Under Pressure",
     "first_seen": "2026-05-19",
-    "last_active": "2026-05-28",
+    "last_active": "2026-05-29",
     "representative_tickers": [
-      "DLTR",
-      "KSS",
-      "LOW",
-      "ULTA",
-      "NFLX"
+      "GPS",
+      "AEO",
+      "WSM",
+      "BKE",
+      "CCL"
     ]
   },
   "fintech-payments-platforms": {
@@ -277,13 +274,11 @@
   "space-quantum-defense-tech": {
     "name": "Space, Quantum Computing & Defense Tech",
     "first_seen": "2026-05-20",
-    "last_active": "2026-05-28",
+    "last_active": "2026-05-29",
     "representative_tickers": [
-      "IONQ",
-      "RGTI",
-      "QUBT",
-      "LUNR",
-      "RKLB"
+      "HII",
+      "SAIC",
+      "TTEK"
     ]
   },
   "fixed-income-yield-alternatives": {
@@ -354,6 +349,27 @@
       "DHI",
       "LEN",
       "MBRG"
+    ]
+  },
+  "space-economy-correction": {
+    "name": "Space Economy Selloff & Valuation Reset",
+    "first_seen": "2026-05-29",
+    "last_active": "2026-05-29",
+    "representative_tickers": [
+      "RKLB",
+      "LUNR",
+      "ASTS",
+      "IONQ",
+      "QUBT"
+    ]
+  },
+  "real-estate-alternative-assets": {
+    "name": "Private Real Estate & Alternative Asset Deployment",
+    "first_seen": "2026-05-29",
+    "last_active": "2026-05-29",
+    "representative_tickers": [
+      "BX",
+      "STWD"
     ]
   }
 }

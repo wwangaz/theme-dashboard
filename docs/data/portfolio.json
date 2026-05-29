@@ -593,6 +593,17 @@
             "TSM": 425.75
           },
           "floating_return": 0.029432
+        },
+        {
+          "date": "2026-05-29",
+          "prices": {
+            "NVDA": 215.3099,
+            "AMD": 513.8899,
+            "QCOM": 250.8875,
+            "ASML": 1617.8101,
+            "TSM": 420.59
+          },
+          "floating_return": 0.032546
         }
       ]
     },
@@ -652,6 +663,16 @@
             "NRG": 138.6
           },
           "floating_return": 0.007266
+        },
+        {
+          "date": "2026-05-29",
+          "prices": {
+            "CEG": 286.775,
+            "VST": 158.22,
+            "NEE": 86.46,
+            "NRG": 135.01
+          },
+          "floating_return": -0.013778
         }
       ]
     },
@@ -705,6 +726,17 @@
             "GNSS": 2.16
           },
           "floating_return": 0.017711
+        },
+        {
+          "date": "2026-05-29",
+          "prices": {
+            "RKLB": 139.25,
+            "ASTS": 109.89,
+            "LUNR": 40.59,
+            "SPCE": 4.8601,
+            "GNSS": 2.1242
+          },
+          "floating_return": 0.029923
         }
       ]
     },
@@ -758,6 +790,17 @@
             "CVCO": 538.085
           },
           "floating_return": 0.017479
+        },
+        {
+          "date": "2026-05-29",
+          "prices": {
+            "SKY": 74.8,
+            "HD": 320.88,
+            "NVR": 6156.8999,
+            "PHM": 119.165,
+            "CVCO": 544.22
+          },
+          "floating_return": 0.028929
         }
       ]
     },
@@ -800,6 +843,17 @@
             "MUB": 106.965
           },
           "floating_return": 0.000982
+        },
+        {
+          "date": "2026-05-29",
+          "prices": {
+            "TLT": 85.7801,
+            "AGG": 99.115,
+            "HYG": 80.3199,
+            "SHY": 82.31,
+            "MUB": 107.1972
+          },
+          "floating_return": 0.002641
         }
       ]
     },
@@ -828,7 +882,19 @@
       "exit_reason": null,
       "realized_return": null,
       "spy_return_during_holding": null,
-      "excess_return": null
+      "excess_return": null,
+      "daily_snapshots": [
+        {
+          "date": "2026-05-29",
+          "prices": {
+            "TIP": 111.2101,
+            "GOVT": 22.78,
+            "SHY": 82.31,
+            "BND": 73.495
+          },
+          "floating_return": 0.001201
+        }
+      ]
     }
   ],
   "daily_returns": [
@@ -891,18 +957,24 @@
       "portfolio_return": 0.014574,
       "spy_return": 0.004997,
       "open_count": 5
+    },
+    {
+      "date": "2026-05-29",
+      "portfolio_return": 0.013577,
+      "spy_return": 0.0022,
+      "open_count": 6
     }
   ],
   "summary": {
-    "portfolio_cumulative": 0.015793,
-    "spy_cumulative": 0.019943,
-    "alpha": -0.00415,
-    "open_count": 5,
+    "portfolio_cumulative": 0.029585,
+    "spy_cumulative": 0.022187,
+    "alpha": 0.007398,
+    "open_count": 6,
     "closed_count": 11,
     "win_rate": 0.364,
-    "tracking_days": 10
+    "tracking_days": 11
   },
-  "updated_at": "2026-05-28",
+  "updated_at": "2026-05-29",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -1032,6 +1104,19 @@
           "NVDA",
           "ASML",
           "AVGO"
+        ]
+      },
+      {
+        "date": "2026-05-29",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "NVDA",
+          "AVGO",
+          "AMD",
+          "MSFT",
+          "TSM"
         ]
       }
     ],
@@ -1458,6 +1543,19 @@
           "NRG",
           "ETR"
         ]
+      },
+      {
+        "date": "2026-05-29",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "FSLR",
+          "NEE",
+          "CEG",
+          "VST",
+          "NRG"
+        ]
       }
     ],
     "quantum-computing-speculative-selloff": [
@@ -1538,6 +1636,17 @@
           "QUBT",
           "ARQQ",
           "QNTM"
+        ]
+      },
+      {
+        "date": "2026-05-29",
+        "conviction": 5,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "IONQ",
+          "RGTI",
+          "QUBT"
         ]
       }
     ],
@@ -1928,6 +2037,17 @@
           "DXCM",
           "DTIL"
         ]
+      },
+      {
+        "date": "2026-05-29",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "RPID",
+          "MBRX",
+          "APTO"
+        ]
       }
     ],
     "energy-oil-gas-cycle": [
@@ -1976,6 +2096,17 @@
           "USO",
           "DXY",
           "XLE"
+        ]
+      },
+      {
+        "date": "2026-05-29",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "CVE",
+          "WMB",
+          "CVX"
         ]
       }
     ],
@@ -2145,6 +2276,17 @@
           "PANW",
           "CRWD"
         ]
+      },
+      {
+        "date": "2026-05-29",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "S",
+          "PANW",
+          "CRWD"
+        ]
       }
     ],
     "consumer-retail-stress": [
@@ -2210,6 +2352,19 @@
           "LOW",
           "ULTA",
           "NFLX"
+        ]
+      },
+      {
+        "date": "2026-05-29",
+        "conviction": 6,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "GPS",
+          "AEO",
+          "WSM",
+          "BKE",
+          "CCL"
         ]
       }
     ],
@@ -2371,6 +2526,17 @@
           "LUNR",
           "RKLB"
         ]
+      },
+      {
+        "date": "2026-05-29",
+        "conviction": 4,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "HII",
+          "SAIC",
+          "TTEK"
+        ]
       }
     ],
     "logistics-freight-spinoffs": [
@@ -2469,6 +2635,33 @@
           "DHI",
           "LEN",
           "MBRG"
+        ]
+      }
+    ],
+    "space-economy-correction": [
+      {
+        "date": "2026-05-29",
+        "conviction": 7,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "RKLB",
+          "LUNR",
+          "ASTS",
+          "IONQ",
+          "QUBT"
+        ]
+      }
+    ],
+    "real-estate-alternative-assets": [
+      {
+        "date": "2026-05-29",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "BX",
+          "STWD"
         ]
       }
     ]
