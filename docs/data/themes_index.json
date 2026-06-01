@@ -2,13 +2,13 @@
   "ai-infrastructure-datacenter-boom": {
     "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-29",
+    "last_active": "2026-06-01",
     "representative_tickers": [
       "NVDA",
+      "TSM",
       "AVGO",
-      "AMD",
-      "MSFT",
-      "TSM"
+      "ARM",
+      "INTC"
     ]
   },
   "semiconductor-geopolitics-china-trade": {
@@ -62,13 +62,13 @@
   "space-economy-commercial-launch": {
     "name": "Commercial Space Economy & Satellite Communications Momentum",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-26",
+    "last_active": "2026-06-01",
     "representative_tickers": [
       "RKLB",
-      "ASTS",
       "LUNR",
+      "ASTS",
       "SPCE",
-      "GNSS"
+      "IONQ"
     ]
   },
   "precious-metals-mining-dividends": {
@@ -86,23 +86,25 @@
   "crypto-digital-assets-geopolitical-watch": {
     "name": "Crypto & Digital Assets Holding Steady Amid US-China Summit",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-28",
+    "last_active": "2026-06-01",
     "representative_tickers": [
-      "GBTC",
-      "IBIT",
-      "DMGI",
-      "COIN",
-      "EXOD"
+      "MSTR",
+      "CLSK",
+      "WULF",
+      "BTCS",
+      "MARA"
     ]
   },
   "quantum-computing-speculative-selloff": {
     "name": "Quantum Computing Speculative Pullback",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-29",
+    "last_active": "2026-06-01",
     "representative_tickers": [
       "IONQ",
       "RGTI",
-      "QUBT"
+      "QUBT",
+      "DWAV",
+      "IBM"
     ]
   },
   "regional-banking-rate-environment": {
@@ -164,11 +166,13 @@
   "healthcare-biotech-mixed": {
     "name": "Healthcare & Biotech Divergence",
     "first_seen": "2026-05-14",
-    "last_active": "2026-05-29",
+    "last_active": "2026-06-01",
     "representative_tickers": [
-      "RPID",
-      "MBRX",
-      "APTO"
+      "ISRG",
+      "DXCM",
+      "ALGN",
+      "TMCI",
+      "QDEL"
     ]
   },
   "energy-oil-gas-cycle": {
@@ -216,13 +220,13 @@
   "big-tech-ai-platforms": {
     "name": "Big Tech AI Platform Divergence",
     "first_seen": "2026-05-18",
-    "last_active": "2026-05-28",
+    "last_active": "2026-06-01",
     "representative_tickers": [
-      "AMZN",
-      "AAPL",
-      "TSLA",
-      "ISRG",
-      "DXCM"
+      "MSFT",
+      "PLTR",
+      "CRM",
+      "OKTA",
+      "WDAY"
     ]
   },
   "cybersecurity-resilience": {
@@ -284,12 +288,12 @@
   "fixed-income-yield-alternatives": {
     "name": "Fixed Income, Yield Alternatives & Retirement Income",
     "first_seen": "2026-05-20",
-    "last_active": "2026-05-27",
+    "last_active": "2026-06-01",
     "representative_tickers": [
+      "AGO",
+      "BOND",
+      "CGBL",
       "TLT",
-      "AGG",
-      "HYG",
-      "SHY",
       "MUB"
     ]
   },
@@ -306,13 +310,13 @@
   "geopolitical-risk-commodity-repricing": {
     "name": "Iran Peace Talks & Commodity/Equity Repricing",
     "first_seen": "2026-05-26",
-    "last_active": "2026-05-28",
+    "last_active": "2026-06-01",
     "representative_tickers": [
-      "USO",
-      "GLD",
-      "SLV",
-      "CQP",
-      "LNG"
+      "CEG",
+      "VST",
+      "NRG",
+      "NEE",
+      "ETR"
     ]
   },
   "affordable-housing-homebuilding": {
@@ -370,6 +374,30 @@
     "representative_tickers": [
       "BX",
       "STWD"
+    ]
+  },
+  "ai-ipo-pipeline": {
+    "name": "AI Startup IPO Wave — Anthropic Leads the Charge",
+    "first_seen": "2026-06-01",
+    "last_active": "2026-06-01",
+    "representative_tickers": [
+      "MSFT",
+      "GOOGL",
+      "META",
+      "AMZN",
+      "NVDA"
+    ]
+  },
+  "bezos-portfolio-consumer-platforms": {
+    "name": "Jeff Bezos Portfolio Picks — Consumer & Platform Plays",
+    "first_seen": "2026-06-01",
+    "last_active": "2026-06-01",
+    "representative_tickers": [
+      "RIVN",
+      "UBER",
+      "ABNB",
+      "WDAY",
+      "AMZN"
     ]
   }
 }

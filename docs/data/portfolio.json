@@ -604,6 +604,17 @@
             "TSM": 420.59
           },
           "floating_return": 0.032546
+        },
+        {
+          "date": "2026-06-01",
+          "prices": {
+            "NVDA": 222.77,
+            "AMD": 511.66,
+            "QCOM": 233.17,
+            "ASML": 1640.91,
+            "TSM": 445.43
+          },
+          "floating_return": 0.038719
         }
       ]
     },
@@ -626,13 +637,18 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 745.64,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null,
+      "status": "closed",
+      "exit_date": "2026-06-01",
+      "exit_prices": {
+        "CEG": 269.68,
+        "VST": 156.0,
+        "NEE": 84.31,
+        "NRG": 131.085
+      },
+      "exit_reason": "theme_gone",
+      "realized_return": -0.045061,
+      "spy_return_during_holding": 0.017663,
+      "excess_return": -0.062724,
       "daily_snapshots": [
         {
           "date": "2026-05-26",
@@ -673,6 +689,16 @@
             "NRG": 135.01
           },
           "floating_return": -0.013778
+        },
+        {
+          "date": "2026-06-01",
+          "prices": {
+            "CEG": 269.68,
+            "VST": 156.0,
+            "NEE": 84.31,
+            "NRG": 131.085
+          },
+          "floating_return": -0.045061
         }
       ]
     },
@@ -697,13 +723,19 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 750.8235,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null,
+      "status": "closed",
+      "exit_date": "2026-06-01",
+      "exit_prices": {
+        "RKLB": 125.61,
+        "ASTS": 106.41,
+        "LUNR": 38.77,
+        "SPCE": 7.59,
+        "GNSS": 2.145
+      },
+      "exit_reason": "conviction_drop",
+      "realized_return": 0.151523,
+      "spy_return_during_holding": 0.010637,
+      "excess_return": 0.140886,
       "daily_snapshots": [
         {
           "date": "2026-05-27",
@@ -737,6 +769,17 @@
             "GNSS": 2.1242
           },
           "floating_return": 0.029923
+        },
+        {
+          "date": "2026-06-01",
+          "prices": {
+            "RKLB": 125.61,
+            "ASTS": 106.41,
+            "LUNR": 38.77,
+            "SPCE": 7.59,
+            "GNSS": 2.145
+          },
+          "floating_return": 0.151523
         }
       ]
     },
@@ -761,13 +804,19 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 750.8235,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null,
+      "status": "closed",
+      "exit_date": "2026-06-01",
+      "exit_prices": {
+        "SKY": 71.29,
+        "HD": 308.615,
+        "NVR": 6145.1401,
+        "PHM": 117.97,
+        "CVCO": 531.37
+      },
+      "exit_reason": "theme_gone",
+      "realized_return": 0.003929,
+      "spy_return_during_holding": 0.010637,
+      "excess_return": -0.006708,
       "daily_snapshots": [
         {
           "date": "2026-05-27",
@@ -801,6 +850,17 @@
             "CVCO": 544.22
           },
           "floating_return": 0.028929
+        },
+        {
+          "date": "2026-06-01",
+          "prices": {
+            "SKY": 71.29,
+            "HD": 308.615,
+            "NVR": 6145.1401,
+            "PHM": 117.97,
+            "CVCO": 531.37
+          },
+          "floating_return": 0.003929
         }
       ]
     },
@@ -854,6 +914,17 @@
             "MUB": 107.1972
           },
           "floating_return": 0.002641
+        },
+        {
+          "date": "2026-06-01",
+          "prices": {
+            "TLT": 85.405,
+            "AGG": 98.62,
+            "HYG": 79.83,
+            "SHY": 81.995,
+            "MUB": 106.945
+          },
+          "floating_return": -0.001699
         }
       ]
     },
@@ -893,6 +964,16 @@
             "BND": 73.495
           },
           "floating_return": 0.001201
+        },
+        {
+          "date": "2026-06-01",
+          "prices": {
+            "TIP": 109.945,
+            "GOVT": 22.6775,
+            "SHY": 81.995,
+            "BND": 73.125
+          },
+          "floating_return": -0.004991
         }
       ]
     }
@@ -963,18 +1044,24 @@
       "portfolio_return": 0.013577,
       "spy_return": 0.0022,
       "open_count": 6
+    },
+    {
+      "date": "2026-06-01",
+      "portfolio_return": 0.023737,
+      "spy_return": 0.002941,
+      "open_count": 6
     }
   ],
   "summary": {
-    "portfolio_cumulative": 0.029585,
-    "spy_cumulative": 0.022187,
-    "alpha": 0.007398,
-    "open_count": 6,
-    "closed_count": 11,
-    "win_rate": 0.364,
-    "tracking_days": 11
+    "portfolio_cumulative": 0.054024,
+    "spy_cumulative": 0.025193,
+    "alpha": 0.028831,
+    "open_count": 3,
+    "closed_count": 14,
+    "win_rate": 0.357,
+    "tracking_days": 12
   },
-  "updated_at": "2026-05-29",
+  "updated_at": "2026-06-01",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -1117,6 +1204,19 @@
           "AMD",
           "MSFT",
           "TSM"
+        ]
+      },
+      {
+        "date": "2026-06-01",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "NVDA",
+          "TSM",
+          "AVGO",
+          "ARM",
+          "INTC"
         ]
       }
     ],
@@ -1424,6 +1524,19 @@
           "SPCE",
           "GNSS"
         ]
+      },
+      {
+        "date": "2026-06-01",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "RKLB",
+          "LUNR",
+          "ASTS",
+          "SPCE",
+          "IONQ"
+        ]
       }
     ],
     "power-grid-energy-ai-demand": [
@@ -1648,6 +1761,19 @@
           "RGTI",
           "QUBT"
         ]
+      },
+      {
+        "date": "2026-06-01",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "IONQ",
+          "RGTI",
+          "QUBT",
+          "DWAV",
+          "IBM"
+        ]
       }
     ],
     "regional-banking-rate-environment": [
@@ -1794,6 +1920,19 @@
           "DMGI",
           "COIN",
           "EXOD"
+        ]
+      },
+      {
+        "date": "2026-06-01",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "MSTR",
+          "CLSK",
+          "WULF",
+          "BTCS",
+          "MARA"
         ]
       }
     ],
@@ -2048,6 +2187,19 @@
           "MBRX",
           "APTO"
         ]
+      },
+      {
+        "date": "2026-06-01",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "ISRG",
+          "DXCM",
+          "ALGN",
+          "TMCI",
+          "QDEL"
+        ]
       }
     ],
     "energy-oil-gas-cycle": [
@@ -2264,6 +2416,19 @@
           "ISRG",
           "DXCM"
         ]
+      },
+      {
+        "date": "2026-06-01",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Acceleration",
+        "tickers": [
+          "MSFT",
+          "PLTR",
+          "CRM",
+          "OKTA",
+          "WDAY"
+        ]
       }
     ],
     "cybersecurity-resilience": [
@@ -2472,6 +2637,19 @@
           "SHY",
           "MUB"
         ]
+      },
+      {
+        "date": "2026-06-01",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "AGO",
+          "BOND",
+          "CGBL",
+          "TLT",
+          "MUB"
+        ]
       }
     ],
     "space-quantum-defense-tech": [
@@ -2606,6 +2784,19 @@
           "CQP",
           "LNG"
         ]
+      },
+      {
+        "date": "2026-06-01",
+        "conviction": 8,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "CEG",
+          "VST",
+          "NRG",
+          "NEE",
+          "ETR"
+        ]
       }
     ],
     "china-tech-consumer": [
@@ -2662,6 +2853,36 @@
         "tickers": [
           "BX",
           "STWD"
+        ]
+      }
+    ],
+    "ai-ipo-pipeline": [
+      {
+        "date": "2026-06-01",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Acceleration",
+        "tickers": [
+          "MSFT",
+          "GOOGL",
+          "META",
+          "AMZN",
+          "NVDA"
+        ]
+      }
+    ],
+    "bezos-portfolio-consumer-platforms": [
+      {
+        "date": "2026-06-01",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "RIVN",
+          "UBER",
+          "ABNB",
+          "WDAY",
+          "AMZN"
         ]
       }
     ]
