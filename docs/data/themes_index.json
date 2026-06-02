@@ -2,13 +2,13 @@
   "ai-infrastructure-datacenter-boom": {
     "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-01",
+    "last_active": "2026-06-02",
     "representative_tickers": [
       "NVDA",
-      "TSM",
+      "MRVL",
       "AVGO",
       "ARM",
-      "INTC"
+      "TSM"
     ]
   },
   "semiconductor-geopolitics-china-trade": {
@@ -38,25 +38,25 @@
   "ai-enterprise-software-automation": {
     "name": "Enterprise AI Adoption & Workflow Automation",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-28",
+    "last_active": "2026-06-02",
     "representative_tickers": [
+      "SNOW",
       "MSFT",
       "GOOGL",
-      "META",
-      "AMZN",
-      "SNOW"
+      "INTU",
+      "META"
     ]
   },
   "power-grid-energy-ai-demand": {
     "name": "Power Grid Stress & Energy Stocks Under AI Demand Pressure",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-29",
+    "last_active": "2026-06-02",
     "representative_tickers": [
-      "FSLR",
-      "NEE",
       "CEG",
       "VST",
-      "NRG"
+      "NRG",
+      "NEE",
+      "ETR"
     ]
   },
   "space-economy-commercial-launch": {
@@ -86,13 +86,13 @@
   "crypto-digital-assets-geopolitical-watch": {
     "name": "Crypto & Digital Assets Holding Steady Amid US-China Summit",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-01",
+    "last_active": "2026-06-02",
     "representative_tickers": [
+      "ETH",
+      "BTC",
+      "COIN",
       "MSTR",
-      "CLSK",
-      "WULF",
-      "BTCS",
-      "MARA"
+      "HIVE"
     ]
   },
   "quantum-computing-speculative-selloff": {
@@ -166,13 +166,13 @@
   "healthcare-biotech-mixed": {
     "name": "Healthcare & Biotech Divergence",
     "first_seen": "2026-05-14",
-    "last_active": "2026-06-01",
+    "last_active": "2026-06-02",
     "representative_tickers": [
-      "ISRG",
-      "DXCM",
-      "ALGN",
-      "TMCI",
-      "QDEL"
+      "ABBV",
+      "BMY",
+      "CCCC",
+      "TVTX",
+      "ABVX"
     ]
   },
   "energy-oil-gas-cycle": {
@@ -266,23 +266,25 @@
   "fintech-payments-platforms": {
     "name": "Fintech, Payments & Alternative Finance",
     "first_seen": "2026-05-19",
-    "last_active": "2026-05-19",
+    "last_active": "2026-06-02",
     "representative_tickers": [
-      "PYPL",
-      "HOOD",
-      "CME",
-      "UPST",
-      "XP"
+      "MQ",
+      "WISE",
+      "BLND",
+      "GRAB",
+      "TRU"
     ]
   },
   "space-quantum-defense-tech": {
     "name": "Space, Quantum Computing & Defense Tech",
     "first_seen": "2026-05-20",
-    "last_active": "2026-05-29",
+    "last_active": "2026-06-02",
     "representative_tickers": [
-      "HII",
-      "SAIC",
-      "TTEK"
+      "IONQ",
+      "RKLB",
+      "ASTS",
+      "LUNR",
+      "RGTI"
     ]
   },
   "fixed-income-yield-alternatives": {
@@ -398,6 +400,42 @@
       "ABNB",
       "WDAY",
       "AMZN"
+    ]
+  },
+  "macro-rates-dollar-geopolitics": {
+    "name": "Fed Policy, Dollar Weakness & Geopolitical Risk Premium",
+    "first_seen": "2026-06-02",
+    "last_active": "2026-06-02",
+    "representative_tickers": [
+      "GLD",
+      "USO",
+      "UUP",
+      "FXE",
+      "TLT"
+    ]
+  },
+  "consumer-retail-turnaround": {
+    "name": "Consumer Retail Turnarounds & Activist Plays",
+    "first_seen": "2026-06-02",
+    "last_active": "2026-06-02",
+    "representative_tickers": [
+      "VSCO",
+      "ETSY",
+      "WMT",
+      "DG",
+      "MELI"
+    ]
+  },
+  "travel-leisure-recovery": {
+    "name": "Travel, Leisure & Airlines Recovery",
+    "first_seen": "2026-06-02",
+    "last_active": "2026-06-02",
+    "representative_tickers": [
+      "DAL",
+      "TNL",
+      "UAL",
+      "MAR",
+      "HLT"
     ]
   }
 }

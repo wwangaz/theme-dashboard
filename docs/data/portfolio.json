@@ -615,6 +615,17 @@
             "TSM": 445.43
           },
           "floating_return": 0.038719
+        },
+        {
+          "date": "2026-06-02",
+          "prices": {
+            "NVDA": 224.54,
+            "AMD": 513.835,
+            "QCOM": 242.025,
+            "ASML": 1691.2111,
+            "TSM": 445.2972
+          },
+          "floating_return": 0.054781
         }
       ]
     },
@@ -885,13 +896,19 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 749.37,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null,
+      "status": "closed",
+      "exit_date": "2026-06-02",
+      "exit_prices": {
+        "TLT": 85.615,
+        "AGG": 98.705,
+        "HYG": 79.8297,
+        "SHY": 82.02,
+        "MUB": 107.1
+      },
+      "exit_reason": "theme_gone",
+      "realized_return": -0.000685,
+      "spy_return_during_holding": 0.013585,
+      "excess_return": -0.01427,
       "daily_snapshots": [
         {
           "date": "2026-05-28",
@@ -925,6 +942,17 @@
             "MUB": 106.945
           },
           "floating_return": -0.001699
+        },
+        {
+          "date": "2026-06-02",
+          "prices": {
+            "TLT": 85.615,
+            "AGG": 98.705,
+            "HYG": 79.8297,
+            "SHY": 82.02,
+            "MUB": 107.1
+          },
+          "floating_return": -0.000685
         }
       ]
     },
@@ -947,13 +975,18 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 754.19,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null,
+      "status": "closed",
+      "exit_date": "2026-06-02",
+      "exit_prices": {
+        "TIP": 110.005,
+        "GOVT": 22.695,
+        "SHY": 82.02,
+        "BND": 73.1914
+      },
+      "exit_reason": "theme_gone",
+      "realized_return": -0.004361,
+      "spy_return_during_holding": 0.007107,
+      "excess_return": -0.011468,
       "daily_snapshots": [
         {
           "date": "2026-05-29",
@@ -974,6 +1007,16 @@
             "BND": 73.125
           },
           "floating_return": -0.004991
+        },
+        {
+          "date": "2026-06-02",
+          "prices": {
+            "TIP": 110.005,
+            "GOVT": 22.695,
+            "SHY": 82.02,
+            "BND": 73.1914
+          },
+          "floating_return": -0.004361
         }
       ]
     }
@@ -1050,18 +1093,24 @@
       "portfolio_return": 0.023737,
       "spy_return": 0.002941,
       "open_count": 6
+    },
+    {
+      "date": "2026-06-02",
+      "portfolio_return": 0.016578,
+      "spy_return": 0.001351,
+      "open_count": 3
     }
   ],
   "summary": {
-    "portfolio_cumulative": 0.054024,
-    "spy_cumulative": 0.025193,
-    "alpha": 0.028831,
-    "open_count": 3,
-    "closed_count": 14,
-    "win_rate": 0.357,
-    "tracking_days": 12
+    "portfolio_cumulative": 0.071498,
+    "spy_cumulative": 0.026579,
+    "alpha": 0.044919,
+    "open_count": 1,
+    "closed_count": 16,
+    "win_rate": 0.312,
+    "tracking_days": 13
   },
-  "updated_at": "2026-06-01",
+  "updated_at": "2026-06-02",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -1217,6 +1266,19 @@
           "AVGO",
           "ARM",
           "INTC"
+        ]
+      },
+      {
+        "date": "2026-06-02",
+        "conviction": 8,
+        "direction": "Bullish",
+        "stage": "Crowded Euphoria",
+        "tickers": [
+          "NVDA",
+          "MRVL",
+          "AVGO",
+          "ARM",
+          "TSM"
         ]
       }
     ],
@@ -1427,6 +1489,19 @@
           "META",
           "AMZN",
           "SNOW"
+        ]
+      },
+      {
+        "date": "2026-06-02",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "SNOW",
+          "MSFT",
+          "GOOGL",
+          "INTU",
+          "META"
         ]
       }
     ],
@@ -1668,6 +1743,19 @@
           "CEG",
           "VST",
           "NRG"
+        ]
+      },
+      {
+        "date": "2026-06-02",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Acceleration",
+        "tickers": [
+          "CEG",
+          "VST",
+          "NRG",
+          "NEE",
+          "ETR"
         ]
       }
     ],
@@ -1934,6 +2022,19 @@
           "BTCS",
           "MARA"
         ]
+      },
+      {
+        "date": "2026-06-02",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "ETH",
+          "BTC",
+          "COIN",
+          "MSTR",
+          "HIVE"
+        ]
       }
     ],
     "nuclear-clean-energy": [
@@ -2199,6 +2300,19 @@
           "ALGN",
           "TMCI",
           "QDEL"
+        ]
+      },
+      {
+        "date": "2026-06-02",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "ABBV",
+          "BMY",
+          "CCCC",
+          "TVTX",
+          "ABVX"
         ]
       }
     ],
@@ -2574,6 +2688,19 @@
           "UPST",
           "XP"
         ]
+      },
+      {
+        "date": "2026-06-02",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "MQ",
+          "WISE",
+          "BLND",
+          "GRAB",
+          "TRU"
+        ]
       }
     ],
     "fixed-income-yield-alternatives": [
@@ -2714,6 +2841,19 @@
           "HII",
           "SAIC",
           "TTEK"
+        ]
+      },
+      {
+        "date": "2026-06-02",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "IONQ",
+          "RKLB",
+          "ASTS",
+          "LUNR",
+          "RGTI"
         ]
       }
     ],
@@ -2883,6 +3023,51 @@
           "ABNB",
           "WDAY",
           "AMZN"
+        ]
+      }
+    ],
+    "macro-rates-dollar-geopolitics": [
+      {
+        "date": "2026-06-02",
+        "conviction": 6,
+        "direction": "Bearish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "GLD",
+          "USO",
+          "UUP",
+          "FXE",
+          "TLT"
+        ]
+      }
+    ],
+    "consumer-retail-turnaround": [
+      {
+        "date": "2026-06-02",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "VSCO",
+          "ETSY",
+          "WMT",
+          "DG",
+          "MELI"
+        ]
+      }
+    ],
+    "travel-leisure-recovery": [
+      {
+        "date": "2026-06-02",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "DAL",
+          "TNL",
+          "UAL",
+          "MAR",
+          "HLT"
         ]
       }
     ]
