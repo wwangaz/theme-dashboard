@@ -2,13 +2,13 @@
   "ai-infrastructure-datacenter-boom": {
     "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-02",
+    "last_active": "2026-06-03",
     "representative_tickers": [
       "NVDA",
-      "MRVL",
+      "TSM",
       "AVGO",
-      "ARM",
-      "TSM"
+      "AMD",
+      "GOOGL"
     ]
   },
   "semiconductor-geopolitics-china-trade": {
@@ -50,12 +50,12 @@
   "power-grid-energy-ai-demand": {
     "name": "Power Grid Stress & Energy Stocks Under AI Demand Pressure",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-02",
+    "last_active": "2026-06-03",
     "representative_tickers": [
       "CEG",
+      "NEE",
       "VST",
       "NRG",
-      "NEE",
       "ETR"
     ]
   },
@@ -166,13 +166,13 @@
   "healthcare-biotech-mixed": {
     "name": "Healthcare & Biotech Divergence",
     "first_seen": "2026-05-14",
-    "last_active": "2026-06-02",
+    "last_active": "2026-06-03",
     "representative_tickers": [
+      "ISRG",
+      "DXCM",
       "ABBV",
-      "BMY",
-      "CCCC",
-      "TVTX",
-      "ABVX"
+      "CRL",
+      "TNYA"
     ]
   },
   "energy-oil-gas-cycle": {
@@ -196,25 +196,25 @@
   "industrials-infrastructure-materials": {
     "name": "Industrials, Infrastructure & Materials Cycle",
     "first_seen": "2026-05-15",
-    "last_active": "2026-05-15",
+    "last_active": "2026-06-03",
     "representative_tickers": [
-      "ACM",
-      "NUE",
-      "MMM",
-      "RCKY",
-      "DE"
+      "HON",
+      "ATI",
+      "NOC",
+      "ODFL",
+      "NSC"
     ]
   },
   "media-entertainment-consumer-recovery": {
     "name": "Media Consolidation, Consumer Discretionary & Retail Recovery",
     "first_seen": "2026-05-15",
-    "last_active": "2026-05-22",
+    "last_active": "2026-06-03",
     "representative_tickers": [
-      "TJX",
-      "ROST",
-      "BJ",
-      "WMT",
-      "TGT"
+      "M",
+      "YUM",
+      "ULTA",
+      "CROX",
+      "SPWH"
     ]
   },
   "big-tech-ai-platforms": {
@@ -232,11 +232,11 @@
   "cybersecurity-resilience": {
     "name": "Cybersecurity Platform Consolidation & Recovery",
     "first_seen": "2026-05-18",
-    "last_active": "2026-05-29",
+    "last_active": "2026-06-03",
     "representative_tickers": [
-      "S",
       "PANW",
-      "CRWD"
+      "PLTR",
+      "CGNT"
     ]
   },
   "semiconductor-broad-selloff": {
@@ -278,12 +278,12 @@
   "space-quantum-defense-tech": {
     "name": "Space, Quantum Computing & Defense Tech",
     "first_seen": "2026-05-20",
-    "last_active": "2026-06-02",
+    "last_active": "2026-06-03",
     "representative_tickers": [
-      "IONQ",
       "RKLB",
-      "ASTS",
       "LUNR",
+      "ASTS",
+      "IONQ",
       "RGTI"
     ]
   },
@@ -312,13 +312,13 @@
   "geopolitical-risk-commodity-repricing": {
     "name": "Iran Peace Talks & Commodity/Equity Repricing",
     "first_seen": "2026-05-26",
-    "last_active": "2026-06-01",
+    "last_active": "2026-06-03",
     "representative_tickers": [
-      "CEG",
-      "VST",
-      "NRG",
-      "NEE",
-      "ETR"
+      "GLD",
+      "SLV",
+      "NEM",
+      "USO",
+      "GDX"
     ]
   },
   "affordable-housing-homebuilding": {
@@ -348,13 +348,13 @@
   "housing-real-estate-finance": {
     "name": "Housing Market Stress & Real Estate Finance",
     "first_seen": "2026-05-28",
-    "last_active": "2026-05-28",
+    "last_active": "2026-06-03",
     "representative_tickers": [
-      "REG",
-      "UMH",
+      "JPM",
+      "BAC",
+      "WFC",
       "DHI",
-      "LEN",
-      "MBRG"
+      "LEN"
     ]
   },
   "space-economy-correction": {
@@ -436,6 +436,16 @@
       "UAL",
       "MAR",
       "HLT"
+    ]
+  },
+  "us-critical-materials-supply-chain": {
+    "name": "US Critical Materials & Rare Earth Supply Chain Reshoring",
+    "first_seen": "2026-06-03",
+    "last_active": "2026-06-03",
+    "representative_tickers": [
+      "UREE",
+      "MP",
+      "LTHM"
     ]
   }
 }

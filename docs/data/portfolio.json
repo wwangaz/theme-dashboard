@@ -626,6 +626,17 @@
             "TSM": 445.2972
           },
           "floating_return": 0.054781
+        },
+        {
+          "date": "2026-06-03",
+          "prices": {
+            "NVDA": 215.14,
+            "AMD": 531.345,
+            "QCOM": 248.6975,
+            "ASML": 1717.105,
+            "TSM": 436.92
+          },
+          "floating_return": 0.058209
         }
       ]
     },
@@ -1099,18 +1110,24 @@
       "portfolio_return": 0.016578,
       "spy_return": 0.001351,
       "open_count": 3
+    },
+    {
+      "date": "2026-06-03",
+      "portfolio_return": 0.058209,
+      "spy_return": -0.007596,
+      "open_count": 1
     }
   ],
   "summary": {
-    "portfolio_cumulative": 0.071498,
-    "spy_cumulative": 0.026579,
-    "alpha": 0.044919,
+    "portfolio_cumulative": 0.133869,
+    "spy_cumulative": 0.018781,
+    "alpha": 0.115088,
     "open_count": 1,
     "closed_count": 16,
     "win_rate": 0.312,
-    "tracking_days": 13
+    "tracking_days": 14
   },
-  "updated_at": "2026-06-02",
+  "updated_at": "2026-06-03",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -1279,6 +1296,19 @@
           "AVGO",
           "ARM",
           "TSM"
+        ]
+      },
+      {
+        "date": "2026-06-03",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Crowded Euphoria",
+        "tickers": [
+          "NVDA",
+          "TSM",
+          "AVGO",
+          "AMD",
+          "GOOGL"
         ]
       }
     ],
@@ -1755,6 +1785,19 @@
           "VST",
           "NRG",
           "NEE",
+          "ETR"
+        ]
+      },
+      {
+        "date": "2026-06-03",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "CEG",
+          "NEE",
+          "VST",
+          "NRG",
           "ETR"
         ]
       }
@@ -2314,6 +2357,19 @@
           "TVTX",
           "ABVX"
         ]
+      },
+      {
+        "date": "2026-06-03",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "ISRG",
+          "DXCM",
+          "ABBV",
+          "CRL",
+          "TNYA"
+        ]
       }
     ],
     "energy-oil-gas-cycle": [
@@ -2389,6 +2445,19 @@
           "RCKY",
           "DE"
         ]
+      },
+      {
+        "date": "2026-06-03",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "HON",
+          "ATI",
+          "NOC",
+          "ODFL",
+          "NSC"
+        ]
       }
     ],
     "energy-infrastructure-income": [
@@ -2437,6 +2506,19 @@
           "BJ",
           "WMT",
           "TGT"
+        ]
+      },
+      {
+        "date": "2026-06-03",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "M",
+          "YUM",
+          "ULTA",
+          "CROX",
+          "SPWH"
         ]
       }
     ],
@@ -2565,6 +2647,17 @@
           "S",
           "PANW",
           "CRWD"
+        ]
+      },
+      {
+        "date": "2026-06-03",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "PANW",
+          "PLTR",
+          "CGNT"
         ]
       }
     ],
@@ -2855,6 +2948,19 @@
           "LUNR",
           "RGTI"
         ]
+      },
+      {
+        "date": "2026-06-03",
+        "conviction": 6,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "RKLB",
+          "LUNR",
+          "ASTS",
+          "IONQ",
+          "RGTI"
+        ]
       }
     ],
     "logistics-freight-spinoffs": [
@@ -2937,6 +3043,19 @@
           "NEE",
           "ETR"
         ]
+      },
+      {
+        "date": "2026-06-03",
+        "conviction": 9,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "GLD",
+          "SLV",
+          "NEM",
+          "USO",
+          "GDX"
+        ]
       }
     ],
     "china-tech-consumer": [
@@ -2966,6 +3085,19 @@
           "DHI",
           "LEN",
           "MBRG"
+        ]
+      },
+      {
+        "date": "2026-06-03",
+        "conviction": 2,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "JPM",
+          "BAC",
+          "WFC",
+          "DHI",
+          "LEN"
         ]
       }
     ],
@@ -3068,6 +3200,19 @@
           "UAL",
           "MAR",
           "HLT"
+        ]
+      }
+    ],
+    "us-critical-materials-supply-chain": [
+      {
+        "date": "2026-06-03",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "UREE",
+          "MP",
+          "LTHM"
         ]
       }
     ]
