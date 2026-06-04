@@ -1075,33 +1075,33 @@
   "daily_returns": [
     {
       "date": "2026-05-13",
-      "portfolio_return": 0.0,
+      "portfolio_return": -0.000428,
       "spy_return": -0.001515,
       "open_count": 1
     },
     {
       "date": "2026-05-14",
-      "portfolio_return": 0.0,
+      "portfolio_return": 0.008413,
       "spy_return": 0.007881,
-      "open_count": 2
-    },
-    {
-      "date": "2026-05-19",
-      "portfolio_return": 0.0,
-      "spy_return": -0.007798,
-      "open_count": 1
-    },
-    {
-      "date": "2026-05-20",
-      "portfolio_return": 0.0,
-      "spy_return": 0.006883,
       "open_count": 3
     },
     {
-      "date": "2026-05-21",
-      "portfolio_return": 0.0,
-      "spy_return": -0.004506,
+      "date": "2026-05-15",
+      "portfolio_return": -0.030198,
+      "spy_return": 0.0,
+      "open_count": 2
+    },
+    {
+      "date": "2026-05-20",
+      "portfolio_return": -0.003534,
+      "spy_return": 0.006883,
       "open_count": 1
+    },
+    {
+      "date": "2026-05-21",
+      "portfolio_return": 0.00409,
+      "spy_return": -0.004506,
+      "open_count": 3
     },
     {
       "date": "2026-05-22",
@@ -1111,64 +1111,64 @@
     },
     {
       "date": "2026-05-25",
-      "portfolio_return": -0.010327,
+      "portfolio_return": -0.00388,
       "spy_return": 0.003932,
       "open_count": 2
     },
     {
       "date": "2026-05-26",
-      "portfolio_return": 0.025478,
+      "portfolio_return": 0.027486,
       "spy_return": 0.006952,
       "open_count": 2
     },
     {
       "date": "2026-05-27",
-      "portfolio_return": -0.000449,
+      "portfolio_return": -0.012552,
       "spy_return": -0.001625,
       "open_count": 4
     },
     {
       "date": "2026-05-28",
-      "portfolio_return": 0.014574,
+      "portfolio_return": 0.015535,
       "spy_return": 0.004997,
       "open_count": 5
     },
     {
       "date": "2026-05-29",
-      "portfolio_return": 0.013577,
+      "portfolio_return": 0.001012,
       "spy_return": 0.0022,
       "open_count": 6
     },
     {
       "date": "2026-06-01",
-      "portfolio_return": 0.023737,
+      "portfolio_return": 0.003244,
       "spy_return": 0.002941,
       "open_count": 6
     },
     {
       "date": "2026-06-02",
-      "portfolio_return": 0.016578,
+      "portfolio_return": 0.005918,
       "spy_return": 0.001351,
       "open_count": 3
     },
     {
       "date": "2026-06-03",
-      "portfolio_return": 0.058209,
+      "portfolio_return": 0.003256,
       "spy_return": -0.007596,
       "open_count": 1
     },
     {
       "date": "2026-06-04",
-      "portfolio_return": 0.04973,
+      "portfolio_return": -0.007863,
       "spy_return": -0.000265,
       "open_count": 1
     }
   ],
   "summary": {
-    "portfolio_cumulative": 0.190256,
-    "spy_cumulative": 0.018511,
-    "alpha": 0.171745,
-    "open_count": 1,
+    "portfolio_cumulative": -0.003774,
+    "spy_cumulative": 0.026515,
+    "alpha": -0.030289,
+    "open_count": 2,
     "closed_count": 16,
     "win_rate": 0.312,
     "tracking_days": 15

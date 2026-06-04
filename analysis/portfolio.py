@@ -46,11 +46,26 @@ def _fetch_closes(tickers: list[str]) -> dict[str, float]:
 
 
 def _position_return(position: dict, current_prices: dict) -> float | None:
+    """Cumulative since-entry return — used for floating_return display and exit P&L."""
     entry = position["entry_prices"]
     tickers = [t for t in position["tickers"] if t in entry and t in current_prices and entry[t]]
     if not tickers:
         return None
     rets = [(current_prices[t] - entry[t]) / entry[t] for t in tickers]
+    return sum(rets) / len(rets)
+
+
+def _position_daily_return(position: dict, current_prices: dict) -> float | None:
+    """Single-day delta — uses the most recent snapshot (or entry_prices if none yet)
+    as the prior reference. This is what feeds the portfolio NAV time series.
+    """
+    snaps = position.get("daily_snapshots") or []
+    prev_prices = snaps[-1]["prices"] if snaps else position["entry_prices"]
+    tickers = [t for t in position["tickers"]
+               if t in prev_prices and t in current_prices and prev_prices[t]]
+    if not tickers:
+        return None
+    rets = [(current_prices[t] - prev_prices[t]) / prev_prices[t] for t in tickers]
     return sum(rets) / len(rets)
 
 
@@ -113,31 +128,14 @@ def update_portfolio(snapshots: list[dict], today: date):
         all_tickers.update(s.get("representative_tickers", [])[:MAX_TICKERS_PER_THEME])
 
     current_prices = _fetch_closes(list(all_tickers))
-
-    # ── 1b. Daily snapshot for each open position ─────────────────────────────
     today_str = str(today)
-    for p in positions:
-        if p["status"] != "open":
-            continue
-        pos_tickers = [t for t in p["tickers"] if t in current_prices]
-        if not pos_tickers:
-            continue
-        if "daily_snapshots" not in p:
-            p["daily_snapshots"] = []
-        if not any(s["date"] == today_str for s in p["daily_snapshots"]):
-            p["daily_snapshots"].append({
-                "date": today_str,
-                "prices": {t: current_prices[t] for t in pos_tickers},
-                "floating_return": round(_position_return(p, current_prices) or 0.0, 6),
-            })
 
-    # ── 2. Daily return record — captured BEFORE close/rebalance ─────────────
-    # Must be here so positions held during the day (even if closed today)
-    # contribute their actual return, not new positions at 0.
+    # ── 1b. Daily return record — uses prior snapshot, computed BEFORE today's
+    # snapshot is appended so the delta is yesterday→today, not today→today.
     positions_held_today = [p for p in positions if p["status"] == "open"]
     if positions_held_today and not any(r["date"] == today_str for r in daily_returns):
         pos_returns = [r for p in positions_held_today
-                       if (r := _position_return(p, current_prices)) is not None]
+                       if (r := _position_daily_return(p, current_prices)) is not None]
         spy_ret = _spy_daily_return()
         if pos_returns:
             daily_returns.append({
@@ -147,7 +145,22 @@ def update_portfolio(snapshots: list[dict], today: date):
                 "open_count":       len(positions_held_today),
             })
 
-    # ── 3. Close positions that are no longer in the candidate set ────────────
+    # ── 2. Daily snapshot for each open position (AFTER daily_return calc) ────
+    for p in positions:
+        if p["status"] != "open":
+            continue
+        pos_tickers = [t for t in p["tickers"] if t in current_prices]
+        if not pos_tickers:
+            continue
+        p.setdefault("daily_snapshots", [])
+        if not any(s["date"] == today_str for s in p["daily_snapshots"]):
+            p["daily_snapshots"].append({
+                "date": today_str,
+                "prices": {t: current_prices[t] for t in pos_tickers},
+                "floating_return": round(_position_return(p, current_prices) or 0.0, 6),
+            })
+
+    # ── 3. Close positions that are no longer in the candidate set ───────────
     for p in positions:
         if p["status"] != "open":
             continue
@@ -170,7 +183,7 @@ def update_portfolio(snapshots: list[dict], today: date):
                 _close_position(p, today, "conviction_drop", current_prices)
         # else: conviction between CONVICTION_EXIT and CONVICTION_ENTRY — hold
 
-    # ── 3. Rebalance: keep top MAX_POSITIONS, bump weakest if needed ──────────
+    # ── 4. Rebalance: keep top MAX_POSITIONS, bump weakest if needed ──────────
     open_positions = [p for p in positions if p["status"] == "open"]
     open_ids = {p["theme_id"] for p in open_positions}
 
