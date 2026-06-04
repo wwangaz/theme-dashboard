@@ -637,6 +637,17 @@
             "TSM": 436.92
           },
           "floating_return": 0.058209
+        },
+        {
+          "date": "2026-06-04",
+          "prices": {
+            "NVDA": 215.19,
+            "AMD": 520.035,
+            "QCOM": 240.45,
+            "ASML": 1721.98,
+            "TSM": 442.19
+          },
+          "floating_return": 0.04973
         }
       ]
     },
@@ -1030,6 +1041,35 @@
           "floating_return": -0.004361
         }
       ]
+    },
+    {
+      "theme_id": "ai-enterprise-software-automation",
+      "theme_name": "Enterprise AI Adoption & Workflow Automation",
+      "direction": "Bullish",
+      "entry_date": "2026-06-04",
+      "tickers": [
+        "PLTR",
+        "GOOGL",
+        "MSFT",
+        "META",
+        "ACN"
+      ],
+      "entry_prices": {
+        "PLTR": 141.89,
+        "GOOGL": 368.24,
+        "MSFT": 429.12,
+        "META": 639.901,
+        "ACN": 179.82
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 754.04,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null
     }
   ],
   "daily_returns": [
@@ -1116,18 +1156,24 @@
       "portfolio_return": 0.058209,
       "spy_return": -0.007596,
       "open_count": 1
+    },
+    {
+      "date": "2026-06-04",
+      "portfolio_return": 0.04973,
+      "spy_return": -0.000265,
+      "open_count": 1
     }
   ],
   "summary": {
-    "portfolio_cumulative": 0.133869,
-    "spy_cumulative": 0.018781,
-    "alpha": 0.115088,
+    "portfolio_cumulative": 0.190256,
+    "spy_cumulative": 0.018511,
+    "alpha": 0.171745,
     "open_count": 1,
     "closed_count": 16,
     "win_rate": 0.312,
-    "tracking_days": 14
+    "tracking_days": 15
   },
-  "updated_at": "2026-06-03",
+  "updated_at": "2026-06-04",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -1310,6 +1356,19 @@
           "AMD",
           "GOOGL"
         ]
+      },
+      {
+        "date": "2026-06-04",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "TT",
+          "APG",
+          "JCI",
+          "NEE",
+          "CEG"
+        ]
       }
     ],
     "semiconductor-geopolitics-china-trade": [
@@ -1442,6 +1501,19 @@
           "WPM",
           "RGLD"
         ]
+      },
+      {
+        "date": "2026-06-04",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "GDX",
+          "AAAU",
+          "AEM",
+          "ASM",
+          "BVN"
+        ]
       }
     ],
     "ai-enterprise-software-automation": [
@@ -1532,6 +1604,19 @@
           "GOOGL",
           "INTU",
           "META"
+        ]
+      },
+      {
+        "date": "2026-06-04",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "PLTR",
+          "GOOGL",
+          "MSFT",
+          "META",
+          "ACN"
         ]
       }
     ],
@@ -2229,6 +2314,19 @@
           "ITRN",
           "MBLY"
         ]
+      },
+      {
+        "date": "2026-06-04",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "FCX",
+          "BHP",
+          "RIO",
+          "SCCO",
+          "AEM"
+        ]
       }
     ],
     "healthcare-biotech-mixed": [
@@ -2369,6 +2467,19 @@
           "ABBV",
           "CRL",
           "TNYA"
+        ]
+      },
+      {
+        "date": "2026-06-04",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "UNH",
+          "CVS",
+          "ISRG",
+          "DXCM",
+          "MDT"
         ]
       }
     ],
@@ -2738,6 +2849,19 @@
           "BKE",
           "CCL"
         ]
+      },
+      {
+        "date": "2026-06-04",
+        "conviction": 6,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "KSS",
+          "FIVE",
+          "PVH",
+          "MSGS",
+          "RENT"
+        ]
       }
     ],
     "semiconductor-broad-selloff": [
@@ -2766,6 +2890,19 @@
           "AVGO",
           "TSM"
         ]
+      },
+      {
+        "date": "2026-06-04",
+        "conviction": 7,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "AVGO",
+          "NVDA",
+          "AMD",
+          "MU",
+          "MRVL"
+        ]
       }
     ],
     "fintech-payments-platforms": [
@@ -2793,6 +2930,19 @@
           "BLND",
           "GRAB",
           "TRU"
+        ]
+      },
+      {
+        "date": "2026-06-04",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "V",
+          "GPN",
+          "FISV",
+          "NDAQ",
+          "MA"
         ]
       }
     ],
@@ -2960,6 +3110,19 @@
           "ASTS",
           "IONQ",
           "RGTI"
+        ]
+      },
+      {
+        "date": "2026-06-04",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "IONQ",
+          "RGTI",
+          "RKLB",
+          "ASTS",
+          "QUBT"
         ]
       }
     ],
@@ -3213,6 +3376,21 @@
           "UREE",
           "MP",
           "LTHM"
+        ]
+      }
+    ],
+    "defense-industrial-government-spend": [
+      {
+        "date": "2026-06-04",
+        "conviction": 4,
+        "direction": "Bullish",
+        "stage": "Acceleration",
+        "tickers": [
+          "KTOS",
+          "CLF",
+          "MWA",
+          "AVY",
+          "LMT"
         ]
       }
     ]

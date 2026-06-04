@@ -2,13 +2,13 @@
   "ai-infrastructure-datacenter-boom": {
     "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-03",
+    "last_active": "2026-06-04",
     "representative_tickers": [
-      "NVDA",
-      "TSM",
-      "AVGO",
-      "AMD",
-      "GOOGL"
+      "TT",
+      "APG",
+      "JCI",
+      "NEE",
+      "CEG"
     ]
   },
   "semiconductor-geopolitics-china-trade": {
@@ -38,13 +38,13 @@
   "ai-enterprise-software-automation": {
     "name": "Enterprise AI Adoption & Workflow Automation",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-02",
+    "last_active": "2026-06-04",
     "representative_tickers": [
-      "SNOW",
-      "MSFT",
+      "PLTR",
       "GOOGL",
-      "INTU",
-      "META"
+      "MSFT",
+      "META",
+      "ACN"
     ]
   },
   "power-grid-energy-ai-demand": {
@@ -74,13 +74,13 @@
   "precious-metals-mining-dividends": {
     "name": "Precious Metals Mining — Silver Surge & Gold Dividend Play",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-19",
+    "last_active": "2026-06-04",
     "representative_tickers": [
-      "GLD",
-      "SLV",
-      "NEM",
-      "WPM",
-      "RGLD"
+      "GDX",
+      "AAAU",
+      "AEM",
+      "ASM",
+      "BVN"
     ]
   },
   "crypto-digital-assets-geopolitical-watch": {
@@ -133,13 +133,13 @@
   "ev-automotive-supply-chain": {
     "name": "EV & Automotive Supply Chain Recovery",
     "first_seen": "2026-05-14",
-    "last_active": "2026-05-26",
+    "last_active": "2026-06-04",
     "representative_tickers": [
-      "PONY",
-      "TSLA",
-      "LYFT",
-      "ITRN",
-      "MBLY"
+      "FCX",
+      "BHP",
+      "RIO",
+      "SCCO",
+      "AEM"
     ]
   },
   "financial-services-capital-markets": {
@@ -166,13 +166,13 @@
   "healthcare-biotech-mixed": {
     "name": "Healthcare & Biotech Divergence",
     "first_seen": "2026-05-14",
-    "last_active": "2026-06-03",
+    "last_active": "2026-06-04",
     "representative_tickers": [
+      "UNH",
+      "CVS",
       "ISRG",
       "DXCM",
-      "ABBV",
-      "CRL",
-      "TNYA"
+      "MDT"
     ]
   },
   "energy-oil-gas-cycle": {
@@ -242,49 +242,49 @@
   "semiconductor-broad-selloff": {
     "name": "Semiconductor Sector Correction",
     "first_seen": "2026-05-19",
-    "last_active": "2026-05-26",
+    "last_active": "2026-06-04",
     "representative_tickers": [
-      "MU",
+      "AVGO",
       "NVDA",
       "AMD",
-      "AVGO",
-      "TSM"
+      "MU",
+      "MRVL"
     ]
   },
   "consumer-retail-stress": {
     "name": "Consumer & Retail Under Pressure",
     "first_seen": "2026-05-19",
-    "last_active": "2026-05-29",
+    "last_active": "2026-06-04",
     "representative_tickers": [
-      "GPS",
-      "AEO",
-      "WSM",
-      "BKE",
-      "CCL"
+      "KSS",
+      "FIVE",
+      "PVH",
+      "MSGS",
+      "RENT"
     ]
   },
   "fintech-payments-platforms": {
     "name": "Fintech, Payments & Alternative Finance",
     "first_seen": "2026-05-19",
-    "last_active": "2026-06-02",
+    "last_active": "2026-06-04",
     "representative_tickers": [
-      "MQ",
-      "WISE",
-      "BLND",
-      "GRAB",
-      "TRU"
+      "V",
+      "GPN",
+      "FISV",
+      "NDAQ",
+      "MA"
     ]
   },
   "space-quantum-defense-tech": {
     "name": "Space, Quantum Computing & Defense Tech",
     "first_seen": "2026-05-20",
-    "last_active": "2026-06-03",
+    "last_active": "2026-06-04",
     "representative_tickers": [
-      "RKLB",
-      "LUNR",
-      "ASTS",
       "IONQ",
-      "RGTI"
+      "RGTI",
+      "RKLB",
+      "ASTS",
+      "QUBT"
     ]
   },
   "fixed-income-yield-alternatives": {
@@ -446,6 +446,18 @@
       "UREE",
       "MP",
       "LTHM"
+    ]
+  },
+  "defense-industrial-government-spend": {
+    "name": "Defense Spending & Industrial Government Contracts",
+    "first_seen": "2026-06-04",
+    "last_active": "2026-06-04",
+    "representative_tickers": [
+      "KTOS",
+      "CLF",
+      "MWA",
+      "AVY",
+      "LMT"
     ]
   }
 }
