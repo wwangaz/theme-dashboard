@@ -648,6 +648,17 @@
             "TSM": 442.19
           },
           "floating_return": 0.04973
+        },
+        {
+          "date": "2026-06-05",
+          "prices": {
+            "NVDA": 210.47,
+            "AMD": 490.02,
+            "QCOM": 229.65,
+            "ASML": 1695.76,
+            "TSM": 428.95
+          },
+          "floating_return": 0.01383
         }
       ]
     },
@@ -1069,6 +1080,48 @@
       "exit_reason": null,
       "realized_return": null,
       "spy_return_during_holding": null,
+      "excess_return": null,
+      "daily_snapshots": [
+        {
+          "date": "2026-06-05",
+          "prices": {
+            "PLTR": 138.275,
+            "GOOGL": 368.65,
+            "MSFT": 420.8585,
+            "META": 615.1548,
+            "ACN": 178.16
+          },
+          "floating_return": -0.018304
+        }
+      ]
+    },
+    {
+      "theme_id": "inflation-rates-macro-pressure",
+      "theme_name": "Hotter-Than-Expected Inflation & Rising Rate Pressure",
+      "direction": "Bullish",
+      "entry_date": "2026-06-05",
+      "tickers": [
+        "UUP",
+        "TBT",
+        "GLD",
+        "SLV",
+        "FXY"
+      ],
+      "entry_prices": {
+        "UUP": 27.9635,
+        "TBT": 36.0399,
+        "GLD": 399.7999,
+        "SLV": 62.305,
+        "FXY": 57.3
+      },
+      "conviction_at_entry": 8,
+      "spy_price_at_entry": 749.2,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
       "excess_return": null
     }
   ],
@@ -1162,18 +1215,24 @@
       "portfolio_return": -0.007863,
       "spy_return": -0.000265,
       "open_count": 1
+    },
+    {
+      "date": "2026-06-05",
+      "portfolio_return": -0.026126,
+      "spy_return": -0.010448,
+      "open_count": 2
     }
   ],
   "summary": {
-    "portfolio_cumulative": -0.003774,
-    "spy_cumulative": 0.026515,
-    "alpha": -0.030289,
+    "portfolio_cumulative": -0.029801,
+    "spy_cumulative": 0.01579,
+    "alpha": -0.045592,
     "open_count": 2,
     "closed_count": 16,
     "win_rate": 0.312,
-    "tracking_days": 15
+    "tracking_days": 16
   },
-  "updated_at": "2026-06-04",
+  "updated_at": "2026-06-05",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -1369,6 +1428,19 @@
           "NEE",
           "CEG"
         ]
+      },
+      {
+        "date": "2026-06-05",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Crowded Euphoria",
+        "tickers": [
+          "ORCL",
+          "HUT",
+          "ONTO",
+          "RBRK",
+          "CIEN"
+        ]
       }
     ],
     "semiconductor-geopolitics-china-trade": [
@@ -1474,6 +1546,19 @@
           "SHY",
           "BND",
           "FHLB"
+        ]
+      },
+      {
+        "date": "2026-06-05",
+        "conviction": 8,
+        "direction": "Bullish",
+        "stage": "Acceleration",
+        "tickers": [
+          "UUP",
+          "TBT",
+          "GLD",
+          "SLV",
+          "FXY"
         ]
       }
     ],
@@ -1727,6 +1812,19 @@
           "SPCE",
           "IONQ"
         ]
+      },
+      {
+        "date": "2026-06-05",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Crowded Euphoria",
+        "tickers": [
+          "RKLB",
+          "LUNR",
+          "ASTS",
+          "PL",
+          "SPCE"
+        ]
       }
     ],
     "power-grid-energy-ai-demand": [
@@ -1885,6 +1983,19 @@
           "NRG",
           "ETR"
         ]
+      },
+      {
+        "date": "2026-06-05",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "NEE",
+          "CEG",
+          "VST",
+          "FSLR",
+          "EOX"
+        ]
       }
     ],
     "quantum-computing-speculative-selloff": [
@@ -1989,6 +2100,17 @@
           "QUBT",
           "DWAV",
           "IBM"
+        ]
+      },
+      {
+        "date": "2026-06-05",
+        "conviction": 3,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "IONQ",
+          "RGTI",
+          "QUBT"
         ]
       }
     ],
@@ -2327,6 +2449,16 @@
           "SCCO",
           "AEM"
         ]
+      },
+      {
+        "date": "2026-06-05",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "TSLA",
+          "MELI"
+        ]
       }
     ],
     "healthcare-biotech-mixed": [
@@ -2480,6 +2612,19 @@
           "ISRG",
           "DXCM",
           "MDT"
+        ]
+      },
+      {
+        "date": "2026-06-05",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "ISRG",
+          "DXCM",
+          "COO",
+          "IRTC",
+          "EDSA"
         ]
       }
     ],
@@ -2736,6 +2881,19 @@
           "OKTA",
           "WDAY"
         ]
+      },
+      {
+        "date": "2026-06-05",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "MSFT",
+          "GOOGL",
+          "META",
+          "AMZN",
+          "AAPL"
+        ]
       }
     ],
     "cybersecurity-resilience": [
@@ -2903,6 +3061,19 @@
           "MU",
           "MRVL"
         ]
+      },
+      {
+        "date": "2026-06-05",
+        "conviction": 6,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "NVDA",
+          "AMD",
+          "AVGO",
+          "ARM",
+          "INTC"
+        ]
       }
     ],
     "fintech-payments-platforms": [
@@ -2943,6 +3114,19 @@
           "FISV",
           "NDAQ",
           "MA"
+        ]
+      },
+      {
+        "date": "2026-06-05",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "JPM",
+          "BAC",
+          "DB",
+          "LPLA",
+          "NAVI"
         ]
       }
     ],
