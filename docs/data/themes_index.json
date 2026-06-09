@@ -2,13 +2,13 @@
   "ai-infrastructure-datacenter-boom": {
     "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-05",
+    "last_active": "2026-06-09",
     "representative_tickers": [
-      "ORCL",
-      "HUT",
-      "ONTO",
-      "RBRK",
-      "CIEN"
+      "MSFT",
+      "GOOGL",
+      "META",
+      "AMZN",
+      "CRWV"
     ]
   },
   "semiconductor-geopolitics-china-trade": {
@@ -26,13 +26,13 @@
   "inflation-rates-macro-pressure": {
     "name": "Hotter-Than-Expected Inflation & Rising Rate Pressure",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-05",
+    "last_active": "2026-06-09",
     "representative_tickers": [
-      "UUP",
-      "TBT",
-      "GLD",
-      "SLV",
-      "FXY"
+      "SJM",
+      "CHD",
+      "GPK",
+      "AVO",
+      "TSN"
     ]
   },
   "ai-enterprise-software-automation": {
@@ -50,25 +50,24 @@
   "power-grid-energy-ai-demand": {
     "name": "Power Grid Stress & Energy Stocks Under AI Demand Pressure",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-08",
+    "last_active": "2026-06-09",
     "representative_tickers": [
       "NEE",
       "CEG",
       "VST",
       "NRG",
-      "FCEL"
+      "ETR"
     ]
   },
   "space-economy-commercial-launch": {
     "name": "Commercial Space Economy & Satellite Communications Momentum",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-08",
+    "last_active": "2026-06-09",
     "representative_tickers": [
       "RKLB",
-      "LUNR",
       "ASTS",
-      "ONDS",
-      "SPCE"
+      "LUNR",
+      "RDW"
     ]
   },
   "precious-metals-mining-dividends": {
@@ -98,7 +97,7 @@
   "quantum-computing-speculative-selloff": {
     "name": "Quantum Computing Speculative Pullback",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-08",
+    "last_active": "2026-06-09",
     "representative_tickers": [
       "IONQ",
       "RGTI",
@@ -161,23 +160,24 @@
   "healthcare-biotech-mixed": {
     "name": "Healthcare & Biotech Divergence",
     "first_seen": "2026-05-14",
-    "last_active": "2026-06-08",
+    "last_active": "2026-06-09",
     "representative_tickers": [
-      "LLY",
-      "RVMD",
-      "OPCH",
-      "NVO",
-      "INCY"
+      "NUVL",
+      "NRIX",
+      "JNJ",
+      "ISRG",
+      "DXCM"
     ]
   },
   "energy-oil-gas-cycle": {
     "name": "Oil & Gas Cycle Recovery & Leverage Plays",
     "first_seen": "2026-05-15",
-    "last_active": "2026-05-29",
+    "last_active": "2026-06-09",
     "representative_tickers": [
-      "CVE",
-      "WMB",
-      "CVX"
+      "CRGY",
+      "PR",
+      "MGY",
+      "APA"
     ]
   },
   "energy-infrastructure-income": {
@@ -237,12 +237,12 @@
   "semiconductor-broad-selloff": {
     "name": "Semiconductor Sector Correction",
     "first_seen": "2026-05-19",
-    "last_active": "2026-06-08",
+    "last_active": "2026-06-09",
     "representative_tickers": [
       "NVDA",
-      "INTC",
-      "ASML",
       "AMD",
+      "AVGO",
+      "ASML",
       "TSM"
     ]
   },
@@ -343,13 +343,12 @@
   "housing-real-estate-finance": {
     "name": "Housing Market Stress & Real Estate Finance",
     "first_seen": "2026-05-28",
-    "last_active": "2026-06-03",
+    "last_active": "2026-06-09",
     "representative_tickers": [
-      "JPM",
-      "BAC",
-      "WFC",
+      "RKT",
       "DHI",
-      "LEN"
+      "LEN",
+      "TOL"
     ]
   },
   "space-economy-correction": {
@@ -453,6 +452,17 @@
       "MWA",
       "AVY",
       "LMT"
+    ]
+  },
+  "macro-risk-market-top-signals": {
+    "name": "Macro Risk Flags & Equity Market Top Concerns",
+    "first_seen": "2026-06-09",
+    "last_active": "2026-06-09",
+    "representative_tickers": [
+      "WFC",
+      "HBAN",
+      "BX",
+      "PRU"
     ]
   }
 }
