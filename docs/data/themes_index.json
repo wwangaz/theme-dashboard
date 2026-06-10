@@ -26,13 +26,13 @@
   "inflation-rates-macro-pressure": {
     "name": "Hotter-Than-Expected Inflation & Rising Rate Pressure",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-09",
+    "last_active": "2026-06-10",
     "representative_tickers": [
-      "SJM",
-      "CHD",
-      "GPK",
-      "AVO",
-      "TSN"
+      "GLD",
+      "SLV",
+      "TLT",
+      "UUP",
+      "DXY"
     ]
   },
   "ai-enterprise-software-automation": {
@@ -50,24 +50,25 @@
   "power-grid-energy-ai-demand": {
     "name": "Power Grid Stress & Energy Stocks Under AI Demand Pressure",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-09",
+    "last_active": "2026-06-10",
     "representative_tickers": [
-      "NEE",
-      "CEG",
       "VST",
       "NRG",
+      "CEG",
+      "NEE",
       "ETR"
     ]
   },
   "space-economy-commercial-launch": {
     "name": "Commercial Space Economy & Satellite Communications Momentum",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-09",
+    "last_active": "2026-06-10",
     "representative_tickers": [
       "RKLB",
-      "ASTS",
       "LUNR",
-      "RDW"
+      "ASTS",
+      "UFO",
+      "ARKX"
     ]
   },
   "precious-metals-mining-dividends": {
@@ -85,13 +86,12 @@
   "crypto-digital-assets-geopolitical-watch": {
     "name": "Crypto & Digital Assets Holding Steady Amid US-China Summit",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-08",
+    "last_active": "2026-06-10",
     "representative_tickers": [
-      "MSTR",
-      "BITF",
-      "MARA",
+      "BTC",
       "ETH",
-      "BTC"
+      "AVAX",
+      "FOLD"
     ]
   },
   "quantum-computing-speculative-selloff": {
@@ -160,13 +160,13 @@
   "healthcare-biotech-mixed": {
     "name": "Healthcare & Biotech Divergence",
     "first_seen": "2026-05-14",
-    "last_active": "2026-06-09",
+    "last_active": "2026-06-10",
     "representative_tickers": [
-      "NUVL",
-      "NRIX",
-      "JNJ",
+      "MOH",
+      "BKD",
       "ISRG",
-      "DXCM"
+      "DXCM",
+      "ALT"
     ]
   },
   "energy-oil-gas-cycle": {
@@ -237,25 +237,25 @@
   "semiconductor-broad-selloff": {
     "name": "Semiconductor Sector Correction",
     "first_seen": "2026-05-19",
-    "last_active": "2026-06-09",
+    "last_active": "2026-06-10",
     "representative_tickers": [
       "NVDA",
       "AMD",
       "AVGO",
-      "ASML",
+      "QCOM",
       "TSM"
     ]
   },
   "consumer-retail-stress": {
     "name": "Consumer & Retail Under Pressure",
     "first_seen": "2026-05-19",
-    "last_active": "2026-06-08",
+    "last_active": "2026-06-10",
     "representative_tickers": [
-      "NKE",
-      "BOOT",
-      "MELI",
-      "TSLA",
-      "GIII"
+      "CBRL",
+      "MAT",
+      "DPZ",
+      "JILL",
+      "PG"
     ]
   },
   "fintech-payments-platforms": {
@@ -307,13 +307,12 @@
   "geopolitical-risk-commodity-repricing": {
     "name": "Iran Peace Talks & Commodity/Equity Repricing",
     "first_seen": "2026-05-26",
-    "last_active": "2026-06-08",
+    "last_active": "2026-06-10",
     "representative_tickers": [
       "USO",
-      "GLD",
-      "SLV",
       "XLE",
-      "SHEL"
+      "CL=F",
+      "BNO"
     ]
   },
   "affordable-housing-homebuilding": {
@@ -463,6 +462,28 @@
       "HBAN",
       "BX",
       "PRU"
+    ]
+  },
+  "quantum-computing-emerging-tech": {
+    "name": "Quantum Computing Emerging Tech Momentum",
+    "first_seen": "2026-06-10",
+    "last_active": "2026-06-10",
+    "representative_tickers": [
+      "IONQ",
+      "RGTI",
+      "QUBT"
+    ]
+  },
+  "value-investing-rotation-non-ai": {
+    "name": "Value Investor Rotation Away from AI into Cyclicals",
+    "first_seen": "2026-06-10",
+    "last_active": "2026-06-10",
+    "representative_tickers": [
+      "NCLH",
+      "GRBK",
+      "MOH",
+      "DNOW",
+      "BRK-B"
     ]
   }
 }

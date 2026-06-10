@@ -1161,13 +1161,19 @@
       },
       "conviction_at_entry": 8,
       "spy_price_at_entry": 749.2,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null,
+      "status": "closed",
+      "exit_date": "2026-06-10",
+      "exit_prices": {
+        "UUP": 27.9999,
+        "TBT": 35.97,
+        "GLD": 378.601,
+        "SLV": 58.53,
+        "FXY": 57.2
+      },
+      "exit_reason": "direction_changed",
+      "realized_return": -0.023199,
+      "spy_return_during_holding": -0.024306,
+      "excess_return": 0.001107,
       "daily_snapshots": [
         {
           "date": "2026-06-08",
@@ -1190,6 +1196,17 @@
             "FXY": 57.285
           },
           "floating_return": -0.011564
+        },
+        {
+          "date": "2026-06-10",
+          "prices": {
+            "UUP": 27.9999,
+            "TBT": 35.97,
+            "GLD": 378.601,
+            "SLV": 58.53,
+            "FXY": 57.2
+          },
+          "floating_return": -0.023199
         }
       ]
     },
@@ -1232,6 +1249,17 @@
             "SPCE": 4.525
           },
           "floating_return": -0.033259
+        },
+        {
+          "date": "2026-06-10",
+          "prices": {
+            "RKLB": 107.1645,
+            "LUNR": 26.4,
+            "ASTS": 88.45,
+            "ONDS": 9.415,
+            "SPCE": 4.3275
+          },
+          "floating_return": -0.066058
         }
       ]
     },
@@ -1262,7 +1290,20 @@
       "exit_reason": null,
       "realized_return": null,
       "spy_return_during_holding": null,
-      "excess_return": null
+      "excess_return": null,
+      "daily_snapshots": [
+        {
+          "date": "2026-06-10",
+          "prices": {
+            "MSFT": 401.56,
+            "GOOGL": 361.6,
+            "META": 577.42,
+            "AMZN": 239.335,
+            "CRWV": 95.81
+          },
+          "floating_return": -0.019466
+        }
+      ]
     }
   ],
   "daily_returns": [
@@ -1373,18 +1414,24 @@
       "portfolio_return": -0.019085,
       "spy_return": -0.005715,
       "open_count": 3
+    },
+    {
+      "date": "2026-06-10",
+      "portfolio_return": -0.021632,
+      "spy_return": -0.008168,
+      "open_count": 3
     }
   ],
   "summary": {
-    "portfolio_cumulative": -0.055259,
-    "spy_cumulative": 0.01853,
-    "alpha": -0.073789,
+    "portfolio_cumulative": -0.075696,
+    "spy_cumulative": 0.01021,
+    "alpha": -0.085906,
     "open_count": 2,
-    "closed_count": 18,
-    "win_rate": 0.333,
-    "tracking_days": 18
+    "closed_count": 19,
+    "win_rate": 0.368,
+    "tracking_days": 19
   },
-  "updated_at": "2026-06-09",
+  "updated_at": "2026-06-10",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -1738,6 +1785,19 @@
           "AVO",
           "TSN"
         ]
+      },
+      {
+        "date": "2026-06-10",
+        "conviction": 6,
+        "direction": "Bearish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "GLD",
+          "SLV",
+          "TLT",
+          "UUP",
+          "DXY"
+        ]
       }
     ],
     "precious-metals-mining-dividends": [
@@ -2028,6 +2088,19 @@
           "LUNR",
           "RDW"
         ]
+      },
+      {
+        "date": "2026-06-10",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Crowded Euphoria",
+        "tickers": [
+          "RKLB",
+          "LUNR",
+          "ASTS",
+          "UFO",
+          "ARKX"
+        ]
       }
     ],
     "power-grid-energy-ai-demand": [
@@ -2223,6 +2296,19 @@
           "CEG",
           "VST",
           "NRG",
+          "ETR"
+        ]
+      },
+      {
+        "date": "2026-06-10",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "VST",
+          "NRG",
+          "CEG",
+          "NEE",
           "ETR"
         ]
       }
@@ -2548,6 +2634,18 @@
           "MARA",
           "ETH",
           "BTC"
+        ]
+      },
+      {
+        "date": "2026-06-10",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "BTC",
+          "ETH",
+          "AVAX",
+          "FOLD"
         ]
       }
     ],
@@ -2915,6 +3013,19 @@
           "JNJ",
           "ISRG",
           "DXCM"
+        ]
+      },
+      {
+        "date": "2026-06-10",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "MOH",
+          "BKD",
+          "ISRG",
+          "DXCM",
+          "ALT"
         ]
       }
     ],
@@ -3348,6 +3459,19 @@
           "TSLA",
           "GIII"
         ]
+      },
+      {
+        "date": "2026-06-10",
+        "conviction": 6,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "CBRL",
+          "MAT",
+          "DPZ",
+          "JILL",
+          "PG"
+        ]
       }
     ],
     "semiconductor-broad-selloff": [
@@ -3426,6 +3550,19 @@
           "AMD",
           "AVGO",
           "ASML",
+          "TSM"
+        ]
+      },
+      {
+        "date": "2026-06-10",
+        "conviction": 6,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "NVDA",
+          "AMD",
+          "AVGO",
+          "QCOM",
           "TSM"
         ]
       }
@@ -3783,6 +3920,18 @@
           "XLE",
           "SHEL"
         ]
+      },
+      {
+        "date": "2026-06-10",
+        "conviction": 8,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "USO",
+          "XLE",
+          "CL=F",
+          "BNO"
+        ]
       }
     ],
     "china-tech-consumer": [
@@ -3981,6 +4130,34 @@
           "HBAN",
           "BX",
           "PRU"
+        ]
+      }
+    ],
+    "value-investing-rotation-non-ai": [
+      {
+        "date": "2026-06-10",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "NCLH",
+          "GRBK",
+          "MOH",
+          "DNOW",
+          "BRK-B"
+        ]
+      }
+    ],
+    "quantum-computing-emerging-tech": [
+      {
+        "date": "2026-06-10",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "IONQ",
+          "RGTI",
+          "QUBT"
         ]
       }
     ]
