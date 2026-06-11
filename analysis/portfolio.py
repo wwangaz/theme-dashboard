@@ -187,8 +187,14 @@ def update_portfolio(snapshots: list[dict], today: date):
     open_positions = [p for p in positions if p["status"] == "open"]
     open_ids = {p["theme_id"] for p in open_positions}
 
-    for snap in candidates:
-        if snap["id"] in open_ids:
+    def _current_conv(p) -> int:
+        """Current conviction for a held position. 0 if theme not in today's snapshots
+        (grace-period position) so it's the natural candidate for displacement."""
+        snap = next((s for s in snapshots if s["id"] == p["theme_id"]), None)
+        return snap["conviction_score"] if snap else 0
+
+    for cand in candidates:
+        if cand["id"] in open_ids:
             continue  # already held
 
         open_positions = [p for p in positions if p["status"] == "open"]
@@ -198,26 +204,27 @@ def update_portfolio(snapshots: list[dict], today: date):
             pass
         else:
             # Check if this candidate is stronger than the weakest held position
-            weakest = min(open_positions, key=lambda p: p["conviction_at_entry"])
-            if snap["conviction_score"] <= weakest["conviction_at_entry"]:
+            # by CURRENT conviction (not entry conviction — themes evolve)
+            weakest = min(open_positions, key=_current_conv)
+            if cand["conviction_score"] <= _current_conv(weakest):
                 continue  # not strong enough to displace anyone
             _close_position(weakest, today, "displaced_by_stronger", current_prices)
             open_ids.discard(weakest["theme_id"])
 
-        raw_tickers = snap.get("representative_tickers", [])[:MAX_TICKERS_PER_THEME]
+        raw_tickers = cand.get("representative_tickers", [])[:MAX_TICKERS_PER_THEME]
         entry_prices = {t: current_prices[t] for t in raw_tickers if t in current_prices}
         if not entry_prices:
-            print(f"  SKIP  {snap['name']} — no price data for {raw_tickers}")
+            print(f"  SKIP  {cand['name']} — no price data for {raw_tickers}")
             continue
 
         new_pos = {
-            "theme_id":              snap["id"],
-            "theme_name":            snap["name"],
+            "theme_id":              cand["id"],
+            "theme_name":            cand["name"],
             "direction":             "Bullish",
             "entry_date":            str(today),
             "tickers":               list(entry_prices),
             "entry_prices":          entry_prices,
-            "conviction_at_entry":   snap["conviction_score"],
+            "conviction_at_entry":   cand["conviction_score"],
             "spy_price_at_entry":    current_prices.get(SPY),
             "status":                "open",
             "exit_date":             None,
@@ -228,8 +235,8 @@ def update_portfolio(snapshots: list[dict], today: date):
             "excess_return":         None,
         }
         positions.append(new_pos)
-        open_ids.add(snap["id"])
-        print(f"  OPEN  {snap['name']}  conv={snap['conviction_score']}  "
+        open_ids.add(cand["id"])
+        print(f"  OPEN  {cand['name']}  conv={cand['conviction_score']}  "
               f"tickers={list(entry_prices)}")
 
     # ── 4b. Theme lifecycle history ───────────────────────────────────────────
@@ -253,7 +260,13 @@ def update_portfolio(snapshots: list[dict], today: date):
         spy_cum  *= 1 + r["spy_return"]
 
     closed = [p for p in positions if p["status"] == "closed" and p["realized_return"] is not None]
-    wins   = [p for p in closed if (p.get("excess_return") or p["realized_return"]) > 0]
+    # Win = beat SPY (excess_return > 0). Fall back to absolute return only if
+    # excess wasn't computable. Note: Python's `or` treats 0 as falsy, so use an
+    # explicit None check to avoid mis-attributing a break-even-vs-SPY position.
+    def _win_metric(p):
+        e = p.get("excess_return")
+        return e if e is not None else p["realized_return"]
+    wins = [p for p in closed if _win_metric(p) > 0]
 
     data.update(
         positions=positions,
