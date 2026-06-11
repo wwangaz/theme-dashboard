@@ -2,13 +2,13 @@
   "ai-infrastructure-datacenter-boom": {
     "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-09",
+    "last_active": "2026-06-11",
     "representative_tickers": [
-      "MSFT",
-      "GOOGL",
-      "META",
-      "AMZN",
-      "CRWV"
+      "NVDA",
+      "AMD",
+      "AVGO",
+      "TSM",
+      "ASML"
     ]
   },
   "semiconductor-geopolitics-china-trade": {
@@ -50,37 +50,37 @@
   "power-grid-energy-ai-demand": {
     "name": "Power Grid Stress & Energy Stocks Under AI Demand Pressure",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-10",
+    "last_active": "2026-06-11",
     "representative_tickers": [
-      "VST",
-      "NRG",
       "CEG",
+      "VST",
       "NEE",
-      "ETR"
+      "NRG",
+      "FSLR"
     ]
   },
   "space-economy-commercial-launch": {
     "name": "Commercial Space Economy & Satellite Communications Momentum",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-10",
+    "last_active": "2026-06-11",
     "representative_tickers": [
       "RKLB",
       "LUNR",
       "ASTS",
-      "UFO",
-      "ARKX"
+      "SPCE",
+      "BA"
     ]
   },
   "precious-metals-mining-dividends": {
     "name": "Precious Metals Mining — Silver Surge & Gold Dividend Play",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-04",
+    "last_active": "2026-06-11",
     "representative_tickers": [
-      "GDX",
-      "AAAU",
+      "FNV",
       "AEM",
-      "ASM",
-      "BVN"
+      "HBM",
+      "GLD",
+      "RGLD"
     ]
   },
   "crypto-digital-assets-geopolitical-watch": {
@@ -119,12 +119,13 @@
   "nuclear-clean-energy": {
     "name": "Nuclear & Advanced Clean Energy Renaissance",
     "first_seen": "2026-05-14",
-    "last_active": "2026-05-25",
+    "last_active": "2026-06-11",
     "representative_tickers": [
-      "CEG",
-      "VST",
-      "NEE",
-      "NRG"
+      "CCJ",
+      "URA",
+      "NXE",
+      "LEU",
+      "UUUU"
     ]
   },
   "ev-automotive-supply-chain": {
@@ -160,13 +161,13 @@
   "healthcare-biotech-mixed": {
     "name": "Healthcare & Biotech Divergence",
     "first_seen": "2026-05-14",
-    "last_active": "2026-06-10",
+    "last_active": "2026-06-11",
     "representative_tickers": [
-      "MOH",
-      "BKD",
       "ISRG",
+      "RMD",
+      "AMGN",
       "DXCM",
-      "ALT"
+      "TEM"
     ]
   },
   "energy-oil-gas-cycle": {
@@ -215,7 +216,7 @@
   "big-tech-ai-platforms": {
     "name": "Big Tech AI Platform Divergence",
     "first_seen": "2026-05-18",
-    "last_active": "2026-06-08",
+    "last_active": "2026-06-11",
     "representative_tickers": [
       "MSFT",
       "GOOGL",
@@ -249,13 +250,13 @@
   "consumer-retail-stress": {
     "name": "Consumer & Retail Under Pressure",
     "first_seen": "2026-05-19",
-    "last_active": "2026-06-10",
+    "last_active": "2026-06-11",
     "representative_tickers": [
-      "CBRL",
-      "MAT",
-      "DPZ",
-      "JILL",
-      "PG"
+      "KO",
+      "DOL",
+      "LULU",
+      "SN",
+      "CHWY"
     ]
   },
   "fintech-payments-platforms": {
@@ -297,11 +298,13 @@
   "logistics-freight-spinoffs": {
     "name": "Logistics & Freight Restructuring Plays",
     "first_seen": "2026-05-25",
-    "last_active": "2026-05-25",
+    "last_active": "2026-06-11",
     "representative_tickers": [
-      "FDX",
-      "RXO",
-      "GSL"
+      "MANH",
+      "DSG",
+      "CLS",
+      "QLYS",
+      "DOMO"
     ]
   },
   "geopolitical-risk-commodity-repricing": {
@@ -467,7 +470,7 @@
   "quantum-computing-emerging-tech": {
     "name": "Quantum Computing Emerging Tech Momentum",
     "first_seen": "2026-06-10",
-    "last_active": "2026-06-10",
+    "last_active": "2026-06-11",
     "representative_tickers": [
       "IONQ",
       "RGTI",

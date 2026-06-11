@@ -1,1049 +1,1022 @@
 {
-  "generated_at": "2026-06-10T23:38:08.984488+08:00",
+  "generated_at": "2026-06-11T23:58:45.724084+08:00",
   "macro_context": {
     "yields": {
       "2Y": 0.0363,
-      "10Y": 0.0453
+      "10Y": 0.0452
     },
     "changes": {
-      "2Y": -0.0,
-      "10Y": -0.0
+      "2Y": -0.0001,
+      "10Y": -0.0003
     },
-    "spread_2_10": 0.009,
+    "spread_2_10": 0.0089,
     "risk_label": "rates_stable",
-    "date": "2026-06-10"
+    "date": "2026-06-11"
   },
   "themes": [
     {
-      "id": "geopolitical-risk-commodity-repricing",
-      "name": "Iran Peace Talks & Commodity/Equity Repricing",
-      "one_line_summary": "OPEC output hit a 25-year low as US-Iran airstrikes tightened supply, driving crude volatility and pressuring silver and gold ahead of CPI",
-      "representative_tickers": [
-        "USO",
-        "XLE",
-        "CL=F",
-        "BNO"
-      ],
-      "first_seen": "2026-06-10",
-      "direction": "Bearish",
-      "conviction_score": 8,
-      "conviction_delta": null,
-      "stage": "Narrative Breakdown",
-      "stage_confidence": 7,
-      "stage_reasoning": "The signals point strongly away from a peace/repricing narrative and toward active conflict and market disruption. Headlines reference U.S.-Iran strikes, OPEC output at multi-decade lows due to a U.S. blockade on Iran, gold falling post-strikes, and broad market selloffs attributed partly to Iran tensions. There is no evidence of peace talk momentum or positive commodity/equity repricing from de-escalation. Instead, the theme of 'Iran Peace Talks' appears challenged by active military engagement, making Narrative Breakdown the most appropriate classification. Signal count is low (4) with zero price signals supporting a peace premium, and the qualitative tone is decidedly negative for the peace thesis.",
-      "conviction_basis": "All signals as of June 10, 2026 indicate active U.S.-Iran military strikes rather than peace talks, with OPEC output at multi-decade lows, equity markets declining due to Iran-related shocks, and gold falling post-strike — collectively pointing to escalation, not de-escalation, making a near-term peace-driven commodity/equity repricing theme highly unlikely.",
-      "bull_evidence": [
-        {
-          "headline": "Gold prices today, Wednesday, June 10: Prices falling after U.S., Iran strikes and ahead of CPI report",
-          "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-wednesday-june-10-prices-falling-after-us-iran-strikes-and-ahead-of-cpi-report-104555976.html"
-        },
-        {
-          "headline": "World markets walk a tightrope between AI stocks and oil shocks",
-          "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/markets/articles/world-markets-walk-tightrope-between-144305301.html"
-        },
-        {
-          "headline": "OPEC oil output lowest since at least 2000 as US blockade squeezes Iran, Reuters survey shows",
-          "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/sectors/energy/articles/opec-oil-output-lowest-since-143907047.html"
-        }
-      ],
-      "bear_evidence": [
-        {
-          "headline": "South Korea And Iran Crash The Stock Market",
-          "source": "Seeking Alpha",
-          "url": "https://seekingalpha.com/article/4913753-south-korea-and-iran-crash-the-stock-market?source=feed_all_articles"
-        },
-        {
-          "headline": "OPEC oil output lowest since at least 2000 as US blockade squeezes Iran, Reuters survey shows",
-          "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/sectors/energy/articles/opec-oil-output-lowest-since-143907047.html"
-        },
-        {
-          "headline": "World markets walk a tightrope between AI stocks and oil shocks",
-          "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/markets/articles/world-markets-walk-tightrope-between-144305301.html"
-        }
-      ],
-      "bull_case": "A successful Iran peace deal or sanctions relief could unlock an estimated 1-2 mb/d of Iranian crude supply back into global markets, materially compressing Brent and WTI prices and providing an inflation tailwind for rate-sensitive equities. OPEC output already sitting at its lowest level since at least 2000 per Reuters' June 10 survey means any diplomatic breakthrough would rebalance a structurally tight market faster than consensus expects. Risk assets, particularly emerging market equities and energy-importing economies like South Korea, could see sharp relief rallies as geopolitical risk premiums unwind.",
-      "bear_case": "The June 10 U.S.-Iran strikes signal that diplomacy remains distant, and with OPEC output at multi-decade lows, any further escalation risks a supply shock that sends crude prices spiking and triggers stagflationary conditions globally. Gold's intraday decline post-strikes—rather than a sustained safe-haven bid—suggests markets are not yet pricing a prolonged conflict premium, leaving equities vulnerable to a repricing if hostilities intensify. The Seeking Alpha report of a South Korea-linked market crash on June 10 illustrates how rapidly Iran-related shocks can transmit into broader equity risk-off episodes.",
-      "current_drivers": "The primary driver is the direct military exchange between the U.S. and Iran as of June 10, 2026, which has simultaneously depressed OPEC aggregate output to post-2000 lows while injecting acute geopolitical volatility into commodity and equity markets. Global markets are caught in a tug-of-war between AI-driven tech optimism and energy supply shock fears, creating elevated cross-asset dispersion.",
-      "key_risks": [
-        "Escalation of U.S.-Iran military strikes into a broader regional conflict, closing the Strait of Hormuz and triggering an acute oil supply shock that overwhelms any diplomatic scenario",
-        "OPEC+ compensatory output increases failing to materialize or being physically constrained, keeping supply structurally tight even if Iran tensions partially de-escalate",
-        "Macro feedback loop where sustained high energy prices reignite CPI (June 10 CPI report pending), forcing the Fed to maintain restrictive policy longer and compressing equity multiples across risk assets"
-      ],
-      "short_term_outlook": "1-4 week view: The combination of active U.S.-Iran strikes and a pending CPI print as of June 10 creates a highly binary near-term setup. Oil prices face upside pressure given OPEC's multi-decade output lows, while equities—particularly in South Korea and other energy-importing markets—remain vulnerable to further sell-offs. Gold's muted reaction post-strikes suggests positioning is not yet extreme, but any Strait of Hormuz disruption news would rapidly change that calculus. Volatility is likely to remain elevated with a bearish lean.",
-      "mid_term_outlook": "1-6 month view: Peace talk momentum, if it materializes, would be the single largest re-rating catalyst for energy and EM equities over this horizon. However, the base case given active military strikes is that formal negotiations are at least 2-4 months away at minimum. Brent is likely to remain structurally elevated above $90-100 absent a ceasefire, pressuring consumer discretionary and transport sectors while benefiting integrated oil majors. Watch for backchannel diplomatic signals via Oman or Qatar as leading indicators of de-escalation.",
-      "long_term_outlook": "1-3 year structural view: Full Iranian sanctions relief—if achieved—could add 1.5-2.0 mb/d to global supply, structurally capping oil price upside and accelerating energy transition economics by reducing fossil fuel scarcity premiums. This would be bearish for high-cost producers (Canadian oil sands, U.S. shale breakevens above $65) and bullish for energy-intensive industries and EM importers. Conversely, a prolonged conflict scenario entrenches OPEC's pricing power, sustains capex cycles for Gulf NOCs, and delays the energy transition by reinforcing energy security narratives.",
-      "signal_count": 4,
-      "timeline": [
-        {
-          "date": "2026-06-10",
-          "event": "U.S. and Iran conduct mutual strikes; gold prices fall intraday as markets digest the news ahead of CPI report"
-        },
-        {
-          "date": "2026-06-10",
-          "event": "Reuters survey reveals OPEC oil output at its lowest level since at least 2000, driven by U.S. blockade squeezing Iranian production"
-        },
-        {
-          "date": "2026-06-10",
-          "event": "South Korea equity market crashes in session linked to Iran-related geopolitical shock, per Seeking Alpha report"
-        },
-        {
-          "date": "2026-06-10",
-          "event": "World markets enter tightrope dynamic between AI equity momentum and oil supply shock fears, per Yahoo Finance markets overview"
-        },
-        {
-          "date": "2026-06-10",
-          "event": "U.S. CPI report due; market participants watch closely for energy pass-through inflation from Iran conflict-related oil price moves"
-        }
-      ]
-    },
-    {
-      "id": "semiconductor-broad-selloff",
-      "name": "Semiconductor Sector Correction",
-      "one_line_summary": "AI chip and infrastructure stocks sold off sharply on CPI inflation surprise, Supermicro dilution, and AI capex concerns despite sustained investment narrative",
+      "id": "ai-infrastructure-datacenter-boom",
+      "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
+      "one_line_summary": "AI demand drives massive capex across chips, cloud infrastructure, and GPU services while Oracle's debt-funded spending spooks investors",
       "representative_tickers": [
         "NVDA",
         "AMD",
         "AVGO",
-        "QCOM",
-        "TSM"
+        "TSM",
+        "ASML"
       ],
-      "first_seen": "2026-06-10",
-      "direction": "Bearish",
-      "conviction_score": 6,
+      "first_seen": "2026-06-11",
+      "direction": "Bullish",
+      "conviction_score": 7,
       "conviction_delta": null,
-      "stage": "Narrative Breakdown",
-      "stage_confidence": 6,
-      "stage_reasoning": "The semiconductor sector is exhibiting clear price weakness across the board, with broad-based declines in key names: QCOM -5.6%, AVGO -4.8%, AMD -4.5%, ARM -4.5%, TSM -3.4%, NVDA -2.7%. Notably, volume ratios are uniformly low (0.25x–0.5x of 20-day average), suggesting this is a low-conviction, orderly pullback rather than a panic capitulation — consistent with an early-to-mid Narrative Breakdown phase rather than a full-blown sell-off. Supporting signals include Supermicro tumbling on a $7B equity dilution raise, which challenges the AI infrastructure investment narrative. Media coverage is shifting from purely bullish AI hype (Oracle earnings scrutiny, 'consequences of AI success' framing) to questioning whether valuations can be justified by fundamentals. The thesis is being challenged but not yet abandoned — confidence is moderate (6/10) as the signal count is relatively modest (19 signals) and volume is subdued, indicating this may be an early stage of narrative breakdown rather than a full unwind.",
-      "conviction_basis": "Broad-based single-day declines across core semiconductor names (QCOM -5.6%, AVGO -4.8%, AMD -4.5%, ARM -4.5%, TSM -3.4%, NVDA -2.7%) on June 10 confirm sector-wide selling pressure, amplified by SMCI's dilutive $7B equity raise and macro headwinds from CPI/Trump warnings; however, below-average volume (0.25x–0.5x 20-day avg) across all names suggests the move lacks strong institutional conviction, limiting the correction signal to moderate rather than high severity.",
-      "bull_evidence": [
-        {
-          "headline": "Trillions Invested In AI And The Consequences Of Success",
-          "source": "Seeking Alpha",
-          "url": "https://seekingalpha.com/article/4913755-trillions-invested-in-ai-and-consequences-of-success?source=feed_all_articles"
-        },
-        {
-          "headline": "8-K - AMAZON COM INC (0001018724) - Entry into Material Definitive Agreement (new financing/investment activity)",
-          "source": "SEC EDGAR 8-K",
-          "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926072140/0001104659-26-072140-index.htm"
-        },
-        {
-          "headline": "Oracle's stock has surged on AI hype. Now it has to deliver the earnings to match.",
-          "source": "MarketWatch",
-          "url": "https://www.marketwatch.com/story/oracles-stock-has-surged-on-ai-hype-now-it-has-to-deliver-the-earnings-to-match-3b56592b?mod=mw_rss_topstories"
-        }
-      ],
-      "bear_evidence": [
-        {
-          "headline": "QCOM closed at $194.00 (-5.6%), volume ratio 0.3x",
-          "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/quote/QCOM"
-        },
-        {
-          "headline": "AVGO closed at $373.39 (-4.8%), volume ratio 0.5x",
-          "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/quote/AVGO"
-        },
-        {
-          "headline": "Supermicro Computer stock sinks on $7 billion equity raise",
-          "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/markets/stocks/article/supermicro-computer-stock-sinks-on-7-billion-equity-raise-124041144.html"
-        }
-      ],
-      "bull_case": "Despite the single-day selloff, below-average volume ratios across NVDA (0.33x), AMD (0.33x), and QCOM (0.25x) suggest the move lacks broad conviction, pointing to a potential exhaustion selloff rather than a fundamental breakdown. Hyperscaler capex commitments remain intact — Amazon's June 10 8-K filing disclosed entry into new material financial obligations, signaling continued infrastructure investment. Trillions in committed AI spending (per Seeking Alpha) provide a long-duration demand floor for semiconductor content.",
-      "bear_case": "Supermicro's $7 billion equity raise triggered a sharp stock decline, raising concerns about dilutive financing cycles becoming a sector-wide pattern as AI infrastructure costs escalate beyond organic cash flow generation. Broad-based semiconductor weakness — QCOM -5.6%, AVGO -4.8%, AMD -4.5%, TSM -3.4%, NVDA -2.7% — on the same session indicates sector-level de-risking rather than stock-specific idiosyncratic pressure. Macro headwinds compound the technical breakdown: Trump policy warnings and a CPI print rattled the broader market (Dow fell), reducing risk appetite for high-multiple chip names.",
-      "current_drivers": "The immediate catalyst is Supermicro's $7 billion equity raise, which spooked investors about capital intensity and dilution risk across AI infrastructure plays. Simultaneously, macro uncertainty from Trump tariff warnings and CPI inflation data is compressing multiples across the semiconductor complex.",
-      "key_risks": [
-        "Valuation re-rating risk: Oracle's upcoming Q4 earnings must validate AI-driven revenue growth — failure to deliver could trigger a broader reassessment of AI capex ROI narratives supporting semiconductor demand",
-        "Dilution/financing contagion: Supermicro's $7B equity raise may signal that AI infrastructure players are burning cash faster than anticipated, potentially pressuring SMCI peers and supply-chain names like AVGO and NVDA on margin concerns",
-        "Macro policy shock: Renewed Trump tariff threats and sticky CPI inflation could accelerate multiple compression in semiconductor stocks, which remain elevated on forward earnings estimates tied to AI spending cycles"
-      ],
-      "short_term_outlook": "The 1–4 week outlook is bearish. Sector-wide declines ranging from -1.6% (INTC) to -5.6% (QCOM) on June 10 with uniformly low volume ratios (0.25x–0.52x) suggest distribution rather than panic, implying further downside as institutional sellers work through positions. NVDA ($202.47) and AMD ($454.00) remain technically vulnerable if AI capex sentiment deteriorates further ahead of Oracle's earnings print.",
-      "mid_term_outlook": "Over 1–6 months, the correction thesis hinges on whether hyperscaler earnings and guidance (Amazon, Microsoft, Google) confirm or disappoint on AI-related infrastructure spend. ASML at $1,748 with the highest relative volume (0.77x) warrants monitoring as a leading indicator for equipment order cycles. A sustained narrative breakdown — where AI investment fails to translate into accelerating semiconductor revenue — could push AVGO and QCOM materially lower from current levels.",
-      "long_term_outlook": "Structurally, the 1–3 year view remains contested but not broken. Trillions in committed AI infrastructure spending (hyperscalers, sovereign AI projects) underpins secular demand for advanced logic, HBM memory, and custom silicon, benefiting TSM, NVDA, and AVGO long-term. However, the Supermicro financing episode illustrates a key structural risk: if AI monetization lags capex deployment, the sector faces a prolonged digestion period with margin pressure and elevated equity dilution across the supply chain.",
-      "signal_count": 19,
-      "timeline": [
-        {
-          "date": "2026-06-10",
-          "event": "Supermicro stock sinks on announcement of $7 billion equity raise to fund AI server orders"
-        },
-        {
-          "date": "2026-06-10",
-          "event": "QCOM leads semiconductor selloff at -5.6%; AVGO -4.8%, AMD -4.5%, TSM -3.4%, NVDA -2.7% in broad sector decline"
-        },
-        {
-          "date": "2026-06-10",
-          "event": "Amazon files 8-K disclosing new material financial obligation, signaling continued but debt-funded AI infrastructure expansion"
-        },
-        {
-          "date": "2026-06-10",
-          "event": "Dow Jones falls amid Trump policy warning and CPI inflation print, adding macro headwind to semiconductor de-rating"
-        },
-        {
-          "date": "2026-06-10",
-          "event": "Oracle faces earnings credibility test: stock surged on AI hype but must now deliver data-center build-out financials to justify valuation"
-        },
-        {
-          "date": "2026-06-10",
-          "event": "Seeking Alpha analysis flags systemic risk from trillions invested in AI — consequences of success (overcapacity, ROI pressure) may weigh on chip demand outlook"
-        }
-      ]
-    },
-    {
-      "id": "inflation-rates-macro-pressure",
-      "name": "Hotter-Than-Expected Inflation & Rising Rate Pressure",
-      "one_line_summary": "May CPI hit a 3-year high, reinforcing the Fed's rate-hold stance and pressuring gold, dollar, and risk assets while boosting Social Security COLA expectations",
-      "representative_tickers": [
-        "GLD",
-        "SLV",
-        "TLT",
-        "UUP",
-        "DXY"
-      ],
-      "first_seen": "2026-06-10",
-      "direction": "Bearish",
-      "conviction_score": 6,
-      "conviction_delta": null,
-      "stage": "Momentum Expansion",
+      "stage": "Crowded Euphoria",
       "stage_confidence": 7,
-      "stage_reasoning": "The signal cluster around June 10, 2026 shows broad mainstream media coverage of a hot CPI print (inflation hitting highest level in 3 years, COLA projections of 4.7% for 2027), with the Fed holding rates and market reactions visible across multiple asset classes (gold down ~3%, silver falling, dollar moving). Coverage spans Yahoo Finance, MarketWatch, and Seeking Alpha, indicating wide dissemination beyond specialist outlets. The narrative is well-established and driving cross-asset price action, though the Fed's 'hold' posture rather than active hiking suggests the rate-hike fear premium hasn't reached peak euphoria. No price signals were tagged directly to this theme, but the macro narrative is clearly influencing markets broadly. The cautionary note from a Barclays strategist about investor euphoria adds a slight overlay of late-cycle concern, but the inflation/rate pressure theme itself remains in active, broad-coverage expansion rather than breakdown or crowded euphoria.",
-      "conviction_basis": "May CPI came in hotter than expected, pushing inflation to a 3-year high and reinforcing a prolonged Fed hold rather than cuts, which is broadly bearish for risk assets and rate-sensitive sectors. However, the absence of an imminent rate hike (dollar easing, Fed on hold) moderates the acute rate-pressure narrative, capping conviction at moderate levels.",
+      "stage_reasoning": "The AI Infrastructure & Data Center CapEx theme displays several hallmarks of Crowded Euphoria. Coverage is extremely broad and pervasive — mainstream financial media (Yahoo Finance), retail-oriented platforms (Seeking Alpha), and earnings call transcripts all simultaneously covering the same names (NVDA, AMD, AVGO, ASML, Oracle, CoreWeave, Super Micro). Analyst upgrade language is present ('The Pullback Is A Gift,' 'Rating Upgrade,' 'AI Story Just Got Even Bigger'), characteristic of peak-cycle enthusiasm. The $12B Series B raise for a Bezos AI startup signals late-stage venture capital flooding in. Oracle's slide on 'hefty AI spending' is a subtle early crack — investors spooked by the magnitude of capex commitments rather than cheering them, which hints at nascent thesis questioning. However, volume ratios are conspicuously low (0.2x–0.7x vs. 20-day averages) across all price signals despite positive price action, suggesting conviction is not backing the moves — a divergence often seen when momentum is thinning at the top. Price gains are moderate (+0.4% to +5.9%), not parabolic, which prevents a higher confidence score. The combination of peak narrative saturation, institutional-scale capital deployments, retail FOMO framing, and low-volume price appreciation places this firmly in Crowded Euphoria, with early warning signs of potential Narrative Breakdown beginning to emerge.",
+      "conviction_basis": "The preponderance of evidence — a $12B AI startup raise, SMCI's $39B backlog, broad semiconductor price strength (ARM +5.9%, ASML +4.8%, AMD +3.0%), and Oracle's explicit AI capex commitment — confirms the AI infrastructure spending cycle remains intact and accelerating; the primary risk is that aggressive debt-funded capex (Oracle) and market skepticism around near-term returns temper near-term sentiment but do not alter the structural bull case.",
       "bull_evidence": [
         {
-          "headline": "Social Security's COLA could be 4.7% in 2027 as inflation hits the highest level in 3 years",
-          "source": "MarketWatch",
-          "url": "https://www.marketwatch.com/story/social-securitys-cola-could-be-4-7-in-2027-as-inflation-hits-the-highest-level-in-3-years-e5a87320?mod=mw_rss_topstories",
-          "headline_zh": "Social Security的COLA预期在2027年达到4.7%，因通胀达三年最高水平"
+          "headline": "Jeff Bezos Prometheus AI startup raises $12 billion Series B",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/sectors/technology/articles/jeff-bezos-prometheus-ai-startup-153147110.html",
+          "headline_zh": "Jeff Bezos Prometheus AI初创融资120亿美元B轮"
         },
         {
-          "headline": "Hot May inflation reading reinforces Fed's path to hold interest rates next week",
-          "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/economy/article/hot-may-inflation-reading-reinforces-feds-path-to-hold-interest-rates-next-week-130456665.html",
-          "headline_zh": "5月热通胀数据强化美联储下周维持利率的路径"
+          "headline": "Super Micro: The $7B Raise Tells You What The $39B Backlog Really Costs",
+          "source": "Seeking Alpha",
+          "url": "https://seekingalpha.com/article/4914250-super-micro-the-7b-raise-tells-you-what-the-39b-backlog-really-costs?source=feed_all_articles",
+          "headline_zh": "Super Micro：70亿美元融资揭示390亿美元积压的真实成本"
         },
         {
-          "headline": "Gold extends losses to nearly 3% after crucial inflation report",
+          "headline": "ARM closed at $325.60 (+5.9%), ASML +4.8%, INTC +4.9% — broad semiconductor sector rally with elevated relative volume",
           "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/markets/article/gold-extends-losses-to-nearly-3-after-crucial-inflation-report-113341389.html",
-          "headline_zh": "关键通胀报告后，黄金损失扩大至近3%"
+          "url": "https://finance.yahoo.com/quote/ARM",
+          "headline_zh": "ARM收于$325.60(+5.9%)、ASML +4.8%、INTC +4.9%——广泛半导体行业上涨伴随相对成交量升高"
         }
       ],
       "bear_evidence": [
         {
-          "headline": "Dollar eases as US inflation data keeps rate hike at bay",
+          "headline": "Oracle shares slide as hefty AI spending, debt plans spook investors",
           "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/news/dollar-steadies-following-us-strikes-005107567.html",
-          "headline_zh": "美国通胀数据保持加息在海湾，美元走弱"
+          "url": "https://finance.yahoo.com/markets/stocks/articles/oracle-shares-slide-hefty-ai-152535544.html",
+          "headline_zh": "Oracle股价因巨额AI支出和债务计划令投资者担忧而下滑"
         },
         {
-          "headline": "How exploding investor euphoria and leveraged ETFs turned one stock-market bull cautious",
-          "source": "MarketWatch",
-          "url": "https://www.marketwatch.com/story/why-exploding-retail-euphoria-and-leveraged-etfs-have-scared-one-stock-market-bull-into-turning-cautious-bdd2d4f2?mod=mw_rss_topstories",
-          "headline_zh": "爆炸性的投资者乐观情绪和杠杆ETF如何让一位股市看涨者转向谨慎"
-        },
-        {
-          "headline": "South Korea And Iran Crash The Stock Market",
+          "headline": "Oracle: Why I'm Not Buying The Dip",
           "source": "Seeking Alpha",
-          "url": "https://seekingalpha.com/article/4913753-south-korea-and-iran-crash-the-stock-market?source=feed_all_articles",
-          "headline_zh": "韩国和伊朗冲击股票市场"
+          "url": "https://seekingalpha.com/article/4914235-oracle-why-im-not-buying-the-dip?source=feed_all_articles",
+          "headline_zh": "Oracle：为何我不在跌幅处抄底"
+        },
+        {
+          "headline": "NVDA closed at $201.13 (+0.4%), volume ratio 0.3x — muted volume suggests conviction lacking in flagship AI chip name",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/quote/NVDA",
+          "headline_zh": "NVDA收于$201.13(+0.4%)，成交量比例0.3倍——旗舰AI芯片标的成交量低迷表明确信度欠缺"
         }
       ],
-      "bull_case": "If the Fed's confirmed 'hold' stance successfully anchors rate expectations, equities could stabilize as markets price in a pause rather than further hikes. A potential de-escalation in U.S.-Iran geopolitical tensions could reduce energy price pressures, offering some relief to the inflation trajectory. Certain sectors—financials and short-duration assets—may benefit from a sustained higher-rate environment as net interest margins expand.",
-      "bear_case": "The May CPI print came in hotter than expected, pushing the projected 2027 Social Security COLA to 4.7%—the highest inflation reading in three years—signaling that price pressures remain entrenched and the Fed's path to cuts is materially delayed. A Barclays strategist flagged exploding retail euphoria and leveraged ETF positioning as reasons to turn cautious, warning that frothy sentiment could amplify a drawdown if rate-sensitive assets reprice. Gold hitting a new 2026 low and silver falling sharply ahead of the CPI report reflect a market pricing out near-term easing, with risk assets vulnerable to multiple compression in a prolonged higher-for-longer regime.",
-      "current_drivers": "The June 10, 2026 CPI report confirmed inflation at a 3-year high, cementing the Fed's rate-hold decision for the upcoming meeting and pushing back rate-cut expectations. Concurrent U.S.-Iran military strikes are injecting geopolitical risk premium into energy markets, compounding inflationary pressures and driving cross-asset volatility.",
+      "bull_case": "Demand signals remain structurally intact: NVIDIA's AI revenue trajectory is described as 'parabolic,' ARM Holdings surged +5.9% on June 11 reflecting strong royalty and licensing tailwinds from AI chip design proliferation, and Jeff Bezos's Prometheus AI startup closing a $12 billion Series B underscores that hyperscaler-adjacent capital formation is still accelerating. Super Micro's $39 billion backlog — funded via a $7 billion raise — confirms physical infrastructure buildout has years of contractually committed runway. ASML's +4.8% single-day move and Intel's +4.9% gain suggest the semiconductor supply chain is repricing upward to meet sustained capex demand.",
+      "bear_case": "Oracle's post-Q4 2026 earnings sell-off — driven by investor concern over 'hefty AI spending and debt plans' — signals that the market is beginning to penalize indiscriminate capex expansion rather than reward it, a classic late-cycle crowded-trade dynamic. Super Micro's need to raise $7 billion to fund a $39 billion backlog highlights execution and balance-sheet risk; the gap between bookings and cash generation is widening. Multiple Seeking Alpha contributors are explicitly declining to 'buy the dip' in Oracle, suggesting institutional conviction is fragmenting even as retail enthusiasm remains elevated.",
+      "current_drivers": "The immediate catalyst set is Oracle's Q4 2026 earnings call (June 10) revealing aggressive data center spending commitments alongside rising debt, juxtaposed with the $12 billion Prometheus AI Series B funding round signaling that private capital continues to pour into AI infrastructure at scale. Across the semiconductor supply chain — NVDA, AMD, AVGO, TSM, ASML — broad-based single-day gains on below-average volume (most names at 0.2x–0.4x 20-day average) suggest price appreciation is being driven by momentum and re-rating rather than fresh institutional accumulation.",
       "key_risks": [
-        "Inflation re-acceleration driven by energy price spikes tied to U.S.-Iran conflict could force the Fed to resume rate hikes, triggering a more severe equity de-rating than currently priced.",
-        "Unwinding of leveraged ETF and retail investor euphoria—highlighted by Barclays—could amplify downside moves in a rate-sensitive market already under pressure.",
-        "South Korea macro deterioration and broader emerging market stress, combined with a stronger-for-longer dollar, could tighten global financial conditions and feed back into U.S. credit markets."
+        "Capex credibility risk: Oracle's share slide post-earnings illustrates that investors are losing tolerance for open-ended AI spending without clear near-term ROI, a sentiment that could spread to other hyperscalers and infrastructure vendors.",
+        "Leverage and liquidity risk: Super Micro's $7 billion equity raise to service a $39 billion backlog exposes the sector to financing conditions; any tightening in credit markets or equity appetite could create a funding gap across capital-intensive players.",
+        "Volume divergence / distribution risk: Across NVDA, AVGO, QCOM, and ARM, price gains are occurring on volume ratios of 0.2x–0.4x the 20-day average, suggesting institutional distribution into retail-driven momentum — a hallmark of late-stage euphoria rather than sustainable accumulation."
       ],
-      "short_term_outlook": "Over the next 1–4 weeks, markets are likely to remain under pressure as the hot May CPI print and the Fed's confirmed hold remove near-term rate-cut catalysts. Gold and silver weakness, equity caution from institutional strategists, and geopolitical noise from U.S.-Iran strikes create a risk-off backdrop. Expect elevated volatility with a bearish bias.",
-      "mid_term_outlook": "Over 1–6 months, the higher-for-longer rate narrative is likely to persist given inflation at a 3-year high and no clear disinflationary catalyst on the horizon. Rate-sensitive sectors (real estate, utilities, long-duration tech) face ongoing multiple compression. The Fed is unlikely to pivot before sustained evidence of cooling, making any equity rally fragile and likely led by defensives or short-duration value.",
-      "long_term_outlook": "Structurally, if inflation remains sticky above 3% through 2026–2027—as suggested by the 4.7% Social Security COLA projection—the era of zero or near-zero rates is firmly over. Portfolios will need to rebalance toward real assets, TIPS, and inflation-beneficiary sectors. The leveraged, multiple-expansion-driven bull market of the 2010s is unlikely to return; earnings quality and pricing power will be the primary long-term differentiators.",
-      "signal_count": 10,
+      "short_term_outlook": "Over the next 1–4 weeks, the theme is likely to remain headline-driven and volatile. Oracle's post-earnings dip will be closely watched as a leading indicator of whether the market begins repricing capex-heavy balance sheets. NVIDIA and ARM have near-term upside optionality given analyst upgrade activity, but low-volume price advances increase the risk of sharp reversals on any negative data point. Net bias: cautiously bullish with elevated tail risk.",
+      "mid_term_outlook": "Over 1–6 months, the bifurcation between capex spenders (Oracle, Super Micro) and capex enablers (NVDA, AVGO, ASML, TSM) is likely to widen. Companies with tangible revenue conversion from AI infrastructure — particularly NVIDIA's data center segment and Broadcom's custom ASIC business — should sustain premium multiples, while those with balance-sheet-funded buildouts face potential multiple compression if FCF conversion disappoints. The Prometheus $12 billion Series B signals private market funding remains open, supporting near-term order flow for hardware vendors.",
+      "long_term_outlook": "Structurally, the AI infrastructure capex cycle has 2–4 years of runway based on hyperscaler guidance, sovereign AI initiatives, and private model training demand. However, the current 'Crowded Euphoria' stage implies that a significant portion of this structural growth is already priced into leading names. Long-term alpha is more likely to accrue to second-derivative beneficiaries — power infrastructure, cooling, optical networking, and advanced packaging — than to front-line GPU vendors already trading at peak multiples. ASML's EUV monopoly and TSM's advanced node dominance offer more defensible long-term positions than pure-play AI chip names at current valuations.",
+      "signal_count": 18,
       "timeline": [
         {
           "date": "2026-06-10",
-          "event": "Hot May CPI report released, showing inflation at highest level in 3 years; 2027 Social Security COLA projected at 4.7% by Senior Citizens League",
-          "event_zh": "5月热CPI报告发布，显示通胀达三年新高；高级公民联盟预期2027年Social Security COLA为4.7%"
+          "event": "Oracle Q4 2026 earnings call held; CEO Michael D. Sicilia and CFO Hilary Maxson disclose aggressive AI data center spending and debt financing plans, triggering a post-market sell-off.",
+          "event_zh": "Oracle Q4 2026财报电话会议召开；首席执行官Michael D. Sicilia和首席财务官Hilary Maxson披露积极的AI数据中心支出和债务融资计划，引发盘后抛售。"
         },
         {
-          "date": "2026-06-10",
-          "event": "Fed confirmed on hold for upcoming meeting following hot inflation print; rate hike taken off the table near-term",
-          "event_zh": "美联储在热通胀数据后确认维持现状，近期加息已从日程中移除"
+          "date": "2026-06-11",
+          "event": "Oracle shares slide materially as investors react negatively to capex and leverage commitments disclosed on the Q4 call; Seeking Alpha publishes 'Why I'm Not Buying the Dip' bear case.",
+          "event_zh": "Oracle股价在投资者对财报电话披露的资本支出和杠杆承诺的负面反应中大幅下滑；Seeking Alpha发表'我为何不抄底'看空论点。"
         },
         {
-          "date": "2026-06-10",
-          "event": "U.S. and Iran exchange strikes, driving South Korea and broader global equity market selloff per Seeking Alpha report",
-          "event_zh": "美国与伊朗交换军事打击，根据Seeking Alpha报告，推动韩国和更广泛的全球股票市场大幅下跌"
+          "date": "2026-06-11",
+          "event": "Jeff Bezos's Prometheus AI startup closes a $12 billion Series B funding round, one of the largest private AI infrastructure raises on record.",
+          "event_zh": "Jeff Bezos的Prometheus AI初创公司完成120亿美元B轮融资，这是有史以来规模最大的私人AI基础设施融资之一。"
         },
         {
-          "date": "2026-06-10",
-          "event": "Gold hits new 2026 low, extending losses nearly 3% following CPI report and geopolitical tensions",
-          "event_zh": "黄金创2026年新低，在CPI报告和地缘政治紧张后损失扩大至近3%"
+          "date": "2026-06-11",
+          "event": "Super Micro announces $7 billion capital raise to fund operations against a $39 billion backlog, highlighting the cash intensity of AI server infrastructure fulfillment.",
+          "event_zh": "Super Micro宣布进行70亿美元资本融资以支持对390亿美元积压订单的运营，突显AI服务器基础设施履行的现金密集性。"
         },
         {
-          "date": "2026-06-10",
-          "event": "Silver prices fall significantly ahead of and following CPI report, compounding precious metals weakness",
-          "event_zh": "白银价格在CPI报告前后大幅下跌，加重贵金属疲软"
+          "date": "2026-06-11",
+          "event": "ARM Holdings closes +5.9% to $325.60 and ASML gains +4.8% to $1,817.11, leading the semiconductor complex higher on above-average relative volume for the group.",
+          "event_zh": "ARM Holdings收于$325.60(+5.9%)、ASML上涨+4.8%至$1,817.11，在该组相对成交量高于平均水平的情况下领导半导体复合体上涨。"
         },
         {
-          "date": "2026-06-10",
-          "event": "Barclays strategist turns cautious on U.S. equities citing exploding retail euphoria and leveraged ETF positioning as systemic risk",
-          "event_zh": "巴克莱策略师因爆炸性零售乐观情绪和杠杆ETF头寸作为系统性风险而对美国股票转向谨慎"
+          "date": "2026-06-11",
+          "event": "Broadcom files an 8-K (Item 8.01 Other Events) with the SEC, flagging a material corporate development; AVGO shares gain +1.1% to $376.14 on low volume ahead of disclosure details.",
+          "event_zh": "Broadcom向美国证监会提交8-K表格(第8.01项其他事项)，标记重大企业发展；AVGO股价在披露细节前的低成交量下上涨+1.1%至$376.14。"
         }
       ],
-      "name_zh": "通胀超预期上升及加息压力加剧",
-      "one_line_summary_zh": "5月CPI创三年新高，强化美联储维持利率不变的立场，同时对黄金、美元和风险资产施压，推高社会保障COLA预期",
-      "conviction_basis_zh": "5月CPI超预期上升，通胀达三年新高，强化了美联储长期维持利率不变而非降息的预期，这对风险资产和对利率敏感的板块普遍利空。然而，近期没有迫在眉睫的加息预期（美元走弱、美联储维持现状），这缓和了激烈的加息压力叙述，将信心水平维持在中等水平。",
-      "stage_reasoning_zh": "2026年6月10日前后的信号集群显示主流媒体广泛报道CPI高于预期（通胀创三年新高，2027年COLA预期为4.7%），美联储维持利率，市场反应跨越多个资产类别（黄金下跌约3%、白银下跌、美元波动）。覆盖范围涵盖Yahoo Finance、MarketWatch和Seeking Alpha，表明传播范围超出专业媒体。该叙述已得到充分确立并推动跨资产价格波动，但美联储的'维持现状'姿态而非主动加息表明加息恐惧溢价尚未达到顶峰。虽然没有直接标记与此主题相关的价格信号，但宏观叙述明确广泛影响市场。巴克莱策略师关于投资者乐观情绪的警告增添了晚期周期风险的轻微叠加，但通胀/加息压力主题本身仍处于积极、广泛覆盖的扩张阶段而非衰退或拥挤乐观。",
-      "bull_case_zh": "如果美联储确认的'维持现状'立场成功锚定利率预期，随着市场定价暂停而非进一步加息，股票可能会稳定。美伊地缘政治紧张局势潜在缓解可能减少能源价格压力，为通胀轨迹提供一些缓解。某些板块——金融和短期限资产——可能受益于持续的高利率环境，因为净息差扩大。",
-      "bear_case_zh": "5月CPI超预期上升，将2027年社会保障COLA推高至4.7%——创三年最高通胀读数——表明价格压力仍然根深蒂固，美联储走向降息的道路被大幅推后。巴克莱策略师指出零售乐观情绪爆炸性增长和杠杆ETF头寸作为谨慎的理由，警告市场过热情绪可能在对利率敏感资产重新定价时放大跌幅。黄金创2026年新低，白银在CPI报告前大幅下跌，反映市场定价近期缓解，风险资产易受长期高位情景中的多头压缩。",
-      "current_drivers_zh": "2026年6月10日的CPI报告确认通胀达三年高位，巩固美联储即将召开会议的维持利率决定，并推迟降息预期。同时，美伊军事冲突向能源市场注入地缘政治风险溢价，加剧通胀压力并驱动跨资产波动。",
-      "short_term_outlook_zh": "在接下来1-4周内，市场可能继续面临压力，因为5月CPI高于预期和美联储确认维持利率消除了近期降息催化剂。黄金和白银疲软、机构策略师对股票的谨慎态度以及美伊冲突造成的地缘政治噪音创造了风险厌恶背景。预期波动性上升，带有看空偏向。",
-      "mid_term_outlook_zh": "未来1-6个月内，鉴于通胀处于三年高位且没有明确的降温催化剂，'高位持续'的利率叙述可能持续。对利率敏感的板块（房地产、公用事业、长期科技股）面临持续的多头压缩。美联储不太可能在看到持续降温证据前进行政策转向，使任何股票反弹都将脆弱且可能由防守性或短期价值股领导。",
-      "long_term_outlook_zh": "从结构上看，如果通胀在2026-2027年期间保持在3%以上——如4.7% Social Security COLA预期所示——零利率或接近零利率的时代已经彻底结束。投资组合需要向实物资产、TIPS和受益于通胀的板块重新配置。2010年代由杠杆和多头扩张驱动的牛市不太可能重现；盈利质量和定价能力将成为主要的长期差异化因素。",
+      "name_zh": "AI基础设施与数据中心资本支出激增",
+      "one_line_summary_zh": "AI需求推动芯片、云基础设施和GPU服务的大规模资本支出，而Oracle债务融资支出令投资者担忧",
+      "conviction_basis_zh": "大量证据——120亿美元AI初创融资、SMCI的390亿美元订单积压、广泛的半导体价格强势(ARM +5.9%、ASML +4.8%、AMD +3.0%)和Oracle明确的AI资本支出承诺——证实AI基础设施支出周期保持完整并加速；主要风险是激进的债务融资资本支出(Oracle)和市场对近期回报的怀疑可能会抑制近期情绪，但不会改变结构性看多案例。",
+      "stage_reasoning_zh": "AI基础设施与数据中心资本支出主题呈现多项狂热拥挤的特征。覆盖面极为广泛——主流财经媒体(Yahoo Finance)、零售导向平台(Seeking Alpha)和财报电话会议同时覆盖相同标的(NVDA、AMD、AVGO、ASML、Oracle、CoreWeave、Super Micro)。分析师升级言辞出现('跌幅是礼物'、'评级上调'、'AI故事刚刚变得更大')，这是周期顶部热情的典型特征。Bezos AI初创120亿美元B轮融资预示后期风险资本大量涌入。Oracle因'巨额AI支出'而股价下滑是早期细微裂缝——投资者对资本支出规模感到担忧而非欢呼，暗示初期论文质疑。然而，尽管价格行动积极，所有价格信号的成交量比例异常低(0.2倍-0.7倍对比20日均值)，表明确信度并未支撑这些涨幅——这种分歧常见于顶部动力衰退时期。价格涨幅温和(+0.4%至+5.9%)，非抛物线式，阻止了更高的信心评分。叙事饱和度达峰值、机构级别资本部署、零售FOMO驱动和低成交量价格升值的组合将其牢牢置于拥挤狂热阶段，并出现潜在叙事崩溃的早期警告信号。",
+      "bull_case_zh": "需求信号保持结构完整：NVIDIA的AI收入轨迹被描述为'抛物线式'，ARM Holdings因AI芯片设计扩散带来的强劲特许权使用费和许可收入于6月11日上涨+5.9%，Jeff Bezos的Prometheus AI初创公司完成120亿美元B轮融资强调超大规模相关资本形成仍在加速。Super Micro的390亿美元订单积压——通过70亿美元融资支持——证实物理基础设施建设有多年的合同承诺跑道。ASML的+4.8%单日涨幅和Intel的+4.9%涨幅表明半导体供应链正在调整定价以应对持续的资本支出需求。",
+      "bear_case_zh": "Oracle在Q4 2026财报后的抛售——由投资者对'巨额AI支出和债务计划'的担忧驱动——预示市场开始惩罚不分青红皂白的资本支出扩张而非奖励，这是经典的后期拥挤交易动态。Super Micro需要融资70亿美元来支持390亿美元积压订单突显了执行和资产负债表风险；订单与现金生成之间的差距在扩大。多位Seeking Alpha贡献者明确拒绝在Oracle处'抄底'，暗示机构信念正在分裂，即使零售热情保持高涨。",
+      "current_drivers_zh": "直接催化剂包括Oracle Q4 2026财报电话会议(6月10日)披露积极的数据中心支出承诺以及债务增加，与120亿美元Prometheus AI B轮融资预示私人资本继续大规模涌入AI基础设施形成对比。在半导体供应链——NVDA、AMD、AVGO、TSM、ASML——跨越的单日广泛涨幅出现在低于平均成交量(大多数标的在0.2倍-0.4倍20日均值)上，表明价格升值由动力和重新评估驱动而非新机构积累。",
+      "short_term_outlook_zh": "在未来1-4周内，该主题可能保持头条驱动和波动。Oracle财报后跌幅将被密切关注，作为市场是否开始对资本支出密集资产负债表重新定价的领先指标。NVIDIA和ARM鉴于分析师升级活动拥有近期上涨潜力，但低成交量价格升值增加了任何负面数据点引发急剧反转的风险。净倾向：谨慎看多伴随高尾部风险。",
+      "mid_term_outlook_zh": "在1-6个月期间，资本支出使用者(Oracle、Super Micro)与资本支出促进者(NVDA、AVGO、ASML、TSM)之间的分化可能扩大。具有AI基础设施切实收入转化的公司——特别是NVIDIA的数据中心部门和Broadcom的定制ASIC业务——应维持溢价倍数，而那些通过资产负债表融资建设的公司如果FCF转化令人失望则可能面临倍数压缩。Prometheus 120亿美元B轮融资预示私人市场融资保持开放，支持硬件供应商的近期订单流。",
+      "long_term_outlook_zh": "从结构上看，AI基础设施资本支出周期基于超大规模指导、主权AI倡议和私人模型训练需求有2-4年的跑道。然而，当前'拥挤狂热'阶段意味着这一结构性增长的重要部分已被定价进领导者名单。长期超额收益更可能积累至二级衍生受益人——电力基础设施、冷却、光学网络和先进封装——而非已以峰值倍数交易的第一线GPU供应商。ASML的EUV垄断地位和TSM的先进制程主导地位在当前估值下比纯粹的AI芯片标的提供更具防守性的长期头寸。",
       "key_risks_zh": [
-        "与美伊冲突相关的能源价格飙升驱动的通胀加速可能迫使美联储恢复加息，触发比当前定价更严重的股票贬值。",
-        "巴克莱突出的杠杆ETF和散户投资者乐观情绪的瓦解可能在对利率敏感且已面临压力的市场中放大下行波动。",
-        "韩国宏观恶化和更广泛的新兴市场压力，加上更强更久的美元，可能收紧全球金融条件并反馈到美国信贷市场。"
+        "资本支出可信度风险：Oracle财报后股价下滑说明投资者正在失去对无限期AI支出而无明确近期ROI的容忍度，这种情绪可能扩散至其他超大规模和基础设施供应商。",
+        "杠杆和流动性风险：Super Micro需融资70亿美元来服务390亿美元积压订单暴露该行业对融资条件的依赖；信贷市场或股权需求的任何收紧都可能在资本密集型参与者中造成融资缺口。",
+        "成交量差异/分布风险：跨NVDA、AVGO、QCOM和ARM，价格涨幅出现在0.2倍-0.4倍20日均值的成交量比例上，表明机构分布给零售驱动动力——这是后期狂热的标志而非可持续积累。"
       ]
     },
     {
       "id": "space-economy-commercial-launch",
       "name": "Commercial Space Economy & Satellite Communications Momentum",
-      "one_line_summary": "SpaceX's historic IPO is reshaping space sector ETF positioning and spotlighting commercial space names like Rocket Lab, Intuitive Machines, and AST SpaceMobile",
+      "one_line_summary": "SpaceX IPO hype sends space stocks soaring with LUNR up 12% and RKLB up 5%, triggering a broader $50B spending spree thesis",
       "representative_tickers": [
         "RKLB",
         "LUNR",
         "ASTS",
-        "UFO",
-        "ARKX"
+        "SPCE",
+        "BA"
       ],
-      "first_seen": "2026-06-10",
+      "first_seen": "2026-06-11",
       "direction": "Bullish",
-      "conviction_score": 6,
+      "conviction_score": 7,
       "conviction_delta": null,
       "stage": "Crowded Euphoria",
-      "stage_confidence": 6,
-      "stage_reasoning": "The SpaceX IPO narrative is dominating mainstream financial media (MarketWatch, Yahoo Finance, Investors.com), signaling peak coverage and broad public attention — hallmarks of Crowded Euphoria. Valuations are stretched (RKLB at ~$106, ASTS at ~$88), and the IPO hype cycle is at maximum visibility. However, price action is slightly negative across all three tickers (-0.4% to -4.1%) with extremely low volume ratios (0.2x–0.3x vs. 20-day average), suggesting the retail frenzy may be waning and participation is thinning. The SpaceX IPO coverage itself includes cautionary notes ('biggest risk has nothing to do with rockets,' valuation concerns), which hints at early cracks in the narrative. The combination of peak media saturation, elevated price levels, and declining volume/mild price weakness places this at Crowded Euphoria, potentially on the cusp of Narrative Breakdown. Confidence is moderate at 6 due to the IPO being a genuine near-term catalyst that could sustain or briefly extend the euphoria phase.",
-      "conviction_basis": "The pending SpaceX IPO and Starlink's $11B revenue milestone are strong structural catalysts affirming commercial space economy momentum, but near-term price action across RKLB, LUNR, and ASTS shows broad sector softness on below-average volume, and profitability uncertainty tempers near-term upside. Conviction is moderately bullish on the theme's long-term trajectory but not on immediate price appreciation.",
+      "stage_confidence": 8,
+      "stage_reasoning": "Multiple converging signals point to Crowded Euphoria: (1) A heavily oversubscribed SpaceX IPO with explicit FOMO warnings from MarketWatch targeting retail investors, (2) mainstream financial media saturation (Yahoo Finance, MarketWatch, Investor's Business Daily all covering simultaneously), (3) analyst buy ratings and $50B spending spree narratives driving sympathy plays, (4) significant single-day price gains across space stocks (LUNR +12.2%, ASTS +6.4%, RKLB +5.2%) on notably LOW volume ratios (0.3–0.45x 20-day average), suggesting price is being pushed up by sentiment and news flow rather than genuine institutional accumulation — a classic late-stage divergence. The explicit retail FOMO narrative ('can ruin your retirement') and IPO oversubscription hype are textbook peak-coverage indicators. The low volume on strong price action is a cautionary flag consistent with thin participation at elevated levels rather than broad conviction buying.",
+      "conviction_basis": "The SpaceX IPO acting as a heavily oversubscribed sector catalyst is driving broad-based gains across commercial space names (LUNR +12.2%, ASTS +6.4%, RKLB +5.2%), with analyst buy ratings and a projected $50B downstream spending spree reinforcing the bullish thesis; conviction is tempered to a 7 because signals are predominantly media/price-action with low volume ratios suggesting thin participation, and IPO FOMO dynamics introduce meaningful valuation risk.",
       "bull_evidence": [
         {
-          "headline": "SpaceX IPO: 2 of the top space ETFs are making a surprising move days before blastoff",
-          "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/markets/article/spacex-ipo-2-of-the-top-space-etfs-are-making-a-surprising-move-days-before-blastoff-140710628.html",
-          "headline_zh": "SpaceX IPO：排名前两位的航天 ETF 在发射前夕进行了令人惊讶的举动"
-        },
-        {
-          "headline": "SpaceX IPO To Boost U.S. Dollar, University Endowments. Valuation Takes A Hit.",
+          "headline": "A Heavily Oversubscribed SpaceX IPO Gets A Buy Rating; Space Stocks Soar",
           "source": "Yahoo Finance / Investor's Business Daily",
-          "url": "https://www.investors.com/news/spacex-ipo-valuation-us-deficit-dollar-university-endowments-spacex-launches-starlink/?src=A00220&yptr=yahoo",
-          "headline_zh": "SpaceX IPO 将提振美元和大学捐赠基金。估值受冲击。"
+          "url": "https://www.investors.com/news/spacex-ipo-spcx-stock-buy-rating-price-target-oversubscribed-share-demand-availability/?src=A00220&yptr=yahoo"
         },
         {
-          "headline": "SpaceX is launching a historic IPO — but its biggest risk has nothing to do with rockets (Starlink revenue tops $11 billion)",
-          "source": "MarketWatch",
-          "url": "https://www.marketwatch.com/story/spacex-is-launching-a-historic-ipo-but-its-biggest-risk-has-nothing-to-do-with-rockets-0c030f9f?mod=mw_rss_topstories",
-          "headline_zh": "SpaceX 正在进行历史性 IPO——但其最大风险与火箭无关（Starlink 营收超过 110 亿美元）"
+          "headline": "The SpaceX IPO Could Trigger a $50 Billion Spending Spree. These Stocks Will Benefit.",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-ipo-could-trigger-50-153700191.html"
+        },
+        {
+          "headline": "LUNR closed at $29.76 (+12.2%), volume ratio 0.4x",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/quote/LUNR"
         }
       ],
       "bear_evidence": [
         {
-          "headline": "LUNR closed at $26.34 (-4.1%), volume ratio 0.2x",
-          "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/quote/LUNR",
-          "headline_zh": "LUNR 收于 $26.34（-4.1%），成交量比率 0.2x"
-        },
-        {
-          "headline": "RKLB closed at $106.39 (-1.7%), volume ratio 0.2x",
-          "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/quote/RKLB",
-          "headline_zh": "RKLB 收于 $106.39（-1.7%），成交量比率 0.2x"
-        },
-        {
-          "headline": "SpaceX is launching a historic IPO — but its biggest risk has nothing to do with rockets (Musk admits he 'cannot predict' when venture will make money)",
+          "headline": "SpaceX IPO hype is massive — and the FOMO can ruin your retirement",
           "source": "MarketWatch",
-          "url": "https://www.marketwatch.com/story/spacex-is-launching-a-historic-ipo-but-its-biggest-risk-has-nothing-to-do-with-rockets-0c030f9f?mod=mw_rss_topstories",
-          "headline_zh": "SpaceX 正在进行历史性 IPO——但其最大风险与火箭无关（马斯克承认他「无法预测」该企业何时获利）"
+          "url": "https://www.marketwatch.com/story/spacex-ipo-hype-is-massive-and-especially-dangerous-for-investors-over-50-ae3edd10?mod=mw_rss_topstories"
+        },
+        {
+          "headline": "US and EU near deadline on $11.5 billion tariffs in long-running aircraft dispute",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/economy/policy/articles/us-eu-near-deadline-11-153048405.html"
+        },
+        {
+          "headline": "RKLB closed at $110.49 (+5.2%), volume ratio 0.4x",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/quote/RKLB"
         }
       ],
-      "bull_case": "The imminent SpaceX IPO represents a generational liquidity event for the commercial space sector, with Starlink already generating over $11 billion in annual revenue and demonstrating that satellite broadband is a viable, scalable business. Space ETF repositioning ahead of the IPO signals institutional capital rotation into the sector, potentially lifting correlated names like Rocket Lab (RKLB) and AST SpaceMobile (ASTS). The structural buildout of low-earth orbit infrastructure — spanning launch, connectivity, and lunar services — creates a multi-decade compounding opportunity as terrestrial telecom incumbents face satellite-native competition.",
-      "bear_case": "Even Elon Musk concedes he 'cannot predict' when SpaceX will achieve consistent profitability, a stark admission for a company commanding a multi-hundred-billion-dollar IPO valuation and raising serious questions about terminal value assumptions baked into the entire sector. Secondary names like Intuitive Machines (LUNR, -4.1%) and Rocket Lab (RKLB, -1.7%) are already showing price fatigue with volume ratios at just 0.2x their 20-day averages, suggesting the euphoria is concentrated in the SpaceX narrative rather than broad sector fundamentals. A post-IPO 'sell the news' dynamic or a valuation reset on SpaceX could trigger a cascading de-rating across the space complex.",
-      "current_drivers": "The SpaceX IPO, anticipated imminently as of June 10, 2026, is the dominant catalyst — drawing institutional attention and forcing space-focused ETF rebalancing that is creating unusual pre-IPO price action across the sector. Starlink's $11B+ revenue run rate provides fundamental credibility to satellite communications as an asset class, anchoring bullish sentiment even amid near-term price weakness in listed peers.",
+      "bull_case": "The heavily oversubscribed SpaceX IPO — reportedly triggering a projected $50 billion spending spree across the space supply chain — is acting as a powerful sector catalyst, lifting pure-play names like Rocket Lab (RKLB +5.2%), Intuitive Machines (LUNR +12.2%), and AST SpaceMobile (ASTS +6.4%) in sympathy. Institutional buy ratings on SpaceX post-IPO and surging retail FOMO are funneling fresh capital into the entire commercial space ecosystem. Satellite communications infrastructure, lunar logistics, and launch services stand to benefit structurally as SpaceX's public listing validates the sector's investment-grade status.",
+      "bear_case": "Classic crowded-euphoria warning signs are flashing: MarketWatch explicitly warns that SpaceX IPO hype 'can ruin your retirement,' and all three space equities are posting outsized single-day gains on below-average volume (RKLB 0.41x, LUNR 0.45x, ASTS 0.33x 20-day average), suggesting momentum is driven by sentiment rather than fundamental conviction. Virgin Galactic's stock pop on SpaceX IPO news — despite its own deeply impaired operating history — exemplifies indiscriminate sector buying that historically precedes sharp reversals. Valuations across unprofitable space names have likely run well ahead of near-term revenue realities.",
+      "current_drivers": "The anticipated SpaceX IPO, reported as heavily oversubscribed and receiving an immediate buy rating, is the singular dominant catalyst compressing the entire commercial space sector's risk premium and triggering broad sympathy rallies. Retail FOMO and institutional repositioning into space-economy proxies (RKLB, LUNR, ASTS) are amplifying price moves in the absence of company-specific fundamental news.",
       "key_risks": [
-        "SpaceX IPO valuation disappointment or post-listing sell-off triggering sector-wide multiple compression across RKLB, ASTS, LUNR, and space ETFs",
-        "Musk-related execution and governance risk: political exposure, distraction across multiple ventures, and his own acknowledgment of unpredictable path to SpaceX profitability",
-        "Thin volume (0.2x–0.3x 20-day averages across RKLB, LUNR, ASTS) signals low conviction buying — a liquidity vacuum that could accelerate downside on any negative catalyst or macro risk-off move"
+        "Post-IPO 'sell the news' reversal: SpaceX's listing locks in gains for early investors who may rotate out, deflating the hype-driven valuation premium across satellite and launch peers.",
+        "Thin volume on sympathy rallies (all three names trading at 0.3–0.45x 20-day average volume) signals low conviction — a modest shift in sentiment could accelerate downside with limited liquidity support.",
+        "Macro/geopolitical overhang: the unresolved US-EU $11.5 billion aircraft tariff dispute introduces trade-policy uncertainty that could spill into aerospace and satellite hardware supply chains, pressuring margins for capital-intensive space operators."
       ],
-      "short_term_outlook": "The 1–4 week window is dominated by SpaceX IPO mechanics. Expect heightened volatility in listed space names as capital rotates directly into SpaceX shares, potentially creating a crowding-out effect on RKLB, ASTS, and LUNR. Low-volume sessions in these names suggest institutional hands are paused; a 'sell the news' correction of 10–20% in secondary names post-IPO is a plausible base case.",
-      "mid_term_outlook": "Over 1–6 months, the post-IPO dust settling will be critical. If SpaceX trades well and validates sector multiples, a rising-tide effect could re-rate ASTS (direct-to-device satellite comms) and RKLB (launch infrastructure) higher. However, if SpaceX disappoints on early earnings disclosures or guidance, the entire space complex faces a painful mean-reversion given current elevated valuations at Crowded Euphoria stage.",
-      "long_term_outlook": "The 1–3 year structural case remains intact: satellite internet penetration is secular, lunar economy development (LUNR) is government-backed via NASA contracts, and direct-to-device connectivity (ASTS) addresses a multi-billion unserved mobile market. SpaceX's public listing will institutionalize the space economy as a mainstream asset class, driving index inclusion and passive flows. However, winners will be narrow — execution risk, capital intensity, and Musk key-man concentration mean stock selection discipline is paramount.",
-      "signal_count": 6,
-      "timeline": [
-        {
-          "date": "2026-06-10",
-          "event": "SpaceX IPO reported as imminent; Starlink revenue confirmed above $11B annually per MarketWatch",
-          "event_zh": "SpaceX IPO 报告为即将进行；Starlink 年收入确认超过 110 亿美元，根据 MarketWatch"
-        },
-        {
-          "date": "2026-06-10",
-          "event": "Top space ETFs flagged making 'surprising moves' days before SpaceX IPO blastoff per Yahoo Finance",
-          "event_zh": "顶级航天 ETF 被标记为在 SpaceX IPO 发射前夜进行「令人惊讶的举动」，根据 Yahoo Finance"
-        },
-        {
-          "date": "2026-06-10",
-          "event": "LUNR (Intuitive Machines) closes at $26.34, down 4.1% on 0.2x average volume — weakest performer in sector",
-          "event_zh": "LUNR（Intuitive Machines）收于 $26.34，下跌 4.1%，成交量为平均水平的 0.2x——板块中表现最弱的"
-        },
-        {
-          "date": "2026-06-10",
-          "event": "RKLB (Rocket Lab) closes at $106.39, down 1.7% on 0.2x average volume amid pre-IPO sector rotation",
-          "event_zh": "RKLB（Rocket Lab）收于 $106.39，下跌 1.7%，成交量为平均水平的 0.2x，在 IPO 前板块轮换中"
-        },
-        {
-          "date": "2026-06-10",
-          "event": "ASTS (AST SpaceMobile) closes at $88.37, near flat at -0.4%, on 0.25x average volume",
-          "event_zh": "ASTS（AST SpaceMobile）收于 $88.37，基本持平 -0.4%，成交量为平均水平的 0.25x"
-        },
-        {
-          "date": "2026-06-10",
-          "event": "Elon Musk publicly admits inability to predict SpaceX profitability timeline, flagged as key non-rocket IPO risk by MarketWatch",
-          "event_zh": "埃隆·马斯克 publicly 承认无法预测 SpaceX 盈利时间表，被 MarketWatch 标记为关键的非火箭 IPO 风险"
-        }
-      ],
-      "name_zh": "商业空间经济与卫星通信势头",
-      "one_line_summary_zh": "SpaceX 历史性IPO正在重塑空间板块ETF定位，并聚焦 Rocket Lab、Intuitive Machines 和 AST SpaceMobile 等商业航天公司",
-      "conviction_basis_zh": "即将到来的 SpaceX IPO 和 Starlink 110 亿美元营收里程碑是强劲的结构性催化剂，确认了商业航天经济的势头，但 RKLB、LUNR 和 ASTS 近期的价格表现在低于平均成交量的背景下显示出广泛的板块疲软，盈利能力不确定性抑制了近期上升空间。对该主题的长期轨迹持中度乐观立场，但对近期价格升值持谨慎态度。",
-      "stage_reasoning_zh": "SpaceX IPO 叙事正在主导主流财经媒体（MarketWatch、Yahoo Finance、Investors.com），标志着报道达到顶峰和广泛公众关注——这是「热情洋溢的拥挤」的特征。估值被拉高（RKLB 约 $106，ASTS 约 $88），IPO 炒作周期处于最高可见性。然而，三只股票的价格走势略有负面（-0.4% 至 -4.1%），成交量比率极低（相对20日平均值为 0.2x–0.3x），表明零售热情可能在消退，参与度在下降。SpaceX IPO 报道本身包含警示信息（「最大风险与火箭无关」、估值顾虑），暗示叙事出现早期裂缝。报道饱和度达到顶峰、价格水平抬高以及成交量下降/温和价格疲软的组合将其定位于「热情洋溢的拥挤」，可能正处于「叙事崩解」的边缘。由于 IPO 是真实的近期催化剂，可能维持或短暂延长热情阶段，信心度为中等水平的6分。",
-      "bull_case_zh": "即将到来的 SpaceX IPO 代表商业航天板块的一代流动性事件，Starlink 已经产生超过 110 亿美元的年收入，并证明卫星宽带是可行的、可扩展的业务。空间 ETF 在 IPO 前的重新定位信号表明机构资本正在轮换进入该板块，可能提升 Rocket Lab (RKLB) 和 AST SpaceMobile (ASTS) 等相关公司。从发射、连接到月球服务的低地球轨道基础设施的结构性建设跨越多十年，创造了复合增长机会，因为地面电信龙头公司面临卫星原生竞争。",
-      "bear_case_zh": "即使埃隆·马斯克也承认他「无法预测」SpaceX 何时实现稳定盈利，这对于一家以数百亿美元 IPO 估值吸引融资的公司来说是令人震惊的坦白，对整个板块内嵌的终端价值假设提出严重疑问。Intuitive Machines (LUNR, -4.1%) 和 Rocket Lab (RKLB, -1.7%) 等次要公司已经显示出价格疲劳，成交量比率仅为其20日平均值的 0.2x，表明热情集中在 SpaceX 叙事中，而非广泛的板块基本面。IPO 后「利好出尽」动态或 SpaceX 估值重置可能引发整个航天综合体的连锁贬值。",
-      "current_drivers_zh": "SpaceX IPO（截至2026年6月10日预计即将进行）是主导催化剂——吸引机构注意力并迫使航天专项 ETF 重新调整，这在整个板块造成不寻常的 IPO 前价格走势。Starlink 的 110 亿美元以上的收入运行率为卫星通信作为资产类别提供了基本面可信度，即使在上市同行的近期价格疲软中也锚定了看涨情绪。",
-      "short_term_outlook_zh": "1–4 周窗口由 SpaceX IPO 机制主导。预期随着资本直接轮换进入 SpaceX 股票，上市航天公司名单中的波动性加剧，可能对 RKLB、ASTS 和 LUNR 造成挤出效应。这些公司的低成交量交易表明机构投资者处于暂停状态；IPO 后次要公司 10–20% 的「利好出尽」修正是合理的基本情景。",
-      "mid_term_outlook_zh": "在1–6个月期间，IPO 后的尘埃落定将至关重要。如果 SpaceX 交易表现良好并验证板块估值倍数，上升浪潮效应可能将 ASTS（直通设备卫星通信）和 RKLB（发射基础设施）重新评估至更高水平。但如果 SpaceX 在早期收益披露或指引上令人失望，整个航天综合体将面临痛苦的均值回归，考虑到当前在「热情洋溢的拥挤」阶段的高估值。",
-      "long_term_outlook_zh": "1–3 年的结构性案例保持不变：卫星互联网渗透是长期趋势，月球经济发展 (LUNR) 由 NASA 合同政府支持，直通设备连接 (ASTS) 针对数十亿未服务的移动市场。SpaceX 的公开上市将使航天经济制度化为主流资产类别，推动指数纳入和被动流动。然而，赢家将为数不多——执行风险、资本密集度和马斯克关键人物集中意味着股票选择纪律至关重要。",
-      "key_risks_zh": [
-        "SpaceX IPO 估值失利或上市后抛售触发 RKLB、ASTS、LUNR 和航天 ETF 的板块范围内多头压缩",
-        "马斯克相关的执行和治理风险：政治敞口、多项风险投资的分心，以及他本人对 SpaceX 盈利之路不可预测的承认",
-        "薄弱成交量（RKLB、LUNR、ASTS 的20日平均值为 0.2x–0.3x）表明低信心买盘——流动性真空可能在任何负面催化剂或宏观风险规避动向中加速下跌"
-      ]
-    },
-    {
-      "id": "consumer-retail-stress",
-      "name": "Consumer & Retail Under Pressure",
-      "one_line_summary": "Restaurant traffic, apparel, and toy spending are weakening as inflation erodes disposable income, though short-squeeze dynamics briefly lifted Cracker Barrel",
-      "representative_tickers": [
-        "CBRL",
-        "MAT",
-        "DPZ",
-        "JILL",
-        "PG"
-      ],
-      "first_seen": "2026-06-10",
-      "direction": "Bearish",
-      "conviction_score": 6,
-      "conviction_delta": null,
-      "stage": "Narrative Breakdown",
-      "stage_confidence": 6,
-      "stage_reasoning": "The signals paint a picture of consumer and retail stress: Lands' End reported a 9% revenue decline, Domino's is characterized as 'cheap for a reason' (implying fundamental concerns), Mattel gets a cautious 'Hold' rating, and J.Jill/Cracker Barrel are navigating difficult operating environments. Cracker Barrel's short-squeeze upgrade suggests the stock had been heavily shorted — a sign of prior bearish consensus. Zero price signals indicate no meaningful upward momentum. Coverage is largely analytical/cautionary rather than enthusiastic, and the dominant tone is defensive or value-trapping. The Evercore Consumer & Retail Conference presence suggests institutional attention but in a monitoring/reassessment mode rather than excitement. Collectively, this reflects a theme under pressure with challenged theses, declining fundamentals, and risk-off positioning — consistent with Narrative Breakdown, though not yet at a full capitulation phase.",
-      "conviction_basis": "High-quality earnings transcript evidence shows meaningful top-line deterioration at Lands' End (-9% revenue) and continued pressure at Cracker Barrel, corroborated by bearish commentary on Domino's and a cautious hold on Mattel; the lone bullish offset is a short-squeeze catalyst at CBRL and pockets of resilience (ThredUp, P&G conference), keeping conviction moderately bearish but not extreme.",
-      "bull_evidence": [
-        {
-          "headline": "Cracker Barrel Jumps Into A Short Squeeze On Upgrade, Target Hikes",
-          "source": "Yahoo Finance / Investor's Business Daily",
-          "url": "https://www.investors.com/news/short-squeeze-cracker-barrel-stocks-investing/?src=A00220&yptr=yahoo"
-        },
-        {
-          "headline": "ThredUp: Favorable Insights From Recent Conference",
-          "source": "Seeking Alpha",
-          "url": "https://seekingalpha.com/article/4913765-thredup-favorable-insights-from-recent-conference?source=feed_all_articles"
-        },
-        {
-          "headline": "The Procter & Gamble Company (PG) Presents at The 6th Annual Evercore Consumer & Retail Conference Transcript",
-          "source": "Seeking Alpha",
-          "url": "https://seekingalpha.com/article/4913750-the-procter-and-gamble-company-pg-presents-at-the-6th-annual-evercore-consumer-and-retail?source=feed_all_articles"
-        }
-      ],
-      "bear_evidence": [
-        {
-          "headline": "Lands' End (LE) Q1 2026 Earnings Transcript — Total Revenue $239 million, a decline of 9%",
-          "source": "Motley Fool (Earnings Transcript)",
-          "url": "https://www.fool.com/earnings/call-transcripts/2026/06/10/lands-end-le-q1-2026-earnings-transcript/"
-        },
-        {
-          "headline": "Cracker Barrel (CBRL) Q3 2026 Earnings Transcript — Total Revenue $797.4 million with restaurant pressure signals",
-          "source": "Motley Fool (Earnings Transcript)",
-          "url": "https://www.fool.com/earnings/call-transcripts/2026/06/09/cracker-barrel-cbrl-q3-2026-earnings-transcript/"
-        },
-        {
-          "headline": "Domino's Pizza: Cheap For A Reason",
-          "source": "Seeking Alpha",
-          "url": "https://seekingalpha.com/article/4913733-dominos-pizza-cheap-for-a-reason?source=feed_all_articles"
-        }
-      ],
-      "bull_case": "Cracker Barrel's short-squeeze dynamics and analyst upgrades with target hikes suggest some oversold names in the sector may have tactical upside, particularly if turnaround initiatives under CEO Julie Felss Masino gain traction against a $797.4M revenue base. ThredUp's favorable conference insights point to structural tailwinds for value-oriented resale channels as cost-conscious consumers trade down. Procter & Gamble's presentation at the Evercore Consumer & Retail Conference signals that staples with pricing power and brand equity can still navigate a difficult macro environment.",
-      "bear_case": "Lands' End reported a stark 9% revenue decline to $239M in Q1 2026, reflecting broad-based demand deterioration in discretionary apparel that is difficult to reverse quickly. Domino's Pizza being characterized as 'cheap for a reason' and Mattel warranting only a 'Hold' rating suggest even value-priced consumer names face skepticism, with structural headwinds overshadowing near-term valuation support. J.Jill's Q1 2027 earnings call adds to a pattern of mid-market retailers struggling to sustain top-line momentum amid persistent consumer spending fatigue.",
-      "current_drivers": "Consumer spending is under clear pressure across discretionary categories — apparel (Lands' End -9% revenue), casual dining (Cracker Barrel turnaround still in progress), and toys (Mattel on Hold) — driven by a combination of persistent inflation, reduced household savings buffers, and cautious consumer sentiment. Short-squeeze activity in names like Cracker Barrel reflects elevated short interest across the sector, signaling widespread bearish institutional positioning.",
-      "key_risks": [
-        "Continued top-line deterioration in discretionary apparel and casual dining if consumer confidence weakens further, as evidenced by Lands' End's 9% revenue decline",
-        "Margin compression from elevated cost structures and promotional activity, with Domino's and Cracker Barrel both flagged as underperforming relative to valuation expectations",
-        "Short-squeeze volatility creating false recovery signals in structurally challenged names like Cracker Barrel, leading to premature re-rating before fundamentals improve"
-      ],
-      "short_term_outlook": "Over the next 1–4 weeks, the sector is likely to remain choppy. Cracker Barrel's short-squeeze-driven rally may fade if Q3 2026 earnings details (total revenue $797.4M) fail to demonstrate sustained margin improvement. Earnings transcripts from Lands' End and J.Jill are likely to keep pressure on mid-market retail sentiment.",
-      "mid_term_outlook": "Over the next 1–6 months, the bear case dominates. Weak apparel demand (Lands' End -9% YoY), stagnant toy sector dynamics (Mattel Hold), and a challenged casual dining recovery (Cracker Barrel turnaround pace) suggest limited fundamental catalysts for a broad sector re-rating. ThredUp and value/resale channels may outperform as consumer trade-down accelerates.",
-      "long_term_outlook": "Structurally, traditional mid-market retailers and casual dining chains face secular headwinds from e-commerce displacement, shifting dining preferences, and demographic spending shifts. Resale platforms like ThredUp are positioned to gain durable share. Staples leaders like Procter & Gamble with brand pricing power are better insulated, but the broader consumer discretionary segment faces a prolonged normalization after pandemic-era distortions unwind.",
+      "short_term_outlook": "Elevated momentum is likely to persist through the SpaceX IPO pricing and first trading days, keeping RKLB, LUNR, and ASTS bid. However, the combination of below-average volume, extreme retail FOMO language, and a crowded-euphoria stage classification suggests a high probability of a sharp 10–20% pullback in secondary space names within 2–4 weeks once IPO allocation excitement fades.",
+      "mid_term_outlook": "Over 1–6 months, sector performance will bifurcate sharply between companies with tangible revenue ramps (AST SpaceMobile's direct-to-cell satellite network buildout, Rocket Lab's Neutron development milestones) and pure-narrative plays like Virgin Galactic. SpaceX's public float will provide a daily valuation benchmark that forces more rigorous multiple compression on loss-making peers. The US-EU tariff resolution (or escalation) is a meaningful swing factor for hardware-intensive operators.",
+      "long_term_outlook": "The structural case for the commercial space economy remains intact over 1–3 years: satellite broadband penetration, lunar economy infrastructure (LUNR's NASA contracts), and space-to-cellular connectivity (ASTS) address multi-hundred-billion-dollar addressable markets. SpaceX's IPO legitimizes the asset class for institutional allocators who previously had no direct exposure, potentially creating a permanent re-rating of quality names. However, today's euphoric entry points will likely prove costly — patient investors should await post-IPO normalization before establishing core positions.",
       "signal_count": 9,
       "timeline": [
         {
-          "date": "2026-06-09",
-          "event": "Lands' End (LE) reports Q1 2026 earnings: total revenue $239M, down 9% YoY, signaling continued weakness in discretionary apparel"
+          "date": "2026-06-11",
+          "event": "SpaceX IPO reported as heavily oversubscribed; receives institutional buy rating, triggering broad space-sector rally"
         },
         {
-          "date": "2026-06-09",
-          "event": "Cracker Barrel (CBRL) reports Q3 2026 earnings: total revenue $797.4M; CEO Julie Felss Masino and CFO Craig Pommells discuss ongoing turnaround efforts"
+          "date": "2026-06-11",
+          "event": "Virgin Galactic stock pops in sympathy ahead of SpaceX IPO listing, signaling indiscriminate sector buying"
         },
         {
-          "date": "2026-06-10",
-          "event": "Cracker Barrel jumps on short-squeeze dynamics following analyst upgrades and price target hikes post-earnings"
+          "date": "2026-06-11",
+          "event": "Intuitive Machines (LUNR) surges +12.2% to $29.76 on SpaceX IPO halo effect; volume at 0.45x 20-day average"
         },
         {
-          "date": "2026-06-10",
-          "event": "Seeking Alpha publishes 'Dominos Pizza: Cheap For A Reason,' flagging structural concerns despite depressed valuation"
+          "date": "2026-06-11",
+          "event": "AST SpaceMobile (ASTS) closes at $92.88 (+6.4%) and Rocket Lab (RKLB) at $110.49 (+5.2%) on SpaceX-driven momentum"
         },
         {
-          "date": "2026-06-10",
-          "event": "Mattel rated Hold ('Don't Toy Around With Mattel') as toy sector faces demand and tariff-related headwinds"
+          "date": "2026-06-11",
+          "event": "MarketWatch publishes SpaceX IPO FOMO warning, cautioning retirement-age investors against chasing the hype"
         },
         {
-          "date": "2026-06-10",
-          "event": "Procter & Gamble presents at the 6th Annual Evercore Consumer & Retail Conference, highlighting staples resilience amid broader sector stress"
-        }
-      ]
-    },
-    {
-      "id": "value-investing-rotation-non-ai",
-      "name": "Value Investor Rotation Away from AI into Cyclicals",
-      "one_line_summary": "Seth Klarman and other contrarian billionaires are accumulating beaten-down industrials, cruise lines, homebuilders, and healthcare stocks as AI skepticism grows",
-      "representative_tickers": [
-        "NCLH",
-        "GRBK",
-        "MOH",
-        "DNOW",
-        "BRK-B"
-      ],
-      "first_seen": "2026-06-10",
-      "direction": "Bullish",
-      "conviction_score": 5,
-      "conviction_delta": null,
-      "stage": "Early Discovery",
-      "stage_confidence": 6,
-      "stage_reasoning": "The signal set shows 10 mentions concentrated on a single day (2026-06-10) with zero price signals confirming any actual rotation in market prices. Coverage is largely specialist/niche — Yahoo Finance listicles highlighting individual value investor picks (Klarman, London Company) and Seeking Alpha fund commentaries — rather than broad mainstream financial media framing a macro rotation thesis. Headlines frame the angle as 'ignoring AI hype' or 'non-AI' plays, suggesting the narrative is emerging as a contrarian counterpoint to the dominant AI theme rather than a confirmed trend. There is no evidence of institutional flow data, ETF launches, or price breakouts in cyclicals/value sectors confirming momentum. The narrative is being noticed and articulated by early observers but lacks the price confirmation, breadth of coverage, or institutional visibility required for a higher stage.",
-      "conviction_basis": "Multiple recent signals confirm notable value investors like Seth Klarman are explicitly rotating away from AI into cyclicals, industrials, and consumer discretionary names, lending directional support to the theme; however, all signals are media/news sources with no earnings transcripts or SEC filings to corroborate, and the bear evidence highlights mixed fundamentals in cyclical picks, keeping conviction moderate at best.",
-      "bull_evidence": [
-        {
-          "headline": "Seth Klarman Is Ignoring AI Hype and Buying This Industrial Stock",
-          "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/seth-klarman-ignoring-ai-hype-150309475.html"
-        },
-        {
-          "headline": "Legendary Value Investor Seth Klarman is Buying Norwegian Cruise Line (NCLH)",
-          "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/legendary-value-investor-seth-klarman-150108380.html"
-        },
-        {
-          "headline": "In An Unsettled World, Value Investing Can Add A Layer Of Defense",
-          "source": "Seeking Alpha",
-          "url": "https://seekingalpha.com/article/4913735-unsettled-world-value-investing-can-add-layer-defense?source=feed_all_articles"
-        }
-      ],
-      "bear_evidence": [
-        {
-          "headline": "AZZ Is Doing Well, But Not Well Enough To Be Excited About",
-          "source": "Seeking Alpha",
-          "url": "https://seekingalpha.com/article/4913768-azz-is-doing-well-but-not-well-enough-to-be-excited-about?source=feed_all_articles"
-        },
-        {
-          "headline": "Is Molina Healthcare (MOH) The Best Healthcare Stock to Buy Now?",
-          "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/sectors/healthcare/articles/molina-healthcare-moh-best-healthcare-150144904.html"
-        },
-        {
-          "headline": "AMG River Road Dividend All Cap Value Fund Q1 2026 Commentary",
-          "source": "Seeking Alpha",
-          "url": "https://seekingalpha.com/article/4913761-amg-river-road-dividend-all-cap-value-fund-q1-2026-commentary?source=feed_all_articles"
-        }
-      ],
-      "bull_case": "Prominent value investors, most notably Seth Klarman of Baupost Group, are visibly rotating capital away from AI-linked equities into cyclicals and defensives — including Norwegian Cruise Line (NCLH), an unnamed industrial stock, and homebuilder Green Brick Partners (GRBK) — signaling a conviction-level re-rating opportunity in beaten-down value names. Institutional strategies such as the London Company Income Equity and AMG River Road Dividend All Cap Value Fund are adding names like Berkshire Hathaway (BRK-B) and dividend-yielding cyclicals, lending further credibility to the rotation thesis. If AI multiple compression accelerates, capital redeployment into cyclicals with tangible earnings and lower valuations could drive meaningful outperformance.",
-      "bear_case": "The rotation thesis remains in Early Discovery — headline-driven rather than confirmed by broad fund flow data or sector ETF positioning, meaning the signal could be noise rather than a durable trend. Cyclicals such as NCLH and GRBK carry significant macro sensitivity; any deterioration in consumer spending, rising rates, or a hard landing scenario would disproportionately punish these names relative to large-cap AI compounders. Additionally, coverage of stocks like DNOW and AZZ suggests the non-AI universe being highlighted includes mid/small-cap names with idiosyncratic risks and limited institutional liquidity.",
-      "current_drivers": "A cluster of June 10, 2026 headlines citing Seth Klarman's positioning in NCLH, industrials, and healthcare — alongside value-focused commentary from Seeking Alpha and institutional fund updates — indicates coordinated media attention on value investor repositioning away from the AI trade. The framing of multiple articles around 'Forget AI' and 'Best Non-AI Stock' language suggests a growing narrative counterweight to the dominant AI growth theme.",
-      "key_risks": [
-        "AI multiple expansion resumes if hyperscaler capex or model breakthroughs re-ignite growth sentiment, pulling capital back from cyclicals",
-        "Macro deterioration (recessionary signals, consumer credit stress) hits NCLH and GRBK disproportionately given their cyclical exposure",
-        "Klarman's disclosed positions may reflect historical 13F filings rather than current conviction, creating a timing mismatch for followers"
-      ],
-      "short_term_outlook": "Over the next 1–4 weeks, the theme is likely to gain incremental media traction as 13F filings and Q1 2026 fund commentaries circulate. Expect near-term price discovery in NCLH, GRBK, and MOH as retail and quant momentum follows high-profile value investor coverage. Rotation flows are not yet confirmed at scale.",
-      "mid_term_outlook": "Over 1–6 months, the thesis strengthens if AI sector earnings disappoint relative to elevated expectations or if macro data supports a soft-landing environment favorable to consumer cyclicals and healthcare managed care (MOH). Continued institutional endorsements — e.g., London Company adding BRK-B, River Road fund commentary — could catalyze broader value ETF inflows.",
-      "long_term_outlook": "Structurally, if the AI capex cycle peaks in 2026–2027 and ROI on AI investments proves elusive, a multi-year mean reversion from AI growth premiums toward cash-flow-generative industrials, homebuilders, and healthcare could be a defining rotation of the late 2020s — mirroring the post-dot-com shift from tech to value in the early 2000s. Companies like BRK-B, GRBK, and NCLH with tangible asset backing and earnings visibility would be structural beneficiaries.",
-      "signal_count": 10,
-      "timeline": [
-        {
-          "date": "2026-06-10",
-          "event": "Seth Klarman reported buying Norwegian Cruise Line (NCLH), signaling preference for consumer cyclicals over AI-linked equities"
-        },
-        {
-          "date": "2026-06-10",
-          "event": "Seth Klarman disclosed position in an unnamed industrial stock, explicitly framed as ignoring AI hype"
-        },
-        {
-          "date": "2026-06-10",
-          "event": "Green Brick Partners (GRBK) highlighted as a top billionaire pick for 2026, adding homebuilder exposure to the value rotation narrative"
-        },
-        {
-          "date": "2026-06-10",
-          "event": "London Company Income Equity Strategy added Berkshire Hathaway (BRK-B) citing buyback resumption as a value catalyst"
-        },
-        {
-          "date": "2026-06-10",
-          "event": "AMG River Road Dividend All Cap Value Fund released Q1 2026 commentary highlighting dividend-yielding cyclical and value positioning"
-        },
-        {
-          "date": "2026-06-10",
-          "event": "DNOW featured as a leading 'Best Non-AI Stock' candidate, reflecting growing editorial focus on screening for value outside the AI complex"
+          "date": "2026-06-11",
+          "event": "US and EU approach deadline on $11.5 billion aircraft tariff dispute, introducing aerospace supply-chain trade risk"
         }
       ]
     },
     {
       "id": "power-grid-energy-ai-demand",
       "name": "Power Grid Stress & Energy Stocks Under AI Demand Pressure",
-      "one_line_summary": "AI data center electricity demand is straining power generators and utilities, with VST, NRG, and CEG selling off sharply while grid modernization plays gain attention",
+      "one_line_summary": "Nuclear, solar, and utility stocks surge as AI data center power demand drives record electricity investment and clean energy financing",
       "representative_tickers": [
-        "VST",
-        "NRG",
         "CEG",
+        "VST",
         "NEE",
-        "ETR"
+        "NRG",
+        "FSLR"
       ],
-      "first_seen": "2026-06-10",
-      "direction": "Neutral",
-      "conviction_score": 4,
+      "first_seen": "2026-06-11",
+      "direction": "Bullish",
+      "conviction_score": 6,
       "conviction_delta": null,
-      "stage": "Narrative Breakdown",
-      "stage_confidence": 7,
-      "stage_reasoning": "The data points strongly toward a Narrative Breakdown stage. Key energy stocks tied to AI power demand (CEG -4.0%, VST -5.5%, NRG -7.0%) are experiencing significant single-day price declines with below-average volume (0.3-0.4x 20-day average), suggesting distribution rather than panic selling — consistent with a theme losing momentum rather than attracting new buyers. The low volume ratios indicate conviction is fading and institutional interest is waning. While coverage continues (Seeking Alpha articles on grid stress, Yahoo Finance macro commentary), the framing is shifting toward stress and emergency language ('Grid Emergency Grows', 'Wildfires And Surging Electrical Demand') rather than opportunity-focused bullish narratives. The signal count of 11 is modest, and the mix of filings, macro commentary, and declining prices without fresh positive catalysts reinforces thesis deterioration. ETR's slight outperformance (+1.6%) may reflect defensive rotation within the sector. Overall, the combination of broad price weakness across high-beta power names, low volume, and cautionary/stress-framed coverage signals the theme is transitioning from prior enthusiasm into narrative breakdown.",
-      "conviction_basis": "The theme has structural long-term validity — grid stress and AI-driven power demand are real — but today's price action shows sharp single-day selloffs in key power names (NRG -7%, VST -5.5%, CEG -4%) on below-average volume, suggesting a rotation or sentiment reset rather than a fundamental breakdown; with no high-quality earnings transcripts or SEC filings directly corroborating AI demand catalysts, conviction is moderate and directional bias is temporarily clouded.",
+      "stage": "Acceleration",
+      "stage_confidence": 6,
+      "stage_reasoning": "The theme shows moderate signal activity (9 total signals, 5 price-based) with mixed but generally positive price action — VST up 4.3%, NRG +1.7%, CEG +1.3% — suggesting momentum building rather than peak euphoria. However, volume ratios are notably low (0.1x–0.4x vs 20-day averages), indicating that while prices are moving upward, broad participation and conviction buying have not yet materialized. News coverage includes adjacent energy infrastructure stories (solar financing, grid-related equities) but lacks the dense, theme-specific mainstream coverage characteristic of Momentum Expansion or Crowded Euphoria. The combination of positive but low-volume price action, modest signal count, and sector-adjacent (rather than theme-dominant) news coverage places this theme in the Acceleration stage — the narrative is gaining traction and initial price breakouts are occurring, but institutional pile-in and broad media saturation have not yet peaked.",
+      "conviction_basis": "Independent power producers (VST +4.3%, NRG +1.7%, CEG +1.3%) are broadly rallying on AI-driven electricity demand, supported by large-scale clean energy financing activity; however, low volume ratios across the board and distressed signals from Plug Power temper conviction, suggesting momentum is real but not yet broadly confirmed by institutional participation.",
       "bull_evidence": [
         {
-          "headline": "Willdan Group: Still Cheap While The Grid Emergency Grows",
-          "source": "Seeking Alpha",
-          "url": "https://seekingalpha.com/article/4913727-willdan-group-stock-still-cheap-while-grid-emergency-grows?source=feed_all_articles"
-        },
-        {
-          "headline": "XEL Energy: Wildfires And Surging Electrical Demand",
-          "source": "Seeking Alpha",
-          "url": "https://seekingalpha.com/article/4913742-xel-energy-wildfires-and-surging-electrical-demand?source=feed_all_articles"
-        },
-        {
-          "headline": "ETR closed at $111.46 (+1.6%), volume ratio 0.2x",
-          "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/quote/ETR"
-        }
-      ],
-      "bear_evidence": [
-        {
-          "headline": "NRG closed at $120.89 (-7.0%), volume ratio 0.3x",
-          "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/quote/NRG"
-        },
-        {
-          "headline": "VST closed at $138.12 (-5.5%), volume ratio 0.4x",
+          "headline": "VST closed at $144.48 (+4.3%), volume ratio 0.4x",
           "source": "Yahoo Finance",
           "url": "https://finance.yahoo.com/quote/VST"
         },
         {
-          "headline": "CEG closed at $241.48 (-4.0%), volume ratio 0.4x",
+          "headline": "Cypress Creek Closes $3.5-Billion in Financing for Large Arkansas Solar+Storage Project",
           "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/quote/CEG"
-        }
-      ],
-      "bull_case": "Surging AI-driven data center electricity demand is creating a structural, multi-year tailwind for power generators and grid infrastructure companies, with regulated utilities like Entergy (ETR, +1.6% on 2026-06-10) and grid services firms like Willdan Group still trading at what analysts describe as cheap valuations relative to the scale of the 'grid emergency.' Sempra and NextEra Energy (NEE) are well-positioned to capture long-term capex cycles as utilities scramble to expand transmission and generation capacity to serve hyperscaler load growth.",
-      "bear_case": "High-beta power generators Vistra (VST, -5.5%) and NRG Energy (NRG, -7.0%) suffered sharp single-session selloffs on June 10, 2026, on below-average volume (0.35x and 0.31x 20-day average respectively), suggesting momentum unwind and potential de-rating risk if AI capex narratives are repriced. Xcel Energy (XEL) faces compounding headwinds from wildfire liability exposure layered on top of demand surge costs, which could pressure earnings and dividend sustainability.",
-      "current_drivers": "Markets are simultaneously pricing AI-driven electricity demand acceleration and oil price volatility, creating a bifurcated energy sector where regulated utilities and nuclear-exposed generators diverge sharply. Constellation Energy (CEG, -4.0%) and VST are experiencing near-term profit-taking after outsized AI-theme rallies, while grid infrastructure plays like Willdan Group attract attention as the physical grid bottleneck becomes more acute.",
-      "key_risks": [
-        "Valuation compression in high-beta power generators (VST, NRG, CEG) if AI data center buildout timelines slip or hyperscaler power procurement deals are delayed or renegotiated",
-        "Wildfire and extreme weather liability for utilities like Xcel Energy (XEL), which could trigger large uninsured losses and regulatory penalties that offset demand-side revenue growth",
-        "Oil price shocks and macroeconomic volatility (as flagged by Yahoo Finance's 'world markets walk a tightrope' framing) could trigger broad risk-off rotation out of energy equities, regardless of underlying power demand fundamentals"
-      ],
-      "short_term_outlook": "Near-term price action is cautious — VST, NRG, and CEG all sold off meaningfully on June 10 with low volume, indicating thin conviction rather than capitulation. Expect consolidation or further digestion of recent AI-power trade gains over the next 1-4 weeks, with regulated utilities (ETR, NEE) likely to exhibit relative stability. Any macro shock from oil markets could amplify downside in the high-beta names.",
-      "mid_term_outlook": "Over 1-6 months, the structural demand narrative should reassert itself as data center power purchase agreements and utility rate case outcomes provide earnings visibility. Analyst coverage of Sempra (Argus report, June 10) signals institutional re-engagement with regulated utility names. Willdan Group and NWPX Infrastructure (Reg FD filing, June 10) may attract M&A or partnership interest as grid modernization spending accelerates.",
-      "long_term_outlook": "The 1-3 year outlook remains structurally bullish: AI and electrification megatrends are expected to require hundreds of gigawatts of incremental U.S. generation and transmission investment, creating durable revenue streams for diversified power generators (CEG's nuclear fleet, VST's competitive power), regulated utilities (ETR, NEE, Sempra), and grid services/infrastructure firms (Willdan, NWPX). The key long-term risk is regulatory and permitting bottlenecks slowing grid build-out relative to demand timelines.",
-      "signal_count": 11,
-      "timeline": [
-        {
-          "date": "2026-06-10",
-          "event": "NRG Energy closes down -7.0% to $120.89 on 0.31x average volume, leading single-day selloff across AI-power trade names"
+          "url": "https://finance.yahoo.com/sectors/energy/articles/cypress-creek-closes-3-5-144250332.html"
         },
         {
-          "date": "2026-06-10",
-          "event": "Vistra (VST) falls -5.5% to $138.12 and Constellation Energy (CEG) drops -4.0% to $241.48, both on below-average volume, signaling momentum unwind"
-        },
-        {
-          "date": "2026-06-10",
-          "event": "Seeking Alpha publishes analysis on Xcel Energy (XEL) highlighting dual risks of wildfire exposure and surging electrical demand"
-        },
-        {
-          "date": "2026-06-10",
-          "event": "Seeking Alpha flags Willdan Group as undervalued against the backdrop of a growing grid emergency, drawing attention to small-cap grid infrastructure plays"
-        },
-        {
-          "date": "2026-06-10",
-          "event": "Argus releases updated analyst report on Sempra, indicating renewed institutional focus on regulated utility sector amid AI power demand theme"
-        },
-        {
-          "date": "2026-06-10",
-          "event": "NWPX Infrastructure files 8-K (Reg FD Disclosure) with SEC, potentially signaling a material corporate development in the grid infrastructure space"
-        }
-      ]
-    },
-    {
-      "id": "crypto-digital-assets-geopolitical-watch",
-      "name": "Crypto & Digital Assets Holding Steady Amid US-China Summit",
-      "one_line_summary": "Bitcoin and Ethereum initially rebounded as inflation hit 3-year highs but reversed lower, while blockchain lending and staking ETF filings signal continued institutional infrastructure build",
-      "representative_tickers": [
-        "BTC",
-        "ETH",
-        "AVAX",
-        "FOLD"
-      ],
-      "first_seen": "2026-06-10",
-      "direction": "Neutral",
-      "conviction_score": 4,
-      "conviction_delta": null,
-      "stage": "Momentum Expansion",
-      "stage_confidence": 5,
-      "stage_reasoning": "The signal mix suggests crypto markets are in a broad, established phase rather than early or peak. Institutional involvement is visible through SEC filings (Grayscale Avalanche Staking ETF, Fold Holdings 8-K), indicating ongoing product development and regulatory engagement. Mainstream media coverage via Yahoo Finance with mixed price action (rebounding on inflation data, then falling) reflects an active but not euphoric market. The US-China summit framing as a stabilizing backdrop suggests resilience rather than a breakout or breakdown. However, only 5 signals with 0 price signals limits conviction — the theme framing around geopolitical steadiness rather than aggressive upside caps enthusiasm below Crowded Euphoria. Overall pattern aligns with Momentum Expansion: broad coverage, institutional presence, mixed but active price action, without clear peak or collapse signals.",
-      "conviction_basis": "Signals are mixed and largely contradictory — intraday price weakness in BTC/ETH offsets institutional activity (Grayscale ETF filing, large blockchain M&A), while the US-China summit context provides no direct crypto-specific catalysts. The theme of 'holding steady' is modestly supported but lacks strong directional conviction given conflicting price action and absence of earnings-level evidence.",
-      "bull_evidence": [
-        {
-          "headline": "8-K - Grayscale Avalanche Staking ETF (0002035053) (Filer)",
-          "source": "SEC EDGAR 8-K",
-          "url": "https://www.sec.gov/Archives/edgar/data/2035053/000203505326000006/0002035053-26-000006-index.htm",
-          "headline_zh": "8-K - 灰度雪崩质押ETF (0002035053) (申报人)"
-        },
-        {
-          "headline": "Bitcoin, Ethereum Resume Rebound as Inflation Hits 3-Year High",
-          "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-ethereum-resume-rebound-inflation-144607048.html",
-          "headline_zh": "比特币、以太坊随着通胀创3年新高而恢复反弹"
-        },
-        {
-          "headline": "Figure to Acquire Kiavi in $717 Million Blockchain Lending Push",
-          "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/markets/crypto/articles/figure-acquire-kiavi-717-million-142400091.html",
-          "headline_zh": "Figure以7.17亿美元收购Kiavi,推进区块链借贷"
+          "headline": "First Solar: Buy The Pullback Before 2027 Gets Priced In",
+          "source": "Seeking Alpha",
+          "url": "https://seekingalpha.com/article/4914256-first-solar-buy-the-pullback-before-2027-gets-priced-in?source=feed_all_articles"
         }
       ],
       "bear_evidence": [
         {
-          "headline": "Bitcoin and ethereum prices today, June 10, 2026: BTC, ETH open lower and falling further",
+          "headline": "NEE closed at $85.01 (-0.1%), volume ratio 0.2x",
           "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-june-10-2026-btc-eth-open-lower-and-falling-further-114713805.html",
-          "headline_zh": "比特币和以太坊价格今日,2026年6月10日: BTC、ETH开盘走低并进一步下跌"
+          "url": "https://finance.yahoo.com/quote/NEE"
         },
         {
-          "headline": "8-K - Fold Holdings, Inc. (0001889123) (Filer) - Reg FD Disclosure suggesting material information release",
+          "headline": "8-K - PLUG POWER INC (0001093691) - Regulation FD Disclosure",
           "source": "SEC EDGAR 8-K",
-          "url": "https://www.sec.gov/Archives/edgar/data/1889123/000119312526265129/0001193125-26-265129-index.htm",
-          "headline_zh": "8-K - Fold Holdings, Inc. (0001889123) (申报人) - Reg FD披露暗示重大信息发布"
+          "url": "https://www.sec.gov/Archives/edgar/data/1093691/000110465926072652/0001104659-26-072652-index.htm"
         },
         {
-          "headline": "Bitcoin, Ethereum Resume Rebound as Inflation Hits 3-Year High",
+          "headline": "ETR closed at $111.18 (+0.6%), volume ratio 0.1x",
           "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-ethereum-resume-rebound-inflation-144607048.html",
-          "headline_zh": "比特币、以太坊随着通胀创3年新高而恢复反弹"
+          "url": "https://finance.yahoo.com/quote/ETR"
         }
       ],
-      "bull_case": "Bitcoin and Ethereum are rebounding on the back of a 3-year inflation high reported June 10, 2026, reinforcing the hard-asset narrative and driving renewed institutional interest in crypto as an inflation hedge. Figure's $717 million acquisition of Kiavi signals accelerating institutional capital deployment into blockchain-based lending infrastructure, validating on-chain finance at scale. Grayscale's new Avalanche Staking ETF filing with the SEC underscores continued product innovation and broadening regulated access to digital assets.",
-      "bear_case": "Intraday price action on June 10, 2026 showed BTC and ETH opening lower and falling further, highlighting persistent volatility and fragile short-term momentum despite the macro tailwind of elevated inflation. Mixed price signals suggest the market lacks decisive directional conviction, and any deterioration in the US-China diplomatic backdrop could rapidly unwind risk appetite across digital assets. Regulatory uncertainty remains an overhang, with multiple SEC filings (Grayscale, Fold Holdings) indicating the regulatory environment is still evolving and could introduce compliance headwinds.",
-      "current_drivers": "A 3-year high in US inflation reported June 10, 2026 is the primary near-term catalyst, reigniting the store-of-value thesis for Bitcoin and Ethereum. Simultaneously, institutional M&A activity—specifically Figure's $717M Kiavi acquisition—and new ETF product launches are expanding the on-chain financial ecosystem and attracting fresh capital.",
+      "bull_case": "AI-driven hyperscaler demand is creating structural, multi-year load growth that is directly benefiting merchant power generators — Vistra (VST) surged +4.3% to $144.48 and Constellation Energy (CEG) gained +1.3% to $245.51 on June 11, reflecting market conviction in earnings upside from rising power prices. Large-scale capital deployment into clean generation is accelerating, evidenced by Cypress Creek closing a $3.5 billion financing for an Arkansas solar-plus-storage project, signaling that institutional capital is actively funding the capacity needed to meet surging grid demand. Infrastructure suppliers like Valmont Industries (VMI) stand to benefit from the transmission and grid hardening buildout required to connect new generation and serve data center load corridors.",
+      "bear_case": "Volume ratios across the sector remain notably thin — VST at 0.42x, NEE at 0.16x, ETR at 0.14x its 20-day average — suggesting the current price moves may lack broad institutional conviction and could be susceptible to sharp reversals on any demand-softening narrative. NextEra Energy (NEE) underperformed peers, essentially flat at $85.01 (-0.1%), hinting at valuation fatigue among regulated utility names that cannot fully capture the merchant power upside. Plug Power's June 11 Reg FD 8-K filing introduces a wildcard; any disclosure of continued cash burn or offtake disappointments could weigh on the hydrogen-adjacent clean energy narrative.",
+      "current_drivers": "The primary driver is AI data center electricity demand creating a demand pull on merchant generators (VST, CEG, NRG) that is outpacing current grid capacity, pushing spot and forward power prices higher. Simultaneously, large financing closes like Cypress Creek's $3.5B Arkansas solar-plus-storage deal and bullish analyst coverage of First Solar's 2027 earnings setup are reinforcing investor confidence in the generation and clean energy supply build-out.",
       "key_risks": [
-        "Renewed US-China geopolitical tensions that could trigger broad risk-off selling across crypto markets",
-        "SEC regulatory action or adverse rulings on pending ETF and staking product filings (Grayscale Avalanche Staking ETF, Fold Holdings 8-K disclosures)",
-        "Inflation-driven rate policy pivot by the Fed that strengthens the dollar and pressures speculative assets including BTC and ETH"
+        "Thin trading volumes (sector-wide volume ratios of 0.1x–0.4x 20-day averages) suggest price action may not reflect durable institutional accumulation, increasing reversal risk on macro or sector-specific shocks",
+        "Regulatory and interconnection delays could push back new generation capacity timelines, easing the near-term power price premium that is driving merchant generator outperformance",
+        "Plug Power's Reg FD disclosure (8-K filed June 11) may reveal deteriorating financial conditions, which could dampen sentiment across the broader clean energy and hydrogen infrastructure subsector"
       ],
-      "short_term_outlook": "In the 1-4 week window, crypto markets are likely to remain range-bound with elevated intraday volatility. The inflation data provides a tactical bid for BTC and ETH, but the June 10 sell-off on open suggests near-term overhead resistance. Price action will be closely tied to any developments from the US-China summit and macro data releases.",
-      "mid_term_outlook": "Over 1-6 months, the theme is positioned for moderate expansion. Institutional infrastructure deals like Figure-Kiavi and regulated product launches (Grayscale Avalanche Staking ETF) should steadily improve market depth and legitimacy. If inflation remains elevated and the Fed maintains a cautious stance, the macro backdrop supports a gradual grind higher in digital asset valuations.",
-      "long_term_outlook": "Structurally, the 1-3 year outlook is constructive. Blockchain-native lending (evidenced by the $717M Figure-Kiavi deal), proliferation of staking ETFs, and growing regulatory clarity point to a maturing asset class with expanding institutional adoption. Digital assets appear increasingly embedded in the mainstream financial system, suggesting a durable re-rating of the sector's risk premium over this horizon.",
+      "short_term_outlook": "Over the next 1–4 weeks, momentum favors continued outperformance in merchant power names (VST, CEG, NRG) as summer peak demand approaches and AI power procurement headlines persist. However, low volume ratios warrant caution — a catalyst miss or macro risk-off event could trigger outsized pullbacks. First Solar's 'buy the pullback' setup cited on Seeking Alpha may attract tactical buyers in solar.",
+      "mid_term_outlook": "Over the next 1–6 months, the closing of large project financings like Cypress Creek's $3.5B deal will shift focus to execution and grid interconnection progress. Power price trajectory into winter and updates on hyperscaler power purchase agreement (PPA) signings will be key catalysts. VMI and grid infrastructure names could see order book upgrades as transmission investment plans firm up.",
+      "long_term_outlook": "Structurally, the 1–3 year outlook is strongly bullish: AI-driven electricity demand growth is a decade-long megatrend, and the U.S. grid requires an estimated $1T+ in investment to accommodate it. Merchant generators with nuclear and gas assets (VST, CEG) are best positioned for sustained earnings expansion, while solar manufacturers (First Solar) and grid infrastructure suppliers (VMI) benefit from the capital deployment super-cycle. The key structural risk is that new capacity additions eventually normalize power prices, compressing merchant margins by 2027–2028.",
+      "signal_count": 9,
+      "timeline": [
+        {
+          "date": "2026-06-11",
+          "event": "Vistra (VST) surges +4.3% to $144.48, leading merchant power peers amid AI demand tailwinds"
+        },
+        {
+          "date": "2026-06-11",
+          "event": "Cypress Creek closes $3.5 billion in financing for large-scale Arkansas solar-plus-storage project"
+        },
+        {
+          "date": "2026-06-11",
+          "event": "Constellation Energy (CEG) gains +1.3% to $245.51, reinforcing nuclear/clean merchant power bid"
+        },
+        {
+          "date": "2026-06-11",
+          "event": "Plug Power files Reg FD 8-K (Item 7.01), potential material disclosure pending review"
+        },
+        {
+          "date": "2026-06-11",
+          "event": "Seeking Alpha publishes bullish First Solar note: 'Buy The Pullback Before 2027 Gets Priced In'"
+        },
+        {
+          "date": "2026-06-11",
+          "event": "NRG Energy gains +1.7% to $122.72; NEE lags at -0.1% to $85.01, highlighting divergence between merchant and regulated utilities"
+        }
+      ]
+    },
+    {
+      "id": "precious-metals-mining-dividends",
+      "name": "Precious Metals Mining — Silver Surge & Gold Dividend Play",
+      "one_line_summary": "Gold prices pull back from highs while royalty streamers like Franco-Nevada and miners like Agnico Eagle launch buybacks signaling confidence in long-term metal thesis",
+      "representative_tickers": [
+        "FNV",
+        "AEM",
+        "HBM",
+        "GLD",
+        "RGLD"
+      ],
+      "first_seen": "2026-06-11",
+      "direction": "Bullish",
+      "conviction_score": 5,
+      "conviction_delta": null,
+      "stage": "Narrative Breakdown",
+      "stage_confidence": 5,
+      "stage_reasoning": "The signal landscape is thin (only 5 signals, 0 price signals), and the headline 'Gold Prices Return to Earth' directly signals a pullback from prior highs. Coverage is limited to niche/corporate filings (Alaska Silver Corp 8-K on officer changes, Hudbay and Agnico Eagle share buyback announcements) and a Franco-Nevada billionaire-stock feature — these are not momentum-driven bullish narratives. Share repurchase programs often signal management sees value after price weakness. The lack of price signals and the 'return to earth' framing suggest the prior surge narrative is fading. Confidence is moderate (5/10) due to very low signal volume, making definitive classification difficult.",
+      "conviction_basis": "Moderate bullish lean is supported by shareholder-friendly capital return actions (AEM share buyback, HBM NCIB) and billionaire endorsement of royalty/streaming play FNV, but gold's near-term price pullback and a leadership change at Alaska Silver Corp. introduce execution and macro headwinds that temper conviction to mid-range.",
+      "bull_evidence": [
+        {
+          "headline": "Here is Why Franco-Nevada (FNV) is One of the Best Canadian Stocks to Invest In According to Billionaires",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/why-franco-nevada-fnv-one-151520763.html",
+          "headline_zh": "这是为什么Franco-Nevada (FNV) 是亿万富豪们最好的加拿大投资股票之一"
+        },
+        {
+          "headline": "Agnico Eagle Mines (AEM) Renews NCIB to Repurchase Up to 25 Million Shares",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/agnico-eagle-mines-aem-renews-151512748.html",
+          "headline_zh": "Agnico Eagle Mines (AEM) 更新NCIB以回购最多2500万股"
+        },
+        {
+          "headline": "Hudbay Minerals (HBM) Launches Normal Course Issuer Bid to Repurchase 5% of Shares",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/hudbay-minerals-hbm-launches-normal-151454573.html",
+          "headline_zh": "Hudbay Minerals (HBM) 启动常规发行人竞价以回购5%的股票"
+        }
+      ],
+      "bear_evidence": [
+        {
+          "headline": "Daily Spotlight: Gold Prices Return to Earth",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/research/reports/ARGUS_47297_MarketOutlook_1781177786000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
+          "headline_zh": "每日聚焦：黄金价格回归现实"
+        },
+        {
+          "headline": "8-K - Alaska Silver Corp. (0001893899) — Item 5.02: Departure of Directors or Certain Officers",
+          "source": "SEC EDGAR 8-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/1893899/000106299326003160/0001062993-26-003160-index.htm",
+          "headline_zh": "8-K - Alaska Silver Corp. (0001893899) — 第5.02项：董事或特定高管的离职"
+        },
+        {
+          "headline": "No additional high-weight bear signals available",
+          "source": "N/A",
+          "url": "",
+          "headline_zh": "无其他高权重看空信号可用"
+        }
+      ],
+      "bull_case": "Capital return programs from senior producers signal balance sheet confidence: Agnico Eagle (AEM) renewed its NCIB to repurchase up to 25 million shares, while Hudbay Minerals (HBM) launched a new bid to buy back 5% of its float — both pointing to management conviction that shares are undervalued relative to metal prices. Franco-Nevada (FNV), flagged by billionaire investors as a top Canadian holding, offers royalty/streaming exposure with dividend resilience and no direct operating cost risk, making it an ideal vehicle in a high-gold-price environment. A temporary pullback in gold ('return to earth' per Argus/Yahoo Finance) may present a tactical entry point before the next leg higher.",
+      "bear_case": "The Yahoo Finance/Argus headline 'Gold Prices Return to Earth' suggests near-term mean reversion risk after an extended rally, potentially compressing miner margins and dampening momentum-driven inflows. Alaska Silver Corp.'s (SEC 8-K filing, June 11) leadership changes — including officer departures under Item 5.02 — introduce execution and strategic continuity risk at the junior silver miner level, which could weigh on sentiment for smaller-cap names. If real interest rates rise or macro safe-haven demand fades, gold and silver could face sustained headwinds, eroding the premium multiples currently embedded in senior producers.",
+      "current_drivers": "Senior miners are deploying excess free cash flow via buybacks (AEM, HBM) as elevated gold prices boost margins, while institutional and billionaire capital continues to rotate into royalty streamers like Franco-Nevada for its dividend yield and low-risk exposure. A modest gold price pullback is creating debate around entry timing, with silver's industrial and monetary demand providing an additional catalyst for the broader precious metals complex.",
+      "key_risks": [
+        "Gold price mean reversion: Argus analysis flagging a near-term 'return to earth' could signal a correction of 5–10%, directly pressuring miner earnings guidance and share buyback economics",
+        "Leadership instability at junior miners: Alaska Silver Corp.'s officer-level departure (8-K, June 11) highlights governance and execution risk specific to small/micro-cap silver names",
+        "Rising real interest rates or USD strength reducing safe-haven and speculative demand for both gold and silver, compressing royalty stream valuations and miner free cash flow multiples"
+      ],
+      "short_term_outlook": "Over the next 1–4 weeks, gold's near-term pullback (per Argus commentary) may create volatility in senior producer shares, but AEM's buyback renewal provides a technical floor via systematic share repurchases. FNV likely outperforms on a relative basis given its defensive royalty model. Alaska Silver Corp. warrants monitoring post-8-K for any strategic pivot signals.",
+      "mid_term_outlook": "Over 1–6 months, buyback activity from AEM and HBM is expected to support per-share NAV accretion, particularly if gold stabilizes above key support levels. Franco-Nevada's billionaire endorsement may attract further institutional accumulation. Silver's dual role as an industrial metal (EVs, solar) and monetary asset could outperform gold on a ratio basis if global manufacturing data improves.",
+      "long_term_outlook": "Structurally, royalty/streaming models like FNV are well-positioned for a multi-year supercycle driven by central bank gold accumulation, dollar diversification, and constrained new mine supply. Senior producers with disciplined capital return programs (AEM, HBM) are building the shareholder return infrastructure typical of mature commodity cycles. Silver faces a long-term structural supply deficit as green energy deployment accelerates photovoltaic and EV-related industrial demand.",
       "signal_count": 5,
       "timeline": [
         {
-          "date": "2026-06-10",
-          "event": "US CPI hits 3-year high; Bitcoin and Ethereum resume rebound on inflation hedge demand (Yahoo Finance)",
-          "event_zh": "美国CPI创3年新高;比特币和以太坊因通胀对冲需求而恢复反弹(Yahoo Finance)"
+          "date": "2026-06-11",
+          "event": "Agnico Eagle Mines (AEM) renews Normal Course Issuer Bid to repurchase up to 25 million shares, signaling balance sheet strength and share undervaluation conviction",
+          "event_zh": "Agnico Eagle Mines (AEM) 更新常规发行人竞价以回购最多2500万股，表明资产负债表实力和股价被低估的信念"
         },
         {
-          "date": "2026-06-10",
-          "event": "BTC and ETH open lower and fall further intraday, signaling short-term volatility despite macro tailwind (Yahoo Finance)",
-          "event_zh": "BTC和ETH开盘走低并盘中进一步下跌,尽管宏观顺风但表明短期波动(Yahoo Finance)"
+          "date": "2026-06-11",
+          "event": "Hudbay Minerals (HBM) launches Normal Course Issuer Bid to repurchase approximately 5% of outstanding shares",
+          "event_zh": "Hudbay Minerals (HBM) 启动常规发行人竞价以回购约5%的已发行股票"
         },
         {
-          "date": "2026-06-10",
-          "event": "Figure announces $717 million acquisition of Kiavi, marking major institutional push into blockchain-based lending (Yahoo Finance)",
-          "event_zh": "Figure宣布以7.17亿美元收购Kiavi,标志着机构对基于区块链借贷的重大推进(Yahoo Finance)"
+          "date": "2026-06-11",
+          "event": "Franco-Nevada (FNV) highlighted as a top Canadian stock held by billionaire investors, reinforcing institutional demand for royalty/streaming precious metals exposure",
+          "event_zh": "Franco-Nevada (FNV) 被亿万富豪投资者持有的顶级加拿大股票突出，强化了对皇权/流贵金属敞口的机构需求"
         },
         {
-          "date": "2026-06-10",
-          "event": "Grayscale files 8-K with SEC for Avalanche Staking ETF, expanding regulated crypto investment product suite (SEC EDGAR)",
-          "event_zh": "灰度向美证交会申报雪崩质押ETF的8-K,扩展监管加密货币投资产品套件(SEC EDGAR)"
+          "date": "2026-06-11",
+          "event": "Argus Research via Yahoo Finance publishes 'Gold Prices Return to Earth' market outlook, flagging near-term gold price consolidation risk",
+          "event_zh": "Argus Research通过Yahoo Finance发布\"黄金价格回归现实\"市场展望，标记近期黄金价格巩固风险"
         },
         {
-          "date": "2026-06-10",
-          "event": "Fold Holdings, Inc. files 8-K (Regulation FD Disclosure) with SEC, signaling new material corporate development in digital assets space (SEC EDGAR)",
-          "event_zh": "Fold Holdings, Inc.向美证交会申报8-K(Regulation FD披露),标志着数字资产领域新的重大企业发展(SEC EDGAR)"
+          "date": "2026-06-11",
+          "event": "Alaska Silver Corp. files 8-K with SEC disclosing officer-level departures (Item 5.02) and Regulation FD disclosure, introducing leadership uncertainty at the junior silver miner",
+          "event_zh": "Alaska Silver Corp.向SEC提交8-K，披露高管级别离职（第5.02项）和《条例FD》披露，在初级白银矿商引入领导力不确定性"
         }
       ],
-      "name_zh": "加密货币与数字资产在美中峰会期间保持稳定",
-      "one_line_summary_zh": "比特币和以太坊在通胀创3年新高后初现反弹但随后回落,区块链借贷和质押ETF的申报信号预示机构基础设施建设持续推进",
-      "conviction_basis_zh": "信号混合且基本矛盾——BTC/ETH盘中价格走弱抵消了机构活动(灰度ETF申报、大型区块链并购),而美中峰会背景未提供直接的加密货币特定催化剂。'保持稳定'的主题得到适度支持,但鉴于价格走势相互矛盾且缺乏盈利级证据,缺乏强有力的方向性把握。",
-      "stage_reasoning_zh": "信号组合表明加密货币市场处于广泛、成熟的阶段而非早期或高峰。机构参与通过SEC申报(灰度雪崩质押ETF、Fold Holdings 8-K)可见,表明持续的产品开发和监管参与。通过Yahoo Finance的主流媒体报道伴随混合价格走势(因通胀数据反弹,随后下跌)反映了市场活跃但未陷入狂热。美中峰会作为稳定背景的框架暗示韧性而非突破或崩溃。但仅5个信号且0个价格信号限制了把握——围绕地缘政治稳定而非激进上行的主题框架使热情度低于拥挤狂热。总体格局符合动量扩张:广泛报道、机构出现、混合但活跃的价格走势,无明确高峰或崩溃信号。",
-      "bull_case_zh": "比特币和以太坊因2026年6月10日报告的3年高点通胀而反弹,强化了硬资产叙述并推动了机构对加密货币作为通胀对冲工具的重新兴趣。Figure公司对Kiavi的7.17亿美元收购标志着机构资本向基于区块链的借贷基础设施加速部署,验证了链上金融的规模效应。灰度向SEC申报新的雪崩质押ETF凸显了持续的产品创新和对数字资产监管访问的拓展。",
-      "bear_case_zh": "2026年6月10日的盘中价格走势显示BTC和ETH开盘走低且进一步下跌,尽管有高通胀的宏观顺风,但突出了持久的波动性和脆弱的短期动量。混合的价格信号表明市场缺乏决定性的方向性把握,美中外交背景的任何恶化都可能迅速破坏数字资产的风险偏好。监管不确定性仍是压力,多份SEC申报(灰度、Fold Holdings)表明监管环境仍在演变,可能引入合规障碍。",
-      "current_drivers_zh": "2026年6月10日报告的美国通胀创3年新高是近期主要催化剂,重燃了比特币和以太坊价值存储论题。同时,机构并购活动——特别是Figure公司的7.17亿美元Kiavi收购——和新ETF产品发行正在扩展链上金融生态系统并吸引新资本。",
-      "short_term_outlook_zh": "在1-4周的时间窗口内,加密货币市场可能保持区间波动并伴随高盘中波动。通胀数据为BTC和ETH提供了战术性支撑,但6月10日开盘时的抛售暗示近期存在上方阻力。价格走势将与美中峰会的任何进展和宏观数据发布密切相关。",
-      "mid_term_outlook_zh": "在1-6个月期间,该主题定位于温和扩张。Figure-Kiavi等机构基础设施交易和监管产品发行(灰度雪崩质押ETF)应稳步改善市场深度和合法性。如果通胀保持高位且美联储保持谨慎态度,宏观背景支持数字资产估值的逐步上升。",
-      "long_term_outlook_zh": "从结构上看,1-3年的前景是建设性的。区块链原生借贷(由7.17亿美元Figure-Kiavi交易证明)、质押ETF的扩散和监管清晰度的提高表明资产类别日趋成熟,机构采用不断扩大。数字资产似乎日益融入主流金融体系,表明该部门风险溢价的持久重新定价。",
+      "name_zh": "贵金属矿业 — 白银飙升与黄金分红机会",
+      "one_line_summary_zh": "黄金价格从高点回落，而Franco-Nevada等皇权流公司和Agnico Eagle等矿商推出回购计划，表明对长期贵金属前景的信心",
+      "conviction_basis_zh": "中度看涨倾向得到股东友好型资本回报行动的支撑（AEM股票回购、HBM NCIB）和亿万富豪对皇权/流公司FNV的认可，但黄金近期价格回落和Alaska Silver Corp.的领导层变动带来了执行和宏观逆风，使信心降至中等水平。",
+      "stage_reasoning_zh": "信号景观有限（仅5个信号，0个价格信号），\"黄金价格回归现实\"的标题直接表明从之前高点的回调。覆盖范围局限于小众/公司备案（Alaska Silver Corp 8-K关于高管变动、Hudbay和Agnico Eagle股票回购公告）和Franco-Nevada亿万富豪股票专题 — 这些不是动量驱动的看涨叙事。股份回购计划通常表明管理层在价格走弱后看到价值。缺乏价格信号和\"回归现实\"的表述表明之前的飙升叙事正在褪去。信心中等（5/10），原因是信号量极低，难以进行明确分类。",
+      "bull_case_zh": "资深生产商的资本回报计划表明资产负债表信心：Agnico Eagle (AEM) 更新了其NCIB以回购最多2500万股，而Hudbay Minerals (HBM) 启动了新的竞价以回购其流通股的5% — 两者都指向管理层的信念，即股价相对于金属价格被低估。Franco-Nevada (FNV)被亿万富豪投资者标记为顶级加拿大资产，提供皇权/流敞口，具有分红韧性和无直接运营成本风险，使其成为高黄金价格环境下的理想工具。黄金的短期回调（根据Argus/Yahoo Finance的\"回归现实\"）可能会在下一波上升前提供战术进场点。",
+      "bear_case_zh": "Yahoo Finance/Argus标题\"黄金价格回归现实\"表明在延长的涨势后近期均值回归风险，可能压缩矿商利润率并抑制动量驱动的流入。Alaska Silver Corp.（SEC 8-K备案，6月11日）的领导层变动 — 包括第5.02项下的高管离职 — 在初级白银矿商层面引入了执行和战略连续性风险，可能对小盘股情绪造成压力。如果实际利率上升或宏观避险需求消退，黄金和白银可能面临持续逆风，侵蚀目前嵌入资深生产商的溢价倍数。",
+      "current_drivers_zh": "资深矿商通过回购（AEM、HBM）部署过剩自由现金流，因为更高的黄金价格提升利润率，而机构和亿万富豪资本继续轮动至Franco-Nevada等皇权流公司，以获取其分红收益率和低风险敞口。黄金价格的小幅回调正在引发关于入场时机的辩论，白银的工业和货币需求为更广泛的贵金属综合体提供了额外催化剂。",
+      "short_term_outlook_zh": "在未来1-4周内，黄金近期回调（根据Argus评论）可能在资深生产商股票中造成波动，但AEM的回购更新通过系统性股票回购提供技术支撑。FNV可能因其防御性皇权模式相对表现出色。Alaska Silver Corp.值得关注8-K后是否出现任何战略转向信号。",
+      "mid_term_outlook_zh": "在未来1-6个月内，AEM和HBM的回购活动有望支撑每股净资产增长，尤其是在黄金稳定在关键支撑位上方的情况下。Franco-Nevada的亿万富豪认可可能吸引进一步的机构积累。白银作为工业金属（电动汽车、太阳能）和货币资产的双重角色，如果全球制造业数据改善，可能在比率基础上超越黄金。",
+      "long_term_outlook_zh": "从结构上看，像FNV这样的皇权/流模式由中央银行黄金积累、美元多元化和受限的新矿供应驱动的多年超级周期中位置良好。拥有纪律性资本回报计划（AEM、HBM）的资深生产商正在构建典型于成熟商品周期的股东回报基础设施。随着绿色能源部署加速光伏和电动汽车相关工业需求，白银面临长期结构性供应赤字。",
       "key_risks_zh": [
-        "美中地缘政治紧张加剧可能触发加密货币市场的广泛风险厌恶抛售",
-        "美证交会的监管行动或待审批ETF和质押产品申报的不利裁决(灰度雪崩质押ETF、Fold Holdings 8-K披露)",
-        "美联储通胀驱动的利率政策转向强化美元并压低包括BTC和ETH在内的投机性资产"
+        "黄金价格均值回归：Argus分析标记近期\"回归现实\"可能表明5-10%的修正，直接施压矿商盈利指引和股票回购经济学",
+        "初级矿商的领导力不稳定：Alaska Silver Corp.的高管级别离职（8-K，6月11日）突显了小盘/微盘白银名称特有的治理和执行风险",
+        "实际利率上升或美元走强减少黄金和白银的避险和投机需求，压缩皇权流估值和矿商自由现金流倍数"
       ]
     },
     {
-      "id": "healthcare-biotech-mixed",
-      "name": "Healthcare & Biotech Divergence",
-      "one_line_summary": "Senior living supply shortages, surgical robotics, and diabetes monitoring converge with value investors targeting healthcare stocks as defensive positioning grows",
+      "id": "nuclear-clean-energy",
+      "name": "Nuclear & Advanced Clean Energy Renaissance",
+      "one_line_summary": "Cameco and Orano acquire TEPCO's Cigar Lake stake as uranium consolidation accelerates alongside nuclear power's AI data center energy narrative",
       "representative_tickers": [
-        "MOH",
-        "BKD",
-        "ISRG",
-        "DXCM",
-        "ALT"
+        "CCJ",
+        "URA",
+        "NXE",
+        "LEU",
+        "UUUU"
       ],
-      "first_seen": "2026-06-10",
-      "direction": "Neutral",
+      "first_seen": "2026-06-11",
+      "direction": "Bullish",
       "conviction_score": 4,
       "conviction_delta": null,
-      "stage": "Early Discovery",
+      "stage": "Momentum Expansion",
       "stage_confidence": 4,
-      "stage_reasoning": "The 'Healthcare & Biotech Divergence' theme shows limited signal volume (only 10 total signals, 2 price signals), suggesting nascent coverage rather than broad institutional awareness. The signals are fragmented across disparate healthcare sub-sectors (managed care, senior living, biotech, medtech) without a cohesive divergence narrative forming in mainstream media. Price action on key names ISRG (-1.9%) and DXCM (-2.5%) is mildly negative with extremely low volume ratios (0.2x and 0.1x vs 20-day average), indicating limited market participation and no breakout momentum. Coverage remains specialist-oriented (Seeking Alpha deep dives, Goldman Sachs healthcare conference transcripts, SEC filings) rather than mainstream. The theme lacks the coordinated narrative, institutional flows, or price breakouts that would signal acceleration. Confidence is moderate-low (4/10) as the 'divergence' framing itself is ambiguous — it may represent an emerging analytical lens rather than a clearly defined investable theme with directional consensus.",
-      "conviction_basis": "Signals are mixed and largely low-information: medtech names (ISRG, DXCM) show modest price weakness on very thin volume, while Masimo's 8-K flags potential delisting and asset disposition stress; offsetting this, value investors are selectively buying managed care and senior living names, reflecting classic within-sector divergence but insufficient directional clarity to establish high conviction in either direction.",
+      "stage_reasoning": "With only 1 signal and 0 price signals in the dataset, there is insufficient quantitative evidence to make a high-confidence classification. However, the qualitative context provides important clues: Cameco (a leading uranium producer) and Orano (a major French nuclear fuel company) acquiring TEPCO Resources' stake in the Cigar Lake Joint Venture signals continued institutional consolidation in the uranium/nuclear supply chain. This type of strategic M&A activity — major industry players expanding production capacity through asset acquisitions — is characteristic of the Momentum Expansion phase, where institutional actors are actively building positions and securing resources. The nuclear renaissance theme has been broadly covered in mainstream media since 2023-2024 (driven by AI power demand narratives, SMR announcements, and government policy support), which aligns with Momentum Expansion rather than Early Discovery or Acceleration. However, the very low signal count prevents a higher confidence score, and the theme could be transitioning toward Crowded Euphoria depending on broader market context not captured here.",
+      "conviction_basis": "The Cameco/Orano acquisition of TEPCO's Cigar Lake stake signals ongoing strategic consolidation in uranium supply — a modestly bullish indicator for nuclear energy investment. However, with only a single news-grade signal and no earnings transcripts, SEC filings, or corroborating data points, conviction is limited and directional confidence remains low.",
       "bull_evidence": [
         {
-          "headline": "Brookdale (BKD) Surged Amid a Shortage in Senior Living Facilities",
+          "headline": "Cameco (CCJ), Orano to Acquire TEPCO Resources' Stake in Cigar Lake JV",
           "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/brookdale-bkd-surged-amid-shortage-135517743.html",
-          "headline_zh": "Brookdale (BKD)因老年生活设施短缺而大幅上升"
+          "url": "https://finance.yahoo.com/sectors/energy/articles/cameco-ccj-orano-acquire-tepco-151506377.html",
+          "headline_zh": "Cameco (CCJ)、Orano 将收购 TEPCO Resources 在 Cigar Lake 合资企业中的股权"
+        }
+      ],
+      "bear_evidence": [],
+      "bull_case": "The acquisition of TEPCO Resources' stake in the Cigar Lake Joint Venture by Cameco (CCJ) and Orano consolidates ownership of one of the world's highest-grade uranium mines among Western nuclear majors, tightening supply control and supporting long-term uranium price floors. This strategic consolidation signals growing institutional confidence in sustained uranium demand driven by nuclear energy's role in decarbonization and AI data center power needs. With fewer sellers controlling premium assets, pricing power shifts further toward producers, structurally improving margins for CCJ and its JV partners.",
+      "bear_case": "Consolidation among a handful of Western producers raises regulatory scrutiny risk, particularly if antitrust bodies in Canada, France, or the EU question reduced competition at Cigar Lake. TEPCO's willingness to divest its stake could reflect broader Japanese utility portfolio rebalancing or near-term cash needs, not necessarily a bullish structural signal. Additionally, uranium spot price volatility and potential delays in new reactor build-outs could pressure near-term revenue assumptions even as asset ownership concentrates.",
+      "current_drivers": "The immediate driver is Cameco and Orano's move to absorb TEPCO Resources' Cigar Lake JV interest, reducing Western supply fragmentation and reinforcing the uranium supply squeeze narrative. Broader macro tailwinds — including AI-driven electricity demand, SMR policy momentum, and government energy security mandates — continue to accelerate nuclear capacity investment globally.",
+      "key_risks": [
+        "Regulatory or antitrust pushback on the Cigar Lake stake acquisition in Canada or by international energy bodies",
+        "Uranium spot price correction or demand slowdown if reactor restarts or new builds face permitting and construction delays",
+        "Geopolitical disruption to global nuclear fuel supply chains, including potential retaliatory export restrictions from Russia's Rosatom affecting enrichment capacity"
+      ],
+      "short_term_outlook": "Over the next 1–4 weeks, CCJ shares are likely to see positive momentum as the market digests the strategic implications of increased Cigar Lake ownership concentration. Deal closure timelines and any disclosed transaction pricing will be key catalysts to watch for incremental re-rating.",
+      "mid_term_outlook": "Over 1–6 months, the transaction is expected to close subject to regulatory approvals, with investor focus shifting to updated reserve and production guidance from Cameco. Any concurrent utility contracting announcements or uranium spot price moves above $90/lb would further reinforce the bullish setup.",
+      "long_term_outlook": "Over a 1–3 year horizon, Western consolidation of tier-1 uranium assets like Cigar Lake positions Cameco and Orano as indispensable suppliers to a structurally growing global nuclear fleet. With over 60 reactors under construction globally and SMR commercialization accelerating, uranium demand is expected to outpace new mine supply through at least 2028, supporting a sustained bull market in nuclear fuel equities.",
+      "signal_count": 1,
+      "timeline": [
+        {
+          "date": "2026-06-11",
+          "event": "Cameco (CCJ) and Orano announce acquisition of TEPCO Resources' stake in the Cigar Lake Joint Venture, consolidating Western ownership of a premier high-grade uranium asset",
+          "event_zh": "Cameco (CCJ) 和 Orano 宣布收购 TEPCO Resources 在 Cigar Lake 合资企业中的股权，整合了一级高品位铀矿资产的西方所有权"
+        }
+      ],
+      "name_zh": "核能与先进清洁能源复兴",
+      "one_line_summary_zh": "Cameco 和 Orano 收购 TEPCO 的 Cigar Lake 股权，铀矿整合加速，同时核能在 AI 数据中心能源叙事中的地位凸显",
+      "conviction_basis_zh": "Cameco/Orano 收购 TEPCO 的 Cigar Lake 股权标志着铀矿供应链中持续的战略整合——这是核能投资的温和看涨指标。然而，仅有一个新闻级信号，且缺乏收益电话会议、SEC 申报文件或佐证数据点，因此信念程度有限，方向性信心也较低。",
+      "stage_reasoning_zh": "数据集中仅有 1 个信号和 0 个价格信号，定量证据不足以做出高置信度分类。不过，定性背景提供了重要线索：Cameco（领先的铀生产商）和 Orano（欧洲主要核燃料公司）收购 TEPCO Resources 在 Cigar Lake 合资企业中的股权，标志着铀矿/核供应链中机构持续整合。这类战略 M&A 活动——主要行业参与者通过资产收购扩大产能——是动能扩张阶段的特征，此阶段机构投资者积极建仓并确保资源。核能复兴主题自 2023-2024 年以来在主流媒体中被广泛报道（由 AI 电力需求叙事、小型模块堆公告和政府政策支持驱动），与动能扩张而非早期发现或加速阶段相符。然而，极低的信号数量阻止了更高的置信度评分，根据此处未捕捉的更广泛市场背景，该主题可能正向拥挤亢奋阶段转变。",
+      "bull_case_zh": "由 Cameco (CCJ) 和 Orano 收购 TEPCO Resources 在 Cigar Lake 合资企业中的股权，将全球最高品位铀矿之一的所有权集中在西方核能大厂手中，增强了供应控制力，支撑长期铀价底线。这种战略整合信号表明机构对核能在脱碳和 AI 数据中心电力需求中角色的持续需求充满信心。随着控制优质资产的卖方减少，定价权进一步转向生产商，从结构上改善了 CCJ 及其合资伙伴的利润率。",
+      "bear_case_zh": "少数西方生产商间的整合引发监管审查风险，特别是如果加拿大、法国或欧盟反垄断部门质疑 Cigar Lake 竞争减少的情况。TEPCO 愿意出售其股权可能反映日本公用事业公司更广泛的投资组合重新平衡或短期现金需求，而不一定是看涨的结构性信号。此外，铀现货价格波动和新反应堆建设可能延迟可能压低短期收益假设，尽管资产所有权集中。",
+      "current_drivers_zh": "直接驱动因素是 Cameco 和 Orano 收购 TEPCO Resources 在 Cigar Lake 合资企业中的权益，减少西方供应分散，强化铀矿供应短缺叙事。更广泛的宏观顺风——包括 AI 驱动的电力需求、小型模块堆政策动能和政府能源安全授权——继续在全球范围内加快核能力投资。",
+      "short_term_outlook_zh": "在未来 1-4 周内，CCJ 股票可能会看到正动能，因为市场消化 Cigar Lake 所有权集中的战略含义。交易完成时间表和任何披露的交易定价将是需要关注的关键催化剂，以寻求增量重新估值。",
+      "mid_term_outlook_zh": "在 1-6 个月期间，交易预期将在监管批准下完成，投资者关注的焦点转向 Cameco 的更新储量和产量指导。任何并发的公用事业合同公告或铀现货价格突破 $90/磅都将进一步强化看涨格局。",
+      "long_term_outlook_zh": "在 1-3 年时间范围内，西方对一级铀矿资产（如 Cigar Lake）的整合将 Cameco 和 Orano 定位为全球不断增长的核舰队的不可或缺的供应商。随着全球 60 多个反应堆在建，小型模块堆商业化加速，铀矿需求预期将超过新矿产供应，至少到 2028 年，支持核燃料股票中的持续牛市。",
+      "key_risks_zh": [
+        "加拿大监管或反垄断机构及国际能源组织对 Cigar Lake 股权收购的推阻",
+        "如果反应堆重启或新建设面临许可和施工延迟，铀现货价格更正或需求放缓",
+        "地缘政治对全球核燃料供应链的中断，包括俄罗斯 Rosatom 的潜在报复性出口限制，影响浓缩能力"
+      ]
+    },
+    {
+      "id": "consumer-retail-stress",
+      "name": "Consumer & Retail Under Pressure",
+      "one_line_summary": "Investors rotate toward dividend stalwarts like Coca-Cola and discount retailers like Dollarama amid market volatility while casual dining turnarounds like Cracker Barrel remain contested",
+      "representative_tickers": [
+        "KO",
+        "DOL",
+        "LULU",
+        "SN",
+        "CHWY"
+      ],
+      "first_seen": "2026-06-11",
+      "direction": "Bearish",
+      "conviction_score": 4,
+      "conviction_delta": null,
+      "stage": "Narrative Breakdown",
+      "stage_confidence": 5,
+      "stage_reasoning": "The signals reflect a mixed but cautious consumer and retail landscape. Coverage includes persistent weakness themes (Diageo sold amid weak markets, Cracker Barrel's uncertain turnaround, safe-haven stock searches), alongside some selective stock-picking and value-hunting behavior (Chewy earnings analysis, LULU billionaire picks). Notably, there are zero price signals, suggesting limited directional price momentum. The combination of fundamental stress coverage (weakness in key markets, companies 'not out of the woods'), defensive positioning (safe haven stocks), and selective institutional selling points toward a Narrative Breakdown stage — where the consumer/retail bull thesis is being challenged and coverage is shifting toward damage assessment and stock selection under pressure rather than broad optimism. Confidence is moderate (5/10) given the small signal count and absence of price confirmation.",
+      "conviction_basis": "Signals are predominantly low-quality, content-empty news headlines with no earnings transcript or SEC filing evidence; the most substantive signal — institutional selling of Diageo citing persistent market weakness and lower confidence — directionally supports consumer pressure, while mixed Cracker Barrel sentiment and a flight to safe havens suggest ongoing consumer/retail stress, but overall conviction is low due to thin, ambiguous sourcing.",
+      "bull_evidence": [
+        {
+          "headline": "Cracker Barrel: Why I Believe The Turnaround Is For Real",
+          "source": "Seeking Alpha",
+          "url": "https://seekingalpha.com/article/4914241-cracker-barrel-why-i-believe-the-turnaround-is-for-real?source=feed_all_articles"
         },
         {
-          "headline": "Is Molina Healthcare (MOH) The Best Healthcare Stock to Buy Now?",
-          "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/sectors/healthcare/articles/molina-healthcare-moh-best-healthcare-150144904.html",
-          "headline_zh": "Molina Healthcare (MOH)现在是最佳医疗保健股票购买选择吗？"
+          "headline": "Dollarama Inc. 2027 Q1 - Results - Earnings Call Presentation",
+          "source": "Seeking Alpha",
+          "url": "https://seekingalpha.com/article/4914275-dollarama-inc-2027-q1-results-earnings-call-presentation?source=feed_all_articles"
         },
         {
-          "headline": "Forget AI: Legendary Value Investor Seth Klarman Likes This Healthcare Stock in 2026",
+          "headline": "Is Chewy Inc a Buy After Its Latest Earnings Report?",
           "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/sectors/healthcare/articles/forget-ai-legendary-value-investor-145854358.html",
-          "headline_zh": "忘记人工智能：传奇价值投资者Seth Klarman喜欢这支医疗保健股票（2026年）"
+          "url": "https://finance.yahoo.com/markets/stocks/articles/chewy-inc-buy-latest-earnings-153344135.html"
         }
       ],
       "bear_evidence": [
         {
-          "headline": "8-K - MASIMO CORP: Termination of Material Definitive Agreement, Completion of Acquisition/Disposition, Notice of Delisting",
-          "source": "SEC EDGAR 8-K",
-          "url": "https://www.sec.gov/Archives/edgar/data/937556/000110465926072151/0001104659-26-072151-index.htm",
-          "headline_zh": "8-K - MASIMO CORP：重大定义协议终止、收购/处置完成、退市通知"
+          "headline": "Guinness Global Equity Income Fund Sold Diageo plc (DEO) Amid Persistent Weakness in Key Markets and Lower Confidence",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/guinness-global-equity-income-fund-152601239.html"
         },
         {
-          "headline": "ISRG closed at $418.61 (-1.9%), volume ratio 0.2x",
-          "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/quote/ISRG",
-          "headline_zh": "ISRG收于$418.61（-1.9%），成交量比率0.2倍"
+          "headline": "Cracker Barrel: One Good Quarter Doesn't Take This Company Out Of The Woods",
+          "source": "Seeking Alpha",
+          "url": "https://seekingalpha.com/article/4914251-cracker-barrel-one-good-quarter-doesnt-take-this-company-out-of-the-woods?source=feed_all_articles"
         },
         {
-          "headline": "DXCM closed at $76.26 (-2.5%), volume ratio 0.1x",
-          "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/quote/DXCM",
-          "headline_zh": "DXCM收于$76.26（-2.5%），成交量比率0.1倍"
+          "headline": "3 Safe Haven Stocks For Market Chaos",
+          "source": "Seeking Alpha",
+          "url": "https://seekingalpha.com/article/4914246-3-safe-haven-stocks-for-market-chaos?source=feed_all_articles"
         }
       ],
-      "bull_case": "Value-oriented institutional interest is surfacing in select managed care names, with Seth Klarman reportedly positioning in a healthcare stock in 2026, suggesting deep-value opportunities exist after sector underperformance. Brookdale Senior Living (BKD) surged on structural supply-demand imbalance in senior living facilities, indicating demographic tailwinds can drive outsized returns in specific sub-sectors. Molina Healthcare (MOH) is drawing analyst attention as a best-in-class managed care operator, potentially benefiting from Medicaid enrollment stability.",
-      "bear_case": "Masimo Corp (MASI) filed an 8-K disclosing termination of a material definitive agreement alongside a completed asset disposition and a notice of potential delisting, flagging serious operational and governance deterioration at the medical device level. Dexcom (DXCM) and Intuitive Surgical (ISRG) both posted meaningful price declines of -2.5% and -1.9% respectively on June 10 with abnormally low volume ratios (0.14x and 0.19x vs 20-day average), signaling weak demand and possible distribution by institutional holders. Iovance Biotherapeutics (IOVA) received a cautious 'progress with caveats' assessment on Seeking Alpha, reflecting the binary risk profile inherent in cell therapy commercialization.",
-      "current_drivers": "The theme is currently driven by a sharp bifurcation between defensive managed care and senior living names attracting value capital versus high-multiple medical devices and early-stage biotechs facing price weakness and idiosyncratic setbacks. The Goldman Sachs 47th Annual Global Healthcare Conference is catalyzing investor attention on small-cap biotech positioning, with Altimmune (ALT) among presenters seeking to differentiate pipeline narratives.",
+      "bull_case": "Dollarama's Q1 FY2027 earnings call suggests value-oriented retailers continue to benefit from consumer trade-down behavior, providing a defensive pocket within the broader retail space. Lululemon (LULU) retains billionaire investor conviction as a premium brand with durable demand, and Cracker Barrel bulls argue a genuine operational turnaround is underway after at least one strong quarterly print.",
+      "bear_case": "Guinness Global Equity Income Fund's decision to exit Diageo (DEO) amid 'persistent weakness in key markets and lower confidence' signals institutional capitulation on consumer staples, a traditionally defensive sector. Cracker Barrel skeptics warn that one good quarter does not resolve deep structural challenges, while question-mark headlines around Coca-Cola (KO) and SharkNinja (SN) reflect broad uncertainty about whether consumer demand can sustain current valuations under macro pressure.",
+      "current_drivers": "Weakening consumer confidence and uneven spending patterns are forcing institutional investors to rotate out of even staples names like Diageo, while discretionary brands such as Cracker Barrel and Chewy face post-earnings scrutiny on the durability of any recovery. Value retailers like Dollarama are emerging as relative safe havens as households trade down.",
       "key_risks": [
-        "Masimo's delisting notice and asset disposition signal potential contagion risk for mid-cap medical device sentiment, particularly if further 8-K disclosures reveal covenant breaches or liquidity stress",
-        "Managed care names like MOH and Clover Health face ongoing Medicaid reimbursement rate uncertainty and potential policy shifts affecting membership economics in 2026",
-        "Biotech names such as Iovance (IOVA) and Altimmune (ALT) carry high binary clinical and regulatory risk, and low-volume price action in sector leaders ISRG and DXCM suggests institutional rotation away from growth healthcare"
+        "Institutional de-risking accelerates — Diageo exit by Guinness Global Equity Income Fund may signal broader fund-level selling of consumer names with deteriorating volume trends",
+        "Discretionary demand cliff — Chewy and Cracker Barrel recovery narratives could unravel if consumer spending on pets and dining out weakens further in a higher-for-longer rate environment",
+        "Premium brand erosion — Lululemon and SharkNinja face risk of demand normalization as aspirational consumers cut back, undermining growth multiples currently priced into both stocks"
       ],
-      "short_term_outlook": "Over the next 1-4 weeks, expect continued divergence: managed care (MOH) and senior living (BKD) may hold relative strength on value flows, while medical devices (DXCM, ISRG) face technical headwinds given low-volume declines. Masimo's regulatory/delisting situation warrants close monitoring for further negative catalysts.",
-      "mid_term_outlook": "Over 1-6 months, the Goldman Sachs Healthcare Conference pipeline of presentations may surface re-rating candidates in small-cap biotech, but sector-wide conviction will depend on CMS Medicaid/Medicare policy clarity and whether DXCM and ISRG can stabilize. BKD's supply-shortage thesis could sustain momentum if occupancy data confirms structural tightening.",
-      "long_term_outlook": "Structurally, the 1-3 year outlook favors companies exposed to aging demographics (senior living, managed care for dual-eligibles) and validated cell/gene therapy platforms reaching commercial scale. However, medical device valuations face compression risk from pricing pressure and competitive disruption, while biotech returns will remain highly concentrated in a few clinical winners. Seth Klarman's value positioning suggests the sector may be entering a bottoming phase that rewards selective, fundamentals-driven stock picking over passive sector exposure.",
+      "short_term_outlook": "Over the next 1-4 weeks, sentiment remains cautious with conflicting narratives — Cracker Barrel's dueling bull/bear analyses and post-earnings uncertainty around Chewy suggest elevated volatility in individual names. Investors are likely to favor defensive, value-oriented exposure (Dollarama) over discretionary and premium plays.",
+      "mid_term_outlook": "Over 1-6 months, the consumer sector faces a bifurcation: value and necessity-driven retailers (Dollarama) should hold up, while premium discretionary (LULU, SN) and legacy dining/casual (Cracker Barrel) face continued earnings risk if macro conditions do not improve. Diageo's market weakness may broaden to other international consumer staples.",
+      "long_term_outlook": "Structurally, the 1-3 year outlook hinges on whether elevated household debt and interest rate normalization permanently reset consumer spending habits downward. Brands with strong IP diversification (Pop Mart's multi-IP strategy) or genuine value propositions (Dollarama) are better positioned; single-IP or aspirational-premium names face secular pressure if consumer balance sheets remain stretched.",
       "signal_count": 10,
       "timeline": [
         {
-          "date": "2026-06-10",
-          "event": "Masimo Corp (MASI) filed 8-K disclosing termination of material agreement, asset disposition completion, and potential Nasdaq delisting notice",
-          "event_zh": "Masimo Corp (MASI)提交8-K文件披露重大协议终止、资产处置完成和潜在纳斯达克退市通知"
+          "date": "2026-06-11",
+          "event": "Guinness Global Equity Income Fund discloses exit of Diageo (DEO) position citing persistent weakness in key markets and reduced confidence"
         },
         {
-          "date": "2026-06-10",
-          "event": "Brookdale Senior Living (BKD) surged amid reported shortage of senior living facilities, highlighting demographic supply-demand imbalance",
-          "event_zh": "Brookdale Senior Living (BKD)因报告的老年生活设施短缺而大幅上升，突显人口统计学供需失衡"
+          "date": "2026-06-11",
+          "event": "Dollarama releases Q1 FY2027 earnings call presentation, signaling continued momentum in value retail"
         },
         {
-          "date": "2026-06-10",
-          "event": "Altimmune (ALT) presented at Goldman Sachs 47th Annual Global Healthcare Conference 2026, providing pipeline update to institutional investors",
-          "event_zh": "Altimmune (ALT)在高盛第47届年度全球医疗保健会议2026上演讲，向机构投资者提供管线更新"
+          "date": "2026-06-11",
+          "event": "Seeking Alpha publishes dueling Cracker Barrel analyses — one bearish ('one good quarter not enough') and one bullish ('turnaround is real'), highlighting deep investor uncertainty"
         },
         {
-          "date": "2026-06-10",
-          "event": "Dexcom (DXCM) closed down 2.5% at $76.26 and Intuitive Surgical (ISRG) fell 1.9% to $418.61, both on extremely thin volume (0.14x and 0.19x 20-day average)",
-          "event_zh": "Dexcom (DXCM)下跌2.5%至$76.26，Intuitive Surgical (ISRG)下跌1.9%至$418.61，两者成交量极低（分别为20日均值的0.14倍和0.19倍）"
+          "date": "2026-06-11",
+          "event": "Chewy Inc. post-earnings coverage raises question of whether stock is a buy, reflecting unresolved investor debate on pet retail demand sustainability"
         },
         {
-          "date": "2026-06-10",
-          "event": "Seeking Alpha published cautious analysis on Iovance Biotherapeutics (IOVA) titled 'Progress With Caveats,' flagging commercialization execution risks",
-          "event_zh": "Seeking Alpha发布对Iovance Biotherapeutics (IOVA)的审慎分析，标题为\"进展伴随警告\"，标示商业化执行风险"
+          "date": "2026-06-11",
+          "event": "Pop Mart coverage highlights portfolio IP diversification as a defense against single-product decay risk in collectible consumer goods"
         },
         {
-          "date": "2026-06-10",
-          "event": "Seth Klarman's healthcare stock pick highlighted by Yahoo Finance, signaling deep-value institutional interest entering the sector in 2026",
-          "event_zh": "Seth Klarman的医疗保健股票精选由Yahoo Finance突出，表明深度价值机构兴趣在2026年进入该行业"
+          "date": "2026-06-11",
+          "event": "Lululemon (LULU) featured among top Canadian stocks held by billionaires, suggesting smart-money selective interest despite broader consumer sector pressure"
         }
-      ],
-      "name_zh": "医疗保健与生物技术分化",
-      "one_line_summary_zh": "老年生活供应短缺、手术机器人和糖尿病监测融合，价值投资者瞄准医疗保健股票，防御性布局不断增加",
-      "conviction_basis_zh": "信号混合且信息量普遍较低：医疗器械公司（ISRG、DXCM）在极低成交量下呈现温和的价格疲软，而美敏感公司的8-K文件标示潜在退市和资产处置压力；与此相对应，价值投资者有选择性地买入托管医疗和老年生活相关公司，反映出典型的行业内分化，但缺乏充分的方向性清晰度以建立任何一方向的高确定性立场。",
-      "stage_reasoning_zh": "\"医疗保健与生物技术分化\"主题呈现有限的信号量（仅10个总信号，2个价格信号），表明覆盖处于初期阶段而非广泛机构认知。信号分散在不同的医疗保健细分领域（托管医疗、老年生活、生物科技、医疗器械），但未在主流媒体上形成连贯的分化叙事。关键公司ISRG（-1.9%）和DXCM（-2.5%）的价格表现温和下行，但成交量比率极低（分别为20日均值的0.2倍和0.1倍），表明市场参与度有限，无突破性动量。覆盖范围仍以专业人士为主（Seeking Alpha深度分析、高盛医疗保健会议记录、美国证交会文件），而非主流媒体。该主题缺乏协调叙事、机构资金流或价格突破，这些因素本应预示加速。信心水平中等偏低（4/10），因为\"分化\"本身的表述存在歧义——它可能代表新兴的分析角度，而非具有明确方向共识的定义清晰的可投资主题。",
-      "bull_case_zh": "价值导向的机构兴趣正在浮现于精选托管医疗公司，据报道Seth Klarman在2026年定位于某医疗保健股票，表明在该行业表现不佳后存在深度价值机会。Brookdale Senior Living (BKD)因老年生活设施的结构性供需失衡而大幅上升，表明人口统计学顺风可在特定细分领域带来超额回报。Molina Healthcare (MOH)正吸引分析师关注，作为一流的托管医疗运营商，可能受益于医疗补助金入选稳定性。",
-      "bear_case_zh": "Masimo Corp (MASI)提交8-K文件披露重大定义协议终止以及已完成的资产处置和潜在退市通知，标示医疗器械层面存在严重的运营和治理恶化。Dexcom (DXCM)和直觉手术公司(ISRG)均在6月10日录得-2.5%和-1.9%的显著价格下跌，成交量比率异常低（分别为20日均值的0.14倍和0.19倍），表明需求疲软和可能的机构持有者派发。Iovance Biotherapeutics (IOVA)在Seeking Alpha获得审慎的\"进展伴隨警告\"评估，反映细胞疗法商业化内在的二元风险特征。",
-      "current_drivers_zh": "该主题目前由防御性托管医疗和老年生活名单吸引价值资本与高倍数医疗器械和早期生物技术公司面临价格疲软和特殊事件之间的尖锐分化所推动。高盛第47届全球医疗保健会议正在推动投资者对小盘生物技术定位的关注，其中Altimmune (ALT)等演讲方寻求差异化管线叙事。",
-      "short_term_outlook_zh": "在未来1-4周内，预计分化持续：托管医疗(MOH)和老年生活(BKD)可能在价值资金流下保持相对强势，而医疗器械(DXCM、ISRG)鉴于低成交量下跌而面临技术阻力。Masimo的监管/退市状况值得密切关注，以防进一步负面催化剂。",
-      "mid_term_outlook_zh": "在1-6个月期间，高盛医疗保健会议的演讲系列可能在小盘生物技术中表现出重新估值候选者，但行业范围内的确定性将取决于CMS医疗补助/医疗保险政策明确性以及DXCM和ISRG是否能稳定。BKD的供应短缺论题如果职业数据确认结构性紧张，可能保持动量。",
-      "long_term_outlook_zh": "在结构上，1-3年展望有利于接触老龄人口统计学的公司（老年生活、双重符合资格者托管医疗）和达到商业规模的经验证的细胞/基因疗法平台。然而，医疗器械估值面临来自定价压力和竞争中断的压缩风险，而生物技术回报仍将高度集中于少数临床赢家。Seth Klarman的价值定位表明该行业可能正进入底部阶段，该阶段奖励选择性的、基础面驱动的个股精选胜过被动行业敞口。",
-      "key_risks_zh": [
-        "Masimo的退市通知和资产处置标示中盘医疗器械情绪的潜在传染风险，特别是如果进一步8-K披露显示契约违约或流动性压力",
-        "MOH和Clover Health等托管医疗公司面临持续的医疗补助金偿付率不确定性和可能影响2026年会员经济学的政策变化",
-        "Iovance (IOVA)和Altimmune (ALT)等生物技术公司承担高度的二元临床和监管风险，而行业领导者ISRG和DXCM中的低成交量价格表现表明机构从增长型医疗保健轮换离场"
       ]
     },
     {
       "id": "quantum-computing-emerging-tech",
       "name": "Quantum Computing Emerging Tech Momentum",
-      "one_line_summary": "Quantum computing stocks IonQ, RGTI, and QUBT posted gains amid the broader tech selloff, signaling speculative rotation into next-generation compute themes",
+      "one_line_summary": "Quantum hardware names trade with elevated volatility as investors position early in the next computing paradigm shift",
       "representative_tickers": [
         "IONQ",
         "RGTI",
         "QUBT"
       ],
-      "first_seen": "2026-06-10",
+      "first_seen": "2026-06-11",
       "direction": "Neutral",
       "conviction_score": 3,
       "conviction_delta": null,
       "stage": "Narrative Breakdown",
       "stage_confidence": 6,
-      "stage_reasoning": "Quantum computing stocks (IONQ, RGTI, QUBT) show modest positive price action (+1.4% to +2.5%) but critically low volume ratios (0.19x–0.34x of 20-day average), indicating minimal participation and conviction. This extremely subdued volume despite small price gains suggests the theme has lost momentum and market interest has faded significantly from prior highs. Signal count is very low (only 4 signals, largely price-based with no meaningful news catalysts or analyst coverage). The price levels themselves — IONQ at $58, RGTI at ~$20, QUBT at ~$9.74 — appear well below the euphoric peaks these names experienced during the 2024–2025 quantum computing mania. The combination of low signal volume, thin trading activity, and absence of fresh catalysts or institutional narrative drivers points to a post-peak Narrative Breakdown phase where the hype has dissipated and the theme is in a quiet consolidation/decline period.",
-      "conviction_basis": "While quantum computing names (IONQ, RGTI, QUBT) posted modest positive price moves of +1.4% to +2.5% on June 10, all three exhibited critically low volume ratios (0.19x–0.34x of their 20-day averages), signaling weak participation and low institutional conviction. No high-quality fundamental signals (earnings transcripts, substantive SEC filings) are present to support the theme, leaving price action as the sole bullish evidence — which is insufficiently backed by volume to confirm genuine momentum.",
+      "stage_reasoning": "The quantum computing theme shows signs of post-euphoria consolidation and potential narrative breakdown. Volume ratios are critically low across all three tickers (0.4x, 0.3x, and 0.2x of 20-day average), indicating a significant withdrawal of market participation and interest. Price action is muted — IONQ is slightly negative, while RGTI and QUBT show only minor positive moves insufficient to signal renewed momentum. The elevated absolute price levels (IONQ at $56.53, RGTI at $19.90) suggest these stocks had previously experienced a strong run-up, consistent with a prior Crowded Euphoria phase. The combination of dramatically reduced volume, lackluster price action, and the absence of any news or fundamental catalysts in the signal set points to fading conviction and reduced retail/institutional engagement. The theme appears to have moved past its peak enthusiasm phase into a quieter, potentially deflating stage. Confidence is moderate at 6 because only price signals are available — no narrative or media coverage data to fully confirm declining sentiment.",
+      "conviction_basis": "Price action across quantum computing names is mixed-to-mildly positive, but uniformly depressed volume ratios (all below 0.4x 20-day averages) signal a near-complete absence of institutional momentum or catalysts; without higher-quality fundamental signals such as earnings transcripts or SEC filings, there is insufficient evidence to assign meaningful directional conviction to this theme.",
       "bull_evidence": [
         {
-          "headline": "QUBT closed at $9.74 (+2.5%), volume ratio 0.2x",
-          "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/quote/QUBT",
-          "headline_zh": "QUBT 收于 $9.74（+2.5%），成交量比率 0.2倍"
-        },
-        {
-          "headline": "IONQ closed at $58.03 (+2.4%), volume ratio 0.3x",
-          "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/quote/IONQ",
-          "headline_zh": "IONQ 收于 $58.03（+2.4%），成交量比率 0.3倍"
-        },
-        {
-          "headline": "RGTI closed at $19.96 (+1.4%), volume ratio 0.3x",
+          "headline": "RGTI closed at $19.90 (+2.3%), volume ratio 0.3x",
           "source": "Yahoo Finance",
           "url": "https://finance.yahoo.com/quote/RGTI",
-          "headline_zh": "RGTI 收于 $19.96（+1.4%），成交量比率 0.3倍"
+          "headline_zh": "RGTI收于19.90美元（+2.3%），成交量比率0.3倍"
+        },
+        {
+          "headline": "QUBT closed at $9.56 (+0.4%), volume ratio 0.2x",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/quote/QUBT",
+          "headline_zh": "QUBT收于9.56美元（+0.4%），成交量比率0.2倍"
+        },
+        {
+          "headline": "IONQ closed at $56.53 (-0.2%), volume ratio 0.4x",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/quote/IONQ",
+          "headline_zh": "IONQ收于56.53美元（-0.2%），成交量比率0.4倍"
         }
       ],
       "bear_evidence": [
         {
-          "headline": "IONQ volume ratio only 0.34x vs 20-day average, indicating weak participation behind price gains",
+          "headline": "IONQ volume ratio only 0.36x 20-day average, indicating significant lack of participation and fading momentum",
           "source": "Yahoo Finance",
           "url": "https://finance.yahoo.com/quote/IONQ",
-          "headline_zh": "IONQ 成交量比率仅为20日平均的0.34倍，表明价格涨幅背后参与度薄弱"
+          "headline_zh": "IONQ成交量比率仅为20日均值的0.36倍，表明参与度严重不足且动能褪色"
         },
         {
-          "headline": "QUBT volume ratio only 0.19x vs 20-day average, suggesting extremely thin conviction in price move",
+          "headline": "QUBT volume ratio 0.18x 20-day average — extremely low conviction on a modest +0.4% move",
           "source": "Yahoo Finance",
           "url": "https://finance.yahoo.com/quote/QUBT",
-          "headline_zh": "QUBT 成交量比率仅为20日平均的0.19倍，表明价格移动中信念极度不足"
+          "headline_zh": "QUBT成交量比率为20日均值的0.18倍——对小幅+0.4%涨幅的信念极其低迷"
         },
         {
-          "headline": "RGTI volume ratio only 0.27x vs 20-day average, low-volume drift rather than momentum-driven rally",
+          "headline": "RGTI volume ratio 0.29x 20-day average despite the strongest price gain, suggesting weak institutional interest",
           "source": "Yahoo Finance",
           "url": "https://finance.yahoo.com/quote/RGTI",
-          "headline_zh": "RGTI 成交量比率仅为20日平均的0.27倍，低成交量漂移而非动量驱动型反弹"
+          "headline_zh": "RGTI成交量比率为20日均值的0.29倍，尽管价格涨幅最强，却表明机构兴趣薄弱"
         }
       ],
-      "bull_case": "IonQ (IONQ), Rigetti (RGTI), and Quantum Computing Inc. (QUBT) posted coordinated gains of +1.4% to +2.5% on June 10, 2026, suggesting broad sector-level buying interest rather than isolated stock-specific news. If institutional accumulation resumes at higher volume, these names could re-rate meaningfully given their positioning as pure-play quantum hardware and software companies with limited large-cap competition.",
-      "bear_case": "All three quantum names — IONQ, RGTI, and QUBT — saw dramatically subdued volume, registering only 0.19x to 0.34x their 20-day average, indicating the June 10 price gains were driven by thin liquidity rather than genuine conviction buying. Without a meaningful volume expansion or commercial revenue catalyst, these remain highly speculative pre-revenue or early-revenue names vulnerable to sharp drawdowns on any broad risk-off move.",
-      "current_drivers": "Incremental positive price action across IONQ (+2.4% to $58.03), RGTI (+1.4% to $19.96), and QUBT (+2.5% to $9.74) on June 10 appears to reflect residual momentum and sector rotation into emerging tech rather than a specific fundamental catalyst, as no earnings or major announcements were identified. The theme continues to be driven by narrative momentum around long-term quantum advantage timelines rather than near-term revenue inflection.",
+      "bull_case": "RGTI's +2.3% gain on June 11 suggests selective accumulation in smaller quantum names, and IONQ's relative price stability at $56.53 indicates institutional holders are not distributing despite low volume. If broader risk appetite returns to speculative tech, the sector's narrative around fault-tolerant quantum milestones and government/enterprise contract pipelines could reignite momentum sharply given compressed floats.",
+      "bear_case": "All three names — IONQ, RGTI, and QUBT — traded at severely depressed volume ratios (0.36x, 0.29x, and 0.18x their 20-day averages respectively), signaling a near-complete absence of conviction buying. Without a catalyst such as a hardware milestone, commercial contract, or earnings beat, these stocks risk drifting lower as retail interest fades and the sector remains pre-revenue or early-revenue stage.",
+      "current_drivers": "The theme is currently in a low-conviction consolidation phase, with price moves in RGTI (+2.3%) and QUBT (+0.4%) driven more by thin liquidity than fundamental news flow. No identifiable macro or company-specific catalyst is visible in the June 11 signals; price action appears technically driven rather than narrative-driven.",
       "key_risks": [
-        "Extremely low volume (QUBT at 0.19x, RGTI at 0.27x, IONQ at 0.34x 20-day average) suggests shallow market depth — any institutional selling could cause outsized downside moves",
-        "Absence of near-term revenue milestones or commercial contract wins leaves valuations entirely dependent on speculative future cash flows, making these stocks highly sensitive to changes in discount rates or risk appetite",
-        "Broader emerging tech sector rotation or macro-driven de-risking could disproportionately impact high-beta, low-liquidity quantum names given their lack of fundamental earnings support"
+        "Extremely low volume across all three names (QUBT at 0.18x 20-day avg) signals illiquid conditions where small sell orders can cause outsized drawdowns",
+        "Sector remains largely pre-commercial-scale revenue, making valuations — particularly IONQ at $56.53 — highly sensitive to shifts in risk-free rates or growth stock de-rating",
+        "Competitive displacement risk from Big Tech (IBM, Google, Microsoft) advancing their own quantum roadmaps, potentially crowding out pure-play names like IONQ, RGTI, and QUBT"
       ],
-      "short_term_outlook": "Over the next 1–4 weeks, the low-volume nature of the June 10 gains makes a sustained upside breakout unlikely without a fresh catalyst such as a government contract, partnership announcement, or broader AI/quantum sector news. Price action for IONQ, RGTI, and QUBT is likely to remain range-bound with elevated volatility risk on thin tape.",
-      "mid_term_outlook": "Over 1–6 months, the quantum computing cohort's trajectory will hinge on any commercial milestone announcements — particularly from IonQ, which has the highest current price ($58.03) and presumably the most institutional scrutiny. A sector-wide re-rating is possible if major cloud hyperscalers (e.g., AWS, Azure) announce expanded quantum partnerships, but downside pressure persists if capital continues rotating toward AI infrastructure with clearer near-term monetization.",
-      "long_term_outlook": "Over a 1–3 year horizon, quantum computing remains a structurally compelling but execution-dependent theme. IonQ, Rigetti, and Quantum Computing Inc. are among the few publicly traded pure-plays, giving them potential to capture significant valuation upside if fault-tolerant quantum systems move closer to commercial viability. However, the window for capital efficiency is narrow — companies that fail to demonstrate hardware progress or land enterprise contracts risk being displaced by Big Tech internal quantum programs (Google, IBM, Microsoft).",
-      "signal_count": 4,
+      "short_term_outlook": "Over the next 1-4 weeks, the quantum computing basket is likely to remain range-bound with downside bias given persistently sub-0.4x volume ratios across all names. RGTI at $19.90 is the most technically active of the three, but without a sector-wide catalyst, price discovery will remain muted. Watch for any hardware announcement or government contract as a potential volume trigger.",
+      "mid_term_outlook": "Over 1-6 months, the sector's trajectory will be heavily dependent on whether companies like IONQ can demonstrate commercial traction — enterprise pilots, cloud quantum access agreements, or error-correction milestones. RGTI and QUBT remain higher-beta, higher-risk expressions of the theme. A broader AI/deep-tech re-rating cycle could serve as a rising tide, but isolated quantum newsflow is required to sustain moves.",
+      "long_term_outlook": "Structurally, the 1-3 year outlook hinges on the industry crossing the threshold from NISQ-era (noisy intermediate-scale quantum) to fault-tolerant systems capable of running commercially relevant algorithms. IONQ's trapped-ion architecture and RGTI's superconducting approach represent distinct technical bets. The long-term total addressable market in optimization, drug discovery, and cryptography is substantial, but capital destruction risk remains high for companies that fail to demonstrate hardware scalability before funding runways narrow.",
+      "signal_count": 3,
       "timeline": [
         {
-          "date": "2026-06-10",
-          "event": "IONQ closes at $58.03 (+2.4%) on 0.34x average volume, signaling low-conviction price appreciation",
-          "event_zh": "IONQ 收于 $58.03（+2.4%）于0.34倍平均成交量，表明低信念价格升值"
+          "date": "2026-06-11",
+          "event": "IONQ closes at $56.53 (-0.2%) on 0.36x 20-day average volume, indicating low conviction and sideways consolidation",
+          "event_zh": "IONQ以0.36倍20日均值成交量收于56.53美元（-0.2%），表明低信念和横向整固"
         },
         {
-          "date": "2026-06-10",
-          "event": "RGTI closes at $19.96 (+1.4%) on 0.27x average volume, consistent with sector-wide thin-tape rally",
-          "event_zh": "RGTI 收于 $19.96（+1.4%）于0.27倍平均成交量，与行业范围内的薄交易反弹一致"
+          "date": "2026-06-11",
+          "event": "RGTI closes at $19.90 (+2.3%) on 0.29x average volume — strongest relative performer in the basket on the day despite thin liquidity",
+          "event_zh": "RGTI以0.29倍平均成交量收于19.90美元（+2.3%）——当日篮子中表现相对最强的股票，尽管流动性紧张"
         },
         {
-          "date": "2026-06-10",
-          "event": "QUBT closes at $9.74 (+2.5%) on only 0.19x average volume — weakest relative volume among quantum peers",
-          "event_zh": "QUBT 收于 $9.74（+2.5%）仅于0.19倍平均成交量——量子同行中相对成交量最弱"
+          "date": "2026-06-11",
+          "event": "QUBT closes at $9.56 (+0.4%) on 0.18x average volume — lowest volume ratio in the group, suggesting near-absent market participation",
+          "event_zh": "QUBT以0.18倍平均成交量收于9.56美元（+0.4%）——该组最低成交量比率，表明市场参与几乎完全缺失"
         },
         {
-          "date": "2026-06-10",
-          "event": "MicroVision (MVIS) files 8-K (Reg FD disclosure) — adjacent emerging tech filing, not directly quantum-related but reflects broader small-cap tech corporate activity",
-          "event_zh": "MicroVision（MVIS）提交 8-K（Reg FD 披露）——邻近的新兴科技申报，与量子不直接相关但反映更广泛的小型公司科技企业活动"
+          "date": "2026-06-11",
+          "event": "Quantum computing basket collectively trades at sub-0.4x average volume across all names, marking a sector-wide low-activity session with no identifiable catalyst",
+          "event_zh": "量子计算篮子整体以全部公司低于0.4倍平均成交量交易，标志着行业范围内的低活动会议，无可识别催化剂"
         }
       ],
-      "name_zh": "量子计算新兴科技动量",
-      "one_line_summary_zh": "量子计算股票 IonQ、RGTI 和 QUBT 在整体科技板块下跌期间上涨，表明投机性资金流向下一代计算主题",
-      "conviction_basis_zh": "虽然量子计算股票（IONQ、RGTI、QUBT）在6月10日实现了 +1.4% 至 +2.5% 的温和涨幅，但所有三只股票都呈现极低的成交量比率（20日平均水平的0.19倍-0.34倍），表明参与度较弱且机构信念不足。缺乏高质量基本面信号（财报电话会议、实质性 SEC 申报），无法支撑该主题，导致价格走势成为唯一的看涨证据——但成交量不足以确认真正的动量。",
-      "stage_reasoning_zh": "量子计算股票（IONQ、RGTI、QUBT）显示出温和的正价格走势（+1.4% 至 +2.5%），但成交量比率极低（20日平均的0.19倍-0.34倍），表明参与度和信念不足。尽管价格小幅上涨，但成交量异常淡薄，表明该主题已失去动能，市场兴趣较之前高点已明显褪去。信号数量很少（仅4个信号，主要基于价格，缺乏有意义的新闻催化剂或分析师覆盖）。价格水平本身——IONQ 于 $58、RGTI 约 $20、QUBT 约 $9.74——远低于这些股票在2024-2025年量子计算热潮期间经历的狂热高点。低信号量、交易活动清淡以及缺乏新鲜催化剂或机构叙事驱动力的结合，指向叙事崩溃后期阶段，其中炒作已消散，该主题处于静默整固/下跌期。",
-      "bull_case_zh": "IonQ（IONQ）、Rigetti（RGTI）和 Quantum Computing Inc.（QUBT）在2026年6月10日实现了 +1.4% 至 +2.5% 的协调性涨幅，表明行业级购买兴趣而非孤立的个股特定新闻。如果机构积累在更高成交量下恢复，鉴于这些公司在纯量子硬件和软件领域的地位以及有限的大型公司竞争，这些股票可能实现有意义的重估。",
-      "bear_case_zh": "所有三只量子股票——IONQ、RGTI 和 QUBT——成交量明显低迷，仅为20日平均的0.19倍至0.34倍，表明6月10日的价格上涨由浅层流动性而非真正的信念购买驱动。没有有意义的成交量扩张或商业收入催化剂，这些仍是高度投机性的无收入或早期收入股票，易受任何广泛风险厌恶环境下的急剧下跌。",
-      "current_drivers_zh": "IONQ（+2.4% 至 $58.03）、RGTI（+1.4% 至 $19.96）和 QUBT（+2.5% 至 $9.74）在6月10日的增量正价格走势似乎反映残留动量和向新兴科技的板块轮换，而非特定基本面催化剂，因为未发现任何财报或重大公告。该主题继续由围绕长期量子优势时间表的叙事动量驱动，而非近期收入拐点。",
-      "short_term_outlook_zh": "在接下来的1-4周内，6月10日涨幅的低成交量性质使得没有新催化剂（如政府合同、合作伙伴关系公告或更广泛的人工智能/量子板块新闻）的情况下，持续上行突破不太可能。IONQ、RGTI 和 QUBT 的价格走势可能在极薄交易中保持区间震荡，波动风险提升。",
-      "mid_term_outlook_zh": "在1-6个月期间，量子计算阵营的轨迹将取决于任何商业里程碑公告——特别是来自 IonQ 的公告，其当前价格（$58.03）最高，且可能受到最多机构关注。如果主要云超大规模运营商（如 AWS、Azure）宣布扩展量子合作伙伴关系，行业范围内的重估是可能的，但如果资本继续轮换向具有更清晰近期货币化的人工智能基础设施，下行压力仍然存在。",
-      "long_term_outlook_zh": "在1-3年地平线上，量子计算仍是结构性吸引但执行依赖的主题。IonQ、Rigetti 和 Quantum Computing Inc. 是为数不多的上市纯玩家之一，如果容错量子系统接近商业可行性，它们有潜力捕获显著的估值上升空间。但是，资本效率窗口很窄——未能展示硬件进展或争取企业合同的公司面临被大型科技内部量子项目（谷歌、IBM、微软）取代的风险。",
+      "name_zh": "量子计算新兴科技动能",
+      "one_line_summary_zh": "量子硬件公司股票以高波动率交易，投资者早期布局下一个计算范式转变",
+      "conviction_basis_zh": "量子计算相关公司的价格走势呈混合态至温和偏正，但成交量比率普遍低迷（全部低于0.4倍的20日均值），表明机构动能或催化剂几近完全缺失；在没有更高质量基本面信号（如财报电话会或SEC备案文件）的情况下，证据不足以对该主题给予有意义的方向性确信。",
+      "stage_reasoning_zh": "量子计算主题显示出后繁荣整固和潜在叙事崩溃的迹象。三只股票的成交量比率严重低迷（分别为0.4倍、0.3倍和0.2倍的20日均值），表明市场参与度和关注度大幅下滑。价格走势沉闷——IONQ 略微下跌，而RGTI和QUBT仅显示小幅上涨，不足以信号新的动能。绝对价格水平处高位（IONQ 56.53美元，RGTI 19.90美元）暗示这些股票曾经历过强劲上涨，与之前的拥挤繁荣阶段相符。成交量大幅下降、价格走势乏力以及信号集合中缺乏任何新闻或基本面催化剂，共同指向信念褪色和零售/机构参与度下降。该主题似乎已度过其高峰热情阶段，进入更为平静、可能通胀消退的阶段。信心度为中等水平6分，因为仅有价格信号可用——无叙事或媒体报道数据来充分确认情绪下降。",
+      "bull_case_zh": "RGTI在6月11日的+2.3%涨幅表明小型量子公司中存在选择性买盘，而IONQ在56.53美元的相对价格稳定表明机构持有者尽管成交量低迷但未在抛售。如果对投机科技的更广泛风险偏好回归，该行业围绕容错量子里程碑和政府/企业合同渠道的叙事可能会因为流通股紧张而迅速重燃动能。",
+      "bear_case_zh": "三只股票——IONQ、RGTI和QUBT——的交易成交量比率严重低迷（分别为20日均值的0.36倍、0.29倍和0.18倍），表明几乎完全缺乏信念买盘。在没有硬件里程碑、商业合同或业绩超预期等催化剂的情况下，这些股票面临随着零售兴趣褪色而向下漂移的风险，因为该行业仍处于无营收或早期营收阶段。",
+      "current_drivers_zh": "该主题目前处于低信念整固阶段，RGTI（+2.3%）和QUBT（+0.4%）的价格波动更多由流动性紧张而非基本面新闻推动。6月11日的信号中未看到可识别的宏观或公司特定催化剂；价格走势看似技术面驱动而非叙事驱动。",
+      "short_term_outlook_zh": "在接下来的1-4周内，鉴于所有公司的成交量比率持续低于0.4倍，量子计算篮子可能保持区间整固态势并偏向下跌。RGTI在19.90美元处是三者中技术活跃度最高的，但在没有行业级催化剂的情况下，价格发现将保持沉闷。关注任何硬件公告或政府合同作为潜在成交量触发事件。",
+      "mid_term_outlook_zh": "在1-6个月内，该行业的轨迹将在很大程度上取决于IONQ等公司是否能够展示商业吸引力——企业试点、云量子访问协议或纠错里程碑。RGTI和QUBT仍是该主题的更高贝塔、更高风险表达方式。更广泛的AI/深科技重新评级周期可能充当上升的浪潮，但需要孤立的量子新闻才能维持涨幅。",
+      "long_term_outlook_zh": "从结构上看，1-3年的前景取决于该行业是否能从NISQ时代（嘈杂中等规模量子计算）跨越到能够运行商业相关算法的容错系统。IONQ的囚禁离子架构和RGTI的超导方法代表不同的技术赌注。优化、药物发现和密码学的长期总可寻址市场规模庞大，但对于在融资跑道收缩前未能展示硬件可扩展性的公司，资本毁灭风险仍然很高。",
       "key_risks_zh": [
-        "极低的成交量（QUBT 为0.19倍、RGTI 为0.27倍、IONQ 为0.34倍20日平均）表明市场深度浅——任何机构抛售都可能导致过度下行移动",
-        "缺乏近期收入里程碑或商业合同胜利使估值完全取决于投机性未来现金流，使这些股票对折现率或风险偏好变化高度敏感",
-        "更广泛的新兴科技板块轮换或宏观驱动的去风险可能对高贝塔、低流动性量子股票造成不成比例的影响，鉴于其缺乏基本面盈利支持"
+        "全三只公司的成交量极其低迷（QUBT为20日均值的0.18倍）表明流动性不足环境中小卖单可能引发过度下跌",
+        "该行业大体保持商业规模前营收阶段，使得估值——特别是IONQ在56.53美元——对无风险利率转变或增长股降级高度敏感",
+        "来自大型科技公司（IBM、Google、Microsoft）推进各自量子路线图的竞争置换风险，可能排挤IONQ、RGTI和QUBT等纯粹类公司"
+      ]
+    },
+    {
+      "id": "big-tech-ai-platforms",
+      "name": "Big Tech AI Platform Divergence",
+      "one_line_summary": "MSFT, GOOGL, and META pull back 2-3% on AI regulation concerns and valuation fatigue while platform maturation themes persist for Uber and Shopify",
+      "representative_tickers": [
+        "MSFT",
+        "GOOGL",
+        "META",
+        "AMZN",
+        "AAPL"
+      ],
+      "first_seen": "2026-06-11",
+      "direction": "Neutral",
+      "conviction_score": 3,
+      "conviction_delta": null,
+      "stage": "Narrative Breakdown",
+      "stage_confidence": 6,
+      "stage_reasoning": "The 'Big Tech AI Platform Divergence' theme is showing signs consistent with Narrative Breakdown. Four of five major AI platform stocks (MSFT -2.7%, GOOGL -2.5%, META -1.8%, AMZN -0.5%) are declining on the same day, suggesting broad sector pressure rather than idiosyncratic moves. Critically, volume ratios are extremely low across all names (0.2x–0.5x of 20-day average), indicating lack of conviction and reduced investor engagement — a hallmark of fading narrative interest rather than active selling panic. The news signals present (IAC, Shopify, Uber, Cloudflare) are tangentially related at best, suggesting coverage has shifted away from the core Big Tech AI theme. AAPL's modest +0.4% gain with the lowest volume (0.2x) further supports the divergence narrative but without meaningful price momentum. The low signal count (9 total, only 5 price-related) and absence of direct thematic journalism point to declining coverage. The combination of price weakness, very low volume, and sparse relevant news flow is characteristic of a theme losing its narrative grip, placing it in early-to-mid Narrative Breakdown rather than full capitulation.",
+      "conviction_basis": "Signal quality is weak overall — no earnings transcripts or SEC filings are present, and price action shows broad-based selling across core Big Tech AI names (MSFT -2.7%, GOOGL -2.5%, META -1.8%) on below-average volume, suggesting risk-off repositioning rather than fundamental divergence. The absence of high-credibility sources and lack of direct AI platform differentiation signals keep conviction low with a Neutral directional bias.",
+      "bull_evidence": [
+        {
+          "headline": "AAPL closed at $292.68 (+0.4%), volume ratio 0.2x",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/quote/AAPL",
+          "headline_zh": "AAPL收盘于$292.68（+0.4%），成交量比率0.2倍"
+        },
+        {
+          "headline": "Uber: The Platform Is Maturing And Improving, But The Upside Is Only Beginning",
+          "source": "Seeking Alpha",
+          "url": "https://seekingalpha.com/article/4914245-uber-the-platform-is-maturing-and-improving-but-the-upside-is-only-beginning?source=feed_all_articles",
+          "headline_zh": "Uber：平台正在成熟并改进，但上升空间才刚刚开始"
+        },
+        {
+          "headline": "Cloudflare, Inc. (NET) Analyst/Investor Day Transcript",
+          "source": "Seeking Alpha",
+          "url": "https://seekingalpha.com/article/4913597-cloudflare-inc-net-analyst-investor-day-transcript?source=feed_all_articles",
+          "headline_zh": "Cloudflare, Inc. (NET)分析师/投资者日记录稿"
+        }
+      ],
+      "bear_evidence": [
+        {
+          "headline": "MSFT closed at $386.72 (-2.7%), volume ratio 0.4x",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/quote/MSFT",
+          "headline_zh": "MSFT收盘于$386.72（-2.7%），成交量比率0.4倍"
+        },
+        {
+          "headline": "GOOGL closed at $347.46 (-2.5%), volume ratio 0.5x",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/quote/GOOGL",
+          "headline_zh": "GOOGL收盘于$347.46（-2.5%），成交量比率0.5倍"
+        },
+        {
+          "headline": "META closed at $560.67 (-1.8%), volume ratio 0.3x",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/quote/META",
+          "headline_zh": "META收盘于$560.67（-1.8%），成交量比率0.3倍"
+        }
+      ],
+      "bull_case": "Platform divergence is creating differentiated winners: AMZN's relative resilience (-0.5% on June 11) versus MSFT's steeper decline (-2.7%) suggests AWS/AI infrastructure may be repricing favorably against pure software AI plays. Cloudflare's Analyst/Investor Day signals accelerating AI networking infrastructure demand, positioning NET as a platform-layer beneficiary independent of any single hyperscaler. META's comparatively contained drawdown (-1.8%) at $560.67 reflects confidence in its open-source Llama strategy and ad-monetization flywheel tied to AI-driven targeting.",
+      "bear_case": "Broad-based selling across all major AI platforms on June 11 — MSFT -2.7%, GOOGL -2.5%, META -1.8% — at uniformly low volume ratios (0.2x–0.5x of 20-day average) suggests thin conviction and potential for further downside if institutional sellers return at normal volume. GOOGL at $347.46 faces structural pressure as AI-native search alternatives erode its core monetization engine, a risk not yet fully discounted. The absence of differentiated upside catalysts in the near term, combined with broad sector weakness, risks compressing multiples across the theme simultaneously rather than rewarding platform winners.",
+      "current_drivers": "A coordinated low-volume pullback across Big Tech AI names on June 11 — with volume ratios ranging from 0.24x (AAPL) to 0.5x (GOOGL) — points to passive rebalancing or macro-driven risk-off rather than fundamental deterioration, temporarily masking platform-level divergence. Cloudflare's Investor Day and Shopify's $3B buyback expansion are platform-specific catalysts highlighting that AI monetization and capital return strategies are diverging meaningfully across the tech stack.",
+      "key_risks": [
+        "Re-acceleration of volume-driven selling in MSFT and GOOGL could expose valuation gaps versus AI infrastructure peers like AMZN and NET if macro headwinds intensify",
+        "GOOGL's search revenue base faces structural disruption from AI-native competitors, with the $347.46 price level representing a critical support zone amid declining search query growth",
+        "Cloudflare and other infrastructure layers may face margin compression if hyperscalers (MSFT Azure, AWS) vertically integrate AI networking capabilities, reducing third-party platform value"
+      ],
+      "short_term_outlook": "Over the next 1–4 weeks, the low-volume nature of the June 11 selloff (all names below 0.5x average volume) suggests limited immediate follow-through selling, but a lack of positive catalysts may keep MSFT and GOOGL range-bound near $387 and $347 respectively. AAPL's marginal outperformance (+0.4%) and AMZN's relative stability (-0.5%) may attract rotation flows within the theme.",
+      "mid_term_outlook": "Over 1–6 months, platform divergence should become more pronounced as Q2/Q3 earnings reveal which AI investments are translating to revenue — AWS AI services, META's ad-AI monetization, and Cloudflare's AI gateway products are the clearest near-term revenue vectors. MSFT's Azure OpenAI co-pilot adoption rates and GOOGL's Gemini enterprise traction will be critical re-rating catalysts or continued headwinds.",
+      "long_term_outlook": "Over a 1–3 year horizon, the Big Tech AI landscape is structurally bifurcating into infrastructure winners (AMZN/AWS, Cloudflare), application-layer monetization leaders (META, Shopify via AI commerce tools), and search/productivity incumbents (MSFT, GOOGL) under threat of platform disruption. Capital return signals — such as Shopify's $3B buyback — indicate maturing platforms prioritizing shareholder returns over growth investment, a structural shift that will compress growth multiples while potentially supporting floor valuations.",
+      "signal_count": 9,
+      "timeline": [
+        {
+          "date": "2026-06-11",
+          "event": "MSFT closes at $386.72 (-2.7%) on 0.38x average volume, steepest single-day decline among major AI platform names",
+          "event_zh": "MSFT在成交量0.38倍均值的情况下收盘于$386.72（-2.7%），是主要AI平台股票中单日下跌幅度最大的"
+        },
+        {
+          "date": "2026-06-11",
+          "event": "GOOGL closes at $347.46 (-2.5%) on 0.46x average volume, raising concerns over AI search transition and monetization risk",
+          "event_zh": "GOOGL在成交量0.46倍均值的情况下收盘于$347.46（-2.5%），引发对AI搜索转型和变现风险的担忧"
+        },
+        {
+          "date": "2026-06-11",
+          "event": "Cloudflare (NET) hosts Analyst/Investor Day, providing detailed platform roadmap for AI infrastructure and networking layer strategy",
+          "event_zh": "Cloudflare (NET)举办分析师/投资者日，详细介绍AI基础设施和网络层战略的平台路线图"
+        },
+        {
+          "date": "2026-06-11",
+          "event": "Shopify (SHOP) expands share repurchase program by $3B, signaling platform maturation and confidence in AI-enhanced commerce monetization",
+          "event_zh": "Shopify (SHOP)将股票回购计划扩大30亿美元，表明平台成熟和对AI增强型商务变现的信心"
+        },
+        {
+          "date": "2026-06-11",
+          "event": "AMZN closes at $236.86 (-0.5%), significantly outperforming MSFT and GOOGL, reflecting relative AWS/AI infrastructure resilience",
+          "event_zh": "AMZN收盘于$236.86（-0.5%），相对MSFT和GOOGL明显跑赢，反映AWS/AI基础设施相对韧性"
+        },
+        {
+          "date": "2026-06-11",
+          "event": "AAPL closes at $292.68 (+0.4%) as the sole gainer among Big Tech AI platforms, on the lowest volume ratio of the group at 0.24x",
+          "event_zh": "AAPL收盘于$292.68（+0.4%），成为大科技AI平台中唯一上涨者，成交量比率为该组中最低的0.24倍"
+        }
+      ],
+      "name_zh": "大科技AI平台分化",
+      "one_line_summary_zh": "MSFT、GOOGL和META因AI监管担忧和估值疲劳下跌2-3%，同时Uber和Shopify的平台成熟主题持续推进",
+      "conviction_basis_zh": "整体信号质量较弱——缺乏财报电话会议或SEC备案，价格走势显示大科技AI核心股票（MSFT -2.7%、GOOGL -2.5%、META -1.8%）出现广泛卖盘，成交量低于平均水平，表明风险厌恶重新定位而非基本面分化。缺乏高可信度信息来源和直接AI平台差异化信号，使得信心保持在低位，方向偏好为中性。",
+      "stage_reasoning_zh": "「大科技AI平台分化」主题显示出与叙述崩溃相符的迹象。五只主要AI平台股票中的四只（MSFT -2.7%、GOOGL -2.5%、META -1.8%、AMZN -0.5%）在同一天下跌，表明广泛的板块压力而非特有走势。关键地，所有股票的成交量比率极低（20日均值的0.2倍–0.5倍），表明缺乏信心和投资者参与度下降——这是叙述兴趣褪退而非主动抛售恐慌的标志。现有的新闻信号（IAC、Shopify、Uber、Cloudflare）充其量只是间接相关，表明覆盖范围已偏离核心大科技AI主题。AAPL的温和上涨0.4%且成交量最低（0.2倍）进一步支持分化叙述，但缺乏有意义的价格动量。低信号数量（共9个，仅5个与价格相关）和缺乏直接主题新闻报道表明覆盖度下降。价格疲软、极低成交量和稀疏相关新闻流的组合是主题失去叙述牵引力的特征，将其置于早期至中期叙述崩溃阶段，而非完全投降。",
+      "bull_case_zh": "平台分化正在创造差异化赢家：AMZN的相对韧性（6月11日下跌0.5%）相对于MSFT的更陡下降（下跌2.7%）表明AWS/AI基础设施可能相对于纯软件AI业务重新定价利好。Cloudflare的分析师/投资者日活动表明AI网络基础设施需求加速，将NET定位为独立于任何单一超大规模厂商的平台层受益者。META的相对温和下跌（在$560.67时下跌1.8%）反映了市场对其开源Llama战略和与AI驱动定向相关的广告变现飞轮的信心。",
+      "bear_case_zh": "6月11日所有主要AI平台出现广泛卖盘——MSFT -2.7%、GOOGL -2.5%、META -1.8%——成交量比率一致较低（20日均值的0.2倍–0.5倍），表明信心不足，如果机构卖家以正常成交量回归，可能面临进一步下行风险。GOOGL在$347.46处面临结构性压力，因为AI原生搜索替代品正在侵蚀其核心变现引擎，这一风险尚未被充分计入。缺乏近期差异化上升催化剂，加上广泛板块疲软，存在同时压缩整个主题估值倍数而非奖励平台赢家的风险。",
+      "current_drivers_zh": "6月11日大科技AI股票出现协调一致的低成交量回调——成交量比率范围从0.24倍（AAPL）到0.5倍（GOOGL）——表明被动再平衡或宏观驱动的风险厌恶，而非基本面恶化，暂时掩盖了平台级别的分化。Cloudflare的投资者日和Shopify的30亿美元回购扩展是平台特定催化剂，突出显示AI变现和资本返回战略在技术堆栈中有意义地分化。",
+      "short_term_outlook_zh": "在接下来的1–4周内，6月11日低成交量抛售的特性（所有股票均低于0.5倍平均成交量）表明近期跟进卖盘有限，但缺乏正面催化剂可能使MSFT和GOOGL在各自$387和$347附近陷入区间波动。AAPL的边际跑赢（+0.4%）和AMZN的相对稳定（-0.5%）可能会吸引主题内的轮动流入。",
+      "mid_term_outlook_zh": "在1–6个月内，随着Q2/Q3财报揭示哪些AI投资正在转化为收入，平台分化应更加明显——AWS AI服务、META的广告AI变现和Cloudflare的AI网关产品是最清晰的近期收入向量。MSFT的Azure OpenAI联合试点采用率和GOOGL的Gemini企业吸引力将是关键重估催化剂或持续的阻力。",
+      "long_term_outlook_zh": "在1–3年的时间范围内，大科技AI格局结构性分化为基础设施赢家（AMZN/AWS、Cloudflare）、应用层变现领导者（META、通过AI商务工具的Shopify）以及面临平台颠覆威胁的搜索/生产力现有者（MSFT、GOOGL）。资本回报信号——如Shopify的30亿美元回购——表明成熟平台优先考虑股东回报而非增长投资，这一结构性转变将压缩增长倍数，同时可能支持底部估值。",
+      "key_risks_zh": [
+        "MSFT和GOOGL的成交量驱动卖盘加速可能会暴露相对于AMZN和NET等AI基础设施同行的估值缺口，如果宏观逆风加剧",
+        "GOOGL的搜索收入基础面临来自AI原生竞争对手的结构性颠覆，$347.46价格水平在搜索查询增长下降中代表关键支撑区域",
+        "Cloudflare和其他基础设施层如果超大规模厂商（MSFT Azure、AWS）垂直整合AI网络功能，可能面临利润率压缩，降低第三方平台价值"
+      ]
+    },
+    {
+      "id": "healthcare-biotech-mixed",
+      "name": "Healthcare & Biotech Divergence",
+      "one_line_summary": "Medical devices, AI precision medicine, and biotech pipeline names attract attention as Tempus AI moat thesis and surgical robotics valuations are debated",
+      "representative_tickers": [
+        "ISRG",
+        "RMD",
+        "AMGN",
+        "DXCM",
+        "TEM"
+      ],
+      "first_seen": "2026-06-11",
+      "direction": "Neutral",
+      "conviction_score": 3,
+      "conviction_delta": null,
+      "stage": "Early Discovery",
+      "stage_confidence": 6,
+      "stage_reasoning": "The 'Healthcare & Biotech Divergence' theme shows characteristics consistent with Early Discovery. Signal count is modest at 15, dominated by routine SEC filings (8-Ks) and generic 'good stock to buy?' articles from Yahoo Finance/Seeking Alpha — typical of specialist and aggregator coverage rather than mainstream narrative formation. Price action in key names (ISRG -0.8%, DXCM flat) is subdued with extremely low volume ratios (0.24x and 0.13x vs 20-day average), indicating no meaningful institutional accumulation or retail interest. There are no breakout signals, no thematic analyst reports framing the divergence narrative explicitly, and no evidence of broad media coverage. Coverage is fragmented across individual companies rather than unified around a coherent 'divergence' thesis, which is a hallmark of pre-acceleration early discovery.",
+      "conviction_basis": "Signals are highly mixed and fragmented: small-cap biotech filings show dilutive equity raises and corporate restructuring pointing to stress, while select Seeking Alpha commentary highlights speculative upside in biotech names; low-volume price action in large-cap medtech (ISRG, DXCM) suggests lack of directional momentum. The divergence theme is present but lacks high-quality catalysts or earnings transcript evidence to establish clear directional conviction.",
+      "bull_evidence": [
+        {
+          "headline": "Cullinan Therapeutics: Heading Toward Paydirt",
+          "source": "Seeking Alpha",
+          "url": "https://seekingalpha.com/article/4914254-cullinan-therapeutics-heading-toward-paydirt?source=feed_all_articles",
+          "headline_zh": "Cullinan Therapeutics：走向回报期"
+        },
+        {
+          "headline": "Tempus AI: AI Precision Medicine With A Moat",
+          "source": "Seeking Alpha",
+          "url": "https://seekingalpha.com/article/4914249-tempus-ai-ai-precision-medicine-with-moat?source=feed_all_articles",
+          "headline_zh": "Tempus AI：具有护城河的 AI 精准医疗"
+        },
+        {
+          "headline": "8-K - Shattuck Labs, Inc. (0001680367) - Entry into a Material Definitive Agreement",
+          "source": "SEC EDGAR 8-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/1680367/000119312526266745/0001193125-26-266745-index.htm",
+          "headline_zh": "8-K - Shattuck Labs, Inc. (0001680367) - 进入重大最终协议"
+        }
+      ],
+      "bear_evidence": [
+        {
+          "headline": "ISRG closed at $408.90 (-0.8%), volume ratio 0.2x",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/quote/ISRG",
+          "headline_zh": "ISRG 收于 $408.90（-0.8%），成交量比 0.2 倍"
+        },
+        {
+          "headline": "8-K - Edesa Biotech, Inc. - Unregistered Sales of Equity Securities (dilutive financing)",
+          "source": "SEC EDGAR 8-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/1540159/000117184326004053/0001171843-26-004053-index.htm",
+          "headline_zh": "8-K - Edesa Biotech, Inc. - 非注册股权证券销售（稀释性融资）"
+        },
+        {
+          "headline": "8-K - Jaguar Health, Inc. - Unregistered Sales of Equity Securities & Amendments to Articles",
+          "source": "SEC EDGAR 8-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/1585608/000119312526266770/0001193125-26-266770-index.htm",
+          "headline_zh": "8-K - Jaguar Health, Inc. - 非注册股权证券销售及公司章程修订"
+        }
+      ],
+      "bull_case": "Large-cap healthcare names like Amgen (AMGN) and ResMed (RMD) offer defensive earnings stability with potential re-rating catalysts, while early-stage biotechs such as Cullinan Therapeutics and Enliven Therapeutics are filing material agreements signaling pipeline advancement and possible partnership activity. Tempus AI's positioning in AI-driven precision medicine with a described competitive moat represents a structural growth vector that could attract premium valuation multiples as clinical validation accumulates.",
+      "bear_case": "Multiple small-cap biotechs — including Edesa Biotech (BFRI), Jaguar Health, and Biofrontera — are conducting unregistered equity sales and entering new financing agreements, signaling capital stress and dilution risk that could weigh on sentiment across the small-cap biotech cohort. ISRG closed at $408.90 on anemic volume (0.24x 20-day average), and DXCM traded essentially flat at $74.78 on just 0.13x normal volume, suggesting institutional disengagement and a lack of near-term conviction in medtech names.",
+      "current_drivers": "The theme is currently bifurcating between established large-caps seeking valuation support (AMGN, RMD) and a wave of small/micro-cap biotech corporate actions — including multiple 8-K filings for new financing agreements and unregistered equity sales (Edesa Biotech, Jaguar Health, Shattuck Labs) — reflecting stress-driven capital raises rather than growth-driven momentum. AI-enabled healthcare platforms like Tempus AI are emerging as a distinct growth sub-theme within the sector.",
+      "key_risks": [
+        "Dilution cascade risk: at least three micro-cap biotechs (Edesa Biotech, Jaguar Health, Biofrontera) filed unregistered equity sales on 2026-06-11, suggesting a pattern of capital-constrained companies issuing shares at distressed terms",
+        "Volume illiquidity in medtech bellwethers: ISRG and DXCM trading at 0.13x–0.24x normal volume signals thin institutional participation, increasing vulnerability to sharp moves on any negative catalyst",
+        "Binary clinical/regulatory risk concentrated in small-caps: companies like Cullinan Therapeutics, Ovid Therapeutics, and Shattuck Labs are at inflection points where trial readouts or partnership outcomes could result in outsized drawdowns"
+      ],
+      "short_term_outlook": "Over the next 1–4 weeks, the sector is likely to remain range-bound with high dispersion. Low-volume trading in ISRG ($408.90, -0.8%) and DXCM ($74.78, flat) suggests the market is in a wait-and-see posture on medtech. Near-term catalysts will likely come from small-cap corporate events — Shattuck Labs' new material agreement and Enliven Therapeutics' Reg FD disclosure could be the first signals of partnership or data announcements.",
+      "mid_term_outlook": "Over 1–6 months, the divergence between profitable large-caps (AMGN, RMD) and capital-constrained micro-caps is likely to widen. Companies with AI/data moats like Tempus AI may attract M&A interest or premium valuation re-rates, while names repeatedly tapping unregistered equity markets risk further derating. LivaNova and Ovid Therapeutics' shareholder votes suggest potential governance or strategic changes that warrant monitoring.",
+      "long_term_outlook": "Structurally, the 1–3 year outlook favors a barbell approach: large-cap biotech platforms with diversified pipelines (Amgen) and AI-integrated precision medicine companies (Tempus AI) are positioned to compound, while the fragmented micro-cap biotech landscape undergoes consolidation. The persistent financing stress visible in today's 8-K filings suggests a thinning of the small-cap cohort through M&A, failure, or reverse mergers, ultimately concentrating returns in better-capitalized players.",
+      "signal_count": 15,
+      "timeline": [
+        {
+          "date": "2026-06-11",
+          "event": "Edesa Biotech (BFRI) files 8-K disclosing entry into material definitive agreement and unregistered equity sale, signaling capital raise under stress",
+          "event_zh": "Edesa Biotech (BFRI) 申报 8-K，披露进入重大最终协议和非注册股权销售，表明压力下的融资"
+        },
+        {
+          "date": "2026-06-11",
+          "event": "Jaguar Health files 8-K covering new material agreement, unregistered equity sale, and articles of incorporation amendment — multi-item corporate restructuring signal",
+          "event_zh": "Jaguar Health 申报 8-K，涵盖新重大协议、非注册股权销售和公司章程修订——多项目公司重组信号"
+        },
+        {
+          "date": "2026-06-11",
+          "event": "Shattuck Labs files 8-K for entry into material definitive agreement, potentially indicating partnership or licensing deal in oncology pipeline",
+          "event_zh": "Shattuck Labs 申报 8-K，涉及进入重大最终协议，可能表明肿瘤学管线中的合作或许可协议"
+        },
+        {
+          "date": "2026-06-11",
+          "event": "Enliven Therapeutics files Reg FD and Other Events 8-K, suggesting imminent material disclosure such as clinical data or investor communication",
+          "event_zh": "Enliven Therapeutics 申报 Reg FD 和其他事件 8-K，表明迫在眉睫的重大披露，如临床数据或投资者沟通"
+        },
+        {
+          "date": "2026-06-11",
+          "event": "ISRG closes at $408.90 (-0.8%) on 0.24x average volume and DXCM flat at $74.78 on 0.13x volume, reflecting broad institutional disengagement in medtech",
+          "event_zh": "ISRG 以 0.24 倍平均成交量收于 $408.90（-0.8%），DXCM 以 0.13 倍成交量持平于 $74.78，反映医疗器械中的广泛机构脱离"
+        },
+        {
+          "date": "2026-06-11",
+          "event": "Seeking Alpha publishes bullish analysis on Cullinan Therapeutics ('Heading Toward Paydirt') and Tempus AI ('AI Precision Medicine With A Moat'), highlighting emerging high-conviction names within biotech divergence theme",
+          "event_zh": "Seeking Alpha 发布 Cullinan Therapeutics（\"走向回报期\"）和 Tempus AI（\"具有护城河的 AI 精准医疗\"）的看涨分析，突出生物技术分化主题内的新兴高信念名称"
+        }
+      ],
+      "name_zh": "医疗保健与生物技术分化",
+      "one_line_summary_zh": "医疗设备、AI精准医疗和生物技术管线名称引起关注，Tempus AI 护城河论文和手术机器人估值面临争议",
+      "conviction_basis_zh": "信号高度混合且分散：小型生物技术公司申报显示稀释性股权融资和公司重组指向压力，而部分 Seeking Alpha 评论强调生物技术名称的投机上行；大市值医疗器械（ISRG、DXCM）的低交易量表明缺乏方向性动量。分化主题存在，但缺乏高质量催化剂或盈利电话会议证据来确立明确的方向性信念。",
+      "stage_reasoning_zh": "\"医疗保健与生物技术分化\"主题展现出与早期发现阶段一致的特征。信号计数较少，为 15 个，由常规 SEC 申报（8-K）和来自雅虎财经/Seeking Alpha 的通用\"值得购买的好股票？\"文章主导——这是专业和聚合器报道的典型特征，而非主流叙事形成。关键名称（ISRG -0.8%、DXCM 持平）的价格行动疲软，成交量比极低（相对 20 日平均值为 0.24 倍和 0.13 倍），表明机构没有有意义的积累或零售兴趣。没有突破信号，没有显式框架化分化叙事的主题分析师报告，也没有广泛媒体报道的证据。覆盖面碎片化分散于单个公司，而非围绕一致的\"分化\"论文统一，这是前加速期早期发现的典型特征。",
+      "bull_case_zh": "Amgen (AMGN) 和 ResMed (RMD) 等大市值医疗保健名称提供防御性收益稳定性，以及潜在的重新评级催化剂，而 Cullinan Therapeutics 和 Enliven Therapeutics 等早期生物技术公司正在申报重大协议，表明管线推进和可能的合作活动。Tempus AI 在 AI 驱动的精准医疗中的定位，具有描述的竞争护城河，代表了随着临床验证累积可能吸引溢价估值倍数的结构性增长向量。",
+      "bear_case_zh": "包括 Edesa Biotech (BFRI)、Jaguar Health 和 Biofrontera 在内的多家小型生物技术公司正在进行非注册股权销售并进入新融资协议，表明资本压力和稀释风险可能对小型生物技术群体情绪产生负面影响。ISRG 以微弱成交量（相对 20 日平均值为 0.24 倍）收于 $408.90，DXCM 仅以 0.13 倍正常成交量基本持平于 $74.78，表明机构脱离和对医疗器械名称的近期信念缺乏。",
+      "current_drivers_zh": "该主题目前在寻求估值支持的老牌大市值公司（AMGN、RMD）和小型/微市值生物技术公司行动浪潮之间分化——包括多份新融资协议和非注册股权销售的 8-K 申报（Edesa Biotech、Jaguar Health、Shattuck Labs）——反映了压力驱动的资本融资而非增长驱动的动量。像 Tempus AI 这样的 AI 启用医疗保健平台正在作为该部门内的独特增长子主题出现。",
+      "short_term_outlook_zh": "在接下来的 1-4 周内，该部门可能保持区间波动且分散度高。ISRG（$408.90，-0.8%）和 DXCM（$74.78，持平）的低成交量交易表明市场在医疗器械上处于观望态度。近期催化剂可能来自小市值公司事件——Shattuck Labs 的新重大协议和 Enliven Therapeutics 的 Reg FD 披露可能是合作或数据公告的首批信号。",
+      "mid_term_outlook_zh": "在 1-6 个月期间，盈利大市值公司（AMGN、RMD）和资本受限微市值公司之间的分化可能扩大。具有 AI/数据护城河的公司如 Tempus AI 可能吸引并购兴趣或溢价估值重新评级，而反复利用非注册股权市场的名称面临进一步贬值风险。LivaNova 和 Ovid Therapeutics 的股东投票表明可能的治理或战略变化，值得关注。",
+      "long_term_outlook_zh": "从结构上看，1-3 年的前景倾向于哑铃方法：具有多元化管线的大市值生物技术平台（Amgen）和 AI 集成精准医疗公司（Tempus AI）处于复合增长的良好位置，而碎片化的微市值生物技术格局经历整合。当今 8-K 申报中可见的持续融资压力表明小市值群体通过并购、失败或反向合并而逐渐淘汰，最终将回报集中在资本充足的参与者中。",
+      "key_risks_zh": [
+        "稀释级联风险：至少三家微市值生物技术公司（Edesa Biotech、Jaguar Health、Biofrontera）在 2026-06-11 申报了非注册股权销售，表明资本受限公司按困境条款发行股票的模式",
+        "医疗器械基准指标中的成交量流动性：ISRG 和 DXCM 以 0.13 倍-0.24 倍正常成交量交易表明机构参与稀薄，增加了任何负面催化剂造成急剧波动的脆弱性",
+        "集中在小型公司的二元临床/监管风险：Cullinan Therapeutics、Ovid Therapeutics 和 Shattuck Labs 等公司处于转折点，试验读数或合作结果可能导致超额跌幅"
+      ]
+    },
+    {
+      "id": "logistics-freight-spinoffs",
+      "name": "Logistics & Freight Restructuring Plays",
+      "one_line_summary": "Enterprise logistics platforms MANH and Descartes benefit from ongoing supply chain digitization while Celestica expands manufacturing capacity",
+      "representative_tickers": [
+        "MANH",
+        "DSG",
+        "CLS",
+        "QLYS",
+        "DOMO"
+      ],
+      "first_seen": "2026-06-11",
+      "direction": "Neutral",
+      "conviction_score": 3,
+      "conviction_delta": null,
+      "stage": "Early Discovery",
+      "stage_confidence": 4,
+      "stage_reasoning": "Only 5 signals detected with zero price signals, indicating minimal market attention to this theme. The signals themselves are loosely related at best — a supply chain software analyst piece (Manhattan Associates), a manufacturing campus announcement (Celestica), a cybersecurity story (Qualys), a logistics software transcript (Descartes Systems), and a minor SEC filing (Duos Technologies). Coverage is sparse, fragmented, and largely from specialist/niche sources rather than mainstream financial media. There is no cohesive narrative forming around 'Logistics & Freight Restructuring' as an investable theme, no price momentum, and no institutional visibility. This sits at the very early or pre-discovery stage, though confidence is moderate-low given the weak thematic alignment of the signals themselves.",
+      "conviction_basis": "Signals are sparse, tangential, and lack substantive content directly tied to logistics and freight restructuring; the highest-quality filing (Duos Technologies 8-K) is a boilerplate disclosure with no actionable detail, and the remaining news headlines are only loosely connected to the theme, yielding insufficient evidence to form a directional view.",
+      "bull_evidence": [
+        {
+          "headline": "The Descartes Systems Group Inc. (DSG:CA) Shareholder/Analyst Call Transcript",
+          "source": "Seeking Alpha",
+          "url": "https://seekingalpha.com/article/4914263-the-descartes-systems-group-inc-dsg-ca-shareholder-analyst-call-transcript?source=feed_all_articles"
+        },
+        {
+          "headline": "Is Manhattan Associates, Inc. (MANH) A Good Stock To Buy Now?",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/manhattan-associates-inc-manh-good-152721475.html"
+        },
+        {
+          "headline": "Celestica (CLS) to Establish New Manufacturing Campus in Fort Worth, Texas",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/celestica-cls-establish-manufacturing-campus-151405992.html"
+        }
+      ],
+      "bear_evidence": [
+        {
+          "headline": "8-K - DUOS TECHNOLOGIES GROUP, INC. (0001396536) - Other Events Filing (minimal disclosure)",
+          "source": "SEC EDGAR 8-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/1396536/000107997326000826/0001079973-26-000826-index.htm"
+        },
+        {
+          "headline": "Can Qualys (QLYS) Weather AI Challenges?",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/qualys-qlys-weather-ai-challenges-150022969.html"
+        },
+        {
+          "headline": "Is Manhattan Associates, Inc. (MANH) A Good Stock To Buy Now?",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/manhattan-associates-inc-manh-good-152721475.html"
+        }
+      ],
+      "bull_case": "The logistics software and intelligence layer is seeing renewed institutional interest, with Manhattan Associates (MANH) attracting analyst scrutiny as a supply chain optimization leader and Descartes Systems Group (DSG:CA) holding a shareholder/analyst call signaling active investor engagement around its freight routing and customs compliance platform. Celestica's (CLS) announcement of a new manufacturing campus in Fort Worth, Texas reflects onshoring momentum that structurally increases domestic freight volumes and warehouse management system (WMS) demand. Duos Technologies' (DTGI) fresh 8-K filing suggests a potential corporate event that could catalyze rerating in the rail/intermodal infrastructure intelligence niche.",
+      "bear_case": "Signal quality at this early discovery stage is thin — no hard earnings revisions, freight rate data, or volume metrics are present to confirm a durable inflection in the restructuring cycle. Manhattan Associates trades at a premium valuation that leaves little margin of safety if enterprise software spending slows amid macro uncertainty or AI-native competitors erode its WMS moat. Celestica's Fort Worth campus is a multi-year buildout with capital intensity risk, and nearshoring-driven freight demand may already be partially priced into transports.",
+      "current_drivers": "U.S. manufacturing reshoring — evidenced by Celestica's Texas campus expansion — is the primary near-term catalyst, tightening domestic freight networks and elevating demand for logistics orchestration software from players like Manhattan Associates and Descartes Systems. Concurrent AI disruption pressure (as flagged in adjacent tech signals) is forcing freight-tech incumbents to accelerate platform modernization, creating both risk and opportunity.",
+      "key_risks": [
+        "Macro freight demand deterioration: a softening industrial cycle could compress volumes and delay enterprise WMS/TMS upgrade cycles, pressuring MANH and DSG revenue growth",
+        "AI-native competition: new entrants leveraging large language models for route optimization and customs automation could erode moats of established logistics software vendors",
+        "Execution risk on reshoring capex: Celestica's Fort Worth campus timeline and cost overruns could delay the freight volume uplift that underpins the domestic logistics bull thesis"
+      ],
+      "short_term_outlook": "Over the next 1–4 weeks, the Descartes Systems analyst call transcript (June 11) may surface updated guidance or commentary on freight forwarding software bookings that serves as a near-term read-across for MANH and logistics SaaS peers. The Duos Technologies 8-K warrants monitoring for a material corporate announcement. No immediate catalyst to shift bias from Neutral.",
+      "mid_term_outlook": "Over 1–6 months, progress on Celestica's Fort Worth campus groundbreaking and any follow-on nearshoring announcements will be key indicators. Manhattan Associates' next earnings report will test whether WMS deal flow is accelerating alongside the reshoring trend. Descartes may announce tuck-in M&A consistent with its historical acquisition cadence in customs and trade compliance software.",
+      "long_term_outlook": "Structurally, the combination of U.S. supply chain deglobalization, e-commerce complexity, and AI-driven logistics automation creates a multi-year tailwind for freight intelligence platforms (Descartes, MANH) and rail/intermodal monitoring technology (Duos Technologies). The domestic manufacturing buildout — anchored by announcements like Celestica's Texas campus — points to sustained growth in last-mile and intermodal freight density through 2027–2028, supporting platform pricing power for best-in-class WMS and TMS vendors.",
+      "signal_count": 5,
+      "timeline": [
+        {
+          "date": "2026-06-11",
+          "event": "Manhattan Associates (MANH) flagged in analyst coverage questioning current valuation and buy case amid logistics software sector rotation"
+        },
+        {
+          "date": "2026-06-11",
+          "event": "Celestica (CLS) announces new manufacturing campus in Fort Worth, Texas — a signal of accelerating U.S. reshoring and domestic freight demand growth"
+        },
+        {
+          "date": "2026-06-11",
+          "event": "Descartes Systems Group (DSG:CA) hosts shareholder/analyst call — transcript released, potentially containing freight software bookings and M&A pipeline commentary"
+        },
+        {
+          "date": "2026-06-11",
+          "event": "Duos Technologies Group (DTGI) files 8-K (Item 8.01 Other Events) with SEC EDGAR — potential corporate event in rail/intermodal infrastructure intelligence segment"
+        },
+        {
+          "date": "2026-06-11",
+          "event": "Qualys (QLYS) AI challenge coverage surfaces as adjacent signal — highlights broader AI disruption risk facing incumbent B2B software platforms including logistics tech vendors"
+        }
       ]
     }
   ]

@@ -1260,6 +1260,17 @@
             "SPCE": 4.3275
           },
           "floating_return": -0.066058
+        },
+        {
+          "date": "2026-06-11",
+          "prices": {
+            "RKLB": 110.0188,
+            "LUNR": 29.585,
+            "ASTS": 92.95,
+            "ONDS": 9.515,
+            "SPCE": 5.655
+          },
+          "floating_return": 0.03395
         }
       ]
     },
@@ -1302,6 +1313,17 @@
             "CRWV": 95.81
           },
           "floating_return": -0.019466
+        },
+        {
+          "date": "2026-06-11",
+          "prices": {
+            "MSFT": 386.665,
+            "GOOGL": 347.845,
+            "META": 560.99,
+            "AMZN": 237.115,
+            "CRWV": 93.105
+          },
+          "floating_return": -0.04719
         }
       ]
     }
@@ -1420,18 +1442,24 @@
       "portfolio_return": -0.021632,
       "spy_return": -0.008168,
       "open_count": 3
+    },
+    {
+      "date": "2026-06-11",
+      "portfolio_return": 0.037444,
+      "spy_return": 0.003832,
+      "open_count": 2
     }
   ],
   "summary": {
-    "portfolio_cumulative": -0.075696,
-    "spy_cumulative": 0.01021,
-    "alpha": -0.085906,
+    "portfolio_cumulative": -0.041086,
+    "spy_cumulative": 0.014081,
+    "alpha": -0.055167,
     "open_count": 2,
     "closed_count": 19,
     "win_rate": 0.368,
-    "tracking_days": 19
+    "tracking_days": 20
   },
-  "updated_at": "2026-06-10",
+  "updated_at": "2026-06-11",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -1653,6 +1681,19 @@
           "AMZN",
           "CRWV"
         ]
+      },
+      {
+        "date": "2026-06-11",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Crowded Euphoria",
+        "tickers": [
+          "NVDA",
+          "AMD",
+          "AVGO",
+          "TSM",
+          "ASML"
+        ]
       }
     ],
     "semiconductor-geopolitics-china-trade": [
@@ -1836,6 +1877,19 @@
           "AEM",
           "ASM",
           "BVN"
+        ]
+      },
+      {
+        "date": "2026-06-11",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "FNV",
+          "AEM",
+          "HBM",
+          "GLD",
+          "RGLD"
         ]
       }
     ],
@@ -2101,6 +2155,19 @@
           "UFO",
           "ARKX"
         ]
+      },
+      {
+        "date": "2026-06-11",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Crowded Euphoria",
+        "tickers": [
+          "RKLB",
+          "LUNR",
+          "ASTS",
+          "SPCE",
+          "BA"
+        ]
       }
     ],
     "power-grid-energy-ai-demand": [
@@ -2310,6 +2377,19 @@
           "CEG",
           "NEE",
           "ETR"
+        ]
+      },
+      {
+        "date": "2026-06-11",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Acceleration",
+        "tickers": [
+          "CEG",
+          "VST",
+          "NEE",
+          "NRG",
+          "FSLR"
         ]
       }
     ],
@@ -2674,6 +2754,19 @@
           "NEE",
           "NRG"
         ]
+      },
+      {
+        "date": "2026-06-11",
+        "conviction": 4,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "CCJ",
+          "URA",
+          "NXE",
+          "LEU",
+          "UUUU"
+        ]
       }
     ],
     "financial-services-capital-markets": [
@@ -3027,6 +3120,19 @@
           "DXCM",
           "ALT"
         ]
+      },
+      {
+        "date": "2026-06-11",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "ISRG",
+          "RMD",
+          "AMGN",
+          "DXCM",
+          "TEM"
+        ]
       }
     ],
     "energy-oil-gas-cycle": [
@@ -3320,6 +3426,19 @@
           "AMZN",
           "AAPL"
         ]
+      },
+      {
+        "date": "2026-06-11",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "MSFT",
+          "GOOGL",
+          "META",
+          "AMZN",
+          "AAPL"
+        ]
       }
     ],
     "cybersecurity-resilience": [
@@ -3471,6 +3590,19 @@
           "DPZ",
           "JILL",
           "PG"
+        ]
+      },
+      {
+        "date": "2026-06-11",
+        "conviction": 4,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "KO",
+          "DOL",
+          "LULU",
+          "SN",
+          "CHWY"
         ]
       }
     ],
@@ -3825,6 +3957,19 @@
           "RXO",
           "GSL"
         ]
+      },
+      {
+        "date": "2026-06-11",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "MANH",
+          "DSG",
+          "CLS",
+          "QLYS",
+          "DOMO"
+        ]
       }
     ],
     "affordable-housing-homebuilding": [
@@ -4151,6 +4296,17 @@
     "quantum-computing-emerging-tech": [
       {
         "date": "2026-06-10",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "IONQ",
+          "RGTI",
+          "QUBT"
+        ]
+      },
+      {
+        "date": "2026-06-11",
         "conviction": 3,
         "direction": "Neutral",
         "stage": "Narrative Breakdown",
