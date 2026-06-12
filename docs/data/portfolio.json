@@ -1271,6 +1271,17 @@
             "SPCE": 5.655
           },
           "floating_return": 0.03395
+        },
+        {
+          "date": "2026-06-12",
+          "prices": {
+            "RKLB": 106.645,
+            "LUNR": 27.7,
+            "ASTS": 87.2035,
+            "ONDS": 9.5698,
+            "SPCE": 4.3257
+          },
+          "floating_return": -0.058128
         }
       ]
     },
@@ -1324,8 +1335,48 @@
             "CRWV": 93.105
           },
           "floating_return": -0.04719
+        },
+        {
+          "date": "2026-06-12",
+          "prices": {
+            "MSFT": 389.07,
+            "GOOGL": 363.365,
+            "META": 571.87,
+            "AMZN": 237.74,
+            "CRWV": 103.25
+          },
+          "floating_return": -0.012875
         }
       ]
+    },
+    {
+      "theme_id": "fixed-income-yield-alternatives",
+      "theme_name": "Fixed Income, Yield Alternatives & Retirement Income",
+      "direction": "Bullish",
+      "entry_date": "2026-06-12",
+      "tickers": [
+        "OWL",
+        "ARCC",
+        "GBDC",
+        "FSK",
+        "OBDC"
+      ],
+      "entry_prices": {
+        "OWL": 9.975,
+        "ARCC": 19.27,
+        "GBDC": 13.42,
+        "FSK": 11.075,
+        "OBDC": 11.275
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 742.93,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null
     }
   ],
   "daily_returns": [
@@ -1448,18 +1499,24 @@
       "portfolio_return": 0.037444,
       "spy_return": 0.003832,
       "open_count": 2
+    },
+    {
+      "date": "2026-06-12",
+      "portfolio_return": -0.020368,
+      "spy_return": 0.006953,
+      "open_count": 2
     }
   ],
   "summary": {
-    "portfolio_cumulative": -0.041086,
-    "spy_cumulative": 0.014081,
-    "alpha": -0.055167,
+    "portfolio_cumulative": -0.060617,
+    "spy_cumulative": 0.021132,
+    "alpha": -0.08175,
     "open_count": 2,
     "closed_count": 19,
     "win_rate": 0.368,
-    "tracking_days": 20
+    "tracking_days": 21
   },
-  "updated_at": "2026-06-11",
+  "updated_at": "2026-06-12",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -1693,6 +1750,19 @@
           "AVGO",
           "TSM",
           "ASML"
+        ]
+      },
+      {
+        "date": "2026-06-12",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Crowded Euphoria",
+        "tickers": [
+          "NVDA",
+          "TSM",
+          "AVGO",
+          "ARM",
+          "MSFT"
         ]
       }
     ],
@@ -2168,6 +2238,19 @@
           "SPCE",
           "BA"
         ]
+      },
+      {
+        "date": "2026-06-12",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "RKLB",
+          "ASTS",
+          "LUNR",
+          "SPCE",
+          "ASTR"
+        ]
       }
     ],
     "power-grid-energy-ai-demand": [
@@ -2556,6 +2639,19 @@
           "PGR",
           "CB"
         ]
+      },
+      {
+        "date": "2026-06-12",
+        "conviction": 2,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "SFNC",
+          "ISBA",
+          "FBNC",
+          "LEN",
+          "MCK"
+        ]
       }
     ],
     "crypto-digital-assets-geopolitical-watch": [
@@ -2766,6 +2862,19 @@
           "NXE",
           "LEU",
           "UUUU"
+        ]
+      },
+      {
+        "date": "2026-06-12",
+        "conviction": 3,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "NEE",
+          "CEG",
+          "VST",
+          "NRG",
+          "ETR"
         ]
       }
     ],
@@ -3132,6 +3241,19 @@
           "AMGN",
           "DXCM",
           "TEM"
+        ]
+      },
+      {
+        "date": "2026-06-12",
+        "conviction": 6,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "MBX",
+          "EIXT",
+          "BCDA",
+          "PRGO",
+          "ISRG"
         ]
       }
     ],
@@ -3840,6 +3962,19 @@
           "FICO",
           "SO"
         ]
+      },
+      {
+        "date": "2026-06-12",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "OWL",
+          "ARCC",
+          "GBDC",
+          "FSK",
+          "OBDC"
+        ]
       }
     ],
     "space-quantum-defense-tech": [
@@ -4077,6 +4212,19 @@
           "CL=F",
           "BNO"
         ]
+      },
+      {
+        "date": "2026-06-12",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Acceleration",
+        "tickers": [
+          "GLD",
+          "SLV",
+          "BTC",
+          "USO",
+          "XLE"
+        ]
       }
     ],
     "china-tech-consumer": [
@@ -4219,6 +4367,19 @@
           "DG",
           "MELI"
         ]
+      },
+      {
+        "date": "2026-06-12",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "RH",
+          "LOVE",
+          "VRA",
+          "BJ",
+          "THO"
+        ]
       }
     ],
     "travel-leisure-recovery": [
@@ -4314,6 +4475,32 @@
           "IONQ",
           "RGTI",
           "QUBT"
+        ]
+      },
+      {
+        "date": "2026-06-12",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "IONQ",
+          "RGTI",
+          "QUBT"
+        ]
+      }
+    ],
+    "saas-adtech-digital-platforms": [
+      {
+        "date": "2026-06-12",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "ADBE",
+          "APP",
+          "TTD",
+          "META",
+          "AMZN"
         ]
       }
     ]

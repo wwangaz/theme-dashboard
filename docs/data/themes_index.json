@@ -2,13 +2,13 @@
   "ai-infrastructure-datacenter-boom": {
     "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-11",
+    "last_active": "2026-06-12",
     "representative_tickers": [
       "NVDA",
-      "AMD",
-      "AVGO",
       "TSM",
-      "ASML"
+      "AVGO",
+      "ARM",
+      "MSFT"
     ]
   },
   "semiconductor-geopolitics-china-trade": {
@@ -62,13 +62,13 @@
   "space-economy-commercial-launch": {
     "name": "Commercial Space Economy & Satellite Communications Momentum",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-11",
+    "last_active": "2026-06-12",
     "representative_tickers": [
       "RKLB",
-      "LUNR",
       "ASTS",
+      "LUNR",
       "SPCE",
-      "BA"
+      "ASTR"
     ]
   },
   "precious-metals-mining-dividends": {
@@ -107,25 +107,25 @@
   "regional-banking-rate-environment": {
     "name": "Regional Banks Navigating Rate Volatility & Credit Risk",
     "first_seen": "2026-05-13",
-    "last_active": "2026-05-20",
+    "last_active": "2026-06-12",
     "representative_tickers": [
-      "BWFG",
-      "OSBC",
-      "IBOC",
-      "PGR",
-      "CB"
+      "SFNC",
+      "ISBA",
+      "FBNC",
+      "LEN",
+      "MCK"
     ]
   },
   "nuclear-clean-energy": {
     "name": "Nuclear & Advanced Clean Energy Renaissance",
     "first_seen": "2026-05-14",
-    "last_active": "2026-06-11",
+    "last_active": "2026-06-12",
     "representative_tickers": [
-      "CCJ",
-      "URA",
-      "NXE",
-      "LEU",
-      "UUUU"
+      "NEE",
+      "CEG",
+      "VST",
+      "NRG",
+      "ETR"
     ]
   },
   "ev-automotive-supply-chain": {
@@ -161,13 +161,13 @@
   "healthcare-biotech-mixed": {
     "name": "Healthcare & Biotech Divergence",
     "first_seen": "2026-05-14",
-    "last_active": "2026-06-11",
+    "last_active": "2026-06-12",
     "representative_tickers": [
-      "ISRG",
-      "RMD",
-      "AMGN",
-      "DXCM",
-      "TEM"
+      "MBX",
+      "EIXT",
+      "BCDA",
+      "PRGO",
+      "ISRG"
     ]
   },
   "energy-oil-gas-cycle": {
@@ -286,13 +286,13 @@
   "fixed-income-yield-alternatives": {
     "name": "Fixed Income, Yield Alternatives & Retirement Income",
     "first_seen": "2026-05-20",
-    "last_active": "2026-06-08",
+    "last_active": "2026-06-12",
     "representative_tickers": [
-      "DXCM",
-      "ISRG",
-      "CNP",
-      "FICO",
-      "SO"
+      "OWL",
+      "ARCC",
+      "GBDC",
+      "FSK",
+      "OBDC"
     ]
   },
   "logistics-freight-spinoffs": {
@@ -310,12 +310,13 @@
   "geopolitical-risk-commodity-repricing": {
     "name": "Iran Peace Talks & Commodity/Equity Repricing",
     "first_seen": "2026-05-26",
-    "last_active": "2026-06-10",
+    "last_active": "2026-06-12",
     "representative_tickers": [
+      "GLD",
+      "SLV",
+      "BTC",
       "USO",
-      "XLE",
-      "CL=F",
-      "BNO"
+      "XLE"
     ]
   },
   "affordable-housing-homebuilding": {
@@ -413,13 +414,13 @@
   "consumer-retail-turnaround": {
     "name": "Consumer Retail Turnarounds & Activist Plays",
     "first_seen": "2026-06-02",
-    "last_active": "2026-06-02",
+    "last_active": "2026-06-12",
     "representative_tickers": [
-      "VSCO",
-      "ETSY",
-      "WMT",
-      "DG",
-      "MELI"
+      "RH",
+      "LOVE",
+      "VRA",
+      "BJ",
+      "THO"
     ]
   },
   "travel-leisure-recovery": {
@@ -470,7 +471,7 @@
   "quantum-computing-emerging-tech": {
     "name": "Quantum Computing Emerging Tech Momentum",
     "first_seen": "2026-06-10",
-    "last_active": "2026-06-11",
+    "last_active": "2026-06-12",
     "representative_tickers": [
       "IONQ",
       "RGTI",
@@ -487,6 +488,18 @@
       "MOH",
       "DNOW",
       "BRK-B"
+    ]
+  },
+  "saas-adtech-digital-platforms": {
+    "name": "SaaS, Ad-Tech & Digital Platform Valuations",
+    "first_seen": "2026-06-12",
+    "last_active": "2026-06-12",
+    "representative_tickers": [
+      "ADBE",
+      "APP",
+      "TTD",
+      "META",
+      "AMZN"
     ]
   }
 }
