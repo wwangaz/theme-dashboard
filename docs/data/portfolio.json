@@ -1282,6 +1282,17 @@
             "SPCE": 4.3257
           },
           "floating_return": -0.058128
+        },
+        {
+          "date": "2026-06-15",
+          "prices": {
+            "RKLB": 109.35,
+            "LUNR": 26.25,
+            "ASTS": 88.5599,
+            "ONDS": 9.585,
+            "SPCE": 3.705
+          },
+          "floating_return": -0.088967
         }
       ]
     },
@@ -1346,6 +1357,17 @@
             "CRWV": 103.25
           },
           "floating_return": -0.012875
+        },
+        {
+          "date": "2026-06-15",
+          "prices": {
+            "MSFT": 399.725,
+            "GOOGL": 371.915,
+            "META": 596.27,
+            "AMZN": 246.7786,
+            "CRWV": 108.18
+          },
+          "floating_return": 0.022638
         }
       ]
     },
@@ -1370,6 +1392,48 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 742.93,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null,
+      "daily_snapshots": [
+        {
+          "date": "2026-06-15",
+          "prices": {
+            "OWL": 9.785,
+            "ARCC": 18.715,
+            "GBDC": 12.845,
+            "FSK": 10.9399,
+            "OBDC": 11.165
+          },
+          "floating_return": -0.02253
+        }
+      ]
+    },
+    {
+      "theme_id": "geopolitical-risk-commodity-repricing",
+      "theme_name": "Iran Peace Talks & Commodity/Equity Repricing",
+      "direction": "Bullish",
+      "entry_date": "2026-06-15",
+      "tickers": [
+        "GOOGL",
+        "META",
+        "INTC",
+        "QCOM",
+        "AVGO"
+      ],
+      "entry_prices": {
+        "GOOGL": 371.915,
+        "META": 596.27,
+        "INTC": 127.32,
+        "QCOM": 222.05,
+        "AVGO": 392.83
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 756.04,
       "status": "open",
       "exit_date": null,
       "exit_prices": null,
@@ -1505,18 +1569,24 @@
       "portfolio_return": -0.020368,
       "spy_return": 0.006953,
       "open_count": 2
+    },
+    {
+      "date": "2026-06-15",
+      "portfolio_return": -0.005775,
+      "spy_return": 0.019265,
+      "open_count": 3
     }
   ],
   "summary": {
-    "portfolio_cumulative": -0.060617,
-    "spy_cumulative": 0.021132,
-    "alpha": -0.08175,
-    "open_count": 2,
+    "portfolio_cumulative": -0.066042,
+    "spy_cumulative": 0.040804,
+    "alpha": -0.106847,
+    "open_count": 3,
     "closed_count": 19,
     "win_rate": 0.368,
-    "tracking_days": 21
+    "tracking_days": 22
   },
-  "updated_at": "2026-06-12",
+  "updated_at": "2026-06-15",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -1764,6 +1834,19 @@
           "ARM",
           "MSFT"
         ]
+      },
+      {
+        "date": "2026-06-15",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "NVDA",
+          "AMD",
+          "TSM",
+          "ASML",
+          "ARM"
+        ]
       }
     ],
     "semiconductor-geopolitics-china-trade": [
@@ -1960,6 +2043,18 @@
           "HBM",
           "GLD",
           "RGLD"
+        ]
+      },
+      {
+        "date": "2026-06-15",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Acceleration",
+        "tickers": [
+          "GLD",
+          "SLV",
+          "COPX",
+          "LYC"
         ]
       }
     ],
@@ -2251,6 +2346,17 @@
           "SPCE",
           "ASTR"
         ]
+      },
+      {
+        "date": "2026-06-15",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Crowded Euphoria",
+        "tickers": [
+          "RKLB",
+          "ASTS",
+          "LUNR"
+        ]
       }
     ],
     "power-grid-energy-ai-demand": [
@@ -2473,6 +2579,19 @@
           "NEE",
           "NRG",
           "FSLR"
+        ]
+      },
+      {
+        "date": "2026-06-15",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "CEG",
+          "VST",
+          "NRG",
+          "NEE",
+          "ETR"
         ]
       }
     ],
@@ -3255,6 +3374,17 @@
           "PRGO",
           "ISRG"
         ]
+      },
+      {
+        "date": "2026-06-15",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "NTLA",
+          "IONS",
+          "LXEO"
+        ]
       }
     ],
     "energy-oil-gas-cycle": [
@@ -3416,6 +3546,15 @@
           "ULTA",
           "CROX",
           "SPWH"
+        ]
+      },
+      {
+        "date": "2026-06-15",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Acceleration",
+        "tickers": [
+          "ROKU"
         ]
       }
     ],
@@ -3873,6 +4012,16 @@
           "LPLA",
           "NAVI"
         ]
+      },
+      {
+        "date": "2026-06-15",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "FISV",
+          "AXP"
+        ]
       }
     ],
     "fixed-income-yield-alternatives": [
@@ -4105,6 +4254,16 @@
           "QLYS",
           "DOMO"
         ]
+      },
+      {
+        "date": "2026-06-15",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "FDX",
+          "BA"
+        ]
       }
     ],
     "affordable-housing-homebuilding": [
@@ -4224,6 +4383,19 @@
           "BTC",
           "USO",
           "XLE"
+        ]
+      },
+      {
+        "date": "2026-06-15",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Acceleration",
+        "tickers": [
+          "GOOGL",
+          "META",
+          "INTC",
+          "QCOM",
+          "AVGO"
         ]
       }
     ],
@@ -4482,6 +4654,17 @@
         "conviction": 3,
         "direction": "Neutral",
         "stage": "Narrative Breakdown",
+        "tickers": [
+          "IONQ",
+          "RGTI",
+          "QUBT"
+        ]
+      },
+      {
+        "date": "2026-06-15",
+        "conviction": 4,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
         "tickers": [
           "IONQ",
           "RGTI",

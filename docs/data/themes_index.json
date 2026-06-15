@@ -2,13 +2,13 @@
   "ai-infrastructure-datacenter-boom": {
     "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-12",
+    "last_active": "2026-06-15",
     "representative_tickers": [
       "NVDA",
+      "AMD",
       "TSM",
-      "AVGO",
-      "ARM",
-      "MSFT"
+      "ASML",
+      "ARM"
     ]
   },
   "semiconductor-geopolitics-china-trade": {
@@ -50,37 +50,34 @@
   "power-grid-energy-ai-demand": {
     "name": "Power Grid Stress & Energy Stocks Under AI Demand Pressure",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-11",
+    "last_active": "2026-06-15",
     "representative_tickers": [
       "CEG",
       "VST",
-      "NEE",
       "NRG",
-      "FSLR"
+      "NEE",
+      "ETR"
     ]
   },
   "space-economy-commercial-launch": {
     "name": "Commercial Space Economy & Satellite Communications Momentum",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-12",
+    "last_active": "2026-06-15",
     "representative_tickers": [
       "RKLB",
       "ASTS",
-      "LUNR",
-      "SPCE",
-      "ASTR"
+      "LUNR"
     ]
   },
   "precious-metals-mining-dividends": {
     "name": "Precious Metals Mining — Silver Surge & Gold Dividend Play",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-11",
+    "last_active": "2026-06-15",
     "representative_tickers": [
-      "FNV",
-      "AEM",
-      "HBM",
       "GLD",
-      "RGLD"
+      "SLV",
+      "COPX",
+      "LYC"
     ]
   },
   "crypto-digital-assets-geopolitical-watch": {
@@ -161,13 +158,11 @@
   "healthcare-biotech-mixed": {
     "name": "Healthcare & Biotech Divergence",
     "first_seen": "2026-05-14",
-    "last_active": "2026-06-12",
+    "last_active": "2026-06-15",
     "representative_tickers": [
-      "MBX",
-      "EIXT",
-      "BCDA",
-      "PRGO",
-      "ISRG"
+      "NTLA",
+      "IONS",
+      "LXEO"
     ]
   },
   "energy-oil-gas-cycle": {
@@ -204,13 +199,9 @@
   "media-entertainment-consumer-recovery": {
     "name": "Media Consolidation, Consumer Discretionary & Retail Recovery",
     "first_seen": "2026-05-15",
-    "last_active": "2026-06-03",
+    "last_active": "2026-06-15",
     "representative_tickers": [
-      "M",
-      "YUM",
-      "ULTA",
-      "CROX",
-      "SPWH"
+      "ROKU"
     ]
   },
   "big-tech-ai-platforms": {
@@ -262,13 +253,10 @@
   "fintech-payments-platforms": {
     "name": "Fintech, Payments & Alternative Finance",
     "first_seen": "2026-05-19",
-    "last_active": "2026-06-05",
+    "last_active": "2026-06-15",
     "representative_tickers": [
-      "JPM",
-      "BAC",
-      "DB",
-      "LPLA",
-      "NAVI"
+      "FISV",
+      "AXP"
     ]
   },
   "space-quantum-defense-tech": {
@@ -298,25 +286,22 @@
   "logistics-freight-spinoffs": {
     "name": "Logistics & Freight Restructuring Plays",
     "first_seen": "2026-05-25",
-    "last_active": "2026-06-11",
+    "last_active": "2026-06-15",
     "representative_tickers": [
-      "MANH",
-      "DSG",
-      "CLS",
-      "QLYS",
-      "DOMO"
+      "FDX",
+      "BA"
     ]
   },
   "geopolitical-risk-commodity-repricing": {
     "name": "Iran Peace Talks & Commodity/Equity Repricing",
     "first_seen": "2026-05-26",
-    "last_active": "2026-06-12",
+    "last_active": "2026-06-15",
     "representative_tickers": [
-      "GLD",
-      "SLV",
-      "BTC",
-      "USO",
-      "XLE"
+      "GOOGL",
+      "META",
+      "INTC",
+      "QCOM",
+      "AVGO"
     ]
   },
   "affordable-housing-homebuilding": {
@@ -471,7 +456,7 @@
   "quantum-computing-emerging-tech": {
     "name": "Quantum Computing Emerging Tech Momentum",
     "first_seen": "2026-06-10",
-    "last_active": "2026-06-12",
+    "last_active": "2026-06-15",
     "representative_tickers": [
       "IONQ",
       "RGTI",
