@@ -1293,6 +1293,17 @@
             "SPCE": 3.705
           },
           "floating_return": -0.088967
+        },
+        {
+          "date": "2026-06-16",
+          "prices": {
+            "RKLB": 106.2,
+            "LUNR": 23.49,
+            "ASTS": 83.22,
+            "ONDS": 9.255,
+            "SPCE": 3.33
+          },
+          "floating_return": -0.148171
         }
       ]
     },
@@ -1368,6 +1379,17 @@
             "CRWV": 108.18
           },
           "floating_return": 0.022638
+        },
+        {
+          "date": "2026-06-16",
+          "prices": {
+            "MSFT": 391.95,
+            "GOOGL": 370.27,
+            "META": 596.8,
+            "AMZN": 246.12,
+            "CRWV": 117.1807
+          },
+          "floating_return": 0.035637
         }
       ]
     },
@@ -1410,6 +1432,17 @@
             "OBDC": 11.165
           },
           "floating_return": -0.02253
+        },
+        {
+          "date": "2026-06-16",
+          "prices": {
+            "OWL": 9.865,
+            "ARCC": 18.6399,
+            "GBDC": 12.76,
+            "FSK": 10.86,
+            "OBDC": 11.095
+          },
+          "floating_return": -0.025657
         }
       ]
     },
@@ -1434,13 +1467,32 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 756.04,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null
+      "status": "closed",
+      "exit_date": "2026-06-16",
+      "exit_prices": {
+        "GOOGL": 370.27,
+        "META": 596.8,
+        "INTC": 119.98,
+        "QCOM": 219.6,
+        "AVGO": 379.47
+      },
+      "exit_reason": "direction_changed",
+      "realized_return": -0.021245,
+      "spy_return_during_holding": -0.004735,
+      "excess_return": -0.01651,
+      "daily_snapshots": [
+        {
+          "date": "2026-06-16",
+          "prices": {
+            "GOOGL": 370.27,
+            "META": 596.8,
+            "INTC": 119.98,
+            "QCOM": 219.6,
+            "AVGO": 379.47
+          },
+          "floating_return": -0.021245
+        }
+      ]
     }
   ],
   "daily_returns": [
@@ -1575,18 +1627,24 @@
       "portfolio_return": -0.005775,
       "spy_return": 0.019265,
       "open_count": 3
+    },
+    {
+      "date": "2026-06-16",
+      "portfolio_return": -0.01973,
+      "spy_return": 0.014547,
+      "open_count": 4
     }
   ],
   "summary": {
-    "portfolio_cumulative": -0.066042,
-    "spy_cumulative": 0.040804,
-    "alpha": -0.106847,
+    "portfolio_cumulative": -0.084469,
+    "spy_cumulative": 0.055945,
+    "alpha": -0.140414,
     "open_count": 3,
-    "closed_count": 19,
-    "win_rate": 0.368,
-    "tracking_days": 22
+    "closed_count": 20,
+    "win_rate": 0.35,
+    "tracking_days": 23
   },
-  "updated_at": "2026-06-15",
+  "updated_at": "2026-06-16",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -1846,6 +1904,19 @@
           "TSM",
           "ASML",
           "ARM"
+        ]
+      },
+      {
+        "date": "2026-06-16",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Crowded Euphoria",
+        "tickers": [
+          "NVDA",
+          "AMD",
+          "ARM",
+          "MSFT",
+          "GOOGL"
         ]
       }
     ],
@@ -2357,6 +2428,17 @@
           "ASTS",
           "LUNR"
         ]
+      },
+      {
+        "date": "2026-06-16",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Crowded Euphoria",
+        "tickers": [
+          "RKLB",
+          "LUNR",
+          "ASTS"
+        ]
       }
     ],
     "power-grid-energy-ai-demand": [
@@ -2731,6 +2813,17 @@
           "RGTI",
           "QUBT"
         ]
+      },
+      {
+        "date": "2026-06-16",
+        "conviction": 3,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "IONQ",
+          "RGTI",
+          "QUBT"
+        ]
       }
     ],
     "regional-banking-rate-environment": [
@@ -2941,6 +3034,16 @@
           "ETH",
           "AVAX",
           "FOLD"
+        ]
+      },
+      {
+        "date": "2026-06-16",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "CLSK",
+          "MSTR"
         ]
       }
     ],
@@ -3556,6 +3659,18 @@
         "tickers": [
           "ROKU"
         ]
+      },
+      {
+        "date": "2026-06-16",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "LGF.A",
+          "NFLX",
+          "EA",
+          "TTWO"
+        ]
       }
     ],
     "big-tech-ai-platforms": [
@@ -3864,6 +3979,16 @@
           "LULU",
           "SN",
           "CHWY"
+        ]
+      },
+      {
+        "date": "2026-06-16",
+        "conviction": 7,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "YUM",
+          "PLAY"
         ]
       }
     ],
@@ -4397,6 +4522,19 @@
           "QCOM",
           "AVGO"
         ]
+      },
+      {
+        "date": "2026-06-16",
+        "conviction": 6,
+        "direction": "Bearish",
+        "stage": "Acceleration",
+        "tickers": [
+          "NRG",
+          "VST",
+          "CEG",
+          "NEE",
+          "ETR"
+        ]
       }
     ],
     "china-tech-consumer": [
@@ -4524,6 +4662,13 @@
           "FXE",
           "TLT"
         ]
+      },
+      {
+        "date": "2026-06-16",
+        "conviction": 6,
+        "direction": "Bearish",
+        "stage": "Early Discovery",
+        "tickers": []
       }
     ],
     "consumer-retail-turnaround": [
@@ -4594,6 +4739,17 @@
           "MWA",
           "AVY",
           "LMT"
+        ]
+      },
+      {
+        "date": "2026-06-16",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Acceleration",
+        "tickers": [
+          "LMT",
+          "GM",
+          "AVAV"
         ]
       }
     ],
@@ -4684,6 +4840,21 @@
           "TTD",
           "META",
           "AMZN"
+        ]
+      }
+    ],
+    "gaming-interactive-entertainment": [
+      {
+        "date": "2026-06-16",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "NTDOY",
+          "SONY",
+          "TTWO",
+          "PLTK",
+          "SRAD"
         ]
       }
     ]

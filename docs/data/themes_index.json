@@ -2,13 +2,13 @@
   "ai-infrastructure-datacenter-boom": {
     "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-15",
+    "last_active": "2026-06-16",
     "representative_tickers": [
       "NVDA",
       "AMD",
-      "TSM",
-      "ASML",
-      "ARM"
+      "ARM",
+      "MSFT",
+      "GOOGL"
     ]
   },
   "semiconductor-geopolitics-china-trade": {
@@ -62,11 +62,11 @@
   "space-economy-commercial-launch": {
     "name": "Commercial Space Economy & Satellite Communications Momentum",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-15",
+    "last_active": "2026-06-16",
     "representative_tickers": [
       "RKLB",
-      "ASTS",
-      "LUNR"
+      "LUNR",
+      "ASTS"
     ]
   },
   "precious-metals-mining-dividends": {
@@ -83,18 +83,16 @@
   "crypto-digital-assets-geopolitical-watch": {
     "name": "Crypto & Digital Assets Holding Steady Amid US-China Summit",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-10",
+    "last_active": "2026-06-16",
     "representative_tickers": [
-      "BTC",
-      "ETH",
-      "AVAX",
-      "FOLD"
+      "CLSK",
+      "MSTR"
     ]
   },
   "quantum-computing-speculative-selloff": {
     "name": "Quantum Computing Speculative Pullback",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-09",
+    "last_active": "2026-06-16",
     "representative_tickers": [
       "IONQ",
       "RGTI",
@@ -199,9 +197,12 @@
   "media-entertainment-consumer-recovery": {
     "name": "Media Consolidation, Consumer Discretionary & Retail Recovery",
     "first_seen": "2026-05-15",
-    "last_active": "2026-06-15",
+    "last_active": "2026-06-16",
     "representative_tickers": [
-      "ROKU"
+      "LGF.A",
+      "NFLX",
+      "EA",
+      "TTWO"
     ]
   },
   "big-tech-ai-platforms": {
@@ -241,13 +242,10 @@
   "consumer-retail-stress": {
     "name": "Consumer & Retail Under Pressure",
     "first_seen": "2026-05-19",
-    "last_active": "2026-06-11",
+    "last_active": "2026-06-16",
     "representative_tickers": [
-      "KO",
-      "DOL",
-      "LULU",
-      "SN",
-      "CHWY"
+      "YUM",
+      "PLAY"
     ]
   },
   "fintech-payments-platforms": {
@@ -295,13 +293,13 @@
   "geopolitical-risk-commodity-repricing": {
     "name": "Iran Peace Talks & Commodity/Equity Repricing",
     "first_seen": "2026-05-26",
-    "last_active": "2026-06-15",
+    "last_active": "2026-06-16",
     "representative_tickers": [
-      "GOOGL",
-      "META",
-      "INTC",
-      "QCOM",
-      "AVGO"
+      "NRG",
+      "VST",
+      "CEG",
+      "NEE",
+      "ETR"
     ]
   },
   "affordable-housing-homebuilding": {
@@ -387,14 +385,8 @@
   "macro-rates-dollar-geopolitics": {
     "name": "Fed Policy, Dollar Weakness & Geopolitical Risk Premium",
     "first_seen": "2026-06-02",
-    "last_active": "2026-06-02",
-    "representative_tickers": [
-      "GLD",
-      "USO",
-      "UUP",
-      "FXE",
-      "TLT"
-    ]
+    "last_active": "2026-06-16",
+    "representative_tickers": []
   },
   "consumer-retail-turnaround": {
     "name": "Consumer Retail Turnarounds & Activist Plays",
@@ -433,13 +425,11 @@
   "defense-industrial-government-spend": {
     "name": "Defense Spending & Industrial Government Contracts",
     "first_seen": "2026-06-04",
-    "last_active": "2026-06-04",
+    "last_active": "2026-06-16",
     "representative_tickers": [
-      "KTOS",
-      "CLF",
-      "MWA",
-      "AVY",
-      "LMT"
+      "LMT",
+      "GM",
+      "AVAV"
     ]
   },
   "macro-risk-market-top-signals": {
@@ -485,6 +475,18 @@
       "TTD",
       "META",
       "AMZN"
+    ]
+  },
+  "gaming-interactive-entertainment": {
+    "name": "Gaming, Interactive Entertainment & Sports Betting",
+    "first_seen": "2026-06-16",
+    "last_active": "2026-06-16",
+    "representative_tickers": [
+      "NTDOY",
+      "SONY",
+      "TTWO",
+      "PLTK",
+      "SRAD"
     ]
   }
 }
