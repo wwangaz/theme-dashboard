@@ -38,13 +38,13 @@
   "ai-enterprise-software-automation": {
     "name": "Enterprise AI Adoption & Workflow Automation",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-04",
+    "last_active": "2026-06-18",
     "representative_tickers": [
+      "MSFT",
+      "CRM",
       "PLTR",
       "GOOGL",
-      "MSFT",
-      "META",
-      "ACN"
+      "META"
     ]
   },
   "power-grid-energy-ai-demand": {
@@ -83,10 +83,13 @@
   "crypto-digital-assets-geopolitical-watch": {
     "name": "Crypto & Digital Assets Holding Steady Amid US-China Summit",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-16",
+    "last_active": "2026-06-18",
     "representative_tickers": [
-      "CLSK",
-      "MSTR"
+      "COIN",
+      "HIVE",
+      "MSTR",
+      "ETH",
+      "BTC"
     ]
   },
   "quantum-computing-speculative-selloff": {
@@ -114,12 +117,12 @@
   "nuclear-clean-energy": {
     "name": "Nuclear & Advanced Clean Energy Renaissance",
     "first_seen": "2026-05-14",
-    "last_active": "2026-06-12",
+    "last_active": "2026-06-18",
     "representative_tickers": [
-      "NEE",
       "CEG",
       "VST",
       "NRG",
+      "NEE",
       "ETR"
     ]
   },
@@ -156,10 +159,13 @@
   "healthcare-biotech-mixed": {
     "name": "Healthcare & Biotech Divergence",
     "first_seen": "2026-05-14",
-    "last_active": "2026-06-17",
+    "last_active": "2026-06-18",
     "representative_tickers": [
-      "ROIV",
-      "NTRA"
+      "SRPT",
+      "QURE",
+      "BLFS",
+      "DNLI",
+      "BCYC"
     ]
   },
   "energy-oil-gas-cycle": {
@@ -236,11 +242,13 @@
   "consumer-retail-stress": {
     "name": "Consumer & Retail Under Pressure",
     "first_seen": "2026-05-19",
-    "last_active": "2026-06-17",
+    "last_active": "2026-06-18",
     "representative_tickers": [
-      "TJX",
-      "KMX",
-      "CPRT"
+      "KR",
+      "PLAY",
+      "ULTA",
+      "VNCE",
+      "KHC"
     ]
   },
   "fintech-payments-platforms": {
@@ -287,13 +295,13 @@
   "geopolitical-risk-commodity-repricing": {
     "name": "Iran Peace Talks & Commodity/Equity Repricing",
     "first_seen": "2026-05-26",
-    "last_active": "2026-06-16",
+    "last_active": "2026-06-18",
     "representative_tickers": [
-      "NRG",
-      "VST",
-      "CEG",
-      "NEE",
-      "ETR"
+      "OKE",
+      "PSK",
+      "XOM",
+      "USO",
+      "IAG"
     ]
   },
   "affordable-housing-homebuilding": {
@@ -334,13 +342,13 @@
   "space-economy-correction": {
     "name": "Space Economy Selloff & Valuation Reset",
     "first_seen": "2026-05-29",
-    "last_active": "2026-05-29",
+    "last_active": "2026-06-18",
     "representative_tickers": [
       "RKLB",
       "LUNR",
       "ASTS",
-      "IONQ",
-      "QUBT"
+      "SNAP",
+      "SPCE"
     ]
   },
   "real-estate-alternative-assets": {
@@ -379,8 +387,14 @@
   "macro-rates-dollar-geopolitics": {
     "name": "Fed Policy, Dollar Weakness & Geopolitical Risk Premium",
     "first_seen": "2026-06-02",
-    "last_active": "2026-06-16",
-    "representative_tickers": []
+    "last_active": "2026-06-18",
+    "representative_tickers": [
+      "UUP",
+      "TLT",
+      "EEM",
+      "DXY",
+      "GLD"
+    ]
   },
   "consumer-retail-turnaround": {
     "name": "Consumer Retail Turnarounds & Activist Plays",
@@ -439,7 +453,7 @@
   "quantum-computing-emerging-tech": {
     "name": "Quantum Computing Emerging Tech Momentum",
     "first_seen": "2026-06-10",
-    "last_active": "2026-06-15",
+    "last_active": "2026-06-18",
     "representative_tickers": [
       "IONQ",
       "RGTI",
@@ -480,6 +494,18 @@
       "TTWO",
       "PLTK",
       "SRAD"
+    ]
+  },
+  "semiconductor-chip-rally": {
+    "name": "Semiconductor & Chip Sector Broad Rally",
+    "first_seen": "2026-06-18",
+    "last_active": "2026-06-18",
+    "representative_tickers": [
+      "INTC",
+      "NVDA",
+      "AMD",
+      "AVGO",
+      "TSM"
     ]
   }
 }

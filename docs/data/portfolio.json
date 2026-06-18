@@ -1231,13 +1231,19 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 743.7853,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null,
+      "status": "closed",
+      "exit_date": "2026-06-18",
+      "exit_prices": {
+        "RKLB": 104.8,
+        "LUNR": 22.07,
+        "ASTS": 79.69,
+        "ONDS": 9.1699,
+        "SPCE": 3.411
+      },
+      "exit_reason": "theme_gone",
+      "realized_return": -0.165493,
+      "spy_return_during_holding": 0.003583,
+      "excess_return": -0.169076,
       "daily_snapshots": [
         {
           "date": "2026-06-09",
@@ -1315,6 +1321,17 @@
             "SPCE": 3.4379
           },
           "floating_return": -0.14533
+        },
+        {
+          "date": "2026-06-18",
+          "prices": {
+            "RKLB": 104.8,
+            "LUNR": 22.07,
+            "ASTS": 79.69,
+            "ONDS": 9.1699,
+            "SPCE": 3.411
+          },
+          "floating_return": -0.165493
         }
       ]
     },
@@ -1339,13 +1356,19 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 735.09,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null,
+      "status": "closed",
+      "exit_date": "2026-06-18",
+      "exit_prices": {
+        "MSFT": 376.04,
+        "GOOGL": 363.6,
+        "META": 572.6,
+        "AMZN": 241.54,
+        "CRWV": 119.755
+      },
+      "exit_reason": "theme_gone",
+      "realized_return": 0.017365,
+      "spy_return_during_holding": 0.015454,
+      "excess_return": 0.001911,
       "daily_snapshots": [
         {
           "date": "2026-06-10",
@@ -1412,6 +1435,17 @@
             "CRWV": 118.82
           },
           "floating_return": 0.022723
+        },
+        {
+          "date": "2026-06-18",
+          "prices": {
+            "MSFT": 376.04,
+            "GOOGL": 363.6,
+            "META": 572.6,
+            "AMZN": 241.54,
+            "CRWV": 119.755
+          },
+          "floating_return": 0.017365
         }
       ]
     },
@@ -1554,6 +1588,48 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 749.66,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null,
+      "daily_snapshots": [
+        {
+          "date": "2026-06-18",
+          "prices": {
+            "CEG": 278.515,
+            "VST": 166.81,
+            "NEE": 87.075,
+            "NRG": 138.0,
+            "ETR": 112.07
+          },
+          "floating_return": 0.020609
+        }
+      ]
+    },
+    {
+      "theme_id": "semiconductor-chip-rally",
+      "theme_name": "Semiconductor & Chip Sector Broad Rally",
+      "direction": "Bullish",
+      "entry_date": "2026-06-18",
+      "tickers": [
+        "INTC",
+        "NVDA",
+        "AMD",
+        "AVGO",
+        "TSM"
+      ],
+      "entry_prices": {
+        "INTC": 130.725,
+        "NVDA": 209.56,
+        "AMD": 534.64,
+        "AVGO": 410.42,
+        "TSM": 452.64
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 746.45,
       "status": "open",
       "exit_date": null,
       "exit_prices": null,
@@ -1707,18 +1783,24 @@
       "portfolio_return": -0.010075,
       "spy_return": -0.000946,
       "open_count": 3
+    },
+    {
+      "date": "2026-06-18",
+      "portfolio_return": -0.003034,
+      "spy_return": 0.007423,
+      "open_count": 3
     }
   ],
   "summary": {
-    "portfolio_cumulative": -0.093693,
-    "spy_cumulative": 0.054946,
-    "alpha": -0.148639,
-    "open_count": 2,
-    "closed_count": 21,
-    "win_rate": 0.333,
-    "tracking_days": 24
+    "portfolio_cumulative": -0.096443,
+    "spy_cumulative": 0.062777,
+    "alpha": -0.15922,
+    "open_count": 1,
+    "closed_count": 23,
+    "win_rate": 0.348,
+    "tracking_days": 25
   },
-  "updated_at": "2026-06-17",
+  "updated_at": "2026-06-18",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -2317,6 +2399,19 @@
           "MSFT",
           "META",
           "ACN"
+        ]
+      },
+      {
+        "date": "2026-06-18",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "MSFT",
+          "CRM",
+          "PLTR",
+          "GOOGL",
+          "META"
         ]
       }
     ],
@@ -3167,6 +3262,19 @@
           "CLSK",
           "MSTR"
         ]
+      },
+      {
+        "date": "2026-06-18",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "COIN",
+          "HIVE",
+          "MSTR",
+          "ETH",
+          "BTC"
+        ]
       }
     ],
     "nuclear-clean-energy": [
@@ -3218,6 +3326,19 @@
           "CEG",
           "VST",
           "NRG",
+          "ETR"
+        ]
+      },
+      {
+        "date": "2026-06-18",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "CEG",
+          "VST",
+          "NRG",
+          "NEE",
           "ETR"
         ]
       }
@@ -3619,6 +3740,19 @@
         "tickers": [
           "ROIV",
           "NTRA"
+        ]
+      },
+      {
+        "date": "2026-06-18",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "SRPT",
+          "QURE",
+          "BLFS",
+          "DNLI",
+          "BCYC"
         ]
       }
     ],
@@ -4152,6 +4286,19 @@
           "TJX",
           "KMX",
           "CPRT"
+        ]
+      },
+      {
+        "date": "2026-06-18",
+        "conviction": 8,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "KR",
+          "PLAY",
+          "ULTA",
+          "VNCE",
+          "KHC"
         ]
       }
     ],
@@ -4707,6 +4854,19 @@
           "NEE",
           "ETR"
         ]
+      },
+      {
+        "date": "2026-06-18",
+        "conviction": 6,
+        "direction": "Bearish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "OKE",
+          "PSK",
+          "XOM",
+          "USO",
+          "IAG"
+        ]
       }
     ],
     "china-tech-consumer": [
@@ -4777,6 +4937,19 @@
           "IONQ",
           "QUBT"
         ]
+      },
+      {
+        "date": "2026-06-18",
+        "conviction": 7,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "RKLB",
+          "LUNR",
+          "ASTS",
+          "SNAP",
+          "SPCE"
+        ]
       }
     ],
     "real-estate-alternative-assets": [
@@ -4841,6 +5014,19 @@
         "direction": "Bearish",
         "stage": "Early Discovery",
         "tickers": []
+      },
+      {
+        "date": "2026-06-18",
+        "conviction": 6,
+        "direction": "Bearish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "UUP",
+          "TLT",
+          "EEM",
+          "DXY",
+          "GLD"
+        ]
       }
     ],
     "consumer-retail-turnaround": [
@@ -5008,6 +5194,17 @@
           "RGTI",
           "QUBT"
         ]
+      },
+      {
+        "date": "2026-06-18",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "IONQ",
+          "RGTI",
+          "QUBT"
+        ]
       }
     ],
     "saas-adtech-digital-platforms": [
@@ -5037,6 +5234,21 @@
           "TTWO",
           "PLTK",
           "SRAD"
+        ]
+      }
+    ],
+    "semiconductor-chip-rally": [
+      {
+        "date": "2026-06-18",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Acceleration",
+        "tickers": [
+          "INTC",
+          "NVDA",
+          "AMD",
+          "AVGO",
+          "TSM"
         ]
       }
     ]
