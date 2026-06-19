@@ -2,13 +2,13 @@
   "ai-infrastructure-datacenter-boom": {
     "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-17",
+    "last_active": "2026-06-19",
     "representative_tickers": [
       "NVDA",
       "AVGO",
-      "ASML",
-      "ARM",
-      "TSM"
+      "AMD",
+      "TSM",
+      "ASML"
     ]
   },
   "semiconductor-geopolitics-china-trade": {
@@ -50,11 +50,11 @@
   "power-grid-energy-ai-demand": {
     "name": "Power Grid Stress & Energy Stocks Under AI Demand Pressure",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-17",
+    "last_active": "2026-06-19",
     "representative_tickers": [
+      "NEE",
       "CEG",
       "VST",
-      "NEE",
       "NRG",
       "ETR"
     ]
@@ -62,11 +62,11 @@
   "space-economy-commercial-launch": {
     "name": "Commercial Space Economy & Satellite Communications Momentum",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-17",
+    "last_active": "2026-06-19",
     "representative_tickers": [
       "RKLB",
-      "LUNR",
-      "ASTS"
+      "ASTS",
+      "LUNR"
     ]
   },
   "precious-metals-mining-dividends": {
@@ -83,19 +83,16 @@
   "crypto-digital-assets-geopolitical-watch": {
     "name": "Crypto & Digital Assets Holding Steady Amid US-China Summit",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-18",
+    "last_active": "2026-06-19",
     "representative_tickers": [
-      "COIN",
-      "HIVE",
       "MSTR",
-      "ETH",
-      "BTC"
+      "COIN"
     ]
   },
   "quantum-computing-speculative-selloff": {
     "name": "Quantum Computing Speculative Pullback",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-17",
+    "last_active": "2026-06-19",
     "representative_tickers": [
       "IONQ",
       "RGTI",
@@ -208,7 +205,7 @@
   "big-tech-ai-platforms": {
     "name": "Big Tech AI Platform Divergence",
     "first_seen": "2026-05-18",
-    "last_active": "2026-06-17",
+    "last_active": "2026-06-19",
     "representative_tickers": [
       "MSFT",
       "GOOGL",
@@ -242,13 +239,12 @@
   "consumer-retail-stress": {
     "name": "Consumer & Retail Under Pressure",
     "first_seen": "2026-05-19",
-    "last_active": "2026-06-18",
+    "last_active": "2026-06-19",
     "representative_tickers": [
-      "KR",
+      "TSLA",
+      "NIO",
       "PLAY",
-      "ULTA",
-      "VNCE",
-      "KHC"
+      "M"
     ]
   },
   "fintech-payments-platforms": {
@@ -274,13 +270,10 @@
   "fixed-income-yield-alternatives": {
     "name": "Fixed Income, Yield Alternatives & Retirement Income",
     "first_seen": "2026-05-20",
-    "last_active": "2026-06-12",
+    "last_active": "2026-06-19",
     "representative_tickers": [
-      "OWL",
-      "ARCC",
-      "GBDC",
-      "FSK",
-      "OBDC"
+      "NLK",
+      "RITM"
     ]
   },
   "logistics-freight-spinoffs": {
@@ -387,13 +380,10 @@
   "macro-rates-dollar-geopolitics": {
     "name": "Fed Policy, Dollar Weakness & Geopolitical Risk Premium",
     "first_seen": "2026-06-02",
-    "last_active": "2026-06-18",
+    "last_active": "2026-06-19",
     "representative_tickers": [
-      "UUP",
-      "TLT",
-      "EEM",
-      "DXY",
-      "GLD"
+      "GLD",
+      "TLT"
     ]
   },
   "consumer-retail-turnaround": {

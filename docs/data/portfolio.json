@@ -1606,6 +1606,17 @@
             "ETR": 112.07
           },
           "floating_return": 0.020609
+        },
+        {
+          "date": "2026-06-19",
+          "prices": {
+            "CEG": 267.17,
+            "VST": 158.83,
+            "NEE": 85.73,
+            "NRG": 132.13,
+            "ETR": 110.86
+          },
+          "floating_return": -0.011688
         }
       ]
     },
@@ -1630,6 +1641,48 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 746.45,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null,
+      "daily_snapshots": [
+        {
+          "date": "2026-06-19",
+          "prices": {
+            "INTC": 121.1,
+            "NVDA": 204.65,
+            "AMD": 512.48,
+            "AVGO": 392.9,
+            "TSM": 432.15
+          },
+          "floating_return": -0.045292
+        }
+      ]
+    },
+    {
+      "theme_id": "ai-infrastructure-datacenter-boom",
+      "theme_name": "AI Infrastructure & Data Center Capital Expenditure Surge",
+      "direction": "Bullish",
+      "entry_date": "2026-06-19",
+      "tickers": [
+        "NVDA",
+        "AVGO",
+        "AMD",
+        "TSM",
+        "ASML"
+      ],
+      "entry_prices": {
+        "NVDA": 204.65,
+        "AVGO": 392.9,
+        "AMD": 512.48,
+        "TSM": 432.15,
+        "ASML": 1867.83
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 739.056,
       "status": "open",
       "exit_date": null,
       "exit_prices": null,
@@ -1789,18 +1842,24 @@
       "portfolio_return": -0.003034,
       "spy_return": 0.007423,
       "open_count": 3
+    },
+    {
+      "date": "2026-06-19",
+      "portfolio_return": -0.038381,
+      "spy_return": -0.012488,
+      "open_count": 2
     }
   ],
   "summary": {
-    "portfolio_cumulative": -0.096443,
-    "spy_cumulative": 0.062777,
-    "alpha": -0.15922,
-    "open_count": 1,
+    "portfolio_cumulative": -0.131122,
+    "spy_cumulative": 0.049505,
+    "alpha": -0.180627,
+    "open_count": 2,
     "closed_count": 23,
     "win_rate": 0.348,
-    "tracking_days": 25
+    "tracking_days": 26
   },
-  "updated_at": "2026-06-18",
+  "updated_at": "2026-06-19",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -2086,6 +2145,19 @@
           "ASML",
           "ARM",
           "TSM"
+        ]
+      },
+      {
+        "date": "2026-06-19",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Crowded Euphoria",
+        "tickers": [
+          "NVDA",
+          "AVGO",
+          "AMD",
+          "TSM",
+          "ASML"
         ]
       }
     ],
@@ -2632,6 +2704,17 @@
           "LUNR",
           "ASTS"
         ]
+      },
+      {
+        "date": "2026-06-19",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "RKLB",
+          "ASTS",
+          "LUNR"
+        ]
       }
     ],
     "power-grid-energy-ai-demand": [
@@ -2881,6 +2964,19 @@
           "NRG",
           "ETR"
         ]
+      },
+      {
+        "date": "2026-06-19",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "NEE",
+          "CEG",
+          "VST",
+          "NRG",
+          "ETR"
+        ]
       }
     ],
     "quantum-computing-speculative-selloff": [
@@ -3034,6 +3130,17 @@
       {
         "date": "2026-06-17",
         "conviction": 6,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "IONQ",
+          "RGTI",
+          "QUBT"
+        ]
+      },
+      {
+        "date": "2026-06-19",
+        "conviction": 3,
         "direction": "Bearish",
         "stage": "Narrative Breakdown",
         "tickers": [
@@ -3274,6 +3381,16 @@
           "MSTR",
           "ETH",
           "BTC"
+        ]
+      },
+      {
+        "date": "2026-06-19",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "MSTR",
+          "COIN"
         ]
       }
     ],
@@ -4101,6 +4218,19 @@
           "AMZN",
           "AAPL"
         ]
+      },
+      {
+        "date": "2026-06-19",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Crowded Euphoria",
+        "tickers": [
+          "MSFT",
+          "GOOGL",
+          "META",
+          "AMZN",
+          "AAPL"
+        ]
       }
     ],
     "cybersecurity-resilience": [
@@ -4299,6 +4429,18 @@
           "ULTA",
           "VNCE",
           "KHC"
+        ]
+      },
+      {
+        "date": "2026-06-19",
+        "conviction": 7,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "TSLA",
+          "NIO",
+          "PLAY",
+          "M"
         ]
       }
     ],
@@ -4567,6 +4709,16 @@
           "GBDC",
           "FSK",
           "OBDC"
+        ]
+      },
+      {
+        "date": "2026-06-19",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "NLK",
+          "RITM"
         ]
       }
     ],
@@ -5026,6 +5178,16 @@
           "EEM",
           "DXY",
           "GLD"
+        ]
+      },
+      {
+        "date": "2026-06-19",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "GLD",
+          "TLT"
         ]
       }
     ],
