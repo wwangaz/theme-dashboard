@@ -1628,6 +1628,17 @@
             "ETR": 112.665
           },
           "floating_return": 0.018262
+        },
+        {
+          "date": "2026-06-24",
+          "prices": {
+            "CEG": 270.455,
+            "VST": 162.095,
+            "NEE": 86.6593,
+            "NRG": 140.04,
+            "ETR": 113.765
+          },
+          "floating_return": 0.013929
         }
       ]
     },
@@ -1652,13 +1663,19 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 746.45,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null,
+      "status": "closed",
+      "exit_date": "2026-06-24",
+      "exit_prices": {
+        "INTC": 133.25,
+        "NVDA": 199.98,
+        "AMD": 520.3,
+        "AVGO": 382.75,
+        "TSM": 440.255
+      },
+      "exit_reason": "theme_gone",
+      "realized_return": -0.0296,
+      "spy_return_during_holding": -0.013115,
+      "excess_return": -0.016485,
       "daily_snapshots": [
         {
           "date": "2026-06-19",
@@ -1681,6 +1698,17 @@
             "TSM": 467.72
           },
           "floating_return": 0.017747
+        },
+        {
+          "date": "2026-06-24",
+          "prices": {
+            "INTC": 133.25,
+            "NVDA": 199.98,
+            "AMD": 520.3,
+            "AVGO": 382.75,
+            "TSM": 440.255
+          },
+          "floating_return": -0.0296
         }
       ]
     },
@@ -1723,8 +1751,48 @@
             "ASML": 1900.04
           },
           "floating_return": 0.038982
+        },
+        {
+          "date": "2026-06-24",
+          "prices": {
+            "NVDA": 199.98,
+            "AVGO": 382.75,
+            "AMD": 520.3,
+            "TSM": 440.255,
+            "ASML": 1750.97
+          },
+          "floating_return": -0.015441
         }
       ]
+    },
+    {
+      "theme_id": "ai-enterprise-software-automation",
+      "theme_name": "Enterprise AI Adoption & Workflow Automation",
+      "direction": "Bullish",
+      "entry_date": "2026-06-24",
+      "tickers": [
+        "MSFT",
+        "GOOGL",
+        "META",
+        "CRM",
+        "VEEV"
+      ],
+      "entry_prices": {
+        "MSFT": 374.27,
+        "GOOGL": 350.47,
+        "META": 562.25,
+        "CRM": 154.075,
+        "VEEV": 164.18
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 736.66,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null
     }
   ],
   "daily_returns": [
@@ -1889,18 +1957,24 @@
       "portfolio_return": 0.045376,
       "spy_return": -0.002337,
       "open_count": 3
+    },
+    {
+      "date": "2026-06-24",
+      "portfolio_return": -0.034276,
+      "spy_return": 0.004199,
+      "open_count": 3
     }
   ],
   "summary": {
-    "portfolio_cumulative": -0.091696,
-    "spy_cumulative": 0.047052,
-    "alpha": -0.138748,
-    "open_count": 3,
-    "closed_count": 23,
-    "win_rate": 0.348,
-    "tracking_days": 27
+    "portfolio_cumulative": -0.122829,
+    "spy_cumulative": 0.051449,
+    "alpha": -0.174278,
+    "open_count": 2,
+    "closed_count": 24,
+    "win_rate": 0.333,
+    "tracking_days": 28
   },
-  "updated_at": "2026-06-22",
+  "updated_at": "2026-06-24",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -2212,6 +2286,19 @@
           "EQIX",
           "AMT",
           "CCI"
+        ]
+      },
+      {
+        "date": "2026-06-24",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "NVDA",
+          "AMD",
+          "AVGO",
+          "TSM",
+          "INTC"
         ]
       }
     ],
@@ -2538,6 +2625,19 @@
           "PLTR",
           "GOOGL",
           "META"
+        ]
+      },
+      {
+        "date": "2026-06-24",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "MSFT",
+          "GOOGL",
+          "META",
+          "CRM",
+          "VEEV"
         ]
       }
     ],
@@ -3044,6 +3144,19 @@
           "NRG",
           "ETR"
         ]
+      },
+      {
+        "date": "2026-06-24",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "CEG",
+          "NEE",
+          "VST",
+          "NRG",
+          "ETR"
+        ]
       }
     ],
     "quantum-computing-speculative-selloff": [
@@ -3208,6 +3321,17 @@
       {
         "date": "2026-06-19",
         "conviction": 3,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "IONQ",
+          "RGTI",
+          "QUBT"
+        ]
+      },
+      {
+        "date": "2026-06-24",
+        "conviction": 5,
         "direction": "Bearish",
         "stage": "Narrative Breakdown",
         "tickers": [
@@ -3964,6 +4088,19 @@
           "DNLI",
           "BCYC"
         ]
+      },
+      {
+        "date": "2026-06-24",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "ISRG",
+          "DXCM",
+          "RGEN",
+          "TEVA",
+          "JNJ"
+        ]
       }
     ],
     "energy-oil-gas-cycle": [
@@ -4043,6 +4180,17 @@
         "direction": "Neutral",
         "stage": "Narrative Breakdown",
         "tickers": []
+      },
+      {
+        "date": "2026-06-24",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "APA",
+          "OII",
+          "BRN"
+        ]
       }
     ],
     "industrials-infrastructure-materials": [
@@ -4323,6 +4471,19 @@
           "META",
           "AMZN",
           "AAPL"
+        ]
+      },
+      {
+        "date": "2026-06-24",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "AAPL",
+          "AMZN",
+          "TSLA",
+          "GOOGL",
+          "META"
         ]
       }
     ],
@@ -5247,6 +5408,19 @@
           "IONQ",
           "RGTI"
         ]
+      },
+      {
+        "date": "2026-06-24",
+        "conviction": 7,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "RKLB",
+          "ASTS",
+          "LUNR",
+          "JOBY",
+          "TSLA"
+        ]
       }
     ],
     "real-estate-alternative-assets": [
@@ -5362,6 +5536,17 @@
           "BJ",
           "THO"
         ]
+      },
+      {
+        "date": "2026-06-24",
+        "conviction": 4,
+        "direction": "Bearish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "AMZN",
+          "CAVA",
+          "PLAY"
+        ]
       }
     ],
     "travel-leisure-recovery": [
@@ -5440,6 +5625,13 @@
           "BX",
           "PRU"
         ]
+      },
+      {
+        "date": "2026-06-24",
+        "conviction": 6,
+        "direction": "Bearish",
+        "stage": "Crowded Euphoria",
+        "tickers": []
       }
     ],
     "value-investing-rotation-non-ai": [

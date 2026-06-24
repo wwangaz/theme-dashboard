@@ -2,13 +2,13 @@
   "ai-infrastructure-datacenter-boom": {
     "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-22",
+    "last_active": "2026-06-24",
     "representative_tickers": [
-      "DLR",
-      "PLD",
-      "EQIX",
-      "AMT",
-      "CCI"
+      "NVDA",
+      "AMD",
+      "AVGO",
+      "TSM",
+      "INTC"
     ]
   },
   "semiconductor-geopolitics-china-trade": {
@@ -38,22 +38,22 @@
   "ai-enterprise-software-automation": {
     "name": "Enterprise AI Adoption & Workflow Automation",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-18",
+    "last_active": "2026-06-24",
     "representative_tickers": [
       "MSFT",
-      "CRM",
-      "PLTR",
       "GOOGL",
-      "META"
+      "META",
+      "CRM",
+      "VEEV"
     ]
   },
   "power-grid-energy-ai-demand": {
     "name": "Power Grid Stress & Energy Stocks Under AI Demand Pressure",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-22",
+    "last_active": "2026-06-24",
     "representative_tickers": [
-      "NEE",
       "CEG",
+      "NEE",
       "VST",
       "NRG",
       "ETR"
@@ -95,7 +95,7 @@
   "quantum-computing-speculative-selloff": {
     "name": "Quantum Computing Speculative Pullback",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-19",
+    "last_active": "2026-06-24",
     "representative_tickers": [
       "IONQ",
       "RGTI",
@@ -159,20 +159,24 @@
   "healthcare-biotech-mixed": {
     "name": "Healthcare & Biotech Divergence",
     "first_seen": "2026-05-14",
-    "last_active": "2026-06-18",
+    "last_active": "2026-06-24",
     "representative_tickers": [
-      "SRPT",
-      "QURE",
-      "BLFS",
-      "DNLI",
-      "BCYC"
+      "ISRG",
+      "DXCM",
+      "RGEN",
+      "TEVA",
+      "JNJ"
     ]
   },
   "energy-oil-gas-cycle": {
     "name": "Oil & Gas Cycle Recovery & Leverage Plays",
     "first_seen": "2026-05-15",
-    "last_active": "2026-06-17",
-    "representative_tickers": []
+    "last_active": "2026-06-24",
+    "representative_tickers": [
+      "APA",
+      "OII",
+      "BRN"
+    ]
   },
   "energy-infrastructure-income": {
     "name": "Energy Infrastructure & MLP High-Yield Income",
@@ -208,13 +212,13 @@
   "big-tech-ai-platforms": {
     "name": "Big Tech AI Platform Divergence",
     "first_seen": "2026-05-18",
-    "last_active": "2026-06-19",
+    "last_active": "2026-06-24",
     "representative_tickers": [
-      "MSFT",
-      "GOOGL",
-      "META",
+      "AAPL",
       "AMZN",
-      "AAPL"
+      "TSLA",
+      "GOOGL",
+      "META"
     ]
   },
   "cybersecurity-resilience": {
@@ -342,13 +346,13 @@
   "space-economy-correction": {
     "name": "Space Economy Selloff & Valuation Reset",
     "first_seen": "2026-05-29",
-    "last_active": "2026-06-22",
+    "last_active": "2026-06-24",
     "representative_tickers": [
       "RKLB",
       "ASTS",
       "LUNR",
-      "IONQ",
-      "RGTI"
+      "JOBY",
+      "TSLA"
     ]
   },
   "real-estate-alternative-assets": {
@@ -396,13 +400,11 @@
   "consumer-retail-turnaround": {
     "name": "Consumer Retail Turnarounds & Activist Plays",
     "first_seen": "2026-06-02",
-    "last_active": "2026-06-12",
+    "last_active": "2026-06-24",
     "representative_tickers": [
-      "RH",
-      "LOVE",
-      "VRA",
-      "BJ",
-      "THO"
+      "AMZN",
+      "CAVA",
+      "PLAY"
     ]
   },
   "travel-leisure-recovery": {
@@ -439,13 +441,8 @@
   "macro-risk-market-top-signals": {
     "name": "Macro Risk Flags & Equity Market Top Concerns",
     "first_seen": "2026-06-09",
-    "last_active": "2026-06-09",
-    "representative_tickers": [
-      "WFC",
-      "HBAN",
-      "BX",
-      "PRU"
-    ]
+    "last_active": "2026-06-24",
+    "representative_tickers": []
   },
   "quantum-computing-emerging-tech": {
     "name": "Quantum Computing Emerging Tech Momentum",
