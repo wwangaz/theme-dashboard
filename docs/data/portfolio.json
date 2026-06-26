@@ -1588,13 +1588,19 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 749.66,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null,
+      "status": "closed",
+      "exit_date": "2026-06-26",
+      "exit_prices": {
+        "CEG": 264.8661,
+        "VST": 165.39,
+        "NEE": 87.99,
+        "NRG": 147.24,
+        "ETR": 115.715
+      },
+      "exit_reason": "conviction_drop",
+      "realized_return": 0.031221,
+      "spy_return_during_holding": -0.021263,
+      "excess_return": 0.052484,
       "daily_snapshots": [
         {
           "date": "2026-06-18",
@@ -1650,6 +1656,17 @@
             "ETR": 115.19
           },
           "floating_return": 0.038756
+        },
+        {
+          "date": "2026-06-26",
+          "prices": {
+            "CEG": 264.8661,
+            "VST": 165.39,
+            "NEE": 87.99,
+            "NRG": 147.24,
+            "ETR": 115.715
+          },
+          "floating_return": 0.031221
         }
       ]
     },
@@ -1832,6 +1849,17 @@
             "VEEV": 161.2
           },
           "floating_return": -0.021412
+        },
+        {
+          "date": "2026-06-26",
+          "prices": {
+            "MSFT": 366.9399,
+            "GOOGL": 339.02,
+            "META": 551.02,
+            "CRM": 156.41,
+            "VEEV": 166.17
+          },
+          "floating_return": -0.008991
         }
       ]
     },
@@ -1862,7 +1890,20 @@
       "exit_reason": null,
       "realized_return": null,
       "spy_return_during_holding": null,
-      "excess_return": null
+      "excess_return": null,
+      "daily_snapshots": [
+        {
+          "date": "2026-06-26",
+          "prices": {
+            "MU": 1191.3199,
+            "NVDA": 194.25,
+            "ASML": 1800.5601,
+            "QCOM": 206.685,
+            "TSM": 426.47
+          },
+          "floating_return": 0.001687
+        }
+      ]
     }
   ],
   "daily_returns": [
@@ -2039,18 +2080,24 @@
       "portfolio_return": 0.000164,
       "spy_return": 0.002878,
       "open_count": 3
+    },
+    {
+      "date": "2026-06-26",
+      "portfolio_return": 0.00228,
+      "spy_return": -0.000613,
+      "open_count": 3
     }
   ],
   "summary": {
-    "portfolio_cumulative": -0.122685,
-    "spy_cumulative": 0.054475,
-    "alpha": -0.17716,
+    "portfolio_cumulative": -0.120685,
+    "spy_cumulative": 0.053829,
+    "alpha": -0.174514,
     "open_count": 2,
-    "closed_count": 25,
-    "win_rate": 0.32,
-    "tracking_days": 29
+    "closed_count": 26,
+    "win_rate": 0.346,
+    "tracking_days": 30
   },
-  "updated_at": "2026-06-25",
+  "updated_at": "2026-06-26",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -2598,6 +2645,13 @@
           "COPX",
           "LYC"
         ]
+      },
+      {
+        "date": "2026-06-26",
+        "conviction": 4,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": []
       }
     ],
     "ai-enterprise-software-automation": [
@@ -2958,6 +3012,17 @@
           "ASTS",
           "LUNR"
         ]
+      },
+      {
+        "date": "2026-06-26",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "RKLB",
+          "ASTS",
+          "LUNR"
+        ]
       }
     ],
     "power-grid-energy-ai-demand": [
@@ -3259,6 +3324,19 @@
           "NRG",
           "ETR"
         ]
+      },
+      {
+        "date": "2026-06-26",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "NEE",
+          "CEG",
+          "VST",
+          "NRG",
+          "ETR"
+        ]
       }
     ],
     "quantum-computing-speculative-selloff": [
@@ -3444,6 +3522,17 @@
       },
       {
         "date": "2026-06-25",
+        "conviction": 2,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "IONQ",
+          "RGTI",
+          "QUBT"
+        ]
+      },
+      {
+        "date": "2026-06-26",
         "conviction": 2,
         "direction": "Neutral",
         "stage": "Narrative Breakdown",
@@ -3948,6 +4037,15 @@
           "TSLA",
           "MELI"
         ]
+      },
+      {
+        "date": "2026-06-26",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "TSLA"
+        ]
       }
     ],
     "healthcare-biotech-mixed": [
@@ -4240,6 +4338,16 @@
           "ELAN",
           "MSCI"
         ]
+      },
+      {
+        "date": "2026-06-26",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "ISRG",
+          "DXCM"
+        ]
       }
     ],
     "energy-oil-gas-cycle": [
@@ -4330,6 +4438,13 @@
           "OII",
           "BRN"
         ]
+      },
+      {
+        "date": "2026-06-26",
+        "conviction": 7,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": []
       }
     ],
     "industrials-infrastructure-materials": [
@@ -4636,6 +4751,19 @@
           "GOOGL",
           "META",
           "AMZN"
+        ]
+      },
+      {
+        "date": "2026-06-26",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "MSFT",
+          "AMZN",
+          "META",
+          "GOOGL",
+          "AAPL"
         ]
       }
     ],
@@ -4967,6 +5095,19 @@
           "QCOM",
           "TSM"
         ]
+      },
+      {
+        "date": "2026-06-26",
+        "conviction": 5,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "NVDA",
+          "AMD",
+          "TSM",
+          "ASML",
+          "QCOM"
+        ]
       }
     ],
     "fintech-payments-platforms": [
@@ -5165,6 +5306,13 @@
           "DGRO",
           "AGG"
         ]
+      },
+      {
+        "date": "2026-06-26",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": []
       }
     ],
     "space-quantum-defense-tech": [

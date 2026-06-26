@@ -50,11 +50,11 @@
   "power-grid-energy-ai-demand": {
     "name": "Power Grid Stress & Energy Stocks Under AI Demand Pressure",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-25",
+    "last_active": "2026-06-26",
     "representative_tickers": [
-      "VST",
-      "CEG",
       "NEE",
+      "CEG",
+      "VST",
       "NRG",
       "ETR"
     ]
@@ -62,7 +62,7 @@
   "space-economy-commercial-launch": {
     "name": "Commercial Space Economy & Satellite Communications Momentum",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-19",
+    "last_active": "2026-06-26",
     "representative_tickers": [
       "RKLB",
       "ASTS",
@@ -72,13 +72,8 @@
   "precious-metals-mining-dividends": {
     "name": "Precious Metals Mining — Silver Surge & Gold Dividend Play",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-15",
-    "representative_tickers": [
-      "GLD",
-      "SLV",
-      "COPX",
-      "LYC"
-    ]
+    "last_active": "2026-06-26",
+    "representative_tickers": []
   },
   "crypto-digital-assets-geopolitical-watch": {
     "name": "Crypto & Digital Assets Holding Steady Amid US-China Summit",
@@ -95,7 +90,7 @@
   "quantum-computing-speculative-selloff": {
     "name": "Quantum Computing Speculative Pullback",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-25",
+    "last_active": "2026-06-26",
     "representative_tickers": [
       "IONQ",
       "RGTI",
@@ -129,10 +124,9 @@
   "ev-automotive-supply-chain": {
     "name": "EV & Automotive Supply Chain Recovery",
     "first_seen": "2026-05-14",
-    "last_active": "2026-06-05",
+    "last_active": "2026-06-26",
     "representative_tickers": [
-      "TSLA",
-      "MELI"
+      "TSLA"
     ]
   },
   "financial-services-capital-markets": {
@@ -159,24 +153,17 @@
   "healthcare-biotech-mixed": {
     "name": "Healthcare & Biotech Divergence",
     "first_seen": "2026-05-14",
-    "last_active": "2026-06-25",
+    "last_active": "2026-06-26",
     "representative_tickers": [
-      "GEHC",
       "ISRG",
-      "DXCM",
-      "ELAN",
-      "MSCI"
+      "DXCM"
     ]
   },
   "energy-oil-gas-cycle": {
     "name": "Oil & Gas Cycle Recovery & Leverage Plays",
     "first_seen": "2026-05-15",
-    "last_active": "2026-06-24",
-    "representative_tickers": [
-      "APA",
-      "OII",
-      "BRN"
-    ]
+    "last_active": "2026-06-26",
+    "representative_tickers": []
   },
   "energy-infrastructure-income": {
     "name": "Energy Infrastructure & MLP High-Yield Income",
@@ -212,13 +199,13 @@
   "big-tech-ai-platforms": {
     "name": "Big Tech AI Platform Divergence",
     "first_seen": "2026-05-18",
-    "last_active": "2026-06-25",
+    "last_active": "2026-06-26",
     "representative_tickers": [
       "MSFT",
-      "AAPL",
-      "GOOGL",
+      "AMZN",
       "META",
-      "AMZN"
+      "GOOGL",
+      "AAPL"
     ]
   },
   "cybersecurity-resilience": {
@@ -234,13 +221,13 @@
   "semiconductor-broad-selloff": {
     "name": "Semiconductor Sector Correction",
     "first_seen": "2026-05-19",
-    "last_active": "2026-06-10",
+    "last_active": "2026-06-26",
     "representative_tickers": [
       "NVDA",
       "AMD",
-      "AVGO",
-      "QCOM",
-      "TSM"
+      "TSM",
+      "ASML",
+      "QCOM"
     ]
   },
   "consumer-retail-stress": {
@@ -278,14 +265,8 @@
   "fixed-income-yield-alternatives": {
     "name": "Fixed Income, Yield Alternatives & Retirement Income",
     "first_seen": "2026-05-20",
-    "last_active": "2026-06-22",
-    "representative_tickers": [
-      "SHY",
-      "BIL",
-      "SCHD",
-      "DGRO",
-      "AGG"
-    ]
+    "last_active": "2026-06-26",
+    "representative_tickers": []
   },
   "logistics-freight-spinoffs": {
     "name": "Logistics & Freight Restructuring Plays",
