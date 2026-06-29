@@ -1831,13 +1831,19 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 736.66,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null,
+      "status": "closed",
+      "exit_date": "2026-06-29",
+      "exit_prices": {
+        "MSFT": 370.995,
+        "GOOGL": 351.82,
+        "META": 564.71,
+        "CRM": 159.115,
+        "VEEV": 174.62
+      },
+      "exit_reason": "theme_gone",
+      "realized_return": 0.019155,
+      "spy_return_during_holding": 0.001968,
+      "excess_return": 0.017187,
       "daily_snapshots": [
         {
           "date": "2026-06-25",
@@ -1860,6 +1866,17 @@
             "VEEV": 166.17
           },
           "floating_return": -0.008991
+        },
+        {
+          "date": "2026-06-29",
+          "prices": {
+            "MSFT": 370.995,
+            "GOOGL": 351.82,
+            "META": 564.71,
+            "CRM": 159.115,
+            "VEEV": 174.62
+          },
+          "floating_return": 0.019155
         }
       ]
     },
@@ -1902,8 +1919,65 @@
             "TSM": 426.47
           },
           "floating_return": 0.001687
+        },
+        {
+          "date": "2026-06-29",
+          "prices": {
+            "MU": 1096.5,
+            "NVDA": 193.92,
+            "ASML": 1847.55,
+            "QCOM": 191.905,
+            "TSM": 446.96
+          },
+          "floating_return": -0.015062
         }
       ]
+    },
+    {
+      "theme_id": "space-economy-commercial-launch",
+      "theme_name": "Commercial Space Economy & Satellite Communications Momentum",
+      "direction": "Bullish",
+      "entry_date": "2026-06-29",
+      "tickers": [
+        "RKLB",
+        "ASTS",
+        "LUNR"
+      ],
+      "entry_prices": {
+        "RKLB": 93.5283,
+        "ASTS": 81.39,
+        "LUNR": 20.2001
+      },
+      "conviction_at_entry": 8,
+      "spy_price_at_entry": 738.11,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null
+    },
+    {
+      "theme_id": "media-entertainment-consumer-recovery",
+      "theme_name": "Media Consolidation, Consumer Discretionary & Retail Recovery",
+      "direction": "Bullish",
+      "entry_date": "2026-06-29",
+      "tickers": [
+        "CMCSA"
+      ],
+      "entry_prices": {
+        "CMCSA": 24.775
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 738.11,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null
     }
   ],
   "daily_returns": [
@@ -2086,18 +2160,24 @@
       "portfolio_return": 0.00228,
       "spy_return": -0.000613,
       "open_count": 3
+    },
+    {
+      "date": "2026-06-29",
+      "portfolio_return": 0.006314,
+      "spy_return": 0.012497,
+      "open_count": 2
     }
   ],
   "summary": {
-    "portfolio_cumulative": -0.120685,
-    "spy_cumulative": 0.053829,
-    "alpha": -0.174514,
+    "portfolio_cumulative": -0.115133,
+    "spy_cumulative": 0.066998,
+    "alpha": -0.182131,
     "open_count": 2,
-    "closed_count": 26,
-    "win_rate": 0.346,
-    "tracking_days": 30
+    "closed_count": 27,
+    "win_rate": 0.37,
+    "tracking_days": 31
   },
-  "updated_at": "2026-06-26",
+  "updated_at": "2026-06-29",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -2423,6 +2503,19 @@
           "TSM",
           "INTC"
         ]
+      },
+      {
+        "date": "2026-06-29",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "NVDA",
+          "AVGO",
+          "TSM",
+          "ASML",
+          "AMD"
+        ]
       }
     ],
     "semiconductor-geopolitics-china-trade": [
@@ -2652,6 +2745,18 @@
         "direction": "Bullish",
         "stage": "Early Discovery",
         "tickers": []
+      },
+      {
+        "date": "2026-06-29",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "GLD",
+          "SLV",
+          "IAMGF",
+          "MSTR"
+        ]
       }
     ],
     "ai-enterprise-software-automation": [
@@ -3023,6 +3128,17 @@
           "ASTS",
           "LUNR"
         ]
+      },
+      {
+        "date": "2026-06-29",
+        "conviction": 8,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "RKLB",
+          "ASTS",
+          "LUNR"
+        ]
       }
     ],
     "power-grid-energy-ai-demand": [
@@ -3329,6 +3445,19 @@
         "date": "2026-06-26",
         "conviction": 4,
         "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "NEE",
+          "CEG",
+          "VST",
+          "NRG",
+          "ETR"
+        ]
+      },
+      {
+        "date": "2026-06-29",
+        "conviction": 6,
+        "direction": "Bearish",
         "stage": "Narrative Breakdown",
         "tickers": [
           "NEE",
@@ -4445,6 +4574,15 @@
         "direction": "Bearish",
         "stage": "Narrative Breakdown",
         "tickers": []
+      },
+      {
+        "date": "2026-06-29",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "CRC"
+        ]
       }
     ],
     "industrials-infrastructure-materials": [
@@ -4555,6 +4693,15 @@
           "NFLX",
           "EA",
           "TTWO"
+        ]
+      },
+      {
+        "date": "2026-06-29",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Acceleration",
+        "tickers": [
+          "CMCSA"
         ]
       }
     ],
@@ -4764,6 +4911,19 @@
           "META",
           "GOOGL",
           "AAPL"
+        ]
+      },
+      {
+        "date": "2026-06-29",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "AMZN",
+          "GOOGL",
+          "META",
+          "TSLA",
+          "MSFT"
         ]
       }
     ],
@@ -5001,6 +5161,15 @@
           "LE",
           "MLKN",
           "PLNT"
+        ]
+      },
+      {
+        "date": "2026-06-29",
+        "conviction": 7,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "NKE"
         ]
       }
     ],
@@ -5313,6 +5482,19 @@
         "direction": "Bullish",
         "stage": "Momentum Expansion",
         "tickers": []
+      },
+      {
+        "date": "2026-06-29",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "AMT",
+          "BNL",
+          "MPLX",
+          "SFL",
+          "ADP"
+        ]
       }
     ],
     "space-quantum-defense-tech": [
@@ -6024,6 +6206,17 @@
         "date": "2026-06-18",
         "conviction": 3,
         "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "IONQ",
+          "RGTI",
+          "QUBT"
+        ]
+      },
+      {
+        "date": "2026-06-29",
+        "conviction": 5,
+        "direction": "Bullish",
         "stage": "Narrative Breakdown",
         "tickers": [
           "IONQ",
