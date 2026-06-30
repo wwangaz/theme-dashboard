@@ -1901,13 +1901,19 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 735.25,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null,
+      "status": "closed",
+      "exit_date": "2026-06-30",
+      "exit_prices": {
+        "MU": 1149.03,
+        "NVDA": 197.78,
+        "ASML": 1971.3252,
+        "QCOM": 192.11,
+        "TSM": 468.305
+      },
+      "exit_reason": "theme_gone",
+      "realized_return": 0.021632,
+      "spy_return_during_holding": 0.011465,
+      "excess_return": 0.010167,
       "daily_snapshots": [
         {
           "date": "2026-06-26",
@@ -1930,6 +1936,17 @@
             "TSM": 446.96
           },
           "floating_return": -0.015062
+        },
+        {
+          "date": "2026-06-30",
+          "prices": {
+            "MU": 1149.03,
+            "NVDA": 197.78,
+            "ASML": 1971.3252,
+            "QCOM": 192.11,
+            "TSM": 468.305
+          },
+          "floating_return": 0.021632
         }
       ]
     },
@@ -1956,7 +1973,18 @@
       "exit_reason": null,
       "realized_return": null,
       "spy_return_during_holding": null,
-      "excess_return": null
+      "excess_return": null,
+      "daily_snapshots": [
+        {
+          "date": "2026-06-30",
+          "prices": {
+            "RKLB": 99.46,
+            "ASTS": 87.57,
+            "LUNR": 21.326
+          },
+          "floating_return": 0.06503
+        }
+      ]
     },
     {
       "theme_id": "media-entertainment-consumer-recovery",
@@ -1977,7 +2005,16 @@
       "exit_reason": null,
       "realized_return": null,
       "spy_return_during_holding": null,
-      "excess_return": null
+      "excess_return": null,
+      "daily_snapshots": [
+        {
+          "date": "2026-06-30",
+          "prices": {
+            "CMCSA": 24.265
+          },
+          "floating_return": -0.020585
+        }
+      ]
     }
   ],
   "daily_returns": [
@@ -2166,18 +2203,24 @@
       "portfolio_return": 0.006314,
       "spy_return": 0.012497,
       "open_count": 2
+    },
+    {
+      "date": "2026-06-30",
+      "portfolio_return": 0.027057,
+      "spy_return": 0.003617,
+      "open_count": 3
     }
   ],
   "summary": {
-    "portfolio_cumulative": -0.115133,
-    "spy_cumulative": 0.066998,
-    "alpha": -0.182131,
+    "portfolio_cumulative": -0.091191,
+    "spy_cumulative": 0.070858,
+    "alpha": -0.162049,
     "open_count": 2,
-    "closed_count": 27,
-    "win_rate": 0.37,
-    "tracking_days": 31
+    "closed_count": 28,
+    "win_rate": 0.393,
+    "tracking_days": 32
   },
-  "updated_at": "2026-06-29",
+  "updated_at": "2026-06-30",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -2515,6 +2558,19 @@
           "TSM",
           "ASML",
           "AMD"
+        ]
+      },
+      {
+        "date": "2026-06-30",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "CRWV",
+          "DLR",
+          "ADBE",
+          "MSFT",
+          "AMZN"
         ]
       }
     ],
@@ -3466,6 +3522,19 @@
           "NRG",
           "ETR"
         ]
+      },
+      {
+        "date": "2026-06-30",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "NEE",
+          "CEG",
+          "VST",
+          "ENPH",
+          "SEDG"
+        ]
       }
     ],
     "quantum-computing-speculative-selloff": [
@@ -4175,6 +4244,16 @@
         "tickers": [
           "TSLA"
         ]
+      },
+      {
+        "date": "2026-06-30",
+        "conviction": 2,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "UBER",
+          "TSLA"
+        ]
       }
     ],
     "healthcare-biotech-mixed": [
@@ -4476,6 +4555,19 @@
         "tickers": [
           "ISRG",
           "DXCM"
+        ]
+      },
+      {
+        "date": "2026-06-30",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "MPLT",
+          "RYTM",
+          "MLTX",
+          "VRTX",
+          "GSK"
         ]
       }
     ],
@@ -4958,6 +5050,17 @@
           "PANW",
           "PLTR",
           "CGNT"
+        ]
+      },
+      {
+        "date": "2026-06-30",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "S",
+          "CHKP",
+          "PANW"
         ]
       }
     ],
@@ -5612,6 +5715,19 @@
           "AVAV",
           "LMT"
         ]
+      },
+      {
+        "date": "2026-06-30",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "RKLB",
+          "ASTS",
+          "IONQ",
+          "RGTI",
+          "QUBT"
+        ]
       }
     ],
     "logistics-freight-spinoffs": [
@@ -6016,6 +6132,18 @@
           "GLD",
           "TLT"
         ]
+      },
+      {
+        "date": "2026-06-30",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Acceleration",
+        "tickers": [
+          "TLT",
+          "DXY",
+          "GLD",
+          "MFA"
+        ]
       }
     ],
     "consumer-retail-turnaround": [
@@ -6082,6 +6210,18 @@
           "UREE",
           "MP",
           "LTHM"
+        ]
+      },
+      {
+        "date": "2026-06-30",
+        "conviction": 2,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "FCX",
+          "VALE",
+          "SLV",
+          "GLD"
         ]
       }
     ],
@@ -6293,6 +6433,21 @@
           "ASML",
           "QCOM",
           "TSM"
+        ]
+      }
+    ],
+    "ai-government-data-infrastructure": [
+      {
+        "date": "2026-06-30",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "PLTR",
+          "NVDA",
+          "TYL",
+          "MSFT",
+          "GOOGL"
         ]
       }
     ]
