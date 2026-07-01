@@ -2,13 +2,13 @@
   "ai-infrastructure-datacenter-boom": {
     "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-30",
+    "last_active": "2026-07-01",
     "representative_tickers": [
-      "CRWV",
-      "DLR",
-      "ADBE",
+      "META",
       "MSFT",
-      "AMZN"
+      "AMZN",
+      "MPWR",
+      "MU"
     ]
   },
   "semiconductor-geopolitics-china-trade": {
@@ -50,23 +50,25 @@
   "power-grid-energy-ai-demand": {
     "name": "Power Grid Stress & Energy Stocks Under AI Demand Pressure",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-30",
+    "last_active": "2026-07-01",
     "representative_tickers": [
-      "NEE",
       "CEG",
       "VST",
-      "ENPH",
-      "SEDG"
+      "NEE",
+      "CCJ",
+      "BE"
     ]
   },
   "space-economy-commercial-launch": {
     "name": "Commercial Space Economy & Satellite Communications Momentum",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-29",
+    "last_active": "2026-07-01",
     "representative_tickers": [
       "RKLB",
       "ASTS",
-      "LUNR"
+      "LUNR",
+      "CW",
+      "SPCE"
     ]
   },
   "precious-metals-mining-dividends": {
@@ -159,21 +161,25 @@
   "healthcare-biotech-mixed": {
     "name": "Healthcare & Biotech Divergence",
     "first_seen": "2026-05-14",
-    "last_active": "2026-06-30",
+    "last_active": "2026-07-01",
     "representative_tickers": [
-      "MPLT",
-      "RYTM",
-      "MLTX",
-      "VRTX",
-      "GSK"
+      "INSM",
+      "STVN",
+      "ZYME",
+      "GERN",
+      "XAIR"
     ]
   },
   "energy-oil-gas-cycle": {
     "name": "Oil & Gas Cycle Recovery & Leverage Plays",
     "first_seen": "2026-05-15",
-    "last_active": "2026-06-29",
+    "last_active": "2026-07-01",
     "representative_tickers": [
-      "CRC"
+      "OXY",
+      "RIG",
+      "VAL",
+      "TALO",
+      "XOP"
     ]
   },
   "energy-infrastructure-income": {
@@ -229,13 +235,13 @@
   "semiconductor-broad-selloff": {
     "name": "Semiconductor Sector Correction",
     "first_seen": "2026-05-19",
-    "last_active": "2026-06-26",
+    "last_active": "2026-07-01",
     "representative_tickers": [
       "NVDA",
       "AMD",
-      "TSM",
       "ASML",
-      "QCOM"
+      "TSM",
+      "INTC"
     ]
   },
   "consumer-retail-stress": {
@@ -269,13 +275,13 @@
   "fixed-income-yield-alternatives": {
     "name": "Fixed Income, Yield Alternatives & Retirement Income",
     "first_seen": "2026-05-20",
-    "last_active": "2026-06-29",
+    "last_active": "2026-07-01",
     "representative_tickers": [
-      "AMT",
-      "BNL",
-      "MPLX",
-      "SFL",
-      "ADP"
+      "KKR",
+      "TPG",
+      "OBDC",
+      "OBDC2",
+      "CION"
     ]
   },
   "logistics-freight-spinoffs": {
@@ -382,12 +388,13 @@
   "macro-rates-dollar-geopolitics": {
     "name": "Fed Policy, Dollar Weakness & Geopolitical Risk Premium",
     "first_seen": "2026-06-02",
-    "last_active": "2026-06-30",
+    "last_active": "2026-07-01",
     "representative_tickers": [
       "TLT",
       "DXY",
-      "GLD",
-      "MFA"
+      "SPY",
+      "IEF",
+      "GLD"
     ]
   },
   "consumer-retail-turnaround": {
@@ -426,10 +433,13 @@
   "defense-industrial-government-spend": {
     "name": "Defense Spending & Industrial Government Contracts",
     "first_seen": "2026-06-04",
-    "last_active": "2026-06-17",
+    "last_active": "2026-07-01",
     "representative_tickers": [
-      "HWM",
-      "TDG"
+      "CW",
+      "CRS",
+      "RRX",
+      "AME",
+      "OPTX"
     ]
   },
   "macro-risk-market-top-signals": {
@@ -463,13 +473,13 @@
   "saas-adtech-digital-platforms": {
     "name": "SaaS, Ad-Tech & Digital Platform Valuations",
     "first_seen": "2026-06-12",
-    "last_active": "2026-06-12",
+    "last_active": "2026-07-01",
     "representative_tickers": [
-      "ADBE",
-      "APP",
-      "TTD",
-      "META",
-      "AMZN"
+      "NOW",
+      "CRM",
+      "HUBS",
+      "FROG",
+      "CSGP"
     ]
   },
   "gaming-interactive-entertainment": {
