@@ -1992,6 +1992,15 @@
             "LUNR": 20.91
           },
           "floating_return": 0.059526
+        },
+        {
+          "date": "2026-07-02",
+          "prices": {
+            "RKLB": 105.9499,
+            "ASTS": 88.953,
+            "LUNR": 21.29
+          },
+          "floating_return": 0.09323
         }
       ]
     },
@@ -2029,6 +2038,13 @@
             "CMCSA": 24.35
           },
           "floating_return": -0.017154
+        },
+        {
+          "date": "2026-07-02",
+          "prices": {
+            "CMCSA": 23.45
+          },
+          "floating_return": -0.053481
         }
       ]
     },
@@ -2053,6 +2069,77 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 746.34,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null,
+      "daily_snapshots": [
+        {
+          "date": "2026-07-02",
+          "prices": {
+            "META": 592.19,
+            "MSFT": 386.445,
+            "AMZN": 242.03,
+            "MPWR": 1374.6,
+            "MU": 1056.87
+          },
+          "floating_return": -0.004675
+        }
+      ]
+    },
+    {
+      "theme_id": "ev-automotive-supply-chain",
+      "theme_name": "EV & Automotive Supply Chain Recovery",
+      "direction": "Bullish",
+      "entry_date": "2026-07-02",
+      "tickers": [
+        "TSLA",
+        "RIVN",
+        "LCID",
+        "F",
+        "XPEV"
+      ],
+      "entry_prices": {
+        "TSLA": 412.8261,
+        "RIVN": 19.3861,
+        "LCID": 6.555,
+        "F": 13.765,
+        "XPEV": 13.27
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 750.5211,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null
+    },
+    {
+      "theme_id": "precious-metals-mining-dividends",
+      "theme_name": "Precious Metals Mining — Silver Surge & Gold Dividend Play",
+      "direction": "Bullish",
+      "entry_date": "2026-07-02",
+      "tickers": [
+        "GLD",
+        "SLV",
+        "AA",
+        "BTG",
+        "COPX"
+      ],
+      "entry_prices": {
+        "GLD": 379.65,
+        "SLV": 55.93,
+        "AA": 50.24,
+        "BTG": 4.08,
+        "COPX": 78.38
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 750.5211,
       "status": "open",
       "exit_date": null,
       "exit_prices": null,
@@ -2260,18 +2347,24 @@
       "portfolio_return": -0.000835,
       "spy_return": -0.000576,
       "open_count": 2
+    },
+    {
+      "date": "2026-07-02",
+      "portfolio_return": -0.003345,
+      "spy_return": 0.006544,
+      "open_count": 3
     }
   ],
   "summary": {
-    "portfolio_cumulative": -0.09195,
-    "spy_cumulative": 0.070241,
-    "alpha": -0.162191,
-    "open_count": 2,
+    "portfolio_cumulative": -0.094987,
+    "spy_cumulative": 0.077244,
+    "alpha": -0.172232,
+    "open_count": 4,
     "closed_count": 28,
     "win_rate": 0.393,
-    "tracking_days": 33
+    "tracking_days": 34
   },
-  "updated_at": "2026-07-01",
+  "updated_at": "2026-07-02",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -2636,6 +2729,19 @@
           "MPWR",
           "MU"
         ]
+      },
+      {
+        "date": "2026-07-02",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "CORZ",
+          "HUT",
+          "RIOT",
+          "MARA",
+          "APLD"
+        ]
       }
     ],
     "semiconductor-geopolitics-china-trade": [
@@ -2794,6 +2900,19 @@
           "DXY",
           "XLE"
         ]
+      },
+      {
+        "date": "2026-07-02",
+        "conviction": 2,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "BTC",
+          "ETH",
+          "SPY",
+          "TLT",
+          "ITOT"
+        ]
       }
     ],
     "precious-metals-mining-dividends": [
@@ -2876,6 +2995,19 @@
           "SLV",
           "IAMGF",
           "MSTR"
+        ]
+      },
+      {
+        "date": "2026-07-02",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "GLD",
+          "SLV",
+          "AA",
+          "BTG",
+          "COPX"
         ]
       }
     ],
@@ -4165,6 +4297,19 @@
           "NEE",
           "ETR"
         ]
+      },
+      {
+        "date": "2026-07-02",
+        "conviction": 2,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "BE",
+          "NEE",
+          "AWR",
+          "EOSE",
+          "ETR"
+        ]
       }
     ],
     "financial-services-capital-markets": [
@@ -4343,6 +4488,19 @@
         "tickers": [
           "UBER",
           "TSLA"
+        ]
+      },
+      {
+        "date": "2026-07-02",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Acceleration",
+        "tickers": [
+          "TSLA",
+          "RIVN",
+          "LCID",
+          "F",
+          "XPEV"
         ]
       }
     ],
@@ -4671,6 +4829,19 @@
           "ZYME",
           "GERN",
           "XAIR"
+        ]
+      },
+      {
+        "date": "2026-07-02",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "ISRG",
+          "DXCM",
+          "ALC",
+          "XAIR",
+          "GKOS"
         ]
       }
     ],
@@ -5132,6 +5303,16 @@
           "META",
           "TSLA",
           "MSFT"
+        ]
+      },
+      {
+        "date": "2026-07-02",
+        "conviction": 2,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "GOOGL",
+          "META"
         ]
       }
     ],
@@ -5870,6 +6051,19 @@
           "RGTI",
           "QUBT"
         ]
+      },
+      {
+        "date": "2026-07-02",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "RKLB",
+          "ASTS",
+          "LUNR",
+          "IONQ",
+          "QUBT"
+        ]
       }
     ],
     "logistics-freight-spinoffs": [
@@ -6298,6 +6492,19 @@
           "SPY",
           "IEF",
           "GLD"
+        ]
+      },
+      {
+        "date": "2026-07-02",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "TRGP",
+          "PR",
+          "ET",
+          "CEG",
+          "VST"
         ]
       }
     ],

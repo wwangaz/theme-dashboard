@@ -2,13 +2,13 @@
   "ai-infrastructure-datacenter-boom": {
     "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-01",
+    "last_active": "2026-07-02",
     "representative_tickers": [
-      "META",
-      "MSFT",
-      "AMZN",
-      "MPWR",
-      "MU"
+      "CORZ",
+      "HUT",
+      "RIOT",
+      "MARA",
+      "APLD"
     ]
   },
   "semiconductor-geopolitics-china-trade": {
@@ -26,13 +26,13 @@
   "inflation-rates-macro-pressure": {
     "name": "Hotter-Than-Expected Inflation & Rising Rate Pressure",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-25",
+    "last_active": "2026-07-02",
     "representative_tickers": [
-      "SGOV",
+      "BTC",
+      "ETH",
+      "SPY",
       "TLT",
-      "GLD",
-      "DXY",
-      "XLE"
+      "ITOT"
     ]
   },
   "ai-enterprise-software-automation": {
@@ -74,12 +74,13 @@
   "precious-metals-mining-dividends": {
     "name": "Precious Metals Mining — Silver Surge & Gold Dividend Play",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-29",
+    "last_active": "2026-07-02",
     "representative_tickers": [
       "GLD",
       "SLV",
-      "IAMGF",
-      "MSTR"
+      "AA",
+      "BTG",
+      "COPX"
     ]
   },
   "crypto-digital-assets-geopolitical-watch": {
@@ -119,22 +120,25 @@
   "nuclear-clean-energy": {
     "name": "Nuclear & Advanced Clean Energy Renaissance",
     "first_seen": "2026-05-14",
-    "last_active": "2026-06-18",
+    "last_active": "2026-07-02",
     "representative_tickers": [
-      "CEG",
-      "VST",
-      "NRG",
+      "BE",
       "NEE",
+      "AWR",
+      "EOSE",
       "ETR"
     ]
   },
   "ev-automotive-supply-chain": {
     "name": "EV & Automotive Supply Chain Recovery",
     "first_seen": "2026-05-14",
-    "last_active": "2026-06-30",
+    "last_active": "2026-07-02",
     "representative_tickers": [
-      "UBER",
-      "TSLA"
+      "TSLA",
+      "RIVN",
+      "LCID",
+      "F",
+      "XPEV"
     ]
   },
   "financial-services-capital-markets": {
@@ -161,13 +165,13 @@
   "healthcare-biotech-mixed": {
     "name": "Healthcare & Biotech Divergence",
     "first_seen": "2026-05-14",
-    "last_active": "2026-07-01",
+    "last_active": "2026-07-02",
     "representative_tickers": [
-      "INSM",
-      "STVN",
-      "ZYME",
-      "GERN",
-      "XAIR"
+      "ISRG",
+      "DXCM",
+      "ALC",
+      "XAIR",
+      "GKOS"
     ]
   },
   "energy-oil-gas-cycle": {
@@ -213,13 +217,10 @@
   "big-tech-ai-platforms": {
     "name": "Big Tech AI Platform Divergence",
     "first_seen": "2026-05-18",
-    "last_active": "2026-06-29",
+    "last_active": "2026-07-02",
     "representative_tickers": [
-      "AMZN",
       "GOOGL",
-      "META",
-      "TSLA",
-      "MSFT"
+      "META"
     ]
   },
   "cybersecurity-resilience": {
@@ -263,12 +264,12 @@
   "space-quantum-defense-tech": {
     "name": "Space, Quantum Computing & Defense Tech",
     "first_seen": "2026-05-20",
-    "last_active": "2026-06-30",
+    "last_active": "2026-07-02",
     "representative_tickers": [
       "RKLB",
       "ASTS",
+      "LUNR",
       "IONQ",
-      "RGTI",
       "QUBT"
     ]
   },
@@ -388,13 +389,13 @@
   "macro-rates-dollar-geopolitics": {
     "name": "Fed Policy, Dollar Weakness & Geopolitical Risk Premium",
     "first_seen": "2026-06-02",
-    "last_active": "2026-07-01",
+    "last_active": "2026-07-02",
     "representative_tickers": [
-      "TLT",
-      "DXY",
-      "SPY",
-      "IEF",
-      "GLD"
+      "TRGP",
+      "PR",
+      "ET",
+      "CEG",
+      "VST"
     ]
   },
   "consumer-retail-turnaround": {
