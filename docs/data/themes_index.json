@@ -38,25 +38,25 @@
   "ai-enterprise-software-automation": {
     "name": "Enterprise AI Adoption & Workflow Automation",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-24",
+    "last_active": "2026-07-03",
     "representative_tickers": [
       "MSFT",
       "GOOGL",
-      "META",
-      "CRM",
-      "VEEV"
+      "AMZN",
+      "SOUN",
+      "LPSN"
     ]
   },
   "power-grid-energy-ai-demand": {
     "name": "Power Grid Stress & Energy Stocks Under AI Demand Pressure",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-01",
+    "last_active": "2026-07-03",
     "representative_tickers": [
+      "NEE",
       "CEG",
       "VST",
-      "NEE",
-      "CCJ",
-      "BE"
+      "NRG",
+      "ETR"
     ]
   },
   "space-economy-commercial-launch": {
@@ -165,13 +165,13 @@
   "healthcare-biotech-mixed": {
     "name": "Healthcare & Biotech Divergence",
     "first_seen": "2026-05-14",
-    "last_active": "2026-07-02",
+    "last_active": "2026-07-03",
     "representative_tickers": [
-      "ISRG",
-      "DXCM",
-      "ALC",
-      "XAIR",
-      "GKOS"
+      "BMY",
+      "IOVA",
+      "ARDX",
+      "ADCT",
+      "AKARI"
     ]
   },
   "energy-oil-gas-cycle": {
@@ -197,13 +197,13 @@
   "industrials-infrastructure-materials": {
     "name": "Industrials, Infrastructure & Materials Cycle",
     "first_seen": "2026-05-15",
-    "last_active": "2026-06-03",
+    "last_active": "2026-07-03",
     "representative_tickers": [
-      "HON",
-      "ATI",
-      "NOC",
-      "ODFL",
-      "NSC"
+      "MSM",
+      "IDEX",
+      "APOG",
+      "LNN",
+      "CNM"
     ]
   },
   "media-entertainment-consumer-recovery": {
@@ -217,10 +217,13 @@
   "big-tech-ai-platforms": {
     "name": "Big Tech AI Platform Divergence",
     "first_seen": "2026-05-18",
-    "last_active": "2026-07-02",
+    "last_active": "2026-07-03",
     "representative_tickers": [
+      "AAPL",
+      "META",
+      "TSLA",
       "GOOGL",
-      "META"
+      "AMZN"
     ]
   },
   "cybersecurity-resilience": {
@@ -236,13 +239,13 @@
   "semiconductor-broad-selloff": {
     "name": "Semiconductor Sector Correction",
     "first_seen": "2026-05-19",
-    "last_active": "2026-07-01",
+    "last_active": "2026-07-03",
     "representative_tickers": [
       "NVDA",
       "AMD",
-      "ASML",
+      "ARM",
       "TSM",
-      "INTC"
+      "ASML"
     ]
   },
   "consumer-retail-stress": {
@@ -264,25 +267,25 @@
   "space-quantum-defense-tech": {
     "name": "Space, Quantum Computing & Defense Tech",
     "first_seen": "2026-05-20",
-    "last_active": "2026-07-02",
+    "last_active": "2026-07-03",
     "representative_tickers": [
-      "RKLB",
-      "ASTS",
-      "LUNR",
       "IONQ",
-      "QUBT"
+      "RGTI",
+      "QUBT",
+      "RKLB",
+      "ASTS"
     ]
   },
   "fixed-income-yield-alternatives": {
     "name": "Fixed Income, Yield Alternatives & Retirement Income",
     "first_seen": "2026-05-20",
-    "last_active": "2026-07-01",
+    "last_active": "2026-07-03",
     "representative_tickers": [
-      "KKR",
-      "TPG",
-      "OBDC",
-      "OBDC2",
-      "CION"
+      "NXDT",
+      "OWL",
+      "MLPI",
+      "BREIT",
+      "TPVG"
     ]
   },
   "logistics-freight-spinoffs": {
@@ -446,8 +449,14 @@
   "macro-risk-market-top-signals": {
     "name": "Macro Risk Flags & Equity Market Top Concerns",
     "first_seen": "2026-06-09",
-    "last_active": "2026-06-24",
-    "representative_tickers": []
+    "last_active": "2026-07-03",
+    "representative_tickers": [
+      "GIS",
+      "MSM",
+      "NKE",
+      "UPWK",
+      "LNN"
+    ]
   },
   "quantum-computing-emerging-tech": {
     "name": "Quantum Computing Emerging Tech Momentum",

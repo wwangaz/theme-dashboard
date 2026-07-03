@@ -2001,6 +2001,15 @@
             "LUNR": 21.29
           },
           "floating_return": 0.09323
+        },
+        {
+          "date": "2026-07-03",
+          "prices": {
+            "RKLB": 100.46,
+            "ASTS": 85.13,
+            "LUNR": 19.58
+          },
+          "floating_return": 0.029789
         }
       ]
     },
@@ -2045,6 +2054,13 @@
             "CMCSA": 23.45
           },
           "floating_return": -0.053481
+        },
+        {
+          "date": "2026-07-03",
+          "prices": {
+            "CMCSA": 23.79
+          },
+          "floating_return": -0.039758
         }
       ]
     },
@@ -2087,6 +2103,17 @@
             "MU": 1056.87
           },
           "floating_return": -0.004675
+        },
+        {
+          "date": "2026-07-03",
+          "prices": {
+            "META": 582.9,
+            "MSFT": 390.49,
+            "AMZN": 242.67,
+            "MPWR": 1288.16,
+            "MU": 975.56
+          },
+          "floating_return": -0.033065
         }
       ]
     },
@@ -2117,7 +2144,20 @@
       "exit_reason": null,
       "realized_return": null,
       "spy_return_during_holding": null,
-      "excess_return": null
+      "excess_return": null,
+      "daily_snapshots": [
+        {
+          "date": "2026-07-03",
+          "prices": {
+            "TSLA": 393.45,
+            "RIVN": 18.63,
+            "LCID": 6.08,
+            "F": 13.36,
+            "XPEV": 13.08
+          },
+          "floating_return": -0.040428
+        }
+      ]
     },
     {
       "theme_id": "precious-metals-mining-dividends",
@@ -2140,6 +2180,48 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 750.5211,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null,
+      "daily_snapshots": [
+        {
+          "date": "2026-07-03",
+          "prices": {
+            "GLD": 378.13,
+            "SLV": 55.02,
+            "AA": 48.68,
+            "BTG": 4.08,
+            "COPX": 76.65
+          },
+          "floating_return": -0.014679
+        }
+      ]
+    },
+    {
+      "theme_id": "ai-enterprise-software-automation",
+      "theme_name": "Enterprise AI Adoption & Workflow Automation",
+      "direction": "Bullish",
+      "entry_date": "2026-07-03",
+      "tickers": [
+        "MSFT",
+        "GOOGL",
+        "AMZN",
+        "SOUN",
+        "LPSN"
+      ],
+      "entry_prices": {
+        "MSFT": 390.49,
+        "GOOGL": 359.91,
+        "AMZN": 242.67,
+        "SOUN": 6.55,
+        "LPSN": 1.93
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 744.78,
       "status": "open",
       "exit_date": null,
       "exit_prices": null,
@@ -2353,18 +2435,24 @@
       "portfolio_return": -0.003345,
       "spy_return": 0.006544,
       "open_count": 3
+    },
+    {
+      "date": "2026-07-03",
+      "portfolio_return": -0.025492,
+      "spy_return": -0.001314,
+      "open_count": 5
     }
   ],
   "summary": {
-    "portfolio_cumulative": -0.094987,
-    "spy_cumulative": 0.077244,
-    "alpha": -0.172232,
-    "open_count": 4,
+    "portfolio_cumulative": -0.118058,
+    "spy_cumulative": 0.075829,
+    "alpha": -0.193887,
+    "open_count": 5,
     "closed_count": 28,
     "win_rate": 0.393,
-    "tracking_days": 34
+    "tracking_days": 35
   },
-  "updated_at": "2026-07-02",
+  "updated_at": "2026-07-03",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -3139,6 +3227,19 @@
           "CRM",
           "VEEV"
         ]
+      },
+      {
+        "date": "2026-07-03",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "MSFT",
+          "GOOGL",
+          "AMZN",
+          "SOUN",
+          "LPSN"
+        ]
       }
     ],
     "space-economy-commercial-launch": [
@@ -3756,6 +3857,19 @@
           "NEE",
           "CCJ",
           "BE"
+        ]
+      },
+      {
+        "date": "2026-07-03",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "NEE",
+          "CEG",
+          "VST",
+          "NRG",
+          "ETR"
         ]
       }
     ],
@@ -4843,6 +4957,19 @@
           "XAIR",
           "GKOS"
         ]
+      },
+      {
+        "date": "2026-07-03",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "BMY",
+          "IOVA",
+          "ARDX",
+          "ADCT",
+          "AKARI"
+        ]
       }
     ],
     "energy-oil-gas-cycle": [
@@ -4989,6 +5116,19 @@
           "NOC",
           "ODFL",
           "NSC"
+        ]
+      },
+      {
+        "date": "2026-07-03",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "MSM",
+          "IDEX",
+          "APOG",
+          "LNN",
+          "CNM"
         ]
       }
     ],
@@ -5313,6 +5453,19 @@
         "tickers": [
           "GOOGL",
           "META"
+        ]
+      },
+      {
+        "date": "2026-07-03",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "AAPL",
+          "META",
+          "TSLA",
+          "GOOGL",
+          "AMZN"
         ]
       }
     ],
@@ -5690,6 +5843,19 @@
           "TSM",
           "INTC"
         ]
+      },
+      {
+        "date": "2026-07-03",
+        "conviction": 7,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "NVDA",
+          "AMD",
+          "ARM",
+          "TSM",
+          "ASML"
+        ]
       }
     ],
     "fintech-payments-platforms": [
@@ -5921,6 +6087,19 @@
           "OBDC2",
           "CION"
         ]
+      },
+      {
+        "date": "2026-07-03",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "NXDT",
+          "OWL",
+          "MLPI",
+          "BREIT",
+          "TPVG"
+        ]
       }
     ],
     "space-quantum-defense-tech": [
@@ -6063,6 +6242,19 @@
           "LUNR",
           "IONQ",
           "QUBT"
+        ]
+      },
+      {
+        "date": "2026-07-03",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "IONQ",
+          "RGTI",
+          "QUBT",
+          "RKLB",
+          "ASTS"
         ]
       }
     ],
@@ -6655,6 +6847,19 @@
         "direction": "Bearish",
         "stage": "Crowded Euphoria",
         "tickers": []
+      },
+      {
+        "date": "2026-07-03",
+        "conviction": 6,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "GIS",
+          "MSM",
+          "NKE",
+          "UPWK",
+          "LNN"
+        ]
       }
     ],
     "value-investing-rotation-non-ai": [
