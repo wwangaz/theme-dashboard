@@ -2,13 +2,13 @@
   "ai-infrastructure-datacenter-boom": {
     "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-02",
+    "last_active": "2026-07-06",
     "representative_tickers": [
-      "CORZ",
-      "HUT",
-      "RIOT",
-      "MARA",
-      "APLD"
+      "WULF",
+      "NOW",
+      "PLTR",
+      "ORCL",
+      "HON"
     ]
   },
   "semiconductor-geopolitics-china-trade": {
@@ -50,24 +50,24 @@
   "power-grid-energy-ai-demand": {
     "name": "Power Grid Stress & Energy Stocks Under AI Demand Pressure",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-03",
+    "last_active": "2026-07-06",
     "representative_tickers": [
-      "NEE",
       "CEG",
       "VST",
+      "NEE",
       "NRG",
-      "ETR"
+      "GNRC"
     ]
   },
   "space-economy-commercial-launch": {
     "name": "Commercial Space Economy & Satellite Communications Momentum",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-01",
+    "last_active": "2026-07-06",
     "representative_tickers": [
       "RKLB",
       "ASTS",
       "LUNR",
-      "CW",
+      "T",
       "SPCE"
     ]
   },
@@ -86,13 +86,13 @@
   "crypto-digital-assets-geopolitical-watch": {
     "name": "Crypto & Digital Assets Holding Steady Amid US-China Summit",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-25",
+    "last_active": "2026-07-06",
     "representative_tickers": [
-      "HIVE",
       "MSTR",
-      "COIN",
-      "RIOT",
-      "MARA"
+      "WULF",
+      "BITM",
+      "ETH-USD",
+      "BTC-USD"
     ]
   },
   "quantum-computing-speculative-selloff": {
@@ -165,13 +165,12 @@
   "healthcare-biotech-mixed": {
     "name": "Healthcare & Biotech Divergence",
     "first_seen": "2026-05-14",
-    "last_active": "2026-07-03",
+    "last_active": "2026-07-06",
     "representative_tickers": [
-      "BMY",
-      "IOVA",
-      "ARDX",
-      "ADCT",
-      "AKARI"
+      "LLY, ISRG",
+      "DXCM",
+      "GH",
+      "CNC"
     ]
   },
   "energy-oil-gas-cycle": {
@@ -217,13 +216,13 @@
   "big-tech-ai-platforms": {
     "name": "Big Tech AI Platform Divergence",
     "first_seen": "2026-05-18",
-    "last_active": "2026-07-03",
+    "last_active": "2026-07-06",
     "representative_tickers": [
-      "AAPL",
-      "META",
-      "TSLA",
+      "MSFT",
       "GOOGL",
-      "AMZN"
+      "META",
+      "AMZN",
+      "ORCL"
     ]
   },
   "cybersecurity-resilience": {
@@ -437,13 +436,13 @@
   "defense-industrial-government-spend": {
     "name": "Defense Spending & Industrial Government Contracts",
     "first_seen": "2026-06-04",
-    "last_active": "2026-07-01",
+    "last_active": "2026-07-06",
     "representative_tickers": [
-      "CW",
-      "CRS",
-      "RRX",
-      "AME",
-      "OPTX"
+      "LMT",
+      "MOOG",
+      "RTX",
+      "NOC",
+      "GD"
     ]
   },
   "macro-risk-market-top-signals": {
@@ -461,7 +460,7 @@
   "quantum-computing-emerging-tech": {
     "name": "Quantum Computing Emerging Tech Momentum",
     "first_seen": "2026-06-10",
-    "last_active": "2026-06-29",
+    "last_active": "2026-07-06",
     "representative_tickers": [
       "IONQ",
       "RGTI",
@@ -507,13 +506,13 @@
   "semiconductor-chip-rally": {
     "name": "Semiconductor & Chip Sector Broad Rally",
     "first_seen": "2026-06-18",
-    "last_active": "2026-06-25",
+    "last_active": "2026-07-06",
     "representative_tickers": [
-      "MU",
-      "NVDA",
+      "AMD",
+      "TSM",
       "ASML",
-      "QCOM",
-      "TSM"
+      "INTC",
+      "AVGO"
     ]
   },
   "ai-government-data-infrastructure": {
@@ -526,6 +525,18 @@
       "TYL",
       "MSFT",
       "GOOGL"
+    ]
+  },
+  "consumer-defensive-resilience": {
+    "name": "Defensive Consumer & Staples Resilience",
+    "first_seen": "2026-07-06",
+    "last_active": "2026-07-06",
+    "representative_tickers": [
+      "COST",
+      "GIS",
+      "PINS",
+      "SHOP",
+      "MCD"
     ]
   }
 }
