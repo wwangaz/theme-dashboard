@@ -2107,13 +2107,19 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 746.34,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null,
+      "status": "closed",
+      "exit_date": "2026-07-07",
+      "exit_prices": {
+        "META": 610.795,
+        "MSFT": 394.09,
+        "AMZN": 244.835,
+        "MPWR": 1245.845,
+        "MU": 908.985
+      },
+      "exit_reason": "theme_gone",
+      "realized_return": -0.039092,
+      "spy_return_during_holding": 0.000858,
+      "excess_return": -0.03995,
       "daily_snapshots": [
         {
           "date": "2026-07-02",
@@ -2147,6 +2153,17 @@
             "MU": 1003.64
           },
           "floating_return": -0.014295
+        },
+        {
+          "date": "2026-07-07",
+          "prices": {
+            "META": 610.795,
+            "MSFT": 394.09,
+            "AMZN": 244.835,
+            "MPWR": 1245.845,
+            "MU": 908.985
+          },
+          "floating_return": -0.039092
         }
       ]
     },
@@ -2171,13 +2188,19 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 750.5211,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null,
+      "status": "closed",
+      "exit_date": "2026-07-07",
+      "exit_prices": {
+        "TSLA": 410.1,
+        "RIVN": 17.565,
+        "LCID": 6.0501,
+        "F": 13.665,
+        "XPEV": 13.295
+      },
+      "exit_reason": "direction_changed",
+      "realized_return": -0.03659,
+      "spy_return_during_holding": -0.004718,
+      "excess_return": -0.031872,
       "daily_snapshots": [
         {
           "date": "2026-07-03",
@@ -2200,6 +2223,17 @@
             "XPEV": 13.645
           },
           "floating_return": 0.006501
+        },
+        {
+          "date": "2026-07-07",
+          "prices": {
+            "TSLA": 410.1,
+            "RIVN": 17.565,
+            "LCID": 6.0501,
+            "F": 13.665,
+            "XPEV": 13.295
+          },
+          "floating_return": -0.03659
         }
       ]
     },
@@ -2253,6 +2287,17 @@
             "COPX": 78.05
           },
           "floating_return": 0.002869
+        },
+        {
+          "date": "2026-07-07",
+          "prices": {
+            "GLD": 381.445,
+            "SLV": 55.1801,
+            "AA": 48.015,
+            "BTG": 3.905,
+            "COPX": 74.957
+          },
+          "floating_return": -0.027906
         }
       ]
     },
@@ -2295,6 +2340,17 @@
             "LPSN": 1.8502
           },
           "floating_return": 0.002814
+        },
+        {
+          "date": "2026-07-07",
+          "prices": {
+            "MSFT": 394.09,
+            "GOOGL": 370.56,
+            "AMZN": 244.835,
+            "SOUN": 6.885,
+            "LPSN": 1.845
+          },
+          "floating_return": 0.010967
         }
       ]
     },
@@ -2325,7 +2381,20 @@
       "exit_reason": null,
       "realized_return": null,
       "spy_return_during_holding": null,
-      "excess_return": null
+      "excess_return": null,
+      "daily_snapshots": [
+        {
+          "date": "2026-07-07",
+          "prices": {
+            "AMD": 512.905,
+            "TSM": 432.65,
+            "ASML": 1728.4907,
+            "INTC": 110.34,
+            "AVGO": 365.485
+          },
+          "floating_return": -0.071931
+        }
+      ]
     }
   ],
   "daily_returns": [
@@ -2544,18 +2613,24 @@
       "portfolio_return": 0.00545,
       "spy_return": 0.007734,
       "open_count": 6
+    },
+    {
+      "date": "2026-07-07",
+      "portfolio_return": -0.032532,
+      "spy_return": -0.00579,
+      "open_count": 5
     }
   ],
   "summary": {
-    "portfolio_cumulative": -0.113251,
-    "spy_cumulative": 0.084149,
-    "alpha": -0.197401,
-    "open_count": 4,
-    "closed_count": 30,
-    "win_rate": 0.367,
-    "tracking_days": 36
+    "portfolio_cumulative": -0.142099,
+    "spy_cumulative": 0.077872,
+    "alpha": -0.219971,
+    "open_count": 3,
+    "closed_count": 32,
+    "win_rate": 0.344,
+    "tracking_days": 37
   },
-  "updated_at": "2026-07-06",
+  "updated_at": "2026-07-07",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -3213,6 +3288,19 @@
           "BTG",
           "COPX"
         ]
+      },
+      {
+        "date": "2026-07-07",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "GLD",
+          "SLV",
+          "BCX",
+          "FM",
+          "GDX"
+        ]
       }
     ],
     "ai-enterprise-software-automation": [
@@ -3633,6 +3721,19 @@
           "LUNR",
           "T",
           "SPCE"
+        ]
+      },
+      {
+        "date": "2026-07-07",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Crowded Euphoria",
+        "tickers": [
+          "RKLB",
+          "LUNR",
+          "ASTS",
+          "INTC",
+          "ARM"
         ]
       }
     ],
@@ -4217,6 +4318,17 @@
           "RGTI",
           "QUBT"
         ]
+      },
+      {
+        "date": "2026-07-07",
+        "conviction": 5,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "IONQ",
+          "RGTI",
+          "QUBT"
+        ]
       }
     ],
     "regional-banking-rate-environment": [
@@ -4500,6 +4612,19 @@
           "ETH-USD",
           "BTC-USD"
         ]
+      },
+      {
+        "date": "2026-07-07",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "COIN",
+          "ETHE",
+          "MSTR",
+          "IREN",
+          "GBTC"
+        ]
       }
     ],
     "nuclear-clean-energy": [
@@ -4579,6 +4704,19 @@
           "EOSE",
           "ETR"
         ]
+      },
+      {
+        "date": "2026-07-07",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "NEE",
+          "ETR",
+          "CEG",
+          "VST",
+          "NRG"
+        ]
       }
     ],
     "financial-services-capital-markets": [
@@ -4630,6 +4768,18 @@
           "CB",
           "RGA",
           "PNC"
+        ]
+      },
+      {
+        "date": "2026-07-07",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "LZA",
+          "SPCE",
+          "HUB",
+          "NET"
         ]
       }
     ],
@@ -4770,6 +4920,16 @@
           "LCID",
           "F",
           "XPEV"
+        ]
+      },
+      {
+        "date": "2026-07-07",
+        "conviction": 6,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "RIVN",
+          "TSLA"
         ]
       }
     ],
@@ -5647,6 +5807,19 @@
           "AMZN",
           "ORCL"
         ]
+      },
+      {
+        "date": "2026-07-07",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "MSFT",
+          "META",
+          "GOOGL",
+          "AMZN",
+          "AAPL"
+        ]
       }
     ],
     "cybersecurity-resilience": [
@@ -6035,6 +6208,19 @@
           "ARM",
           "TSM",
           "ASML"
+        ]
+      },
+      {
+        "date": "2026-07-07",
+        "conviction": 8,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "INTC",
+          "AMD",
+          "ASML",
+          "TSM",
+          "NVDA"
         ]
       }
     ],
@@ -6698,6 +6884,18 @@
           "DHI",
           "LEN",
           "TOL"
+        ]
+      },
+      {
+        "date": "2026-07-07",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "RWT",
+          "FHLB",
+          "O",
+          "VNQ"
         ]
       }
     ],

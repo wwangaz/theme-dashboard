@@ -62,43 +62,43 @@
   "space-economy-commercial-launch": {
     "name": "Commercial Space Economy & Satellite Communications Momentum",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-06",
+    "last_active": "2026-07-07",
     "representative_tickers": [
       "RKLB",
-      "ASTS",
       "LUNR",
-      "T",
-      "SPCE"
+      "ASTS",
+      "INTC",
+      "ARM"
     ]
   },
   "precious-metals-mining-dividends": {
     "name": "Precious Metals Mining — Silver Surge & Gold Dividend Play",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-02",
+    "last_active": "2026-07-07",
     "representative_tickers": [
       "GLD",
       "SLV",
-      "AA",
-      "BTG",
-      "COPX"
+      "BCX",
+      "FM",
+      "GDX"
     ]
   },
   "crypto-digital-assets-geopolitical-watch": {
     "name": "Crypto & Digital Assets Holding Steady Amid US-China Summit",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-06",
+    "last_active": "2026-07-07",
     "representative_tickers": [
+      "COIN",
+      "ETHE",
       "MSTR",
-      "WULF",
-      "BITM",
-      "ETH-USD",
-      "BTC-USD"
+      "IREN",
+      "GBTC"
     ]
   },
   "quantum-computing-speculative-selloff": {
     "name": "Quantum Computing Speculative Pullback",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-26",
+    "last_active": "2026-07-07",
     "representative_tickers": [
       "IONQ",
       "RGTI",
@@ -120,37 +120,33 @@
   "nuclear-clean-energy": {
     "name": "Nuclear & Advanced Clean Energy Renaissance",
     "first_seen": "2026-05-14",
-    "last_active": "2026-07-02",
+    "last_active": "2026-07-07",
     "representative_tickers": [
-      "BE",
       "NEE",
-      "AWR",
-      "EOSE",
-      "ETR"
+      "ETR",
+      "CEG",
+      "VST",
+      "NRG"
     ]
   },
   "ev-automotive-supply-chain": {
     "name": "EV & Automotive Supply Chain Recovery",
     "first_seen": "2026-05-14",
-    "last_active": "2026-07-02",
+    "last_active": "2026-07-07",
     "representative_tickers": [
-      "TSLA",
       "RIVN",
-      "LCID",
-      "F",
-      "XPEV"
+      "TSLA"
     ]
   },
   "financial-services-capital-markets": {
     "name": "Financial Services Rally & Capital Markets Momentum",
     "first_seen": "2026-05-14",
-    "last_active": "2026-06-22",
+    "last_active": "2026-07-07",
     "representative_tickers": [
-      "AXP",
-      "BAC",
-      "CB",
-      "RGA",
-      "PNC"
+      "LZA",
+      "SPCE",
+      "HUB",
+      "NET"
     ]
   },
   "emerging-markets-latam": {
@@ -216,13 +212,13 @@
   "big-tech-ai-platforms": {
     "name": "Big Tech AI Platform Divergence",
     "first_seen": "2026-05-18",
-    "last_active": "2026-07-06",
+    "last_active": "2026-07-07",
     "representative_tickers": [
       "MSFT",
-      "GOOGL",
       "META",
+      "GOOGL",
       "AMZN",
-      "ORCL"
+      "AAPL"
     ]
   },
   "cybersecurity-resilience": {
@@ -238,13 +234,13 @@
   "semiconductor-broad-selloff": {
     "name": "Semiconductor Sector Correction",
     "first_seen": "2026-05-19",
-    "last_active": "2026-07-03",
+    "last_active": "2026-07-07",
     "representative_tickers": [
-      "NVDA",
+      "INTC",
       "AMD",
-      "ARM",
+      "ASML",
       "TSM",
-      "ASML"
+      "NVDA"
     ]
   },
   "consumer-retail-stress": {
@@ -335,12 +331,12 @@
   "housing-real-estate-finance": {
     "name": "Housing Market Stress & Real Estate Finance",
     "first_seen": "2026-05-28",
-    "last_active": "2026-06-09",
+    "last_active": "2026-07-07",
     "representative_tickers": [
-      "RKT",
-      "DHI",
-      "LEN",
-      "TOL"
+      "RWT",
+      "FHLB",
+      "O",
+      "VNQ"
     ]
   },
   "space-economy-correction": {
