@@ -2,13 +2,13 @@
   "ai-infrastructure-datacenter-boom": {
     "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-06",
+    "last_active": "2026-07-08",
     "representative_tickers": [
-      "WULF",
-      "NOW",
+      "MTZ",
+      "CEG",
+      "NEE",
       "PLTR",
-      "ORCL",
-      "HON"
+      "ORCL"
     ]
   },
   "semiconductor-geopolitics-china-trade": {
@@ -74,25 +74,23 @@
   "precious-metals-mining-dividends": {
     "name": "Precious Metals Mining — Silver Surge & Gold Dividend Play",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-07",
+    "last_active": "2026-07-08",
     "representative_tickers": [
       "GLD",
       "SLV",
-      "BCX",
-      "FM",
-      "GDX"
+      "Equinox Gold",
+      "Alaska Silver",
+      "Trilogy Metals"
     ]
   },
   "crypto-digital-assets-geopolitical-watch": {
     "name": "Crypto & Digital Assets Holding Steady Amid US-China Summit",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-07",
+    "last_active": "2026-07-08",
     "representative_tickers": [
       "COIN",
-      "ETHE",
-      "MSTR",
-      "IREN",
-      "GBTC"
+      "BTC",
+      "ETH"
     ]
   },
   "quantum-computing-speculative-selloff": {
@@ -161,24 +159,25 @@
   "healthcare-biotech-mixed": {
     "name": "Healthcare & Biotech Divergence",
     "first_seen": "2026-05-14",
-    "last_active": "2026-07-06",
+    "last_active": "2026-07-08",
     "representative_tickers": [
-      "LLY, ISRG",
-      "DXCM",
-      "GH",
-      "CNC"
+      "MRNA",
+      "ALKS",
+      "AURA",
+      "Prime Medicine",
+      "Seres Therapeutics"
     ]
   },
   "energy-oil-gas-cycle": {
     "name": "Oil & Gas Cycle Recovery & Leverage Plays",
     "first_seen": "2026-05-15",
-    "last_active": "2026-07-01",
+    "last_active": "2026-07-08",
     "representative_tickers": [
-      "OXY",
-      "RIG",
-      "VAL",
-      "TALO",
-      "XOP"
+      "HAL",
+      "SLB",
+      "COP",
+      "CHRD",
+      "HF Sinclair"
     ]
   },
   "energy-infrastructure-income": {
@@ -234,13 +233,13 @@
   "semiconductor-broad-selloff": {
     "name": "Semiconductor Sector Correction",
     "first_seen": "2026-05-19",
-    "last_active": "2026-07-07",
+    "last_active": "2026-07-08",
     "representative_tickers": [
-      "INTC",
+      "NVDA",
       "AMD",
-      "ASML",
+      "AVGO",
       "TSM",
-      "NVDA"
+      "ASML"
     ]
   },
   "consumer-retail-stress": {
@@ -262,13 +261,13 @@
   "space-quantum-defense-tech": {
     "name": "Space, Quantum Computing & Defense Tech",
     "first_seen": "2026-05-20",
-    "last_active": "2026-07-03",
+    "last_active": "2026-07-08",
     "representative_tickers": [
-      "IONQ",
-      "RGTI",
-      "QUBT",
       "RKLB",
-      "ASTS"
+      "ASTS",
+      "LUNR",
+      "IONQ",
+      "RGTI"
     ]
   },
   "fixed-income-yield-alternatives": {
@@ -533,6 +532,37 @@
       "PINS",
       "SHOP",
       "MCD"
+    ]
+  },
+  "china-ai-tech-rerating": {
+    "name": "China AI & Tech Catch-Up Trade",
+    "first_seen": "2026-07-08",
+    "last_active": "2026-07-08",
+    "representative_tickers": [
+      "BABA",
+      "VNET",
+      "XPEV"
+    ]
+  },
+  "capital-returns-tax-efficiency": {
+    "name": "Capital Return & Dividend Tax-Efficiency Playbook",
+    "first_seen": "2026-07-08",
+    "last_active": "2026-07-08",
+    "representative_tickers": [
+      "JPM",
+      "GIS",
+      "CAT",
+      "VZ",
+      "MS"
+    ]
+  },
+  "staffing-labor-recovery": {
+    "name": "Staffing & Labor Market Recovery",
+    "first_seen": "2026-07-08",
+    "last_active": "2026-07-08",
+    "representative_tickers": [
+      "KELYA",
+      "TBI"
     ]
   }
 }
