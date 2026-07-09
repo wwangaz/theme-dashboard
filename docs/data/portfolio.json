@@ -2438,8 +2438,48 @@
             "AVGO": 385.78
           },
           "floating_return": -0.057511
+        },
+        {
+          "date": "2026-07-09",
+          "prices": {
+            "AMD": 555.23,
+            "TSM": 442.72,
+            "ASML": 1825.8,
+            "INTC": 113.14,
+            "AVGO": 394.59
+          },
+          "floating_return": -0.022074
         }
       ]
+    },
+    {
+      "theme_id": "ai-infrastructure-datacenter-boom",
+      "theme_name": "AI Infrastructure & Data Center Capital Expenditure Surge",
+      "direction": "Bullish",
+      "entry_date": "2026-07-09",
+      "tickers": [
+        "AMD",
+        "AVGO",
+        "ASML",
+        "ARM",
+        "VRT"
+      ],
+      "entry_prices": {
+        "AMD": 555.23,
+        "AVGO": 394.59,
+        "ASML": 1825.8,
+        "ARM": 335.16,
+        "VRT": 328.99
+      },
+      "conviction_at_entry": 8,
+      "spy_price_at_entry": 748.77,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null
     }
   ],
   "daily_returns": [
@@ -2670,18 +2710,24 @@
       "portfolio_return": -0.01025,
       "spy_return": -0.004908,
       "open_count": 3
+    },
+    {
+      "date": "2026-07-09",
+      "portfolio_return": 0.038237,
+      "spy_return": 0.004521,
+      "open_count": 1
     }
   ],
   "summary": {
-    "portfolio_cumulative": -0.150893,
-    "spy_cumulative": 0.072582,
-    "alpha": -0.223475,
+    "portfolio_cumulative": -0.118425,
+    "spy_cumulative": 0.077431,
+    "alpha": -0.195856,
     "open_count": 1,
     "closed_count": 34,
     "win_rate": 0.324,
-    "tracking_days": 38
+    "tracking_days": 39
   },
-  "updated_at": "2026-07-08",
+  "updated_at": "2026-07-09",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -3084,6 +3130,19 @@
           "NEE",
           "PLTR",
           "ORCL"
+        ]
+      },
+      {
+        "date": "2026-07-09",
+        "conviction": 8,
+        "direction": "Bullish",
+        "stage": "Crowded Euphoria",
+        "tickers": [
+          "AMD",
+          "AVGO",
+          "ASML",
+          "ARM",
+          "VRT"
         ]
       }
     ],
@@ -3812,6 +3871,19 @@
           "INTC",
           "ARM"
         ]
+      },
+      {
+        "date": "2026-07-09",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Crowded Euphoria",
+        "tickers": [
+          "RKLB",
+          "ASTS",
+          "LUNR",
+          "SPCX",
+          "T"
+        ]
       }
     ],
     "power-grid-energy-ai-demand": [
@@ -4190,6 +4262,19 @@
           "NEE",
           "NRG",
           "GNRC"
+        ]
+      },
+      {
+        "date": "2026-07-09",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "CEG",
+          "VST",
+          "NRG",
+          "NEE",
+          "BE"
         ]
       }
     ],
@@ -4712,6 +4797,19 @@
           "COIN",
           "BTC",
           "ETH"
+        ]
+      },
+      {
+        "date": "2026-07-09",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "SONY",
+          "SECZ",
+          "MARA",
+          "IREN",
+          "BTC"
         ]
       }
     ],
@@ -5398,6 +5496,19 @@
           "Prime Medicine",
           "Seres Therapeutics"
         ]
+      },
+      {
+        "date": "2026-07-09",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "KYTX",
+          "PRME",
+          "BEAM",
+          "EXEL",
+          "GSK"
+        ]
       }
     ],
     "energy-oil-gas-cycle": [
@@ -5931,6 +6042,19 @@
           "MSFT",
           "META",
           "GOOGL",
+          "AMZN",
+          "AAPL"
+        ]
+      },
+      {
+        "date": "2026-07-09",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "GOOGL",
+          "META",
+          "MSFT",
           "AMZN",
           "AAPL"
         ]
@@ -6970,6 +7094,19 @@
           "UUP",
           "CVX"
         ]
+      },
+      {
+        "date": "2026-07-09",
+        "conviction": 6,
+        "direction": "Bearish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "USO",
+          "GLD",
+          "SLV",
+          "XLE",
+          "IMO"
+        ]
       }
     ],
     "china-tech-consumer": [
@@ -7036,6 +7173,19 @@
           "FHLB",
           "O",
           "VNQ"
+        ]
+      },
+      {
+        "date": "2026-07-09",
+        "conviction": 7,
+        "direction": "Bearish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "LEN",
+          "DHI",
+          "TOL",
+          "Z",
+          "BKNG"
         ]
       }
     ],
@@ -7612,6 +7762,19 @@
           "SHOP",
           "MCD"
         ]
+      },
+      {
+        "date": "2026-07-09",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "PEP",
+          "GIS",
+          "CPB",
+          "SMPL",
+          "MNST"
+        ]
       }
     ],
     "china-ai-tech-rerating": [
@@ -7651,6 +7814,21 @@
         "tickers": [
           "KELYA",
           "TBI"
+        ]
+      }
+    ],
+    "semiconductor-cycle-divergence": [
+      {
+        "date": "2026-07-09",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Acceleration",
+        "tickers": [
+          "MU",
+          "TSM",
+          "INTC",
+          "QCOM",
+          "NVDA"
         ]
       }
     ]

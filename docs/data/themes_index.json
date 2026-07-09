@@ -2,13 +2,13 @@
   "ai-infrastructure-datacenter-boom": {
     "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-08",
+    "last_active": "2026-07-09",
     "representative_tickers": [
-      "MTZ",
-      "CEG",
-      "NEE",
-      "PLTR",
-      "ORCL"
+      "AMD",
+      "AVGO",
+      "ASML",
+      "ARM",
+      "VRT"
     ]
   },
   "semiconductor-geopolitics-china-trade": {
@@ -50,25 +50,25 @@
   "power-grid-energy-ai-demand": {
     "name": "Power Grid Stress & Energy Stocks Under AI Demand Pressure",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-06",
+    "last_active": "2026-07-09",
     "representative_tickers": [
       "CEG",
       "VST",
-      "NEE",
       "NRG",
-      "GNRC"
+      "NEE",
+      "BE"
     ]
   },
   "space-economy-commercial-launch": {
     "name": "Commercial Space Economy & Satellite Communications Momentum",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-07",
+    "last_active": "2026-07-09",
     "representative_tickers": [
       "RKLB",
-      "LUNR",
       "ASTS",
-      "INTC",
-      "ARM"
+      "LUNR",
+      "SPCX",
+      "T"
     ]
   },
   "precious-metals-mining-dividends": {
@@ -86,11 +86,13 @@
   "crypto-digital-assets-geopolitical-watch": {
     "name": "Crypto & Digital Assets Holding Steady Amid US-China Summit",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-08",
+    "last_active": "2026-07-09",
     "representative_tickers": [
-      "COIN",
-      "BTC",
-      "ETH"
+      "SONY",
+      "SECZ",
+      "MARA",
+      "IREN",
+      "BTC"
     ]
   },
   "quantum-computing-speculative-selloff": {
@@ -159,13 +161,13 @@
   "healthcare-biotech-mixed": {
     "name": "Healthcare & Biotech Divergence",
     "first_seen": "2026-05-14",
-    "last_active": "2026-07-08",
+    "last_active": "2026-07-09",
     "representative_tickers": [
-      "MRNA",
-      "ALKS",
-      "AURA",
-      "Prime Medicine",
-      "Seres Therapeutics"
+      "KYTX",
+      "PRME",
+      "BEAM",
+      "EXEL",
+      "GSK"
     ]
   },
   "energy-oil-gas-cycle": {
@@ -211,11 +213,11 @@
   "big-tech-ai-platforms": {
     "name": "Big Tech AI Platform Divergence",
     "first_seen": "2026-05-18",
-    "last_active": "2026-07-07",
+    "last_active": "2026-07-09",
     "representative_tickers": [
-      "MSFT",
-      "META",
       "GOOGL",
+      "META",
+      "MSFT",
       "AMZN",
       "AAPL"
     ]
@@ -294,13 +296,13 @@
   "geopolitical-risk-commodity-repricing": {
     "name": "Iran Peace Talks & Commodity/Equity Repricing",
     "first_seen": "2026-05-26",
-    "last_active": "2026-06-22",
+    "last_active": "2026-07-09",
     "representative_tickers": [
       "USO",
       "GLD",
       "SLV",
-      "UUP",
-      "CVX"
+      "XLE",
+      "IMO"
     ]
   },
   "affordable-housing-homebuilding": {
@@ -330,12 +332,13 @@
   "housing-real-estate-finance": {
     "name": "Housing Market Stress & Real Estate Finance",
     "first_seen": "2026-05-28",
-    "last_active": "2026-07-07",
+    "last_active": "2026-07-09",
     "representative_tickers": [
-      "RWT",
-      "FHLB",
-      "O",
-      "VNQ"
+      "LEN",
+      "DHI",
+      "TOL",
+      "Z",
+      "BKNG"
     ]
   },
   "space-economy-correction": {
@@ -525,13 +528,13 @@
   "consumer-defensive-resilience": {
     "name": "Defensive Consumer & Staples Resilience",
     "first_seen": "2026-07-06",
-    "last_active": "2026-07-06",
+    "last_active": "2026-07-09",
     "representative_tickers": [
-      "COST",
+      "PEP",
       "GIS",
-      "PINS",
-      "SHOP",
-      "MCD"
+      "CPB",
+      "SMPL",
+      "MNST"
     ]
   },
   "china-ai-tech-rerating": {
@@ -563,6 +566,18 @@
     "representative_tickers": [
       "KELYA",
       "TBI"
+    ]
+  },
+  "semiconductor-cycle-divergence": {
+    "name": "Semiconductor Cycle: Winners & Losers",
+    "first_seen": "2026-07-09",
+    "last_active": "2026-07-09",
+    "representative_tickers": [
+      "MU",
+      "TSM",
+      "INTC",
+      "QCOM",
+      "NVDA"
     ]
   }
 }
