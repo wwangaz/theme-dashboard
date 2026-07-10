@@ -2449,6 +2449,17 @@
             "AVGO": 394.59
           },
           "floating_return": -0.022074
+        },
+        {
+          "date": "2026-07-10",
+          "prices": {
+            "AMD": 547.79,
+            "TSM": 432.365,
+            "ASML": 1786.95,
+            "INTC": 109.0486,
+            "AVGO": 399.16
+          },
+          "floating_return": -0.0375
         }
       ]
     },
@@ -2473,6 +2484,48 @@
       },
       "conviction_at_entry": 8,
       "spy_price_at_entry": 748.77,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null,
+      "daily_snapshots": [
+        {
+          "date": "2026-07-10",
+          "prices": {
+            "AMD": 547.79,
+            "AVGO": 399.16,
+            "ASML": 1786.95,
+            "ARM": 321.04,
+            "VRT": 319.605
+          },
+          "floating_return": -0.01875
+        }
+      ]
+    },
+    {
+      "theme_id": "consumer-defensive-resilience",
+      "theme_name": "Defensive Consumer & Staples Resilience",
+      "direction": "Bullish",
+      "entry_date": "2026-07-10",
+      "tickers": [
+        "PEP",
+        "GIS",
+        "HELE",
+        "KRUS",
+        "MSM"
+      ],
+      "entry_prices": {
+        "PEP": 137.61,
+        "GIS": 36.04,
+        "HELE": 27.76,
+        "KRUS": 52.29,
+        "MSM": 122.085
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 752.52,
       "status": "open",
       "exit_date": null,
       "exit_prices": null,
@@ -2716,18 +2769,24 @@
       "portfolio_return": 0.038237,
       "spy_return": 0.004521,
       "open_count": 1
+    },
+    {
+      "date": "2026-07-10",
+      "portfolio_return": -0.01764,
+      "spy_return": 0.000998,
+      "open_count": 2
     }
   ],
   "summary": {
-    "portfolio_cumulative": -0.118425,
-    "spy_cumulative": 0.077431,
-    "alpha": -0.195856,
-    "open_count": 1,
+    "portfolio_cumulative": -0.133976,
+    "spy_cumulative": 0.078506,
+    "alpha": -0.212483,
+    "open_count": 2,
     "closed_count": 34,
     "win_rate": 0.324,
-    "tracking_days": 39
+    "tracking_days": 40
   },
-  "updated_at": "2026-07-09",
+  "updated_at": "2026-07-10",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -3143,6 +3202,19 @@
           "ASML",
           "ARM",
           "VRT"
+        ]
+      },
+      {
+        "date": "2026-07-10",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Crowded Euphoria",
+        "tickers": [
+          "NVDA",
+          "AMD",
+          "META",
+          "ASML",
+          "TSM"
         ]
       }
     ],
@@ -4276,6 +4348,19 @@
           "NEE",
           "BE"
         ]
+      },
+      {
+        "date": "2026-07-10",
+        "conviction": 4,
+        "direction": "Bullish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "NEE",
+          "CEG",
+          "VST",
+          "NRG",
+          "ETR"
+        ]
       }
     ],
     "quantum-computing-speculative-selloff": [
@@ -4530,6 +4615,19 @@
           "FBNC",
           "LEN",
           "MCK"
+        ]
+      },
+      {
+        "date": "2026-07-10",
+        "conviction": 4,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "JPM",
+          "BAC",
+          "UCBI",
+          "CNB",
+          "ARES"
         ]
       }
     ],
@@ -4810,6 +4908,19 @@
           "MARA",
           "IREN",
           "BTC"
+        ]
+      },
+      {
+        "date": "2026-07-10",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "GLD",
+          "SLV",
+          "BTC-USD",
+          "ETH-USD",
+          "MSTR"
         ]
       }
     ],
@@ -5509,6 +5620,19 @@
           "EXEL",
           "GSK"
         ]
+      },
+      {
+        "date": "2026-07-10",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "ISRG",
+          "DXCM",
+          "IONS",
+          "LH",
+          "NHC"
+        ]
       }
     ],
     "energy-oil-gas-cycle": [
@@ -5773,6 +5897,19 @@
         "stage": "Acceleration",
         "tickers": [
           "CMCSA"
+        ]
+      },
+      {
+        "date": "2026-07-10",
+        "conviction": 2,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "DAL",
+          "DRTGF",
+          "NCLH",
+          "MAR",
+          "EADSY"
         ]
       }
     ],
@@ -6717,6 +6854,19 @@
           "BREIT",
           "TPVG"
         ]
+      },
+      {
+        "date": "2026-07-10",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "RMT",
+          "GNL",
+          "GIPR",
+          "BDC-ETF",
+          "MUB"
+        ]
       }
     ],
     "space-quantum-defense-tech": [
@@ -6885,6 +7035,19 @@
           "LUNR",
           "IONQ",
           "RGTI"
+        ]
+      },
+      {
+        "date": "2026-07-10",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "IONQ",
+          "RGTI",
+          "RKLB",
+          "LUNR",
+          "ASTS"
         ]
       }
     ],
@@ -7186,6 +7349,19 @@
           "TOL",
           "Z",
           "BKNG"
+        ]
+      },
+      {
+        "date": "2026-07-10",
+        "conviction": 3,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "KMX",
+          "AZO",
+          "WHR",
+          "TOL",
+          "HOUS"
         ]
       }
     ],
@@ -7774,6 +7950,19 @@
           "CPB",
           "SMPL",
           "MNST"
+        ]
+      },
+      {
+        "date": "2026-07-10",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "PEP",
+          "GIS",
+          "HELE",
+          "KRUS",
+          "MSM"
         ]
       }
     ],

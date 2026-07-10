@@ -2,13 +2,13 @@
   "ai-infrastructure-datacenter-boom": {
     "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-09",
+    "last_active": "2026-07-10",
     "representative_tickers": [
+      "NVDA",
       "AMD",
-      "AVGO",
+      "META",
       "ASML",
-      "ARM",
-      "VRT"
+      "TSM"
     ]
   },
   "semiconductor-geopolitics-china-trade": {
@@ -50,13 +50,13 @@
   "power-grid-energy-ai-demand": {
     "name": "Power Grid Stress & Energy Stocks Under AI Demand Pressure",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-09",
+    "last_active": "2026-07-10",
     "representative_tickers": [
+      "NEE",
       "CEG",
       "VST",
       "NRG",
-      "NEE",
-      "BE"
+      "ETR"
     ]
   },
   "space-economy-commercial-launch": {
@@ -86,13 +86,13 @@
   "crypto-digital-assets-geopolitical-watch": {
     "name": "Crypto & Digital Assets Holding Steady Amid US-China Summit",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-09",
+    "last_active": "2026-07-10",
     "representative_tickers": [
-      "SONY",
-      "SECZ",
-      "MARA",
-      "IREN",
-      "BTC"
+      "GLD",
+      "SLV",
+      "BTC-USD",
+      "ETH-USD",
+      "MSTR"
     ]
   },
   "quantum-computing-speculative-selloff": {
@@ -108,13 +108,13 @@
   "regional-banking-rate-environment": {
     "name": "Regional Banks Navigating Rate Volatility & Credit Risk",
     "first_seen": "2026-05-13",
-    "last_active": "2026-06-12",
+    "last_active": "2026-07-10",
     "representative_tickers": [
-      "SFNC",
-      "ISBA",
-      "FBNC",
-      "LEN",
-      "MCK"
+      "JPM",
+      "BAC",
+      "UCBI",
+      "CNB",
+      "ARES"
     ]
   },
   "nuclear-clean-energy": {
@@ -161,13 +161,13 @@
   "healthcare-biotech-mixed": {
     "name": "Healthcare & Biotech Divergence",
     "first_seen": "2026-05-14",
-    "last_active": "2026-07-09",
+    "last_active": "2026-07-10",
     "representative_tickers": [
-      "KYTX",
-      "PRME",
-      "BEAM",
-      "EXEL",
-      "GSK"
+      "ISRG",
+      "DXCM",
+      "IONS",
+      "LH",
+      "NHC"
     ]
   },
   "energy-oil-gas-cycle": {
@@ -205,9 +205,13 @@
   "media-entertainment-consumer-recovery": {
     "name": "Media Consolidation, Consumer Discretionary & Retail Recovery",
     "first_seen": "2026-05-15",
-    "last_active": "2026-06-29",
+    "last_active": "2026-07-10",
     "representative_tickers": [
-      "CMCSA"
+      "DAL",
+      "DRTGF",
+      "NCLH",
+      "MAR",
+      "EADSY"
     ]
   },
   "big-tech-ai-platforms": {
@@ -263,25 +267,25 @@
   "space-quantum-defense-tech": {
     "name": "Space, Quantum Computing & Defense Tech",
     "first_seen": "2026-05-20",
-    "last_active": "2026-07-08",
+    "last_active": "2026-07-10",
     "representative_tickers": [
-      "RKLB",
-      "ASTS",
-      "LUNR",
       "IONQ",
-      "RGTI"
+      "RGTI",
+      "RKLB",
+      "LUNR",
+      "ASTS"
     ]
   },
   "fixed-income-yield-alternatives": {
     "name": "Fixed Income, Yield Alternatives & Retirement Income",
     "first_seen": "2026-05-20",
-    "last_active": "2026-07-03",
+    "last_active": "2026-07-10",
     "representative_tickers": [
-      "NXDT",
-      "OWL",
-      "MLPI",
-      "BREIT",
-      "TPVG"
+      "RMT",
+      "GNL",
+      "GIPR",
+      "BDC-ETF",
+      "MUB"
     ]
   },
   "logistics-freight-spinoffs": {
@@ -332,13 +336,13 @@
   "housing-real-estate-finance": {
     "name": "Housing Market Stress & Real Estate Finance",
     "first_seen": "2026-05-28",
-    "last_active": "2026-07-09",
+    "last_active": "2026-07-10",
     "representative_tickers": [
-      "LEN",
-      "DHI",
+      "KMX",
+      "AZO",
+      "WHR",
       "TOL",
-      "Z",
-      "BKNG"
+      "HOUS"
     ]
   },
   "space-economy-correction": {
@@ -528,13 +532,13 @@
   "consumer-defensive-resilience": {
     "name": "Defensive Consumer & Staples Resilience",
     "first_seen": "2026-07-06",
-    "last_active": "2026-07-09",
+    "last_active": "2026-07-10",
     "representative_tickers": [
       "PEP",
       "GIS",
-      "CPB",
-      "SMPL",
-      "MNST"
+      "HELE",
+      "KRUS",
+      "MSM"
     ]
   },
   "china-ai-tech-rerating": {
