@@ -2,13 +2,13 @@
   "ai-infrastructure-datacenter-boom": {
     "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-10",
+    "last_active": "2026-07-13",
     "representative_tickers": [
-      "NVDA",
-      "AMD",
-      "META",
-      "ASML",
-      "TSM"
+      "ORCL",
+      "MSFT",
+      "AAPL",
+      "GOOGL",
+      "META"
     ]
   },
   "semiconductor-geopolitics-china-trade": {
@@ -62,13 +62,13 @@
   "space-economy-commercial-launch": {
     "name": "Commercial Space Economy & Satellite Communications Momentum",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-09",
+    "last_active": "2026-07-13",
     "representative_tickers": [
       "RKLB",
       "ASTS",
       "LUNR",
-      "SPCX",
-      "T"
+      "VSAT",
+      "TMUS"
     ]
   },
   "precious-metals-mining-dividends": {
@@ -86,19 +86,19 @@
   "crypto-digital-assets-geopolitical-watch": {
     "name": "Crypto & Digital Assets Holding Steady Amid US-China Summit",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-10",
+    "last_active": "2026-07-13",
     "representative_tickers": [
-      "GLD",
-      "SLV",
-      "BTC-USD",
-      "ETH-USD",
-      "MSTR"
+      "MSTR",
+      "BTCM",
+      "COIN",
+      "ETH",
+      "USDT"
     ]
   },
   "quantum-computing-speculative-selloff": {
     "name": "Quantum Computing Speculative Pullback",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-07",
+    "last_active": "2026-07-13",
     "representative_tickers": [
       "IONQ",
       "RGTI",
@@ -108,25 +108,25 @@
   "regional-banking-rate-environment": {
     "name": "Regional Banks Navigating Rate Volatility & Credit Risk",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-10",
+    "last_active": "2026-07-13",
     "representative_tickers": [
-      "JPM",
-      "BAC",
-      "UCBI",
-      "CNB",
-      "ARES"
+      "KRE",
+      "ASB",
+      "FHBI",
+      "GS",
+      "TCBK"
     ]
   },
   "nuclear-clean-energy": {
     "name": "Nuclear & Advanced Clean Energy Renaissance",
     "first_seen": "2026-05-14",
-    "last_active": "2026-07-07",
+    "last_active": "2026-07-13",
     "representative_tickers": [
-      "NEE",
-      "ETR",
+      "BE",
       "CEG",
-      "VST",
-      "NRG"
+      "NEE",
+      "PLUG",
+      "VST"
     ]
   },
   "ev-automotive-supply-chain": {
@@ -161,25 +161,25 @@
   "healthcare-biotech-mixed": {
     "name": "Healthcare & Biotech Divergence",
     "first_seen": "2026-05-14",
-    "last_active": "2026-07-10",
+    "last_active": "2026-07-13",
     "representative_tickers": [
+      "TGTX",
+      "PODD",
       "ISRG",
-      "DXCM",
-      "IONS",
-      "LH",
-      "NHC"
+      "BAYRY",
+      "CLPT"
     ]
   },
   "energy-oil-gas-cycle": {
     "name": "Oil & Gas Cycle Recovery & Leverage Plays",
     "first_seen": "2026-05-15",
-    "last_active": "2026-07-08",
+    "last_active": "2026-07-13",
     "representative_tickers": [
-      "HAL",
-      "SLB",
-      "COP",
-      "CHRD",
-      "HF Sinclair"
+      "SU",
+      "DVN",
+      "CNQ",
+      "OIL",
+      "BW"
     ]
   },
   "energy-infrastructure-income": {
@@ -239,13 +239,13 @@
   "semiconductor-broad-selloff": {
     "name": "Semiconductor Sector Correction",
     "first_seen": "2026-05-19",
-    "last_active": "2026-07-08",
+    "last_active": "2026-07-13",
     "representative_tickers": [
       "NVDA",
       "AMD",
-      "AVGO",
       "TSM",
-      "ASML"
+      "ASML",
+      "ARM"
     ]
   },
   "consumer-retail-stress": {
@@ -582,6 +582,18 @@
       "INTC",
       "QCOM",
       "NVDA"
+    ]
+  },
+  "consumer-earnings-resilience": {
+    "name": "Consumer & Industrial Earnings Season Divergence",
+    "first_seen": "2026-07-13",
+    "last_active": "2026-07-13",
+    "representative_tickers": [
+      "PEP",
+      "GIS",
+      "CHWY",
+      "TSLA",
+      "NFLX"
     ]
   }
 }
