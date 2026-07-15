@@ -2,13 +2,13 @@
   "ai-infrastructure-datacenter-boom": {
     "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-14",
+    "last_active": "2026-07-15",
     "representative_tickers": [
-      "NVDA",
-      "AMD",
       "MSFT",
-      "IBM",
-      "INTC"
+      "META",
+      "AMZN",
+      "AAPL",
+      "GOOGL"
     ]
   },
   "semiconductor-geopolitics-china-trade": {
@@ -86,13 +86,13 @@
   "crypto-digital-assets-geopolitical-watch": {
     "name": "Crypto & Digital Assets Holding Steady Amid US-China Summit",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-14",
+    "last_active": "2026-07-15",
     "representative_tickers": [
-      "COIN",
-      "MARA",
-      "CLSK",
       "BTC",
-      "ETH"
+      "ETH",
+      "PYPL",
+      "MSTR",
+      "CLSK"
     ]
   },
   "quantum-computing-speculative-selloff": {
@@ -108,13 +108,13 @@
   "regional-banking-rate-environment": {
     "name": "Regional Banks Navigating Rate Volatility & Credit Risk",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-13",
+    "last_active": "2026-07-15",
     "representative_tickers": [
-      "KRE",
-      "ASB",
-      "FHBI",
-      "GS",
-      "TCBK"
+      "MTB",
+      "FMBI",
+      "PLBC",
+      "CTBI",
+      "FHN"
     ]
   },
   "nuclear-clean-energy": {
@@ -141,13 +141,13 @@
   "financial-services-capital-markets": {
     "name": "Financial Services Rally & Capital Markets Momentum",
     "first_seen": "2026-05-14",
-    "last_active": "2026-07-14",
+    "last_active": "2026-07-15",
     "representative_tickers": [
-      "JPM",
+      "MS",
+      "BLK",
       "BAC",
-      "WFC",
-      "GS",
-      "C"
+      "C",
+      "PNC"
     ]
   },
   "emerging-markets-latam": {
@@ -162,25 +162,25 @@
   "healthcare-biotech-mixed": {
     "name": "Healthcare & Biotech Divergence",
     "first_seen": "2026-05-14",
-    "last_active": "2026-07-14",
+    "last_active": "2026-07-15",
     "representative_tickers": [
       "ISRG",
-      "DXCM",
-      "HCA",
-      "IDXX",
-      "ABT"
+      "JNJ",
+      "ELV",
+      "UNH",
+      "DXCM"
     ]
   },
   "energy-oil-gas-cycle": {
     "name": "Oil & Gas Cycle Recovery & Leverage Plays",
     "first_seen": "2026-05-15",
-    "last_active": "2026-07-14",
+    "last_active": "2026-07-15",
     "representative_tickers": [
-      "USO",
-      "XOM",
-      "CRC",
-      "GLD",
-      "SLV"
+      "VST",
+      "CEG",
+      "NEE",
+      "NRG",
+      "ETR"
     ]
   },
   "energy-infrastructure-income": {
@@ -398,13 +398,13 @@
   "macro-rates-dollar-geopolitics": {
     "name": "Fed Policy, Dollar Weakness & Geopolitical Risk Premium",
     "first_seen": "2026-06-02",
-    "last_active": "2026-07-02",
+    "last_active": "2026-07-15",
     "representative_tickers": [
-      "TRGP",
-      "PR",
-      "ET",
-      "CEG",
-      "VST"
+      "TLT",
+      "SPY",
+      "JEPI",
+      "BND",
+      "HYG"
     ]
   },
   "consumer-retail-turnaround": {
@@ -537,13 +537,13 @@
   "consumer-defensive-resilience": {
     "name": "Defensive Consumer & Staples Resilience",
     "first_seen": "2026-07-06",
-    "last_active": "2026-07-14",
+    "last_active": "2026-07-15",
     "representative_tickers": [
       "PEP",
-      "GIS",
-      "HELE",
-      "KRUS",
-      "MSM"
+      "CAG",
+      "POST",
+      "BIRK",
+      "HELE"
     ]
   },
   "china-ai-tech-rerating": {
@@ -599,6 +599,18 @@
       "CHWY",
       "TSLA",
       "NFLX"
+    ]
+  },
+  "ev-space-emerging-tech": {
+    "name": "EV, Space & Quantum Computing Speculative Tech",
+    "first_seen": "2026-07-15",
+    "last_active": "2026-07-15",
+    "representative_tickers": [
+      "TSLA",
+      "RKLB",
+      "IONQ",
+      "ASTS",
+      "LCID"
     ]
   }
 }
