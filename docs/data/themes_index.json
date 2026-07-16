@@ -2,13 +2,13 @@
   "ai-infrastructure-datacenter-boom": {
     "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-15",
+    "last_active": "2026-07-16",
     "representative_tickers": [
-      "MSFT",
-      "META",
-      "AMZN",
-      "AAPL",
-      "GOOGL"
+      "TSM",
+      "ASML",
+      "NVDA",
+      "AVGO",
+      "AMD"
     ]
   },
   "semiconductor-geopolitics-china-trade": {
@@ -50,13 +50,13 @@
   "power-grid-energy-ai-demand": {
     "name": "Power Grid Stress & Energy Stocks Under AI Demand Pressure",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-10",
+    "last_active": "2026-07-16",
     "representative_tickers": [
       "NEE",
       "CEG",
       "VST",
-      "NRG",
-      "ETR"
+      "ETR",
+      "NRG"
     ]
   },
   "space-economy-commercial-launch": {
@@ -98,11 +98,13 @@
   "quantum-computing-speculative-selloff": {
     "name": "Quantum Computing Speculative Pullback",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-13",
+    "last_active": "2026-07-16",
     "representative_tickers": [
       "IONQ",
       "RGTI",
-      "QUBT"
+      "ASTS",
+      "RKLB",
+      "LUNR"
     ]
   },
   "regional-banking-rate-environment": {
@@ -141,13 +143,13 @@
   "financial-services-capital-markets": {
     "name": "Financial Services Rally & Capital Markets Momentum",
     "first_seen": "2026-05-14",
-    "last_active": "2026-07-15",
+    "last_active": "2026-07-16",
     "representative_tickers": [
       "MS",
       "BLK",
-      "BAC",
-      "C",
-      "PNC"
+      "PNC",
+      "USB",
+      "MTB"
     ]
   },
   "emerging-markets-latam": {
@@ -162,13 +164,13 @@
   "healthcare-biotech-mixed": {
     "name": "Healthcare & Biotech Divergence",
     "first_seen": "2026-05-14",
-    "last_active": "2026-07-15",
+    "last_active": "2026-07-16",
     "representative_tickers": [
-      "ISRG",
-      "JNJ",
-      "ELV",
+      "ABT",
       "UNH",
-      "DXCM"
+      "ELV",
+      "ISRG",
+      "AZN"
     ]
   },
   "energy-oil-gas-cycle": {
@@ -194,13 +196,13 @@
   "industrials-infrastructure-materials": {
     "name": "Industrials, Infrastructure & Materials Cycle",
     "first_seen": "2026-05-15",
-    "last_active": "2026-07-03",
+    "last_active": "2026-07-16",
     "representative_tickers": [
-      "MSM",
-      "IDEX",
-      "APOG",
-      "LNN",
-      "CNM"
+      "PLD",
+      "JBHT",
+      "VNQ",
+      "AMT",
+      "GQRE"
     ]
   },
   "media-entertainment-consumer-recovery": {
@@ -218,13 +220,13 @@
   "big-tech-ai-platforms": {
     "name": "Big Tech AI Platform Divergence",
     "first_seen": "2026-05-18",
-    "last_active": "2026-07-09",
+    "last_active": "2026-07-16",
     "representative_tickers": [
+      "MSFT",
       "GOOGL",
       "META",
-      "MSFT",
-      "AMZN",
-      "AAPL"
+      "AAPL",
+      "AMZN"
     ]
   },
   "cybersecurity-resilience": {
@@ -284,13 +286,13 @@
   "fixed-income-yield-alternatives": {
     "name": "Fixed Income, Yield Alternatives & Retirement Income",
     "first_seen": "2026-05-20",
-    "last_active": "2026-07-10",
+    "last_active": "2026-07-16",
     "representative_tickers": [
-      "RMT",
-      "GNL",
-      "GIPR",
-      "BDC-ETF",
-      "MUB"
+      "GPIX",
+      "JIII",
+      "DIV",
+      "TIP",
+      "IEF"
     ]
   },
   "logistics-freight-spinoffs": {
@@ -305,13 +307,13 @@
   "geopolitical-risk-commodity-repricing": {
     "name": "Iran Peace Talks & Commodity/Equity Repricing",
     "first_seen": "2026-05-26",
-    "last_active": "2026-07-09",
+    "last_active": "2026-07-16",
     "representative_tickers": [
-      "USO",
-      "GLD",
-      "SLV",
-      "XLE",
-      "IMO"
+      "KMI",
+      "BKR",
+      "VST",
+      "CEG",
+      "NRG"
     ]
   },
   "affordable-housing-homebuilding": {
@@ -443,13 +445,13 @@
   "defense-industrial-government-spend": {
     "name": "Defense Spending & Industrial Government Contracts",
     "first_seen": "2026-06-04",
-    "last_active": "2026-07-06",
+    "last_active": "2026-07-16",
     "representative_tickers": [
-      "LMT",
-      "MOOG",
-      "RTX",
-      "NOC",
-      "GD"
+      "GE",
+      "ABB",
+      "CHRT",
+      "RKLB",
+      "LUNR"
     ]
   },
   "macro-risk-market-top-signals": {
