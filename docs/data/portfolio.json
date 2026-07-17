@@ -2563,6 +2563,17 @@
             "VRT": 295.59
           },
           "floating_return": -0.090005
+        },
+        {
+          "date": "2026-07-17",
+          "prices": {
+            "AMD": 500.94,
+            "AVGO": 374.45,
+            "ASML": 1784.87,
+            "ARM": 262.01,
+            "VRT": 294.11
+          },
+          "floating_return": -0.099103
         }
       ]
     },
@@ -2703,6 +2714,16 @@
             "BW": 10.605
           },
           "floating_return": -0.014391
+        },
+        {
+          "date": "2026-07-17",
+          "prices": {
+            "SU": 60.68,
+            "DVN": 43.03,
+            "CNQ": 42.86,
+            "BW": 10.03
+          },
+          "floating_return": -0.031119
         }
       ]
     },
@@ -2756,6 +2777,17 @@
             "C": 133.0094
           },
           "floating_return": 0.003709
+        },
+        {
+          "date": "2026-07-17",
+          "prices": {
+            "JPM": 343.15,
+            "BAC": 61.49,
+            "WFC": 88.07,
+            "GS": 1095.46,
+            "C": 131.71
+          },
+          "floating_return": 5.2e-05
         }
       ]
     },
@@ -2786,7 +2818,20 @@
       "exit_reason": null,
       "realized_return": null,
       "spy_return_during_holding": null,
-      "excess_return": null
+      "excess_return": null,
+      "daily_snapshots": [
+        {
+          "date": "2026-07-17",
+          "prices": {
+            "ABT": 98.83,
+            "UNH": 423.38,
+            "ELV": 372.85,
+            "ISRG": 402.33,
+            "AZN": 169.29
+          },
+          "floating_return": -0.022053
+        }
+      ]
     },
     {
       "theme_id": "industrials-infrastructure-materials",
@@ -2809,6 +2854,73 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 751.365,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null,
+      "daily_snapshots": [
+        {
+          "date": "2026-07-17",
+          "prices": {
+            "PLD": 150.06,
+            "JBHT": 298.41,
+            "VNQ": 100.07,
+            "AMT": 168.92,
+            "GQRE": 66.17
+          },
+          "floating_return": 0.013525
+        }
+      ]
+    },
+    {
+      "theme_id": "regional-banking-rate-environment",
+      "theme_name": "Regional Banks Navigating Rate Volatility & Credit Risk",
+      "direction": "Bullish",
+      "entry_date": "2026-07-17",
+      "tickers": [
+        "MTB",
+        "TFC",
+        "FNB",
+        "WFC",
+        "STT"
+      ],
+      "entry_prices": {
+        "MTB": 254.04,
+        "TFC": 53.25,
+        "FNB": 19.49,
+        "WFC": 88.07,
+        "STT": 185.66
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 750.72,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null
+    },
+    {
+      "theme_id": "healthcare-technology-outperformance",
+      "theme_name": "Healthcare Technology & Managed Care Outperformance",
+      "direction": "Bullish",
+      "entry_date": "2026-07-17",
+      "tickers": [
+        "ISRG",
+        "DXCM",
+        "UNH"
+      ],
+      "entry_prices": {
+        "ISRG": 402.33,
+        "DXCM": 77.98,
+        "UNH": 423.38
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 750.72,
       "status": "open",
       "exit_date": null,
       "exit_prices": null,
@@ -3082,18 +3194,24 @@
       "portfolio_return": -0.012963,
       "spy_return": -0.004365,
       "open_count": 4
+    },
+    {
+      "date": "2026-07-17",
+      "portfolio_return": -0.007815,
+      "spy_return": -0.005419,
+      "open_count": 5
     }
   ],
   "summary": {
-    "portfolio_cumulative": -0.156047,
-    "spy_cumulative": 0.079593,
-    "alpha": -0.23564,
-    "open_count": 4,
+    "portfolio_cumulative": -0.162642,
+    "spy_cumulative": 0.073743,
+    "alpha": -0.236385,
+    "open_count": 6,
     "closed_count": 36,
     "win_rate": 0.333,
-    "tracking_days": 44
+    "tracking_days": 45
   },
-  "updated_at": "2026-07-16",
+  "updated_at": "2026-07-17",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -3574,6 +3692,19 @@
           "NVDA",
           "AVGO",
           "AMD"
+        ]
+      },
+      {
+        "date": "2026-07-17",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "TSM",
+          "ASML",
+          "NVDA",
+          "AMD",
+          "AVGO"
         ]
       }
     ],
@@ -4759,6 +4890,19 @@
           "ETR",
           "NRG"
         ]
+      },
+      {
+        "date": "2026-07-17",
+        "conviction": 4,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "VST",
+          "CEG",
+          "NRG",
+          "NEE",
+          "ETR"
+        ]
       }
     ],
     "quantum-computing-speculative-selloff": [
@@ -4998,6 +5142,17 @@
           "RKLB",
           "LUNR"
         ]
+      },
+      {
+        "date": "2026-07-17",
+        "conviction": 4,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "IONQ",
+          "RGTI",
+          "QUBT"
+        ]
       }
     ],
     "regional-banking-rate-environment": [
@@ -5076,6 +5231,19 @@
           "PLBC",
           "CTBI",
           "FHN"
+        ]
+      },
+      {
+        "date": "2026-07-17",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "MTB",
+          "TFC",
+          "FNB",
+          "WFC",
+          "STT"
         ]
       }
     ],
@@ -6462,6 +6630,19 @@
           "AMT",
           "GQRE"
         ]
+      },
+      {
+        "date": "2026-07-17",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "CTAS",
+          "FAST",
+          "MAN",
+          "CAT",
+          "WIT"
+        ]
       }
     ],
     "energy-infrastructure-income": [
@@ -6566,6 +6747,15 @@
           "NCLH",
           "MAR",
           "EADSY"
+        ]
+      },
+      {
+        "date": "2026-07-17",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "NFLX"
         ]
       }
     ],
@@ -6863,6 +7053,19 @@
           "META",
           "AAPL",
           "AMZN"
+        ]
+      },
+      {
+        "date": "2026-07-17",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "GOOGL",
+          "META",
+          "AMZN",
+          "MSFT",
+          "AAPL"
         ]
       }
     ],
@@ -7991,6 +8194,19 @@
           "CEG",
           "NRG"
         ]
+      },
+      {
+        "date": "2026-07-17",
+        "conviction": 8,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "USO",
+          "GLD",
+          "SLV",
+          "KMI",
+          "TRGP"
+        ]
       }
     ],
     "china-tech-consumer": [
@@ -8150,6 +8366,17 @@
           "LUNR",
           "T",
           "TMUS"
+        ]
+      },
+      {
+        "date": "2026-07-17",
+        "conviction": 8,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "ASTS",
+          "RKLB",
+          "LUNR"
         ]
       }
     ],
@@ -8834,6 +9061,19 @@
           "IONQ",
           "ASTS",
           "LCID"
+        ]
+      }
+    ],
+    "healthcare-technology-outperformance": [
+      {
+        "date": "2026-07-17",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Acceleration",
+        "tickers": [
+          "ISRG",
+          "DXCM",
+          "UNH"
         ]
       }
     ]
