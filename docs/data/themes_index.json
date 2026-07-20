@@ -2,13 +2,13 @@
   "ai-infrastructure-datacenter-boom": {
     "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-17",
+    "last_active": "2026-07-20",
     "representative_tickers": [
-      "TSM",
-      "ASML",
       "NVDA",
       "AMD",
-      "AVGO"
+      "TSM",
+      "AVGO",
+      "ASML"
     ]
   },
   "semiconductor-geopolitics-china-trade": {
@@ -50,12 +50,12 @@
   "power-grid-energy-ai-demand": {
     "name": "Power Grid Stress & Energy Stocks Under AI Demand Pressure",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-17",
+    "last_active": "2026-07-20",
     "representative_tickers": [
-      "VST",
-      "CEG",
-      "NRG",
       "NEE",
+      "CEG",
+      "VST",
+      "NRG",
       "ETR"
     ]
   },
@@ -108,13 +108,13 @@
   "regional-banking-rate-environment": {
     "name": "Regional Banks Navigating Rate Volatility & Credit Risk",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-17",
+    "last_active": "2026-07-20",
     "representative_tickers": [
       "MTB",
+      "FITB",
       "TFC",
-      "FNB",
-      "WFC",
-      "STT"
+      "CFG",
+      "GS"
     ]
   },
   "nuclear-clean-energy": {
@@ -162,13 +162,13 @@
   "healthcare-biotech-mixed": {
     "name": "Healthcare & Biotech Divergence",
     "first_seen": "2026-05-14",
-    "last_active": "2026-07-16",
+    "last_active": "2026-07-20",
     "representative_tickers": [
-      "ABT",
       "UNH",
-      "ELV",
       "ISRG",
-      "AZN"
+      "DXCM",
+      "INSM",
+      "AMPE"
     ]
   },
   "energy-oil-gas-cycle": {
@@ -206,21 +206,25 @@
   "media-entertainment-consumer-recovery": {
     "name": "Media Consolidation, Consumer Discretionary & Retail Recovery",
     "first_seen": "2026-05-15",
-    "last_active": "2026-07-17",
+    "last_active": "2026-07-20",
     "representative_tickers": [
-      "NFLX"
+      "AMC",
+      "DPZ",
+      "DLTR",
+      "KMX",
+      "MCD"
     ]
   },
   "big-tech-ai-platforms": {
     "name": "Big Tech AI Platform Divergence",
     "first_seen": "2026-05-18",
-    "last_active": "2026-07-17",
+    "last_active": "2026-07-20",
     "representative_tickers": [
-      "GOOGL",
-      "META",
-      "AMZN",
       "MSFT",
-      "AAPL"
+      "GOOGL",
+      "AMZN",
+      "AAPL",
+      "META"
     ]
   },
   "cybersecurity-resilience": {
@@ -268,25 +272,25 @@
   "space-quantum-defense-tech": {
     "name": "Space, Quantum Computing & Defense Tech",
     "first_seen": "2026-05-20",
-    "last_active": "2026-07-10",
+    "last_active": "2026-07-20",
     "representative_tickers": [
       "IONQ",
-      "RGTI",
+      "ASTS",
       "RKLB",
       "LUNR",
-      "ASTS"
+      "QUBT"
     ]
   },
   "fixed-income-yield-alternatives": {
     "name": "Fixed Income, Yield Alternatives & Retirement Income",
     "first_seen": "2026-05-20",
-    "last_active": "2026-07-16",
+    "last_active": "2026-07-20",
     "representative_tickers": [
-      "GPIX",
-      "JIII",
-      "DIV",
-      "TIP",
-      "IEF"
+      "INTU",
+      "ICE",
+      "DYNEX",
+      "T",
+      "O"
     ]
   },
   "logistics-freight-spinoffs": {
@@ -426,12 +430,13 @@
   "us-critical-materials-supply-chain": {
     "name": "US Critical Materials & Rare Earth Supply Chain Reshoring",
     "first_seen": "2026-06-03",
-    "last_active": "2026-06-30",
+    "last_active": "2026-07-20",
     "representative_tickers": [
-      "FCX",
-      "VALE",
-      "SLV",
-      "GLD"
+      "HBM",
+      "COPX",
+      "NXE",
+      "CPER",
+      "USARE"
     ]
   },
   "defense-industrial-government-spend": {
@@ -615,6 +620,18 @@
       "ISRG",
       "DXCM",
       "UNH"
+    ]
+  },
+  "ai-cloud-crypto-infrastructure": {
+    "name": "AI Cloud & Crypto Mining Infrastructure",
+    "first_seen": "2026-07-20",
+    "last_active": "2026-07-20",
+    "representative_tickers": [
+      "MSTR",
+      "HUT",
+      "IREN",
+      "BITM",
+      "NBIS"
     ]
   }
 }

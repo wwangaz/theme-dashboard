@@ -2574,6 +2574,17 @@
             "VRT": 294.11
           },
           "floating_return": -0.099103
+        },
+        {
+          "date": "2026-07-20",
+          "prices": {
+            "AMD": 512.53,
+            "AVGO": 377.97,
+            "ASML": 1754.525,
+            "ARM": 274.41,
+            "VRT": 299.115
+          },
+          "floating_return": -0.086025
         }
       ]
     },
@@ -2677,13 +2688,18 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 752.81,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null,
+      "status": "closed",
+      "exit_date": "2026-07-20",
+      "exit_prices": {
+        "SU": 62.26,
+        "DVN": 43.565,
+        "CNQ": 43.395,
+        "BW": 10.065
+      },
+      "exit_reason": "theme_gone",
+      "realized_return": -0.017608,
+      "spy_return_during_holding": -0.00979,
+      "excess_return": -0.007818,
       "daily_snapshots": [
         {
           "date": "2026-07-14",
@@ -2724,6 +2740,16 @@
             "BW": 10.03
           },
           "floating_return": -0.031119
+        },
+        {
+          "date": "2026-07-20",
+          "prices": {
+            "SU": 62.26,
+            "DVN": 43.565,
+            "CNQ": 43.395,
+            "BW": 10.065
+          },
+          "floating_return": -0.017608
         }
       ]
     },
@@ -2748,13 +2774,19 @@
       },
       "conviction_at_entry": 8,
       "spy_price_at_entry": 749.64,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null,
+      "status": "closed",
+      "exit_date": "2026-07-20",
+      "exit_prices": {
+        "JPM": 341.06,
+        "BAC": 60.755,
+        "WFC": 87.015,
+        "GS": 1063.215,
+        "C": 129.635
+      },
+      "exit_reason": "theme_gone",
+      "realized_return": -0.014935,
+      "spy_return_during_holding": -0.005603,
+      "excess_return": -0.009332,
       "daily_snapshots": [
         {
           "date": "2026-07-15",
@@ -2788,6 +2820,17 @@
             "C": 131.71
           },
           "floating_return": 5.2e-05
+        },
+        {
+          "date": "2026-07-20",
+          "prices": {
+            "JPM": 341.06,
+            "BAC": 60.755,
+            "WFC": 87.015,
+            "GS": 1063.215,
+            "C": 129.635
+          },
+          "floating_return": -0.014935
         }
       ]
     },
@@ -2830,6 +2873,17 @@
             "AZN": 169.29
           },
           "floating_return": -0.022053
+        },
+        {
+          "date": "2026-07-20",
+          "prices": {
+            "ABT": 100.965,
+            "UNH": 424.02,
+            "ELV": 381.475,
+            "ISRG": 343.8939,
+            "AZN": 167.52
+          },
+          "floating_return": -0.044199
         }
       ]
     },
@@ -2872,6 +2926,17 @@
             "GQRE": 66.17
           },
           "floating_return": 0.013525
+        },
+        {
+          "date": "2026-07-20",
+          "prices": {
+            "PLD": 148.195,
+            "JBHT": 287.76,
+            "VNQ": 99.93,
+            "AMT": 168.805,
+            "GQRE": 66.2135
+          },
+          "floating_return": 0.00347
         }
       ]
     },
@@ -2902,7 +2967,20 @@
       "exit_reason": null,
       "realized_return": null,
       "spy_return_during_holding": null,
-      "excess_return": null
+      "excess_return": null,
+      "daily_snapshots": [
+        {
+          "date": "2026-07-20",
+          "prices": {
+            "MTB": 248.6125,
+            "TFC": 51.575,
+            "FNB": 18.695,
+            "WFC": 87.015,
+            "STT": 182.99
+          },
+          "floating_return": -0.023994
+        }
+      ]
     },
     {
       "theme_id": "healthcare-technology-outperformance",
@@ -2921,6 +2999,73 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 750.72,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null,
+      "daily_snapshots": [
+        {
+          "date": "2026-07-20",
+          "prices": {
+            "ISRG": 343.8939,
+            "DXCM": 76.34,
+            "UNH": 424.02
+          },
+          "floating_return": -0.054921
+        }
+      ]
+    },
+    {
+      "theme_id": "ai-cloud-crypto-infrastructure",
+      "theme_name": "AI Cloud & Crypto Mining Infrastructure",
+      "direction": "Bullish",
+      "entry_date": "2026-07-20",
+      "tickers": [
+        "MSTR",
+        "HUT",
+        "IREN",
+        "NBIS"
+      ],
+      "entry_prices": {
+        "MSTR": 96.16,
+        "HUT": 106.48,
+        "IREN": 39.45,
+        "NBIS": 186.06
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 745.44,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null
+    },
+    {
+      "theme_id": "media-entertainment-consumer-recovery",
+      "theme_name": "Media Consolidation, Consumer Discretionary & Retail Recovery",
+      "direction": "Bullish",
+      "entry_date": "2026-07-20",
+      "tickers": [
+        "AMC",
+        "DPZ",
+        "DLTR",
+        "KMX",
+        "MCD"
+      ],
+      "entry_prices": {
+        "AMC": 2.15,
+        "DPZ": 332.705,
+        "DLTR": 125.165,
+        "KMX": 57.3499,
+        "MCD": 268.425
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 745.44,
       "status": "open",
       "exit_date": null,
       "exit_prices": null,
@@ -3200,18 +3345,24 @@
       "portfolio_return": -0.007815,
       "spy_return": -0.005419,
       "open_count": 5
+    },
+    {
+      "date": "2026-07-20",
+      "portfolio_return": -0.013738,
+      "spy_return": 0.002987,
+      "open_count": 7
     }
   ],
   "summary": {
-    "portfolio_cumulative": -0.162642,
-    "spy_cumulative": 0.073743,
-    "alpha": -0.236385,
+    "portfolio_cumulative": -0.174146,
+    "spy_cumulative": 0.07695,
+    "alpha": -0.251096,
     "open_count": 6,
-    "closed_count": 36,
-    "win_rate": 0.333,
-    "tracking_days": 45
+    "closed_count": 38,
+    "win_rate": 0.316,
+    "tracking_days": 46
   },
-  "updated_at": "2026-07-17",
+  "updated_at": "2026-07-20",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -3705,6 +3856,19 @@
           "NVDA",
           "AMD",
           "AVGO"
+        ]
+      },
+      {
+        "date": "2026-07-20",
+        "conviction": 8,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "NVDA",
+          "AMD",
+          "TSM",
+          "AVGO",
+          "ASML"
         ]
       }
     ],
@@ -4903,6 +5067,19 @@
           "NEE",
           "ETR"
         ]
+      },
+      {
+        "date": "2026-07-20",
+        "conviction": 4,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "NEE",
+          "CEG",
+          "VST",
+          "NRG",
+          "ETR"
+        ]
       }
     ],
     "quantum-computing-speculative-selloff": [
@@ -5244,6 +5421,19 @@
           "FNB",
           "WFC",
           "STT"
+        ]
+      },
+      {
+        "date": "2026-07-20",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "MTB",
+          "FITB",
+          "TFC",
+          "CFG",
+          "GS"
         ]
       }
     ],
@@ -6405,6 +6595,19 @@
           "ISRG",
           "AZN"
         ]
+      },
+      {
+        "date": "2026-07-20",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "UNH",
+          "ISRG",
+          "DXCM",
+          "INSM",
+          "AMPE"
+        ]
       }
     ],
     "energy-oil-gas-cycle": [
@@ -6757,6 +6960,19 @@
         "tickers": [
           "NFLX"
         ]
+      },
+      {
+        "date": "2026-07-20",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Acceleration",
+        "tickers": [
+          "AMC",
+          "DPZ",
+          "DLTR",
+          "KMX",
+          "MCD"
+        ]
       }
     ],
     "big-tech-ai-platforms": [
@@ -7066,6 +7282,19 @@
           "AMZN",
           "MSFT",
           "AAPL"
+        ]
+      },
+      {
+        "date": "2026-07-20",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "MSFT",
+          "GOOGL",
+          "AMZN",
+          "AAPL",
+          "META"
         ]
       }
     ],
@@ -7778,6 +8007,19 @@
           "TIP",
           "IEF"
         ]
+      },
+      {
+        "date": "2026-07-20",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "INTU",
+          "ICE",
+          "DYNEX",
+          "T",
+          "O"
+        ]
       }
     ],
     "space-quantum-defense-tech": [
@@ -7959,6 +8201,19 @@
           "RKLB",
           "LUNR",
           "ASTS"
+        ]
+      },
+      {
+        "date": "2026-07-20",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "IONQ",
+          "ASTS",
+          "RKLB",
+          "LUNR",
+          "QUBT"
         ]
       }
     ],
@@ -8595,6 +8850,19 @@
           "SLV",
           "GLD"
         ]
+      },
+      {
+        "date": "2026-07-20",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "HBM",
+          "COPX",
+          "NXE",
+          "CPER",
+          "USARE"
+        ]
       }
     ],
     "defense-industrial-government-spend": [
@@ -9074,6 +9342,21 @@
           "ISRG",
           "DXCM",
           "UNH"
+        ]
+      }
+    ],
+    "ai-cloud-crypto-infrastructure": [
+      {
+        "date": "2026-07-20",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "MSTR",
+          "HUT",
+          "IREN",
+          "BITM",
+          "NBIS"
         ]
       }
     ]
