@@ -2,13 +2,12 @@
   "ai-infrastructure-datacenter-boom": {
     "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-20",
+    "last_active": "2026-07-21",
     "representative_tickers": [
-      "NVDA",
-      "AMD",
-      "TSM",
-      "AVGO",
-      "ASML"
+      "MSFT",
+      "GOOGL",
+      "META",
+      "AMZN"
     ]
   },
   "semiconductor-geopolitics-china-trade": {
@@ -50,11 +49,11 @@
   "power-grid-energy-ai-demand": {
     "name": "Power Grid Stress & Energy Stocks Under AI Demand Pressure",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-20",
+    "last_active": "2026-07-21",
     "representative_tickers": [
-      "NEE",
       "CEG",
       "VST",
+      "NEE",
       "NRG",
       "ETR"
     ]
@@ -74,13 +73,13 @@
   "precious-metals-mining-dividends": {
     "name": "Precious Metals Mining — Silver Surge & Gold Dividend Play",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-08",
+    "last_active": "2026-07-21",
     "representative_tickers": [
-      "GLD",
-      "SLV",
-      "Equinox Gold",
-      "Alaska Silver",
-      "Trilogy Metals"
+      "RGLD",
+      "AREC",
+      "BDNNY",
+      "RIG",
+      "VAL"
     ]
   },
   "crypto-digital-assets-geopolitical-watch": {
@@ -108,13 +107,13 @@
   "regional-banking-rate-environment": {
     "name": "Regional Banks Navigating Rate Volatility & Credit Risk",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-20",
+    "last_active": "2026-07-21",
     "representative_tickers": [
-      "MTB",
       "FITB",
+      "MTB",
+      "KEY",
       "TFC",
-      "CFG",
-      "GS"
+      "SCHW"
     ]
   },
   "nuclear-clean-energy": {
@@ -132,10 +131,11 @@
   "ev-automotive-supply-chain": {
     "name": "EV & Automotive Supply Chain Recovery",
     "first_seen": "2026-05-14",
-    "last_active": "2026-07-07",
+    "last_active": "2026-07-21",
     "representative_tickers": [
-      "RIVN",
-      "TSLA"
+      "GM",
+      "TSLA",
+      "GPC"
     ]
   },
   "financial-services-capital-markets": {
@@ -272,13 +272,13 @@
   "space-quantum-defense-tech": {
     "name": "Space, Quantum Computing & Defense Tech",
     "first_seen": "2026-05-20",
-    "last_active": "2026-07-20",
+    "last_active": "2026-07-21",
     "representative_tickers": [
-      "IONQ",
-      "ASTS",
       "RKLB",
+      "IONQ",
       "LUNR",
-      "QUBT"
+      "ASTS",
+      "RGTI"
     ]
   },
   "fixed-income-yield-alternatives": {
@@ -442,13 +442,12 @@
   "defense-industrial-government-spend": {
     "name": "Defense Spending & Industrial Government Contracts",
     "first_seen": "2026-06-04",
-    "last_active": "2026-07-16",
+    "last_active": "2026-07-21",
     "representative_tickers": [
-      "GE",
-      "ABB",
-      "CHRT",
-      "RKLB",
-      "LUNR"
+      "PANW",
+      "LMT",
+      "RTX",
+      "RCAT"
     ]
   },
   "macro-risk-market-top-signals": {
@@ -632,6 +631,30 @@
       "IREN",
       "BITM",
       "NBIS"
+    ]
+  },
+  "glp1-pharma-medtech": {
+    "name": "GLP-1 Pharma Wars & MedTech Innovation",
+    "first_seen": "2026-07-21",
+    "last_active": "2026-07-21",
+    "representative_tickers": [
+      "NVO",
+      "LLY",
+      "ISRG",
+      "DHR",
+      "GSK"
+    ]
+  },
+  "private-equity-ma-activism": {
+    "name": "Private Equity, M&A Activity & Shareholder Activism",
+    "first_seen": "2026-07-21",
+    "last_active": "2026-07-21",
+    "representative_tickers": [
+      "GME",
+      "EBAY",
+      "NFLX",
+      "ZETA",
+      "KHC"
     ]
   }
 }
