@@ -2501,13 +2501,19 @@
       },
       "conviction_at_entry": 8,
       "spy_price_at_entry": 748.77,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null,
+      "status": "closed",
+      "exit_date": "2026-07-22",
+      "exit_prices": {
+        "AMD": 543.39,
+        "AVGO": 384.4,
+        "ASML": 1775.8911,
+        "ARM": 284.94,
+        "VRT": 295.24
+      },
+      "exit_reason": "theme_gone",
+      "realized_return": -0.065382,
+      "spy_return_during_holding": -0.002103,
+      "excess_return": -0.063279,
       "daily_snapshots": [
         {
           "date": "2026-07-10",
@@ -2596,6 +2602,17 @@
             "VRT": 301.05
           },
           "floating_return": -0.065592
+        },
+        {
+          "date": "2026-07-22",
+          "prices": {
+            "AMD": 543.39,
+            "AVGO": 384.4,
+            "ASML": 1775.8911,
+            "ARM": 284.94,
+            "VRT": 295.24
+          },
+          "floating_return": -0.065382
         }
       ]
     },
@@ -3006,13 +3023,19 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 750.72,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null,
+      "status": "closed",
+      "exit_date": "2026-07-22",
+      "exit_prices": {
+        "MTB": 248.1003,
+        "TFC": 51.32,
+        "FNB": 18.93,
+        "WFC": 87.2,
+        "STT": 184.11
+      },
+      "exit_reason": "theme_gone",
+      "realized_return": -0.021317,
+      "spy_return_during_holding": -0.004695,
+      "excess_return": -0.016622,
       "daily_snapshots": [
         {
           "date": "2026-07-20",
@@ -3035,6 +3058,17 @@
             "STT": 183.06
           },
           "floating_return": -0.028062
+        },
+        {
+          "date": "2026-07-22",
+          "prices": {
+            "MTB": 248.1003,
+            "TFC": 51.32,
+            "FNB": 18.93,
+            "WFC": 87.2,
+            "STT": 184.11
+          },
+          "floating_return": -0.021317
         }
       ]
     },
@@ -3055,13 +3089,17 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 750.72,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null,
+      "status": "closed",
+      "exit_date": "2026-07-22",
+      "exit_prices": {
+        "ISRG": 349.52,
+        "DXCM": 74.04,
+        "UNH": 433.835
+      },
+      "exit_reason": "theme_gone",
+      "realized_return": -0.052364,
+      "spy_return_during_holding": -0.004695,
+      "excess_return": -0.047669,
       "daily_snapshots": [
         {
           "date": "2026-07-20",
@@ -3080,6 +3118,15 @@
             "UNH": 423.65
           },
           "floating_return": -0.049683
+        },
+        {
+          "date": "2026-07-22",
+          "prices": {
+            "ISRG": 349.52,
+            "DXCM": 74.04,
+            "UNH": 433.835
+          },
+          "floating_return": -0.052364
         }
       ]
     },
@@ -3119,6 +3166,16 @@
             "NBIS": 195.71
           },
           "floating_return": 0.030973
+        },
+        {
+          "date": "2026-07-22",
+          "prices": {
+            "MSTR": 100.205,
+            "HUT": 109.635,
+            "IREN": 41.68,
+            "NBIS": 219.6
+          },
+          "floating_return": 0.077122
         }
       ]
     },
@@ -3161,6 +3218,17 @@
             "MCD": 265.39
           },
           "floating_return": 0.038175
+        },
+        {
+          "date": "2026-07-22",
+          "prices": {
+            "AMC": 2.25,
+            "DPZ": 323.47,
+            "DLTR": 125.635,
+            "KMX": 58.25,
+            "MCD": 264.775
+          },
+          "floating_return": 0.004921
         }
       ]
     },
@@ -3191,7 +3259,20 @@
       "exit_reason": null,
       "realized_return": null,
       "spy_return_during_holding": null,
-      "excess_return": null
+      "excess_return": null,
+      "daily_snapshots": [
+        {
+          "date": "2026-07-22",
+          "prices": {
+            "NVO": 49.14,
+            "LLY": 1162.47,
+            "ISRG": 349.52,
+            "DHR": 177.385,
+            "GSK": 51.43
+          },
+          "floating_return": 0.007368
+        }
+      ]
     },
     {
       "theme_id": "private-equity-ma-activism",
@@ -3214,6 +3295,102 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 745.31,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null,
+      "daily_snapshots": [
+        {
+          "date": "2026-07-22",
+          "prices": {
+            "GME": 21.82,
+            "EBAY": 112.77,
+            "NFLX": 69.25,
+            "ZETA": 20.63,
+            "KHC": 26.04
+          },
+          "floating_return": -0.005811
+        }
+      ]
+    },
+    {
+      "theme_id": "financial-services-capital-markets",
+      "theme_name": "Financial Services Rally & Capital Markets Momentum",
+      "direction": "Bullish",
+      "entry_date": "2026-07-22",
+      "tickers": [
+        "JPM",
+        "PNC",
+        "FITB",
+        "CME"
+      ],
+      "entry_prices": {
+        "JPM": 345.92,
+        "PNC": 250.68,
+        "FITB": 57.505,
+        "CME": 248.135
+      },
+      "conviction_at_entry": 9,
+      "spy_price_at_entry": 747.195,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null
+    },
+    {
+      "theme_id": "semiconductor-chip-rally",
+      "theme_name": "Semiconductor & Chip Sector Broad Rally",
+      "direction": "Bullish",
+      "entry_date": "2026-07-22",
+      "tickers": [
+        "AMD",
+        "NVDA",
+        "TSM",
+        "INTC",
+        "AVGO"
+      ],
+      "entry_prices": {
+        "AMD": 543.39,
+        "NVDA": 206.86,
+        "TSM": 417.76,
+        "INTC": 103.5477,
+        "AVGO": 384.4
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 747.195,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null
+    },
+    {
+      "theme_id": "energy-oil-gas-cycle",
+      "theme_name": "Oil & Gas Cycle Recovery & Leverage Plays",
+      "direction": "Bullish",
+      "entry_date": "2026-07-22",
+      "tickers": [
+        "EQNR",
+        "ALK",
+        "MGY",
+        "XOM"
+      ],
+      "entry_prices": {
+        "EQNR": 39.4605,
+        "ALK": 43.185,
+        "MGY": 25.56,
+        "XOM": 153.36
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 747.195,
       "status": "open",
       "exit_date": null,
       "exit_prices": null,
@@ -3505,18 +3682,24 @@
       "portfolio_return": 0.013978,
       "spy_return": 0.004312,
       "open_count": 7
+    },
+    {
+      "date": "2026-07-22",
+      "portfolio_return": 0.002999,
+      "spy_return": -0.00151,
+      "open_count": 7
     }
   ],
   "summary": {
-    "portfolio_cumulative": -0.162602,
-    "spy_cumulative": 0.081594,
-    "alpha": -0.244196,
+    "portfolio_cumulative": -0.160091,
+    "spy_cumulative": 0.079961,
+    "alpha": -0.240052,
     "open_count": 6,
-    "closed_count": 40,
-    "win_rate": 0.325,
-    "tracking_days": 47
+    "closed_count": 43,
+    "win_rate": 0.302,
+    "tracking_days": 48
   },
-  "updated_at": "2026-07-21",
+  "updated_at": "2026-07-22",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -5272,6 +5455,19 @@
           "NRG",
           "ETR"
         ]
+      },
+      {
+        "date": "2026-07-22",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "CEG",
+          "VST",
+          "NEE",
+          "NRG",
+          "GEV"
+        ]
       }
     ],
     "quantum-computing-speculative-selloff": [
@@ -6193,6 +6389,19 @@
           "USB",
           "MTB"
         ]
+      },
+      {
+        "date": "2026-07-22",
+        "conviction": 9,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "JPM",
+          "PNC",
+          "BK",
+          "FITB",
+          "CME"
+        ]
       }
     ],
     "emerging-markets-latam": [
@@ -6353,6 +6562,16 @@
           "GM",
           "TSLA",
           "GPC"
+        ]
+      },
+      {
+        "date": "2026-07-22",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "TSLA",
+          "AMC"
         ]
       }
     ],
@@ -6995,6 +7214,19 @@
           "NRG",
           "ETR"
         ]
+      },
+      {
+        "date": "2026-07-22",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Acceleration",
+        "tickers": [
+          "EQNR",
+          "ONEOK",
+          "ALK",
+          "MGY",
+          "XOM"
+        ]
       }
     ],
     "industrials-infrastructure-materials": [
@@ -7511,6 +7743,19 @@
           "AMZN",
           "AAPL",
           "META"
+        ]
+      },
+      {
+        "date": "2026-07-22",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "GOOGL",
+          "MSFT",
+          "META",
+          "AMZN",
+          "AAPL"
         ]
       }
     ],
@@ -8444,6 +8689,19 @@
           "ASTS",
           "RGTI"
         ]
+      },
+      {
+        "date": "2026-07-22",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "ASTS",
+          "RKLB",
+          "LUNR",
+          "IONQ",
+          "RGTI"
+        ]
       }
     ],
     "logistics-freight-spinoffs": [
@@ -8783,6 +9041,19 @@
           "WHR",
           "TOL",
           "HOUS"
+        ]
+      },
+      {
+        "date": "2026-07-22",
+        "conviction": 8,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "DHI",
+          "PHM",
+          "NLY",
+          "TNX",
+          "ITB"
         ]
       }
     ],
@@ -9404,6 +9675,19 @@
           "INTC",
           "AVGO"
         ]
+      },
+      {
+        "date": "2026-07-22",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "AMD",
+          "NVDA",
+          "TSM",
+          "INTC",
+          "AVGO"
+        ]
       }
     ],
     "ai-government-data-infrastructure": [
@@ -9485,6 +9769,19 @@
           "POST",
           "BIRK",
           "HELE"
+        ]
+      },
+      {
+        "date": "2026-07-22",
+        "conviction": 5,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "CAG",
+          "MO",
+          "CTAS",
+          "UTZ",
+          "GCO"
         ]
       }
     ],
@@ -9613,6 +9910,19 @@
           "ISRG",
           "DHR",
           "GSK"
+        ]
+      },
+      {
+        "date": "2026-07-22",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "RGEN",
+          "ISRG",
+          "DXCM",
+          "UNH",
+          "BLFS"
         ]
       }
     ],

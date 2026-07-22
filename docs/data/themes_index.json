@@ -49,13 +49,13 @@
   "power-grid-energy-ai-demand": {
     "name": "Power Grid Stress & Energy Stocks Under AI Demand Pressure",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-21",
+    "last_active": "2026-07-22",
     "representative_tickers": [
       "CEG",
       "VST",
       "NEE",
       "NRG",
-      "ETR"
+      "GEV"
     ]
   },
   "space-economy-commercial-launch": {
@@ -131,23 +131,22 @@
   "ev-automotive-supply-chain": {
     "name": "EV & Automotive Supply Chain Recovery",
     "first_seen": "2026-05-14",
-    "last_active": "2026-07-21",
+    "last_active": "2026-07-22",
     "representative_tickers": [
-      "GM",
       "TSLA",
-      "GPC"
+      "AMC"
     ]
   },
   "financial-services-capital-markets": {
     "name": "Financial Services Rally & Capital Markets Momentum",
     "first_seen": "2026-05-14",
-    "last_active": "2026-07-16",
+    "last_active": "2026-07-22",
     "representative_tickers": [
-      "MS",
-      "BLK",
+      "JPM",
       "PNC",
-      "USB",
-      "MTB"
+      "BK",
+      "FITB",
+      "CME"
     ]
   },
   "emerging-markets-latam": {
@@ -174,13 +173,13 @@
   "energy-oil-gas-cycle": {
     "name": "Oil & Gas Cycle Recovery & Leverage Plays",
     "first_seen": "2026-05-15",
-    "last_active": "2026-07-15",
+    "last_active": "2026-07-22",
     "representative_tickers": [
-      "VST",
-      "CEG",
-      "NEE",
-      "NRG",
-      "ETR"
+      "EQNR",
+      "ONEOK",
+      "ALK",
+      "MGY",
+      "XOM"
     ]
   },
   "energy-infrastructure-income": {
@@ -218,13 +217,13 @@
   "big-tech-ai-platforms": {
     "name": "Big Tech AI Platform Divergence",
     "first_seen": "2026-05-18",
-    "last_active": "2026-07-20",
+    "last_active": "2026-07-22",
     "representative_tickers": [
-      "MSFT",
       "GOOGL",
+      "MSFT",
+      "META",
       "AMZN",
-      "AAPL",
-      "META"
+      "AAPL"
     ]
   },
   "cybersecurity-resilience": {
@@ -272,12 +271,12 @@
   "space-quantum-defense-tech": {
     "name": "Space, Quantum Computing & Defense Tech",
     "first_seen": "2026-05-20",
-    "last_active": "2026-07-21",
+    "last_active": "2026-07-22",
     "representative_tickers": [
-      "RKLB",
-      "IONQ",
-      "LUNR",
       "ASTS",
+      "RKLB",
+      "LUNR",
+      "IONQ",
       "RGTI"
     ]
   },
@@ -341,13 +340,13 @@
   "housing-real-estate-finance": {
     "name": "Housing Market Stress & Real Estate Finance",
     "first_seen": "2026-05-28",
-    "last_active": "2026-07-10",
+    "last_active": "2026-07-22",
     "representative_tickers": [
-      "KMX",
-      "AZO",
-      "WHR",
-      "TOL",
-      "HOUS"
+      "DHI",
+      "PHM",
+      "NLY",
+      "TNX",
+      "ITB"
     ]
   },
   "space-economy-correction": {
@@ -511,11 +510,11 @@
   "semiconductor-chip-rally": {
     "name": "Semiconductor & Chip Sector Broad Rally",
     "first_seen": "2026-06-18",
-    "last_active": "2026-07-06",
+    "last_active": "2026-07-22",
     "representative_tickers": [
       "AMD",
+      "NVDA",
       "TSM",
-      "ASML",
       "INTC",
       "AVGO"
     ]
@@ -535,13 +534,13 @@
   "consumer-defensive-resilience": {
     "name": "Defensive Consumer & Staples Resilience",
     "first_seen": "2026-07-06",
-    "last_active": "2026-07-15",
+    "last_active": "2026-07-22",
     "representative_tickers": [
-      "PEP",
       "CAG",
-      "POST",
-      "BIRK",
-      "HELE"
+      "MO",
+      "CTAS",
+      "UTZ",
+      "GCO"
     ]
   },
   "china-ai-tech-rerating": {
@@ -636,13 +635,13 @@
   "glp1-pharma-medtech": {
     "name": "GLP-1 Pharma Wars & MedTech Innovation",
     "first_seen": "2026-07-21",
-    "last_active": "2026-07-21",
+    "last_active": "2026-07-22",
     "representative_tickers": [
-      "NVO",
-      "LLY",
+      "RGEN",
       "ISRG",
-      "DHR",
-      "GSK"
+      "DXCM",
+      "UNH",
+      "BLFS"
     ]
   },
   "private-equity-ma-activism": {
