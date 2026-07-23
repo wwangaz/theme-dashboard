@@ -2,12 +2,13 @@
   "ai-infrastructure-datacenter-boom": {
     "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-21",
+    "last_active": "2026-07-23",
     "representative_tickers": [
-      "MSFT",
-      "GOOGL",
-      "META",
-      "AMZN"
+      "NVDA",
+      "AMD",
+      "AVGO",
+      "TSM",
+      "ASML"
     ]
   },
   "semiconductor-geopolitics-china-trade": {
@@ -49,13 +50,13 @@
   "power-grid-energy-ai-demand": {
     "name": "Power Grid Stress & Energy Stocks Under AI Demand Pressure",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-22",
+    "last_active": "2026-07-23",
     "representative_tickers": [
+      "NEE",
       "CEG",
       "VST",
-      "NEE",
       "NRG",
-      "GEV"
+      "ETR"
     ]
   },
   "space-economy-commercial-launch": {
@@ -107,12 +108,12 @@
   "regional-banking-rate-environment": {
     "name": "Regional Banks Navigating Rate Volatility & Credit Risk",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-21",
+    "last_active": "2026-07-23",
     "representative_tickers": [
-      "FITB",
-      "MTB",
-      "KEY",
-      "TFC",
+      "JPM",
+      "CFG",
+      "USB",
+      "HBAN",
       "SCHW"
     ]
   },
@@ -173,13 +174,13 @@
   "energy-oil-gas-cycle": {
     "name": "Oil & Gas Cycle Recovery & Leverage Plays",
     "first_seen": "2026-05-15",
-    "last_active": "2026-07-22",
+    "last_active": "2026-07-23",
     "representative_tickers": [
-      "EQNR",
-      "ONEOK",
-      "ALK",
-      "MGY",
-      "XOM"
+      "HAL",
+      "XOM",
+      "CVX",
+      "PSX",
+      "VLO"
     ]
   },
   "energy-infrastructure-income": {
@@ -193,25 +194,20 @@
   "industrials-infrastructure-materials": {
     "name": "Industrials, Infrastructure & Materials Cycle",
     "first_seen": "2026-05-15",
-    "last_active": "2026-07-17",
+    "last_active": "2026-07-23",
     "representative_tickers": [
-      "CTAS",
-      "FAST",
-      "MAN",
-      "CAT",
-      "WIT"
+      "NSC",
+      "UNP",
+      "ODFL"
     ]
   },
   "media-entertainment-consumer-recovery": {
     "name": "Media Consolidation, Consumer Discretionary & Retail Recovery",
     "first_seen": "2026-05-15",
-    "last_active": "2026-07-20",
+    "last_active": "2026-07-23",
     "representative_tickers": [
-      "AMC",
-      "DPZ",
-      "DLTR",
-      "KMX",
-      "MCD"
+      "CMCSA",
+      "IMAX"
     ]
   },
   "big-tech-ai-platforms": {
@@ -271,13 +267,13 @@
   "space-quantum-defense-tech": {
     "name": "Space, Quantum Computing & Defense Tech",
     "first_seen": "2026-05-20",
-    "last_active": "2026-07-22",
+    "last_active": "2026-07-23",
     "representative_tickers": [
-      "ASTS",
-      "RKLB",
-      "LUNR",
       "IONQ",
-      "RGTI"
+      "RGTI",
+      "QUBT",
+      "RKLB",
+      "ASTS"
     ]
   },
   "fixed-income-yield-alternatives": {
@@ -441,12 +437,13 @@
   "defense-industrial-government-spend": {
     "name": "Defense Spending & Industrial Government Contracts",
     "first_seen": "2026-06-04",
-    "last_active": "2026-07-21",
+    "last_active": "2026-07-23",
     "representative_tickers": [
-      "PANW",
       "LMT",
       "RTX",
-      "RCAT"
+      "GE",
+      "FEIM",
+      "HON"
     ]
   },
   "macro-risk-market-top-signals": {
@@ -486,13 +483,10 @@
   "saas-adtech-digital-platforms": {
     "name": "SaaS, Ad-Tech & Digital Platform Valuations",
     "first_seen": "2026-06-12",
-    "last_active": "2026-07-01",
+    "last_active": "2026-07-23",
     "representative_tickers": [
       "NOW",
-      "CRM",
-      "HUBS",
-      "FROG",
-      "CSGP"
+      "IBM"
     ]
   },
   "gaming-interactive-entertainment": {
