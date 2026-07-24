@@ -50,7 +50,7 @@
   "power-grid-energy-ai-demand": {
     "name": "Power Grid Stress & Energy Stocks Under AI Demand Pressure",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-23",
+    "last_active": "2026-07-24",
     "representative_tickers": [
       "NEE",
       "CEG",
@@ -62,13 +62,11 @@
   "space-economy-commercial-launch": {
     "name": "Commercial Space Economy & Satellite Communications Momentum",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-13",
+    "last_active": "2026-07-24",
     "representative_tickers": [
       "RKLB",
       "ASTS",
-      "LUNR",
-      "VSAT",
-      "TMUS"
+      "LUNR"
     ]
   },
   "precious-metals-mining-dividends": {
@@ -108,13 +106,13 @@
   "regional-banking-rate-environment": {
     "name": "Regional Banks Navigating Rate Volatility & Credit Risk",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-23",
+    "last_active": "2026-07-24",
     "representative_tickers": [
-      "JPM",
-      "CFG",
-      "USB",
-      "HBAN",
-      "SCHW"
+      "COF",
+      "WF",
+      "MCO",
+      "HFWA",
+      "BAC"
     ]
   },
   "nuclear-clean-energy": {
@@ -204,10 +202,11 @@
   "media-entertainment-consumer-recovery": {
     "name": "Media Consolidation, Consumer Discretionary & Retail Recovery",
     "first_seen": "2026-05-15",
-    "last_active": "2026-07-23",
+    "last_active": "2026-07-24",
     "representative_tickers": [
-      "CMCSA",
-      "IMAX"
+      "JAKK",
+      "AXP",
+      "HOG"
     ]
   },
   "big-tech-ai-platforms": {
@@ -235,13 +234,13 @@
   "semiconductor-broad-selloff": {
     "name": "Semiconductor Sector Correction",
     "first_seen": "2026-05-19",
-    "last_active": "2026-07-13",
+    "last_active": "2026-07-24",
     "representative_tickers": [
+      "GOOGL",
       "NVDA",
       "AMD",
-      "TSM",
-      "ASML",
-      "ARM"
+      "MSFT",
+      "AVGO"
     ]
   },
   "consumer-retail-stress": {
@@ -279,14 +278,8 @@
   "fixed-income-yield-alternatives": {
     "name": "Fixed Income, Yield Alternatives & Retirement Income",
     "first_seen": "2026-05-20",
-    "last_active": "2026-07-20",
-    "representative_tickers": [
-      "INTU",
-      "ICE",
-      "DYNEX",
-      "T",
-      "O"
-    ]
+    "last_active": "2026-07-24",
+    "representative_tickers": []
   },
   "logistics-freight-spinoffs": {
     "name": "Logistics & Freight Restructuring Plays",
@@ -336,13 +329,10 @@
   "housing-real-estate-finance": {
     "name": "Housing Market Stress & Real Estate Finance",
     "first_seen": "2026-05-28",
-    "last_active": "2026-07-22",
+    "last_active": "2026-07-24",
     "representative_tickers": [
-      "DHI",
-      "PHM",
-      "NLY",
-      "TNX",
-      "ITB"
+      "BREIT",
+      "SBAC"
     ]
   },
   "space-economy-correction": {
@@ -437,13 +427,11 @@
   "defense-industrial-government-spend": {
     "name": "Defense Spending & Industrial Government Contracts",
     "first_seen": "2026-06-04",
-    "last_active": "2026-07-23",
+    "last_active": "2026-07-24",
     "representative_tickers": [
-      "LMT",
       "RTX",
-      "GE",
-      "FEIM",
-      "HON"
+      "NOC",
+      "TDG"
     ]
   },
   "macro-risk-market-top-signals": {
@@ -461,7 +449,7 @@
   "quantum-computing-emerging-tech": {
     "name": "Quantum Computing Emerging Tech Momentum",
     "first_seen": "2026-06-10",
-    "last_active": "2026-07-06",
+    "last_active": "2026-07-24",
     "representative_tickers": [
       "IONQ",
       "RGTI",
@@ -629,13 +617,13 @@
   "glp1-pharma-medtech": {
     "name": "GLP-1 Pharma Wars & MedTech Innovation",
     "first_seen": "2026-07-21",
-    "last_active": "2026-07-22",
+    "last_active": "2026-07-24",
     "representative_tickers": [
-      "RGEN",
       "ISRG",
       "DXCM",
-      "UNH",
-      "BLFS"
+      "DHR",
+      "WST",
+      "HCA"
     ]
   },
   "private-equity-ma-activism": {
