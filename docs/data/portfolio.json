@@ -3215,13 +3215,19 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 745.44,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null,
+      "status": "closed",
+      "exit_date": "2026-07-27",
+      "exit_prices": {
+        "AMC": 2.305,
+        "DPZ": 346.165,
+        "DLTR": 124.53,
+        "KMX": 59.3,
+        "MCD": 269.495
+      },
+      "exit_reason": "theme_gone",
+      "realized_return": 0.029093,
+      "spy_return_during_holding": -0.009914,
+      "excess_return": 0.039007,
       "daily_snapshots": [
         {
           "date": "2026-07-21",
@@ -3266,6 +3272,17 @@
             "MCD": 264.4171
           },
           "floating_return": 0.002194
+        },
+        {
+          "date": "2026-07-27",
+          "prices": {
+            "AMC": 2.305,
+            "DPZ": 346.165,
+            "DLTR": 124.53,
+            "KMX": 59.3,
+            "MCD": 269.495
+          },
+          "floating_return": 0.029093
         }
       ]
     },
@@ -3290,13 +3307,19 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 745.31,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null,
+      "status": "closed",
+      "exit_date": "2026-07-27",
+      "exit_prices": {
+        "NVO": 49.7,
+        "LLY": 1202.48,
+        "ISRG": 354.31,
+        "DHR": 193.19,
+        "GSK": 52.505
+      },
+      "exit_reason": "theme_gone",
+      "realized_return": 0.041854,
+      "spy_return_during_holding": -0.009741,
+      "excess_return": 0.051595,
       "daily_snapshots": [
         {
           "date": "2026-07-22",
@@ -3330,6 +3353,17 @@
             "GSK": 51.23
           },
           "floating_return": 0.02274
+        },
+        {
+          "date": "2026-07-27",
+          "prices": {
+            "NVO": 49.7,
+            "LLY": 1202.48,
+            "ISRG": 354.31,
+            "DHR": 193.19,
+            "GSK": 52.505
+          },
+          "floating_return": 0.041854
         }
       ]
     },
@@ -3354,13 +3388,19 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 745.31,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null,
+      "status": "closed",
+      "exit_date": "2026-07-27",
+      "exit_prices": {
+        "GME": 21.295,
+        "EBAY": 110.195,
+        "NFLX": 70.515,
+        "ZETA": 19.96,
+        "KHC": 26.115
+      },
+      "exit_reason": "theme_gone",
+      "realized_return": -0.017014,
+      "spy_return_during_holding": -0.009741,
+      "excess_return": -0.007273,
       "daily_snapshots": [
         {
           "date": "2026-07-22",
@@ -3394,6 +3434,17 @@
             "KHC": 25.385
           },
           "floating_return": -0.031885
+        },
+        {
+          "date": "2026-07-27",
+          "prices": {
+            "GME": 21.295,
+            "EBAY": 110.195,
+            "NFLX": 70.515,
+            "ZETA": 19.96,
+            "KHC": 26.115
+          },
+          "floating_return": -0.017014
         }
       ]
     },
@@ -3416,13 +3467,18 @@
       },
       "conviction_at_entry": 9,
       "spy_price_at_entry": 747.195,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null,
+      "status": "closed",
+      "exit_date": "2026-07-27",
+      "exit_prices": {
+        "JPM": 356.16,
+        "PNC": 251.43,
+        "FITB": 57.33,
+        "CME": 255.18
+      },
+      "exit_reason": "theme_gone",
+      "realized_return": 0.014486,
+      "spy_return_during_holding": -0.012239,
+      "excess_return": 0.026725,
       "daily_snapshots": [
         {
           "date": "2026-07-23",
@@ -3443,6 +3499,16 @@
             "CME": 252.96
           },
           "floating_return": 0.003802
+        },
+        {
+          "date": "2026-07-27",
+          "prices": {
+            "JPM": 356.16,
+            "PNC": 251.43,
+            "FITB": 57.33,
+            "CME": 255.18
+          },
+          "floating_return": 0.014486
         }
       ]
     },
@@ -3467,13 +3533,19 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 747.195,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null,
+      "status": "closed",
+      "exit_date": "2026-07-27",
+      "exit_prices": {
+        "AMD": 484.6,
+        "NVDA": 198.69,
+        "TSM": 393.26,
+        "INTC": 87.94,
+        "AVGO": 377.545
+      },
+      "exit_reason": "theme_gone",
+      "realized_return": -0.074979,
+      "spy_return_during_holding": -0.012239,
+      "excess_return": -0.06274,
       "daily_snapshots": [
         {
           "date": "2026-07-23",
@@ -3496,6 +3568,17 @@
             "AVGO": 383.76
           },
           "floating_return": -0.015091
+        },
+        {
+          "date": "2026-07-27",
+          "prices": {
+            "AMD": 484.6,
+            "NVDA": 198.69,
+            "TSM": 393.26,
+            "INTC": 87.94,
+            "AVGO": 377.545
+          },
+          "floating_return": -0.074979
         }
       ]
     },
@@ -3518,13 +3601,18 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 747.195,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null,
+      "status": "closed",
+      "exit_date": "2026-07-27",
+      "exit_prices": {
+        "EQNR": 39.07,
+        "ALK": 47.12,
+        "MGY": 24.67,
+        "XOM": 154.65
+      },
+      "exit_reason": "theme_gone",
+      "realized_return": 0.013704,
+      "spy_return_during_holding": -0.012239,
+      "excess_return": 0.025943,
       "daily_snapshots": [
         {
           "date": "2026-07-23",
@@ -3545,6 +3633,16 @@
             "XOM": 157.2
           },
           "floating_return": 0.026067
+        },
+        {
+          "date": "2026-07-27",
+          "prices": {
+            "EQNR": 39.07,
+            "ALK": 47.12,
+            "MGY": 24.67,
+            "XOM": 154.65
+          },
+          "floating_return": 0.013704
         }
       ]
     },
@@ -3587,6 +3685,17 @@
             "HON": 245.61
           },
           "floating_return": -0.010247
+        },
+        {
+          "date": "2026-07-27",
+          "prices": {
+            "LMT": 580.585,
+            "RTX": 217.8935,
+            "GE": 359.435,
+            "FEIM": 71.75,
+            "HON": 246.74
+          },
+          "floating_return": 0.00597
         }
       ]
     },
@@ -3629,8 +3738,125 @@
             "SCHW": 100.95
           },
           "floating_return": 0.001042
+        },
+        {
+          "date": "2026-07-27",
+          "prices": {
+            "JPM": 356.16,
+            "CFG": 71.67,
+            "USB": 63.985,
+            "HBAN": 17.36,
+            "SCHW": 103.67
+          },
+          "floating_return": 0.013989
         }
       ]
+    },
+    {
+      "theme_id": "ai-infrastructure-datacenter-boom",
+      "theme_name": "AI Infrastructure & Data Center Capital Expenditure Surge",
+      "direction": "Bullish",
+      "entry_date": "2026-07-27",
+      "tickers": [
+        "META",
+        "GOOGL",
+        "AMZN",
+        "AVGO",
+        "AAPL"
+      ],
+      "entry_prices": {
+        "META": 604.51,
+        "GOOGL": 326.2029,
+        "AMZN": 234.12,
+        "AVGO": 377.545,
+        "AAPL": 337.325
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 738.0499,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null
+    },
+    {
+      "theme_id": "crypto-digital-assets-geopolitical-watch",
+      "theme_name": "Crypto & Digital Assets Holding Steady Amid US-China Summit",
+      "direction": "Bullish",
+      "entry_date": "2026-07-27",
+      "tickers": [
+        "MSTR",
+        "ETH-USD",
+        "BTC-USD"
+      ],
+      "entry_prices": {
+        "MSTR": 96.73,
+        "ETH-USD": 1929.1,
+        "BTC-USD": 64611.7109
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 738.0499,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null
+    },
+    {
+      "theme_id": "healthcare-technology-outperformance",
+      "theme_name": "Healthcare Technology & Managed Care Outperformance",
+      "direction": "Bullish",
+      "entry_date": "2026-07-27",
+      "tickers": [
+        "ISRG",
+        "DXCM",
+        "NVO",
+        "THC"
+      ],
+      "entry_prices": {
+        "ISRG": 354.31,
+        "DXCM": 74.455,
+        "NVO": 49.7,
+        "THC": 245.18
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 738.0499,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null
+    },
+    {
+      "theme_id": "industrials-infrastructure-materials",
+      "theme_name": "Industrials, Infrastructure & Materials Cycle",
+      "direction": "Bullish",
+      "entry_date": "2026-07-27",
+      "tickers": [
+        "KMI",
+        "CNI",
+        "UNP"
+      ],
+      "entry_prices": {
+        "KMI": 31.9699,
+        "CNI": 128.835,
+        "UNP": 303.19
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 738.0499,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null
     }
   ],
   "daily_returns": [
@@ -3933,18 +4159,24 @@
       "portfolio_return": 0.001881,
       "spy_return": 0.001382,
       "open_count": 8
+    },
+    {
+      "date": "2026-07-27",
+      "portfolio_return": 0.003592,
+      "spy_return": -0.00042,
+      "open_count": 8
     }
   ],
   "summary": {
-    "portfolio_cumulative": -0.159588,
-    "spy_cumulative": 0.070326,
-    "alpha": -0.229914,
-    "open_count": 8,
-    "closed_count": 44,
-    "win_rate": 0.318,
-    "tracking_days": 50
+    "portfolio_cumulative": -0.156569,
+    "spy_cumulative": 0.069877,
+    "alpha": -0.226446,
+    "open_count": 5,
+    "closed_count": 50,
+    "win_rate": 0.36,
+    "tracking_days": 51
   },
-  "updated_at": "2026-07-24",
+  "updated_at": "2026-07-27",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -4476,6 +4708,19 @@
           "AVGO",
           "TSM",
           "ASML"
+        ]
+      },
+      {
+        "date": "2026-07-27",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Crowded Euphoria",
+        "tickers": [
+          "META",
+          "GOOGL",
+          "AMZN",
+          "AVGO",
+          "AAPL"
         ]
       }
     ],
@@ -5763,6 +6008,19 @@
           "NRG",
           "ETR"
         ]
+      },
+      {
+        "date": "2026-07-27",
+        "conviction": 3,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "NEE",
+          "CEG",
+          "VST",
+          "NRG",
+          "ETR"
+        ]
       }
     ],
     "quantum-computing-speculative-selloff": [
@@ -6157,6 +6415,18 @@
           "HFWA",
           "BAC"
         ]
+      },
+      {
+        "date": "2026-07-27",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "SBSI",
+          "BOKF",
+          "WAFD",
+          "CHMG"
+        ]
       }
     ],
     "crypto-digital-assets-geopolitical-watch": [
@@ -6488,6 +6758,18 @@
           "PYPL",
           "MSTR",
           "CLSK"
+        ]
+      },
+      {
+        "date": "2026-07-27",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "MSTR",
+          "BITF",
+          "ETH-USD",
+          "BTC-USD"
         ]
       }
     ],
@@ -7639,6 +7921,17 @@
           "UNP",
           "ODFL"
         ]
+      },
+      {
+        "date": "2026-07-27",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "KMI",
+          "CNI",
+          "UNP"
+        ]
       }
     ],
     "energy-infrastructure-income": [
@@ -8564,6 +8857,19 @@
           "MSFT",
           "AVGO"
         ]
+      },
+      {
+        "date": "2026-07-27",
+        "conviction": 7,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "INTC",
+          "ASML",
+          "TSM",
+          "QCOM",
+          "ARM"
+        ]
       }
     ],
     "fintech-payments-platforms": [
@@ -9348,6 +9654,18 @@
           "KMI",
           "TRGP"
         ]
+      },
+      {
+        "date": "2026-07-27",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Acceleration",
+        "tickers": [
+          "GLD",
+          "SLV",
+          "USO",
+          "DAL"
+        ]
       }
     ],
     "china-tech-consumer": [
@@ -9540,6 +9858,17 @@
         "tickers": [
           "ASTS",
           "RKLB",
+          "LUNR"
+        ]
+      },
+      {
+        "date": "2026-07-27",
+        "conviction": 3,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "RKLB",
+          "ASTS",
           "LUNR"
         ]
       }
@@ -10022,6 +10351,17 @@
           "RGTI",
           "QUBT"
         ]
+      },
+      {
+        "date": "2026-07-27",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Acceleration",
+        "tickers": [
+          "IONQ",
+          "RGTI",
+          "QUBT"
+        ]
       }
     ],
     "saas-adtech-digital-platforms": [
@@ -10334,6 +10674,18 @@
           "ISRG",
           "DXCM",
           "UNH"
+        ]
+      },
+      {
+        "date": "2026-07-27",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Acceleration",
+        "tickers": [
+          "ISRG",
+          "DXCM",
+          "NVO",
+          "THC"
         ]
       }
     ],
