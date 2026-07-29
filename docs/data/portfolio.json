@@ -3707,6 +3707,17 @@
             "HON": 250.61
           },
           "floating_return": 0.008984
+        },
+        {
+          "date": "2026-07-29",
+          "prices": {
+            "LMT": 576.195,
+            "RTX": 216.36,
+            "GE": 356.05,
+            "FEIM": 60.385,
+            "HON": 242.67
+          },
+          "floating_return": -0.032677
         }
       ]
     },
@@ -3819,6 +3830,17 @@
             "AAPL": 336.15
           },
           "floating_return": -0.007928
+        },
+        {
+          "date": "2026-07-29",
+          "prices": {
+            "META": 589.6,
+            "GOOGL": 332.63,
+            "AMZN": 228.77,
+            "AVGO": 379.525,
+            "AAPL": 342.435
+          },
+          "floating_return": -0.001484
         }
       ]
     },
@@ -3855,6 +3877,15 @@
             "BTC-USD": 63077.9492
           },
           "floating_return": -0.021933
+        },
+        {
+          "date": "2026-07-29",
+          "prices": {
+            "MSTR": 97.2503,
+            "ETH-USD": 1901.1,
+            "BTC-USD": 64426.1211
+          },
+          "floating_return": -0.004003
         }
       ]
     },
@@ -3894,6 +3925,16 @@
             "THC": 254.38
           },
           "floating_return": 0.028296
+        },
+        {
+          "date": "2026-07-29",
+          "prices": {
+            "ISRG": 357.525,
+            "DXCM": 75.12,
+            "NVO": 51.4,
+            "THC": 258.935
+          },
+          "floating_return": 0.027078
         }
       ]
     },
@@ -3930,6 +3971,15 @@
             "UNP": 299.38
           },
           "floating_return": -0.001726
+        },
+        {
+          "date": "2026-07-29",
+          "prices": {
+            "KMI": 32.23,
+            "CNI": 129.44,
+            "UNP": 292.39
+          },
+          "floating_return": -0.007597
         }
       ]
     }
@@ -4246,18 +4296,24 @@
       "portfolio_return": -7.8e-05,
       "spy_return": -0.002537,
       "open_count": 6
+    },
+    {
+      "date": "2026-07-29",
+      "portfolio_return": -0.005074,
+      "spy_return": -0.005305,
+      "open_count": 5
     }
   ],
   "summary": {
-    "portfolio_cumulative": -0.156635,
-    "spy_cumulative": 0.067162,
-    "alpha": -0.223798,
+    "portfolio_cumulative": -0.160914,
+    "spy_cumulative": 0.061501,
+    "alpha": -0.222415,
     "open_count": 5,
     "closed_count": 51,
     "win_rate": 0.373,
-    "tracking_days": 52
+    "tracking_days": 53
   },
-  "updated_at": "2026-07-28",
+  "updated_at": "2026-07-29",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -4815,6 +4871,19 @@
           "AMZN",
           "GOOGL",
           "AMD"
+        ]
+      },
+      {
+        "date": "2026-07-29",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Crowded Euphoria",
+        "tickers": [
+          "NVDA",
+          "META",
+          "GOOGL",
+          "MSFT",
+          "AMZN"
         ]
       }
     ],
@@ -5605,6 +5674,19 @@
           "RKLB",
           "ASTS",
           "LUNR"
+        ]
+      },
+      {
+        "date": "2026-07-29",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "RKLB",
+          "ASTS",
+          "LUNR",
+          "IONQ",
+          "RGTI"
         ]
       }
     ],
@@ -6891,6 +6973,17 @@
           "ETH-USD",
           "BTC-USD"
         ]
+      },
+      {
+        "date": "2026-07-29",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "COIN",
+          "BTC",
+          "ETH"
+        ]
       }
     ],
     "nuclear-clean-energy": [
@@ -7963,6 +8056,19 @@
           "PSX",
           "VLO"
         ]
+      },
+      {
+        "date": "2026-07-29",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "PUMP",
+          "NOV",
+          "GZPZY",
+          "XPRO",
+          "GEI"
+        ]
       }
     ],
     "industrials-infrastructure-materials": [
@@ -9003,6 +9109,19 @@
           "ASML",
           "TSM"
         ]
+      },
+      {
+        "date": "2026-07-29",
+        "conviction": 6,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "TSM",
+          "ASML",
+          "INTC",
+          "QCOM",
+          "ARM"
+        ]
       }
     ],
     "fintech-payments-platforms": [
@@ -9822,6 +9941,19 @@
           "LNG",
           "GLD"
         ]
+      },
+      {
+        "date": "2026-07-29",
+        "conviction": 8,
+        "direction": "Bearish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "USO",
+          "GLD",
+          "SLV",
+          "XOM",
+          "BNO"
+        ]
       }
     ],
     "china-tech-consumer": [
@@ -10178,6 +10310,19 @@
           "BND",
           "HYG"
         ]
+      },
+      {
+        "date": "2026-07-29",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "NEE",
+          "CEG",
+          "VST",
+          "FNMA",
+          "WPC"
+        ]
       }
     ],
     "consumer-retail-turnaround": [
@@ -10390,6 +10535,19 @@
         "tickers": [
           "BA",
           "LMT"
+        ]
+      },
+      {
+        "date": "2026-07-29",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "LOAR",
+          "RBC",
+          "CAT",
+          "HON",
+          "ARCB"
         ]
       }
     ],
@@ -10826,6 +10984,19 @@
           "TSLA",
           "NFLX"
         ]
+      },
+      {
+        "date": "2026-07-29",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "KDP",
+          "UL",
+          "VFC",
+          "BIRK",
+          "NFLX"
+        ]
       }
     ],
     "ev-space-emerging-tech": [
@@ -10878,6 +11049,19 @@
           "THC",
           "UHS",
           "LQDA"
+        ]
+      },
+      {
+        "date": "2026-07-29",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "CNC",
+          "ICLR",
+          "ISRG",
+          "DXCM",
+          "GRFS"
         ]
       }
     ],

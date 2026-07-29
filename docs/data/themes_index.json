@@ -2,13 +2,13 @@
   "ai-infrastructure-datacenter-boom": {
     "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-28",
+    "last_active": "2026-07-29",
     "representative_tickers": [
+      "NVDA",
       "META",
-      "MSFT",
-      "AMZN",
       "GOOGL",
-      "AMD"
+      "MSFT",
+      "AMZN"
     ]
   },
   "semiconductor-geopolitics-china-trade": {
@@ -62,11 +62,13 @@
   "space-economy-commercial-launch": {
     "name": "Commercial Space Economy & Satellite Communications Momentum",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-24",
+    "last_active": "2026-07-29",
     "representative_tickers": [
       "RKLB",
       "ASTS",
-      "LUNR"
+      "LUNR",
+      "IONQ",
+      "RGTI"
     ]
   },
   "precious-metals-mining-dividends": {
@@ -84,12 +86,11 @@
   "crypto-digital-assets-geopolitical-watch": {
     "name": "Crypto & Digital Assets Holding Steady Amid US-China Summit",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-27",
+    "last_active": "2026-07-29",
     "representative_tickers": [
-      "MSTR",
-      "BITF",
-      "ETH-USD",
-      "BTC-USD"
+      "COIN",
+      "BTC",
+      "ETH"
     ]
   },
   "quantum-computing-speculative-selloff": {
@@ -171,13 +172,13 @@
   "energy-oil-gas-cycle": {
     "name": "Oil & Gas Cycle Recovery & Leverage Plays",
     "first_seen": "2026-05-15",
-    "last_active": "2026-07-23",
+    "last_active": "2026-07-29",
     "representative_tickers": [
-      "HAL",
-      "XOM",
-      "CVX",
-      "PSX",
-      "VLO"
+      "PUMP",
+      "NOV",
+      "GZPZY",
+      "XPRO",
+      "GEI"
     ]
   },
   "energy-infrastructure-income": {
@@ -233,13 +234,13 @@
   "semiconductor-broad-selloff": {
     "name": "Semiconductor Sector Correction",
     "first_seen": "2026-05-19",
-    "last_active": "2026-07-28",
+    "last_active": "2026-07-29",
     "representative_tickers": [
-      "NVDA",
-      "AMD",
-      "INTC",
+      "TSM",
       "ASML",
-      "TSM"
+      "INTC",
+      "QCOM",
+      "ARM"
     ]
   },
   "consumer-retail-stress": {
@@ -289,13 +290,13 @@
   "geopolitical-risk-commodity-repricing": {
     "name": "Iran Peace Talks & Commodity/Equity Repricing",
     "first_seen": "2026-05-26",
-    "last_active": "2026-07-28",
+    "last_active": "2026-07-29",
     "representative_tickers": [
-      "CVX",
-      "KMI",
-      "CQP",
-      "LNG",
-      "GLD"
+      "USO",
+      "GLD",
+      "SLV",
+      "XOM",
+      "BNO"
     ]
   },
   "affordable-housing-homebuilding": {
@@ -379,13 +380,13 @@
   "macro-rates-dollar-geopolitics": {
     "name": "Fed Policy, Dollar Weakness & Geopolitical Risk Premium",
     "first_seen": "2026-06-02",
-    "last_active": "2026-07-15",
+    "last_active": "2026-07-29",
     "representative_tickers": [
-      "TLT",
-      "SPY",
-      "JEPI",
-      "BND",
-      "HYG"
+      "NEE",
+      "CEG",
+      "VST",
+      "FNMA",
+      "WPC"
     ]
   },
   "consumer-retail-turnaround": {
@@ -425,10 +426,13 @@
   "defense-industrial-government-spend": {
     "name": "Defense Spending & Industrial Government Contracts",
     "first_seen": "2026-06-04",
-    "last_active": "2026-07-28",
+    "last_active": "2026-07-29",
     "representative_tickers": [
-      "BA",
-      "LMT"
+      "LOAR",
+      "RBC",
+      "CAT",
+      "HON",
+      "ARCB"
     ]
   },
   "macro-risk-market-top-signals": {
@@ -568,12 +572,12 @@
   "consumer-earnings-resilience": {
     "name": "Consumer & Industrial Earnings Season Divergence",
     "first_seen": "2026-07-13",
-    "last_active": "2026-07-13",
+    "last_active": "2026-07-29",
     "representative_tickers": [
-      "PEP",
-      "GIS",
-      "CHWY",
-      "TSLA",
+      "KDP",
+      "UL",
+      "VFC",
+      "BIRK",
       "NFLX"
     ]
   },
@@ -592,13 +596,13 @@
   "healthcare-technology-outperformance": {
     "name": "Healthcare Technology & Managed Care Outperformance",
     "first_seen": "2026-07-17",
-    "last_active": "2026-07-28",
+    "last_active": "2026-07-29",
     "representative_tickers": [
+      "CNC",
+      "ICLR",
       "ISRG",
       "DXCM",
-      "THC",
-      "UHS",
-      "LQDA"
+      "GRFS"
     ]
   },
   "ai-cloud-crypto-infrastructure": {
