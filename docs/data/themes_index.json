@@ -83,10 +83,11 @@
   "crypto-digital-assets-geopolitical-watch": {
     "name": "Crypto & Digital Assets Holding Steady Amid US-China Summit",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-30",
+    "last_active": "2026-07-31",
     "representative_tickers": [
-      "HOOD",
-      "COIN"
+      "BTC",
+      "ETH",
+      "IBIT"
     ]
   },
   "quantum-computing-speculative-selloff": {
@@ -114,13 +115,13 @@
   "nuclear-clean-energy": {
     "name": "Nuclear & Advanced Clean Energy Renaissance",
     "first_seen": "2026-05-14",
-    "last_active": "2026-07-14",
+    "last_active": "2026-07-31",
     "representative_tickers": [
-      "CEG",
       "NEE",
+      "CEG",
       "VST",
-      "IONQ",
-      "OKLO"
+      "NRG",
+      "ETR"
     ]
   },
   "ev-automotive-supply-chain": {
@@ -135,13 +136,13 @@
   "financial-services-capital-markets": {
     "name": "Financial Services Rally & Capital Markets Momentum",
     "first_seen": "2026-05-14",
-    "last_active": "2026-07-22",
+    "last_active": "2026-07-31",
     "representative_tickers": [
-      "JPM",
-      "PNC",
-      "BK",
-      "FITB",
-      "CME"
+      "AMP",
+      "FHN",
+      "MGIC",
+      "FHI",
+      "OPY"
     ]
   },
   "emerging-markets-latam": {
@@ -188,13 +189,13 @@
   "industrials-infrastructure-materials": {
     "name": "Industrials, Infrastructure & Materials Cycle",
     "first_seen": "2026-05-15",
-    "last_active": "2026-07-30",
+    "last_active": "2026-07-31",
     "representative_tickers": [
-      "BLDR",
-      "EME",
-      "TRN",
-      "GATX",
-      "AGCO"
+      "MTZ",
+      "LIN",
+      "OLN",
+      "CTVA",
+      "FSS"
     ]
   },
   "media-entertainment-consumer-recovery": {
@@ -210,13 +211,12 @@
   "big-tech-ai-platforms": {
     "name": "Big Tech AI Platform Divergence",
     "first_seen": "2026-05-18",
-    "last_active": "2026-07-30",
+    "last_active": "2026-07-31",
     "representative_tickers": [
       "MSFT",
-      "META",
       "GOOGL",
-      "AAPL",
-      "AMZN"
+      "AMZN",
+      "META"
     ]
   },
   "cybersecurity-resilience": {
@@ -288,13 +288,12 @@
   "geopolitical-risk-commodity-repricing": {
     "name": "Iran Peace Talks & Commodity/Equity Repricing",
     "first_seen": "2026-05-26",
-    "last_active": "2026-07-29",
+    "last_active": "2026-07-31",
     "representative_tickers": [
-      "USO",
       "GLD",
       "SLV",
       "XOM",
-      "BNO"
+      "CVX"
     ]
   },
   "affordable-housing-homebuilding": {
@@ -378,13 +377,11 @@
   "macro-rates-dollar-geopolitics": {
     "name": "Fed Policy, Dollar Weakness & Geopolitical Risk Premium",
     "first_seen": "2026-06-02",
-    "last_active": "2026-07-30",
+    "last_active": "2026-07-31",
     "representative_tickers": [
-      "GLD",
-      "BTC",
-      "ETH",
-      "TLT",
-      "SPY"
+      "SPY",
+      "QQQ",
+      "IWM"
     ]
   },
   "consumer-retail-turnaround": {
@@ -448,11 +445,13 @@
   "quantum-computing-emerging-tech": {
     "name": "Quantum Computing Emerging Tech Momentum",
     "first_seen": "2026-06-10",
-    "last_active": "2026-07-27",
+    "last_active": "2026-07-31",
     "representative_tickers": [
       "IONQ",
       "RGTI",
-      "QUBT"
+      "QUBT",
+      "RKLB",
+      "ASTS"
     ]
   },
   "value-investing-rotation-non-ai": {
@@ -491,13 +490,13 @@
   "semiconductor-chip-rally": {
     "name": "Semiconductor & Chip Sector Broad Rally",
     "first_seen": "2026-06-18",
-    "last_active": "2026-07-22",
+    "last_active": "2026-07-31",
     "representative_tickers": [
-      "AMD",
       "NVDA",
+      "AMD",
+      "ARM",
       "TSM",
-      "INTC",
-      "AVGO"
+      "ASML"
     ]
   },
   "ai-government-data-infrastructure": {
@@ -618,13 +617,13 @@
   "glp1-pharma-medtech": {
     "name": "GLP-1 Pharma Wars & MedTech Innovation",
     "first_seen": "2026-07-21",
-    "last_active": "2026-07-30",
+    "last_active": "2026-07-31",
     "representative_tickers": [
-      "HNGE",
-      "VCYT",
-      "DFTX",
+      "DXCM",
       "ISRG",
-      "DXCM"
+      "TLXP",
+      "MDFG",
+      "GKOS"
     ]
   },
   "private-equity-ma-activism": {

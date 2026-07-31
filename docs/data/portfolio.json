@@ -3869,6 +3869,17 @@
             "AAPL": 331.76
           },
           "floating_return": -0.017866
+        },
+        {
+          "date": "2026-07-31",
+          "prices": {
+            "META": 544.14,
+            "GOOGL": 346.355,
+            "AMZN": 269.9845,
+            "AVGO": 384.4,
+            "AAPL": 302.14
+          },
+          "floating_return": 0.00579
         }
       ]
     },
@@ -3923,6 +3934,15 @@
             "BTC-USD": 64979.3008
           },
           "floating_return": 0.00248
+        },
+        {
+          "date": "2026-07-31",
+          "prices": {
+            "MSTR": 91.0,
+            "ETH-USD": 1860.98,
+            "BTC-USD": 62950.7617
+          },
+          "floating_return": -0.040085
         }
       ]
     },
@@ -3982,6 +4002,16 @@
             "THC": 251.295
           },
           "floating_return": 0.01037
+        },
+        {
+          "date": "2026-07-31",
+          "prices": {
+            "ISRG": 350.87,
+            "DXCM": 83.115,
+            "NVO": 46.615,
+            "THC": 251.15
+          },
+          "floating_return": 0.01722
         }
       ]
     },
@@ -4036,6 +4066,15 @@
             "UNP": 289.17
           },
           "floating_return": -0.017621
+        },
+        {
+          "date": "2026-07-31",
+          "prices": {
+            "KMI": 31.86,
+            "CNI": 127.3,
+            "UNP": 289.115
+          },
+          "floating_return": -0.020592
         }
       ]
     }
@@ -4364,18 +4403,24 @@
       "portfolio_return": -0.011731,
       "spy_return": 0.01157,
       "open_count": 5
+    },
+    {
+      "date": "2026-07-31",
+      "portfolio_return": -0.003566,
+      "spy_return": -0.001672,
+      "open_count": 4
     }
   ],
   "summary": {
-    "portfolio_cumulative": -0.170758,
-    "spy_cumulative": 0.073783,
-    "alpha": -0.24454,
+    "portfolio_cumulative": -0.173715,
+    "spy_cumulative": 0.071987,
+    "alpha": -0.245702,
     "open_count": 4,
     "closed_count": 52,
     "win_rate": 0.365,
-    "tracking_days": 54
+    "tracking_days": 55
   },
-  "updated_at": "2026-07-30",
+  "updated_at": "2026-07-31",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -7092,6 +7137,17 @@
           "HOOD",
           "COIN"
         ]
+      },
+      {
+        "date": "2026-07-31",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "BTC",
+          "ETH",
+          "IBIT"
+        ]
       }
     ],
     "nuclear-clean-energy": [
@@ -7210,6 +7266,19 @@
           "IONQ",
           "OKLO"
         ]
+      },
+      {
+        "date": "2026-07-31",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "NEE",
+          "CEG",
+          "VST",
+          "NRG",
+          "ETR"
+        ]
       }
     ],
     "financial-services-capital-markets": [
@@ -7325,6 +7394,19 @@
           "BK",
           "FITB",
           "CME"
+        ]
+      },
+      {
+        "date": "2026-07-31",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "AMP",
+          "FHN",
+          "MGIC",
+          "FHI",
+          "OPY"
         ]
       }
     ],
@@ -8279,6 +8361,19 @@
           "GATX",
           "AGCO"
         ]
+      },
+      {
+        "date": "2026-07-31",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "MTZ",
+          "LIN",
+          "OLN",
+          "CTVA",
+          "FSS"
+        ]
       }
     ],
     "energy-infrastructure-income": [
@@ -8775,6 +8870,18 @@
           "GOOGL",
           "AAPL",
           "AMZN"
+        ]
+      },
+      {
+        "date": "2026-07-31",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "MSFT",
+          "GOOGL",
+          "AMZN",
+          "META"
         ]
       }
     ],
@@ -10101,6 +10208,18 @@
           "XOM",
           "BNO"
         ]
+      },
+      {
+        "date": "2026-07-31",
+        "conviction": 6,
+        "direction": "Bearish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "GLD",
+          "SLV",
+          "XOM",
+          "CVX"
+        ]
       }
     ],
     "china-tech-consumer": [
@@ -10483,6 +10602,17 @@
           "TLT",
           "SPY"
         ]
+      },
+      {
+        "date": "2026-07-31",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "SPY",
+          "QQQ",
+          "IWM"
+        ]
       }
     ],
     "consumer-retail-turnaround": [
@@ -10859,6 +10989,19 @@
           "RGTI",
           "QUBT"
         ]
+      },
+      {
+        "date": "2026-07-31",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "IONQ",
+          "RGTI",
+          "QUBT",
+          "RKLB",
+          "ASTS"
+        ]
       }
     ],
     "saas-adtech-digital-platforms": [
@@ -10978,6 +11121,19 @@
           "TSM",
           "INTC",
           "AVGO"
+        ]
+      },
+      {
+        "date": "2026-07-31",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "NVDA",
+          "AMD",
+          "ARM",
+          "TSM",
+          "ASML"
         ]
       }
     ],
@@ -11304,6 +11460,19 @@
           "DFTX",
           "ISRG",
           "DXCM"
+        ]
+      },
+      {
+        "date": "2026-07-31",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "DXCM",
+          "ISRG",
+          "TLXP",
+          "MDFG",
+          "GKOS"
         ]
       }
     ],
