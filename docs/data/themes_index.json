@@ -47,7 +47,7 @@
   "power-grid-energy-ai-demand": {
     "name": "Power Grid Stress & Energy Stocks Under AI Demand Pressure",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-30",
+    "last_active": "2026-08-03",
     "representative_tickers": [
       "CEG",
       "VST",
@@ -127,10 +127,10 @@
   "ev-automotive-supply-chain": {
     "name": "EV & Automotive Supply Chain Recovery",
     "first_seen": "2026-05-14",
-    "last_active": "2026-07-22",
+    "last_active": "2026-08-03",
     "representative_tickers": [
       "TSLA",
-      "AMC"
+      "BYDDY"
     ]
   },
   "financial-services-capital-markets": {
@@ -211,12 +211,13 @@
   "big-tech-ai-platforms": {
     "name": "Big Tech AI Platform Divergence",
     "first_seen": "2026-05-18",
-    "last_active": "2026-07-31",
+    "last_active": "2026-08-03",
     "representative_tickers": [
       "MSFT",
-      "GOOGL",
       "AMZN",
-      "META"
+      "META",
+      "GOOGL",
+      "AAPL"
     ]
   },
   "cybersecurity-resilience": {
@@ -252,29 +253,36 @@
   "fintech-payments-platforms": {
     "name": "Fintech, Payments & Alternative Finance",
     "first_seen": "2026-05-19",
-    "last_active": "2026-07-28",
+    "last_active": "2026-08-03",
     "representative_tickers": [
-      "PYPL",
-      "V"
+      "V",
+      "FOUR",
+      "HOOD",
+      "LSAK"
     ]
   },
   "space-quantum-defense-tech": {
     "name": "Space, Quantum Computing & Defense Tech",
     "first_seen": "2026-05-20",
-    "last_active": "2026-07-30",
+    "last_active": "2026-08-03",
     "representative_tickers": [
       "IONQ",
-      "QUBT",
       "RGTI",
       "RKLB",
-      "ASTS"
+      "ASTS",
+      "LUNR"
     ]
   },
   "fixed-income-yield-alternatives": {
     "name": "Fixed Income, Yield Alternatives & Retirement Income",
     "first_seen": "2026-05-20",
-    "last_active": "2026-07-24",
-    "representative_tickers": []
+    "last_active": "2026-08-03",
+    "representative_tickers": [
+      "TLT",
+      "BND",
+      "CME",
+      "MCO"
+    ]
   },
   "logistics-freight-spinoffs": {
     "name": "Logistics & Freight Restructuring Plays",
@@ -288,12 +296,13 @@
   "geopolitical-risk-commodity-repricing": {
     "name": "Iran Peace Talks & Commodity/Equity Repricing",
     "first_seen": "2026-05-26",
-    "last_active": "2026-07-31",
+    "last_active": "2026-08-03",
     "representative_tickers": [
+      "NEM",
       "GLD",
+      "USO",
       "SLV",
-      "XOM",
-      "CVX"
+      "XLE"
     ]
   },
   "affordable-housing-homebuilding": {
@@ -557,13 +566,13 @@
   "semiconductor-cycle-divergence": {
     "name": "Semiconductor Cycle: Winners & Losers",
     "first_seen": "2026-07-09",
-    "last_active": "2026-07-09",
+    "last_active": "2026-08-03",
     "representative_tickers": [
-      "MU",
+      "NVDA",
+      "AMD",
+      "AVGO",
       "TSM",
-      "INTC",
-      "QCOM",
-      "NVDA"
+      "INTC"
     ]
   },
   "consumer-earnings-resilience": {
@@ -605,25 +614,24 @@
   "ai-cloud-crypto-infrastructure": {
     "name": "AI Cloud & Crypto Mining Infrastructure",
     "first_seen": "2026-07-20",
-    "last_active": "2026-07-20",
+    "last_active": "2026-08-03",
     "representative_tickers": [
-      "MSTR",
-      "HUT",
-      "IREN",
-      "BITM",
-      "NBIS"
+      "RIOT",
+      "MARA",
+      "XRP",
+      "BTCM"
     ]
   },
   "glp1-pharma-medtech": {
     "name": "GLP-1 Pharma Wars & MedTech Innovation",
     "first_seen": "2026-07-21",
-    "last_active": "2026-07-31",
+    "last_active": "2026-08-03",
     "representative_tickers": [
-      "DXCM",
-      "ISRG",
-      "TLXP",
-      "MDFG",
-      "GKOS"
+      "AZN",
+      "BMY",
+      "ABBV",
+      "MRK",
+      "ISRG"
     ]
   },
   "private-equity-ma-activism": {
