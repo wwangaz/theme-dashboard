@@ -4163,7 +4163,20 @@
       "exit_reason": null,
       "realized_return": null,
       "spy_return_during_holding": null,
-      "excess_return": null
+      "excess_return": null,
+      "daily_snapshots": [
+        {
+          "date": "2026-08-04",
+          "prices": {
+            "MSFT": 494.105,
+            "AMZN": 278.945,
+            "META": 582.88,
+            "GOOGL": 376.945,
+            "AAPL": 305.375
+          },
+          "floating_return": 0.002443
+        }
+      ]
     },
     {
       "theme_id": "geopolitical-risk-commodity-repricing",
@@ -4186,6 +4199,106 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 754.995,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null,
+      "daily_snapshots": [
+        {
+          "date": "2026-08-04",
+          "prices": {
+            "NEM": 97.805,
+            "GLD": 375.075,
+            "USO": 115.875,
+            "SLV": 53.985,
+            "XLE": 57.83
+          },
+          "floating_return": 0.00689
+        }
+      ]
+    },
+    {
+      "theme_id": "ai-infrastructure-datacenter-boom",
+      "theme_name": "AI Infrastructure & Data Center Capital Expenditure Surge",
+      "direction": "Bullish",
+      "entry_date": "2026-08-04",
+      "tickers": [
+        "CAT",
+        "NVT",
+        "CRWV",
+        "SANM",
+        "NTAP"
+      ],
+      "entry_prices": {
+        "CAT": 879.71,
+        "NVT": 161.02,
+        "CRWV": 90.2312,
+        "SANM": 203.78,
+        "NTAP": 189.09
+      },
+      "conviction_at_entry": 9,
+      "spy_price_at_entry": 764.345,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null
+    },
+    {
+      "theme_id": "defense-industrial-government-spend",
+      "theme_name": "Defense Spending & Industrial Government Contracts",
+      "direction": "Bullish",
+      "entry_date": "2026-08-04",
+      "tickers": [
+        "RKLB",
+        "ASTS",
+        "LUNR",
+        "AVAV",
+        "DRS"
+      ],
+      "entry_prices": {
+        "RKLB": 72.94,
+        "ASTS": 67.44,
+        "LUNR": 13.72,
+        "AVAV": 162.135,
+        "DRS": 45.32
+      },
+      "conviction_at_entry": 8,
+      "spy_price_at_entry": 764.345,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null
+    },
+    {
+      "theme_id": "fixed-income-yield-alternatives",
+      "theme_name": "Fixed Income, Yield Alternatives & Retirement Income",
+      "direction": "Bullish",
+      "entry_date": "2026-08-04",
+      "tickers": [
+        "ARCC",
+        "MAIN",
+        "BXP",
+        "SCHD",
+        "CLM"
+      ],
+      "entry_prices": {
+        "ARCC": 19.2705,
+        "MAIN": 56.345,
+        "BXP": 69.975,
+        "SCHD": 33.44,
+        "CLM": 7.4122
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 764.345,
       "status": "open",
       "exit_date": null,
       "exit_prices": null,
@@ -4531,18 +4644,24 @@
       "portfolio_return": 0.020507,
       "spy_return": 0.010669,
       "open_count": 4
+    },
+    {
+      "date": "2026-08-04",
+      "portfolio_return": 0.004666,
+      "spy_return": 0.00881,
+      "open_count": 2
     }
   ],
   "summary": {
-    "portfolio_cumulative": -0.15677,
-    "spy_cumulative": 0.083424,
-    "alpha": -0.240194,
-    "open_count": 1,
+    "portfolio_cumulative": -0.152836,
+    "spy_cumulative": 0.092969,
+    "alpha": -0.245805,
+    "open_count": 4,
     "closed_count": 56,
     "win_rate": 0.375,
-    "tracking_days": 56
+    "tracking_days": 57
   },
-  "updated_at": "2026-08-03",
+  "updated_at": "2026-08-04",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -5126,6 +5245,19 @@
           "TSM",
           "ASML",
           "AVGO"
+        ]
+      },
+      {
+        "date": "2026-08-04",
+        "conviction": 9,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "CAT",
+          "NVT",
+          "CRWV",
+          "SANM",
+          "NTAP"
         ]
       }
     ],
@@ -6488,6 +6620,19 @@
           "NEE",
           "ETR"
         ]
+      },
+      {
+        "date": "2026-08-04",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "VST",
+          "NRG",
+          "CEG",
+          "NEE",
+          "ETR"
+        ]
       }
     ],
     "quantum-computing-speculative-selloff": [
@@ -7282,6 +7427,19 @@
           "BTC",
           "ETH",
           "IBIT"
+        ]
+      },
+      {
+        "date": "2026-08-04",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "COIN",
+          "MARA",
+          "MSTR",
+          "BITF",
+          "CLSK"
         ]
       }
     ],
@@ -9041,6 +9199,19 @@
           "GOOGL",
           "AAPL"
         ]
+      },
+      {
+        "date": "2026-08-04",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "META",
+          "GOOGL",
+          "MSFT",
+          "AAPL",
+          "AMZN"
+        ]
       }
     ],
     "cybersecurity-resilience": [
@@ -9858,6 +10029,19 @@
           "CME",
           "MCO"
         ]
+      },
+      {
+        "date": "2026-08-04",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "ARCC",
+          "MAIN",
+          "BXP",
+          "SCHD",
+          "CLM"
+        ]
       }
     ],
     "space-quantum-defense-tech": [
@@ -10427,6 +10611,19 @@
           "USO",
           "SLV",
           "XLE"
+        ]
+      },
+      {
+        "date": "2026-08-04",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Acceleration",
+        "tickers": [
+          "GLD",
+          "USO",
+          "TLT",
+          "NEE",
+          "ETR"
         ]
       }
     ],
@@ -11047,6 +11244,19 @@
           "HON",
           "ARCB"
         ]
+      },
+      {
+        "date": "2026-08-04",
+        "conviction": 8,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "RKLB",
+          "ASTS",
+          "LUNR",
+          "AVAV",
+          "DRS"
+        ]
       }
     ],
     "macro-risk-market-top-signals": [
@@ -11247,6 +11457,19 @@
         "tickers": [
           "NOW",
           "IBM"
+        ]
+      },
+      {
+        "date": "2026-08-04",
+        "conviction": 5,
+        "direction": "Neutral",
+        "stage": "Acceleration",
+        "tickers": [
+          "SNAP",
+          "SPOT",
+          "META",
+          "GOOGL",
+          "TTD"
         ]
       }
     ],
@@ -11719,6 +11942,19 @@
           "ABBV",
           "MRK",
           "ISRG"
+        ]
+      },
+      {
+        "date": "2026-08-04",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "MRK",
+          "PFE",
+          "RVMD",
+          "JNJ",
+          "HARP"
         ]
       }
     ],
