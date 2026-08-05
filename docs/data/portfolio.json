@@ -4175,6 +4175,17 @@
             "AAPL": 305.375
           },
           "floating_return": 0.002443
+        },
+        {
+          "date": "2026-08-05",
+          "prices": {
+            "MSFT": 487.54,
+            "AMZN": 276.035,
+            "META": 593.635,
+            "GOOGL": 379.21,
+            "AAPL": 307.97
+          },
+          "floating_return": 0.004314
         }
       ]
     },
@@ -4217,6 +4228,17 @@
             "XLE": 57.83
           },
           "floating_return": 0.00689
+        },
+        {
+          "date": "2026-08-05",
+          "prices": {
+            "NEM": 104.525,
+            "GLD": 387.6301,
+            "USO": 114.3485,
+            "SLV": 56.63,
+            "XLE": 57.93
+          },
+          "floating_return": 0.03598
         }
       ]
     },
@@ -4247,7 +4269,20 @@
       "exit_reason": null,
       "realized_return": null,
       "spy_return_during_holding": null,
-      "excess_return": null
+      "excess_return": null,
+      "daily_snapshots": [
+        {
+          "date": "2026-08-05",
+          "prices": {
+            "CAT": 898.3,
+            "NVT": 166.49,
+            "CRWV": 92.395,
+            "SANM": 206.905,
+            "NTAP": 191.27
+          },
+          "floating_return": 0.02119
+        }
+      ]
     },
     {
       "theme_id": "defense-industrial-government-spend",
@@ -4276,7 +4311,20 @@
       "exit_reason": null,
       "realized_return": null,
       "spy_return_during_holding": null,
-      "excess_return": null
+      "excess_return": null,
+      "daily_snapshots": [
+        {
+          "date": "2026-08-05",
+          "prices": {
+            "RKLB": 76.77,
+            "ASTS": 69.875,
+            "LUNR": 13.75,
+            "AVAV": 171.7983,
+            "DRS": 45.875
+          },
+          "floating_return": 0.03253
+        }
+      ]
     },
     {
       "theme_id": "fixed-income-yield-alternatives",
@@ -4299,6 +4347,48 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 764.345,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null,
+      "daily_snapshots": [
+        {
+          "date": "2026-08-05",
+          "prices": {
+            "ARCC": 19.405,
+            "MAIN": 56.2114,
+            "BXP": 70.03,
+            "SCHD": 33.7699,
+            "CLM": 7.5001
+          },
+          "floating_return": 0.005424
+        }
+      ]
+    },
+    {
+      "theme_id": "glp1-pharma-medtech",
+      "theme_name": "GLP-1 Pharma Wars & MedTech Innovation",
+      "direction": "Bullish",
+      "entry_date": "2026-08-05",
+      "tickers": [
+        "LLY",
+        "UNH",
+        "GH",
+        "ISRG",
+        "DXCM"
+      ],
+      "entry_prices": {
+        "LLY": 1183.879,
+        "UNH": 408.245,
+        "GH": 160.84,
+        "ISRG": 372.11,
+        "DXCM": 83.57
+      },
+      "conviction_at_entry": 8,
+      "spy_price_at_entry": 776.1,
       "status": "open",
       "exit_date": null,
       "exit_prices": null,
@@ -4650,18 +4740,24 @@
       "portfolio_return": 0.004666,
       "spy_return": 0.00881,
       "open_count": 2
+    },
+    {
+      "date": "2026-08-05",
+      "portfolio_return": 0.017787,
+      "spy_return": 0.006171,
+      "open_count": 5
     }
   ],
   "summary": {
-    "portfolio_cumulative": -0.152836,
-    "spy_cumulative": 0.092969,
-    "alpha": -0.245805,
-    "open_count": 4,
+    "portfolio_cumulative": -0.137767,
+    "spy_cumulative": 0.099714,
+    "alpha": -0.237481,
+    "open_count": 5,
     "closed_count": 56,
     "win_rate": 0.375,
-    "tracking_days": 57
+    "tracking_days": 58
   },
-  "updated_at": "2026-08-04",
+  "updated_at": "2026-08-05",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -5259,6 +5355,19 @@
           "SANM",
           "NTAP"
         ]
+      },
+      {
+        "date": "2026-08-05",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "NVDA",
+          "AMD",
+          "AVGO",
+          "TSM",
+          "ASML"
+        ]
       }
     ],
     "semiconductor-geopolitics-china-trade": [
@@ -5730,6 +5839,19 @@
         "tickers": [
           "WIX",
           "GDDY"
+        ]
+      },
+      {
+        "date": "2026-08-05",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "MSFT",
+          "GOOGL",
+          "META",
+          "AMZN",
+          "AAPL"
         ]
       }
     ],
@@ -6632,6 +6754,19 @@
           "CEG",
           "NEE",
           "ETR"
+        ]
+      },
+      {
+        "date": "2026-08-05",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "NRG",
+          "CEG",
+          "VST",
+          "NEE",
+          "SHEL"
         ]
       }
     ],
@@ -8825,6 +8960,19 @@
           "AXP",
           "HOG"
         ]
+      },
+      {
+        "date": "2026-08-05",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "DIS",
+          "UBER",
+          "NKE",
+          "CMG",
+          "CCL"
+        ]
       }
     ],
     "big-tech-ai-platforms": [
@@ -10302,6 +10450,19 @@
           "ASTS",
           "LUNR"
         ]
+      },
+      {
+        "date": "2026-08-05",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "RKLB",
+          "ASTS",
+          "IONQ",
+          "RGTI",
+          "QUBT"
+        ]
       }
     ],
     "logistics-freight-spinoffs": [
@@ -10625,6 +10786,19 @@
           "NEE",
           "ETR"
         ]
+      },
+      {
+        "date": "2026-08-05",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Acceleration",
+        "tickers": [
+          "GLD",
+          "SLV",
+          "BTC",
+          "XRP",
+          "USO"
+        ]
       }
     ],
     "china-tech-consumer": [
@@ -10740,6 +10914,19 @@
         "tickers": [
           "BREIT",
           "SBAC"
+        ]
+      },
+      {
+        "date": "2026-08-05",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "ICE",
+          "PYPL",
+          "AXP",
+          "NNN",
+          "ACRE"
         ]
       }
     ],
@@ -11018,6 +11205,19 @@
           "QQQ",
           "IWM"
         ]
+      },
+      {
+        "date": "2026-08-05",
+        "conviction": 6,
+        "direction": "Bullish",
+        "stage": "Acceleration",
+        "tickers": [
+          "SPY",
+          "TLT",
+          "GLD",
+          "SHY",
+          "IEF"
+        ]
       }
     ],
     "consumer-retail-turnaround": [
@@ -11256,6 +11456,19 @@
           "LUNR",
           "AVAV",
           "DRS"
+        ]
+      },
+      {
+        "date": "2026-08-05",
+        "conviction": 8,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "LMT",
+          "LDOS",
+          "RTX",
+          "NOC",
+          "GD"
         ]
       }
     ],
@@ -11955,6 +12168,19 @@
           "RVMD",
           "JNJ",
           "HARP"
+        ]
+      },
+      {
+        "date": "2026-08-05",
+        "conviction": 8,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "LLY",
+          "UNH",
+          "GH",
+          "ISRG",
+          "DXCM"
         ]
       }
     ],

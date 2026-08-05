@@ -2,13 +2,13 @@
   "ai-infrastructure-datacenter-boom": {
     "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
     "first_seen": "2026-05-13",
-    "last_active": "2026-08-04",
+    "last_active": "2026-08-05",
     "representative_tickers": [
-      "CAT",
-      "NVT",
-      "CRWV",
-      "SANM",
-      "NTAP"
+      "NVDA",
+      "AMD",
+      "AVGO",
+      "TSM",
+      "ASML"
     ]
   },
   "semiconductor-geopolitics-china-trade": {
@@ -38,22 +38,25 @@
   "ai-enterprise-software-automation": {
     "name": "Enterprise AI Adoption & Workflow Automation",
     "first_seen": "2026-05-13",
-    "last_active": "2026-07-30",
+    "last_active": "2026-08-05",
     "representative_tickers": [
-      "WIX",
-      "GDDY"
+      "MSFT",
+      "GOOGL",
+      "META",
+      "AMZN",
+      "AAPL"
     ]
   },
   "power-grid-energy-ai-demand": {
     "name": "Power Grid Stress & Energy Stocks Under AI Demand Pressure",
     "first_seen": "2026-05-13",
-    "last_active": "2026-08-04",
+    "last_active": "2026-08-05",
     "representative_tickers": [
-      "VST",
       "NRG",
       "CEG",
+      "VST",
       "NEE",
-      "ETR"
+      "SHEL"
     ]
   },
   "space-economy-commercial-launch": {
@@ -203,11 +206,13 @@
   "media-entertainment-consumer-recovery": {
     "name": "Media Consolidation, Consumer Discretionary & Retail Recovery",
     "first_seen": "2026-05-15",
-    "last_active": "2026-07-24",
+    "last_active": "2026-08-05",
     "representative_tickers": [
-      "JAKK",
-      "AXP",
-      "HOG"
+      "DIS",
+      "UBER",
+      "NKE",
+      "CMG",
+      "CCL"
     ]
   },
   "big-tech-ai-platforms": {
@@ -266,13 +271,13 @@
   "space-quantum-defense-tech": {
     "name": "Space, Quantum Computing & Defense Tech",
     "first_seen": "2026-05-20",
-    "last_active": "2026-08-03",
+    "last_active": "2026-08-05",
     "representative_tickers": [
-      "IONQ",
-      "RGTI",
       "RKLB",
       "ASTS",
-      "LUNR"
+      "IONQ",
+      "RGTI",
+      "QUBT"
     ]
   },
   "fixed-income-yield-alternatives": {
@@ -299,13 +304,13 @@
   "geopolitical-risk-commodity-repricing": {
     "name": "Iran Peace Talks & Commodity/Equity Repricing",
     "first_seen": "2026-05-26",
-    "last_active": "2026-08-04",
+    "last_active": "2026-08-05",
     "representative_tickers": [
       "GLD",
-      "USO",
-      "TLT",
-      "NEE",
-      "ETR"
+      "SLV",
+      "BTC",
+      "XRP",
+      "USO"
     ]
   },
   "affordable-housing-homebuilding": {
@@ -335,10 +340,13 @@
   "housing-real-estate-finance": {
     "name": "Housing Market Stress & Real Estate Finance",
     "first_seen": "2026-05-28",
-    "last_active": "2026-07-24",
+    "last_active": "2026-08-05",
     "representative_tickers": [
-      "BREIT",
-      "SBAC"
+      "ICE",
+      "PYPL",
+      "AXP",
+      "NNN",
+      "ACRE"
     ]
   },
   "space-economy-correction": {
@@ -389,11 +397,13 @@
   "macro-rates-dollar-geopolitics": {
     "name": "Fed Policy, Dollar Weakness & Geopolitical Risk Premium",
     "first_seen": "2026-06-02",
-    "last_active": "2026-07-31",
+    "last_active": "2026-08-05",
     "representative_tickers": [
       "SPY",
-      "QQQ",
-      "IWM"
+      "TLT",
+      "GLD",
+      "SHY",
+      "IEF"
     ]
   },
   "consumer-retail-turnaround": {
@@ -433,13 +443,13 @@
   "defense-industrial-government-spend": {
     "name": "Defense Spending & Industrial Government Contracts",
     "first_seen": "2026-06-04",
-    "last_active": "2026-08-04",
+    "last_active": "2026-08-05",
     "representative_tickers": [
-      "RKLB",
-      "ASTS",
-      "LUNR",
-      "AVAV",
-      "DRS"
+      "LMT",
+      "LDOS",
+      "RTX",
+      "NOC",
+      "GD"
     ]
   },
   "macro-risk-market-top-signals": {
@@ -631,13 +641,13 @@
   "glp1-pharma-medtech": {
     "name": "GLP-1 Pharma Wars & MedTech Innovation",
     "first_seen": "2026-07-21",
-    "last_active": "2026-08-04",
+    "last_active": "2026-08-05",
     "representative_tickers": [
-      "MRK",
-      "PFE",
-      "RVMD",
-      "JNJ",
-      "HARP"
+      "LLY",
+      "UNH",
+      "GH",
+      "ISRG",
+      "DXCM"
     ]
   },
   "private-equity-ma-activism": {
