@@ -50,11 +50,11 @@
   "power-grid-energy-ai-demand": {
     "name": "Power Grid Stress & Energy Stocks Under AI Demand Pressure",
     "first_seen": "2026-05-13",
-    "last_active": "2026-08-06",
+    "last_active": "2026-08-07",
     "representative_tickers": [
+      "NEE",
       "CEG",
       "VST",
-      "NEE",
       "NRG",
       "ETR"
     ]
@@ -74,25 +74,22 @@
   "precious-metals-mining-dividends": {
     "name": "Precious Metals Mining — Silver Surge & Gold Dividend Play",
     "first_seen": "2026-05-13",
-    "last_active": "2026-08-06",
+    "last_active": "2026-08-07",
     "representative_tickers": [
       "GLD",
-      "SLV",
-      "GDX",
-      "CNR",
-      "UUP"
+      "TLT",
+      "FSK"
     ]
   },
   "crypto-digital-assets-geopolitical-watch": {
     "name": "Crypto & Digital Assets Holding Steady Amid US-China Summit",
     "first_seen": "2026-05-13",
-    "last_active": "2026-08-04",
+    "last_active": "2026-08-07",
     "representative_tickers": [
-      "COIN",
-      "MARA",
-      "MSTR",
-      "BITF",
-      "CLSK"
+      "ETHE",
+      "SOL",
+      "AVAX",
+      "SUI"
     ]
   },
   "quantum-computing-speculative-selloff": {
@@ -162,13 +159,13 @@
   "healthcare-biotech-mixed": {
     "name": "Healthcare & Biotech Divergence",
     "first_seen": "2026-05-14",
-    "last_active": "2026-07-20",
+    "last_active": "2026-08-07",
     "representative_tickers": [
-      "UNH",
-      "ISRG",
-      "DXCM",
-      "INSM",
-      "AMPE"
+      "SIGA",
+      "STLN",
+      "PRAX",
+      "GMAB",
+      "INMB"
     ]
   },
   "energy-oil-gas-cycle": {
@@ -194,36 +191,34 @@
   "industrials-infrastructure-materials": {
     "name": "Industrials, Infrastructure & Materials Cycle",
     "first_seen": "2026-05-15",
-    "last_active": "2026-08-06",
+    "last_active": "2026-08-07",
     "representative_tickers": [
-      "NOVT",
-      "IEX",
-      "ROP",
-      "BCPC",
-      "DGII"
+      "JCI",
+      "EMR",
+      "HON"
     ]
   },
   "media-entertainment-consumer-recovery": {
     "name": "Media Consolidation, Consumer Discretionary & Retail Recovery",
     "first_seen": "2026-05-15",
-    "last_active": "2026-08-05",
+    "last_active": "2026-08-07",
     "representative_tickers": [
-      "DIS",
-      "UBER",
-      "NKE",
-      "CMG",
-      "CCL"
+      "UPS",
+      "EBAY",
+      "TSLA",
+      "MPC",
+      "UAA"
     ]
   },
   "big-tech-ai-platforms": {
     "name": "Big Tech AI Platform Divergence",
     "first_seen": "2026-05-18",
-    "last_active": "2026-08-06",
+    "last_active": "2026-08-07",
     "representative_tickers": [
       "MSFT",
       "GOOGL",
-      "AMZN",
       "META",
+      "AMZN",
       "AAPL"
     ]
   },
@@ -271,13 +266,13 @@
   "space-quantum-defense-tech": {
     "name": "Space, Quantum Computing & Defense Tech",
     "first_seen": "2026-05-20",
-    "last_active": "2026-08-06",
+    "last_active": "2026-08-07",
     "representative_tickers": [
       "RKLB",
-      "ASTS",
       "LUNR",
-      "MRCY",
-      "INVZ"
+      "ASTS",
+      "IONQ",
+      "RGTI"
     ]
   },
   "fixed-income-yield-alternatives": {
@@ -443,13 +438,11 @@
   "defense-industrial-government-spend": {
     "name": "Defense Spending & Industrial Government Contracts",
     "first_seen": "2026-06-04",
-    "last_active": "2026-08-05",
+    "last_active": "2026-08-07",
     "representative_tickers": [
-      "LMT",
-      "LDOS",
-      "RTX",
-      "NOC",
-      "GD"
+      "HON",
+      "ASLE",
+      "HLX"
     ]
   },
   "macro-risk-market-top-signals": {
@@ -511,7 +504,7 @@
   "semiconductor-chip-rally": {
     "name": "Semiconductor & Chip Sector Broad Rally",
     "first_seen": "2026-06-18",
-    "last_active": "2026-07-31",
+    "last_active": "2026-08-07",
     "representative_tickers": [
       "NVDA",
       "AMD",

@@ -4197,6 +4197,17 @@
             "AAPL": 311.0
           },
           "floating_return": -0.002377
+        },
+        {
+          "date": "2026-08-07",
+          "prices": {
+            "MSFT": 499.86,
+            "AMZN": 272.26,
+            "META": 589.9,
+            "GOOGL": 357.75,
+            "AAPL": 312.41
+          },
+          "floating_return": -0.003315
         }
       ]
     },
@@ -4221,13 +4232,19 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 754.995,
-      "status": "open",
-      "exit_date": null,
-      "exit_prices": null,
-      "exit_reason": null,
-      "realized_return": null,
-      "spy_return_during_holding": null,
-      "excess_return": null,
+      "status": "closed",
+      "exit_date": "2026-08-07",
+      "exit_prices": {
+        "NEM": 105.43,
+        "GLD": 389.67,
+        "USO": 118.87,
+        "SLV": 55.85,
+        "XLE": 58.16
+      },
+      "exit_reason": "displaced_by_stronger",
+      "realized_return": 0.044239,
+      "spy_return_during_holding": 0.017967,
+      "excess_return": 0.026272,
       "daily_snapshots": [
         {
           "date": "2026-08-04",
@@ -4261,6 +4278,17 @@
             "XLE": 57.745
           },
           "floating_return": 0.038282
+        },
+        {
+          "date": "2026-08-07",
+          "prices": {
+            "NEM": 105.43,
+            "GLD": 389.67,
+            "USO": 118.87,
+            "SLV": 55.85,
+            "XLE": 58.16
+          },
+          "floating_return": 0.044239
         }
       ]
     },
@@ -4314,6 +4342,17 @@
             "NTAP": 186.19
           },
           "floating_return": -0.009482
+        },
+        {
+          "date": "2026-08-07",
+          "prices": {
+            "CAT": 856.96,
+            "NVT": 163.3,
+            "CRWV": 85.33,
+            "SANM": 205.66,
+            "NTAP": 191.48
+          },
+          "floating_return": -0.008831
         }
       ]
     },
@@ -4367,6 +4406,17 @@
             "DRS": 45.435
           },
           "floating_return": 0.042031
+        },
+        {
+          "date": "2026-08-07",
+          "prices": {
+            "RKLB": 75.67,
+            "ASTS": 67.36,
+            "LUNR": 14.93,
+            "AVAV": 171.12,
+            "DRS": 45.3
+          },
+          "floating_return": 0.035882
         }
       ]
     },
@@ -4420,6 +4470,17 @@
             "CLM": 7.4823
           },
           "floating_return": 0.005531
+        },
+        {
+          "date": "2026-08-07",
+          "prices": {
+            "ARCC": 19.62,
+            "MAIN": 56.79,
+            "BXP": 68.81,
+            "SCHD": 33.7,
+            "CLM": 7.45
+          },
+          "floating_return": 0.004452
         }
       ]
     },
@@ -4462,6 +4523,17 @@
             "DXCM": 83.22
           },
           "floating_return": 0.000207
+        },
+        {
+          "date": "2026-08-07",
+          "prices": {
+            "LLY": 1191.9399,
+            "UNH": 403.97,
+            "GH": 157.58,
+            "ISRG": 373.71,
+            "DXCM": 83.02
+          },
+          "floating_return": -0.005243
         }
       ]
     },
@@ -4486,6 +4558,71 @@
       },
       "conviction_at_entry": 7,
       "spy_price_at_entry": 771.13,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null,
+      "daily_snapshots": [
+        {
+          "date": "2026-08-07",
+          "prices": {
+            "RKLB": 75.67,
+            "ASTS": 67.36,
+            "LUNR": 14.93,
+            "MRCY": 108.83,
+            "INVZ": 0.41
+          },
+          "floating_return": -0.003477
+        }
+      ]
+    },
+    {
+      "theme_id": "power-grid-energy-ai-demand",
+      "theme_name": "Power Grid Stress & Energy Stocks Under AI Demand Pressure",
+      "direction": "Bullish",
+      "entry_date": "2026-08-07",
+      "tickers": [
+        "NEE",
+        "CEG",
+        "VST",
+        "NRG",
+        "ETR"
+      ],
+      "entry_prices": {
+        "NEE": 84.6,
+        "CEG": 261.1,
+        "VST": 141.38,
+        "NRG": 119.05,
+        "ETR": 106.49
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 768.56,
+      "status": "open",
+      "exit_date": null,
+      "exit_prices": null,
+      "exit_reason": null,
+      "realized_return": null,
+      "spy_return_during_holding": null,
+      "excess_return": null
+    },
+    {
+      "theme_id": "crypto-digital-assets-geopolitical-watch",
+      "theme_name": "Crypto & Digital Assets Holding Steady Amid US-China Summit",
+      "direction": "Bullish",
+      "entry_date": "2026-08-07",
+      "tickers": [
+        "ETHE",
+        "SUI"
+      ],
+      "entry_prices": {
+        "ETHE": 15.38,
+        "SUI": 120.32
+      },
+      "conviction_at_entry": 7,
+      "spy_price_at_entry": 768.56,
       "status": "open",
       "exit_date": null,
       "exit_prices": null,
@@ -4849,18 +4986,24 @@
       "portfolio_return": -0.004011,
       "spy_return": 0.001754,
       "open_count": 6
+    },
+    {
+      "date": "2026-08-07",
+      "portfolio_return": -0.001477,
+      "spy_return": -0.001598,
+      "open_count": 7
     }
   ],
   "summary": {
-    "portfolio_cumulative": -0.141225,
-    "spy_cumulative": 0.101643,
-    "alpha": -0.242868,
-    "open_count": 6,
-    "closed_count": 56,
-    "win_rate": 0.375,
-    "tracking_days": 59
+    "portfolio_cumulative": -0.142494,
+    "spy_cumulative": 0.099883,
+    "alpha": -0.242376,
+    "open_count": 8,
+    "closed_count": 57,
+    "win_rate": 0.386,
+    "tracking_days": 60
   },
-  "updated_at": "2026-08-06",
+  "updated_at": "2026-08-07",
   "theme_history": {
     "ai-infrastructure-datacenter-boom": [
       {
@@ -5815,6 +5958,17 @@
           "GDX",
           "CNR",
           "UUP"
+        ]
+      },
+      {
+        "date": "2026-08-07",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Early Discovery",
+        "tickers": [
+          "GLD",
+          "TLT",
+          "FSK"
         ]
       }
     ],
@@ -6910,6 +7064,19 @@
           "NRG",
           "ETR"
         ]
+      },
+      {
+        "date": "2026-08-07",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Narrative Breakdown",
+        "tickers": [
+          "NEE",
+          "CEG",
+          "VST",
+          "NRG",
+          "ETR"
+        ]
       }
     ],
     "quantum-computing-speculative-selloff": [
@@ -7717,6 +7884,18 @@
           "MSTR",
           "BITF",
           "CLSK"
+        ]
+      },
+      {
+        "date": "2026-08-07",
+        "conviction": 7,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "ETHE",
+          "SOL",
+          "AVAX",
+          "SUI"
         ]
       }
     ],
@@ -8629,6 +8808,19 @@
           "INSM",
           "AMPE"
         ]
+      },
+      {
+        "date": "2026-08-07",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "SIGA",
+          "STLN",
+          "PRAX",
+          "GMAB",
+          "INMB"
+        ]
       }
     ],
     "energy-oil-gas-cycle": [
@@ -8967,6 +9159,17 @@
           "BCPC",
           "DGII"
         ]
+      },
+      {
+        "date": "2026-08-07",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "JCI",
+          "EMR",
+          "HON"
+        ]
       }
     ],
     "energy-infrastructure-income": [
@@ -9127,6 +9330,19 @@
           "NKE",
           "CMG",
           "CCL"
+        ]
+      },
+      {
+        "date": "2026-08-07",
+        "conviction": 2,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "UPS",
+          "EBAY",
+          "TSLA",
+          "MPC",
+          "UAA"
         ]
       }
     ],
@@ -9526,6 +9742,19 @@
           "GOOGL",
           "AMZN",
           "META",
+          "AAPL"
+        ]
+      },
+      {
+        "date": "2026-08-07",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "MSFT",
+          "GOOGL",
+          "META",
+          "AMZN",
           "AAPL"
         ]
       }
@@ -10656,6 +10885,19 @@
           "MRCY",
           "INVZ"
         ]
+      },
+      {
+        "date": "2026-08-07",
+        "conviction": 4,
+        "direction": "Neutral",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "RKLB",
+          "LUNR",
+          "ASTS",
+          "IONQ",
+          "RGTI"
+        ]
       }
     ],
     "logistics-freight-spinoffs": [
@@ -11663,6 +11905,17 @@
           "NOC",
           "GD"
         ]
+      },
+      {
+        "date": "2026-08-07",
+        "conviction": 3,
+        "direction": "Neutral",
+        "stage": "Early Discovery",
+        "tickers": [
+          "HON",
+          "ASLE",
+          "HLX"
+        ]
       }
     ],
     "macro-risk-market-top-signals": [
@@ -11984,6 +12237,19 @@
       },
       {
         "date": "2026-07-31",
+        "conviction": 5,
+        "direction": "Bullish",
+        "stage": "Momentum Expansion",
+        "tickers": [
+          "NVDA",
+          "AMD",
+          "ARM",
+          "TSM",
+          "ASML"
+        ]
+      },
+      {
+        "date": "2026-08-07",
         "conviction": 5,
         "direction": "Bullish",
         "stage": "Momentum Expansion",
