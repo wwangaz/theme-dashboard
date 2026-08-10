@@ -2,13 +2,13 @@
   "ai-infrastructure-datacenter-boom": {
     "name": "AI Infrastructure & Data Center Capital Expenditure Surge",
     "first_seen": "2026-05-13",
-    "last_active": "2026-08-06",
+    "last_active": "2026-08-10",
     "representative_tickers": [
+      "INTC",
       "NVDA",
-      "TSM",
-      "ASML",
-      "ARM",
-      "QCOM"
+      "AVGO",
+      "QCOM",
+      "ASML"
     ]
   },
   "semiconductor-geopolitics-china-trade": {
@@ -74,22 +74,25 @@
   "precious-metals-mining-dividends": {
     "name": "Precious Metals Mining — Silver Surge & Gold Dividend Play",
     "first_seen": "2026-05-13",
-    "last_active": "2026-08-07",
+    "last_active": "2026-08-10",
     "representative_tickers": [
+      "RIO",
+      "CLF",
+      "MOS",
       "GLD",
-      "TLT",
-      "FSK"
+      "SLV"
     ]
   },
   "crypto-digital-assets-geopolitical-watch": {
     "name": "Crypto & Digital Assets Holding Steady Amid US-China Summit",
     "first_seen": "2026-05-13",
-    "last_active": "2026-08-07",
+    "last_active": "2026-08-10",
     "representative_tickers": [
-      "ETHE",
-      "SOL",
-      "AVAX",
-      "SUI"
+      "IBIT",
+      "MSTR",
+      "COIN",
+      "BTCM",
+      "WGMI"
     ]
   },
   "quantum-computing-speculative-selloff": {
@@ -171,13 +174,13 @@
   "energy-oil-gas-cycle": {
     "name": "Oil & Gas Cycle Recovery & Leverage Plays",
     "first_seen": "2026-05-15",
-    "last_active": "2026-07-29",
+    "last_active": "2026-08-10",
     "representative_tickers": [
-      "PUMP",
-      "NOV",
-      "GZPZY",
-      "XPRO",
-      "GEI"
+      "COP",
+      "NEE",
+      "CEG",
+      "VST",
+      "NRG"
     ]
   },
   "energy-infrastructure-income": {
@@ -213,7 +216,7 @@
   "big-tech-ai-platforms": {
     "name": "Big Tech AI Platform Divergence",
     "first_seen": "2026-05-18",
-    "last_active": "2026-08-07",
+    "last_active": "2026-08-10",
     "representative_tickers": [
       "MSFT",
       "GOOGL",
@@ -255,24 +258,25 @@
   "fintech-payments-platforms": {
     "name": "Fintech, Payments & Alternative Finance",
     "first_seen": "2026-05-19",
-    "last_active": "2026-08-06",
+    "last_active": "2026-08-10",
     "representative_tickers": [
-      "SQ",
-      "FI",
       "GPN",
-      "OPRT"
+      "FOUR",
+      "FLYW",
+      "COUP",
+      "V"
     ]
   },
   "space-quantum-defense-tech": {
     "name": "Space, Quantum Computing & Defense Tech",
     "first_seen": "2026-05-20",
-    "last_active": "2026-08-07",
+    "last_active": "2026-08-10",
     "representative_tickers": [
+      "IONQ",
+      "RGTI",
       "RKLB",
       "LUNR",
-      "ASTS",
-      "IONQ",
-      "RGTI"
+      "ASTS"
     ]
   },
   "fixed-income-yield-alternatives": {
@@ -438,11 +442,13 @@
   "defense-industrial-government-spend": {
     "name": "Defense Spending & Industrial Government Contracts",
     "first_seen": "2026-06-04",
-    "last_active": "2026-08-07",
+    "last_active": "2026-08-10",
     "representative_tickers": [
-      "HON",
-      "ASLE",
-      "HLX"
+      "ERJ",
+      "PH",
+      "TDY",
+      "TSLA",
+      "BWA"
     ]
   },
   "macro-risk-market-top-signals": {
@@ -628,13 +634,13 @@
   "glp1-pharma-medtech": {
     "name": "GLP-1 Pharma Wars & MedTech Innovation",
     "first_seen": "2026-07-21",
-    "last_active": "2026-08-05",
+    "last_active": "2026-08-10",
     "representative_tickers": [
-      "LLY",
-      "UNH",
-      "GH",
       "ISRG",
-      "DXCM"
+      "DXCM",
+      "JNJ",
+      "HOLX",
+      "MASI"
     ]
   },
   "private-equity-ma-activism": {
@@ -655,6 +661,18 @@
     "last_active": "2026-07-28",
     "representative_tickers": [
       "AAPL"
+    ]
+  },
+  "broadening-equity-macro-sentiment": {
+    "name": "Macro Inflection & Broad Equity Rerating",
+    "first_seen": "2026-08-10",
+    "last_active": "2026-08-10",
+    "representative_tickers": [
+      "BRK.B",
+      "SPY",
+      "QQQ",
+      "IWM",
+      "VT"
     ]
   }
 }
